@@ -3245,7 +3245,7 @@ Wi-Fi постійно зникає.|The Wi-Fi keeps cutting out.|Wi-fi'en falde
 редакційна стаття|editorial|en leder|l'editoriale|📰||artykuł wstępny|c1x02_media.editorial
 подача (інформації)|framing|en vinkling|l'inquadramento|🖼️||ujęcie|c1x02_media.framing
 викривач|whistle-blower|en whistleblower|il whistleblower|📣||sygnalista|c1x02_media.whistle_blower
-спростовувати (міф)|to debunk|at aflive|sfatare|💥||obalać|c1x02_media.to_debunk
+спростовувати (міф)|to debunk|at aflive en myte|sfatare|💥||obalać|c1x02_media.to_debunk
 перекручувати (факти)|to distort|at fordreje|distorcere|🔀||przeinaczać|c1x02_media.to_distort
 упереджений (партійний)|partisan|partisk|fazioso|🚩||stronniczy|c1x02_media.partisan
 неупередженість|impartiality|upartiskhed|l'imparzialità|⚖️||bezstronność|c1x02_media.impartiality

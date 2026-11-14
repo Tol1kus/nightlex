@@ -2664,6 +2664,18 @@ html,body{transition:background-color .4s ease}
 /* ---------- Стартовий екран (14.11.2026, прохання користувача): фон градієнтом від темнішого вгорі до світлішого внизу, у кольорі дня ---------- */
 body:has(#app > .nf-launch){min-height:100vh;min-height:100dvh;background:linear-gradient(180deg,color-mix(in srgb,var(--bg) 70%,#000) 0%,var(--bg) 42%,color-mix(in srgb,var(--lime) 16%,var(--s1)) 100%)!important}
 :root[data-theme="light"] body:has(#app > .nf-launch){background:linear-gradient(180deg,color-mix(in srgb,var(--lime) 34%,var(--bg)) 0%,var(--bg) 45%,color-mix(in srgb,var(--lime) 6%,#fff) 100%)!important}
+
+/* ---------- 14.11.2026: дрібні виправлення вигляду ---------- */
+.rd.reader{background:none} /* читалка: без окремого фону, що обривався посеред екрана */
+.opt.ok,.opt.bad{padding-right:46px} /* позначка ✓/✕ не закриває текст відповіді */
+.pf-note{display:flex;gap:8px;align-items:flex-start;margin:10px 2px 14px;font-size:13px;line-height:1.45;color:var(--mut)}
+.pf-note .ic{width:16px;height:16px;flex:none;margin-top:2px;color:var(--lime)}
+:root[data-theme="light"] .pf-note .ic{color:var(--lime-t)}
+.pf-bg .rt-sheet .btn{width:100%;margin-top:10px}
+/* Словник: кнопка мікрофона в полі пошуку. Клас .dv-mic пізніше перевизначено для великої кнопки «Скажи відповідь» у діалогах (60_speak_practice.js),
+   і в словнику мікрофон розтягувався на всю ширину, а поле вводу стискалося до нуля (14.11.2026). */
+.dv-search .dv-mic{width:44px;height:44px;flex:none;margin:0;padding:0;gap:0;border:0;border-radius:12px;background:none;justify-content:center;color:var(--ink)}
+.dv-search .dv-mic.on{background:color-mix(in srgb,var(--lime) 22%,transparent)}
 </style>
 </head>
 <body>
@@ -6398,7 +6410,7 @@ const CORE60_B=[['review',8],['grammar',6],['new',7],['practice',5],['read',10],
 const CORE30_C=[['review',4],['grammar',3],['new',4],['read',8],['dialog',5],['write',6]];
 const CORE60_C=[['review',6],['grammar',5],['new',6],['practice',4],['read',12],['dialog',8],['speak',4],['transl',4],['write',11]];
 function lvBand(){const i=LEVELS.indexOf(curLevel());return i>=4?'C':i>=2?'B':'A'}
-function outOfDay(){return dayIndex()%2?'write':'transl'}
+function outOfDay(){return Math.floor(dayIndex()/2)%2?'write':'transl'} // по два дні: у «дні розмови» (через день) текст і переклад чергуються
 on('planBlocks',B=>{const long=(S.minutes||30)>=60,by=Object.fromEntries(B.map(b=>[b.id,b]));
   by.practice={id:'practice',s:'Закріплення',t:'🎯 Закріплення',d:'слова дня в реченнях і на слух'};
   if(by.write)by.write=Object.assign({},by.write,{d:long?by.write.d:'короткий текст на тему дня · чергується з перекладом'});
@@ -7377,8 +7389,12 @@ function ptResult(){PX.done=true;
   S.placement=S.placement||{};S.placement[S.lang]={lvl,date:today(),theta:Math.round(th*100)/100,self:PX.start,
     skills:Object.fromEntries(known.map(([k])=>[k,LEVELS[est[k]]])),res:[{lv:lvl,right:L.filter(x=>x.ok).length,n:L.length}]};
   PLAN_OPT={lvl,focus:FX[weakK]||'prod',markLower:ov>0};save();
-  const th_=(()=>{try{return TOPICS.filter(t=>t.lv===lvl&&t.id!=='ukus'&&t.words.filter(w=>FG(w)).length>=6).map(t=>t.name)}catch(e){return []}})();
-  const w1=th_.slice(0,2).join(', ')||'теми рівня '+lvl,w2=th_.slice(2,4).join(', ')||'нові теми',daily=(S.minutes||30)>=60?20:12;
+  // теми тижнів — у тому самому порядку, в якому їх дасть «тема дня» (themePrio, 36_theme_day.js), і стільки, скільки вміститься за норми нових слів (14.11.2026)
+  const daily=typeof newPerDay==='function'?newPerDay():10;
+  const wk=(()=>{try{const ts=TOPICS.filter(t=>t.lv===lvl&&t.id!=='ukus'&&themeWordsNS(t).length>=4).sort((a,b)=>themePrio(a)-themePrio(b));
+    const W=[[],[]];let n=0;for(const t of ts){const k=Math.floor(n/(daily*7));if(k>1)break;W[k].push(t.name);n+=themeWordsNS(t).length}return W}catch(e){return [[],[]]}})();
+  const wkTxt=(a,fb)=>a.length?a.slice(0,3).join(', ')+(a.length>3?` і ще ${a.length-3}`:''):fb;
+  const w1=wkTxt(wk[0],'теми рівня '+lvl),w2=wkTxt(wk[1],'нові теми');
   const cap=a=>a.map((x,i)=>i?x[1].toLowerCase():x[1]).join(' й ');
   const tip=strong.length&&weak.length?`${cap(strong)} вже вище ${lvl}, а <strong>${weak.map(x=>x[1].toLowerCase()).join(' й ')}</strong> тягнуть униз. Перші 2 тижні в плані буде більше цього.`
     :weak.length?`<strong>${cap(weak)}</strong> поки нижче за загальний рівень. Перші 2 тижні в плані буде більше цього.`
@@ -7641,7 +7657,7 @@ if(typeof newQuotaToday==='function'){const _nq=newQuotaToday;newQuotaToday=func
 /* крок «Слухання»: слова дня на слух (картинки, де є символ Mulberry; інакше — переклад) */
 if(typeof BLOCK_IC!=='undefined')BLOCK_IC.listen='headphones';
 on('block:listen',b=>{
-  const day=(typeof dayWordList==='function'?dayWordList():[]).filter(w=>w[S.lang]),seen=day.filter(w=>st(w)),pool_=(seen.length>=4?seen:day).slice(0,10);
+  const day=(typeof dayWordList==='function'?dayWordList():[]).filter(w=>w[S.lang]),seen=day.filter(w=>st(w)),pool_=(seen.length>=4?seen:day).slice(0,b&&b.min&&b.min<4?(b.min>=3?8:6):10);
   const items=(canSpeak?pool_.map(w=>({kind:'listen',w,phase:'Слухання · слова дня'})):pool_.map(w=>({kind:'choice',w,toUk:true,phase:'Слухання · слова дня'})));
   if(!items.length){markBlock('listen');return planNext()}
   runSession(shuffle(items),{title:'Слухання завершено!',onFinish:o=>{markBlock('listen');if(o&&o._prev)o._prev(o)}})});
@@ -7810,10 +7826,10 @@ function dvRenderList(){const box_=document.getElementById('dvList');if(!box_)re
 function dvInput(v){DV.q=v;dvRenderList();clearTimeout(DV.t);DV.t=setTimeout(dvLookup,250)}
 
 /* ---------- картка нового слова ---------- */
-function dvFindGame(q){const t=norm(q,S.lang);if(!t)return null;const strip=s=>s.replace(/^(to|a|an|the) /,'');
+function dvFindGame(q){const t=norm(q,S.lang);if(!t)return null;const strip=s=>s.replace(S.lang==='da'?/^(at|en|et) /:/^(to|a|an|the) /,'');
   const u=norm(q,'uk');
   return WORDS.find(w=>w[S.lang]&&norm(w[S.lang],S.lang)===t)||WORDS.find(w=>w[S.lang]&&strip(norm(w[S.lang],S.lang))===strip(t))||WORDS.find(w=>w[S.lang]&&w.uk&&norm(w.uk,'uk')===u)||null} // і українською: «парасолька» → umbrella
-function dvPos(fg){const t=String(fg).toLowerCase();return /^to /.test(t)?'дієслово':/^(a|an|the) /.test(t)?'іменник':/\s/.test(t)?'фраза':''}
+function dvPos(fg){const t=String(fg).toLowerCase(),da=S.lang==='da';return (da?/^at /:/^to /).test(t)?'дієслово':(da?/^(en|et) /:/^(a|an|the) /).test(t)?'іменник':/\s/.test(t)?'фраза':''}
 function dvExample(w){const s=w.sent&&w.sent[S.lang];if(!s)return null;const g=parseGap(s);return {ex:nfNoDash(g?g.full:s),exUk:ukClean(w.sent.uk||'')}}
 function dvLookup(){
   const q=String(DV.q||'').trim(),my=dvEntries();
@@ -8344,9 +8360,9 @@ function lfForms(t){if(S.lang==='da'){const o=[t];['erne','ene','ede','er','en',
 const lfOff=()=>!!(window.NF_NO_PRETEACH||((window.NF_NO_TIPS||(typeof navigator!=='undefined'&&navigator.webdriver))&&!window.NF_PRETEACH));
 const lfKnown=w=>{const x=st(w);return !!(x&&!(x.pl&&!x.lr))};
 // незнайомі слова словника в англійських текстах (лише свого рівня й нижче), найпростіші — першими
-function unknownWordsIn(texts,max){const m=lfIndex(),seen=new Set(),out=[];
+function unknownWordsIn(texts,max,skipCredited){const m=lfIndex(),seen=new Set(),out=[];
   texts.join(' ').toLowerCase().replace(/[’']s\b/g,'').split(/[^a-zæøåéü'-]+/).forEach(t=>{if(!t||LF_STOP.has(t))return;
-    for(const f of lfForms(t)){const w=m.get(f);if(w){if(!seen.has(w.id)&&!lfKnown(w)&&(typeof lvOK!=='function'||lvOK(w.lv))){seen.add(w.id);out.push(w)}break}}});
+    for(const f of lfForms(t)){const w=m.get(f);if(w){if(!seen.has(w.id)&&!lfKnown(w)&&!(skipCredited&&st(w))&&(typeof lvOK!=='function'||lvOK(w.lv))){seen.add(w.id);out.push(w)}break}}});
   return out.sort((a,b)=>LEVELS.indexOf(a.lv)-LEVELS.indexOf(b.lv)).slice(0,max||5)}
 function lfItemText(it){try{if(it.kind==='gram'){const e=it.ex;return String(e[0]).replace('___',e[1][e[2]])}
   if(it.kind==='sentb')return it.x.parts.map(p=>p[0]).join(' ')}catch(e){}return ''}
@@ -8362,7 +8378,7 @@ runSession=function(items,opts={}){try{
 // діалог: спершу незнайомі слова з реплік і варіантів відповіді
 if(typeof dialogPlay==='function'){const _dpLF=dialogPlay;dialogPlay=function(i){try{const s=dialogsFor()[i],L=s&&s.langs&&s.langs[S.lang];
   if(L&&!(window.DLG_PRE===i)){const tx=[];L.steps.forEach(st_=>{tx.push(st_.line||'');(st_.opts||[]).filter(o=>o.ok).forEach(o=>tx.push(o.t||''))});
-    const ws=unknownWordsIn(tx);if(ws.length){window.DLG_PRE=i;return preTeach(ws,()=>{_dpLF(i);window.DLG_PRE=null},'Спершу — слова з діалогу')}}}catch(e){}
+    const ws=unknownWordsIn(tx,3,true);if(ws.length){window.DLG_PRE=i; /* до 3 слів; зараховані тестом — не «нові» (14.11.2026) */return preTeach(ws,()=>{_dpLF(i);window.DLG_PRE=null},'Спершу — слова з діалогу')}}}catch(e){}
   window.DLG_PRE=null;return _dpLF.apply(this,arguments)}}
 // читання: перед першим читанням тексту — його нові слова
 if(typeof openText==='function'){const _otLF=openText;openText=function(i){try{const t=textsFor(true)[i];
@@ -9005,8 +9021,9 @@ function daAtOpenLesson(){const i=daAtLesson();if(i<0)return;document.querySelec
     try{const d=[...document.querySelectorAll('#app .gref-it')].find(x=>x.querySelector(`.gref-b[data-i="${i}"]`));if(d){const b=d.closest('.gref-blk');if(b)b.open=true;d.open=true;grefFill(i,d);d.scrollIntoView({block:'start'})}}catch(e){}}
   else grammarLesson(i)}
 function daAtClose(){document.querySelectorAll('.at-bg').forEach(x=>x.remove());S.ruleSeen=S.ruleSeen||{};S.ruleSeen.da_at=today();save()}
-on('session:start',ss=>{try{if(S.lang!=='da'||(S.ruleSeen&&S.ruleSeen.da_at)||window.NF_NO_TIPS)return;
-  if((ss&&ss.items||[]).some(i=>isDaVerb(i.w)))setTimeout(daAtSheet,50)}catch(e){}});
+// 14.11.2026: вікно з'являється, коли на екрані перше дієслово (а не на початку заняття поверх слова «godmorgen»)
+on('item:render',it=>{try{if(S.lang!=='da'||(S.ruleSeen&&S.ruleSeen.da_at)||window.NF_NO_TIPS||!it||!isDaVerb(it.w)||document.querySelector('.at-bg'))return;
+  setTimeout(()=>{if(!document.querySelector('.at-bg')&&!(S.ruleSeen&&S.ruleSeen.da_at))daAtSheet()},50)}catch(e){}});
 // вікно-правило не лишається поверх інших екранів, якщо з вправи вийшли, не закривши його (наступного разу покажеться знову)
 on('screen',()=>{try{document.querySelectorAll('.at-bg').forEach(x=>x.remove())}catch(e){}});
 
@@ -9408,7 +9425,7 @@ function phEarly(){try{return maxLv()==='A1'&&typeof nfDayNo==='function'&&nfDay
 on('planBlocks',B=>{try{if(B.some(b=>b.id==='phrases')||phEarly()||!phPool().length)return B;const long=(S.minutes||30)>=60;
   const blk={id:'phrases',s:'Фрази',t:'💬 Фрази дня',d:'готові фрази до життєвих ситуацій: послухай, зрозумій, склади',min:long?5:3};
   const di=B.findIndex(b=>b.id==='dialog');
-  if(!long){const day=typeof nfDayNo==='function'?nfDayNo():1;if(day%2===1||di<0)return B;B.splice(di,1,blk);return B}
+  if(!long){const day=typeof planDayNo==='function'?planDayNo():typeof nfDayNo==='function'?nfDayNo():1;if(Math.floor(day/2)%2===0||di<0)return B;B.splice(di,1,blk);return B} // дні розмови — парні (71_plan_fit.js): діалог і фрази чергуються через раз
   let i=di;if(i<0)i=B.findIndex(b=>b.id==='listen');if(i<0)i=B.findIndex(b=>b.id==='practice');if(i<0)i=B.findIndex(b=>b.id==='new');
   B.splice(i<0?B.length:i+1,0,blk)}catch(e){}return B});
 // на головній крок «Фрази дня» — в етапі «Нові слова»
@@ -9491,7 +9508,8 @@ function osModernize(){try{const app_=document.getElementById('app');if(!app_)re
   const b=tr.querySelector('b'),title=osTitle(b?b.textContent:''),fn=bk.getAttribute('onclick')||'home()';if(!title)return;
   const old=app_.querySelector(':scope > header');if(old)old.remove();
   app_.querySelectorAll('.lesson .num').forEach(n=>{if(/^\s*[A-Z]{2}\s*$/.test(n.textContent)&&!n.children.length)n.remove()}); // прапор, що став «DK»
-  tr.outerHTML=`<div class="nf-hd os-hd"><div><small>${esc(LANG_NAT[S.lang]||'')}${S.lang==='en'?' (US)':''} · ${typeof maxLv==='function'?maxLv():''}</small><h1>${esc(title)}</h1></div><button class="k-icon" onclick="${fn.replace(/"/g,'&quot;')}" aria-label="Назад">${icn('close')}</button></div>`}catch(e){}}
+  tr.outerHTML=`<div class="nf-hd os-hd"><div><small>${esc(LANG_NAT[S.lang]||'')}${S.lang==='en'?' (US)':''} · ${typeof maxLv==='function'?maxLv():''}</small><h1>${esc(title)}</h1></div><button class="k-icon" onclick="${fn.replace(/"/g,'&quot;')}" aria-label="Назад">${icn('close')}</button></div>`;
+  const hd=app_.querySelector(':scope > .os-hd');if(hd){const pre=[];for(let e=hd.previousElementSibling;e;e=e.previousElementSibling)pre.unshift(e);if(pre.length)hd.after(...pre)}}catch(e){}} // «Твоє небо» тощо — під заголовком, а не над ним
 (function(){try{new MutationObserver(osModernize).observe(document.getElementById('app')||document.body,{childList:true})}catch(e){}})();
 
 /* ====================== МОТИВАЦІЯ: ЦІЛЬ ТИЖНЯ І ПІДСУМОК ТИЖНЯ (14.11.2026) ======================
@@ -9637,6 +9655,69 @@ async function pvDeleteAll(){const T=PV_TXT[PV_LANG]||PV_TXT.uk;
 if(typeof stepTip==='function'){const _stepTipFL=stepTip;stepTip=function(id){_stepTipFL.apply(this,arguments);try{
   if(id!=='new'||typeof isFirstStudyDay!=='function'||!isFirstStudyDay())return;
   document.querySelectorAll('#app .st-pts,#app .st-ex').forEach(x=>x.remove())}catch(e){}}}
+
+/* ====================== ПЛАН ДНЯ ВКЛАДАЄТЬСЯ В 30 ХВ · ЗАРАХОВАНІ СЛОВА ПОТРОХУ (14.11.2026, рішення користувача) ======================
+   1) План на 30 хв раніше виходив на 38–41 хв (за власними оцінками застосунку). Тепер у режимі 30 хв:
+      щодня — повтор, нові слова (кількість не змінено), закріплення, слухання, правило;
+      непарний день занять («день читання») — текст; парний («день розмови») — діалог або фрази + короткий текст або переклад.
+      Далі додається все, що ще вміщається в 30 хв (на C1–C2 у день читання є ще й діалог). Нічого не зникає — просто не все в один день.
+      День занять — planDayNo(): кількість днів із виконаним планом ДО сьогодні + 1 (не змінюється, коли сьогоднішній план закрито).
+      Режим 60 хв і тести з NF_KEEP_ORDER / NF_PLAN_FULL — без змін.
+   2) Слова нижчих рівнів, зараховані тестом рівня чи підняттям рівня (st.pl без st.lr), приходять на перевірку не всі за 21 день
+      (це було 35–150 повторень щодня), а приблизно по PF_CREDIT_DAY на день. На екранах вони рахуються як відомі («зараховано тестом»). */
+const PF_CREDIT_DAY=10,PF_CORE=['review','new','practice','listen','grammar'],PF_TALK=['dialog','phrases','write','transl'];
+function planDayNo(){try{const D=((S.doneLog||{})[S.lang])||{},t=today();return Object.keys(D).filter(k=>D[k]&&k!==t).length+1}catch(e){return 1}}
+const pfMin=b=>typeof nfMin==='function'?nfMin(b):(b.min||0);
+on('planBlocks',B=>{try{if((S.minutes||30)>=60||window.NF_KEEP_ORDER||window.NF_PLAN_FULL)return B;
+  const readDay=planDayNo()%2===1,bandA=typeof lvBand==='function'&&lvBand()==='A';
+  B.forEach(b=>{if(b.id==='new')b.min=Math.round(3+(typeof newPerDay==='function'?newPerDay():10)*.3); // 5 слів → 5 хв, 10 → 6, 15 → 8, 20 → 9: більше слів — менше місця для іншого
+    if(b.id==='practice')b.min=Math.min(b.min||3,3);
+    else if(b.id==='listen')b.min=bandA&&readDay?3:2;else if(b.id==='grammar')b.min=Math.min(b.min||4,readDay?4:3)});
+  const core=B.filter(b=>PF_CORE.includes(b.id)),rest=B.filter(b=>!PF_CORE.includes(b.id));
+  const first=rest.filter(b=>readDay?b.id==='read':PF_TALK.includes(b.id)),ord=first.concat(rest.filter(b=>!first.includes(b)));
+  let tot=core.reduce((a,b)=>a+pfMin(b),0);const keep=new Set(core);
+  ord.forEach((b,i)=>{if(!i||tot+pfMin(b)<=30){keep.add(b);tot+=pfMin(b)}});
+  return B.filter(b=>keep.has(b))}catch(e){return B}});
+
+/* ---------- зараховані слова ---------- */
+const pfCredited=w=>{const x=st(w);return !!(x&&x.pl&&!x.lr)};
+function creditedCount(){try{return WORDS.filter(w=>w[S.lang]&&!w.my&&pfCredited(w)).length}catch(e){return 0}}
+// розкласти ще не перевірені зараховані слова так, щоб на день припадало ≈ PF_CREDIT_DAY (перший — завтра); простіші рівні — раніше
+function creditSpread(lang){const L=lang||S.lang,srs=(S.srs||{})[L]||{};
+  WORDS.forEach(w=>{const x=srs[w.id];if(x&&x.pl&&!x.lr&&!w[L])delete srs[w.id]}); // тест зараховував і слова без форми цією мовою (тема UK/US у данській) — прибираємо
+  const ws=WORDS.filter(w=>w[L]&&!w.my&&srs[w.id]&&srs[w.id].pl&&!srs[w.id].lr);if(!ws.length)return 0;
+  const byLv={};ws.forEach(w=>(byLv[w.lv]=byLv[w.lv]||[]).push(w));
+  const order=LEVELS.flatMap(l=>shuffle(byLv[l]||[]));
+  order.forEach((w,i)=>{srs[w.id].due=addDays(1+Math.floor(i/PF_CREDIT_DAY))});return ws.length}
+{const _pa=placementApply;placementApply=function(lvl,mark,next){const r=_pa.call(this,lvl,mark,next?()=>{try{creditSpread();save()}catch(e){}return next()}:undefined);
+  if(!next){try{creditSpread();save()}catch(e){}}return r}}
+if(typeof luApply==='function'){const _lu=luApply;luApply=function(){const r=_lu.apply(this,arguments);try{creditSpread();save()}catch(e){}return r}}
+// ті, хто вже пройшов тест раніше: один раз перерозкласти (лише пізніше, ніж було; уже прострочені лишаються — не більше PF_CREDIT_DAY на день далі)
+on('home:after',()=>{try{S.pfFix=S.pfFix||{};if(S.pfFix[S.lang])return;S.pfFix[S.lang]=1;
+  const n=creditedCount();if(n>PF_CREDIT_DAY*21||WORDS.some(w=>!w[S.lang]&&(S.srs[S.lang][w.id]||{}).pl))creditSpread();save()}catch(e){}});
+// «N слів знаєш» = вивчені тут + зараховані тестом; на «Прогресі» — пояснення
+on('home:after',()=>{try{const c=creditedCount();if(!c)return;const sm=document.querySelector('#app .nf-lv small');if(!sm||sm.dataset.pf)return;sm.dataset.pf=1;
+  const known=WORDS.filter(w=>w[S.lang]&&learned(w)).length+c;
+  sm.firstChild&&sm.firstChild.nodeType===3&&(sm.firstChild.textContent=sm.firstChild.textContent.replace(/^\d+\s+\S+\s+знаєш/,`${known} ${pluralUk(known,['слово','слова','слів'])} знаєш`))}catch(e){}});
+function pfDecorate(){try{if(!document.querySelector('#app .nf-chips .ok, #app .summary'))return;const c=creditedCount();if(!c)return;
+  const chip=[...document.querySelectorAll('#app .nf-chips .ok')].find(x=>/знаєш/.test(x.textContent));
+  if(chip&&!chip.dataset.pf){chip.dataset.pf=1;const known=WORDS.filter(w=>w[S.lang]&&learned(w)).length+c;
+    const tn=[...chip.childNodes].find(n=>n.nodeType===3&&/знаєш/.test(n.textContent));if(tn)tn.textContent=` ${known} ${pluralUk(known,['слово','слова','слів'])} знаєш`}
+  const sum=document.querySelector('#app .summary');
+  if(sum&&!document.querySelector('#app .pf-note')){const cells=sum.querySelectorAll('div');
+    if(cells[1]){const b=cells[1].querySelector('b'),n=parseInt(b&&b.textContent,10);if(b&&n>=c)b.textContent=n-c}
+    sum.insertAdjacentHTML('afterend',`<p class="pf-note">${icn('check')} <span><b>${c}</b> ${pluralUk(c,['слово','слова','слів'])} нижчих рівнів зараховано тестом. Вони приходитимуть на перевірку потроху — близько ${PF_CREDIT_DAY} на день.</span></p>`)}}catch(e){}}
+(function(){try{new MutationObserver(pfDecorate).observe(document.getElementById('app')||document.body,{childList:true})}catch(e){}})();
+
+/* ---------- 15+ нових слів на день при плані 30 хв: спитати, чи перемкнути план на 60 хв (14.11.2026, рішення користувача — питати, а не перемикати мовчки) ---------- */
+function pfAskTime(n){pfAskClose();
+  document.body.insertAdjacentHTML('beforeend',`<div class="rt-sheet-bg on pf-bg" onclick="pfAskClose()"><div class="rt-sheet" role="dialog" aria-modal="true" aria-label="Час на день" onclick="event.stopPropagation()"><span class="rt-grab" aria-hidden="true"></span>
+    <small>ЧАС НА ДЕНЬ</small><h2>${n} слів краще вчити з планом на 60 хвилин</h2>
+    <p>За 30 хвилин ${n} нових слів займуть більшу частину заняття, і на читання, діалоги й письмо лишиться мало часу. Кожне нове слово потім ще 8–10 разів повертається на повторення.</p>
+    <button class="btn big nf-cta" onclick="pfAskYes()">Так, план на 60 хв</button><button class="btn ghost" onclick="pfAskClose()">Залишити 30 хв</button></div></div>`)}
+function pfAskYes(){S.minutes=60;save();pfAskClose();toast('План перемкнено на 60 хв');if(typeof REDRAW==='function'&&REDRAW===settingsScreen)settingsScreen()}
+function pfAskClose(){document.querySelectorAll('.pf-bg').forEach(x=>x.remove())}
+{const _snp=setNewPerDay;setNewPerDay=function(n){const r=_snp.apply(this,arguments);try{if(n>10&&(S.minutes||30)<60&&!window.NF_NO_TIPS)pfAskTime(n)}catch(e){}return r}}
 
 bootApp();bigLoad();
 </script>

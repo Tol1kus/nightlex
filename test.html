@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; font-src 'self' data:; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="theme-color" content="#19181B">
+<title>Nightlex — тест на 7 днів</title>
+<!-- Сторінка для тестувальників (14.11.2026): інструкція, план на 7 днів, анкета. Нічого нікуди не надсилає:
+     відповіді зберігаються лише в цьому браузері (localStorage) і копіюються/надсилаються самим тестувальником. -->
+<style>
+@font-face{font-family:'Golos Text';font-weight:400 800;font-display:swap;src:url(fonts/golos-text-cyrillic.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'Golos Text';font-weight:400 800;font-display:swap;src:url(fonts/golos-text-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Unbounded';font-weight:600 800;font-display:swap;src:url(fonts/unbounded-cyrillic.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:'Unbounded';font-weight:600 800;font-display:swap;src:url(fonts/unbounded-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+:root{--bg:#19181B;--card:#232127;--line:#37343C;--ink:#F3F0F5;--mut:#A9A3B0;--acc:#FFA5B8;--acc-ink:#2A1A20}
+@media (prefers-color-scheme:light){:root{--bg:#EEE8EA;--card:#FCFAFB;--line:#DCD3D7;--ink:#1D1A1F;--mut:#615A66;--acc:#B8436A;--acc-ink:#fff}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 'Golos Text',-apple-system,system-ui,sans-serif}
+main{max-width:640px;margin:0 auto;padding:28px 16px 80px}
+h1{font:800 30px/1.15 Unbounded,sans-serif;margin:6px 0 10px}
+h2{font:700 19px/1.25 Unbounded,sans-serif;margin:0 0 10px}
+.kick{color:var(--mut);font-size:14px}
+.lead{font-size:17px}
+section{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px;margin:14px 0}
+.note{border-left:3px solid var(--acc);padding:2px 0 2px 12px;color:var(--mut);font-size:15px}
+a{color:var(--acc)}
+.cta{display:block;text-align:center;background:var(--acc);color:var(--acc-ink);text-decoration:none;font-weight:700;border-radius:16px;padding:15px;margin:14px 0 4px;font-size:17px}
+ol,ul{padding-left:22px;margin:8px 0}li{margin:5px 0}
+.day{display:grid;grid-template-columns:44px 1fr;gap:4px 10px;padding:10px 0;border-top:1px solid var(--line)}
+.day:first-of-type{border-top:0}.day b.n{font:700 20px Unbounded,sans-serif;color:var(--acc)}.day small{color:var(--mut);display:block}
+label.q{display:block;font-weight:600;margin:16px 0 6px}
+textarea,input[type=text]{width:100%;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:12px;padding:10px;font:inherit;min-height:44px}
+textarea{min-height:76px;resize:vertical}
+.scale{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
+.scale.wide{grid-template-columns:repeat(6,1fr)}
+.scale label{text-align:center}
+.scale input{position:absolute;opacity:0;pointer-events:none}
+.scale span{display:block;border:1px solid var(--line);border-radius:10px;padding:9px 0;cursor:pointer;min-width:34px}
+.scale input:checked+span{background:var(--acc);color:var(--acc-ink);border-color:var(--acc);font-weight:700}
+.scale input:focus-visible+span{outline:2px solid var(--acc);outline-offset:2px}
+.ends{display:flex;justify-content:space-between;color:var(--mut);font-size:13px;margin-top:4px}
+button.send{width:100%;border:0;background:var(--acc);color:var(--acc-ink);font:700 17px 'Golos Text',sans-serif;border-radius:16px;padding:15px;margin-top:18px;cursor:pointer}
+#ok{color:var(--mut);font-size:14px;text-align:center;min-height:20px;margin-top:8px}
+</style>
+</head>
+<body>
+<main>
+<div class="kick">Nightlex · для тестувальників</div>
+<h1>Тест на 7 днів</h1>
+<p class="lead">Дякуємо, що допомагаєш! Протягом 7 днів займайся в Nightlex 10–20 хвилин на день, а потім заповни анкету внизу цієї сторінки (5 хвилин).</p>
+<p>Nightlex — застосунок для українців, які вчать американську англійську або данську: слова з повторенням у потрібний момент, граматика, читання, діалоги й слухання. Чесна критика нам корисніша за похвалу.</p>
+<p class="note">Слова, речення й переклади створила модель штучного інтелекту, носії мови їх ще не перевіряли. Помітиш помилку в мові — це саме те, що ми шукаємо.</p>
+<a class="cta" href="./">Відкрити Nightlex</a>
+
+<section>
+<h2>Як почати</h2>
+<ol>
+<li>Відкрий <a href="./">tol1kus.github.io/nightlex</a> на телефоні — у Safari (iPhone) або Chrome (Android).</li>
+<li>Додай на екран «Додому», щоб застосунок відкривався як звичайний і працював без інтернету:<br>iPhone — «Поділитися» → «На екран Додому»; Android — меню ⋮ → «Додати на головний екран».</li>
+<li>Обери мову: англійська (US) або данська.</li>
+<li>Трохи знаєш мову — пройди тест рівня (10–12 хв). Зовсім з нуля — натисни «Я зовсім новачок».</li>
+<li>Обери мету і починай «День 1». Увімкни звук — слова озвучуються.</li>
+</ol>
+</section>
+
+<section>
+<h2>План на 7 днів</h2>
+<p>Щодня — план дня на вкладці «Сьогодні» (кнопка «Почати»), а потім одне додаткове завдання. Пропустив(ла) день — нічого страшного, просто продовжуй.</p>
+<div class="day"><b class="n">1</b><div>Лише план дня<small>Чи зрозуміло, що робити з першої хвилини? Скільки часу це забрало?</small></div></div>
+<div class="day"><b class="n">2</b><div>«Словник»: знайди слово і додай своє<small>Чи легко додати слово? Чи правильний переклад?</small></div></div>
+<div class="day"><b class="n">3</b><div>«Шлях» → «Граматика»: одне правило<small>Чи зрозуміле пояснення? Чи вистачає прикладів?</small></div></div>
+<div class="day"><b class="n">4</b><div>«Читання»: один текст свого рівня<small>Чи підходить складність? Чи допомагає дотик до слова?</small></div></div>
+<div class="day"><b class="n">5</b><div>«Розмова» → «Діалоги»: один діалог<small>Чи схоже на справжнє життя? Чи корисні пояснення помилок?</small></div></div>
+<div class="day"><b class="n">6</b><div>«Я» → «Прогрес»; спробуй світлу тему (сонце вгорі головної)<small>Чи видно, що ти чогось навчився(лась)?</small></div></div>
+<div class="day"><b class="n">7</b><div>План дня і анкета нижче<small>Чи хочеться займатися далі?</small></div></div>
+</section>
+
+<section>
+<h2>Якщо щось не так</h2>
+<p>Зроби знімок екрана і надішли тому, хто дав тобі посилання, з одним реченням: що ти робив(ла) і що пішло не так. Особливо цікаві помилки в мові, місця, де незрозуміло, що натиснути, неправильно зараховані відповіді й екрани, що зависли чи не вмістилися.</p>
+</section>
+
+<section id="survey">
+<h2>Анкета після 7 днів</h2>
+<p class="kick">Відповіді зберігаються лише в цьому браузері, доки ти їх не надішлеш.</p>
+<label class="q" for="q1">1. Яку мову вчив(ла), з якого рівня почав(ла), скільки днів із 7 займався(лась)?</label>
+<input type="text" id="q1" data-q="1. Мова, рівень, днів із 7">
+<label class="q">2. Наскільки зрозуміло було, що робити кожного дня?</label>
+<div class="scale" data-name="q2" data-q="2. Зрозумілість (1–5)" data-from="1" data-to="5"></div><div class="ends"><span>зовсім незрозуміло</span><span>дуже зрозуміло</span></div>
+<label class="q" for="q3">3. Де ти заплутався(лась) або застряг(ла) хоча б раз? Що сталося?</label>
+<textarea id="q3" data-q="3. Де заплутався(лась)"></textarea>
+<label class="q" for="q4">4. Що сподобалося найбільше? А що було нудним, задовгим або зайвим?</label>
+<textarea id="q4" data-q="4. Сподобалось / нудно"></textarea>
+<label class="q" for="q5">5. Чи помітив(ла) помилки в мові або в перекладах? Які?</label>
+<textarea id="q5" data-q="5. Помилки в мові"></textarea>
+<label class="q">6. Наскільки ймовірно, що ти продовжиш займатися ще місяць?</label>
+<div class="scale" data-name="q6" data-q="6. Продовжу ще місяць (0–10)" data-from="0" data-to="10"></div><div class="ends"><span>точно ні</span><span>точно так</span></div>
+<label class="q" for="q6w">Чому саме стільки?</label>
+<textarea id="q6w" data-q="6. Чому"></textarea>
+<label class="q" for="q7">7. Якби ти міг(могла) змінити одну річ у застосунку — що це було б?</label>
+<textarea id="q7" data-q="7. Одна зміна"></textarea>
+<label class="q" for="q8">Додатково: телефон, інші застосунки для мов (Duolingo тощо) — чим Nightlex кращий чи гірший?</label>
+<textarea id="q8" data-q="8. Телефон і порівняння"></textarea>
+<button class="send" id="send" type="button">Надіслати відповіді</button>
+<div id="ok" role="status"></div>
+</section>
+
+<section>
+<h2>Твої дані</h2>
+<p>Увесь прогрес зберігається лише на твоєму телефоні: без реєстрації, реклами й аналітики. Ми не бачимо твоїх відповідей — лише те, що ти сам(а) надішлеш. Копія прогресу і видалення — «Налаштування» → «Дані» → «Приватність».</p>
+<p>Дякуємо за час і чесність!</p>
+</section>
+</main>
+<script>
+(function(){
+  const KEY='nightlex-test-survey';let saved={};try{saved=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){}
+  const store=()=>{try{const o={};document.querySelectorAll('[data-q]').forEach(el=>{o[el.id||el.dataset.name]=val(el)});localStorage.setItem(KEY,JSON.stringify(o))}catch(e){}};
+  document.querySelectorAll('.scale').forEach(sc=>{const n=sc.dataset.name;if(+sc.dataset.to-+sc.dataset.from>5)sc.classList.add('wide');for(let i=+sc.dataset.from;i<=+sc.dataset.to;i++){
+    const l=document.createElement('label');const r=document.createElement('input');r.type='radio';r.name=n;r.value=i;r.setAttribute('aria-label',String(i));if(String(saved[n])===String(i))r.checked=true;
+    const s=document.createElement('span');s.textContent=i;l.append(r,s);sc.append(l)}});
+  document.querySelectorAll('input[type=text],textarea').forEach(el=>{if(saved[el.id])el.value=saved[el.id]});
+  function val(el){if(el.classList.contains('scale')){const c=el.querySelector('input:checked');return c?c.value:''}return el.value.trim()}
+  document.addEventListener('input',store);document.addEventListener('change',store);
+  document.getElementById('send').addEventListener('click',async()=>{
+    const lines=['Nightlex — анкета після 7 днів',''];document.querySelectorAll('[data-q]').forEach(el=>{lines.push(el.dataset.q+': '+(val(el)||'—'))});
+    const text=lines.join('\n'),ok=document.getElementById('ok');
+    try{if(navigator.share){await navigator.share({title:'Nightlex — анкета',text});ok.textContent='Дякуємо! Відповіді надіслано.';return}}catch(e){if(e&&e.name==='AbortError')return}
+    try{await navigator.clipboard.writeText(text);ok.textContent='Відповіді скопійовано — встав їх у повідомлення тому, хто дав посилання.'}
+    catch(e){const t=document.createElement('textarea');t.value=text;document.body.append(t);t.select();try{document.execCommand('copy');ok.textContent='Відповіді скопійовано — встав їх у повідомлення.'}catch(x){ok.textContent='Не вдалося скопіювати — виділи відповіді вручну.'}t.remove()}
+  });
+})();
+</script>
+</body>
+</html>

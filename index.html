@@ -7450,8 +7450,9 @@ function ptResult(){PX.done=true;
     const W=[[],[]];let n=0;for(const t of ts){const k=Math.floor(n/(daily*7));if(k>1)break;W[k].push(t.name);n+=themeWordsNS(t).length}return W}catch(e){return [[],[]]}})();
   const wkTxt=(a,fb)=>a.length?a.slice(0,3).join(', ')+(a.length>3?` і ще ${a.length-3}`:''):fb;
   const w1=wkTxt(wk[0],'теми рівня '+lvl),w2=wkTxt(wk[1],'нові теми');
-  const cap=a=>a.map((x,i)=>i?x[1].toLowerCase():x[1]).join(' й ');
-  const tip=strong.length&&weak.length?`${cap(strong)} вже вище ${lvl}, а <strong>${weak.map(x=>x[1].toLowerCase()).join(' й ')}</strong> тягнуть униз. Перші 2 тижні в плані буде більше цього.`
+  const lst=a=>a.length>1?a.slice(0,-1).join(', ')+' й '+a[a.length-1]:a.join(''); // «Граматика, читання й слухання», а не «й … й»
+  const cap=a=>lst(a.map((x,i)=>i?x[1].toLowerCase():x[1]));
+  const tip=strong.length&&weak.length?`${cap(strong)} вже вище ${lvl}, а <strong>${lst(weak.map(x=>x[1].toLowerCase()))}</strong> тягнуть униз. Перші 2 тижні в плані буде більше цього.`
     :weak.length?`<strong>${cap(weak)}</strong> поки нижче за загальний рівень. Перші 2 тижні в плані буде більше цього.`
     :strong.length?`${cap(strong)} вже сильніші за загальний рівень — план додасть складніших текстів.`:`Усі навички приблизно на рівні ${lvl} — рівний старт.`;
   const right=L.filter(x=>x.ok).length;
@@ -7531,7 +7532,8 @@ function nfOrbitHTML(){const W=nfOrbitWords();return `<div class="ds-orbit nf-or
 
 /* ---------- «День N» = пройдені плани + 1 (а не дати з активністю) ----------
    Тест і перші вправи — це ще день 1; «День 2» з'являється лише після всіх кроків плану дня 1. */
-function nfDayNo(){const D=((S.doneLog||{})[S.lang])||{};return Object.keys(D).filter(k=>D[k]).length+1}
+// 15.11.2026: сьогоднішній день не рахується — інакше щойно план виконано, «День 1» ставав «Днем 2» і повертав у план порожній крок «Повторення»
+function nfDayNo(){const D=((S.doneLog||{})[S.lang])||{},t=today();return Object.keys(D).filter(k=>D[k]&&k!==t).length+1}
 
 /* ---------- слова на орбіті «EN» змінюються по черзі ---------- */
 const NF_ORBIT_BASE=['hello','color','subway','the check','awesome','to go','apartment','sidewalk','cookie','elevator','vacation','downtown','fries','sneakers','zip code','gas station','candy','fall','trash','line','pharmacy','movie','soccer','highway','mailbox','grocery store','check in','roommate'];
@@ -8427,7 +8429,7 @@ function preTeach(ws,go,title){if(!ws.length||lfOff())return go();
 let LF_RUN=runSession;
 runSession=function(items,opts={}){try{
   if(!opts._lf&&Array.isArray(items)&&items.length&&items.some(it=>it&&(it.kind==='gram'||it.kind==='sentb'))&&!items[0].test){
-    const ws=unknownWordsIn(items.map(lfItemText));
+    const ws=unknownWordsIn(items.map(lfItemText),5,true); // зараховані тестом рівня слова — не «нові» (15.11.2026)
     if(ws.length)return preTeach(ws,()=>LF_RUN(items,Object.assign({},opts,{_lf:1})))}}catch(e){}
   return LF_RUN.call(this,items,opts)};
 // діалог: спершу незнайомі слова з реплік і варіантів відповіді

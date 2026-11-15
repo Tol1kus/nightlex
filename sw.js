@@ -1,8 +1,8 @@
 // Service worker Nightlex: офлайн-доступ. Сторінка — «спершу мережа» з обходом HTTP-кешу браузера (cache:'no-cache' → звірка з сервером),
 // щоб нова версія приходила одразу; картинки, звук і дані з хешем у назві (data/core.<хеш>.js, data/more.<хеш>.js — незмінні) — з кешу.
 // Встановлення (14.11.2026): не качає заново те, що сторінка щойно завантажила — index.html лише звіряється (304), файли з хешем беруться з HTTP-кешу.
-const CACHE='lingvo-c73e116bab';
-const HASHED=["data/core.d310806db1.js", "data/more.40b6bfa80f.js", "fonts/golos-text-cyrillic.woff2", "fonts/golos-text-latin-ext.woff2", "fonts/golos-text-latin.woff2", "fonts/unbounded-cyrillic.woff2", "fonts/unbounded-latin-ext.woff2", "fonts/unbounded-latin.woff2"];
+const CACHE='lingvo-e2f98531b3';
+const HASHED=["data/core.0264b4a9c5.js", "data/more.4154635471.js", "fonts/golos-text-cyrillic.woff2", "fonts/golos-text-latin-ext.woff2", "fonts/golos-text-latin.woff2", "fonts/unbounded-cyrillic.woff2", "fonts/unbounded-latin-ext.woff2", "fonts/unbounded-latin.woff2"];
 const CORE=['./','index.html','manifest.json','icon-192.png','icon-512.png','data/sent_A1.json','data/sent_A2.json','data/sent_B1.json','data/sent_B2.json','data/sent_C1.json','data/sent_C2.json'];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>Promise.all([
   c.addAll(CORE.map(u=>new Request(u,{cache:'no-cache'}))),c.addAll(HASHED)])).then(()=>self.skipWaiting()))});

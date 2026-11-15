@@ -3017,7 +3017,6 @@ body:has(#app .sky-ob)::after,body:has(#app .sky-gd)::after{background:var(--bg)
 .ds-res.sky-ob .ds-sbar{background:repeating-linear-gradient(90deg,var(--s2) 0 calc(20% - 2px),transparent calc(20% - 2px) 20%)!important;border-radius:6px;height:8px}
 .ds-res.sky-ob .ds-sbar i{background:var(--btn-grad)!important;border-radius:6px}
 .ds-res.sky-ob .ds-tipb{border-radius:20px;align-items:center}
-.ds-res.sky-ob .ds-card:has(.ds-wk){background:none;border:0;padding:0;box-shadow:none}
 .ds-res.sky-ob .ds-wk>div{border-radius:22px;background:var(--glass-bg);border:1px solid var(--line);padding:12px 14px 14px}
 .ds-res.sky-ob .ds-wk strong{font-family:var(--serif);font-weight:700;font-size:16px;line-height:1.25}
 .sky-mini{display:block;width:100%;height:auto;max-width:140px;margin-bottom:6px}
@@ -3163,10 +3162,7 @@ body:has(#app > .nf-top)::after,body:has(#app .sky-pt)::after{background:var(--s
 #app .nf-sentcard .gap,#app .nf-sentcard .blank{border-bottom:2px solid var(--lime-t)!important;background:none!important;color:var(--lime-t)}
 #app input.answer{border-radius:16px!important;border:1.5px solid var(--lime-t)!important;background:var(--s1)!important;font-family:var(--serif);font-size:20px!important}
 /* слухання */
-#app .nf-listen-hd{display:flex;flex-direction:column;align-items:center;gap:12px}
-#app .nf-listen-hd .nf-play{width:132px!important;height:132px!important;border-radius:50%!important;border:0!important;color:#1F1E21!important;
-  background:radial-gradient(circle at 40% 35%,#fff,color-mix(in srgb,var(--lime) 60%,#fff) 70%)!important;box-shadow:0 0 0 14px color-mix(in srgb,var(--lime) 12%,transparent),0 0 0 30px color-mix(in srgb,var(--lime) 6%,transparent),0 0 50px color-mix(in srgb,var(--lime) 35%,transparent)!important;margin:26px 0 14px}
-#app .nf-listen-hd .nf-play svg{width:42px;height:42px}
+#app .nf-listen-hd .nf-play{border:0!important;color:#1F1E21!important;background:radial-gradient(circle at 40% 35%,#fff,color-mix(in srgb,var(--lime) 60%,#fff) 70%)!important;box-shadow:0 0 0 10px color-mix(in srgb,var(--lime) 10%,transparent),0 0 30px color-mix(in srgb,var(--lime) 30%,transparent)!important}
 .sky-lchips{display:flex;gap:8px;justify-content:center}
 .sky-chipb{display:inline-flex;align-items:center;gap:6px;min-height:36px;padding:0 14px;border-radius:999px;background:var(--glass-bg);border:1px solid var(--glass-bd);color:var(--ink);font:inherit;font-size:13px;font-weight:700;cursor:pointer}
 .sky-chipb svg{width:14px;height:14px}
@@ -3213,13 +3209,13 @@ html body #app .sky-lring .nf-play{margin:0!important;box-shadow:0 0 50px color-
 #app .opt.ok::after{background:var(--ok);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center/contain no-repeat}
 #app .opt.bad::after{background:var(--bad);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.6' stroke-linecap='round'%3E%3Cpath d='M6 6l12 12M18 6L6 18'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.6' stroke-linecap='round'%3E%3Cpath d='M6 6l12 12M18 6L6 18'/%3E%3C/svg%3E") center/contain no-repeat}
 #app .opt.bad{background:color-mix(in srgb,var(--bad) 12%,var(--s1))!important}#app .opt.ok{background:color-mix(in srgb,var(--ok) 10%,var(--s1))!important}
-#app .opt{text-align:left;padding-right:44px!important;min-height:56px;font-size:17px}
+#app .opt{padding-right:40px!important}
 #app .nf-pt.ok::after,#app .nf-pt.bad::after{top:18px;margin-top:0}
 /* відгук — аркуш знизу (макет) */
-html body #app #fb:has(> .feedback.ok){position:fixed;left:0;right:0;bottom:0;z-index:30;max-height:64vh;overflow:auto;margin:0;padding:18px 16px calc(16px + env(safe-area-inset-bottom,0px));
+html body #app #fb:has(> .feedback.ok.sky-sheet-off){position:fixed;left:0;right:0;bottom:0;z-index:30;max-height:64vh;overflow:auto;margin:0;padding:18px 16px calc(16px + env(safe-area-inset-bottom,0px));
   background:var(--s1);border-radius:28px 28px 0 0;border-top:1px solid var(--line);box-shadow:0 -14px 40px rgba(0,0,0,.28)}
 html body #app #fb > .feedback{background:none!important;border:0!important;box-shadow:none!important;padding:0!important;margin:0!important}
-#app:has(#fb > .feedback.ok){padding-bottom:30vh}
+
 .sky-fbh{display:flex;align-items:center;gap:10px;margin-bottom:4px}
 .sky-fbh b{font-family:var(--serif);font-weight:700;font-size:20px;color:var(--bad)}
 .sky-fbi{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:color-mix(in srgb,var(--bad) 14%,transparent);color:var(--bad)}.sky-fbi svg{width:18px;height:18px}
@@ -3228,7 +3224,6 @@ html body #app #fb > .feedback.bad,html body #app #fb > .k-mistake{border-radius
 #app .feedback .listen-ans .pic,#app .feedback .listen-ans > span:first-child:not(:only-child){width:44px;height:44px;flex:none;border-radius:12px;overflow:hidden}
 html body #app .sky-lring .nf-play{display:grid!important;place-items:center!important;position:relative!important;padding:0!important}
 html body #app .sky-lring .nf-play svg{position:static!important;width:46px!important;height:46px!important;margin-left:6px;transform:none!important}
-#app .nf-ex:has(.nf-listen-hd) .nf-optgrid:not(.nf-ptgrid){grid-template-columns:1fr!important;display:grid;gap:10px}
 html body #app #fb:has(> .feedback.ok) .btn{background:var(--ok)!important;color:#0F1A12!important;border:0!important;border-radius:20px!important;min-height:54px}
 /* склади речення (макет SKY-ex-build) */
 #app .build-head{display:flex;align-items:center;gap:12px}
@@ -3301,9 +3296,56 @@ body:has(#app .dv-hd)::after,body:has(#app .sky-me)::after,body:has(#app .rd-top
 #app .bub-tr{font-size:12.5px;color:var(--mut)}
 #app .lt-chip{font-family:var(--serif);font-style:italic;border-radius:999px!important}
 #app > .nf-hd.sky-mehd{display:none}
-#dvList details > summary b{font-family:var(--serif)}
-#dvList details .dv-row{background:none!important;border:0!important;border-bottom:1px solid var(--line)!important;border-radius:0!important;box-shadow:none!important}
-#dvList details .dv-row:last-child{border-bottom:0!important}
+/* --- SKY · «Сьогодні» v2 (рішення автора 15.11): смуга неба над старою головною, старі картки — у скляному стилі --- */
+#app > .sky-band{position:relative;margin:calc(-16px - env(safe-area-inset-top,0px)) -16px 4px;height:calc(150px + env(safe-area-inset-top,0px));background:var(--sky-grad);overflow:hidden;color:var(--sky-ink)}
+#app > .sky-band .sky-bg{position:absolute;left:0;right:0;bottom:0;width:100%;height:230px;display:block}
+#app > .sky-band::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:24px;background:var(--bg);border-radius:24px 24px 0 0}
+#app > .sky-band .sky-tap{top:calc(62px + env(safe-area-inset-top,0px));height:70px;z-index:0}
+#app > .sky-band .sky-hd{z-index:1}
+#app > .sky-band ~ .nf-hd{display:none}
+body.sky-home #app :is(.nf-step,.nf-stages,.nf-lv,.wg-card,.sk-mini,.k-test,.lu-card,.dsum,.pm-card,.ws-card,.nf-ep,.nf-blist){border-radius:22px!important;background:var(--glass-bg)!important;border:1px solid var(--glass-bd)!important;box-shadow:none!important}
+:root[data-theme="light"] body.sky-home #app :is(.nf-step,.nf-stages,.nf-lv,.wg-card,.sk-mini,.k-test,.lu-card,.dsum,.pm-card,.ws-card,.nf-ep,.nf-blist){background:var(--s1)!important;border-color:var(--line)!important}
+body.sky-home #app .nf-step-t{font-family:var(--serif)!important;font-weight:700!important;letter-spacing:-.01em}
+body.sky-home #app .nf-cta{background:var(--btn-grad)!important;color:var(--btn-ink)!important;border:0!important;border-radius:20px!important}
+body.sky-home #app .nf-eyebrow{color:var(--lime-t)}
+body.sky-home #app .nf-stg{background:none!important;border:0!important;box-shadow:none!important}
+body.sky-home #app .nf-stg + .nf-stg{border-top:1px solid var(--line)!important;border-radius:0!important}
+/* --- SKY · «Небо» v2: старий «Шлях» у скляному стилі + смуга «Карта неба» --- */
+body:has(#app .sky-pband)::after{background:var(--sky-band)}
+#app:has(.sky-pband) .rt-hd h1{font-family:var(--serif);font-weight:700;letter-spacing:-.01em}
+.sky-pband{position:relative;display:flex;align-items:center;gap:10px;width:100%;min-height:76px;margin:6px 0 10px;padding:0 14px 0 16px;border-radius:22px;overflow:hidden;cursor:pointer;
+  background:var(--sky-grad);border:1px solid var(--glass-bd);color:var(--sky-ink);font:inherit;text-align:left}
+.sky-pband>svg{position:absolute;inset:0;width:100%;height:100%;opacity:.9}
+.sky-pb-t{position:relative;display:flex;flex-direction:column;margin-right:auto}.sky-pb-t b{font-family:var(--serif);font-size:19px}.sky-pb-t small{font-size:12.5px;color:var(--sky-mut)}
+.sky-pband>i{position:relative;width:40px;height:40px;border-radius:14px;display:grid;place-items:center;background:var(--glass-bg);border:1px solid var(--glass-bd)}.sky-pband>i svg{width:18px;height:18px}
+#app:has(.sky-pband) :is(.bk-card,.pseg,.rt-card){background:var(--glass-bg)!important;border:1px solid var(--glass-bd)!important;box-shadow:none!important}
+:root[data-theme="light"] #app:has(.sky-pband) :is(.bk-card,.pseg,.rt-card){background:var(--s1)!important;border-color:var(--line)!important}
+#app:has(.sky-pband) .bk-card .bk-t b{font-family:var(--serif)}
+.sky-maphd{display:flex;align-items:center;gap:12px}
+.sky-maphd .back{width:44px;height:44px;border-radius:14px;background:var(--glass-bg);border:1px solid var(--glass-bd);color:var(--sky-ink);flex:none}
+#app:has(.sky-pband) .bk-card.cur{border:1.5px solid var(--lime-t)!important}
+#app .sky-maphd{justify-content:flex-start!important;text-align:left}#app .sky-maphd h1{font-family:var(--serif);font-weight:700;font-size:28px;color:var(--sky-ink)}
+/* --- SKY · картка слова v2: стара картка K02 у скляному стилі + свайп --- */
+#app .nf-word .nf-wcard.sky-oldcard{border-radius:28px!important;background:var(--glass-bg)!important;border:1px solid var(--glass-bd)!important;box-shadow:0 18px 44px rgba(0,0,0,.22)!important;touch-action:pan-y;transition:transform .25s}
+:root[data-theme="light"] #app .nf-word .nf-wcard.sky-oldcard{background:rgba(255,255,255,.86)!important;border-color:var(--line)!important}
+#app .nf-word .nf-wcard.sky-oldcard[data-dir="good"]{box-shadow:0 0 0 2px var(--ok),0 18px 44px rgba(0,0,0,.22)!important}
+#app .nf-word .nf-wcard.sky-oldcard[data-dir="again"]{box-shadow:0 0 0 2px var(--lime-t),0 18px 44px rgba(0,0,0,.22)!important}
+#app .nf-word .nf-wtitle{font-family:var(--serif)!important;font-weight:700!important;letter-spacing:-.01em}
+#app .nf-word .nf-exm{border-radius:20px!important;background:var(--glass-bg)!important;border:1px solid var(--glass-bd)!important}
+#app .nf-word .nf-b1{background:var(--btn-grad)!important;color:var(--btn-ink)!important;border:0!important}
+#app .nf-word .nf-b2{background:var(--glass-bg)!important;border:1px solid var(--glass-bd)!important}
+/* --- SKY · кінець дня v2: старий «День завершено» на тлі «Повного місяця» --- */
+#app .k-daydone.sky-fin2 .sky-fin-h{height:calc(330px + env(safe-area-inset-top,0px));margin-bottom:6px}
+#app .k-daydone.sky-fin2 .sky-fin-h>svg{height:330px}
+#app .k-daydone.sky-fin2 h1{font-family:var(--serif)!important;font-weight:700!important;letter-spacing:-.01em}
+body:has(#app .sky-fin2) #app :is(.k-sum,.dd-bonus,.k-helper){border-radius:22px!important;background:var(--glass-bg)!important;border:1px solid var(--glass-bd)!important;box-shadow:none!important}
+:root[data-theme="light"] body:has(#app .sky-fin2) #app :is(.k-sum,.dd-bonus,.k-helper){background:var(--s1)!important;border-color:var(--line)!important}
+body:has(#app .sky-fin2) #app .dd-bonus .btn{background:var(--btn-grad)!important;color:var(--btn-ink)!important;border:0!important}
+/* --- SKY · вправи v2 (рішення автора): стара шапка + зорі; відгук — на місці, як раніше --- */
+#app > .nf-top .nf-prog .sky-stars{margin-top:4px}
+#app > .nf-top .nf-prog-h{color:var(--sky-mut)}
+.sky-rs-c{position:relative;z-index:1;margin:2px 0 0;text-align:center;font-size:14px;color:var(--sky-mut)}
+html body #app #fb > .feedback.ok{border-radius:22px!important;background:color-mix(in srgb,var(--ok) 10%,var(--s1))!important;border:1px solid color-mix(in srgb,var(--ok) 35%,transparent)!important;padding:14px!important}
 </style>
 </head>
 <body>
@@ -11024,7 +11066,10 @@ function skyFigure(key,seed,n){const F=SKY_FIG[key];if(!F)return skyAutoFig(seed
   if(n<pts.length){pts=pts.slice(0,n);edges=edges.filter(([a,b])=>a<n&&b<n)}
   return {pts,edges}}
 
-/* ====================== «СУЗІР'Я» · ЕТАП 2: ГОЛОВНА «СЬОГОДНІ» (15.11.2026, редизайн автора, макети SKY-today-*) ======================
+/* ====================== «СУЗІР'Я» · ГОЛОВНА «СЬОГОДНІ» (15.11.2026) ======================
+   ПЕРЕРОБЛЕНО ЗА РІШЕННЯМ АВТОРА (15.11, після перегляду): над СТАРОЮ головною (34 homeView, без змін) — компактна смуга неба skyBandHome;
+   старі картки (етапи, крок, ціль тижня, «Твоє небо», бонус, тест, «Тобі легко», «Виклик дня») лишаються і лише отримують скляний стиль (CSS).
+   Нижче — початковий опис етапу 2 (хвиля, тиждень місяцями) — більше НЕ діє.
    Небо (~452 px): «День N · мова · рівень», кнопки теми і серії; «Сузір'я Назва» — слова теми дня зорями
    (зірка запалена, щойно слово відкрите — st(w), рішення автора); місяць (нічна) або сонце (світла) = частка зроблених кроків плану.
    Аркуш під небом: «Маршрут дня» хвилею (справжні кроки planBlocks), кнопка поточного кроку, «Тиждень» місяцями (ціль тижня 66).
@@ -11057,78 +11102,28 @@ function skyNowLine(next){const dw=typeof dayWordList==='function'?dayWordList()
   if(next.id==='new'&&dw.length)return `Зараз: ${dw.length} ${pluralUk(dw.length,['нове слово','нові слова','нових слів'])} теми «${esc(typeof dayTopicName==='function'?dayTopicName():'')}»`;
   const sub=typeof blockSub==='function'?blockSub(next):'';
   return `${sub?'Зараз: '+esc(sub):''}${next.id==='review'&&dw.length&&!reviewDone()?`${sub?' · ':''}слова дня відкриються після повтору`:''}`}
-function skyHeroHTML(o){const N=skyNight(),t=o.theme,ws=o.words,lit=new Set(),key=skyFigKey(t);
-  ws.forEach((w,i)=>{if(st(w))lit.add(i)});
-  const nm=t?String(t.name):'',lc=nm.length>24?' xlong':nm.length>14?' long':'',lines=nm.length>14?2:1;
-  const F=skyFigure(key,(t&&t.id)||'day',ws.length);
-  // довга назва — у 2 рядки: сузір'я опускаємо, щоб не налазило на заголовок
-  if(lines>1){const top=Math.min(...F.pts.map(p=>p[1])),dy=Math.max(0,190-top);if(dy)F.pts=F.pts.map(([x,y])=>[x,Math.min(350,+(y+dy*(1-(y-top)/260)).toFixed(0))])}
-  // підписи — останні відкриті слова (до 6), щоб не було каші
-  const order=[...lit].sort((a,b)=>((st(ws[b])||{}).lr||'').localeCompare((st(ws[a])||{}).lr||'')||a-b).slice(0,6),showL=new Set(order);
-  const pts=F.pts.map((p,i)=>[p[0],p[1],showL.has(i)?ws[i][S.lang]:'']);
-  const f=o.share,phase=skyPhase(f,N);
-  const orb=N?`<g class="sky-moon">${moonSVG(326,150,24,f,'home')}</g>`:`<g class="sky-sun">${sunSVG(310,Math.round(300-f*165),24,'home')}</g>`;
-  const title=t?`Сузір’я <i>${esc(t.name)}</i>`:'Твоє небо';
-  return `<section class="sky-hero" aria-label="Небо дня">
-    <svg class="sky-bg" viewBox="0 0 390 452" preserveAspectRatio="xMidYMax slice" aria-hidden="true">${hazeSVG()}${bgStars(390,330,46,skySeed(today()))}${orb}<g class="sky-cons">${constellationSVG(pts,F.edges,lit)}</g>${roofsSVG(388)}</svg>
-    <div class="sky-hd"><span class="sky-meta">День ${nfDayNo()} · ${esc(LANG_NAT[S.lang]||S.lang)}${S.lang==='en'?' (US)':''} · ${esc(maxLv())}</span>
+// компактна смуга неба над старою головною (рішення автора 15.11: «накласти новий дизайн на старий»):
+// рядок старої шапки «День N · мова», кнопки теми й серії, місяць (сонце) = частка кроків плану, сузір'я теми дня (запалені — відкриті слова)
+function skyBandHome(){const N=skyNight(),B=planBlocks(),doneN=B.filter(b=>b.done).length,f=B.length?doneN/B.length:0;
+  const t=typeof dayTheme==='function'?dayTheme():null,ws=skyThemeWords(t).slice(0,8),lit=new Set();ws.forEach((w,i)=>{if(st(w))lit.add(i)});
+  const F=skyFigure(skyFigKey(t),(t&&t.id)||'day',ws.length),xs=F.pts.map(p=>p[0]),ys=F.pts.map(p=>p[1]);
+  const w0=Math.max(...xs)-Math.min(...xs)||1,h0=Math.max(...ys)-Math.min(...ys)||1,sc=Math.min(1,150/w0,46/h0);
+  const pts=F.pts.map(([x,y])=>[+(165+(x-Math.min(...xs)-w0/2)*sc).toFixed(1),+(165+(y-Math.min(...ys)-h0/2)*sc).toFixed(1),'']);
+  const orb=N?moonSVG(336,166,15,f,'band'):sunSVG(336,Math.round(180-f*24),14,'band');
+  return `<section class="sky-band" aria-label="Небо дня: ${doneN} з ${B.length} кроків">
+    <svg class="sky-bg" viewBox="0 0 390 230" preserveAspectRatio="xMidYMax slice" aria-hidden="true">${bgStars(390,190,30,skySeed(today()))}${orb}<g>${constellationSVG(pts,F.edges,lit,{labels:false,size:4.5})}</g>${roofsSVG(192)}</svg>
+    <div class="sky-hd"><span class="sky-meta">${S.name?esc(S.name)+' · ':''}День ${nfDayNo()} · ${esc(LANG_NAT[S.lang]||S.lang)}${S.lang==='en'?' (US)':''}</span>
       <span class="sky-hbtns"><button class="sky-ib sky-glass" onclick="toggleTheme()" aria-label="${N?'Увімкнути світлу тему':'Увімкнути нічну тему'}">${icn(N?'sun':'moon')}</button>
-      <button class="sky-ib sky-glass sky-streak" onclick="meScreen()" aria-label="Днів поспіль: ${S.streak||0}">${icn('flame')}<b>${S.streak||0}</b></button></span></div>
+      <button class="sky-ib sky-glass sky-streak" title="Днів поспіль" onclick="meScreen()" aria-label="Днів поспіль: ${S.streak||0}">${icn('flame')}<b>${S.streak||0}</b></button></span></div>
     <button class="sky-tap" onclick="STAR_FROM='home';starScreen()" aria-label="Твоє небо: усі слова зорями. Відкрити"></button>
-    <div class="sky-title"><h1 class="${lc.trim()}">${title}</h1><p>${lit.size} з ${ws.length} ${pluralUk(ws.length,['зірки','зірок','зірок'])} запалено</p></div>
-    <span class="sky-chip sky-glass${N?'':' day'}"${N?'':` style="top:calc(${Math.round(300-f*165)+38}px + env(safe-area-inset-top,0px))"`}>${o.doneN} з ${o.total}${o.total?` · ${phase}`:''}</span>
   </section>`}
-
-function skyWeekHTML(B){const ds=typeof wgWeek==='function'?wgWeek(0):[],t=today(),G=typeof wgGoal==='function'?wgGoal():5;
-  const n=typeof wgActive==='function'?ds.filter(wgActive).length:0,ti=ds.indexOf(t);
-  // перший тиждень (66): ціль — не більше днів від старту до неділі
-  const st0=typeof wgStart==='function'?wgStart():ds[0],first=st0>ds[0],g=first?Math.max(1,Math.min(G,ds.filter(d=>d>=st0).length)):G;
-  return `<button class="sky-week wg-card sky-glass${n>=g?' done':''}" onclick="wgSheet()" aria-label="Тиждень: ${n} з ${g}${first?' (перший тиждень — від дня старту)':''}. Змінити ціль тижня">
-    <span class="sky-wk-t"><b>Тиждень</b><small>${n} з ${g} ${pluralUk(g,['ночі','ночей','ночей'])}</small></span>
-    <span class="sky-wk-m">${weekMoons(ds.map(d=>skyDayShare(d,B)),ti)}</span></button>`}
-
-function skyTestHTML(){return !(S.placement&&S.placement[S.lang])&&!((S.beginner||{})[S.lang])&&!((S.ptLater||{})[S.lang]===today())?`<div class="k-test sky-test">${icn('target','pm-tic')}<div class="k-t"><b>Визнач свій рівень</b><small>Тест 10–15 хв: вправи й тексти будуть саме твого рівня</small>
-    <div class="k-hbtns"><button class="btn" onclick="placementIntro()">Пройти тест</button><button class="btn ghost" onclick="S.ptLater=S.ptLater||{};S.ptLater[S.lang]=today();save();home()">Пізніше</button></div></div></div>`:''}
-
-{const _hvOld=homeView;homeView=function(){
-  if(window.SKY_OFF)return _hvOld.apply(this,arguments);
-  const B=planBlocks(),next=B.find(b=>!b.done),ni=next?B.indexOf(next):B.length,doneN=B.filter(b=>b.done).length;
-  const bon=next?null:bonusSteps(),bnext=bon&&bon.find(x=>!x.done);
-  const t=typeof dayTheme==='function'?dayTheme():null,ws=skyThemeWords(t);
-  const hero=skyHeroHTML({theme:t,words:ws,share:B.length?doneN/B.length:0,doneN,total:B.length});
-  const tot=B.reduce((a,b)=>a+skyStepMin(b),0),pal=typeof palToday==='function'?palToday():null;
-  const steps=B.map(b=>({id:b.id,icon:BLOCK_IC[b.id]||'sparkle',label:skyStepLabel(b),on:next&&b.id===next.id?`heroGo('${b.id}')`:`startBlock('${b.id}')`}));
-  let cta;
-  if(next)cta=`<button class="sky-cta" onclick="heroGo('${next.id}')"><span><b>${esc(skyStepLabel(next))}</b> · ${skyStepMin(next)} хв</span><i>${icn('arrow')}</i></button>
-    <p class="sky-now">${skyNowLine(next)}</p>`;
-  else if(bnext)cta=`<button class="sky-cta" onclick="bonusGo()"><span><b>Бонус</b> · ${esc(bnext.t)}</span><i>${icn('arrow')}</i></button>
-    <p class="sky-now">План виконано · новий план через <b id="midnight">${untilMidnight()}</b> · <button class="dd-what" onclick="ddBonusList()">Що в бонусі</button></p>`;
-  else cta=`<button class="sky-cta" onclick="pathScreen()"><span><b>Вільна практика</b></span><i>${icn('arrow')}</i></button>
-    <p class="sky-now">Новий план через <b id="midnight">${untilMidnight()}</b></p>`;
-  const pl=S.plan&&S.plan[S.lang],goal=!next&&pl?`<button class="k-row sky-goal" onclick="meScreen()">${icn('target','pm-tic')}<span class="k-t"><b>Ціль: ${esc(pl.lvl)} до ${fmtDate(pl.eta)}</b><small>${pl.focus&&typeof FOCUS!=='undefined'&&FOCUS[pl.focus]?'фокус: '+FOCUS[pl.focus].t.toLowerCase():'щоденний план'}</small></span><span class="k-chev">›</span></button>`:'';
-  const sum=(!next&&typeof nfDaySumHTML==='function'?nfDaySumHTML(false):'')+goal;
-  return `${hero}<section class="sky-sheet">
-    <div class="sky-rt-h"><h2>Маршрут дня</h2><small>≈ ${tot} хв${pal?` · небо: ${esc(pal[1])}`:''}</small></div>
-    ${waveHTML(steps,ni,n=>icn(n))}
-    <div class="nf-step sky-step">${cta}</div>
-    ${skyTestHTML()}${sum}${skyWeekHTML(B)}</section>`}}
-// головна: прибрати те, що замінює небо (мініатюра «Твоє небо»), і зарахувати підсумок минулого тижня під кнопку
-on('home:after',()=>{try{const a=document.getElementById('app');if(!a||!a.querySelector('.sky-sheet'))return;
-  a.querySelectorAll('.sk-mini').forEach(x=>x.remove());document.body.classList.add('sky-home');
-  const r=typeof wsShow==='function'?wsShow():null,s=a.querySelector('.sky-step');if(r&&s&&!a.querySelector('.ws-card'))s.insertAdjacentHTML('afterend',wsCardHTML(r))}catch(e){}});
-on('screen',n=>{try{if(n!=='home'||!document.querySelector('#app .sky-sheet'))document.body.classList.remove('sky-home')}catch(e){}});
+{const _hvOld=homeView;homeView=function(){const old=_hvOld.apply(this,arguments);if(window.SKY_OFF)return old;try{return skyBandHome()+old}catch(e){return old}}}
+on('home:after',()=>{try{if(document.querySelector('#app > .sky-band'))document.body.classList.add('sky-home')}catch(e){}});
+on('screen',n=>{try{if(n!=='home'||!document.querySelector('#app > .sky-band'))document.body.classList.remove('sky-home')}catch(e){}});
 on('item:render',()=>{try{document.body.classList.remove('sky-home')}catch(e){}});on('session:start',()=>{try{document.body.classList.remove('sky-home')}catch(e){}});
 
 /* ---------- вкладка «Шлях» → «Небо» ---------- */
 try{NF_TABS[1][1]='Небо';const b=document.querySelector('#tabbar [data-tab="path"]');if(b){b.setAttribute('aria-label','Небо');const s=b.querySelector('small');if(s)s.textContent='Небо'}}catch(e){}
-
-/* ---------- «Я»: рівень і «Виклик дня» (з головної) ---------- */
-function skyMeLevelHTML(){const nx=nextLv(),lp=Math.min(1,lvProgress()/LV_UNLOCK),known=WORDS.filter(w=>w[S.lang]&&learned(w)).length;
-  const qs=typeof questsToday==='function'?questsToday():[],qx=qs.find(q=>!qClaimed(q.id))||null,qdone=qs.filter(q=>qClaimed(q.id)).length,claim=qx&&qx.get()>=qx.n;
-  return `<div class="sky-melv nf-lv"><b>${maxLv()}</b><span class="nf-lvbar"><i style="width:${Math.max(3,Math.round(lp*100))}%"></i></span><small>${known} ${pluralUk(known,['слово','слова','слів'])} знаєш${nx?` · до ${nx}`:''}</small>
-    ${qs.length?`<span class="nf-lv-q">${icn('target')} ${qx?`Виклик дня: ${esc(qx.t)} · ${Math.min(qx.n,qx.get())}/${qx.n}`:'Усі виклики дня виконано'} <em>${qdone}/${qs.length}</em></span>`:''}
-    ${claim?`<button class="btn sm" onclick="qClaim('${qx.id}');meScreen()">Забрати +${qx.xp} XP</button>`:''}</div>`}
-on('screen',n=>{try{if(n!=='me'||document.querySelector('#app .sky-melv'))return;const m=document.querySelector('#app .nf-me');if(m)m.insertAdjacentHTML('afterend',skyMeLevelHTML())}catch(e){}});
 
 /* ====================== «СУЗІР'Я» · ЕТАП 2.5: ОНБОРДИНГ (15.11.2026, макети SKY-start / onboard / self / result / goal) ======================
    Лише вигляд: тексти, кількість питань і логіка тесту — свої (37_design_start.js, 35_mvp_next.js). Кожен екран малює
@@ -11149,14 +11144,13 @@ function skyObProg(){try{const lv=maxLv(),lw=lvWords(lv),have=lw.filter(learned)
 
 /* ---------- старт: небо з місяцем (сонцем) і орбітою останніх зірок ---------- */
 const SKY_ORB=[[-110,'l'],[-60,'r'],[5,'r'],[70,'r'],[130,'l'],[185,'l']];
-function skyStartHero(){const N=skyNight(),P=skyObProg(),{ws,real}=skyObWords(),cx=195,cy=205;
+function skyStartHero(){const N=skyNight(),P=skyObProg(),cx=195,cy=205;let ws=[];try{ws=nfOrbitWords().map(o=>o.fg)}catch(e){} // слова орбіти — як раніше (37 nfOrbitWords)
   const pos=SKY_ORB.map(([a])=>{const r=a*Math.PI/180;return [+(cx+135*Math.cos(r)).toFixed(0),+(cy+100*Math.sin(r)).toFixed(0)]});
   const orb=N?moonSVG(cx,cy,64,P.f,'st'):`${sunSVG(cx,cy,58,'st')}<circle cx="${cx}" cy="${cy}" r="74" fill="none" stroke="#fff" stroke-opacity=".7" stroke-width="10"/>${P.f>0?`<path d="${skyArc(cx,cy,74,0,Math.max(4,Math.min(359.9,P.f*360)))}" fill="none" stroke="var(--lime-t)" stroke-width="8" stroke-linecap="round"/>`:''}`;
   return `<section class="sky-ob-hero sky-st" aria-label="Твоє небо"><div class="sky-st-stage">
     <svg viewBox="0 0 390 400" aria-hidden="true">${bgStars(390,330,40,11)}<ellipse cx="${cx}" cy="${cy}" rx="135" ry="100" fill="none" stroke="var(--sky-mut)" stroke-opacity=".5" stroke-dasharray="2 7"/>${orb}${pos.map(([x,y])=>sparkle(x,y,10,'var(--star)',1,true)).join('')}</svg>
-    <span class="ds-orb-c">${esc(LANG_CODE[S.lang]||S.lang.toUpperCase())}</span><small class="sky-st-p">${esc(P.txt)}</small>
-    ${pos.map(([x,y],k)=>ws[k]?`<span class="ds-chipf sky-orbw ${SKY_ORB[k][1]}" style="left:${(x/3.9).toFixed(2)}%;top:${(y/4).toFixed(2)}%"><b class="en" lang="${S.lang}">${esc(ws[k])}</b></span>`:'').join('')}
-    <span class="sky-ob-chip sky-glass">${real?'останні зірки':'зірки дня'}</span></div>
+    <span class="ds-orb-c">${esc(LANG_CODE[S.lang]||S.lang.toUpperCase())}</span>
+    ${pos.map(([x,y],k)=>ws[k]?`<span class="ds-chipf sky-orbw ${SKY_ORB[k][1]}" style="left:${(x/3.9).toFixed(2)}%;top:${(y/4).toFixed(2)}%"><b class="en" lang="${S.lang}">${esc(ws[k])}</b></span>`:'').join('')}</div>
     <svg class="sky-roofs" viewBox="0 330 390 60" preserveAspectRatio="xMidYMax slice" aria-hidden="true">${roofsSVG(330)}</svg></section>`}
 function skyLangTile(k){const R=(S.srs||{})[k]||{},n=Object.values(R).filter(x=>x&&x.lr).length,f=Math.min(1,.12+n/400);
   return `<svg width="34" height="34" aria-hidden="true">${(skyNight()||k===S.lang?moonSVG(17,17,15,f,'lt'+k,false):moonInk(17,17,15,f)).replace(/\s*\n\s*/g,'')}</svg><em>${esc(LANG_CODE[k]||k.toUpperCase())}</em>`}
@@ -11164,7 +11158,6 @@ function skyLangTile(k){const R=(S.srs||{})[k]||{},n=Object.values(R).filter(x=>
   const root=document.querySelector('#app .nf-launch');if(!root||root.querySelector('.sky-st'))return;
   root.querySelectorAll('.nf-orbit-top').forEach(x=>x.remove());
   root.querySelectorAll('.nf-lang').forEach(c=>{const m=(c.getAttribute('onclick')||'').match(/launchGo\('(\w+)'\)/),k=m?m[1]:'';if(!k)return;
-    const t=c.querySelector('.nf-lt');if(t)t.innerHTML=skyLangTile(k);
 });
   const lg=root.querySelector('.nf-logo');if(lg&&!lg.querySelector('svg'))lg.insertAdjacentHTML('beforeend',`<svg class="sky-logo-s" viewBox="-10 -10 20 20" aria-hidden="true">${sparkle(0,0,9,'var(--lime)')}</svg>`);
   skyObSheet(root.firstElementChild,'sky-st-sheet');root.insertAdjacentHTML('afterbegin',skyStartHero());
@@ -11196,8 +11189,8 @@ function skyMiniCons(seed){const F=skyAutoFig(seed,6),sx=v=>((v-70)/250*120+10).
 {const _prSky=ptResult;ptResult=function(){_prSky.apply(this,arguments);try{
   const r=document.querySelector('#app .ds-res'),top=r&&r.querySelector('.ds-rtop');if(!top||r.querySelector('.sky-rs'))return;
   const pl=(S.placement||{})[S.lang]||{},lvl=pl.lvl||'A1',ci=Math.max(0,LEVELS.indexOf(lvl)),ey=top.querySelector('.ds-eyebrow'),mins=ey?(ey.textContent.match(/(\d+)\s*ХВ/)||[])[1]:'';
-  const sum=top.querySelector('.pt-sum');
-  top.insertAdjacentHTML('beforebegin',`<section class="sky-ob-hero sky-rs"><div class="sky-rs-t"><small>РЕЗУЛЬТАТ ТЕСТУ${mins?` · ${mins} ХВ`:''}</small><h1><i>${esc(lvl)}</i> — твій старт</h1></div>
+  const sum=top.querySelector('.pt-sum'),cap=((top.querySelector('.nf-ring-c small')||{}).textContent||'твій старт').trim();
+  top.insertAdjacentHTML('beforebegin',`<section class="sky-ob-hero sky-rs"><div class="sky-rs-t"><small>РЕЗУЛЬТАТ ТЕСТУ${mins?` · ${mins} ХВ`:''}</small><h1><i>${esc(lvl)}</i></h1><p class="sky-rs-c">${esc(cap)}</p></div>
     <svg viewBox="0 0 390 390" preserveAspectRatio="xMidYMax slice" aria-hidden="true">${bgStars(390,330,40,4)}${levelArcSVG(195,300,150,ci)}${roofsSVG(330)}</svg></section>`);
   const sh=skyObSheet(top);if(sum&&sh)sh.insertBefore(sum,sh.firstChild);top.remove();
   r.querySelectorAll('.ds-wk > div').forEach((d,i)=>{const t=d.querySelector('strong');d.insertAdjacentHTML('afterbegin',skyMiniCons((t?t.textContent:'')+i))});
@@ -11210,7 +11203,7 @@ function skyMiniCons(seed){const F=skyAutoFig(seed,6),sx=v=>((v-70)/250*120+10).
   s.insertAdjacentHTML('afterbegin',skyBandHTML(false));s.classList.add('sky-ob','sky-goal-scr');try{window.scrollTo(0,0)}catch(e){}
   const hd=s.querySelector('.ds-hd2');if(hd){const dots=hd.querySelector('.ds-dots');if(dots)s.insertBefore(dots,s.querySelector('.ds-hd2'));skyObSheet(hd)}}catch(e){console.error(e)}}}
 
-/* ====================== «СУЗІР'Я» · ЕТАП 3: КАРТКА НОВОГО СЛОВА (15.11.2026, макети SKY-word-*) ======================
+/* ====================== «СУЗІР'Я» · КАРТКА НОВОГО СЛОВА (15.11.2026) — ДИВ. РІШЕННЯ АВТОРА ВНИЗУ: стара картка + скло + свайп ======================
    Фон — небо з зорями; шапка — як у вправах (зорі прогресу, 85); скляна картка, злегка повернута (−1.5°),
    позаду друга (+4°); картинка — у колі-«планеті» з орбітою; слово Literata; переклад; приклад курсивом; внизу три круглі
    кнопки «Ще вчу» / «Прослухати» / «Знаю». Свайп картки: вліво — «Ще вчу», вправо — «Знаю» (ті самі cardAnswer).
@@ -11263,18 +11256,19 @@ function skySwipe(c){if(!c||c.dataset.shown!=='1')return;let x0=null,y0=0,dx=0,i
     if(Math.abs(dx)>90){const q=dx>0?'good':'again';c.style.transform=`translateX(${dx>0?600:-600}px) rotate(${dx>0?14:-14}deg)`;setTimeout(()=>{if(q==='good')skyKnow();else cardAnswer(q)},180)}
     else{c.style.transform='';c.dataset.dir=''}};
   c.addEventListener('pointerup',end);c.addEventListener('pointercancel',end)}
-if(!window.SKY_OFF)RENDER_X.card=skyCardRender;
+// РІШЕННЯ АВТОРА 15.11 (після перегляду dev): стара картка K02 (36 renderCard: картинка, форми, at/to, рід кольором, приклад, кнопки) лишається;
+// нове — лише скляний стиль (CSS), зорі в шапці (85) і свайп. skyCardRender більше не підставляється (лишився для довідки).
+on('item:render',it=>{try{if(!it||it.kind!=='card'||window.SKY_OFF)return;const c=document.querySelector('#app .nf-word .nf-wcard');if(!c||c.dataset.sky)return;
+  c.dataset.sky=1;c.dataset.shown=SS.items[SS.i]&&SS.items[SS.i].shown?'1':'0';c.classList.add('sky-oldcard');skySwipe(c)}catch(e){}});
 
-/* ====================== «СУЗІР'Я» · ЕТАП 4: «НЕБО» — КАРТА СУЗІР'ЇВ (15.11.2026, макети SKY-map-*) ======================
-   Рішення автора (15.11, «зроби як на макеті»): кожна тема рівня — сузір'я вздовж Чумацького Шляху. Знизу — пройдені (повні, яскраві),
-   поточна — частково засвічена з пунктирним колом («зараз · k / n»), вище — майбутні (тьмяні, «0 / n»). Порядок — як у плані дня
-   (routeTopics); між блоками «Шляху» (73) — тонкий підпис блоку. Відкривається одразу на поточній темі. Дотик — routeOpen (віконце теми 72).
-   Зорі сузір'я — слова теми (до 10), засвічені за часткою відкритих слів. Угорі «Карта неба · A1» і чипи рівнів A1–C2.
-   Решта «Шляху» лишається: «Теми | Граматика», рядок рівня, «Основи» (76), «Вправи-ігри», «Бібліотека». */
+/* ====================== «СУЗІР'Я» · «НЕБО» (вкладка path) (15.11.2026) ======================
+   Рішення автора (після перегляду dev): «новий дизайн на старий вміст». Вкладка показує СТАРИЙ «Шлях» (38 + блоки тем 73 з картинками
+   CUR_LIFE_PICS + «Основи» 76 + «Теми | Граматика» 56 + рядок прогресу 78) без змін; заголовок «Небо»; під ним — смуга-кнопка
+   «Карта неба» (skyPathBand). Карта сузір'їв — окремий екран skyMapScreen(lv): кожна тема рівня — сузір'я (майбутні тьмяні, поточна
+   з пунктирним колом, пройдені повні), підписи блоків, чипи рівнів, дотик — routeOpen. */
 
 let SKY_MAP_LV=null;
-function skyMapLv(l){if(typeof lvOK==='function'&&!lvOK(l)){toast(typeof lockMsg==='function'?lockMsg(l):'Рівень ще закритий');return}
-  SKY_MAP_LV=l===maxLv()?null:l;pathScreen()}
+function skyMapLv(l){if(typeof lvOK==='function'&&!lvOK(l)){toast(typeof lockMsg==='function'?lockMsg(l):'Рівень ще закритий');return}skyMapScreen(l)}
 function skyMapNode(sg,side,state){
   const t=sg.t,words=sg.n||0,seen=state==='done'?words:(sg.seen||0);
   const n=Math.max(4,Math.min(10,words||4)),litN=state==='done'?n:Math.round(n*(words?seen/words:0));
@@ -11289,32 +11283,33 @@ function skyMapNode(sg,side,state){
       <g>${constellationSVG(pts,F.edges,lit,{labels:false,size:state==='done'?6.5:6})}</g></svg>
     <span class="sky-ml"><b>${esc(t.name)}</b><small>${esc(sub)}</small></span></button>`}
 function skyMapCap(title){return `<div class="sky-msec"><span>${esc(title)}</span></div>`}
-function skyMapBuild(lv){const bp=document.querySelector('#app .bk-path');if(!bp||bp.querySelector('.sky-map')||!PB_BLOCKS.length)return;
-  let cur=null;try{cur=routeCurrent(routeTopics(lv))}catch(e){}
-  // теми в порядку плану, з блоком; на екрані — згори вниз: майбутні → поточна → пройдені
-  const rows=[];PB_BLOCKS.forEach(b=>b.segs.forEach(sg=>rows.push({sg,b})));
+// блоки рівня (як у 73) для карти: теми в порядку плану зі статистикою
+function skyMapBlocks(lv){const list=routeTopics(lv);return bkBlocks(list.map(t=>{const ws=topicWordsL(t);return {t,n:ws.length,seen:ws.filter(rtSeen).length,done:topicDone(t)}}))}
+function skyMapHTML(lv){const B=skyMapBlocks(lv);let cur=null;try{cur=routeCurrent(routeTopics(lv))}catch(e){}
+  const rows=[];B.forEach(b=>b.segs.forEach(sg=>rows.push({sg,b})));
   let side=0,html='',lastB=null,y=0,d='M195 0';const out=[];
   rows.forEach(({sg,b})=>{const st_=sg.done?'done':sg.t===cur?'cur':'next',sd=(side++)%2;out.push({b,sd,h:skyMapNode(sg,sd,st_)})});
   const cap=t=>{html+=skyMapCap(t);d+=` L195 ${y+40}`;y+=40};
   out.reverse().forEach(o=>{if(o.b!==lastB){if(lastB)cap(lastB.title);lastB=o.b}html+=o.h;const cx=o.sd?264:126;d+=` C195 ${y+40} ${cx} ${y+34} ${cx} ${y+74} S195 ${y+112} 195 ${y+150}`;y+=150});if(lastB)cap(lastB.title);
-  const map=document.createElement('div');map.className='sky-map';
-  map.innerHTML=`<div class="sky-map-in"><svg class="sky-mway" viewBox="0 0 390 ${y}" preserveAspectRatio="none" aria-hidden="true"><path d="${d}" fill="none" stroke="var(--lime)" stroke-opacity=".07" stroke-width="96"/><path d="${d}" fill="none" stroke="var(--lime)" stroke-opacity=".09" stroke-width="46"/><path d="${d}" fill="none" stroke="var(--sky-mut)" stroke-opacity=".35" stroke-width="1.2" stroke-dasharray="2 6"/></svg>${html}</div>`;
-  // старі картки блоків і їхні підписи (не «Основи») — геть; карта стає на їхнє місце
-  const cards=[...bp.querySelectorAll('.bk-card')].filter(c=>/pbOpen\(\d+\)/.test(c.getAttribute('onclick')||''));
-  const first=cards[0]&&cards[0].closest('.bk-list,.bk-grid');if(first)first.before(map);else bp.appendChild(map);
-  cards.forEach(c=>{const box=c.closest('.bk-list,.bk-grid');if(box&&box.isConnected){const prev=box.previousElementSibling;if(prev&&prev.classList.contains('bk-sec')&&!/Основи/.test(prev.textContent))prev.remove();box.remove()}});
+  return {n:rows.length,html:`<div class="sky-map"><div class="sky-map-in"><svg class="sky-mway" viewBox="0 0 390 ${y||1}" preserveAspectRatio="none" aria-hidden="true"><path d="${d}" fill="none" stroke="var(--lime)" stroke-opacity=".07" stroke-width="96"/><path d="${d}" fill="none" stroke="var(--lime)" stroke-opacity=".09" stroke-width="46"/><path d="${d}" fill="none" stroke="var(--sky-mut)" stroke-opacity=".35" stroke-width="1.2" stroke-dasharray="2 6"/></svg>${html}</div></div>`}}
+// окремий екран «Карта неба» (з «Неба» — кнопкою); рівень — чипами; дотик — тема (routeOpen); рівень підміняється тимчасовим maxLv
+function skyMapScreen(lv){applyTheme();document.body.classList.remove('in-session');const real=maxLv();lv=lv||SKY_MAP_LV||real;SKY_MAP_LV=lv;REDRAW=()=>skyMapScreen(SKY_MAP_LV);
+  try{if(typeof dayTheme==='function')dayTheme()}catch(e){}
+  const _m=maxLv;if(lv!==real)maxLv=function(l){return (!l||l===S.lang)?lv:_m(l)};let M;try{M=skyMapHTML(lv)}finally{maxLv=_m}
+  app.innerHTML=`<svg class="sky-word-bg" viewBox="0 0 390 844" preserveAspectRatio="xMidYMid slice" aria-hidden="true">${bgStars(390,840,70,21)}</svg>
+    <header class="rt-hd sky-maphd"><button class="back" onclick="SKY_MAP_LV=null;pathScreen()" aria-label="Назад до «Неба»">${icn('back')}</button><div><small>${esc(LANG_NAT[S.lang]||'')}${S.lang==='en'?' (US)':''} · ${M.n} ${pluralUk(M.n,["сузір'я","сузір'я","сузір'їв"])} рівня</small><h1>Карта неба · ${esc(lv)}</h1></div></header>
+    <div class="sky-lvchips" role="tablist" aria-label="Рівень">${LEVELS.map(l=>`<button role="tab" aria-selected="${l===lv}" class="${l===lv?'on':''}${typeof lvOK==='function'&&!lvOK(l)?' lk':''}" onclick="skyMapLv('${l}')">${l}</button>`).join('')}</div>${M.html}`;
+  emit('screen','path');document.querySelectorAll('#app .pseg').forEach(x=>x.remove()); // перемикач «Теми | Граматика» (56) — лише на «Небі»
   setTimeout(()=>{try{const c=document.querySelector('#app .sky-mnode.cur');if(c&&c.scrollIntoView)c.scrollIntoView({block:'center'})}catch(e){}},0)}
-{const _psSky=pathScreen;pathScreen=function(){
-  if(window.SKY_OFF)return _psSky.apply(this,arguments);
-  const real=maxLv(),lv=SKY_MAP_LV&&LEVELS.includes(SKY_MAP_LV)?SKY_MAP_LV:real;
-  if(lv!==real){try{if(typeof dayTheme==='function')dayTheme()}catch(e){} // тема дня — до підміни рівня (кешується на день)
-    const _m=maxLv;maxLv=function(l){return (!l||l===S.lang)?lv:_m(l)};try{_psSky.apply(this,arguments)}finally{maxLv=_m}}
-  else _psSky.apply(this,arguments);
-  try{skyMapBuild(lv);
-    const hd=document.querySelector('#app .rt-hd');if(hd){const h1=hd.querySelector('h1'),sm=hd.querySelector('small');
-      if(h1)h1.innerHTML=`Карта неба · ${esc(lv)}`;const nT_=PB_BLOCKS.reduce((x,b)=>x+b.segs.length,0);if(sm)sm.textContent=`${LANG_NAT[S.lang]}${S.lang==='en'?' (US)':''} · ${nT_} ${pluralUk(nT_,["сузір'я","сузір'я","сузір'їв"])} рівня`;
-      if(!document.querySelector('#app .sky-lvchips'))hd.insertAdjacentHTML('afterend',`<div class="sky-lvchips" role="tablist" aria-label="Рівень">${LEVELS.map(l=>`<button role="tab" aria-selected="${l===lv}" class="${l===lv?'on':''}${typeof lvOK==='function'&&!lvOK(l)?' lk':''}" onclick="skyMapLv('${l}')">${l}</button>`).join('')}</div>`)}
-    const a=document.getElementById('app');if(a&&!a.querySelector('.sky-word-bg'))a.insertAdjacentHTML('afterbegin',`<svg class="sky-word-bg" viewBox="0 0 390 844" preserveAspectRatio="xMidYMid slice" aria-hidden="true">${bgStars(390,840,70,21)}</svg>`);}catch(e){console.error(e)}}}
+// «Небо» (рішення автора 15.11: новий дизайн на старий вміст): СТАРИЙ «Шлях» (38 + блоки 73 + «Основи» 76 + «Теми | Граматика») без змін,
+// над ним — невелика смуга неба з кнопкою «Карта неба»
+function skyPathBand(){const B=skyMapBlocks(maxLv()),all=B.reduce((a,b)=>a+b.segs.length,0),dn=B.reduce((a,b)=>a+b.segs.filter(s=>s.done).length,0);
+  let pts=[],e='';for(let i=0;i<7;i++){const x=40+i*52,y=60+(i%2?-14:12);pts.push([x,y]);if(i)e+=`<line x1="${pts[i-1][0]}" y1="${pts[i-1][1]}" x2="${x}" y2="${y}" stroke="var(--lime-t)" stroke-opacity=".5" stroke-dasharray="${i/7<dn/Math.max(1,all)?'0':'3 4'}"/>`}
+  return `<button class="sky-pband" onclick="skyMapScreen()" aria-label="Карта неба: ${dn} з ${all} сузір'їв. Відкрити"><svg viewBox="0 0 390 96" preserveAspectRatio="xMidYMid slice" aria-hidden="true">${bgStars(390,96,18,8)}${e}${pts.map(([x,y],i)=>i/7<dn/Math.max(1,all)?sparkle(x,y,6,'var(--star)',1,true):`<circle cx="${x}" cy="${y}" r="2.6" fill="var(--lime-t)" opacity=".7"/>`).join('')}</svg>
+    <span class="sky-pb-t"><b>Карта неба</b><small>${dn} з ${all} ${pluralUk(all,["сузір'я","сузір'їв","сузір'їв"])}</small></span><i>${icn('arrow')}</i></button>`}
+{const _psSky=pathScreen;pathScreen=function(){_psSky.apply(this,arguments);if(window.SKY_OFF)return;try{
+  const hd=document.querySelector('#app .rt-hd');if(hd){const h1=hd.querySelector('h1');if(h1&&/^Шлях$/.test(h1.textContent.trim()))h1.textContent='Небо';if(!document.querySelector('#app .sky-pband'))hd.insertAdjacentHTML('afterend',skyPathBand())}
+}catch(e){console.error(e)}}}
 on('screen',n=>{if(n!=='path')SKY_MAP_LV=null});
 
 /* ====================== «СУЗІР'Я» · ЕТАП 5: «ПОВНИЙ МІСЯЦЬ» — КІНЕЦЬ ДНЯ (15.11.2026, макети SKY-finale-*) ======================
@@ -11329,27 +11324,20 @@ function skyFinHero(t,ws){const N=skyNight(),lit=new Set(ws.map((w,i)=>st(w)?i:-
   const pts=F.pts.map(([x,y])=>[+(195+(x-Math.min(...xs)-w0/2)*sc).toFixed(1),+(318+(y-Math.min(...ys)-h0/2)*sc).toFixed(1),'']);
   return `<section class="sky-ob-hero sky-fin-h"><svg viewBox="0 0 390 500" preserveAspectRatio="xMidYMax slice" aria-hidden="true">${bgStars(390,420,50,31)}
     ${N?moonSVG(195,150,62,1,'fin'):sunSVG(195,150,58,'fin')}<g class="sky-anim sky-fin-c">${constellationSVG(pts,F.edges,lit,{labels:false,size:9})}</g>${roofsSVG(440)}</svg></section>`}
-{const _ddSky=dayDoneScreen;dayDoneScreen=function(){
-  if(window.SKY_OFF)return _ddSky.apply(this,arguments);
-  applyTheme();snd('win');
-  const bon=bonusSteps(),bmin=bon.reduce((a,x)=>a+x.min,0),left=bon.filter(x=>!x.done),m=S.minutes||30,rem=Math.max(0,m-minutesToday()),tm=tomorrowPreview();
-  const d=typeof nfDaySum==='function'?nfDaySum():{nw:0,min:minutesToday(),streak:S.streak||0},t=typeof dayTheme==='function'?dayTheme():null,ws=skyThemeWords(t);
-  
-  const today_=(typeof dayWordList==='function'?dayWordList():[]).filter(w=>st(w)&&w[S.lang]).slice(0,12);
-  app.innerHTML=`<div class="k-daydone sky-fin sky-ob">${skyFinHero(t,ws)}
-    <div class="sky-ob-sheet">
-      <small class="sky-fin-ey">Повний місяць</small>
-      <h1 class="sky-fin-t">День завершено!</h1>
-      ${typeof epOutroHTML==='function'?epOutroHTML():''}<div class="sky-fin-sum">${daySummaryHTML().replace(/<div class="k-tomorrow">[\s\S]*$/,'')}</div>
-      ${today_.length?`<div class="sky-fin-w">${today_.map(w=>`<button class="sky-fin-chip" onclick="speak(${js(w[S.lang])})" aria-label="${esc(w[S.lang])} — ${esc(w.uk||'')}. Прослухати">${'<svg width="12" height="12" viewBox="-6 -6 12 12" aria-hidden="true">'+sparkle(0,0,5.5,'var(--lime-t)')+'</svg>'}<i lang="${S.lang}">${esc(w[S.lang])}</i></button>`).join('')}</div>`:''}
-      <p class="k-tomorrow dd-tm sky-fin-tm">Завтра: ${nW(tm.due)} на повторення · ${tm.newW} нових${tm.grammar?` · ${esc(tm.grammar)}`:''}</p>
-      ${left.length?`<div class="k-helper jr-bcard dd-bonus sky-fin-b"><div class="k-hb"><b class="dd-bt">Бонус-раунд · ≈ ${bmin} хв</b>
-        <small>${rem>=3?`До норми ${m} хв лишилось ${rem} хв`:`Норму ${m} хв виконано`} · <button class="dd-what" onclick="ddBonusList()">Що в бонусі</button></small>
-        <div class="k-hbtns"><button class="btn big sky-cta" onclick="bonusGo()"><span><b>Почати бонус-раунд</b></span><i>${icn('arrow')}</i></button></div></div></div>
-        <small class="dd-later sky-fin-bye">Можна й пізніше — бонус чекатиме на вкладці «Сьогодні»</small>`
-       :''}
-    </div></div>`;
-  window.scrollTo&&window.scrollTo(0,0);emit('screen','home')}}
+// РІШЕННЯ АВТОРА 15.11 (після перегляду dev): СТАРИЙ «День завершено» (75: трофей, цифри дня, «Завтра…», бонус-раунд із панеллю кроків,
+// конфеті) — без змін; нове лише тло: небо з повним місяцем і сузір'ям теми дня стає на місце трофея (.k-dd-hero), картки — скляні (CSS).
+// компактне небо (330 px) замість трофея: місяць праворуч угорі, сузір'я теми по центру, дахи
+function skyFinHero2(t,ws){const N=skyNight(),lit=new Set(ws.map((w,i)=>st(w)?i:-1).filter(i=>i>=0));
+  const F=skyFigure(skyFigKey(t),(t&&t.id)||'day',ws.length),xs=F.pts.map(p=>p[0]),ys=F.pts.map(p=>p[1]);
+  const w0=Math.max(...xs)-Math.min(...xs)||1,h0=Math.max(...ys)-Math.min(...ys)||1,sc=Math.min(1,200/w0,130/h0);
+  const pts=F.pts.map(([x,y])=>[+(170+(x-Math.min(...xs)-w0/2)*sc).toFixed(1),+(170+(y-Math.min(...ys)-h0/2)*sc).toFixed(1),'']);
+  return `<section class="sky-ob-hero sky-fin-h"><svg viewBox="0 0 390 330" preserveAspectRatio="xMidYMax slice" aria-hidden="true">${bgStars(390,280,44,31)}
+    ${N?moonSVG(318,78,40,1,'fin'):sunSVG(318,78,36,'fin')}<g>${constellationSVG(pts,F.edges,lit,{labels:false,size:7.5})}</g>${roofsSVG(270)}</svg></section>`}
+{const _ddSky=dayDoneScreen;dayDoneScreen=function(){_ddSky.apply(this,arguments);if(window.SKY_OFF)return;try{
+  const r=document.querySelector('#app .k-daydone'),h=r&&r.querySelector('.k-dd-hero');if(!r||r.querySelector('.sky-fin-h'))return;
+  const t=typeof dayTheme==='function'?dayTheme():null;
+  const hero=document.createElement('div');hero.innerHTML=skyFinHero2(t,skyThemeWords(t));const el=hero.firstElementChild;
+  if(h)h.replaceWith(el);else r.prepend(el);r.classList.add('sky-fin2')}catch(e){console.error(e)}}}
 
 /* ====================== «СУЗІР'Я» · ЕТАП 6а: ВПРАВИ І ТЕСТ РІВНЯ (15.11.2026, макети SKY-ex-*, SKY-test-q-*) ======================
    Лише вигляд, логіка вправ та сама. Шапка: скляна «закрити» + «Етап · Тема» + прогрес зірками (skyStarsRow, 82) + «k / n»
@@ -11359,12 +11347,9 @@ function skyFinHero(t,ws){const N=skyNight(),lit=new Set(ws.map((w,i)=>st(w)?i:-
 
 function skyExHead(){try{if(!SS||!SS.items)return;const it=SS.items[SS.i]||{};
   const pr=document.querySelector('#app .nf-top .nf-prog');if(!pr||pr.querySelector('.sky-stars'))return;
-  const n=SS.items.length,i=Math.min(SS.i,n-1),lb=(pr.querySelector('.nf-prog-h b')||{}).textContent||'',th=it.w&&TOPIC_BY_ID[it.w.topic];
-  pr.innerHTML=`<div class="sky-ph"><span>${esc(lb)}${th?' · '+esc(th.name):''}</span><span>${i+1} / ${n}<i class="k-timer" hidden>0:00</i></span></div>${skyStarsRow(i,n,i>0)}<div class="bar nf-bar" hidden></div>`;
+  // стара шапка (34: назва · k / n · таймер) лишається, смуга прогресу ховається під зорі (рішення автора 15.11: вміст старий)
+  const n=SS.items.length,i=Math.min(SS.i,n-1),bar=pr.querySelector('.bar');if(bar)bar.hidden=true;pr.insertAdjacentHTML('beforeend',skyStarsRow(i,n,i>0));
   const a=document.getElementById('app');if(a&&!a.querySelector(':scope > .sky-ex-bg'))a.insertAdjacentHTML('afterbegin',`<svg class="sky-ex-bg" viewBox="0 0 390 300" preserveAspectRatio="xMidYMin slice" aria-hidden="true">${bgStars(390,280,34,17)}</svg>`);
-  // слухання: кнопка ▷ у кільцях (вигляд макета); підписи й «повільно» — старі (прохання автора 15.11)
-  const hd=document.querySelector('#app .nf-listen-hd'),pl=hd&&hd.querySelector('.nf-play');if(pl&&!hd.querySelector('.sky-lring')){pl.innerHTML=icn('play');
-    const ring=document.createElement('span');ring.className='sky-lring';ring.innerHTML='<svg viewBox="0 0 230 230" aria-hidden="true"><circle cx="115" cy="115" r="82"/><circle cx="115" cy="115" r="97"/><circle cx="115" cy="115" r="112"/></svg>';pl.before(ring);ring.appendChild(pl)}
 }catch(e){}}
 on('item:render',()=>{skyExHead();setTimeout(skyExHead,0)});
 // відгук після відповіді
@@ -11420,8 +11405,7 @@ function skyMeHTML(){const N=skyNight(),auto=!S.pal||S.pal==='auto',p=palToday()
     </div>
     <div class="sky-mes sky-mes2"><div class="sky-mer row"><b>Озвучення слів</b><button class="sky-tog${S.tts!==false?' on':''}" role="switch" aria-checked="${S.tts!==false}" aria-label="Озвучення слів" onclick="S.tts=S.tts===false;save();meScreen()"><i></i></button></div></div>
   </section>`}
-on('screen',n=>{try{if(n!=='me'||window.SKY_OFF||document.querySelector('#app .sky-me'))return;const m=document.querySelector('#app .nf-me');if(!m)return;
-  m.insertAdjacentHTML('afterend',skyMeHTML())}catch(e){console.error(e)}});
+// «Я»: старий екран без доповнень (рішення автора 15.11: вміст старий); skyMeHTML лишився для довідки, не вставляється
 
 
 bootApp();bigLoad();

@@ -42,7 +42,7 @@ header{display:flex;align-items:center;justify-content:space-between;gap:12px;fl
 h2{font-size:20px;margin:22px 0 10px;font-weight:900}
 .modes{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
 .mode{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px;text-align:left;transition:transform .12s, box-shadow .12s}
-.mode:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,.06)}
+@media (hover:hover){.mode:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,.06)}}
 .mode .ic{font-size:28px}
 .mode b{display:block;font-size:17px;margin-top:6px}
 .mode span{color:var(--muted);font-size:13px;font-weight:600}
@@ -61,7 +61,7 @@ h2{font-size:20px;margin:22px 0 10px;font-weight:900}
 .speak{font-size:20px;background:var(--accent-soft);border-radius:12px;padding:6px 10px}
 .opts{display:grid;gap:10px;margin-top:18px}
 .opt{background:var(--card);border:2px solid var(--line);border-radius:14px;padding:14px 16px;text-align:left;font-size:17px;font-weight:700;transition:.12s}
-.opt:hover:not(:disabled){border-color:var(--accent)}
+@media (hover:hover){.opt:hover:not(:disabled){border-color:var(--accent)}}
 .opt.ok{border-color:var(--ok);background:var(--ok-soft)}
 .opt.bad{border-color:var(--bad);background:var(--bad-soft)}
 .opt:disabled{cursor:default}
@@ -163,7 +163,7 @@ input.answer:focus{border-color:var(--accent)}
 .gtext{font-size:20px;line-height:1.9;margin-top:16px}
 .gtext p{margin:0 0 14px}
 .gl{border-bottom:2px dotted rgba(0,0,0,.18);cursor:pointer;border-radius:4px;padding:0 1px;transition:background .1s}
-.gl:hover,.gl.on{background:var(--accent-soft);border-bottom-color:var(--accent)}
+.gl.on{background:var(--accent-soft);border-bottom-color:var(--accent)}@media (hover:hover){.gl:hover{background:var(--accent-soft);border-bottom-color:var(--accent)}}
 #pop{position:absolute;display:none;z-index:20;background:var(--pop);color:#fff;border-radius:14px;padding:10px 12px;min-width:150px;max-width:260px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
 .pop-w{font-weight:900;font-size:16px}
 .pop-tr{font-size:15px;margin-top:2px;color:#ffe9a8;font-weight:700}
@@ -312,7 +312,7 @@ header .pill{cursor:default}header button.pill{cursor:pointer}
 
 /* ===== 10: ігри, виклики, звіти ===== */
 .back.rep{margin-left:6px;opacity:.55;font-size:15px;padding:6px 9px}
-.back.rep:hover{opacity:1}
+@media (hover:hover){.back.rep:hover{opacity:1}}
 .modal{position:fixed;inset:0;background:rgba(20,20,30,.45);display:flex;align-items:flex-end;justify-content:center;z-index:200;padding:12px}
 .modal-box{background:var(--card);border-radius:22px;padding:18px;width:100%;max-width:520px;box-shadow:0 10px 40px rgba(0,0,0,.2);margin-bottom:env(safe-area-inset-bottom)}
 .modal-box a.btn{text-decoration:none;display:flex;align-items:center;justify-content:center}
@@ -484,7 +484,7 @@ body{background:radial-gradient(1200px 500px at 110% -10%,color-mix(in srgb,var(
 @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
 /* натискання */
 .mode:active,.blk:active,.opt:active,.btn:active,.lesson:active,.node:active,.seg button:active,.chip:active,.goal:active{transform:scale(.97)}
-.btn{transition:transform .1s,filter .15s}.btn:hover{filter:brightness(1.06)}
+.btn{transition:transform .1s,filter .15s}@media (hover:hover){.btn:hover{filter:brightness(1.06)}}
 /* завдання дня */
 .quest .q-ic{width:42px;height:42px;flex:0 0 42px;border-radius:13px;display:grid;place-items:center;background:var(--accent-soft);font-size:22px}
 .quest .bar i{background:linear-gradient(90deg,var(--accent),#f5b301)}
@@ -636,7 +636,7 @@ h2{font-weight:800;font-size:18px}
 /* картки, кнопки, поля */
 .card,.mode,.lesson,.lang,.lvl,.chip,.pill,.my-row,.summary div,.daily,.k-set,.quests{background:var(--card);border-color:var(--line)}
 .card{border:1px solid var(--line);box-shadow:none}
-.mode{border:1px solid var(--line);box-shadow:none}.mode:hover{transform:none;box-shadow:none;border-color:var(--accent)}
+.mode{border:1px solid var(--line);box-shadow:none}@media (hover:hover){.mode:hover{transform:none;box-shadow:none;border-color:var(--accent)}}
 .mode::after{display:none}.mode .ic{background:var(--surf)!important;width:44px;height:44px;border-radius:12px;font-size:22px}
 .btn{background:var(--accent);color:var(--on-accent);font-weight:700;border-radius:14px;min-height:48px}
 .btn.big{min-height:52px;font-size:17px}.btn.ghost{background:var(--card);color:var(--ink);border:1px solid var(--line)}
@@ -693,7 +693,7 @@ input.answer,.wta,textarea{background:var(--card);color:var(--ink);border-color:
 .k-phase{font-size:12px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;color:var(--muted);margin:2px 0 10px}
 .phase{display:none}
 .k-menu{position:absolute;z-index:250;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 10px 30px var(--shadow);padding:6px;display:flex;flex-direction:column;min-width:220px}
-.k-menu button{text-align:left;padding:12px 14px;border-radius:10px;font-weight:600;min-height:44px}.k-menu button:hover{background:var(--surf)}
+.k-menu button{text-align:left;padding:12px 14px;border-radius:10px;font-weight:600;min-height:44px}@media (hover:hover){.k-menu button:hover{background:var(--surf)}}
 /* картка слова (K02) */
 .k-card{background:none;border:none;padding:0;transform:none}
 .k-pic{position:relative;background:var(--pic);border-radius:24px;min-height:220px;display:grid;place-items:center;font-size:110px;margin-bottom:16px}
@@ -2729,12 +2729,84 @@ body:has(#app > .nf-launch){min-height:100vh;min-height:100dvh;background:linear
 body.in-session #app .nf-ex.nf-word{display:flex;flex-direction:column;min-height:calc(100vh - 172px);min-height:calc(100dvh - 172px)}
 body.in-session #app .nf-ex.nf-word .nf-wbtns{margin-top:auto}
 .rd-exp .rd-right b{color:var(--ok-ink,var(--ok))}
+
+/* ---------- Блоки-картки з висувною панеллю (73_blocks_ui.js) ---------- */
+.bk-list{display:flex;flex-direction:column;gap:10px;margin:0 0 4px}
+.bk-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.bk-sec{font-size:11.5px;text-transform:uppercase;letter-spacing:.07em;color:var(--mut);font-weight:700;margin:18px 4px 8px}
+.bk-card{all:unset;box-sizing:border-box;cursor:pointer;display:flex;align-items:center;gap:12px;width:100%;min-height:76px;padding:12px 14px 12px 12px;border-radius:20px;background:var(--s1);border:1px solid var(--line);color:var(--ink);position:relative}
+.bk-card:focus-visible{outline:2px solid var(--lime);outline-offset:2px}
+.bk-card.cur{min-height:96px;padding:14px;background:linear-gradient(180deg,color-mix(in srgb,var(--lime-t) 11%,var(--s1)),var(--s1));border-color:color-mix(in srgb,var(--lime-t) 45%,var(--line))}
+.bk-pic{width:56px;height:56px;flex:none;border-radius:16px;background:#EEEBE5;display:grid;place-items:center;overflow:hidden;color:#333}
+.bk-card.cur .bk-pic{width:66px;height:66px;border-radius:18px}
+.bk-pic .pimg,.bk-pic img{width:80%!important;height:80%!important;padding:0!important;background:none!important;border-radius:0!important;object-fit:contain}
+.bk-pic .pic-scene,.bk-pic .ic{width:28px;height:28px}
+.bk-t{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}
+.bk-t em{font-style:normal;font-size:11px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:var(--lime-t)}
+.bk-t b{font:700 16px/1.25 'Golos Text',sans-serif}
+.bk-card.cur .bk-t b{font:800 19px/1.2 Unbounded,sans-serif}
+.bk-t small{font-size:13px;color:var(--mut);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bk-card .rt-rg{flex:none}
+.bk-grid .bk-card{flex-direction:column;align-items:flex-start;gap:8px;min-height:0;padding:12px}
+.bk-grid .bk-card .rt-rg{position:absolute;top:10px;right:10px;width:26px;height:26px}
+.bk-grid .bk-pic{width:48px;height:48px;border-radius:14px}
+.bk-grid .bk-t b{font-size:14.5px}.bk-grid .bk-t{width:100%}
+.bk-st{margin:10px 0 0}
+.bk-sheet{max-height:82vh;display:flex;flex-direction:column}
+.bk-sh-h{display:flex;align-items:center;gap:12px;margin:4px 0 10px}
+.bk-sh-h>span:not(.bk-pic){flex:1;min-width:0;display:flex;flex-direction:column}
+.bk-sh-h b{font:800 19px/1.2 Unbounded,sans-serif}.bk-sh-h small{color:var(--mut);font-size:13px;margin-top:2px}
+.bk-x{all:unset;cursor:pointer;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:var(--s2);color:var(--ink);flex:none}.bk-x .ic{width:18px;height:18px}
+.bk-sh-l{overflow:auto;-webkit-overflow-scrolling:touch;margin:0;padding:0 2px 6px;flex:1;min-height:0}
+:root[data-theme="light"] .bk-pic{background:#F1EEE8}
+
+/* :hover — лише там, де є миша (@media (hover:hover)): на iPhone після дотику кнопка лишалась «наведеною»,
+   і варіант на тому ж місці в наступному питанні мав рамку, схожу на підказку (15.11.2026) */
+/* кнопка «Прослухати» на картці слова: значок був того ж кольору, що й кнопка (15.11.2026) */
+.nf-say{color:#17141f!important}.nf-say svg{stroke:currentColor!important;width:28px;height:28px;opacity:1}
+
+/* КАРТКИ ПО ЦЕНТРУ (15.11.2026, 74_center.js): вправа — відступ зверху рахує JS, після відповіді плавно 0;
+   підсумок уроку — по центру екрана й з відступом під рядок годинника iPhone */
+.ct-mid{transition:margin-top .35s cubic-bezier(.2,.8,.2,1)}
+@media (prefers-reduced-motion:reduce){.ct-mid{transition:none}}
+#app:has(> .card.result){min-height:calc(100dvh - 104px);display:flex;flex-direction:column;justify-content:center;padding-top:max(16px,calc(env(safe-area-inset-top) + 12px))}
+#app:has(> .card.result) > .card.result{margin-top:0;margin-bottom:0}
+
+/* «День завершено» коротше (75_day_done.js) */
+.dd-short{padding-bottom:4px}.dd-short h1{margin-bottom:0}
+.dd-tm{padding:12px 16px}.dd-tm small{font-size:14px;color:var(--ink-2,var(--mut))}
+.dd-bonus .k-hb{display:flex;flex-direction:column;gap:6px;width:100%}.dd-bt{font-size:18px}
+.dd-what{all:unset;cursor:pointer;color:var(--lime-t);font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.dd-what:focus-visible{outline:2px solid var(--lime);outline-offset:2px;border-radius:4px}
+.dd-row{display:flex;align-items:center;gap:10px;width:100%;padding:10px 4px}.dd-row .k-t{flex:1;display:flex;flex-direction:column;gap:2px}
+.dd-sh-go{list-style:none;padding:12px 0 4px}
+.dd-later{display:block;text-align:center;font-size:13px;color:var(--mut,#9a97a6);margin-top:2px}
+
+/* «Основи» A1 на «Шляху» (76_basics_blocks.js) */
+.bs-pic{font:800 22px/1 'Unbounded',sans-serif;color:var(--lime-t);letter-spacing:-.02em}
+.bs-act{list-style:none;padding:6px 0}.bs-act .btn{width:100%}
+.bs-note{list-style:none;padding:8px 2px 2px;font-size:13px;color:var(--mut,#9a97a6)}
+
+/* верхній рядок під годинником iPhone (15.11.2026): статус-бар прозорий (black-translucent + viewport-fit=cover),
+   тому відступ зверху = безпечна зона + 16px, а під самим статус-баром — смуга кольору тла, щоб текст при прокручуванні не заходив під годинник */
+.wrap{padding-top:calc(env(safe-area-inset-top,0px) + 16px)}
+body::before{content:"";position:fixed;top:0;left:0;right:0;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:60;pointer-events:none}
+
+/* неправильні дієслова (77_irregular.js) */
+.bs-pic.sm{font-size:15px}
+.irr-h{font-size:18px}.irr-rules{display:flex;flex-direction:column;gap:8px;margin:8px 0 12px}
+.irr-rb .rule-body{font-size:15px;line-height:1.55}.irr-rb s{opacity:.7}
+.irr-go{display:flex;flex-direction:column;gap:8px;margin:4px 0 6px}
+.irr-tab{display:flex;flex-direction:column;gap:6px}.irr-row{all:unset;box-sizing:border-box;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px 14px;border-radius:14px;background:var(--s1);border:1px solid var(--line)}
+.irr-row b{font-weight:700}.irr-row small{color:var(--mut,#9a97a6);text-align:right}.irr-row:focus-visible{outline:2px solid var(--lime);outline-offset:2px}
+.bk-sec small{font-weight:500;text-transform:none;letter-spacing:0;opacity:.75;margin-left:6px}
+.irr-uk{display:block;font:500 15px 'Golos Text',sans-serif;color:var(--mut,#9a97a6);margin-top:4px}.irr-note{font-size:13px;margin-top:14px}
 </style>
 </head>
 <body>
 <div class="wrap" id="app"></div>
 <div class="toast" id="toast"></div>
-<script src="data/core.1066d8ff6a.js"></script>
+<script src="data/core.ee984053e8.js"></script>
 <script>
 const PICS={"hello": "img/hello.svg", "nod_,_to": "img/nod_%2C_to.svg", "mistake_no_wrong": "img/mistake_no_wrong.svg", "morning": "img/morning.svg", "night": "img/night.svg", "bread": "img/bread.svg", "water": "img/water.svg", "milk": "img/milk.svg", "apple": "img/apple.svg", "cheese": "img/cheese.svg", "meat": "img/meat.svg", "fish": "img/fish.svg", "egg": "img/egg.svg", "coffee": "img/coffee.svg", "tea": "img/tea.svg", "sugar_white": "img/sugar_white.svg", "salt": "img/salt.svg", "mum_parent": "img/mum_parent.svg", "dad_parent": "img/dad_parent.svg", "brother": "img/brother.svg", "sister": "img/sister.svg", "son": "img/son.svg", "daughter": "img/daughter.svg", "young": "img/young.svg", "happy_man": "img/happy_man.svg", "happy_lady": "img/happy_lady.svg", "house": "img/house.svg", "room": "img/room.svg", "door": "img/door.svg", "window": "img/window.svg", "table": "img/table.svg", "chair": "img/chair.svg", "single_bed": "img/single_bed.svg", "cooker": "img/cooker.svg", "key_1": "img/key_1.svg", "read_book_,_to": "img/read_book_%2C_to.svg", "office_block": "img/office_block.svg", "road": "img/road.svg", "train": "img/train.svg", "bus": "img/bus.svg", "plane_take_off": "img/plane_take_off.svg", "shop": "img/shop.svg", "doctor_1a": "img/doctor_1a.svg", "money": "img/money.svg", "red": "img/red.svg", "blue": "img/blue.svg", "green": "img/green.svg", "yellow": "img/yellow.svg", "black": "img/black.svg", "white": "img/white.svg", "pink": "img/pink.svg", "purple": "img/purple.svg", "brown": "img/brown.svg", "grey_light": "img/grey_light.svg", "one": "img/one.svg", "two": "img/two.svg", "three": "img/three.svg", "four": "img/four.svg", "five": "img/five.svg", "six": "img/six.svg", "seven": "img/seven.svg", "eight": "img/eight.svg", "nine": "img/nine.svg", "ten": "img/ten.svg", "day": "img/day.svg", "week": "img/week.svg", "calendar": "img/calendar.svg", "today": "img/today.svg", "tomorrow": "img/tomorrow.svg", "yesterday": "img/yesterday.svg", "eat_,_to": "img/eat_%2C_to.svg", "drink_,_to": "img/drink_%2C_to.svg", "go_,_to": "img/go_%2C_to.svg", "talk_1_,_to": "img/talk_1_%2C_to.svg", "read_,_to": "img/read_%2C_to.svg", "write_,_to": "img/write_%2C_to.svg", "sleep_male_,_to": "img/sleep_male_%2C_to.svg", "heart": "img/heart.svg", "work_,_to": "img/work_%2C_to.svg", "look_,_to": "img/look_%2C_to.svg", "large": "img/large.svg", "little": "img/little.svg", "good": "img/good.svg", "bad": "img/bad.svg", "old_person_1": "img/old_person_1.svg", "hot": "img/hot.svg", "drink_cold": "img/drink_cold.svg", "meet_,_to": "img/meet_%2C_to.svg", "confused_man": "img/confused_man.svg", "toilet": "img/toilet.svg", "confused_lady": "img/confused_lady.svg", "right_hand": "img/right_hand.svg", "leg": "img/leg.svg", "foot": "img/foot.svg", "eye": "img/eye.svg", "ear": "img/ear.svg", "mouth": "img/mouth.svg", "face_neutral_3": "img/face_neutral_3.svg", "finger": "img/finger.svg", "neck": "img/neck.svg", "body_outline": "img/body_outline.svg", "calendar_month": "img/calendar_month.svg", "one_hour": "img/one_hour.svg", "minute": "img/minute.svg", "weekend": "img/weekend.svg", "mobile_phone": "img/mobile_phone.svg", "mug_2": "img/mug_2.svg", "plate": "img/plate.svg", "spoon": "img/spoon.svg", "knife": "img/knife.svg", "fork": "img/fork.svg", "clock": "img/clock.svg", "computer_1": "img/computer_1.svg", "glasses": "img/glasses.svg", "lamp": "img/lamp.svg", "flatscreen_tv": "img/flatscreen_tv.svg", "soap": "img/soap.svg", "lion": "img/lion.svg", "elephant": "img/elephant.svg", "tiger": "img/tiger.svg", "chimpanzee": "img/chimpanzee.svg", "giraffe": "img/giraffe.svg", "zebra": "img/zebra.svg", "snake": "img/snake.svg", "frog": "img/frog.svg", "turtle": "img/turtle.svg", "butterfly": "img/butterfly.svg", "bee_honey": "img/bee_honey.svg", "spider": "img/spider.svg", "fruit": "img/fruit.svg", "vegetables": "img/vegetables.svg", "banana": "img/banana.svg", "orange": "img/orange.svg", "pear": "img/pear.svg", "lemon": "img/lemon.svg", "strawberry": "img/strawberry.svg", "grapes": "img/grapes.svg", "potato": "img/potato.svg", "tomato": "img/tomato.svg", "carrot": "img/carrot.svg", "cucumber": "img/cucumber.svg", "onion": "img/onion.svg", "thirsty": "img/thirsty.svg", "school": "img/school.svg", "scissors": "img/scissors.svg", "glue": "img/glue.svg", "pencil_case": "img/pencil_case.svg", "calculator": "img/calculator.svg", "count_,_to": "img/count_%2C_to.svg", "car": "img/car.svg", "bicycle": "img/bicycle.svg", "plane": "img/plane.svg", "boat": "img/boat.svg", "taxi": "img/taxi.svg", "drive_,_to": "img/drive_%2C_to.svg", "basket": "img/basket.svg", "open": "img/open.svg", "closed": "img/closed.svg", "breakfast_1": "img/breakfast_1.svg", "lunch_1": "img/lunch_1.svg", "dinner": "img/dinner.svg", "fridge": "img/fridge.svg", "frying_pan": "img/frying_pan.svg", "saucepan": "img/saucepan.svg", "recipe": "img/recipe.svg", "kettle": "img/kettle.svg", "soup": "img/soup.svg", "rice": "img/rice.svg", "butter": "img/butter.svg", "fry_,_to": "img/fry_%2C_to.svg", "wash_up_,_to": "img/wash_up_%2C_to.svg", "set_the_table_,_to": "img/set_the_table_%2C_to.svg", "summer": "img/summer.svg", "autumn": "img/autumn.svg", "winter": "img/winter.svg", "cloudy": "img/cloudy.svg", "rainbow": "img/rainbow.svg", "Moon": "img/Moon.svg", "rain": "img/rain.svg", "snow": "img/snow.svg", "open_,_to": "img/open_%2C_to.svg", "close_,_to": "img/close_%2C_to.svg", "come_,_to": "img/come_%2C_to.svg", "give_,_to": "img/give_%2C_to.svg", "take_,_to": "img/take_%2C_to.svg", "want_,_to": "img/want_%2C_to.svg", "ask_,_to": "img/ask_%2C_to.svg", "help_,_to": "img/help_%2C_to.svg", "find_,_to": "img/find_%2C_to.svg", "wait_,_to": "img/wait_%2C_to.svg", "think_,_to": "img/think_%2C_to.svg", "who": "img/who.svg", "what": "img/what.svg", "where": "img/where.svg", "when": "img/when.svg", "why": "img/why.svg", "how": "img/how.svg", "which": "img/which.svg", "how_many": "img/how_many.svg", "football": "img/football.svg", "basketball": "img/basketball.svg", "tennis": "img/tennis.svg", "goal": "img/goal.svg", "gym_1": "img/gym_1.svg", "playing_cards": "img/playing_cards.svg", "winner": "img/winner.svg", "jump_,_to": "img/jump_%2C_to.svg", "ski_,_to": "img/ski_%2C_to.svg", "church": "img/church.svg", "busy": "img/busy.svg", "strong": "img/strong.svg", "smile_,_to": "img/smile_%2C_to.svg", "now": "img/now.svg", "next_week": "img/next_week.svg", "afternoon": "img/afternoon.svg", "shake_hands_,_to": "img/shake_hands_%2C_to.svg", "sandwich": "img/sandwich.svg", "hot_chocolate": "img/hot_chocolate.svg", "orange_juice": "img/orange_juice.svg", "ice_cream": "img/ice_cream.svg", "behind": "img/behind.svg", "between": "img/between.svg", "near": "img/near.svg", "under_1": "img/under_1.svg", "above": "img/above.svg", "outside": "img/outside.svg", "Zero": "img/Zero.svg", "eleven": "img/eleven.svg", "twelve": "img/twelve.svg", "thirteen": "img/thirteen.svg", "fourteen": "img/fourteen.svg", "fifteen": "img/fifteen.svg", "sixteen": "img/sixteen.svg", "seventeen": "img/seventeen.svg", "eighteen": "img/eighteen.svg", "nineteen": "img/nineteen.svg", "twenty": "img/twenty.svg", "thirty": "img/thirty.svg", "forty": "img/forty.svg", "fifty": "img/fifty.svg", "sixty": "img/sixty.svg", "seventy": "img/seventy.svg", "eighty": "img/eighty.svg", "ninety": "img/ninety.svg", "first": "img/first.svg", "family": "img/family.svg", "husband": "img/husband.svg", "wife": "img/wife.svg", "grandmother": "img/grandmother.svg", "grandfather": "img/grandfather.svg", "grandparents": "img/grandparents.svg", "baby": "img/baby.svg", "relax_,_to": "img/relax_%2C_to.svg", "garage": "img/garage.svg", "front_door": "img/front_door.svg", "bath": "img/bath.svg", "towel": "img/towel.svg", "long": "img/long.svg", "short": "img/short.svg", "tall": "img/tall.svg", "ugly": "img/ugly.svg", "dry": "img/dry.svg", "hard": "img/hard.svg", "soft": "img/soft.svg", "thin": "img/thin.svg", "thick": "img/thick.svg", "sun": "img/sun.svg", "wet": "img/wet.svg", "thermometer": "img/thermometer.svg", "wallet": "img/wallet.svg", "tape_measure": "img/tape_measure.svg", "shop_2": "img/shop_2.svg", "bank_card": "img/bank_card.svg", "head": "img/head.svg", "stomach": "img/stomach.svg", "tooth": "img/tooth.svg", "medicine": "img/medicine.svg", "sneeze_cold": "img/sneeze_cold.svg", "headache": "img/headache.svg", "medicine_cabinet": "img/medicine_cabinet.svg", "rest_,_to": "img/rest_%2C_to.svg", "suitcase_1": "img/suitcase_1.svg", "passport": "img/passport.svg", "suitcase_2": "img/suitcase_2.svg", "sun_lounger": "img/sun_lounger.svg", "beach": "img/beach.svg", "mountains": "img/mountains.svg", "travel": "img/travel.svg", "wake_up_,_to": "img/wake_up_%2C_to.svg", "get_up_,_to": "img/get_up_%2C_to.svg", "cook_,_to": "img/cook_%2C_to.svg", "clean_room": "img/clean_room.svg", "shower_1_,_to": "img/shower_1_%2C_to.svg", "flag_Ukraine": "img/flag_Ukraine.svg", "lucky": "img/lucky.svg", "lost": "img/lost.svg", "thumbs": "img/thumbs.svg", "champagne": "img/champagne.svg", "shirt": "img/shirt.svg", "dress": "img/dress.svg", "jacket": "img/jacket.svg", "coat": "img/coat.svg", "jumper": "img/jumper.svg", "t-shirt": "img/t-shirt.svg", "hat_-_mans": "img/hat_-_mans.svg", "scarf": "img/scarf.svg", "gloves": "img/gloves.svg", "shoe_-_mans": "img/shoe_-_mans.svg", "socks": "img/socks.svg", "hand_bag": "img/hand_bag.svg", "umbrella": "img/umbrella.svg", "swim_,_to": "img/swim_%2C_to.svg", "run_,_to": "img/run_%2C_to.svg", "dance_,_to": "img/dance_%2C_to.svg", "sing_,_to": "img/sing_%2C_to.svg", "draw_,_to": "img/draw_%2C_to.svg", "play_,_to": "img/play_%2C_to.svg", "camera": "img/camera.svg", "cycle_,_to": "img/cycle_%2C_to.svg", "guitar": "img/guitar.svg", "ball": "img/ball.svg", "computer_game": "img/computer_game.svg", "dog": "img/dog.svg", "cat": "img/cat.svg", "horse": "img/horse.svg", "cow": "img/cow.svg", "piglet": "img/piglet.svg", "sheep": "img/sheep.svg", "chicken_live": "img/chicken_live.svg", "bird": "img/bird.svg", "mouse": "img/mouse.svg", "rabbit": "img/rabbit.svg", "bear": "img/bear.svg", "fox": "img/fox.svg", "duck": "img/duck.svg", "wolf": "img/wolf.svg", "teacher_1a": "img/teacher_1a.svg", "cook_chef_1a": "img/cook_chef_1a.svg", "taxi_driver_1a": "img/taxi_driver_1a.svg", "nurse_1a": "img/nurse_1a.svg", "police_1a": "img/police_1a.svg", "farmer_1a": "img/farmer_1a.svg", "pilot_1a": "img/pilot_1a.svg", "school_bag": "img/school_bag.svg", "notebook": "img/notebook.svg", "pencil": "img/pencil.svg", "dictionary": "img/dictionary.svg", "answer": "img/answer.svg", "study_,_to": "img/study_%2C_to.svg", "blackboard": "img/blackboard.svg", "birthday_cake": "img/birthday_cake.svg", "hungry": "img/hungry.svg", "yawn_,_to": "img/yawn_%2C_to.svg", "menu": "img/menu.svg", "main_course": "img/main_course.svg", "dessert": "img/dessert.svg", "salad": "img/salad.svg", "spicy": "img/spicy.svg", "tablecloth": "img/tablecloth.svg", "toothache": "img/toothache.svg", "cream": "img/cream.svg", "plaster": "img/plaster.svg", "dentist_1a": "img/dentist_1a.svg", "ambulance": "img/ambulance.svg", "envelope": "img/envelope.svg", "receive_,_to": "img/receive_%2C_to.svg", "furniture": "img/furniture.svg", "make_the_bed_,_to": "img/make_the_bed_%2C_to.svg", "dust_,_to": "img/dust_%2C_to.svg", "ferry": "img/ferry.svg", "cake": "img/cake.svg", "Christmas": "img/Christmas.svg", "Christmas_tree": "img/Christmas_tree.svg", "celebrate_1_,_to": "img/celebrate_1_%2C_to.svg", "balloon": "img/balloon.svg", "fireworks": "img/fireworks.svg", "decorate_,_to": "img/decorate_%2C_to.svg", "toast": "img/toast.svg", "carry_,_to": "img/carry_%2C_to.svg", "put_,_to": "img/put_%2C_to.svg", "keep_,_to": "img/keep_%2C_to.svg", "quiet": "img/quiet.svg", "noisy": "img/noisy.svg", "empty": "img/empty.svg", "full": "img/full.svg", "heavy": "img/heavy.svg", "dirty": "img/dirty.svg", "ready": "img/ready.svg", "enough": "img/enough.svg", "bookcase": "img/bookcase.svg", "drawer": "img/drawer.svg", "mirror": "img/mirror.svg", "blanket": "img/blanket.svg", "desk": "img/desk.svg", "chest_of_drawers": "img/chest_of_drawers.svg", "ceiling": "img/ceiling.svg", "wall": "img/wall.svg", "tidy_up_,_to": "img/tidy_up_%2C_to.svg", "bake_,_to": "img/bake_%2C_to.svg", "grill_,_to": "img/grill_%2C_to.svg", "chop_,_to": "img/chop_%2C_to.svg", "peel_,_to": "img/peel_%2C_to.svg", "grate_,_to": "img/grate_%2C_to.svg", "stir_,_to": "img/stir_%2C_to.svg", "pour_,_to": "img/pour_%2C_to.svg", "melt_,_to": "img/melt_%2C_to.svg", "heat_,_to": "img/heat_%2C_to.svg", "taste_,_to": "img/taste_%2C_to.svg", "whisk_,_to": "img/whisk_%2C_to.svg", "serve_,_to": "img/serve_%2C_to.svg", "lid": "img/lid.svg", "bowl": "img/bowl.svg", "chopping_board": "img/chopping_board.svg", "toaster": "img/toaster.svg", "freezer": "img/freezer.svg", "dishwasher": "img/dishwasher.svg", "skirt": "img/skirt.svg", "blouse": "img/blouse.svg", "trousers": "img/trousers.svg", "tights": "img/tights.svg", "boots": "img/boots.svg", "slippers": "img/slippers.svg", "belt": "img/belt.svg", "pocket": "img/pocket.svg", "button": "img/button.svg", "zip": "img/zip.svg", "pyjamas": "img/pyjamas.svg", "raincoat": "img/raincoat.svg", "get_dressed_,_to": "img/get_dressed_%2C_to.svg", "wool": "img/wool.svg", "striped": "img/striped.svg", "bone": "img/bone.svg", "skin": "img/skin.svg", "knee": "img/knee.svg", "elbow": "img/elbow.svg", "shoulder": "img/shoulder.svg", "wrist": "img/wrist.svg", "ankle": "img/ankle.svg", "chin": "img/chin.svg", "cheek": "img/cheek.svg", "eyebrow": "img/eyebrow.svg", "tongue": "img/tongue.svg", "thumb": "img/thumb.svg", "field": "img/field.svg", "stone": "img/stone.svg", "grass": "img/grass.svg", "leaf": "img/leaf.svg", "tree": "img/tree.svg", "flower": "img/flower.svg", "squirrel_1a": "img/squirrel_1a.svg", "hedgehog": "img/hedgehog.svg", "owl": "img/owl.svg", "ant": "img/ant.svg", "dolphin": "img/dolphin.svg", "penguin": "img/penguin.svg", "parrot": "img/parrot.svg", "goose": "img/goose.svg", "swan": "img/swan.svg", "deer": "img/deer.svg", "tortoise": "img/tortoise.svg", "volleyball": "img/volleyball.svg", "golf": "img/golf.svg", "piano": "img/piano.svg", "maths": "img/maths.svg", "history": "img/history.svg", "geography": "img/geography.svg", "test": "img/test.svg", "put_away_,_to": "img/put_away_%2C_to.svg", "tablets": "img/tablets.svg", "healthy": "img/healthy.svg", "Earth": "img/Earth.svg", "cactus": "img/cactus.svg", "recycling_bins": "img/recycling_bins.svg", "protect_,_to": "img/protect_%2C_to.svg", "sad_lady": "img/sad_lady.svg", "jealous_lady": "img/jealous_lady.svg", "surprised_lady": "img/surprised_lady.svg", "worried_man": "img/worried_man.svg", "correct": "img/correct.svg", "wrong_thought": "img/wrong_thought.svg", "left_hand": "img/left_hand.svg", "printer": "img/printer.svg", "email_attachment": "img/email_attachment.svg", "charger_electric": "img/charger_electric.svg", "computer_keyboard": "img/computer_keyboard.svg", "save": "img/save.svg", "mobile_phone_text_message": "img/mobile_phone_text_message.svg", "head_teacher_1a": "img/head_teacher_1a.svg", "cheat_,_to": "img/cheat_%2C_to.svg", "class_room": "img/class_room.svg", "newspaper": "img/newspaper.svg", "clap_hands_,_to": "img/clap_hands_%2C_to.svg", "wardrobe": "img/wardrobe.svg", "vacuum_cleaner_1": "img/vacuum_cleaner_1.svg", "lift": "img/lift.svg", "washing_machine": "img/washing_machine.svg", "iron_,_to": "img/iron_%2C_to.svg", "laundry_basket": "img/laundry_basket.svg", "stairs": "img/stairs.svg", "change_mind_,_to": "img/change_mind_%2C_to.svg", "certificate": "img/certificate.svg", "flat_tyre": "img/flat_tyre.svg", "protein": "img/protein.svg", "carbohydrates": "img/carbohydrates.svg", "pick_up_,_to": "img/pick_up_%2C_to.svg", "caretaker_1a": "img/caretaker_1a.svg", "plastic_bag": "img/plastic_bag.svg", "cardboard": "img/cardboard.svg", "throw_away_,_to": "img/throw_away_%2C_to.svg", "parents": "img/parents.svg", "hug_,_to": "img/hug_%2C_to.svg", "vomit_,_to": "img/vomit_%2C_to.svg", "rash": "img/rash.svg", "stomach_ache": "img/stomach_ache.svg", "seat_belt": "img/seat_belt.svg", "return_,_to": "img/return_%2C_to.svg", "queue_,_to": "img/queue_%2C_to.svg", "curly": "img/curly.svg", "freckles": "img/freckles.svg", "tattoo": "img/tattoo.svg", "scar": "img/scar.svg", "collect_,_to": "img/collect_%2C_to.svg", "dial_,_to": "img/dial_%2C_to.svg", "whisper_,_to": "img/whisper_%2C_to.svg", "steal_,_to": "img/steal_%2C_to.svg", "handcuffs": "img/handcuffs.svg", "slippery": "img/slippery.svg", "Houses_of_Parliament": "img/Houses_of_Parliament.svg", "vote_,_to": "img/vote_%2C_to.svg", "wheelie_bin": "img/wheelie_bin.svg", "recycle_logo": "img/recycle_logo.svg", "race_athletics": "img/race_athletics.svg", "worried_lady": "img/worried_lady.svg", "angry_man": "img/angry_man.svg", "brain": "img/brain.svg", "thunder_storm": "img/thunder_storm.svg", "cross_fingers_,_to": "img/cross_fingers_%2C_to.svg", "touch_screen": "img/touch_screen.svg", "download_,_to": "img/download_%2C_to.svg", "share_,_to": "img/share_%2C_to.svg", "battery_1": "img/battery_1.svg", "concentrating_man": "img/concentrating_man.svg", "operation": "img/operation.svg", "syringe": "img/syringe.svg", "blood_pressure": "img/blood_pressure.svg", "jealous_man": "img/jealous_man.svg", "sweet": "img/sweet.svg", "microscope": "img/microscope.svg", "stretch_,_to": "img/stretch_%2C_to.svg", "jog_,_to": "img/jog_%2C_to.svg", "arrest_,_to": "img/arrest_%2C_to.svg", "test_tube": "img/test_tube.svg", "crown": "img/crown.svg", "eyes_closed": "img/eyes_closed.svg", "bush": "img/bush.svg", "straw": "img/straw.svg", "horns": "img/horns.svg", "fire": "img/fire.svg", "gold_bar": "img/gold_bar.svg", "cctv": "img/cctv.svg", "subtract": "img/subtract.svg", "daydream_,_to": "img/daydream_%2C_to.svg", "roots": "img/roots.svg", "broken": "img/broken.svg", "disgusted_man": "img/disgusted_man.svg", "microphone": "img/microphone.svg", "heel": "img/heel.svg", "bricks": "img/bricks.svg", "candle_2": "img/candle_2.svg", "sad_man": "img/sad_man.svg", "harvest": "img/harvest.svg", "hammer": "img/hammer.svg", "crocodile": "img/crocodile.svg", "fish_,_to": "img/fish_%2C_to.svg", "vice": "img/vice.svg"};const AUDIO_MODE="file";const AUDIO_EN={"April":"april.mp3","August":"august.mp3","Christmas":"christmas.mp3","December":"december.mp3","February":"february.mp3","Friday":"friday.mp3","January":"january.mp3","July":"july.mp3","June":"june.mp3","March":"march.mp3","May":"may.mp3","Monday":"monday.mp3","November":"november.mp3","October":"october.mp3","Saturday":"saturday.mp3","September":"september.mp3","Sunday":"sunday.mp3","Thursday":"thursday.mp3","Tuesday":"tuesday.mp3","Wednesday":"wednesday.mp3","above":"above.mp3","abroad":"abroad.mp3","actually":"actually.mp3","add":"add.mp3","address":"address.mp3","advertisement":"advertisement.mp3","afternoon":"afternoon.mp3","again":"again.mp3","age":"age.mp3","ago":"ago.mp3","airport":"airport.mp3","almost":"almost.mp3","already":"already.mp3","also":"also.mp3","although":"although.mp3","always":"always.mp3","ambulance":"ambulance.mp3","angry":"angry.mp3","animal":"animal.mp3","answer":"answer.mp3","anyway":"anyway.mp3","apartment":"apartment.mp3","app":"app.mp3","appetizer":"appetizer.mp3","apple":"apple.mp3","armchair":"armchair.mp3","arrive":"arrive.mp3","article":"article.mp3","ask":"ask.mp3","aunt":"aunt.mp3","author":"author.mp3","avoid":"avoid.mp3","baby":"baby.mp3","back":"back.mp3","bad":"bad.mp3","bag":"bag.mp3","bake":"bake.mp3","bakery":"bakery.mp3","balcony":"balcony.mp3","ball":"ball.mp3","balloon":"balloon.mp3","banana":"banana.mp3","bank":"bank.mp3","basket":"basket.mp3","basketball":"basketball.mp3","bath":"bath.mp3","bathroom":"bathroom.mp3","battery":"battery.mp3","be":"be.mp3","beach":"beach.mp3","bear":"bear.mp3","beard":"beard.mp3","beautiful":"beautiful.mp3","because":"because.mp3","bed":"bed.mp3","bedroom":"bedroom.mp3","bee":"bee.mp3","behind":"behind.mp3","belt":"belt.mp3","between":"between.mp3","bicycle":"bicycle.mp3","big":"big.mp3","bird":"bird.mp3","birthday":"birthday.mp3","blackboard":"blackboard.mp3","blanket":"blanket.mp3","blood":"blood.mp3","blue":"blue.mp3","boat":"boat.mp3","body":"body.mp3","bone":"bone.mp3","book":"book.mp3","boots":"boots.mp3","boring":"boring.mp3","borrow":"borrow.mp3","boss":"boss.mp3","bottle":"bottle.mp3","bowl":"bowl.mp3","boyfriend":"boyfriend.mp3","bread":"bread.mp3","break":"break.mp3","breakfast":"breakfast.mp3","bridge":"bridge.mp3","brother":"brother.mp3","brown":"brown.mp3","bus":"bus.mp3","busy":"busy.mp3","but":"but.mp3","butter":"butter.mp3","button":"button.mp3","buy":"buy.mp3","cake":"cake.mp3","calculator":"calculator.mp3","calendar":"calendar.mp3","call":"call.mp3","campsite":"campsite.mp3","candle":"candle.mp3","car":"car.mp3","careful":"careful.mp3","carpet":"carpet.mp3","carrot":"carrot.mp3","carry":"carry.mp3","cash":"cash.mp3","cat":"cat.mp3","ceiling":"ceiling.mp3","celebrate":"celebrate.mp3","century":"century.mp3","chair":"chair.mp3","change":"change.mp3","chat":"chat.mp3","check":"check.mp3","cheese":"cheese.mp3","chemistry":"chemistry.mp3","chess":"chess.mp3","child":"child.mp3","choose":"choose.mp3","church":"church.mp3","city":"city.mp3","class":"class.mp3","clean":"clean.mp3","clock":"clock.mp3","closed":"closed.mp3","closet":"closet.mp3","cloud":"cloud.mp3","cloudy":"cloudy.mp3","coach":"coach.mp3","coast":"coast.mp3","coat":"coat.mp3","coffee":"coffee.mp3","coin":"coin.mp3","cold":"cold.mp3","collect":"collect.mp3","come":"come.mp3","comedy":"comedy.mp3","comfortable":"comfortable.mp3","comment":"comment.mp3","completely":"completely.mp3","computer":"computer.mp3","contact":"contact.mp3","conversation":"conversation.mp3","cook":"cook.mp3","corner":"corner.mp3","cost":"cost.mp3","cotton":"cotton.mp3","cough":"cough.mp3","count":"count.mp3","cousin":"cousin.mp3","cow":"cow.mp3","cream":"cream.mp3","crime":"crime.mp3","crowded":"crowded.mp3","cry":"cry.mp3","cucumber":"cucumber.mp3","cup":"cup.mp3","curtain":"curtain.mp3","cut":"cut.mp3","cycle":"cycle.mp3","cycling":"cycling.mp3","daily":"daily.mp3","dance":"dance.mp3","dangerous":"dangerous.mp3","date":"date.mp3","daughter":"daughter.mp3","day":"day.mp3","decide":"decide.mp3","degree":"degree.mp3","delay":"delay.mp3","delicious":"delicious.mp3","dentist":"dentist.mp3","department":"department.mp3","describe":"describe.mp3","desk":"desk.mp3","dessert":"dessert.mp3","dictionary":"dictionary.mp3","different":"different.mp3","difficult":"difficult.mp3","digital":"digital.mp3","dinner":"dinner.mp3","dirty":"dirty.mp3","disappear":"disappear.mp3","discount":"discount.mp3","discover":"discover.mp3","dish":"dish.mp3","doctor":"doctor.mp3","dog":"dog.mp3","dolphin":"dolphin.mp3","door":"door.mp3","download":"download.mp3","downstairs":"downstairs.mp3","draw":"draw.mp3","drawer":"drawer.mp3","dress":"dress.mp3","drink":"drink.mp3","drive":"drive.mp3","driver":"driver.mp3","dry":"dry.mp3","duck":"duck.mp3","ear":"ear.mp3","early":"early.mp3","earn":"earn.mp3","easy":"easy.mp3","eat":"eat.mp3","egg":"egg.mp3","eight":"eight.mp3","eighteen":"eighteen.mp3","eighth":"eighth.mp3","eighty":"eighty.mp3","elephant":"elephant.mp3","eleven":"eleven.mp3","empty":"empty.mp3","engineer":"engineer.mp3","enough":"enough.mp3","envelope":"envelope.mp3","especially":"especially.mp3","essay":"essay.mp3","everybody":"everybody.mp3","everything":"everything.mp3","everywhere":"everywhere.mp3","excellent":"excellent.mp3","excited":"excited.mp3","exercise":"exercise.mp3","expect":"expect.mp3","expensive":"expensive.mp3","explain":"explain.mp3","eye":"eye.mp3","face":"face.mp3","fall":"fall.mp3","family":"family.mp3","famous":"famous.mp3","far":"far.mp3","farmer":"farmer.mp3","fast":"fast.mp3","father":"father.mp3","festival":"festival.mp3","field":"field.mp3","fifteen":"fifteen.mp3","fifth":"fifth.mp3","fifty":"fifty.mp3","finally":"finally.mp3","find":"find.mp3","finger":"finger.mp3","finish":"finish.mp3","first":"first.mp3","fish":"fish.mp3","five":"five.mp3","flight":"flight.mp3","floor":"floor.mp3","flower":"flower.mp3","fly":"fly.mp3","fog":"fog.mp3","foot":"foot.mp3","forest":"forest.mp3","forget":"forget.mp3","fork":"fork.mp3","form":"form.mp3","forty":"forty.mp3","four":"four.mp3","fourteen":"fourteen.mp3","fourth":"fourth.mp3","fox":"fox.mp3","free":"free.mp3","fresh":"fresh.mp3","friend":"friend.mp3","friendly":"friendly.mp3","frog":"frog.mp3","fruit":"fruit.mp3","fry":"fry.mp3","full":"full.mp3","funny":"funny.mp3","furniture":"furniture.mp3","game":"game.mp3","garage":"garage.mp3","garden":"garden.mp3","geography":"geography.mp3","giraffe":"giraffe.mp3","give":"give.mp3","glass":"glass.mp3","glove":"glove.mp3","glue":"glue.mp3","go":"go.mp3","goal":"goal.mp3","goat":"goat.mp3","golf":"golf.mp3","good":"good.mp3","goodbye":"goodbye.mp3","government":"government.mp3","grade":"grade.mp3","grandfather":"grandfather.mp3","grandmother":"grandmother.mp3","grass":"grass.mp3","gray":"gray.mp3","green":"green.mp3","grill":"grill.mp3","guest":"guest.mp3","guitar":"guitar.mp3","habit":"habit.mp3","hair":"hair.mp3","hand":"hand.mp3","happen":"happen.mp3","happy":"happy.mp3","hard":"hard.mp3","hat":"hat.mp3","have":"have.mp3","head":"head.mp3","headache":"headache.mp3","healthy":"healthy.mp3","heart":"heart.mp3","heating":"heating.mp3","heavy":"heavy.mp3","hello":"hello.mp3","help":"help.mp3","hen":"hen.mp3","here":"here.mp3","highway":"highway.mp3","hill":"hill.mp3","history":"history.mp3","hope":"hope.mp3","horse":"horse.mp3","hospital":"hospital.mp3","hot":"hot.mp3","hotel":"hotel.mp3","hour":"hour.mp3","how":"how.mp3","however":"however.mp3","hurt":"hurt.mp3","husband":"husband.mp3","if":"if.mp3","ill":"ill.mp3","immediately":"immediately.mp3","important":"important.mp3","impossible":"impossible.mp3","improve":"improve.mp3","inside":"inside.mp3","instead":"instead.mp3","interesting":"interesting.mp3","interview":"interview.mp3","invent":"invent.mp3","invitation":"invitation.mp3","invite":"invite.mp3","island":"island.mp3","jacket":"jacket.mp3","journey":"journey.mp3","jump":"jump.mp3","just":"just.mp3","keep":"keep.mp3","key":"key.mp3","keyboard":"keyboard.mp3","kitchen":"kitchen.mp3","knee":"knee.mp3","knife":"knife.mp3","know":"know.mp3","lake":"lake.mp3","lamp":"lamp.mp3","late":"late.mp3","later":"later.mp3","laugh":"laugh.mp3","law":"law.mp3","lawyer":"lawyer.mp3","lazy":"lazy.mp3","leaf":"leaf.mp3","learn":"learn.mp3","leather":"leather.mp3","leg":"leg.mp3","lend":"lend.mp3","lesson":"lesson.mp3","letter":"letter.mp3","library":"library.mp3","light":"light.mp3","lion":"lion.mp3","listen":"listen.mp3","lock":"lock.mp3","long":"long.mp3","lose":"lose.mp3","love":"love.mp3","low":"low.mp3","lunch":"lunch.mp3","magazine":"magazine.mp3","mail":"mail.mp3","mall":"mall.mp3","man":"man.mp3","map":"map.mp3","market":"market.mp3","match":"match.mp3","math":"math.mp3","maybe":"maybe.mp3","meat":"meat.mp3","medicine":"medicine.mp3","meet":"meet.mp3","meeting":"meeting.mp3","mention":"mention.mp3","menu":"menu.mp3","message":"message.mp3","midnight":"midnight.mp3","milk":"milk.mp3","million":"million.mp3","mirror":"mirror.mp3","miss":"miss.mp3","mistake":"mistake.mp3","mix":"mix.mp3","money":"money.mp3","monkey":"monkey.mp3","month":"month.mp3","moon":"moon.mp3","morning":"morning.mp3","mother":"mother.mp3","mountain":"mountain.mp3","mouse":"mouse.mp3","mouth":"mouth.mp3","movie":"movie.mp3","museum":"museum.mp3","musical":"musical.mp3","near":"near.mp3","nearby":"nearby.mp3","nearly":"nearly.mp3","neck":"neck.mp3","need":"need.mp3","nervous":"nervous.mp3","never":"never.mp3","new":"new.mp3","newspaper":"newspaper.mp3","night":"night.mp3","nine":"nine.mp3","nineteen":"nineteen.mp3","ninety":"ninety.mp3","ninth":"ninth.mp3","no":"no.mp3","nobody":"nobody.mp3","noise":"noise.mp3","noisy":"noisy.mp3","nose":"nose.mp3","nothing":"nothing.mp3","now":"now.mp3","number":"number.mp3","nurse":"nurse.mp3","often":"often.mp3","old":"old.mp3","once":"once.mp3","one":"one.mp3","onion":"onion.mp3","only":"only.mp3","open":"open.mp3","or":"or.mp3","order":"order.mp3","ordinary":"ordinary.mp3","outside":"outside.mp3","oven":"oven.mp3","page":"page.mp3","pain":"pain.mp3","painter":"painter.mp3","painting":"painting.mp3","pajamas":"pajamas.mp3","pants":"pants.mp3","parents":"parents.mp3","park":"park.mp3","party":"party.mp3","passenger":"passenger.mp3","passport":"passport.mp3","patient":"patient.mp3","pay":"pay.mp3","pear":"pear.mp3","pen":"pen.mp3","pencil":"pencil.mp3","penguin":"penguin.mp3","pharmacy":"pharmacy.mp3","phone":"phone.mp3","physics":"physics.mp3","pig":"pig.mp3","pillow":"pillow.mp3","pilot":"pilot.mp3","plane":"plane.mp3","plate":"plate.mp3","platform":"platform.mp3","play":"play.mp3","playground":"playground.mp3","please":"please.mp3","pocket":"pocket.mp3","poor":"poor.mp3","popular":"popular.mp3","possible":"possible.mp3","postcard":"postcard.mp3","potato":"potato.mp3","prefer":"prefer.mp3","prepare":"prepare.mp3","price":"price.mp3","prison":"prison.mp3","probably":"probably.mp3","pronounce":"pronounce.mp3","pupil":"pupil.mp3","purple":"purple.mp3","put":"put.mp3","question":"question.mp3","quickly":"quickly.mp3","quiet":"quiet.mp3","quiz":"quiz.mp3","rabbit":"rabbit.mp3","race":"race.mp3","rain":"rain.mp3","rainbow":"rainbow.mp3","raincoat":"raincoat.mp3","read":"read.mp3","ready":"ready.mp3","really":"really.mp3","receipt":"receipt.mp3","receive":"receive.mp3","recently":"recently.mp3","reception":"reception.mp3","recess":"recess.mp3","red":"red.mp3","reduce":"reduce.mp3","relationship":"relationship.mp3","relatives":"relatives.mp3","relax":"relax.mp3","remember":"remember.mp3","rent":"rent.mp3","repair":"repair.mp3","repeat":"repeat.mp3","replace":"replace.mp3","rest":"rest.mp3","rice":"rice.mp3","rich":"rich.mp3","river":"river.mp3","road":"road.mp3","robot":"robot.mp3","roof":"roof.mp3","room":"room.mp3","rude":"rude.mp3","ruler":"ruler.mp3","run":"run.mp3","sad":"sad.mp3","safe":"safe.mp3","salad":"salad.mp3","sale":"sale.mp3","salt":"salt.mp3","sand":"sand.mp3","sandwich":"sandwich.mp3","sauce":"sauce.mp3","save":"save.mp3","say":"say.mp3","scared":"scared.mp3","schedule":"schedule.mp3","scissors":"scissors.mp3","screen":"screen.mp3","sea":"sea.mp3","search":"search.mp3","season":"season.mp3","seat":"seat.mp3","second":"second.mp3","see":"see.mp3","sell":"sell.mp3","send":"send.mp3","serious":"serious.mp3","serve":"serve.mp3","seven":"seven.mp3","seventeen":"seventeen.mp3","seventh":"seventh.mp3","seventy":"seventy.mp3","share":"share.mp3","sheep":"sheep.mp3","ship":"ship.mp3","shirt":"shirt.mp3","shoe":"shoe.mp3","short":"short.mp3","shoulder":"shoulder.mp3","show":"show.mp3","sign":"sign.mp3","simple":"simple.mp3","sing":"sing.mp3","sister":"sister.mp3","six":"six.mp3","sixteen":"sixteen.mp3","sixth":"sixth.mp3","sixty":"sixty.mp3","size":"size.mp3","skill":"skill.mp3","skin":"skin.mp3","skirt":"skirt.mp3","sky":"sky.mp3","sleep":"sleep.mp3","sleepy":"sleepy.mp3","slim":"slim.mp3","slow":"slow.mp3","slowly":"slowly.mp3","small":"small.mp3","smile":"smile.mp3","snake":"snake.mp3","snow":"snow.mp3","so":"so.mp3","soap":"soap.mp3","sock":"sock.mp3","sofa":"sofa.mp3","soft":"soft.mp3","someone":"someone.mp3","something":"something.mp3","sometimes":"sometimes.mp3","son":"son.mp3","song":"song.mp3","soon":"soon.mp3","soup":"soup.mp3","speak":"speak.mp3","spell":"spell.mp3","spider":"spider.mp3","spoon":"spoon.mp3","sport":"sport.mp3","spring":"spring.mp3","square":"square.mp3","stadium":"stadium.mp3","stage":"stage.mp3","stairs":"stairs.mp3","stamp":"stamp.mp3","star":"star.mp3","start":"start.mp3","station":"station.mp3","still":"still.mp3","stomach":"stomach.mp3","stone":"stone.mp3","store":"store.mp3","storm":"storm.mp3","strange":"strange.mp3","strawberry":"strawberry.mp3","street":"street.mp3","strong":"strong.mp3","student":"student.mp3","study":"study.mp3","subway":"subway.mp3","suddenly":"suddenly.mp3","sugar":"sugar.mp3","suggest":"suggest.mp3","suit":"suit.mp3","suitcase":"suitcase.mp3","summer":"summer.mp3","sun":"sun.mp3","sunny":"sunny.mp3","surname":"surname.mp3","surprised":"surprised.mp3","sweater":"sweater.mp3","swim":"swim.mp3","swimsuit":"swimsuit.mp3","table":"table.mp3","take":"take.mp3","tall":"tall.mp3","taste":"taste.mp3","taxi":"taxi.mp3","tea":"tea.mp3","teacher":"teacher.mp3","team":"team.mp3","television":"television.mp3","tell":"tell.mp3","temperature":"temperature.mp3","ten":"ten.mp3","tent":"tent.mp3","tenth":"tenth.mp3","term":"term.mp3","test":"test.mp3","text":"text.mp3","textbook":"textbook.mp3","theater":"theater.mp3","there":"there.mp3","thick":"thick.mp3","thief":"thief.mp3","thin":"thin.mp3","think":"think.mp3","third":"third.mp3","thirteen":"thirteen.mp3","thirty":"thirty.mp3","three":"three.mp3","throw":"throw.mp3","ticket":"ticket.mp3","tie":"tie.mp3","tiger":"tiger.mp3","tip":"tip.mp3","tired":"tired.mp3","today":"today.mp3","toe":"toe.mp3","together":"together.mp3","tomato":"tomato.mp3","tomorrow":"tomorrow.mp3","tonight":"tonight.mp3","tooth":"tooth.mp3","toothache":"toothache.mp3","towel":"towel.mp3","train":"train.mp3","training":"training.mp3","travel":"travel.mp3","tree":"tree.mp3","trip":"trip.mp3","try":"try.mp3","turtle":"turtle.mp3","twelve":"twelve.mp3","twenty":"twenty.mp3","twice":"twice.mp3","two":"two.mp3","ugly":"ugly.mp3","umbrella":"umbrella.mp3","uncle":"uncle.mp3","under":"under.mp3","understand":"understand.mp3","unfortunately":"unfortunately.mp3","university":"university.mp3","upstairs":"upstairs.mp3","useful":"useful.mp3","user":"user.mp3","usually":"usually.mp3","vacation":"vacation.mp3","valley":"valley.mp3","vegetables":"vegetables.mp3","voice":"voice.mp3","volleyball":"volleyball.mp3","wait":"wait.mp3","waiter":"waiter.mp3","wall":"wall.mp3","want":"want.mp3","warm":"warm.mp3","water":"water.mp3","weak":"weak.mp3","wear":"wear.mp3","wedding":"wedding.mp3","week":"week.mp3","weekend":"weekend.mp3","wet":"wet.mp3","what":"what.mp3","when":"when.mp3","where":"where.mp3","which":"which.mp3","white":"white.mp3","who":"who.mp3","whose":"whose.mp3","why":"why.mp3","wide":"wide.mp3","wife":"wife.mp3","win":"win.mp3","window":"window.mp3","winter":"winter.mp3","wolf":"wolf.mp3","woman":"woman.mp3","wool":"wool.mp3","word":"word.mp3","work":"work.mp3","worry":"worry.mp3","write":"write.mp3","wrong":"wrong.mp3","year":"year.mp3","yellow":"yellow.mp3","yes":"yes.mp3","yesterday":"yesterday.mp3","yet":"yet.mp3","yoga":"yoga.mp3","young":"young.mp3","zebra":"zebra.mp3","zero":"zero.mp3","zoo":"zoo.mp3"};const PHOTO_MODE="none";const PHOTOS={};const OM_MODE="off";const OM_MAP={};const OM_PK={};const OBJ3D={"airplane": "img3d/airplane.png", "arts": "img3d/arts.png", "balance": "img3d/balance.png", "bell": "img3d/bell.png", "bicycle": "img3d/bicycle.png", "book": "img3d/book.png", "books": "img3d/books.png", "brain": "img3d/brain.png", "bricks": "img3d/bricks.png", "briefcase": "img3d/briefcase.png", "cake": "img3d/cake.png", "card": "img3d/card.png", "cart": "img3d/cart.png", "chart": "img3d/chart.png", "coat": "img3d/coat.png", "coffee": "img3d/coffee.png", "envelope": "img3d/envelope.png", "fire": "img3d/fire.png", "gift": "img3d/gift.png", "globe": "img3d/globe.png", "handshake": "img3d/handshake.png", "headphone": "img3d/headphone.png", "house": "img3d/house.png", "housegarden": "img3d/housegarden.png", "idcard": "img3d/idcard.png", "key": "img3d/key.png", "laptop": "img3d/laptop.png", "liberty": "img3d/liberty.png", "loudspeaker": "img3d/loudspeaker.png", "luggage": "img3d/luggage.png", "medal": "img3d/medal.png", "memo": "img3d/memo.png", "microphone": "img3d/microphone.png", "moon": "img3d/moon.png", "newspaper": "img3d/newspaper.png", "party": "img3d/party.png", "pen": "img3d/pen.png", "phone": "img3d/phone.png", "pill": "img3d/pill.png", "puzzle": "img3d/puzzle.png", "receipt": "img3d/receipt.png", "rocket": "img3d/rocket.png", "sailboat": "img3d/sailboat.png", "scroll": "img3d/scroll.png", "seedling": "img3d/seedling.png", "snowflake": "img3d/snowflake.png", "sparkles": "img3d/sparkles.png", "speech": "img3d/speech.png", "star": "img3d/star.png", "stethoscope": "img3d/stethoscope.png", "studiomic": "img3d/studiomic.png", "target": "img3d/target.png", "teacup": "img3d/teacup.png", "train": "img3d/train.png", "trophy": "img3d/trophy.png", "umbrella": "img3d/umbrella.png", "wave": "img3d/wave.png", "worldmap": "img3d/worldmap.png", "wrench": "img3d/wrench.png"};
 let STORY={},LIB=[];let BIG_OK=false;const BIG_URL="data/more.732a66db50.js";
@@ -5000,9 +5072,9 @@ function needsLevel(k){return !(S.placement&&S.placement[k])&&!(S.beginner&&S.be
 function chooseLang(k){switchLang(k);LANG_PICKED=true;save();document.body.classList.remove('in-session');if(needsLevel(k))return levelGate();home()}
 /* перед першим заняттям мовою: тест рівня або «я новачок» */
 function levelGate(){
-  applyTheme();document.body.classList.add('in-session');const done=Object.keys(S.placement||{}).filter(l=>l!==S.lang).map(l=>LANGS[l].flag);
+  applyTheme();document.body.classList.add('in-session');const done=Object.keys(S.placement||{}).filter(l=>l!==S.lang&&LANGS[l]).map(l=>LANGS[l].name.split(' ')[0].toLowerCase()); // назви, не прапорці: емодзі в інтерфейсі прибирає nfStrip
   app.innerHTML=`<div class="onb lg"><div class="onb-hero">${L().flag}</div><h1>${L().name.split(' ')[0]}: з чого почнемо?</h1>
-   <p class="muted">Тест рівня з цієї мови ще не пройдено${done.length?` (рівень є лише для ${done.join(' ')})`:''}. Рівні для кожної мови окремі.</p>
+   <p class="muted">Тест рівня з цієї мови ще не пройдено${done.length?` (рівень є лише для: ${done.join(', ')})`:''}. Рівні для кожної мови окремі.</p>
    <div class="onb-opts"><button class="onb-opt" onclick="levelGateTest()"><b>🎯 Пройти тест рівня</b><span>10–15 хвилин · гра складе план під твій рівень</span></button>
    <button class="onb-opt" onclick="levelGateBeginner()"><b>🌱 Я новачок</b><span>Почати з рівня A1</span></button></div>
    <button class="link" onclick="LANG_PICKED=false;home()">← Інша мова</button></div>`;
@@ -5469,24 +5541,24 @@ function offlineWriteReport(text,task,words){
    Якщо Claude доступний — нижче додається ще й персональне пояснення саме цієї помилки. */
 const EXT={
  en:{
-  form_present:{why:'Англійське дієслово майже не змінюється, тому єдине закінчення -s у 3-й особі однини — це «прапорець», що підмет — один він/вона/воно.',ex:[['She work<b>s</b> in a bank.','Вона працює в банку.'],['My brother go<b>es</b> to school.','Мій брат ходить до школи.'],['It doesn\'t rain<b></b> here. (після does — без -s)','Тут не йде дощ.']],tip:'«He, she, it — додай S до дієслова й не забудь про does у запитанні».'},
+  form_present:{why:'Англійське дієслово майже не змінюється, тому єдине закінчення -s у 3-й особі однини — це «прапорець», що підмет — один він/вона/воно.',ex:[['She work<b>s</b> in a bank.','Вона працює в банку.'],['My brother go<b>es</b> to school.','Мій брат ходить до школи.'],['It doesn\'t <b>rain</b> here. (після does — без -s)','Тут не йде дощ.']],tip:'«He, she, it — додай S до дієслова й не забудь про does у запитанні».'},
   form_cont:{why:'Continuous показує дію в процесі: «саме зараз», «тимчасово». Потрібні дві частини: am/is/are (час) + -ing (процес).',ex:[['I <b>am reading</b> now.','Я зараз читаю.'],['They <b>are living</b> with friends this month.','Цього місяця вони живуть у друзів.'],['She <b>is making</b> dinner.','Вона готує вечерю.']],tip:'Якщо можна додати «зараз / саме в цей момент» — це Continuous.'},
   form_past:{why:'Минулий час позначається лише формою дієслова: правильні + -ed, неправильні мають власну форму (2-га колонка таблиці).',ex:[['We <b>visited</b> Rome last year.','Ми відвідали Рим торік.'],['I <b>went</b> home early.','Я пішов додому рано.'],['Did you <b>see</b> it? (після did — основна форма)','Ти це бачив?']],tip:'Вчи неправильні дієслова трійками: go – went – gone.'},
   form_plural:{why:'Множина майже завжди -s/-es, але найчастіші слова мають давні форми.',ex:[['two box<b>es</b>','дві коробки'],['three citi<b>es</b>','три міста'],['many <b>children</b>, <b>men</b>, <b>women</b>','багато дітей, чоловіків, жінок']],tip:'Після s, x, ch, sh додай -es, щоб слово можна було вимовити.'},
-  article:{why:'В українській артиклів немає, тому їх легко пропустити. a/an = «один із багатьох, вперше згадуємо», the = «той самий, відомий».',ex:[['I saw <b>a</b> dog. <b>The</b> dog was big.','Я побачив собаку. Собака (та сама) був великий.'],['<b>an</b> hour, <b>an</b> apple, <b>a</b> university','за звуком, не за літерою'],['<b>The</b> sun, <b>the</b> internet','унікальні речі — завжди the']],tip:'Перше згадування — a/an, друге — the.'},
+  article:{why:'В українській артиклів немає, тому їх легко пропустити. a/an = «один із багатьох, вперше згадуємо», the = «той самий, відомий».',ex:[['I saw <b>a</b> dog. <b>The</b> dog was big.','Я побачив собаку. Собака (той самий) був великий.'],['<b>an</b> hour, <b>an</b> apple, <b>a</b> university','за звуком, не за літерою'],['<b>The</b> sun, <b>the</b> internet','унікальні речі — завжди the']],tip:'Перша згадка — a/an, повторна — the.'},
   word_order:{why:'В англійській порядок слів жорсткий: саме він показує, хто що робить (відмінків немає).',ex:[['I <b>often</b> read books.','Я часто читаю книжки.'],['She has <b>a red car</b>.','У неї червона машина.'],['<b>Where do you</b> live?','Де ти живеш?']],tip:'Підмет → дієслово → додаток → місце → час.'},
-  spelling:{why:'Англійське письмо історичне: звук і буква часто не збігаються.',ex:[['write, know, island','німі літери'],['colour 🇬🇧 / color 🇺🇸','британський і американський правопис'],['receive, believe','i перед e, крім після c']],tip:'Промов слово по складах так, як воно пишеться: Wed-nes-day.'},
+  spelling:{why:'Англійське письмо історичне: звук і буква часто не збігаються.',ex:[['write, know, island','німі літери'],['colour 🇬🇧 / color 🇺🇸','британський і американський правопис'],['believe, receive','часто i перед e, після c — ei; є винятки: their, weird']],tip:'Промов слово по складах так, як воно пишеться: Wed-nes-day.'},
   meaning:{why:'Слово запам\'ятовується, коли воно пов\'язане з образом, ситуацією й власним реченням.',ex:[],tip:'Склади власне речення з цим словом про своє життя — так воно запам\'ятається найкраще.'},
   perfect_past:{why:'Present Perfect дивиться з «тепер» на результат або досвід, а Past Simple розповідає про закриту подію в минулому.',ex:[['I <b>have lost</b> my keys. (зараз їх немає)','Я загубив ключі.'],['I <b>lost</b> my keys yesterday.','Я загубив ключі вчора.'],['<b>Have</b> you ever <b>been</b> to Rome?','Ти колись був у Римі?']],tip:'Є конкретний час у минулому (yesterday, in 2020, ago) — Past Simple.'}},
  da:{
   gender:{why:'Рід у данській майже не вгадується за значенням, але від нього залежать артикль, означена форма і прикметник.',ex:[['<b>en</b> bil → bil<b>en</b> → en ny bil','машина'],['<b>et</b> hus → hus<b>et</b> → et ny<b>t</b> hus','будинок'],['<b>et</b> barn, <b>et</b> æble, <b>en</b> stol','дитина, яблуко, стілець']],tip:'Вчи кожне слово тільки з артиклем: «en bil», а не «bil».'},
-  definite:{why:'Означеність у данській — закінчення: -en / -et (однина), -ne (множина). Але з прикметником артикль виходить уперед: den/det/de.',ex:[['bil<b>en</b>','ця (та) машина'],['hus<b>ene</b>','ці будинки'],['<b>den</b> ny<b>e</b> bil','нова машина (означена, з прикметником)']],tip:'Немає прикметника — закінчення; є прикметник — den/det/de + -e.'},
+  definite:{why:'Означеність у данській — закінчення: -en / -et (однина), -ne (множина). Але з прикметником артикль виходить уперед: den/det/de.',ex:[['bil<b>en</b>','машина (відома, про яку вже йшлося)'],['hus<b>ene</b>','будинки (відомі)'],['<b>den</b> ny<b>e</b> bil','нова машина (означена, з прикметником)']],tip:'Немає прикметника — закінчення; є прикметник — den/det/de + -e.'},
   form_present:{why:'Теперішній час: інфінітив + -r для всіх осіб. Особа не впливає!',ex:[['jeg, du, han, vi spise<b>r</b>','я / ти / він / ми їмо'],['at være → jeg <b>er</b>','бути → я є'],['at gøre → han <b>gør</b>','робити → він робить']],tip:'Одна форма для всіх: «-r на кінці».'},
-  form_past:{why:'Минулий час: група 1 + -ede (arbejdede), група 2 + -te (spiste), неправильні вчать окремо (gik, så, var).',ex:[['Jeg arbejd<b>ede</b> i går.','Я працював учора.'],['Vi spis<b>te</b> kl. 18.','Ми поїли о 18:00.'],['Hun <b>gik</b> hjem.','Вона пішла додому.']],tip:'Подивися на основу: якщо після неї один приголосний — часто -te.'},
+  form_past:{why:'Минулий час: група 1 + -ede (arbejdede), група 2 + -te (spiste), неправильні вчать окремо (gik, så, var).',ex:[['Jeg arbejd<b>ede</b> i går.','Я працював учора.'],['Vi spis<b>te</b> kl. 18.','Ми поїли о 18:00.'],['Hun <b>gik</b> hjem.','Вона пішла додому.']],tip:'Два приголосні або голосний перед -e → зазвичай -ede (spillede, boede); один приголосний → часто -te (spiste). Винятки є: lave → lavede.'},
   form_plural:{why:'Множина має три основні закінчення: -er, -e або без закінчення; часто змінюється голосна.',ex:[['en bil → to bil<b>er</b>','дві машини'],['en dag → dag<b>e</b>','дні'],['et barn → børn, en mand → mænd','діти, чоловіки']],tip:'Вчи трійкою: en bil – bilen – biler.'},
   form_adj:{why:'Прикметник узгоджується: з en-словами без закінчення, з et-словами -t, у множині та в означеній формі -e.',ex:[['en stor bil','велика машина'],['et stor<b>t</b> hus','великий будинок'],['de stor<b>e</b> huse / den stor<b>e</b> bil','великі будинки / та велика машина']],tip:'«t — для et, e — для всіх у множині та з den/det».'},
   word_order:{why:'Головне правило данської — V2: дієслово завжди друге в головному реченні. Якщо на перше місце стає час, місце або підрядне речення — підмет іде після дієслова.',ex:[['I dag <b>arbejder jeg</b>.','Сьогодні я працюю.'],['Hvis det regner, <b>bliver vi</b> hjemme.','Якщо йде дощ, ми лишаємося вдома.'],['…, fordi jeg <b>ikke har</b> tid.','…, бо в мене немає часу (у підрядному ikke перед дієсловом).']],tip:'Порахуй блоки: 1 блок + ДІЄСЛОВО + решта.'},
-  spelling:{why:'Данська вимова сильно відрізняється від письма, тому писати треба «очима», а не на слух.',ex:[['hvad, hvor, hvem','h не читається'],['mad [ма]','d часто «м\'яке» або не чути'],['æ, ø, å','окремі літери, без них слово інше']],tip:'Без данської клавіатури: ae = æ, oe = ø, aa = å.'},
+  spelling:{why:'Данська вимова сильно відрізняється від письма, тому писати треба «очима», а не на слух.',ex:[['hvad, hvor, hvem','h не читається'],['mad [мað]','м\'яке d — як англ. th у «the»'],['æ, ø, å','окремі літери, без них слово інше']],tip:'Без данської клавіатури: ae = æ, oe = ø, aa = å.'},
   meaning:{why:'Багато данських слів схожі на англійські чи німецькі, але є «фальшиві друзі».',ex:[['et <b>rart</b> menneske','приємна людина (не «рідкісна»)'],['<b>grine</b>','сміятися'],['<b>glad</b>','радісний']],tip:'Склади речення про себе з новим словом.'},
   der_det:{why:'Det — особовий займенник «воно / це» і підмет для погоди. Der — «там» і формальний підмет, коли щось є або відбувається.',ex:[['<b>Det</b> regner.','Іде дощ.'],['<b>Der</b> er mange mennesker i parken.','У парку багато людей.'],['<b>Det</b> er min bror.','Це мій брат.']],tip:'Можна перекласти «є / існує» — der er.'}},
  it:{
@@ -6095,10 +6167,12 @@ function bonusState(){S.bonus=S.bonus||{};let b=S.bonus[S.lang];
   return b}
 function bonusSteps(){const b=bonusState(),D=bonusDefs();return b.ids.filter(id=>D[id]).map(id=>Object.assign({id,done:!!b.done[id]},D[id]))}
 function bonusNext(){return bonusSteps().find(x=>!x.done)}
-function bonusGo(id){const n=bonusNext();if(!n)return home();if(id&&id!==n.id){const s=bonusSteps().find(x=>x.id===id);if(s&&s.done){BONUS_CUR=null;return Function(s.f)()}toast('⭐ Бонус-раунд іде по черзі. Спершу: '+n.t)}
+/* крок бонус-раунду записаний як 'назва()'; викликаємо функцію напряму — Function()/eval сайт забороняє (CSP без 'unsafe-eval'), і кнопка «мовчала» (15.11.2026) */
+function bonusRun(f){const m=/^([A-Za-z_$][\w$]*)\(\)$/.exec(String(f||'').trim());const fn=m&&window[m[1]];if(typeof fn==='function')return fn();return home()}
+function bonusGo(id){const n=bonusNext();if(!n)return home();if(id&&id!==n.id){const s=bonusSteps().find(x=>x.id===id);if(s&&s.done){BONUS_CUR=null;return bonusRun(s.f)}toast('⭐ Бонус-раунд іде по черзі. Спершу: '+n.t)}
   const mist=typeof mistList==='function'?mistList().filter(x=>!x.m.fixed).length:0,td=touchedToday().length;
   if((n.id==='mist'&&!mist)||((n.id==='today'||n.id==='bed')&&td<3)){bonusMark(n.id);BONUS_JUST=false;return bonusGo()}
-  BONUS_CUR=n.id;Function(n.f)()}
+  BONUS_CUR=n.id;bonusRun(n.f)}
 function bonusMark(id){const b=bonusState();b.done[id]=true;BONUS_CUR=null;BONUS_JUST=true;save();
   if(!bonusNext())setTimeout(()=>toast('🏆 Бонус-раунд пройдено! Тепер — вільна практика'),300)}
 on('session:end',()=>{if(BONUS_CUR)bonusMark(BONUS_CUR)});
@@ -8631,7 +8705,7 @@ const THEME_TIPS_DA={
  colors:['Кольори','Колір узгоджується з родом і числом: en rød bil (червона машина), et rødt hus (червоний будинок), røde biler (червоні машини).','Hvilken farve er den? (Якого вона кольору?) — Den er grøn. (Зелена.)'],
  food:['Їжа','Незлічувані — без артикля: vand (вода), mælk (молоко), ris (рис). Порція: en kop kaffe (чашка кави), et glas vand (склянка води).','Замовити: Jeg vil gerne have et stykke kage. (Я б хотів шматок торта.)'],
  family:['Сім\'я','Присвійні узгоджуються з родом: min mor (моя мама), mit barn (моя дитина), mine forældre (мої батьки).','Присвійне -s без апострофа: Annas bror (брат Анни).'],
- time:['Час','Котра година? — Hvad er klokken? — Klokken er fem. (П\'ята година.) «О сьомій» — klokken syv.','Увага: halv tre — це 2:30 («пів до третьої»), а не 3:30.'],
+ time:['Час','Котра година? — Hvad er klokken? — Klokken er fem. (П\'ята година.) «О сьомій» — klokken syv.','Увага: halv tre — це 2:30 («пів до третьої»), а не 3:30. kvart over tre — 3:15, kvart i tre — 2:45.'],
  a1x01_weather:['Погода','Det er + прикметник середнього роду: Det er koldt (Холодно), Det er varmt (Тепло). Дощ іде: Det regner.','У Данії температуру міряють у °C.']};
 function tipsStep(){return S.lang==='da'?STEP_TIPS_DA:S.lang==='en'?STEP_TIPS:null}
 function tipsTheme(){return S.lang==='da'?THEME_TIPS_DA:S.lang==='en'?THEME_TIPS:{}}
@@ -8945,10 +9019,9 @@ function starMini(from){const c=starCounts();if(!c.lit&&!c.dim)return '';const w
     <span class="sk-mt"><b>Твоє небо</b><small>${c.lit} ${pluralUk(c.lit,['зоря світить','зорі світять','зір світять'])}${c.dim?` · <em>${c.dim} ${pluralUk(c.dim,['тьмяніє','тьмяніють','тьмяніють'])}</em>`:''}</small></span>${icn('arrow')}</button>`}
 on('home:after',()=>{try{if(document.querySelector('#app .sk-mini'))return;const h=document.querySelector('#app .lu-card')||document.querySelector('#app .nf-step');
   const m=starMini('home');if(h&&m)h.insertAdjacentHTML('afterend',m)}catch(e){}});
-on('screen',n=>{try{if(n!=='path'||document.querySelector('#app .sk-scr,#app .sk-mini'))return;const r=document.querySelector('#app .rt-lv');
-  const m=starMini('path');if(r&&m)r.insertAdjacentHTML('afterend',m)}catch(e){}});
+// 15.11.2026 (прохання користувача): плашка «Твоє небо» — лише на «Сьогодні»; на «Шляху», «Я» і «Прогресі» її більше немає
 // старе «Небо пам'яті» (32_story.js) замінено цим: картка на «Я» і екран ведуть сюди — одне небо замість двох
-if(typeof skyCardHTML==='function')skyCardHTML=function(){return starMini('me')};
+if(typeof skyCardHTML==='function')skyCardHTML=function(){return ''};
 if(typeof skyScreen==='function')skyScreen=function(){STAR_FROM='me';return starScreen()};
 
 /* ====================== ТЕМА ДНЯ — щодня новий колір (11.11.2026) ======================
@@ -9539,7 +9612,7 @@ on('planBlocks',B=>{const st_=softStage();if(!st_)return B;const R=B.filter(b=>s
    синтетичний голос, як раніше. В артефакті й standalone — лише синтетичний (AUDIO_MODE 'none'). Данська — синтетичний (записів носіїв майже немає). */
 const AU={cur:null};
 function auKey(t){return String(t||'').trim().replace(/^(to|a|an|the)\s+/i,'').replace(/[.!?…]+$/,'').trim()}
-function auFile(t){if(typeof AUDIO_MODE==='undefined'||AUDIO_MODE!=='file'||S.lang!=='en')return null;const k=auKey(t);if(!k||/\s/.test(k))return null;
+function auFile(t){if(S.liveAudio!==true||typeof AUDIO_MODE==='undefined'||AUDIO_MODE!=='file'||S.lang!=='en')return null; /* з 15.11.2026 типово вимкнено: один голос на все */const k=auKey(t);if(!k||/\s/.test(k))return null;
   return AUDIO_EN[k]||AUDIO_EN[k.toLowerCase()]||AUDIO_EN[k.charAt(0).toUpperCase()+k.slice(1)]||null}
 {const _spAu=speak;speak=function(text){const f=auFile(text);if(!f)return _spAu.apply(this,arguments);const self=this,args=arguments;let fell=false;
   const fb=()=>{if(fell)return;fell=true;_spAu.apply(self,args)};
@@ -9550,6 +9623,18 @@ function auHas(t){return !!auFile(t)}
 // «Про гру»: підпис авторів записів (лише коли записи є)
 {const _ssAu=settingsScreen;settingsScreen=function(){const r=_ssAu.apply(this,arguments);try{if(typeof AUDIO_MODE==='undefined'||AUDIO_MODE!=='file')return r;
   const ab=document.querySelector('#app .k-about');if(ab&&!ab.querySelector('.au-credit'))ab.insertAdjacentHTML('beforeend',`<br><span class="au-credit">Вимова англійських слів: записи носіїв з <a href="https://commons.wikimedia.org" target="_blank" rel="noopener">Wikimedia Commons</a> (здебільшого Dvortygirl), CC BY-SA 3.0 і суспільне надбання — <a href="audio/en/CREDITS.txt" target="_blank" rel="noopener">усі автори</a>.</span>`)}catch(e){}return r}}
+
+/* ОДИН ГОЛОС (15.11.2026, прохання користувача: «озвучування кожного слова змінюється — залиш один голос, і його можна змінювати в налаштуваннях»).
+   1) Записи носіїв (різні люди) — лише за перемикачем S.liveAudio, типово вимкнено.
+   2) Перший обраний голос запам'ятовується в S.voice[мова]: поки голоси пристрою ще не завантажились, браузер говорить
+      «системним», а потім іншим — тепер вибір не стрибає. Змінити — «Налаштування» → «Голос». */
+function auPinVoice(){try{const lang=S.lang;if(!lang||(S.voice||{})[lang])return;const v=pickVoice(lang);if(v&&v.voiceURI){S.voice=S.voice||{};S.voice[lang]=v.voiceURI;save()}}catch(e){}}
+try{speechSynthesis.addEventListener('voiceschanged',auPinVoice)}catch(e){}
+{const _spPin=speak;speak=function(){auPinVoice();return _spPin.apply(this,arguments)}}
+function auToggle(){S.liveAudio=S.liveAudio!==true;save();settingsScreen()}
+{const _ssAu2=settingsScreen;settingsScreen=function(){const r=_ssAu2.apply(this,arguments);try{if(typeof AUDIO_MODE==='undefined'||AUDIO_MODE!=='file'||S.lang!=='en')return r;
+  const vr=document.querySelector('#app .k-voice');const row=vr&&vr.closest('.k-srow');if(!row||document.querySelector('#app .au-row'))return r;
+  row.insertAdjacentHTML('afterend',`<div class="k-srow au-row"><span>Записи носіїв для окремих слів<small class="k-sub2">живі голоси різних людей; вимкнено — усе звучить одним голосом</small></span><button class="switch ${S.liveAudio===true?'on':''}" onclick="auToggle()" aria-label="Записи носіїв"><i></i></button></div>`)}catch(e){}return r}}
 
 /* ====================== СТАРІ ЕКРАНИ — НОВИЙ ЗАГОЛОВОК (14.11.2026) ======================
    Частина екранів (числа, алфавіт, будова речення, іспити PD, тижневий звіт, досягнення…) малюється зі старою шапкою header()
@@ -9872,6 +9957,279 @@ function dvAllRender(box_){const cnt=l=>WORDS.filter(w=>w[S.lang]&&!w.my&&w.lv==
 {const _rl=dvRenderList;dvRenderList=function(){if(DV.tab==='all'){const b=document.getElementById('dvList');if(b)return dvAllRender(b)}return _rl.apply(this,arguments)}}
 {const _md=myDict;myDict=function(){const r=_md.apply(this,arguments);try{const tabs=document.querySelector('#app .dv-tabs');
   if(tabs&&!tabs.querySelector('.dv-all-t'))tabs.insertAdjacentHTML('beforeend',`<button role="tab" aria-selected="${DV.tab==='all'}" class="dv-all-t${DV.tab==='all'?' on':''}" onclick="dvTab('all')">Усі слова</button>`)}catch(e){}return r}}
+
+/* ====================== БЛОКИ-КАРТКИ З ВИСУВНОЮ ПАНЕЛЛЮ (15.11.2026, прохання користувача) ======================
+   «Менше тексту, більше висувних панелей»: «Шлях» і «Читання» показують блоки як картки (картинка, назва, прогрес),
+   а вміст блоку (теми або тексти) — у панелі, що висувається знизу.
+   «Шлях»: теми рівня згруповано за темами життя (BK_CATS: «Привітання й знайомство», «Їжа й кафе», «Подорожі»…).
+   План дня йде блок за блоком (themePrio враховує блок), тому видно лише пройдені блоки й поточний —
+   наступний з'являється, коли до нього дійдеш. Замкнені «Вправи-ігри» й «Бібліотека» на «Шляху» не показуються. */
+
+/* ---------- спільне: картинка, картка, панель ---------- */
+function bkPicWord(keys){for(const k of keys||[]){const w=WORDS.find(x=>String(x.gb||x.en||'').toLowerCase()===k&&typeof hasPic==='function'&&hasPic(x));if(w)return w}return null}
+function bkPic(keys,fallback){const w=bkPicWord(keys)||fallback||null;return `<span class="bk-pic" aria-hidden="true">${w?picHTML(w):icn('layers')}</span>`}
+function bkCard(o){return `<button class="bk-card${o.cur?' cur':''}${o.done?' done':''}" onclick="${o.onclick}" aria-label="${esc(o.aria||o.title)}">${o.pic}
+  <span class="bk-t">${o.label?`<em>${esc(o.label)}</em>`:''}<b>${esc(o.title)}</b>${o.sub?`<small>${esc(o.sub)}</small>`:''}</span>${rtRing(!!o.done,o.share||0)}</button>`}
+function bkSheet(pic,title,sub,inner){bkClose();
+  document.body.insertAdjacentHTML('beforeend',`<div class="rt-sheet-bg on bk-bg" onclick="bkClose()"><div class="rt-sheet bk-sheet" role="dialog" aria-modal="true" aria-label="${esc(title)}" onclick="event.stopPropagation()"><span class="rt-grab" aria-hidden="true"></span>
+    <div class="bk-sh-h">${pic}<span><b>${esc(title)}</b>${sub?`<small>${esc(sub)}</small>`:''}</span><button class="bk-x" onclick="bkClose()" aria-label="Закрити">${icn('close')}</button></div>
+    <ol class="rt-list rt-sub bk-sh-l">${inner}</ol></div></div>`)}
+function bkClose(){document.querySelectorAll('.bk-bg').forEach(x=>x.remove())}
+on('screen',()=>{try{bkClose()}catch(e){}});on('session:start',()=>{try{bkClose()}catch(e){}});
+
+/* ---------- «Шлях»: блоки за темами життя ---------- */
+// [ключ, назва блоку, слова для картинки] — у порядку навчання
+const BK_CATS=[['greet',"Привітання й знайомство",['hello']],['people',"Сім'я й люди",['family','mother','baby']],['food',"Їжа й кафе",['apple','bread','coffee']],
+  ['home','Дім',['house','home','bed','sofa']],['time','Час і числа',['clock','calendar','watch']],['words','Корисні слова',['book','pencil']],
+  ['city','Місто й транспорт',['bus','car','street']],['shop','Покупки й гроші',['money','shop','wallet']],['clothes','Одяг',['t-shirt','shirt','dress','jacket']],
+  ['health',"Здоров'я",['doctor','medicine','hospital']],['nature','Природа й погода',['tree','sun','flower','dog']],['feelings','Почуття',['to smile','heart','surprised','happy']],
+  ['leisure','Дозвілля й свята',['football','ball','music','guitar']],['study','Навчання',['school','teacher','book']],['work','Робота',['computer','office','job']],
+  ['travel','Подорожі',['suitcase','plane','airplane','passport']],['tech','Технології й медіа',['phone','mobile phone','laptop','computer']],
+  ['society','Суспільство',['newspaper','police officer','flag']],['phrases','Вирази',['to talk','to speak']],['misc','Різні слова',['balloon','key','bag','star']]];
+const BK_IDX=Object.fromEntries(BK_CATS.map((c,i)=>[c[0],i]));
+// у якому блоці тема — за назвою; перевіряємо від вужчих правил до ширших
+const BK_RULES=[['misc',/різні слова/],['greet',/привіт|знайомств|ввічлив|прохання|вибачен/],['food',/їж|напо|фрукт|овоч|кухн|готуван|кафе|ресторан|харчуван/],
+  ['clothes',/одяг|зовнішн/],['shop',/магазин|покупк|гроші|ціни|банк|пошт|рахунк|споживан|фінанс|кредит|купівл/],['health',/здоров|тіло|лікар|аптек|медиц|симптом|травм|фітнес/],
+  ['travel',/подорож|готел/],['home',/^дім|дім і|кімнат|меблі|речі вдома|житл|оренд|хатн|сусід|побут/],['city',/міст|транспорт|як пройти|місц|квитк|дорожн/],
+  ['nature',/природ|погод|тварин|птах|комах|довкіл|клімат|енерг|сортуван|пори року/],['time',/(^|\s)(час|часу)(\s|$)|числ|дні тижня|місяц|мій день|щоденн|частотн/],
+  ['feelings',/почутт|емоц|настр|думк|стан|психолог/],['people',/сім|родич|люди|стосунк|характер|вдача|поведінк/],
+  ['study',/школ|навчан|освіт|урок|академ|наук|дослідж|лінгвіст|есе|письм/],['work',/робот|професі|кар'єр|праці|бізнес|менеджмент|нарад|переговор|економ/],
+  ['tech',/технолог|інтернет|гаджет|цифр|телефон|медіа|новин|реклам|журналіст/],['leisure',/спорт|хобі|ігр|дозвілл|розваг|культур|мистецтв|літератур|свят|естетик/],
+  ['society',/суспільств|політ|вибор|прав|держав|податк|соціальн|глобаліз|міграц|інтеграц|рівн|злочин|безпек|документ|офіційн|адміністр|юрид|дипломат|ідеолог|влад|історі|етик|мораль|філософ|світ навколо/],
+  ['words',/дієслов|прикметн|прислівн|сполучн|займенн|питанн|протилежн|зв'язн|зв'язки|дискурсивн|колокац|відтінк|абстрактн|мислен|аргумент|стиль|звороти|книжн|риторик|знання|кольор|говоримо|сполучення|значень/],
+  ['phrases',/вираз|ідіом|фраз|прислів'я|сталі|латиніз/]];
+const BK_OF={};
+function bkCat(t){if(!t)return 'misc';if(BK_OF[t.id])return BK_OF[t.id];const n=String(t.name||'').toLowerCase();let k='misc';
+  if(t.special==='abc')k='greet';else for(const [key,re] of BK_RULES)if(re.test(n)){k=key;break}
+  return BK_OF[t.id]=k}
+// план дня і «Шлях» ідуть блок за блоком: спершу всі теми блоку, потім наступний (порядок усередині блоку — як і був)
+{const _tp=themePrio;themePrio=function(t){try{if(t&&t.special==='abc')return -1;return (BK_IDX[bkCat(t)]||0)*100+Math.min(99,_tp(t))}catch(e){return _tp(t)}}}
+const BK_MAX=8,BK_MIN=3; // більший блок ділимо на рівні частини, менший за 3 теми — зливаємо з сусіднім
+const BK_SHORT={greet:'Знайомство',people:"Сім'я",food:'Їжа',home:'Дім',time:'Час',words:'Корисні слова',city:'Місто',shop:'Покупки',clothes:'Одяг',
+  health:"Здоров'я",nature:'Природа',feelings:'Почуття',leisure:'Дозвілля',study:'Навчання',work:'Робота',travel:'Подорожі',tech:'Технології',society:'Суспільство',phrases:'Вирази',misc:'Різні слова'};
+function bkBlocks(segs){const runs=[];segs.forEach(s=>{const k=bkCat(s.t),last=runs[runs.length-1];if(last&&last.k===k)last.segs.push(s);else runs.push({k,segs:[s]})});
+  const out=[];runs.forEach(r=>{const c=BK_CATS[BK_IDX[r.k]]||BK_CATS[BK_CATS.length-1],parts=Math.ceil(r.segs.length/BK_MAX),sz=Math.ceil(r.segs.length/parts); // рівно: 9 → 5+4, а не 8+1
+    for(let p=0;p<parts;p++)out.push({k:r.k,segs:r.segs.slice(p*sz,p*sz+sz),part:p+1,whole:parts===1,nm:[BK_SHORT[r.k]||c[1]],title:c[1]+(parts>1?` · ${p+1}`:''),picKeys:c[2]})});
+  // крихітні блоки (1–2 теми) зливаємо з сусіднім: «Знайомство й сім'я» замість двох блоків по одній темі
+  const res=[];out.forEach(b=>{const p=res[res.length-1];
+    if(p&&p.whole&&b.whole&&(p.segs.length<BK_MIN||b.segs.length<BK_MIN)&&p.segs.length+b.segs.length<=BK_MAX&&p.nm.length<3){p.segs=p.segs.concat(b.segs);p.nm.push(...b.nm);p.merged=true}else res.push(b)});
+  // «і / й» за правописом: «і» перед і, ї, й, є, ю, я і після приголосного; «й» — після голосного
+  const bkAnd=(a,b)=>/^[іїйєюя]/i.test(b)||!/[аеєиіїоуюя]$/i.test(a)?' і ':' й ';
+  res.forEach(b=>{if(b.merged)b.title=b.nm.map((x,i)=>i?x.toLowerCase():x).reduce((a,x,i,arr)=>a+(i===arr.length-1?bkAnd(a,x):', ')+x)});
+  return res}
+let PB_BLOCKS=[];
+const bkStripSt=h=>String(h).replace(/<li class="rt-st[^"]*">[\s\S]*?<\/li>/g,'');
+rtBlocksHTML=function(lv,segs,cur,head,tail){
+  const B=bkBlocks(segs);let ci=B.findIndex(b=>b.segs.some(s=>s.t===cur));
+  const vis=ci<0?B.map((b,i)=>i):B.map((b,i)=>i).filter(i=>i<=ci);
+  PB_BLOCKS=B;
+  const card=(i,big)=>{const b=B[i],dn=b.segs.filter(s=>s.done).length,all=dn===b.segs.length,words=b.segs.reduce((a,s)=>a+s.n,0),seen=b.segs.reduce((a,s)=>a+(s.done?s.n:s.seen),0),
+      fw=topicWordsL(b.segs[0].t).find(x=>typeof hasPic==='function'&&hasPic(x));
+    return bkCard({pic:bkPic(b.picKeys,fw),title:b.title,label:big?'Зараз':'',sub:big&&cur?cur.name:`${dn} з ${b.segs.length} ${pluralUk(b.segs.length,['теми','тем','тем'])}`,
+      done:all,cur:big,share:words?seen/words:0,onclick:`pbOpen(${i})`,aria:`${b.title}: ${all?'пройдено':`${dn} з ${b.segs.length} тем`}. Відкрити`})};
+  const curH=ci>=0?`<div class="bk-list">${card(ci,true)}</div>`:'';
+  const doneI=vis.filter(i=>i!==ci);
+  const allDone=doneI.every(i=>B[i].segs.every(s=>s.done));
+  const doneH=doneI.length?`<div class="bk-sec">${ci<0?'Усі блоки':allDone?'Пройдено':'Раніше'}</div><div class="bk-grid">${doneI.map(i=>card(i,false)).join('')}</div>`:'';
+  const gamesH=typeof gamesOpen==='function'&&gamesOpen()&&head?`<ol class="rt-list bk-st">${head}</ol>`:'';
+  return `<div class="bk-path">${curH}${gamesH}${doneH}</div>`};
+function pbOpen(i){const b=PB_BLOCKS[i];if(!b)return;const dn=b.segs.filter(s=>s.done).length,fw=topicWordsL(b.segs[0].t).find(x=>typeof hasPic==='function'&&hasPic(x));
+  bkSheet(bkPic(b.picKeys,fw),b.title,`${dn} з ${b.segs.length} ${pluralUk(b.segs.length,['теми','тем','тем'])}`,b.segs.map(s=>bkStripSt(s.h)).join(''))}
+// замкнені станції й пояснювальний текст під маршрутом — прибираємо (менше тексту, нічого закритого)
+on('screen',n=>{try{if(n!=='path')return;document.querySelectorAll('#app .rt-end .rt-st:not(.open), #app .rt-attr').forEach(x=>x.remove());
+  const e=document.querySelector('#app .rt-end');if(e&&!e.children.length)e.remove()}catch(e){}});
+// тема у віконці (72_tabs_polish.js) відкривається поверх панелі блоку; урок закриває обидві
+{const _go=tpTopicGo;tpTopicGo=function(id){bkClose();return _go(id)}}
+
+/* ---------- «Читання»: ті самі картки ---------- */
+const RD_PIC={story:['family','house','people'],real:['city','map','train'],lib:['book']};
+rdLevelHTML=function(ts,lv){if(typeof lvOK==='function'&&!lvOK(lv))return `<div class="nf-card rd-lock">${icn('lock')}<p><b>Рівень ${lv} ще закритий.</b> ${typeof lockMsg==='function'?esc(lockMsg(lv)):''}</p></div>`;
+  const xs=ts.filter(t=>t.lv===lv);
+  return `<div class="bk-list">${RD_GROUPS.map(([g,name])=>{const part=xs.filter(t=>rdGroup(t)===g);if(!part.length)return '';const dn=part.filter(rdDone).length;
+    return bkCard({pic:bkPic(RD_PIC[g]),title:name,sub:g==='lib'?`${part.length} ${pluralUk(part.length,['частина','частини','частин'])}`:`${dn} з ${part.length} прочитано`,
+      done:dn===part.length,share:part.length?dn/part.length:0,onclick:g==='lib'&&typeof libraryScreen==='function'?`libraryScreen('${lv}')`:`rdOpenGroup('${g}','${lv}')`,
+      aria:`${name}: ${dn} з ${part.length}. Відкрити`})}).join('')}</div>`};
+function rdOpenGroup(g,lv){const G=RD_GROUPS.find(x=>x[0]===g);if(!G)return;const R=((S.read||{})[S.lang])||{};
+  const xs=textsFor(true).filter(t=>t.lv===lv&&rdGroup(t)===g),dn=xs.filter(rdDone).length;
+  const rows=xs.map(t=>{const d=rdDone(t);let nw=0;try{nw=typeof rdNw==='function'?rdNw(t).length:0}catch(e){}
+    const meta=`${typeof tpReadMin==='function'?`≈ ${tpReadMin(t)} хв`:''}${nw?` · ${nw} ${pluralUk(nw,['нове слово','нові слова','нових слів'])}`:''}`;
+    return `<li class="rt-row ${d?'done':'next'}"><button class="rt-item" onclick="bkClose();openText(${t.idx})" aria-label="${esc(t.title+(d?', прочитано':''))}">${rtRing(d,R[t.idx]||0)}
+      <span class="rt-tt"><strong lang="${S.lang}">${esc(t.title)}</strong><small>${esc(t.title_uk||'')}${meta?`<span class="tp-meta"> · ${meta}</span>`:''}</small></span></button></li>`}).join('');
+  bkSheet(bkPic(RD_PIC[g]),G[1],`${lv} · ${dn} з ${xs.length} прочитано`,rows)}
+// підказка під списком («Торкнись слова…») — зайвий текст
+{const _rt=readTab;readTab=function(){const r=_rt.apply(this,arguments);try{document.querySelectorAll('#app .rd-attr').forEach(x=>x.remove())}catch(e){}return r}}
+
+/* ====================== КАРТКИ ПО ЦЕНТРУ ЕКРАНА (15.11.2026, прохання користувача: «блоки більш по центру, а не з самого верху») ======================
+   Вправа: поки не відповів — картка по центру вільного місця під верхнім рядком. Після відповіді пояснення з'являється
+   всередині картки, і вона росте — тоді картка плавно піднімається вгору (без стрибка), щоб пояснення було видно.
+   Підсумок уроку (.card.result) — по центру через CSS (style.css, «КАРТКИ ПО ЦЕНТРУ»). */
+let CT_RO=null;
+// уміст вправи = усе під верхнім рядком (картка .nf-xc або «обери картинку»: питання + сітка); зсуваємо перший елемент
+function ctParts(app){return [...app.children].filter(c=>!c.classList.contains('top-row')&&c.offsetHeight>0)}
+function ctHeight(ks){if(!ks.length)return 0;const a=ks[0].getBoundingClientRect().top-(parseFloat(ks[0].style.marginTop)||0);return Math.max(...ks.map(k=>k.getBoundingClientRect().bottom))-a}
+let CT_ANS=false;
+function ctFree(app,first,ks){const top=first.getBoundingClientRect().top-(parseFloat(first.style.marginTop)||0);
+  return (window.innerHeight||0)-top-ctHeight(ks)-Math.max(24,parseFloat(getComputedStyle(document.body).paddingBottom)||0)-16}
+function ctCenter(){try{if(CT_RO){CT_RO.disconnect();CT_RO=null}CT_ANS=false;
+  const app=document.getElementById('app');if(!app||!document.body.classList.contains('in-session')||!app.querySelector(':scope > .top-row'))return;
+  const ks=ctParts(app);if(!ks.length||ks[0].classList.contains('nf-word'))return; // картка слова й так на весь екран
+  const first=ks[0];
+  const place=()=>{const free=ctFree(app,first,ctParts(app));first.style.marginTop=free<48?'0px':Math.round(free*0.42)+'px'}; // трохи вище середини
+  first.classList.add('ct-mid');place();
+  // до відповіді вміст може підрости (довантажились картинки) — перераховуємо; після відповіді (розбір, пояснення) — плавно вгору
+  if(typeof ResizeObserver==='function'){CT_RO=new ResizeObserver(()=>{if(CT_ANS){first.style.marginTop='0px';CT_RO.disconnect();CT_RO=null}else place()});ctParts(app).forEach(k=>CT_RO.observe(k))}}catch(e){}}
+on('grade',()=>{CT_ANS=true});on('wrong',()=>{CT_ANS=true});
+on('item:render',()=>{setTimeout(ctCenter,30)});
+on('session:end',()=>{try{if(CT_RO){CT_RO.disconnect();CT_RO=null}}catch(e){}});
+
+/* ====================== «ДЕНЬ ЗАВЕРШЕНО» КОРОТШЕ (15.11.2026, прохання користувача: «дуже багато тексту») ======================
+   Лишаємо: трофей і заголовок, 4 цифри дня, один рядок «Завтра…», картку бонусу з одним рядком і кнопкою.
+   Одна кнопка: «На головну» прибрано — головна показувала той самий бонус-раунд (нелогічно, за словами користувача).
+   Кроки бонусу — у висувній панелі «Що в бонусі» (bkSheet з 73_blocks_ui.js), час до півночі — на головній. */
+function ddBonusList(){const bon=bonusSteps();
+  bkSheet(`<span class="bk-pic" aria-hidden="true">${icn('star')}</span>`,'Бонус-раунд',`${bon.length} ${pluralUk(bon.length,['крок','кроки','кроків'])} по черзі · ≈ ${bon.reduce((a,x)=>a+x.min,0)} хв`,
+    bon.map((x,i)=>`<li class="rt-row ${x.done?'done':'next'}"><div class="k-row dd-row"><span class="k-t"><b>${i+1}. ${esc(x.t)}</b><small>${esc(x.d)}</small></span><span class="jr-min">${x.min} хв</span></div></li>`).join('')
+    +`<li class="dd-sh-go"><button class="btn big" onclick="bkClose();bonusGo()">Почати бонус-раунд</button></li>`)}
+dayDoneScreen=function(){
+  applyTheme();snd('win');confetti();
+  const bon=bonusSteps(),bmin=bon.reduce((a,x)=>a+x.min,0),m=S.minutes||30,rem=Math.max(0,m-minutesToday()),t=tomorrowPreview();
+  app.innerHTML=`<div class="k-daydone dd-short"><div class="k-dd-hero">🏅</div><h1>День завершено!</h1></div>
+    ${typeof epOutroHTML==='function'?epOutroHTML():''}${daySummaryHTML().replace(/<div class="k-tomorrow">[\s\S]*$/,'')}
+    <div class="k-tomorrow dd-tm"><small>Завтра: ${nW(t.due)} на повторення · ${t.newW} нових${t.grammar?` · ${esc(t.grammar)}`:''}</small></div>
+    <div class="k-helper jr-bcard dd-bonus"><div class="k-hb"><b class="dd-bt">Бонус-раунд · ≈ ${bmin} хв</b>
+      <small>${rem>=3?`До норми ${m} хв лишилось ${rem} хв`:`Норму ${m} хв виконано`} · <button class="dd-what" onclick="ddBonusList()">Що в бонусі</button></small>
+      <div class="k-hbtns"><button class="btn big" onclick="bonusGo()">Почати бонус-раунд</button></div><small class="dd-later">Можна й пізніше — бонус чекатиме на вкладці «Сьогодні»</small></div></div>`;
+  emit('screen','home')};
+
+/* ====================== «ОСНОВИ» НА «ШЛЯХУ» A1: АЛФАВІТ І ЦИФРИ (15.11.2026, прохання користувача) ======================
+   На рівні A1 — окремі картки-блоки «Алфавіт», «Цифри» і «Неправильні дієслова» (77_irregular.js; він же на A2) (для англійської й данської). Дотик — панель:
+   «Вчити» (таблиця й правила вимови: alphabetScreen / numbersScreen) і «Пройти тест» (10–12 питань).
+   Тест з точністю ≥ 70 % позначає блок пройденим (S.basics, хук session:end у 38_path_route.js).
+   Поки основи не пройдено — картки стоять над поточним блоком; потім — унизу, під заголовком «Основи». */
+const BS_INFO={abc:{t:'Алфавіт',pic:'Aa',learn:'alphabetScreen()',test:'bsAbcTest()',sub:'літери, вимова, слово по літерах'},
+  num:{t:'Цифри',pic:'123',learn:'numbersScreen()',test:'bsNumTest()',sub:'0–100, як читати й писати'},
+  irr:{t:'Неправильні дієслова',pic:'',learn:'irrScreen()',test:'irrTest()',sub:'go – went – gone: коли яка форма',train:'irrTrain()'}};
+// які картки на якому рівні: алфавіт і цифри — A1, неправильні дієслова — A1 і A2
+const BS_LV={A1:['abc','num','irr'],A2:['irr']};
+function bsPicTxt(k){return k==='irr'?(S.lang==='da'?'gik':'went'):BS_INFO[k].pic}
+function bsHas(k){if(k==='irr')return typeof irrHas==='function'&&irrHas();return k==='abc'?typeof ALPHA!=='undefined'&&!!ALPHA[S.lang]:typeof NUMRULE!=='undefined'&&!!NUMRULE[S.lang]}
+function bsCard(k){const I=BS_INFO[k],dn=basicsDone(k);
+  return bkCard({pic:`<span class="bk-pic bs-pic${k==='irr'?' sm':''}" aria-hidden="true">${bsPicTxt(k)}</span>`,title:I.t,sub:dn?'пройдено':'вчити й тест',done:dn,share:dn?1:0,onclick:`bsOpen('${k}')`,aria:`${I.t}: ${dn?'пройдено':'не пройдено'}. Відкрити`})}
+function bsHTML(lv){const ks=(BS_LV[lv]||[]).filter(bsHas);if(!ks.length)return '';
+  return `<div class="bk-sec">Основи</div><div class="bk-grid bs-grid">${ks.map(bsCard).join('')}</div>`}
+function bsOpen(k){const I=BS_INFO[k],dn=basicsDone(k);
+  bkSheet(`<span class="bk-pic bs-pic${k==='irr'?' sm':''}" aria-hidden="true">${bsPicTxt(k)}</span>`,I.t,dn?'пройдено · можна повторити':I.sub,
+    `<li class="bs-act"><button class="btn big" onclick="bkClose();${I.test}">Пройти тест</button></li>
+     <li class="bs-act"><button class="btn ghost" onclick="bkClose();${I.learn}">${k==='irr'?'Правило й таблиця':'Вчити: таблиця й правила'}</button></li>
+     ${I.train?`<li class="bs-act"><button class="btn ghost" onclick="bkClose();${I.train}">Тренажер</button></li>`:''}
+     <li class="bs-note">Тест — ${k==='irr'?12:10} питань; від 70 % блок вважається пройденим.</li>`)}
+// тест алфавіту: 6 × «впізнай літеру на слух» + 4 × «слово по літерах»; заголовок «Алфавіт: готово!» зараховує блок
+function bsAbcTest(){if(typeof canSpeak!=='undefined'&&!canSpeak)return toast('Браузер не вміє озвучувати — тест алфавіту недоступний');
+  const ls=ALPHA[S.lang].letters.map(x=>x[0]);
+  const L=shuffle(ls).slice(0,6).map(l=>({kind:'letter',l,opts:shuffle([l,...shuffle(ls.filter(x=>x!==l)).slice(0,3)])}));
+  const W=shuffle(WORDS.filter(w=>w.lv==='A1'&&/^[\p{L}]{3,6}$/u.test(stripArt(w[S.lang]||'',S.lang)))).slice(0,4).map(w=>({kind:'spell',w}));
+  runSession([...L,...W],{title:'Алфавіт: готово!',again:bsAbcTest,back:pathScreen,backLabel:'До «Шляху»'})}
+// тест цифр: 10 питань змішано (почуй, прочитай, напиши, слово → число) у межах 0–100
+function bsNumTest(){const items=[],seen=new Set(),modes=['hear','read','write','w2n'];let g=0;
+  while(items.length<10&&g++<200){const n=numPick(items.length<5?'0-20':'21-100');if(seen.has(n))continue;seen.add(n);
+    let m=modes[items.length%4];if(m==='hear'&&typeof canSpeak!=='undefined'&&!canSpeak)m='w2n';items.push({kind:'num',n,year:false,mode:m})}
+  runSession(items,{title:'Числа: готово!',again:bsNumTest,back:pathScreen,backLabel:'До «Шляху»'})}
+{const _rb=rtBlocksHTML;rtBlocksHTML=function(lv){const h=_rb.apply(this,arguments);try{const b=bsHTML(lv);if(!b)return h;
+  const allDone=(BS_LV[lv]||[]).filter(bsHas).every(basicsDone);
+  return allDone?h.replace(/<\/div>$/,b+'</div>'):h.replace('<div class="bk-path">','<div class="bk-path">'+b)}catch(e){return h}}}
+
+/* ====================== НЕПРАВИЛЬНІ ДІЄСЛОВА: ПРАВИЛО, ТРЕНАЖЕР, ТЕСТ (15.11.2026, прохання користувача; англійська й данська) ======================
+   Вхід — картка «Неправильні дієслова» в «Основах» на «Шляху» (A1, A2; 76_basics_blocks.js). Панель: «Правило й таблиця» (irrScreen),
+   «Тренажер» (irrTrain, 10 питань) і «Пройти тест» (irrTest, 12 питань, від 70 % — S.basics.irr[мова]).
+   Дані — короткі списки найуживаніших дієслів (IRR); форми звірено з довідниками (Cambridge, Merriam-Webster для US: get — gotten;
+   Den Danske Ordbog / Retskrivningsordbogen для данської). Модель уклала, носії не перевіряли. */
+// en: [1-ша, 2-га, 3-тя, переклад, група]; групи: aaa (усі однакові), abb (2 = 3), aba (1 = 3), abc (усі різні)
+const IRR_EN=[['be','was / were','been','бути','abc'],['have','had','had','мати','abb'],['do','did','done','робити','abc'],['go','went','gone','йти, їхати','abc'],
+ ['come','came','come','приходити','aba'],['see','saw','seen','бачити','abc'],['get','got','gotten','отримувати, діставатися','abc'],['make','made','made','робити, виготовляти','abb'],
+ ['take','took','taken','брати','abc'],['give','gave','given','давати','abc'],['know','knew','known','знати','abc'],['think','thought','thought','думати','abb'],
+ ['say','said','said','сказати','abb'],['tell','told','told','розповідати','abb'],['find','found','found','знаходити','abb'],['buy','bought','bought','купувати','abb'],
+ ['bring','brought','brought','приносити','abb'],['pay','paid','paid','платити','abb'],['leave','left','left','залишати, іти геть','abb'],['meet','met','met','зустрічати','abb'],
+ ['keep','kept','kept','тримати, зберігати','abb'],['sleep','slept','slept','спати','abb'],['feel','felt','felt','відчувати','abb'],['send','sent','sent','надсилати','abb'],
+ ['spend','spent','spent','витрачати','abb'],['lose','lost','lost','губити, програвати','abb'],['sell','sold','sold','продавати','abb'],['teach','taught','taught','навчати','abb'],
+ ['hear','heard','heard','чути','abb'],['sit','sat','sat','сидіти','abb'],['stand','stood','stood','стояти','abb'],['understand','understood','understood','розуміти','abb'],
+ ['win','won','won','вигравати','abb'],['put','put','put','класти','aaa'],['cut','cut','cut','різати','aaa'],['cost','cost','cost','коштувати','aaa'],['let','let','let','дозволяти','aaa'],
+ ['read','read','read','читати','aaa'],['begin','began','begun','починати','abc'],['drink','drank','drunk','пити','abc'],['swim','swam','swum','плавати','abc'],
+ ['sing','sang','sung','співати','abc'],['run','ran','run','бігти','aba'],['become','became','become','ставати','aba'],['eat','ate','eaten','їсти','abc'],
+ ['write','wrote','written','писати','abc'],['speak','spoke','spoken','говорити','abc'],['break','broke','broken','ламати','abc'],['drive','drove','driven','кермувати (авто)','abc'],
+ ['fly','flew','flown','літати','abc'],['forget','forgot','forgotten','забувати','abc'],['wear','wore','worn','носити (одяг)','abc'],['fall','fell','fallen','падати','abc']];
+// da: [інфінітив, минулий (datid), допоміжне, дієприкметник, переклад, група]; strong — сильні (міняють голосну), weak — неправильні слабкі
+const IRR_DA=[['være','var','har','været','бути','strong'],['have','havde','har','haft','мати','weak'],['gå','gik','er','gået','йти','strong'],['komme','kom','er','kommet','приходити','strong'],
+ ['se','så','har','set','бачити','strong'],['give','gav','har','givet','давати','strong'],['tage','tog','har','taget','брати','strong'],['få','fik','har','fået','отримувати','strong'],
+ ['blive','blev','er','blevet','ставати','strong'],['drikke','drak','har','drukket','пити','strong'],['skrive','skrev','har','skrevet','писати','strong'],['sove','sov','har','sovet','спати','strong'],
+ ['flyve','fløj','har','fløjet','літати','strong'],['hjælpe','hjalp','har','hjulpet','допомагати','strong'],['finde','fandt','har','fundet','знаходити','strong'],
+ ['forstå','forstod','har','forstået','розуміти','strong'],['løbe','løb','har','løbet','бігти','strong'],['synge','sang','har','sunget','співати','strong'],['bære','bar','har','båret','нести','strong'],
+ ['falde','faldt','er','faldet','падати','strong'],['sidde','sad','har','siddet','сидіти','strong'],['stå','stod','har','stået','стояти','strong'],['ligge','lå','har','ligget','лежати','strong'],
+ ['græde','græd','har','grædt','плакати','strong'],['skære','skar','har','skåret','різати','strong'],
+ ['sige','sagde','har','sagt','сказати','weak'],['gøre','gjorde','har','gjort','робити','weak'],['vide','vidste','har','vidst','знати','weak'],['spørge','spurgte','har','spurgt','питати','weak'],
+ ['sælge','solgte','har','solgt','продавати','weak'],['tælle','talte','har','talt','рахувати','weak'],['vælge','valgte','har','valgt','обирати','weak'],['lægge','lagde','har','lagt','класти','weak']];
+const IRR_GROUPS={en:[['aaa','Усі три однакові','put – put – put'],['abb','2-га = 3-тя','buy – bought – bought'],['aba','1-ша = 3-тя','come – came – come'],['abc','Усі різні','go – went – gone']],
+  da:[['strong','Сильні: міняють голосну, у минулому без закінчення','gå – gik – gået'],['weak','Неправильні слабкі: -te / -de, але основа змінюється','sige – sagde – sagt']]};
+const IRR_RULES={
+ en:[['Три форми — три ситуації',`<b>go</b> — зараз і після will, can, to, don't: <i>I go. I will go.</i><br><b>went</b> — Past Simple: щось сталося й закінчилось у минулому: <i>I went home yesterday.</i><br><b>gone</b> — після have / has (результат або досвід): <i>She has gone to work.</i> І в пасиві після be: <i>It was written in 1990.</i>`],
+  ['Питання й «ні» в минулому',`Тут друга форма не потрібна: <b>did</b> + перша форма. <i>Did you go? — I didn't go.</i>`],
+  ['Правильні й неправильні',`Правильні додають <b>-ed</b> в обох формах: <i>work – worked – worked</i>. Неправильні вчи трійками — групи нижче допомагають.`],
+  ['Типові помилки',`<s>I goed</s> → <b>I went</b> · <s>I have went</s> → <b>I have gone</b> · <s>Did she saw?</s> → <b>Did she see?</b>`],
+  ['Американська норма',`<b>get – got – gotten</b> (у британській — got). <i>learn, dream, burn</i> у США зазвичай правильні: <i>learned</i>.`]],
+ da:[['Форми дієслова',`<b>at gå</b> — інфінітив · <b>går</b> — зараз · <b>gik</b> — минулий (datid) · <b>er gået</b> — перфект (førnutid).`],
+  ['Коли минулий (gik)',`Дія закінчилась у минулому, часто з часом: <i>I går gik jeg i biografen.</i> — Учора я ходив у кіно. Дієслово — на 2-му місці (V2).`],
+  ['Коли har / er + форма',`Результат зараз або досвід, без точного часу: <i>Jeg har set filmen.</i> <b>er</b> — з рухом до мети й зміною стану (gå, komme, falde, blive): <i>Hun er gået hjem.</i>`],
+  ['Правильні й неправильні',`Правильні: <b>-ede</b> (arbejde – arbejdede – arbejdet) або <b>-te</b> (spise – spiste – spist). Сильні міняють голосну: gå – gik, se – så, tage – tog.`],
+  ['Типові помилки',`<s>gåede</s> → <b>gik</b> · <s>Jeg har gået hjem</s> → <b>Jeg er gået hjem</b> · після kan, vil, skal — без at: <i>Jeg kan komme.</i>`]]};
+function irrList(){return S.lang==='da'?IRR_DA:IRR_EN}
+function irrHas(){return S.lang==='en'||S.lang==='da'}
+// трійка для показу й озвучення: en «go – went – gone», da «gå – gik – er gået»
+function irrTriple(v){return S.lang==='da'?`${v[0]} – ${v[1]} – ${v[2]} ${v[3]}`:`${v[0]} – ${v[1]} – ${v[2]}`}
+function irrSay(v){speak(S.lang==='da'?`at ${v[0]}, ${v[1]}, ${v[2]} ${v[3]}`:`${v[0]}, ${v[1].replace(' / ',', ')}, ${v[2]}`)}
+
+/* ---------- екран: правило + таблиця за групами ---------- */
+function irrScreen(){applyTheme();const L_=irrList(),G=IRR_GROUPS[S.lang],gi=S.lang==='da'?5:4;
+  app.innerHTML=`<div class="top-row"><button class="back" onclick="pathScreen()" aria-label="Назад">${icn('back')}</button><b class="irr-h">Неправильні дієслова</b></div>
+   <div class="irr-rules">${IRR_RULES[S.lang].map(([t,h],i)=>`<details class="rulebox irr-rb"${i===0?' open':''}><summary>${esc(t)}</summary><div class="rule-body">${h}</div></details>`).join('')}</div>
+   <div class="irr-go"><button class="btn big" onclick="irrTest()">Пройти тест</button><button class="btn ghost" onclick="irrTrain()">Тренажер</button></div>
+   ${G.map(([g,t,ex])=>`<div class="bk-sec">${esc(t)} <small>${esc(ex)}</small></div><div class="irr-tab">${L_.filter(v=>v[gi]===g).map(v=>{const i=L_.indexOf(v);
+     return `<button class="irr-row" onclick="irrSay(irrList()[${i}])"><b>${esc(irrTriple(v))}</b><small>${esc(v[S.lang==='da'?4:3])}</small></button>`}).join('')}</div>`).join('')}
+   <p class="muted irr-note">Натисни на рядок — почуєш усі форми. Перелік уклала модель, носії мови не перевіряли.</p>`;
+  emit('screen','path')}
+
+/* ---------- вправа kind 'irr': mode past | part | pick ---------- */
+function irrItems(n){const L_=shuffle(irrList().slice()).slice(0,n),modes=['past','part','pick'];return L_.map((v,i)=>({kind:'irr',v,mode:modes[i%3],phase:'Неправильні дієслова'}))}
+function irrAnswers(v,mode){if(S.lang==='da')return mode==='part'?[v[3]]:[v[1]];if(mode==='part')return v[2]==='gotten'?['gotten','got']:[v[2]];return v[1].split(' / ')}
+function irrNorm(s){return String(s||'').toLowerCase().replace(/[.!?]/g,'').replace(/\s+/g,' ').trim()}
+RENDER_X.irr=function(it){const v=it.v,da=S.lang==='da',uk=da?v[4]:v[3];it.answered=false;
+  const lab=it.mode==='part'?(da?`Перфект: «Jeg ${v[2]} …»`:'3-тя форма: «I have …»'):(da?'Минулий час: «I går …»':'2-га форма (Past Simple): «Yesterday I …»');
+  let body;
+  if(it.mode==='pick'){const right=da?v[1]:v[1].split(' / ')[0],base=v[0];
+    const wrong=da?[base.replace(/e$/,'')+'ede',v[3],base+'r']:[base.replace(/e$/,'')+'ed',v[2]===right?base+'s':v[2],base+'s'];
+    const others=shuffle(irrList().filter(x=>x!==v)).map(x=>da?x[1]:x[1].split(' / ')[0]);
+    const opts=[right];[...wrong,...others].forEach(o=>{if(opts.length<4&&!opts.includes(o))opts.push(o)});it.opts=it.opts||shuffle(opts);
+    body=`<div class="q-label">${esc(da?'Минулий час (datid)':'Друга форма (Past Simple)')}</div><div class="q-word">${esc(da?'at '+base:base)}<small class="irr-uk">${esc(uk)}</small></div>
+      <div class="opts">${it.opts.map((o,i)=>`<button class="opt" onclick="irrA(${i})">${esc(o)}</button>`).join('')}</div>`}
+  else body=`<div class="q-label">${esc(lab)}</div><div class="q-word">${esc(da?'at '+v[0]:v[0])}<small class="irr-uk">${esc(uk)}</small></div>
+      <form onsubmit="event.preventDefault();irrA()"><input class="answer" id="ans" placeholder="${it.mode==='part'?'3-тя форма…':'Форма…'}" autocomplete="off" autocapitalize="off" spellcheck="false"></form>
+      ${da&&L().chars&&L().chars.length?`<div class="chars">${L().chars.map(c=>`<button type="button" onclick="insChar('${c}')">${c}</button>`).join('')}</div>`:''}
+      <div class="row"><button class="btn" onclick="irrA()">Перевірити</button></div>`;
+  app.innerHTML=topRow()+`<div class="card nf-xc irr-card">${body}<div id="fb"></div></div>`;
+  setTimeout(()=>{const a=document.getElementById('ans');if(a)a.focus()},60)};
+function irrA(i){const it=SS.items[SS.i];if(!it||it.kind!=='irr')return;if(it.answered)return nextItem();const v=it.v,da=S.lang==='da';let ok,given;
+  if(it.mode==='pick'){const bs=[...document.querySelectorAll('.irr-card .opt')],right=da?v[1]:v[1].split(' / ')[0],ci=it.opts.indexOf(right);
+    bs.forEach(b=>b.disabled=true);ok=i===ci;bs[ci].classList.add('ok');if(!ok&&bs[i])bs[i].classList.add('bad');given=it.opts[i]}
+  else{const a=document.getElementById('ans');given=a?a.value:'';if(!irrNorm(given))return;a.disabled=true;
+    let g=irrNorm(given);if(it.mode==='part')g=g.replace(/^(i |jeg )?(have |has |har |er )/,'');ok=irrAnswers(v,it.mode).includes(g)}
+  it.answered=true;SS.graded++;if(ok){SS.right++;SS.xp+=8}else if(typeof markWrong==='function')markWrong(it);
+  try{CT_ANS=true}catch(e){}irrSay(v);
+  const why=it.mode==='part'?(da?`Після <b>${v[2]}</b> — ця форма: <i>Jeg ${v[2]} ${v[3]}.</i>`:`Після have / has — 3-тя форма: <i>I have ${v[2]}.</i>`)
+    :(da?`Минулий час: <i>I går ${v[1]} jeg …</i>`:`Минуле з часом (yesterday, last week): <i>Yesterday I ${v[1].split(' / ')[0]}.</i>`);
+  document.getElementById('fb').innerHTML=`<div class="feedback ${ok?'ok':'bad'}">${ok?'Правильно!':'Правильно так:'} <b>${esc(irrTriple(v))}</b></div>`
+    +(ok?'':`<div class="hintbox"><div class="hl-line">${why}</div></div>`)+`<div class="row"><button class="btn" onclick="nextItem()">Далі</button></div>`}
+function irrTrain(){bkClose();runSession(irrItems(10),{title:'Тренування: готово!',again:irrTrain,back:irrScreen,backLabel:'До правила'})}
+function irrTest(){bkClose();runSession(irrItems(12),{title:'Неправильні дієслова: готово!',again:irrTest,back:pathScreen,backLabel:'До «Шляху»'})}
+on('session:end',o=>{try{if(!o||o.title!=='Неправильні дієслова: готово!')return;const n=(o.items||[]).length,ok=n?(o.right||0)/n:0;if(ok<.7)return;
+  S.basics=S.basics||{};S.basics.irr=S.basics.irr||{};if(!S.basics.irr[S.lang]){S.basics.irr[S.lang]=today();save();toast('Неправильні дієслова пройдено ✓')}}catch(e){}});
 
 bootApp();bigLoad();
 </script>

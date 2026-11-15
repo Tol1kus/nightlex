@@ -72,8 +72,8 @@ const RAW = `#cur_a1_01|Привітання і ввічливість|👋|A1
 бабуся й дідусь|grandparents|bedsteforældre|i nonni|🧓|grandparents|dziadkowie|a1x02_family.grandparents
 молодий|young|ung|giovane|🧒|young|młody|a1x02_opposites.young
 #cur_a1_07|Стосунки|❤️|A1
-любити|to love|at elske|amare|❤️|heart|kochać|verbs.to_love
-любов|love|kærlighed|l'amore|❤️|||cur_a1_07.love
+любити|to love|at elske|amare|❤️|heart_shape|kochać|verbs.to_love
+любов|love|kærlighed|l'amore|❤️|heart_shape||cur_a1_07.love
 поцілунок|kiss|et kys|il bacio|💋|||cur_a1_07.kiss
 сам|alone|alene|da solo|🧍|||cur_a1_07.alone
 обидва|both|begge|entrambi|✌️|both||cur_a1_07.both
@@ -1013,139 +1013,3623 @@ DVD-диск|DVD|en dvd|il dvd|📀|||cur_a1_23.dvd
 година|hour|en time|l'ora|🕐|one_hour|godzina|a1m_days.hour
 хвилина|minute|et minut|il minuto|⏱️|minute|minuta|a1m_days.minute
 вихідні|weekend|en weekend|il fine settimana|🎉🛋️|weekend|weekend|a1m_days.weekend
-#a1m_things~A2|Речі вдома|📱|A2
-тарілка|plate|en tallerken|il piatto|🍽️|plate|talerz|a1m_things.plate
+#cur_a2_01|Кав'ярня|🥄|A2
 ложка|spoon|en ske|il cucchiaio|🥄|spoon|łyżka|a1m_things.spoon
 виделка|fork|en gaffel|la forchetta|🍴|fork|widelec|a1m_things.fork
-лампа|lamp|en lampe|la lampada|💡|lamp|lampa|a1m_things.lamp
-мило|soap|en sæbe|il sapone|🧼|soap|mydło|a1m_things.soap
-#a1m_wild~A2|Дикі тварини й комахи|🦁|A2
-слон|elephant|en elefant|l'elefante|🐘|elephant|słoń|a1m_wild.elephant
-жирафа|giraffe|en giraf|la giraffa|🦒|giraffe|żyrafa|a1m_wild.giraffe
-зебра|zebra|en zebra|la zebra|🦓|zebra|zebra|a1m_wild.zebra
-черепаха|turtle|en skildpadde|la tartaruga|🐢|turtle|żółw|a1m_wild.turtle
-павук|spider|en edderkop|il ragno|🕷️|spider|pająk|a1m_wild.spider
-#a1m_fruitveg~A2|Фрукти й овочі|🍌|A2
-груша|pear|en pære|la pera|🍐|pear|gruszka|a1m_fruitveg.pear
-лимон|lemon|en citron|il limone|🍋|lemon|cytryna|a1m_fruitveg.lemon
-полуниця|strawberry|et jordbær|la fragola|🍓|strawberry|truskawka|a1m_fruitveg.strawberry
-виноград|grapes|vindruer|l'uva|🍇|grapes|winogrona|a1m_fruitveg.grapes
-морква|carrot|en gulerod|la carota|🥕|carrot|marchew|a1m_fruitveg.carrot
-огірок|cucumber|en agurk|il cetriolo|🥒|cucumber|ogórek|a1m_fruitveg.cucumber
-цибуля|onion|et løg|la cipolla|🧅|onion|cebula|a1m_fruitveg.onion
-#a1x01_school~A2|Школа і клас|🏫|A2
-гумка (для стирання)|eraser|et viskelæder|la gomma|🧽||gumka|a1x01_school.eraser
-ножиці|scissors|en saks|le forbici|✂️|scissors|nożyczki|a1x01_school.scissors
-клей|glue|en lim|la colla|🧴|glue|klej|a1x01_school.glue
-пенал|pencil case|et penalhus|l'astuccio|✏️|pencil_case|piórnik|a1x01_school.pencil_case
-перерва (у школі)|break|et frikvarter|la ricreazione|🔔||przerwa|a1x01_school.break
-калькулятор|calculator|en lommeregner|la calcolatrice|🧮|calculator|kalkulator|a1x01_school.calculator
-рахувати|to count|at tælle|contare|🔢|count_,_to|liczyć|a1x01_school.to_count
-піднімати руку|to raise one's hand|at række hånden op|alzare la mano|✋||podnosić rękę|a1x01_school.to_raise_one_s_hand
-#a1x01_transport~A2|Транспорт|🚌|A2
-трамвай|tram|en sporvogn|il tram|🚋||tramwaj|a1x01_transport.tram
-метро|underground|en metro|la metropolitana|🚇||metro|a1x01_transport.underground
-мотоцикл|motorbike|en motorcykel|la moto|🏍️||motocykl|a1x01_transport.motorbike
-сідати (в автобус)|to get on|at stige på|salire|🚌||wsiadać|a1x01_transport.to_get_on
-виходити (з автобуса)|to get off|at stå af|scendere|🚶||wysiadać|a1x01_transport.to_get_off
-#a1x01_shop~A2|Магазин і гроші|🛒|A2
-пекарня|bakery|et bageri|la panetteria|🥐||piekarnia|a1x01_shop.bakery
+чайові|tip|drikkepenge|la mancia|💶||napiwek|a2x01_restaurant.tip
+замовляти|to order|at bestille|ordinare|📝||zamawiać|a2x01_restaurant.to_order
+серветка|napkin|en serviet|il tovagliolo|🧻||serwetka|a2x01_restaurant.napkin
+кухоль|mug|et krus|la tazza|☕|||cur_a2_01.mug
+газований напій|soda|en sodavand|la bibita gassata|🥤|||cur_a2_01.soda
+безалкогольний напій|soft drink|en læskedrik|la bibita analcolica|🧃|||cur_a2_01.soft_drink
+кола|cola|en cola|la cola|🥤|||cur_a2_01.cola
+лимонад|lemonade|en limonade|la limonata|🍋|lemonade||cur_a2_01.lemonade
+мінеральна вода|mineral water|et mineralvand|l'acqua minerale|💧|||cur_a2_01.mineral_water
+перекус|snack|en snack|lo spuntino|🥨|||cur_a2_01.snack
+скибка|slice|en skive|la fetta|🍕|slice||cur_a2_01.slice
+спраглий|thirsty|tørstig|assetato|🥵|thirsty||cur_a2_01.thirsty
+#cur_a2_02|Ресторан|🍽️|A2
+тарілка|plate|en tallerken|il piatto|🍽️|plate|talerz|a1m_things.plate
+десерт|dessert|en dessert|il dolce|🍰|dessert|deser|a2x01_restaurant.dessert
+рахунок (у ресторані)|bill|en regning|il conto|🧾||rachunek|a2x01_restaurant.bill
+соус|sauce|en sovs|la salsa|🥫||sos|a2x01_restaurant.sauce
+подавати (страву)|to serve|at servere|servire|🍽️|serve_,_to|podawać|a2x02_kitchen.to_serve
+стейк|steak|en bøf|la bistecca|🥩|steak||cur_a2_02.steak
+морепродукти|seafood|skaldyr|i frutti di mare|🦐|||cur_a2_02.seafood
+паста|pasta|pasta|la pasta|🍝|pasta||cur_a2_02.pasta
+спагеті|spaghetti|spaghetti|gli spaghetti|🍝|spaghetti||cur_a2_02.spaghetti
+вино|wine|vin|il vino|🍷|wine||cur_a2_02.wine
+пиво|beer|en øl|la birra|🍺|beer||cur_a2_02.beer
+шампанське|champagne|champagne|lo champagne|🍾|champagne||cur_a2_02.champagne
+закуска (перша страва)|starter|en forret|l'antipasto|🥗||przystawka|a2x01_restaurant.starter
+вегетаріанський|vegetarian|vegetarisk|vegetariano|🥦||wegetariański|a2x01_restaurant.vegetarian
+#cur_a2_03|Фаст-фуд і обід|🍔|A2
+фастфуд|fast food|fastfood|il fast food|🍔|||cur_a2_03.fast_food
+обідній час|lunchtime|frokosttid|l'ora di pranzo|🕛|||cur_a2_03.lunchtime
+ковбаса|sausage|en pølse|la salsiccia|🌭|||cur_a2_03.sausage
+шинка|ham|skinke|il prosciutto|🍖|ham||cur_a2_03.ham
+перець чилі|chili|en chili|il peperoncino|🌶️|||cur_a2_03.chili
+карі|curry|en karry|il curry|🍛|curry||cur_a2_03.curry
+омлет|omelet|en omelet|la frittata|🍳|||cur_a2_03.omelet
+дієта|diet|en diæt|la dieta|🥗|||cur_a2_03.diet
+смажений|fried|stegt|fritto|🍟|||cur_a2_03.fried
+смажений на грилі|grilled|grillet|grigliato|🍢|||cur_a2_03.grilled
+варений|boiled|kogt|bollito|🥚|||cur_a2_03.boiled
+сирий|raw|rå|crudo|🥩|||cur_a2_03.raw
+#cur_a2_04|Супермаркет|🧺|A2
 кошик|basket|en kurv|il cestino|🧺|basket|koszyk|a1x01_shop.basket
 монета|coin|en mønt|la moneta|🪙||moneta|a1x01_shop.coin
 готівка|cash|kontanter|i contanti|💶||gotówka|a1x01_shop.cash
-список покупок|shopping list|en indkøbsliste|la lista della spesa|📝||lista zakupów|a1x01_shop.shopping_list
-робити покупки|to do the shopping|at handle ind|fare la spesa|🛍️||robić zakupy|a1x01_shop.to_do_the_shopping
-Можна оплатити карткою?|Can I pay by card?|Kan jeg betale med kort?|Posso pagare con la carta?|💳||Czy mogę zapłacić kartą?|a1x01_shop.can_i_pay_by_card
-Я просто дивлюся|I'm just looking|Jeg kigger bare|Sto solo guardando|👀||Tylko się rozglądam|a1x01_shop.i_m_just_looking
-#a1x01_kitchen~A2|Кухня і готування|🍳|A2
-холодильник|fridge|et køleskab|il frigorifero|🧊|fridge|lodówka|a1x01_kitchen.fridge
-духовка|oven|en ovn|il forno|🔥||piekarnik|a1x01_kitchen.oven
-кип'ятити|to boil|at koge|bollire|♨️||gotować|a1x01_kitchen.to_boil
-смажити|to fry|at stege|friggere|🍳|fry_,_to|smażyć|a1x01_kitchen.to_fry
-перемішувати|to mix|at blande|mescolare|🥄||mieszać|a1x01_kitchen.to_mix
-мити посуд|to wash up|at vaske op|lavare i piatti|🍽️|wash_up_,_to|zmywać naczynia|a1x01_kitchen.to_wash_up
-накривати на стіл|to set the table|at dække bord|apparecchiare la tavola|🍴|set_the_table_,_to|nakrywać do stołu|a1x01_kitchen.to_set_the_table
-#a1x01_kitchen~B1|Кухня і готування|🍳|B1
-сковорода|frying pan|en pande|la padella|🍳|frying_pan|patelnia|a1x01_kitchen.frying_pan
-каструля|saucepan|en gryde|la pentola|🍲|saucepan|garnek|a1x01_kitchen.saucepan
-рецепт (страви)|recipe|en opskrift|la ricetta|📖|recipe|przepis|a1x01_kitchen.recipe
-чайник|kettle|en elkedel|il bollitore|🫖|kettle|czajnik|a1x01_kitchen.kettle
-#a1x01_weather~A2|Погода і пори року|🌦️|A2
-вітряний|windy|blæsende|ventoso|💨||wietrzny|a1x01_weather.windy
-буря|storm|en storm|la tempesta|⛈️||burza|a1x01_weather.storm
-туман|fog|tåge|la nebbia|🌫️||mgła|a1x01_weather.fog
-веселка|rainbow|en regnbue|l'arcobaleno|🌈|rainbow|tęcza|a1x01_weather.rainbow
-градус|degree|en grad|il grado|🌡️||stopień|a1x01_weather.degree
-#a1x01_sport~A2|Спорт і ігри|⚽|A2
-шахи|chess|skak|gli scacchi|♟️||szachy|a1x01_sport.chess
-настільна гра|board game|et brætspil|il gioco da tavolo|🎲||gra planszowa|a1x01_sport.board_game
-гральні карти|playing cards|spillekort|le carte da gioco|🃏|playing_cards|karty do gry|a1x01_sport.playing_cards
-переможець|winner|en vinder|il vincitore|🏆|winner|zwycięzca|a1x01_sport.winner
-кидати|to throw|at kaste|lanciare|🤾||rzucać|a1x01_sport.to_throw
-кататися на лижах|to ski|at stå på ski|sciare|⛷️|ski_,_to|jeździć na nartach|a1x01_sport.to_ski
-піти на пробіжку|to go for a run|at løbe en tur|andare a correre|🏃‍♀️||iść pobiegać|a1x01_sport.to_go_for_a_run
-#a1x01_town~A2|Місця в місті|🏙️|A2
-площа|square|et torv|la piazza|⛲||plac|a1x01_town.square
-поліцейська дільниця|police station|en politistation|il commissariato|🚓||komisariat policji|a1x01_town.police_station
-світлофор|traffic light|en lyskurv|il semaforo|🚦||sygnalizacja świetlna|a1x01_town.traffic_light
-центр міста|city centre|en bymidte|il centro città|🏙️||centrum miasta|a1x01_town.city_centre
-дитячий майданчик|playground|en legeplads|il parco giochi|🛝||plac zabaw|a1x01_town.playground
-поруч (неподалік)|nearby|i nærheden|qui vicino|📍||w pobliżu|a1x01_town.nearby
-Як дістатися до вокзалу?|How do I get to the station?|Hvordan kommer jeg til stationen?|Come arrivo alla stazione?|🧭||Jak dojść do dworca?|a1x01_town.how_do_i_get_to_the_station
-#a1x01_feelings~A2|Почуття і стани|😊|A2
-знервований|nervous|nervøs|nervoso|😬||zdenerwowany|a1x01_feelings.nervous
-сонний|sleepy|søvnig|assonnato|😴||śpiący|a1x01_feelings.sleepy
+продуктовий магазин|grocery store|en dagligvarebutik|il negozio di alimentari|🏪|||cur_a2_04.grocery_store
+бляшанка|can|en dåse|la lattina|🥫|||cur_a2_04.can
+пачка|pack|en pakke|il pacchetto|📦|||cur_a2_04.pack
+недорогий|inexpensive|prisbillig|economico|🏷️|||cur_a2_04.inexpensive
+цент|cent|en cent|il centesimo|🪙|||cur_a2_04.cent
+пластівці|cereal|cornflakes|i cereali|🥣|cereal||cur_a2_04.cereal
+контейнер|container|en beholder|il contenitore|🫙|||cur_a2_04.container
+гаманець|wallet|en pung|il portafoglio|👛|wallet|portfel|a2_shopping.wallet
+чек (з магазину)|receipt|en kvittering|lo scontrino|🧾||paragon|a2_shopping.receipt
+вигідна покупка|bargain|et godt køb|l'affare|🏷️||okazja|b2x03_money.bargain
+пекарня|bakery|et bageri|la panetteria|🥐||piekarnia|a1x01_shop.bakery
+знижка|discount|en rabat|lo sconto|🔖||zniżka|a2_shopping.discount
+#cur_a2_05|Овочі, фрукти й солодке|🍐|A2
+груша|pear|en pære|la pera|🍐|pear|gruszka|a1m_fruitveg.pear
+лимон|lemon|en citron|il limone|🍋|lemon|cytryna|a1m_fruitveg.lemon
+морква|carrot|en gulerod|la carota|🥕|carrot|marchew|a1m_fruitveg.carrot
+цибуля|onion|et løg|la cipolla|🧅|onion|cebula|a1m_fruitveg.onion
+часник|garlic|et hvidløg|l'aglio|🧄|garlic||cur_a2_05.garlic
+гриб|mushroom|en svamp|il fungo|🍄|mushroom||cur_a2_05.mushroom
+горошок|pea|en ært|il pisello|🫛|pea||cur_a2_05.pea
+перець|pepper|en peberfrugt|il peperone|🫑|pepper||cur_a2_05.pepper
+диня|melon|en melon|il melone|🍈|melon||cur_a2_05.melon
+мед|honey|honning|il miele|🍯|honey||cur_a2_05.honey
+варення|jam|syltetøj|la marmellata|🍓|||cur_a2_05.jam
+желе|jelly|gele|la gelatina|🍇|jelly||cur_a2_05.jelly
+полуниця|strawberry|et jordbær|la fragola|🍓|strawberry|truskawka|a1m_fruitveg.strawberry
+виноград|grapes|vindruer|l'uva|🍇|grapes|winogrona|a1m_fruitveg.grapes
+огірок|cucumber|en agurk|il cetriolo|🥒|cucumber|ogórek|a1m_fruitveg.cucumber
+#cur_a2_06|Тіло|🤢|A2
+шлунок|stomach|en mave|lo stomaco|🤢|stomach|żołądek|a2_health.stomach
+кров|blood|blod|il sangue|🩸||krew|a2x02_body.blood
+щиколотка|ankle|en ankel|la caviglia|🦶|ankle|kostka|a2x02_body.ankle
+підборіддя|chin|en hage|il mento|🧔|chin|podbródek|a2x02_body.chin
+щока|cheek|en kind|la guancia|😊|cheek|policzek|a2x02_body.cheek
+губа|lip|en læbe|il labbro|👄||warga|a2x02_body.lip
+палець ноги|toe|en tå|il dito del piede|🦶||palec u nogi|a2x02_body.toe
+груди|chest|et bryst|il petto|🫁|||cur_a2_06.chest
+живіт|belly|en mave|la pancia|🤰|||cur_a2_06.belly
+ковтати|to swallow|at sluge|inghiottire|😮|||cur_a2_06.to_swallow
+пітніти|to sweat|at svede|sudare|💦|||cur_a2_06.to_sweat
+згинати|to bend|at bøje|piegare|🙇|bend_,_to||cur_a2_06.to_bend
+біль|pain|en smerte|il dolore|🤕|headache|ból|a2_health.pain
+аптека|pharmacy|et apotek|la farmacia|🏥💊|medicine_cabinet|apteka|a2_health.pharmacy
+відпочивати|to rest|at hvile|riposare|🛋️|rest_,_to|odpoczywać|a2_health.to_rest
+#cur_a2_07|У лікаря|🤒|A2
+хворий|ill|syg|malato|🤒|sneeze_cold|chory|a2_health.ill
+запис (до лікаря)|appointment|en aftale|l'appuntamento|📅||wizyta|a2x01_doctor.appointment
+зубний біль|toothache|en tandpine|il mal di denti|🦷|toothache|ból zęba|a2x01_doctor.toothache
+стоматолог|dentist|en tandlæge|il dentista|🪥|dentist_1a|dentysta|a2x01_doctor.dentist
+пацієнт|patient|en patient|il paziente|🤒||pacjent|a2x01_doctor.patient
+медичний|medical|medicinsk|medico|🩺|||cur_a2_07.medical
+травмувати|to injure|at skade|ferire|🤕|||cur_a2_07.to_injure
+укус|bite|et bid|il morso|🦷|||cur_a2_07.bite
+опік|burn|en forbrænding|l'ustione|🔥||oparzenie|b1x02_symptoms.burn
+таблетка|pill|en pille|la pillola|💊|tablets|tabletka|b1_health.pill
+психолог|psychologist|en psykolog|lo psicologo|🧠||psycholog|b1x02_health.psychologist
+кашель|cough|en hoste|la tosse|😮‍💨||kaszel|a2x01_doctor.cough
+швидка допомога|ambulance|en ambulance|l'ambulanza|🚑|ambulance|karetka|a2x01_doctor.ambulance
+#cur_a2_08|Нещасний випадок|🪫|A2
 слабкий|weak|svag|debole|🪫||słaby|a1x01_feelings.weak
-плакати|to cry|at græde|piangere|😭||płakać|a1x01_feelings.to_cry
-#a1x01_time~A2|Прості вирази часу|⏰|A2
-післязавтра|the day after tomorrow|i overmorgen|dopodomani|🗓️||pojutrze|a1x01_time.the_day_after_tomorrow
-позавчора|the day before yesterday|i forgårs|l'altro ieri|🔙||przedwczoraj|a1x01_time.the_day_before_yesterday
+нещасний випадок|accident|en ulykke|l'incidente|💥|||cur_a2_08.accident
+надзвичайна ситуація|emergency|en nødsituation|l'emergenza|🚨|||cur_a2_08.emergency
+паніка|panic|panik|il panico|😱|||cur_a2_08.panic
+інвалідний візок|wheelchair|en kørestol|la sedia a rotelle|🦽|wheelchair||cur_a2_08.wheelchair
+фізичний|physical|fysisk|fisico|💪|||cur_a2_08.physical
+фізично|physically|fysisk|fisicamente|🏋️|||cur_a2_08.physically
+нездоровий|unhealthy|usund|malsano|🍩|||cur_a2_08.unhealthy
+підтягнутий|fit|i form|in forma|🏃|||cur_a2_08.fit
+вага|weight|en vægt|il peso|⚖️|||cur_a2_08.weight
+важити|to weigh|at veje|pesare|⚖️|weigh_,_to||cur_a2_08.to_weigh
+безсонний|sleepless|søvnløs|insonne|🌙|||cur_a2_08.sleepless
+з надмірною вагою|overweight|overvægtig|sovrappeso|⚖️||z nadwagą|b1x03_appearance.overweight
+#cur_a2_09|Громадський транспорт|🚋|A2
+трамвай|tram|en sporvogn|il tram|🚋||tramwaj|a1x01_transport.tram
+центр міста|city centre|en bymidte|il centro città|🏙️||centrum miasta|a1x01_town.city_centre
+затримка|delay|en forsinkelse|il ritardo|⏰||opóźnienie|a2x01_transport.delay
+пасажир|passenger|en passager|il passeggero|🧳||pasażer|a2x01_transport.passenger
+вартість проїзду|fare|en billetpris|il prezzo del biglietto|💶||cena biletu|a2x01_transport.fare
+подорож (поїздка)|journey|en rejse|il viaggio|🗺️||przejazd|a2x01_transport.journey
+автовокзал|bus station|en busstation|la stazione degli autobus|🚏|||cur_a2_09.bus_station
+натовп|crowd|en menneskemængde|la folla|👥|||cur_a2_09.crowd
+поспіх|rush|travlhed|la fretta|🏃|||cur_a2_09.rush
+розклад|timetable|et skema|l'orario|🗓️||plan zajęć|b1m_education.timetable
+центр міста|town centre|en bymidte|il centro città|🏙️||centrum miasta|b1x03_city.town_centre
+переповнений|crowded|overfyldt|affollato|👥||zatłoczony|b2m_housing.crowded
+метро|underground|en metro|la metropolitana|🚇||metro|a1x01_transport.underground
+мотоцикл|motorbike|en motorcykel|la moto|🏍️||motocykl|a1x01_transport.motorbike
+платформа|platform|en perron|il binario|🛤️||peron|a2x01_transport.platform
+#cur_a2_10|За кермом|🚦|A2
+світлофор|traffic light|en lyskurv|il semaforo|🚦||sygnalizacja świetlna|a1x01_town.traffic_light
+смуга|lane|en vognbane|la corsia|🛣️|||cur_a2_10.lane
+автостоянка|parking lot|en parkeringsplads|il parcheggio|🅿️|||cur_a2_10.parking_lot
+дорожній рух|traffic|trafik|il traffico|🚦|||cur_a2_10.traffic
+бензин|gas|benzin|la benzina|⛽|||cur_a2_10.gas
+олія|oil|olie|l'olio|🫒|||cur_a2_10.oil
+гальмо|brake|en bremse|il freno|🛑|||cur_a2_10.brake
+паркувати|to park|at parkere|parcheggiare|🅿️|||cur_a2_10.to_park
+швидкість|speed|en hastighed|la velocità|🏎️|||cur_a2_10.speed
+кільцева розв'язка|roundabout|en rundkørsel|la rotonda|🔄||rondo|b1x03_transport.roundabout
+водійські права|driving licence|et kørekort|la patente|🪪🚗||prawo jazdy|b1x03_transport.driving_licence
+автозаправка|petrol station|en tankstation|il distributore di benzina|⛽||stacja benzynowa|b1x03_transport.petrol_station
+автомагістраль|motorway|en motorvej|l'autostrada|🛣️||autostrada|b1x03_transport.motorway
+#cur_a2_11|Як пройти|⛲|A2
+площа|square|et torv|la piazza|⛲||plac|a1x01_town.square
+напрямок|direction|en retning|la direzione|🧭|||cur_a2_11.direction
+переходити|to cross|at krydse|attraversare|🚸|||cur_a2_11.to_cross
+через|across|over|attraverso|↔️|across||cur_a2_11.across
+попереду|ahead|forude|davanti|⬆️|ahead||cur_a2_11.ahead
+навколо|around|rundt|intorno|🔄|around||cur_a2_11.around
+вперед|forward|fremad|avanti|⏩|forward||cur_a2_11.forward
+протилежний|opposite|modsat|opposto|↔️|opposite||cur_a2_11.opposite
+лівий|left-hand|venstre|sinistro|⬅️|||cur_a2_11.left_hand
+правий|right-hand|højre|destro|➡️|||cur_a2_11.right_hand
+вхід|entrance|en indgang|l'ingresso|🚪|||cur_a2_11.entrance
+ворота|gate|en port|il cancello|⛩️|||cur_a2_11.gate
+статуя|statue|en statue|la statua|🗽|||cur_a2_11.statue
+лавка|bench|en bænk|la panchina|🪑|bench||cur_a2_11.bench
+#cur_a2_12|Сторони світу|⬆️|A2
+північ|north|nord|il nord|⬆️|north||cur_a2_12.north
+південь|south|syd|il sud|⬇️|south||cur_a2_12.south
+схід|east|øst|l'est|➡️|east||cur_a2_12.east
+захід|west|vest|l'ovest|⬅️|west||cur_a2_12.west
+#cur_a2_13|Місця в місті|🚓|A2
+поліцейська дільниця|police station|en politistation|il commissariato|🚓||komisariat policji|a1x01_town.police_station
+дитячий майданчик|playground|en legeplads|il parco giochi|🛝||plac zabaw|a1x01_town.playground
+універмаг|department store|et stormagasin|il grande magazzino|🏬|||cur_a2_13.department_store
+чоловічий перукар|barber|en barber|il barbiere|💈|||cur_a2_13.barber
+спортивний центр|sports center|et idrætscenter|il centro sportivo|🏟️|||cur_a2_13.sports_center
+архітектура|architecture|arkitektur|l'architettura|🏛️|||cur_a2_13.architecture
+мечеть|mosque|en moské|la moschea|🕌|||cur_a2_13.mosque
+центр|center|et centrum|il centro|🎯|||cur_a2_13.center
+район|area|et område|la zona|🏘️|||cur_a2_13.area
+зона|zone|en zone|la zona|🚧|||cur_a2_13.zone
+торговий центр|shopping centre|et indkøbscenter|il centro commerciale|🏬||centrum handlowe|b1x03_city.shopping_centre
+галерея|gallery|et galleri|la galleria|🖼️||galeria|b2x02_arts.gallery
+стадіон|stadium|et stadion|lo stadio|🏟️||stadion|b1m_sport.stadium
+поруч (неподалік)|nearby|i nærheden|qui vicino|📍||w pobliżu|a1x01_town.nearby
+підписувати|to sign|at underskrive|firmare|✒️||podpisywać|b1x01_paperwork.to_sign
+#cur_a2_14|Мій тиждень|🕛|A2
 північ (час доби)|midnight|midnat|la mezzanotte|🕛||północ|a1x01_time.midnight
 календар|calendar|en kalender|il calendario|📅|calendar|kalendarz|a1x01_time.calendar
-вчасно|on time|til tiden|in orario|⏰||na czas|a1x01_time.on_time
-#a1x02_shopping~A2|Фрази в магазині|🛍️|A2
-Я це візьму.|I'll take it.|Jeg tager den.|Lo prendo.|👍||Wezmę to.|a1x02_shopping.i_ll_take_it
-Можна це приміряти?|Can I try it on?|Må jeg prøve den?|Posso provarlo?|👗||Czy mogę to przymierzyć?|a1x02_shopping.can_i_try_it_on
-У вас є менший розмір?|Do you have a smaller size?|Har I en mindre størrelse?|Avete una taglia più piccola?|📏||Czy jest mniejszy rozmiar?|a1x02_shopping.do_you_have_a_smaller_size
-Де примірювальна?|Where is the fitting room?|Hvor er prøverummet?|Dov'è il camerino?|🚪||Gdzie jest przymierzalnia?|a1x02_shopping.where_is_the_fitting_room
-Ось ваша решта.|Here's your change.|Her er dine byttepenge.|Ecco il resto.|🪙||Oto reszta.|a1x02_shopping.here_s_your_change
-Я шукаю подарунок.|I'm looking for a gift.|Jeg leder efter en gave.|Cerco un regalo.|🎁||Szukam prezentu.|a1x02_shopping.i_m_looking_for_a_gift
-#a1x02_cafe~A2|Фрази в кафе і ресторані|☕|A2
-Можна заплатити готівкою?|Can I pay in cash?|Kan jeg betale kontant?|Posso pagare in contanti?|💵||Czy mogę zapłacić gotówką?|a1x02_cafe.can_i_pay_in_cash
-Тут чи з собою?|For here or to take away?|Spise her eller tage med?|Qui o da portare via?|🥡||Na miejscu czy na wynos?|a1x02_cafe.for_here_or_to_take_away
-Я вегетаріанець.|I'm vegetarian.|Jeg er vegetar.|Sono vegetariano.|🥗||Jestem wegetarianinem.|a1x02_cafe.i_m_vegetarian
-Їжа була дуже смачна.|The food was delicious.|Maden var lækker.|Il cibo era delizioso.|😋||Jedzenie było pyszne.|a1x02_cafe.the_food_was_delicious
-Можна ще хліба?|Could I have some more bread?|Må jeg få lidt mere brød?|Potrei avere ancora un po' di pane?|🍞||Czy mogę prosić o jeszcze trochę chleba?|a1x02_cafe.could_i_have_some_more_bread
-#a1x02_directions~A2|Як пройти|🧭|A2
-Я шукаю аптеку.|I'm looking for a pharmacy.|Jeg leder efter et apotek.|Cerco una farmacia.|💊||Szukam apteki.|a1x02_directions.i_m_looking_for_a_pharmacy
-Це на розі.|It's on the corner.|Det ligger på hjørnet.|È all'angolo.|📐||To jest na rogu.|a1x02_directions.it_s_on_the_corner
-Це п'ять хвилин пішки.|It's five minutes on foot.|Det tager fem minutter til fods.|Sono cinque minuti a piedi.|🚶||To pięć minut pieszo.|a1x02_directions.it_s_five_minutes_on_foot
-Поверніть на першу вулицю ліворуч.|Take the first street on the left.|Tag den første gade til venstre.|Prenda la prima strada a sinistra.|↩️||Proszę skręcić w pierwszą ulicę w lewo.|a1x02_directions.take_the_first_street_on_the_left
-Перейдіть вулицю.|Cross the street.|Gå over gaden.|Attraversi la strada.|🚸||Proszę przejść przez ulicę.|a1x02_directions.cross_the_street
-Пройдіть повз церкву.|Go past the church.|Gå forbi kirken.|Passi davanti alla chiesa.|⛪||Proszę przejść obok kościoła.|a1x02_directions.go_past_the_church
-Це дорога до вокзалу?|Is this the way to the station?|Er det her vejen til stationen?|È questa la strada per la stazione?|🛤️||Czy to droga na dworzec?|a1x02_directions.is_this_the_way_to_the_station
-#a1x02_house~A2|Дім і кімнати|🏡|A2
+двічі|twice|to gange|due volte|2️⃣||dwa razy|a2x02_time.twice
+щоденний|daily|daglig|quotidiano|📆||codzienny|a2x02_time.daily
+щотижневий|weekly|ugentlig|settimanale|📅|||cur_a2_14.weekly
+регулярно|regularly|regelmæssigt|regolarmente|🔁|||cur_a2_14.regularly
+полудень|noon|middagstid|il mezzogiorno|🕛|||cur_a2_14.noon
+будній день|weekday|en hverdag|il giorno feriale|🗓️|||cur_a2_14.weekday
+наступний|next|næste|prossimo|⏭️|next||cur_a2_14.next
+після|after|efter|dopo|⏩|after||cur_a2_14.after
+#cur_a2_15|Хобі вдома|♟️|A2
+шахи|chess|skak|gli scacchi|♟️||szachy|a1x01_sport.chess
+настільна гра|board game|et brætspil|il gioco da tavolo|🎲||gra planszowa|a1x01_sport.board_game
+фотографія (хобі)|photography|fotografering|la fotografia|📷||fotografia|a2x02_sport.photography
+відеогра|video game|et computerspil|il videogioco|🎮|||cur_a2_15.video_game
+малюнок|drawing|en tegning|il disegno|🖍️|||cur_a2_15.drawing
+шити|to sew|at sy|cucire|🧵|sew_,_to||cur_a2_15.to_sew
+комікс|comic|en tegneserie|il fumetto|💬|||cur_a2_15.comic
+магія|magic|magi|la magia|🪄|||cur_a2_15.magic
+спів|singing|sang|il canto|🎤|||cur_a2_15.singing
+кататися на лижах|to ski|at stå på ski|sciare|⛷️|ski_,_to|jeździć na nartach|a1x01_sport.to_ski
+#cur_a2_16|Активний відпочинок|🚴|A2
+велоспорт|cycling|cykling|il ciclismo|🚴||kolarstwo|a2x02_sport.cycling
+відпочинок із наметом|camping|camping|il campeggio|🏕️|||cur_a2_16.camping
+ночувати в наметі|to camp|at campere|campeggiare|⛺|camp_,_to||cur_a2_16.to_camp
+піший туризм|hiking|vandring|l'escursionismo|🥾|||cur_a2_16.hiking
+похід|hike|en vandretur|l'escursione|🥾|||cur_a2_16.hike
+скелелазіння|climbing|klatring|l'arrampicata|🧗|||cur_a2_16.climbing
+вітрильний спорт|sailing|sejlads|la vela|⛵|||cur_a2_16.sailing
+серфінг|surfing|surfing|il surf|🏄|||cur_a2_16.surfing
+ходьба|walking|gang|la camminata|🚶|||cur_a2_16.walking
+біг|running|løb|la corsa|🏃|||cur_a2_16.running
+барбекю|barbecue|en grillfest|il barbecue|🍖|||cur_a2_16.barbecue
+пригода|adventure|et eventyr|l'avventura|🗺️|||cur_a2_16.adventure
+#cur_a2_17|Зимові й ігрові види спорту|⛷️|A2
+катання на лижах|skiing|skiløb|lo sci|⛷️||jazda na nartach|a2x02_sport.skiing
+гольф|golf|golf|il golf|⛳|golf|golf|a2x02_sport.golf
+ракетка|racket|en ketsjer|la racchetta|🎾||rakieta|a2x02_sport.racket
+лижа|ski|en ski|lo sci|🎿|||cur_a2_17.ski
+ковзан|skate|en skøjte|il pattino|⛸️|||cur_a2_17.skate
+катання на скейтборді|skateboarding|skateboarding|lo skateboard|🛹|||cur_a2_17.skateboarding
+сноубординг|snowboarding|snowboarding|lo snowboard|🏂|||cur_a2_17.snowboarding
+хокей|hockey|ishockey|l'hockey|🏒|||cur_a2_17.hockey
+регбі|rugby|rugby|il rugby|🏉|||cur_a2_17.rugby
+крикет|cricket|cricket|il cricket|🏏|cricket||cur_a2_17.cricket
+бадмінтон|badminton|badminton|il badminton|🏸|badminton||cur_a2_17.badminton
+настільний теніс|table tennis|bordtennis|il ping-pong|🏓|||cur_a2_17.table_tennis
+йога|yoga|yoga|lo yoga|🧘||joga|a2x02_sport.yoga
+перегони (змагання)|race|et løb|la gara|🏁||wyścig|a2x02_sport.race
+#cur_a2_18|Змагання|🏆|A2
+переможець|winner|en vinder|il vincitore|🏆|winner|zwycięzca|a1x01_sport.winner
+кидати|to throw|at kaste|lanciare|🤾||rzucać|a1x01_sport.to_throw
+тренування|training|træning|l'allenamento|🏋️||trening|a2x02_sport.training
+чемпіонат|championship|et mesterskab|il campionato|🏆|||cur_a2_18.championship
+медаль|medal|en medalje|la medaglia|🥇|medal||cur_a2_18.medal
+спортсмен|athlete|en atlet|l'atleta|🏃|||cur_a2_18.athlete
+бігун|runner|en løber|il corridore|🏃‍♂️|||cur_a2_18.runner
+боєць|fighter|en kæmper|il combattente|🥊|||cur_a2_18.fighter
+олімпійський|Olympic|olympisk|olimpico|🏟️|||cur_a2_18.olympic
+програвати|to lose|at tabe|perdere|👎||przegrywać|b1m_sport.to_lose
+тренуватися|to train|at træne|allenarsi|🏋️||trenować|b1m_sport.to_train
+конкуренція|competition|en konkurrence|la concorrenza|🥊|race_athletics|konkurencja|b2_work.competition
+#cur_a2_19|Музика|🎸|A2
+музичний інструмент|instrument|et instrument|lo strumento|🎸|||cur_a2_19.instrument
+скрипка|violin|en violin|il violino|🎻|||cur_a2_19.violin
+симфонія|symphony|en symfoni|la sinfonia|🎼|||cur_a2_19.symphony
+класична музика|classical music|klassisk musik|la musica classica|🎶|||cur_a2_19.classical_music
+хіп-хоп|hip hop|hiphop|l'hip hop|🎤|||cur_a2_19.hip_hop
+реп|rap|rap|il rap|🎙️|||cur_a2_19.rap
+ритм|rhythm|en rytme|il ritmo|🥁|||cur_a2_19.rhythm
+мелодія|tune|en melodi|la melodia|🎵|||cur_a2_19.tune
+дискотека|disco|et diskotek|la discoteca|🪩|||cur_a2_19.disco
+танцівник|dancer|en danser|il ballerino|💃|||cur_a2_19.dancer
+мюзикл|musical|en musical|il musical|🎤||musical|b1x03_culture.musical
+композитор|composer|en komponist|il compositore|🎹||kompozytor|b2x02_arts.composer
+#cur_a2_20|Кіно й шоу|📺|A2
+шоу|show|et show|lo spettacolo|📺|||cur_a2_20.show
+серія|episode|et afsnit|l'episodio|🎞️|||cur_a2_20.episode
+сцена|scene|en scene|la scena|🎬|||cur_a2_20.scene
+дія|act|en akt|l'atto|🎭|||cur_a2_20.act
+розваги|entertainment|underholdning|l'intrattenimento|🎡|||cur_a2_20.entertainment
+веселощі|amusement|morskab|il divertimento|🎠|||cur_a2_20.amusement
+жах|horror|en rædsel|l'orrore|😱|||cur_a2_20.horror
+загадка|mystery|et mysterium|il mistero|🕵️|||cur_a2_20.mystery
+клоун|clown|en klovn|il pagliaccio|🤡|||cur_a2_20.clown
+глядачі|audience|et publikum|il pubblico|👏||publiczność|b1m_media.audience
+вистава|performance|en forestilling|lo spettacolo|🎭||przedstawienie|b1m_media.performance
+виступати (на сцені)|to perform|at optræde|esibirsi|🎭||występować|c1m_arts.to_perform
+журналіст|journalist|en journalist|il giornalista|🗒️||dziennikarz|b1m_media.journalist
+#cur_a2_21|Книжки й мистецтво|📖|A2
+розділ|chapter|et kapitel|il capitolo|📖|||cur_a2_21.chapter
+художня література|fiction|skønlitteratur|la narrativa|📚|||cur_a2_21.fiction
+назва|title|en titel|il titolo|🏷️|||cur_a2_21.title
+уривок|passage|et uddrag|il brano|📄|||cur_a2_21.passage
+нагорода|award|en pris|il premio|🏆|||cur_a2_21.award
+краса|beauty|skønhed|la bellezza|🌸|||cur_a2_21.beauty
+фотограф|photographer|en fotograf|il fotografo|📷|||cur_a2_21.photographer
+виставка|exhibition|en udstilling|la mostra|🖼️||wystawa|b1m_media.exhibition
+роман|novel|en roman|il romanzo|📕||powieść|b1x03_culture.novel
+автор|author|en forfatter|l'autore|✍️||autor|b1x03_culture.author
+художник|painter|en maler|il pittore|👨‍🎨||malarz|b2x02_arts.painter
+портрет|portrait|et portræt|il ritratto|🖼️||portret|b2x02_arts.portrait
+пейзаж|landscape|et landskab|il paesaggio|🏞️||pejzaż|b2x02_arts.landscape
+комедія|comedy|en komedie|la commedia|😂||komedia|b1x03_culture.comedy
+#cur_a2_22|Казки й пригоди|💰|A2
+скарб|treasure|en skat|il tesoro|💰|||cur_a2_22.treasure
+ангел|angel|en engel|l'angelo|👼|angel||cur_a2_22.angel
+корона|crown|en krone|la corona|👑|crown||cur_a2_22.crown
+фокус|trick|et trick|il trucco|🎩|||cur_a2_22.trick
+дурень|fool|et fjols|lo sciocco|🃏|||cur_a2_22.fool
+тінь|shadow|en skygge|l'ombra|👤|||cur_a2_22.shadow
+тиша|silence|en stilhed|il silenzio|🤫|silence||cur_a2_22.silence
+жаль|pity|en skam|il peccato|😔|||cur_a2_22.pity
+замок|castle|et slot|il castello|🏰|castle||cur_a2_22.castle
+королівство|kingdom|et kongerige|il regno|🤴|||cur_a2_22.kingdom
+герой|hero|en helt|l'eroe|🦸|||cur_a2_22.hero
+загадковий|mysterious|mystisk|misterioso|🔮|||cur_a2_22.mysterious
+#cur_a2_23|Аеропорт|🧑‍✈️|A2
+пілот|pilot|en pilot|il pilota|🧑‍✈️|pilot_1a|pilot|a2m_jobs.pilot
+рейс (авіа)|flight|en flyrejse|il volo|✈️||lot|a2x02_hotel.flight
+за кордоном|abroad|i udlandet|all'estero|🌍||za granicą|a2x02_hotel.abroad
+пакувати (валізу)|to pack|at pakke|fare la valigia|🎒||pakować|a2x02_hotel.to_pack
+прохід|aisle|en midtergang|il corridoio|🚶|||cur_a2_23.aisle
+капітан|captain|en kaptajn|il capitano|👨‍✈️|||cur_a2_23.captain
+приземлятися|to land|at lande|atterrare|🛬|||cur_a2_23.to_land
+ID-картка|ID card|et ID-kort|la carta d'identità|🪪|||cur_a2_23.id_card
+міжнародний|international|international|internazionale|🌍|||cur_a2_23.international
+перевіряти|to check|at tjekke|controllare|✅|||cur_a2_23.to_check
+валіза|suitcase|en kuffert|la valigia|🧳|suitcase_1|walizka|a2_travel.suitcase
+пожежник|firefighter|en brandmand|il pompiere|🧑‍🚒||strażak|a2m_jobs.firefighter
+програміст|programmer|en programmør|il programmatore|💻||programista|a2m_jobs.programmer
+перукар|hairdresser|en frisør|il parrucchiere|💇||fryzjer|a2m_jobs.hairdresser
+рецепція|reception|en reception|la reception|🛎️||recepcja|a2x02_hotel.reception
+#cur_a2_24|Подорож|📖|A2
+путівник|guidebook|en rejseguide|la guida turistica|📖||przewodnik|a2x02_hotel.guidebook
+екскурсія|tour|en rundtur|il tour|🗺️|||cur_a2_24.tour
+мандрівник|traveler|en rejsende|il viaggiatore|🎒|||cur_a2_24.traveler
+огляд пам'яток|sightseeing|sightseeing|il giro turistico|📸|||cur_a2_24.sightseeing
+круїз|cruise|et krydstogt|la crociera|🛳️|||cur_a2_24.cruise
+досліджувати|to explore|at udforske|esplorare|🧭|||cur_a2_24.to_explore
+місцевий|local|lokal|locale|📍|||cur_a2_24.local
+рідний|native|indfødt|nativo|🏡|||cur_a2_24.native
+незабутній|unforgettable|uforglemmelig|indimenticabile|✨|||cur_a2_24.unforgettable
+турист|tourist|en turist|il turista|📸||turysta|b2x02_travel.tourist
+екскурсовод|tour guide|en guide|la guida turistica|🚩||przewodnik|b2x02_travel.tour_guide
+реєстрація (на рейс)|check-in|en indtjekning|il check-in|🛄||odprawa|b2x02_travel.check_in
+сувенір|souvenir|en souvenir|il souvenir|🎁||pamiątka|b2x02_travel.souvenir
+#cur_a2_25|Готель|🛌|A2
+ковдра|blanket|et tæppe|la coperta|🛌|blanket|koc|a2x02_home.blanket
+адміністратор|receptionist|en receptionist|il receptionist|🛎️|||cur_a2_25.receptionist
+персонал|staff|et personale|il personale|👥|||cur_a2_25.staff
+краєвид|view|en udsigt|la vista|🏞️|||cur_a2_25.view
+подвійний|double|dobbelt|doppio|✌️|||cur_a2_25.double
+ескалатор|escalator|en rulletrappe|la scala mobile|🛗|escalator||cur_a2_25.escalator
+шикарний|fancy|fornem|elegante|💎|fancy||cur_a2_25.fancy
+балкон|balcony|en altan|il balcone|🌇||balkon|b1m_housing.balcony
+ліфт|lift|en elevator|l'ascensore|🛗|lift|winda|b1m_housing.lift
+сходи|stairs|en trappe|le scale|🪜|stairs|schody|b1m_housing.stairs
+скаржитися|to complain|at klage|lamentarsi|😤||skarżyć się|b1x02_neighbours.to_complain
+скарга|complaint|en klage|il reclamo|📢||skarga|b1x02_neighbours.complaint
+шафа (для одягу)|wardrobe|et klædeskab|l'armadio|🚪|wardrobe|szafa|b1m_housing.wardrobe
+#cur_a2_26|Враження від готелю|📢|A2
+галасливий|noisy|støjende|rumoroso|📢|noisy|hałaśliwy|a2x01_adjectives.noisy
+порожній|empty|tom|vuoto|🫙|empty|pusty|a2x01_adjectives.empty
+незручний|uncomfortable|ubekvem|scomodo|😣|||cur_a2_26.uncomfortable
+приємний|pleasant|behagelig|piacevole|😊|||cur_a2_26.pleasant
+неприємний|unpleasant|ubehagelig|spiacevole|😖|||cur_a2_26.unpleasant
+мирний|peaceful|fredelig|tranquillo|🕊️|||cur_a2_26.peaceful
+кошмарний|awful|forfærdelig|orribile|😫|||cur_a2_26.awful
+досконалий|perfect|perfekt|perfetto|💯|||cur_a2_26.perfect
+блискучий|brilliant|strålende|brillante|🌟|||cur_a2_26.brilliant
+фантастичний|fantastic|fantastisk|fantastico|🤩|||cur_a2_26.fantastic
+зручний|comfortable|behagelig|comodo|🛏️||wygodny|b1m_housing.comfortable
+зручний (практичний)|convenient|praktisk|pratico|👌||wygodny|b1x02_adjectives.convenient
+#cur_a2_27|Друзі|💬|A2
+чат|chat|en chat|la chat|💬||czat|a2x01_phone.chat
+запрошувати|to invite|at invitere|invitare|📨||zapraszać|a2x01_celebrations.to_invite
+дружба|friendship|et venskab|l'amicizia|🤝|||cur_a2_27.friendship
+приятель|pal|en kammerat|il compagno|👋|||cur_a2_27.pal
+друг по листуванню|pen pal|en penneven|l'amico di penna|✉️|||cur_a2_27.pen_pal
+член|member|et medlem|il membro|👥|||cur_a2_27.member
+жарт|joke|en vittighed|la barzelletta|😂|||cur_a2_27.joke
+таємниця|secret|en hemmelighed|il segreto|🤫|||cur_a2_27.secret
+обіцянка|promise|et løfte|la promessa|🤞|||cur_a2_27.promise
+послуга|favor|en tjeneste|il favore|🙏|||cur_a2_27.favor
+зустріч випускників|reunion|et gensyn|la rimpatriata|🎓|||cur_a2_27.reunion
+базікати|to chat|at sludre|chiacchierare|☕||gadać|b1x03_phone.to_chat
+довіряти|to trust|at stole på|fidarsi|🤝||ufać|b2m_relationships.to_trust
+#cur_a2_28|Кохання й весілля|💒|A2
+весілля|wedding|et bryllup|il matrimonio|💒||wesele|a2x01_celebrations.wedding
+повітряна кулька|balloon|en ballon|il palloncino|🎈|balloon|balonik|a2x01_celebrations.balloon
+наречена|bride|en brud|la sposa|👰|||cur_a2_28.bride
+романтичний|romantic|romantisk|romantico|🌹|||cur_a2_28.romantic
+сонечко|sweetheart|en elskling|il tesoro|💕|||cur_a2_28.sweetheart
+коханець|lover|en elsker|l'amante|❤️|||cur_a2_28.lover
+річниця|anniversary|en årsdag|l'anniversario|🎉|||cur_a2_28.anniversary
+любовна історія|romance|en romance|la storia d'amore|💞|||cur_a2_28.romance
+каблучка|ring|en ring|l'anello|💍|||cur_a2_28.ring
+діамант|diamond|en diamant|il diamante|💎|diamond||cur_a2_28.diamond
+господар|host|en vært|il padrone di casa|🏠|||cur_a2_28.host
+обіймати|to hug|at kramme|abbracciare|🤗|hug_,_to|przytulać|b1x02_relationships.to_hug
+свічка|candle|et lys|la candela|🕯️||świeczka|a2x01_celebrations.candle
+Великдень|Easter|påske|la Pasqua|🐣||Wielkanoc|a2x01_celebrations.easter
+запрошення|invitation|en invitation|l'invito|💌||zaproszenie|a2x01_celebrations.invitation
+#cur_a2_29|Можливо, колись|🤔|A2
+мабуть|probably|sandsynligvis|probabilmente|🤔||prawdopodobnie|a2x01_connectors.probably
+на щастя|luckily|heldigvis|per fortuna|🍀||na szczęście|a2x01_connectors.luckily
+на жаль|unfortunately|desværre|purtroppo|😔||niestety|a2x01_connectors.unfortunately
+передбачати|to predict|at forudsige|prevedere|🔮|||cur_a2_29.to_predict
+передбачення|prediction|en forudsigelse|la previsione|🃏|||cur_a2_29.prediction
+колись|someday|en dag|un giorno|🌅|||cur_a2_29.someday
+назавжди|forever|for evigt|per sempre|♾️|||cur_a2_29.forever
+шанс|chance|en chance|la possibilità|🎲|||cur_a2_29.chance
+можливість|opportunity|en mulighed|l'opportunità|🚪|||cur_a2_29.opportunity
+безумовно|certainly|bestemt|certamente|✔️|||cur_a2_29.certainly
+сумнів|doubt|en tvivl|il dubbio|🤔|||cur_a2_29.doubt
+на щастя|fortunately|heldigvis|fortunatamente|🍀||na szczęście|b1x03_linking.fortunately
+#cur_a2_30|Родина й люди|👧|A2
+онука|granddaughter|et barnebarn|la nipote|👧|||cur_a2_30.granddaughter
+сирота|orphan|et forældreløst barn|l'orfano|🧒|||cur_a2_30.orphan
+чоловічий|male|mandlig|maschile|♂️|||cur_a2_30.male
+жіночий|female|kvindelig|femminile|♀️|||cur_a2_30.female
+стать|gender|et køn|il genere|⚧️|||cur_a2_30.gender
+пара|couple|et par|la coppia|💑|||cur_a2_30.couple
+одружений|married|gift|sposato|💒|married||cur_a2_30.married
+неодружений|single|single|single|🙋|||cur_a2_30.single
+незнайомець|stranger|en fremmed|lo sconosciuto|🕴️|||cur_a2_30.stranger
+відвідувач|visitor|en besøgende|il visitatore|🚶‍♀️|visitor_1a||cur_a2_30.visitor
+#cur_a2_31|Покоління|🧑|A2
+дорослий|adult|en voksen|l'adulto|🧑|||cur_a2_31.adult
+підліток|teenager|en teenager|l'adolescente|🧑‍🎤|||cur_a2_31.teenager
+підлітковий|teenage|halvvoksen|adolescente|🛹|||cur_a2_31.teenage
+літня людина|senior|en senior|l'anziano|👴|||cur_a2_31.senior
+літній|elderly|ældre|anziano|👵|||cur_a2_31.elderly
+дитинство|childhood|en barndom|l'infanzia|🧸|||cur_a2_31.childhood
+молодість|youth|en ungdom|la gioventù|🌱|||cur_a2_31.youth
+предок|ancestor|en forfader|l'antenato|🌳|||cur_a2_31.ancestor
+на пенсії|retired|pensioneret|in pensione|🏖️|retired||cur_a2_31.retired
+виходити на пенсію|to retire|at gå på pension|andare in pensione|🎊|retire_,_to||cur_a2_31.to_retire
+онук|grandchild|et barnebarn|il nipote|👧||wnuk|b1x02_family.grandchild
+дитячий садок|kindergarten|en børnehave|l'asilo|🧸||przedszkole|b1x02_family.kindergarten
+няня|babysitter|en babysitter|la babysitter|👩‍🍼||niania|b1x02_family.babysitter
+#cur_a2_32|Одяг|🧶|A2
+светр|sweater|en sweater|il maglione|🧶|jumper|sweter|a2m_clothes.sweater
+шарф|scarf|et halstørklæde|la sciarpa|🧣|scarf|szalik|a2m_clothes.scarf
+рукавичка|glove|en handske|il guanto|🧤|gloves|rękawiczka|a2m_clothes.glove
+шкарпетка|sock|en sok|il calzino|🧦|socks|skarpetka|a2m_clothes.sock
+светр|jumper|en sweater|il maglione|🧶||sweter|a2x02_clothes.jumper
+костюм (діловий)|suit|et jakkesæt|il completo|🤵||garnitur|a2x02_clothes.suit
+краватка|tie|et slips|la cravatta|👔||krawat|a2x02_clothes.tie
+рукавички|gloves|handsker|i guanti|🧤|gloves|rękawiczki|a2x02_clothes.gloves
+шкарпетки|socks|sokker|i calzini|🧦|socks|skarpetki|a2x02_clothes.socks
+колготки|tights|strømpebukser|i collant|🦵|tights|rajstopy|a2x02_clothes.tights
+ремінь (пасок)|belt|et bælte|la cintura|🪢|belt|pasek|a2x02_clothes.belt
+купальник|swimsuit|en badedragt|il costume da bagno|👙||strój kąpielowy|a2x02_clothes.swimsuit
+дощовик|raincoat|en regnfrakke|l'impermeabile|🧥|raincoat|płaszcz przeciwdeszczowy|a2x02_clothes.raincoat
+личити (про одяг)|to suit|at klæde|stare bene|😍||pasować|a2x02_shopclothes.to_suit
+бюстгальтер|bra|en bh|il reggiseno|👙|bra||cur_a2_32.bra
+уніформа|uniform|en uniform|la divisa|👮|||cur_a2_32.uniform
+#cur_a2_33|Мода й аксесуари|🐑|A2
+вовна|wool|uld|la lana|🐑|wool|wełna|a2x02_shopclothes.wool
+шкіра (матеріал)|leather|læder|la pelle|👜||skóra|a2x02_shopclothes.leather
+мода|fashion|en mode|la moda|👗|||cur_a2_33.fashion
+стиль|style|en stil|lo stile|🕶️|||cur_a2_33.style
+сережка|earring|en ørering|l'orecchino|💎|||cur_a2_33.earring
+сумочка|handbag|en håndtaske|la borsetta|👜|||cur_a2_33.handbag
+сонцезахисні окуляри|sunglasses|solbriller|gli occhiali da sole|😎|sunglasses||cur_a2_33.sunglasses
+вільний|loose|løstsiddende|largo|👖|||cur_a2_33.loose
+одягнений|dressed|påklædt|vestito|🧥|||cur_a2_33.dressed
+одягати|to dress|at klæde på|vestire|👶|||cur_a2_33.to_dress
+експозиція|display|en udstilling|l'esposizione|🪟|||cur_a2_33.display
+бренд|brand|et mærke|il marchio|🏷️||marka|b2x03_media.brand
+каса (у магазині)|till|en kasse|la cassa|💳||kasa|a2x02_shopclothes.till
+бавовна|cotton|bomuld|il cotone|🌿||bawełna|a2x02_shopclothes.cotton
+#cur_a2_34|Матеріали|🧵|A2
+матеріал|material|et materiale|il materiale|🧵|||cur_a2_34.material
+метал|metal|et metal|il metallo|⚙️|||cur_a2_34.metal
+пластик|plastic|en plastik|la plastica|🧴|plastic||cur_a2_34.plastic
+дерев'яний|wooden|af træ|di legno|🪵|||cur_a2_34.wooden
+срібло|silver|et sølv|l'argento|🥈|||cur_a2_34.silver
+золотий|golden|gylden|dorato|✨|||cur_a2_34.golden
+деревина|wood|et træ|il legno|🪓|wood||cur_a2_34.wood
+мотузка|rope|et reb|la corda|🪢|||cur_a2_34.rope
+скотч|tape|en tape|il nastro adesivo|📦|||cur_a2_34.tape
+ланцюг|chain|en kæde|la catena|⛓️|||cur_a2_34.chain
+мотузочка|string|en snor|lo spago|🧶|string||cur_a2_34.string
+#cur_a2_35|Квартира в оренду|🚗|A2
 гараж|garage|en garage|il garage|🚗|garage|garaż|a1x02_house.garage
 нагорі|upstairs|ovenpå|di sopra|⬆️||na górze|a1x02_house.upstairs
 внизу|downstairs|nedenunder|di sotto|⬇️||na dole|a1x02_house.downstairs
-вхідні двері|front door|en hoveddør|la porta d'ingresso|🚪|front_door|drzwi wejściowe|a1x02_house.front_door
 паркан|fence|et hegn|la recinzione|🚧||płot|a1x02_house.fence
+орендувати|to rent|at leje|affittare|🔑||wynajmować|a2x01_flat.to_rent
+меблі|furniture|møbler|i mobili|🛋️|furniture|meble|a2x01_flat.furniture
+дах|roof|et tag|il tetto|🏠||dach|a2x02_home.roof
+пересувати|to move|at flytte|spostare|🛋️|move_,_to||cur_a2_35.to_move
+критий|indoor|indendørs|coperto|🏊|||cur_a2_35.indoor
+приватний|private|privat|privato|🔒||prywatny|b1x02_adjectives.private
+сигналізація|alarm|en alarm|l'allarme|🔔||alarm|b1x03_crime.alarm
+замок (дверний)|lock|en lås|la serratura|🔒||zamek do drzwi|b1x03_crime.lock
+орендна плата|rent|en husleje|l'affitto|🏠||czynsz|b2m_housing.rent
+сусід по квартирі|flatmate|en bofælle|il coinquilino|🧑‍🤝‍🧑||współlokator|a2x01_flat.flatmate
+#cur_a2_36|Меблі й техніка|💡|A2
+лампа|lamp|en lampe|la lampada|💡|lamp|lampa|a1m_things.lamp
+холодильник|fridge|et køleskab|il frigorifero|🧊|fridge|lodówka|a1x01_kitchen.fridge
+крісло|armchair|en lænestol|la poltrona|🪑||fotel|a2x02_home.armchair
+книжкова шафа|bookcase|en reol|la libreria|📖|bookcase|regał|a2x02_home.bookcase
+шухляда|drawer|en skuffe|il cassetto|🗄️|drawer|szuflada|a2x02_home.drawer
+кран (водопровідний)|tap|en vandhane|il rubinetto|🚰||kran|a2x02_home.tap
+книжкова полиця|bookshelf|en boghylde|la libreria|📚|||cur_a2_36.bookshelf
+шафка|cupboard|et skab|l'armadietto|🗄️|cupboard||cur_a2_36.cupboard
+раковина|sink|en vask|il lavandino|🚰|||cur_a2_36.sink
+сумка-холодильник|cooler|en køletaske|la borsa frigo|🧊|||cur_a2_36.cooler
+пральна машина|washing machine|en vaskemaskine|la lavatrice|🧺|washing_machine|pralka|b1m_housing.washing_machine
+штора|curtain|et gardin|la tenda|🪟||zasłona|a2x02_home.curtain
+килим|carpet|et gulvtæppe|il tappeto|🟫||dywan|a2x02_home.carpet
+подушка (для сну)|pillow|en hovedpude|il cuscino|🛏️||poduszka|a2x02_home.pillow
+стеля|ceiling|et loft|il soffitto|⬆️|ceiling|sufit|a2x02_home.ceiling
+#cur_a2_37|Кухня й готування|🔥|A2
+духовка|oven|en ovn|il forno|🔥||piekarnik|a1x01_kitchen.oven
+кип'ятити|to boil|at koge|bollire|♨️||gotować|a1x01_kitchen.to_boil
+перемішувати|to mix|at blande|mescolare|🥄||mieszać|a1x01_kitchen.to_mix
+свіжий|fresh|frisk|fresco|🥖||świeży|a2x01_adjectives.fresh
+пекти|to bake|at bage|cuocere al forno|🥧|bake_,_to|piec|a2x02_kitchen.to_bake
+наливати|to pour|at hælde|versare|🫗|pour_,_to|nalewać|a2x02_kitchen.to_pour
+запікати|to roast|at stege|arrostire|🍗|||cur_a2_37.to_roast
+готування|cooking|en madlavning|la cucina|👩‍🍳|||cur_a2_37.cooking
+столова ложка|tablespoon|en spiseske|il cucchiaio|🥄|||cur_a2_37.tablespoon
+борошно|flour|et mel|la farina|🌾|||cur_a2_37.flour
+оливкова олія|olive oil|en olivenolie|l'olio d'oliva|🫒|olive_oil||cur_a2_37.olive_oil
+плита|stove|et komfur|il fornello|🔥|||cur_a2_37.stove
+крапля|drop|en dråbe|la goccia|💧|||cur_a2_37.drop
+смажити|to fry|at stege|friggere|🍳|fry_,_to|smażyć|a1x01_kitchen.to_fry
+смажити на грилі|to grill|at grille|grigliare|🍖|grill_,_to|grillować|a2x02_kitchen.to_grill
+#cur_a2_38|Хатні справи|🌫️|A2
+пил|dust|et støv|la polvere|🌫️|||cur_a2_38.dust
+мотлох|junk|et skrammel|le cianfrusaglie|🗑️|||cur_a2_38.junk
+прибиральник|cleaner|en rengøringsassistent|l'addetto alle pulizie|🧽|cleaner_1a||cur_a2_38.cleaner
+ремонт|repair|en reparation|la riparazione|🔧|||cur_a2_38.repair
+ручка|handle|et håndtag|la maniglia|🚪|||cur_a2_38.handle
+гвинт|screw|en skrue|la vite|🔩|screw||cur_a2_38.screw
+набір|kit|et sæt|il kit|🧰|||cur_a2_38.kit
+розливати|to spill|at spilde|rovesciare|🥛|spill_,_to||cur_a2_38.to_spill
+речі|stuff|ting|la roba|🎒|||cur_a2_38.stuff
+сушити|to dry|at tørre|asciugare|👕|||cur_a2_38.to_dry
+ремонтувати|to repair|at reparere|riparare|🔧||naprawiać|b1m_housing.to_repair
+охайний|tidy|ordentlig|ordinato|🧹||schludny|b1x03_personality.tidy
+#cur_a2_39|Професії · 1|👨‍💼|A2
+бізнесмен|businessman|en forretningsmand|l'uomo d'affari|👨‍💼|||cur_a2_39.businessman
+бізнесвумен|businesswoman|en forretningskvinde|la donna d'affari|👩‍💼|||cur_a2_39.businesswoman
+менеджер|manager|en leder|il manager|📋|||cur_a2_39.manager
+директор|director|en direktør|il direttore|👔|||cur_a2_39.director
+секретар|secretary|en sekretær|il segretario|🗂️|secretary_1a||cur_a2_39.secretary
+клерк|clerk|en kontorassistent|l'impiegato|🖇️|||cur_a2_39.clerk
+охоронець|guard|en vagt|la guardia|💂|||cur_a2_39.guard
+шеф-кухар|chef|en køkkenchef|lo chef|👨‍🍳|||cur_a2_39.chef
+редактор|editor|en redaktør|il redattore|✏️||redaktor|b1x02_news.editor
+начальник|boss|en chef|il capo|👔||szef|b1_work.boss
+адвокат|lawyer|en advokat|l'avvocato|💼||adwokat|b2x01_law.lawyer
+подкаст|podcast|en podcast|il podcast|🎧||podcast|b1x02_news.podcast
+#cur_a2_40|Професії · 2|👩‍🚀|A2
+астронавт|astronaut|en astronaut|l'astronauta|👩‍🚀|||cur_a2_40.astronaut
+рибалка|fisherman|en fisker|il pescatore|🎣|||cur_a2_40.fisherman
+мисливець|hunter|en jæger|il cacciatore|🏹|||cur_a2_40.hunter
+доповідач|speaker|en taler|il relatore|🎤|||cur_a2_40.speaker
+виробник|maker|en producent|il produttore|🛠️|||cur_a2_40.maker
+агент|agent|en agent|l'agente|🕵️|||cur_a2_40.agent
+професія|occupation|et erhverv|la professione|🪪|||cur_a2_40.occupation
+помічник|assistant|en assistent|l'assistente|🤝|||cur_a2_40.assistant
+професійний|professional|professionel|professionale|🏅|||cur_a2_40.professional
+експерт|expert|en ekspert|l'esperto|🧑‍🏫|||cur_a2_40.expert
+#cur_a2_41|На роботі|🏢|A2
+компанія|company|et firma|l'azienda|🏢|||cur_a2_41.company
+комітет|committee|et udvalg|il comitato|👥|||cur_a2_41.committee
+голова|chairman|en formand|il presidente|🪑|||cur_a2_41.chairman
+завдання|task|en opgave|il compito|📌|||cur_a2_41.task
+продукт|product|et produkt|il prodotto|🏷️|||cur_a2_41.product
+виробництво|production|en produktion|la produzione|🏭|||cur_a2_41.production
+торгівля|trade|en handel|il commercio|⚖️|||cur_a2_41.trade
+премія|bonus|en bonus|il bonus|🎁|||cur_a2_41.bonus
+бюджет|budget|et budget|il budget|🧮|||cur_a2_41.budget
+кидати|to quit|at holde op|smettere|🚭|||cur_a2_41.to_quit
+досвід|experience|en erfaring|l'esperienza|🧠||doświadczenie|b1_work.experience
+заробляти|to earn|at tjene|guadagnare|💵|money|zarabiać|b1_work.to_earn
+дельфін|dolphin|en delfin|il delfino|🐬|dolphin|delfin|a2x02_animals.dolphin
+пінгвін|penguin|en pingvin|il pinguino|🐧|penguin|pingwin|a2x02_animals.penguin
+коза|goat|en ged|la capra|🐐||koza|a2x02_animals.goat
+#cur_a2_42|Успіх|🏆|A2
+успіх|success|en succes|il successo|🏆|||cur_a2_42.success
+досягати успіху|to succeed|at lykkes|riuscire|🎯|||cur_a2_42.to_succeed
+амбіція|ambition|en ambition|l'ambizione|🚀|||cur_a2_42.ambition
+здатність|ability|en evne|la capacità|💪|||cur_a2_42.ability
+талант|talent|et talent|il talento|🌟|||cur_a2_42.talent
+керувати|to manage|at lede|gestire|🧭|||cur_a2_42.to_manage
+організовувати|to organize|at organisere|organizzare|🗓️|||cur_a2_42.to_organize
+організований|organized|organiseret|organizzato|🗃️|||cur_a2_42.organized
+зазнавати невдачі|to fail|at mislykkes|fallire|📉|||cur_a2_42.to_fail
+зусилля|effort|en indsats|lo sforzo|🏋️|||cur_a2_42.effort
+досягати|to achieve|at opnå|raggiungere|🏆||osiągać|b1x01_verbs.to_achieve
+покращувати|to improve|at forbedre|migliorare|📈||poprawiać|b1x01_verbs.to_improve
+подавати заявку|to apply|at søge|candidarsi|📨||składać podanie|b2m_education.to_apply
+#cur_a2_43|Школа|✂️|A2
+ножиці|scissors|en saks|le forbici|✂️|scissors|nożyczki|a1x01_school.scissors
+перерва (у школі)|break|et frikvarter|la ricreazione|🔔||przerwa|a1x01_school.break
+оцінка|mark|en karakter|il voto|💯||ocena|a2x02_school.mark
+підручник|textbook|en lærebog|il libro di testo|📘||podręcznik|a2x02_school.textbook
+шкільні завдання|schoolwork|et skolearbejde|il lavoro scolastico|✏️|||cur_a2_43.schoolwork
+кампус|campus|en campus|il campus|🌳|||cur_a2_43.campus
+позначати|to mark|at markere|segnare|✔️|||cur_a2_43.to_mark
+закінчувати навчання|to graduate|at blive færdiguddannet|laurearsi|🎓|||cur_a2_43.to_graduate
+папка|folder|en mappe|la cartella|📁|||cur_a2_43.folder
+щоденник|diary|en dagbog|il diario|📔|||cur_a2_43.diary
+твір (письмовий)|essay|en stil|il tema|✍️||wypracowanie|b1m_education.essay
+вікторина|quiz|en quiz|il quiz|❓||quiz|b1x03_culture.quiz
+гумка (для стирання)|eraser|et viskelæder|la gomma|🧽||gumka|a1x01_school.eraser
+клей|glue|en lim|la colla|🧴|glue|klej|a1x01_school.glue
+калькулятор|calculator|en lommeregner|la calcolatrice|🧮|calculator|kalkulator|a1x01_school.calculator
+#cur_a2_44|Урок англійської|👄|A2
+вимовляти|to pronounce|at udtale|pronunciare|👄||wymawiać|a1x02_classroom.to_pronounce
+прикметник|adjective|et adjektiv|l'aggettivo|🎨|||cur_a2_44.adjective
+іменник|noun|et substantiv|il sostantivo|🏠|||cur_a2_44.noun
+дієслово|verb|et verbum|il verbo|🏃|||cur_a2_44.verb
+множина|plural|et flertal|il plurale|👨‍👩‍👧‍👦|||cur_a2_44.plural
+однина|singular|et ental|il singolare|☝️|||cur_a2_44.singular
+вищий ступінь порівняння|comparative|en komparativ|il comparativo|📈|||cur_a2_44.comparative
+найвищий ступінь порівняння|superlative|en superlativ|il superlativo|🥇|||cur_a2_44.superlative
+велика літера|capital letter|et stort bogstav|la lettera maiuscola|🔠|||cur_a2_44.capital_letter
+словниковий запас|vocabulary|et ordforråd|il lessico|📒|||cur_a2_44.vocabulary
+вимова|pronunciation|en udtale|la pronuncia|👄|||cur_a2_44.pronunciation
+розділові знаки|punctuation|en tegnsætning|la punteggiatura|❗|||cur_a2_44.punctuation
+диктувати по літерах|to spell|at stave|fare lo spelling|🔤||przeliterować|b1x03_phone.to_spell
+#cur_a2_45|Навчання|🔢|A2
+рахувати|to count|at tælle|contare|🔢|count_,_to|liczyć|a1x01_school.to_count
+кабінет (кімната)|study|et arbejdsværelse|lo studio|🖥️||gabinet|a1x02_house.study
+освіта|education|en uddannelse|l'istruzione|🎒|||cur_a2_45.education
+знання|knowledge|en viden|la conoscenza|🧠|||cur_a2_45.knowledge
+слухач курсів|learner|en kursist|il corsista|🧑‍🎓|||cur_a2_45.learner
+початківець|beginner|en begynder|il principiante|🌱|||cur_a2_45.beginner
+просунутий|advanced|avanceret|avanzato|⏫|||cur_a2_45.advanced
+базовий|basic|grundlæggende|di base|🔤|||cur_a2_45.basic
+пізнавальний|educational|lærerig|educativo|🧩|||cur_a2_45.educational
+пояснення|explanation|en forklaring|la spiegazione|💡|||cur_a2_45.explanation
+правильно|correctly|korrekt|correttamente|✅|||cur_a2_45.correctly
+готуватися|to prepare|at forberede sig|prepararsi|🗂️||przygotowywać się|b1m_education.to_prepare
+пояснювати|to explain|at forklare|spiegare|🗣️||wyjaśniać|a2m_school.to_explain
+зосереджуватися|to concentrate|at koncentrere sig|concentrarsi|🎯|concentrating_man|skupiać się|b2m_education.to_concentrate
+#cur_a2_46|Думки й обговорення|🎙️|A2
+дебати|debate|en debat|il dibattito|🎙️|||cur_a2_46.debate
+питання|issue|et spørgsmål|la questione|❓|||cur_a2_46.issue
+стратегія|strategy|en strategi|la strategia|♟️|||cur_a2_46.strategy
+короткий зміст|summary|et resumé|il riassunto|📄|||cur_a2_46.summary
+письмо|writing|en skrivning|la scrittura|✍️|||cur_a2_46.writing
+контекст|context|en sammenhæng|il contesto|🔍|||cur_a2_46.context
+вираз|expression|et udtryk|l'espressione|🗨️|||cur_a2_46.expression
+значення|meaning|en betydning|il significato|📖|||cur_a2_46.meaning
+опис|description|en beskrivelse|la descrizione|📝|||cur_a2_46.description
+мозковий штурм|brainstorm|en brainstorm|il brainstorming|🌩️|||cur_a2_46.brainstorm
+обговорення|discussion|en diskussion|la discussione|🗣️|||cur_a2_46.discussion
+метод|method|en metode|il metodo|🧪|||cur_a2_46.method
+думка (погляд)|opinion|en mening|l'opinione|💭||zdanie|b1x02_opinions.opinion
+Саме так!|Exactly!|Præcis!|Esatto!|🎯||Właśnie tak!|b1x02_opinions.exactly
+наляканий|scared|bange|spaventato|😱||przestraszony|b1x02_opinions.scared
+#cur_a2_47|Банк і гроші|🤝|A2
+позичати (комусь)|to lend|at låne ud|prestare|🤝||pożyczać komuś|a2x01_verbs.to_lend
+банківські операції|banking|bankforretninger|le operazioni bancarie|📱|||cur_a2_47.banking
+відділення|branch|en filial|la filiale|🏦|branch||cur_a2_47.branch
+кредит|credit|en kredit|il credito|💳|||cur_a2_47.credit
+вартість|cost|en pris|il costo|💲|||cur_a2_47.cost
+обмін|exchange|en udveksling|lo scambio|🔄|||cur_a2_47.exchange
+цінність|value|en værdi|il valore|💎|||cur_a2_47.value
+курс|rate|en kurs|il tasso|💱|||cur_a2_47.rate
+багатство|wealth|en rigdom|la ricchezza|💰|||cur_a2_47.wealth
+статок|fortune|en formue|il patrimonio|🤑|||cur_a2_47.fortune
+обліковий запис|account|en konto|l'account|👤||konto|b1m_tech.account
+комісія (плата)|fee|et gebyr|la commissione|💳||prowizja|b1x01_money.fee
+сподіватися|to hope|at håbe|sperare|🤞||mieć nadzieję|a2x01_verbs.to_hope
+#cur_a2_48|Великі числа й міри|🌡️|A2
+градус|degree|en grad|il grado|🌡️||stopień|a1x01_weather.degree
+сантиметр|centimeter|en centimeter|il centimetro|📏|||cur_a2_48.centimeter
+метр|meter|en meter|il metro|📐|||cur_a2_48.meter
+кілометр|kilometer|en kilometer|il chilometro|🛣️|||cur_a2_48.kilometer
+дюйм|inch|en tomme|il pollice|📺|||cur_a2_48.inch
+грам|gram|et gram|il grammo|⚖️|||cur_a2_48.gram
+літр|liter|en liter|il litro|🧃|||cur_a2_48.liter
+середній|average|gennemsnitlig|medio|📊|||cur_a2_48.average
+мільйон|million|en million|il milione|💰||milion|a1x02_prices.million
+палець|finger|en finger|il dito|☝️|finger|palec|a1m_body.finger
+ніхто|nobody|ingen|nessuno|🚫👤||nikt|a1x01_questions.nobody
+#cur_a2_49|Пошта й документи|📮|A2
+поштова марка|stamp|et frimærke|il francobollo|📮||znaczek pocztowy|a2x01_post_bank.stamp
+конверт|envelope|en kuvert|la busta|✉️|envelope|koperta|a2x01_post_bank.envelope
+отримувати|to receive|at modtage|ricevere|📥|receive_,_to|otrzymywać|a2x01_post_bank.to_receive
+кидати (лист у скриньку)|to post|at poste|imbucare|📮||wrzucać do skrzynki|a2x01_post_bank.to_post
+прохання|request|en anmodning|la richiesta|🙋|||cur_a2_49.request
+дозвіл|permission|en tilladelse|il permesso|🛂|||cur_a2_49.permission
+офіційний|official|officiel|ufficiale|🏛️|||cur_a2_49.official
+оголошення|notice|et opslag|l'avviso|📢|||cur_a2_49.notice
+заява|statement|en udtalelse|la dichiarazione|🗒️|||cur_a2_49.statement
+звіт|report|en rapport|la relazione|📑|||cur_a2_49.report
+забороняти|to forbid|at forbyde|vietare|🚫|||cur_a2_49.to_forbid
+листівка|postcard|et postkort|la cartolina|🏞️||pocztówka|a2x01_post_bank.postcard
+поштова скринька|postbox|en postkasse|la cassetta delle lettere|📮||skrzynka pocztowa|a2x01_post_bank.postbox
+листоноша|postman|et postbud|il postino|📬||listonosz|a2x01_post_bank.postman
+#cur_a2_50|Погода|💨|A2
+вітряний|windy|blæsende|ventoso|💨||wietrzny|a1x01_weather.windy
+буря|storm|en storm|la tempesta|⛈️||burza|a1x01_weather.storm
+туман|fog|tåge|la nebbia|🌫️||mgła|a1x01_weather.fog
+гроза|thunderstorm|et tordenvejr|il temporale|⛈️|||cur_a2_50.thunderstorm
+спека|heat|en varme|il caldo|🥵|||cur_a2_50.heat
+денне світло|daylight|dagslys|la luce del giorno|🌅|||cur_a2_50.daylight
+тінь|shade|en skygge|l'ombra|🌳|||cur_a2_50.shade
+повітря|air|luft|l'aria|💨|||cur_a2_50.air
+землетрус|earthquake|et jordskælv|il terremoto|🏚️||trzęsienie ziemi|b1_environment.earthquake
+повінь|flood|en oversvømmelse|l'alluvione|🌊||powódź|b1_environment.flood
+мокрий|wet|våd|bagnato|💦|wet|mokry|a2_weather.wet
+температура|temperature|en temperatur|la temperatura|🌡️|thermometer|temperatura|a2_weather.temperature
+замерзати|to freeze|at fryse|gelare|🧊||zamarzać|b1x03_weather.to_freeze
+веселка|rainbow|en regnbue|l'arcobaleno|🌈|rainbow|tęcza|a1x01_weather.rainbow
+#cur_a2_51|Природа · краєвиди|🌲|A2
+ліс|forest|en skov|la foresta|🌲||las|a2x02_nature.forest
+озеро|lake|en sø|il lago|🛶||jezioro|a2x02_nature.lake
+долина|valley|en dal|la valle|🌄||dolina|a2x02_nature.valley
+узбережжя|coast|en kyst|la costa|🌊||wybrzeże|a2x02_nature.coast
+затока|bay|en bugt|la baia|🏖️|||cur_a2_51.bay
+берег|shore|en bred|la riva|🌊|||cur_a2_51.shore
+сільська місцевість|countryside|landet|la campagna|🌾|||cur_a2_51.countryside
+скеля|rock|en klippe|la roccia|🪨|||cur_a2_51.rock
+хвиля|wave|en bølge|l'onda|🌊|||cur_a2_51.wave
+піщаний|sandy|sandet|sabbioso|🏝️|||cur_a2_51.sandy
+стежка|path|en sti|il sentiero|🥾|||cur_a2_51.path
+під водою|underwater|under vandet|sott'acqua|🤿|||cur_a2_51.underwater
+пустеля|desert|en ørken|il deserto|🏜️|cactus|pustynia|b1_environment.desert
+пісок|sand|sand|la sabbia|🏖️||piasek|a2x02_nature.sand
+#cur_a2_52|Рослини й природа|🪴|A2
+рослина|plant|en plante|la pianta|🪴|||cur_a2_52.plant
+насінина|seed|et frø|il seme|🌱|||cur_a2_52.seed
+корінь|root|en rod|la radice|🌳|||cur_a2_52.root
+урожай|harvest|en høst|il raccolto|🌾|harvest||cur_a2_52.harvest
+соняшник|sunflower|en solsikke|il girasole|🌻|||cur_a2_52.sunflower
+дуб|oak|et egetræ|la quercia|🌳|||cur_a2_52.oak
+кущ|bush|en busk|il cespuglio|🌿|bush||cur_a2_52.bush
+природа|nature|natur|la natura|🏞️|||cur_a2_52.nature
+природний|natural|naturlig|naturale|🍃|||cur_a2_52.natural
+дикий|wild|vild|selvatico|🐺|||cur_a2_52.wild
+комаха|insect|et insekt|l'insetto|🐞|||cur_a2_52.insect
+пір'їна|feather|en fjer|la piuma|🪶|feather||cur_a2_52.feather
+мушля|shell|en muslingeskal|la conchiglia|🐚|||cur_a2_52.shell
+#cur_a2_53|Тварини й довкілля|🐘|A2
+слон|elephant|en elefant|l'elefante|🐘|elephant|słoń|a1m_wild.elephant
+качка|duck|en and|l'anatra|🦆|duck|kaczka|a2m_animals.duck
+шимпанзе|chimpanzee|en chimpanse|lo scimpanzé|🐒|chimpanzee||cur_a2_53.chimpanzee
+істота|creature|et væsen|la creatura|👾|||cur_a2_53.creature
+динозавр|dinosaur|en dinosaur|il dinosauro|🦕|dinosaur||cur_a2_53.dinosaur
+зникаючий|endangered|udryddelsestruet|in via di estinzione|🐼|||cur_a2_53.endangered
+руйнувати|to destroy|at ødelægge|distruggere|💥|||cur_a2_53.to_destroy
+виживати|to survive|at overleve|sopravvivere|🌵|||cur_a2_53.to_survive
+шкодити|to harm|at skade|danneggiare|⚠️|||cur_a2_53.to_harm
+Земля|earth|Jorden|la Terra|🌍|Earth||cur_a2_53.earth
+переробляти (відходи)|to recycle|at genbruge|riciclare|♻️|recycling_bins|poddawać recyklingowi|b1_environment.to_recycle
+зникати|to disappear|at forsvinde|scomparire|💨||znikać|b1_environment.to_disappear
+запобігати|to prevent|at forhindre|prevenire|🛑||zapobiegać|b2_environment.to_prevent
+жирафа|giraffe|en giraf|la giraffa|🦒|giraffe|żyrafa|a1m_wild.giraffe
+зебра|zebra|en zebra|la zebra|🦓|zebra|zebra|a1m_wild.zebra
+#cur_a2_54|Країни й народи|🌍|A2
+континент|continent|et kontinent|il continente|🌍|||cur_a2_54.continent
+країна|country|et land|il paese|🗺️|||cur_a2_54.country
+нація|nation|en nation|la nazione|🏳️|||cur_a2_54.nation
+національний|national|national|nazionale|🎌|||cur_a2_54.national
+столиця|capital|en hovedstad|la capitale|🏛️|||cur_a2_54.capital
+село|village|en landsby|il villaggio|🏡|||cur_a2_54.village
+віддалений|remote|afsidesliggende|remoto|🏝️|||cur_a2_54.remote
+глобус|globe|en globus|il mappamondo|🌐|globe||cur_a2_54.globe
+населення|population|en befolkning|la popolazione|👥|||cur_a2_54.population
+звичай|custom|en skik|l'usanza|🎎|||cur_a2_54.custom
+традиційний|traditional|traditionel|tradizionale|🏮|||cur_a2_54.traditional
+громадянин|citizen|en borger|il cittadino|🪪||obywatel|b2_society.citizen
+#cur_a2_55|Почуття · -ed чи -ing|😕|A2
+розгублений|confused|forvirret|confuso|😕|||cur_a2_55.confused
+що розчаровує|disappointing|skuffende|deludente|😞|||cur_a2_55.disappointing
+соромний|embarrassing|pinlig|imbarazzante|😳|||cur_a2_55.embarrassing
+страшний|frightening|skræmmende|spaventoso|😱|||cur_a2_55.frightening
+несподіваний|surprising|overraskende|sorprendente|😮|||cur_a2_55.surprising
+потішений|amused|moret|divertito|😏|||cur_a2_55.amused
+набридливий|annoying|irriterende|fastidioso|😤|||cur_a2_55.annoying
+надзвичайно цікавий|fascinating|fascinerende|affascinante|🤩|||cur_a2_55.fascinating
+розслаблений|relaxed|afslappet|rilassato|😌|||cur_a2_55.relaxed
+розчарований|disappointed|skuffet|deluso|😞|sad_lady|rozczarowany|b1_feelings.disappointed
+здивований|surprised|overrasket|sorpreso|😲|surprised_lady|zdziwiony|b1_feelings.surprised
+#cur_a2_56|Емоції|😬|A2
+знервований|nervous|nervøs|nervoso|😬||zdenerwowany|a1x01_feelings.nervous
+стривожений|anxious|ængstelig|ansioso|😰|||cur_a2_56.anxious
+нетерплячий|impatient|utålmodig|impaziente|⏳|||cur_a2_56.impatient
+задоволений|pleased|tilfreds|contento|😊|||cur_a2_56.pleased
+нещасний|unhappy|ulykkelig|infelice|☹️|||cur_a2_56.unhappy
+стурбований|worried|bekymret|preoccupato|😟|||cur_a2_56.worried
+радість|joy|en glæde|la gioia|😄|||cur_a2_56.joy
+щастя|happiness|lykke|la felicità|🥰|||cur_a2_56.happiness
+страх|fear|en frygt|la paura|😨|||cur_a2_56.fear
+гордість|pride|stolthed|l'orgoglio|🦁|||cur_a2_56.pride
+засмучений|upset|ked af det|dispiaciuto|😢||zmartwiony|b1x02_opinions.upset
+вдячний|grateful|taknemmelig|grato|🙏||wdzięczny|b2_character.grateful
+#cur_a2_57|Коли щось дратує|😭|A2
+плакати|to cry|at græde|piangere|😭||płakać|a1x01_feelings.to_cry
+дратувати|to annoy|at irritere|infastidire|😤|||cur_a2_57.to_annoy
+лякати|to frighten|at skræmme|spaventare|👻|||cur_a2_57.to_frighten
+наводити жах|to terrify|at skræmme livet af|terrorizzare|😱|||cur_a2_57.to_terrify
+заплутувати|to confuse|at forvirre|confondere|🌀|||cur_a2_57.to_confuse
+заважати|to disturb|at forstyrre|disturbare|🔕|||cur_a2_57.to_disturb
+турбувати|to bother|at genere|dare fastidio|😒|||cur_a2_57.to_bother
+крик|scream|et skrig|l'urlo|😱|||cur_a2_57.scream
+вигук|shout|et råb|il grido|📢|||cur_a2_57.shout
+сльоза|tear|en tåre|la lacrima|😢|||cur_a2_57.tear
+шок|shock|et chok|lo shock|😲|||cur_a2_57.shock
+настрій|mood|et humør|l'umore|🎭||nastrój|b1_feelings.mood
+хвилюватися|to worry|at bekymre sig|preoccuparsi|😟|worried_man|martwić się|b1_feelings.to_worry
+#cur_a2_58|Характер · 1|🎨|A2
+творчий|creative|kreativ|creativo|🎨|||cur_a2_58.creative
+енергійний|energetic|energisk|energico|⚡|||cur_a2_58.energetic
+відвертий|frank|åbenhjertig|franco|🗣️|||cur_a2_58.frank
+лагідний|gentle|blid|dolce|🕊️|||cur_a2_58.gentle
+жадібний|greedy|grådig|avido|🤑|||cur_a2_58.greedy
+готовий допомогти|helpful|hjælpsom|disponibile|🤝|||cur_a2_58.helpful
+нечесний|dishonest|uærlig|disonesto|🤥|||cur_a2_58.dishonest
+жвавий|lively|livlig|vivace|💃|||cur_a2_58.lively
+недобрий|mean|led|cattivo|😠|||cur_a2_58.mean
+впевнений у собі|confident|selvsikker|sicuro di sé|😎||pewny siebie|b1_feelings.confident
+ввічливий|polite|høflig|educato|🎩||uprzejmy|b1_feelings.polite
+сміливий|brave|modig|coraggioso|🦁||odważny|b1x03_personality.brave
+#cur_a2_59|Характер · 2|🐱|A2
+грайливий|playful|legesyg|giocherellone|🐱|||cur_a2_59.playful
+дурнуватий|silly|fjollet|sciocco|🤪|||cur_a2_59.silly
+мудрий|wise|vis|saggio|🦉|||cur_a2_59.wise
+божевільний|crazy|skør|pazzo|🤯|||cur_a2_59.crazy
+ставлення|attitude|en holdning|l'atteggiamento|👍|||cur_a2_59.attitude
+манера|manner|en væremåde|il modo di fare|🎩|||cur_a2_59.manner
+лінь|laziness|dovenskab|la pigrizia|🦥|||cur_a2_59.laziness
+мудрість|wisdom|visdom|la saggezza|📜|||cur_a2_59.wisdom
+інтелект|intelligence|intelligens|l'intelligenza|🧠|||cur_a2_59.intelligence
+креативність|creativity|kreativitet|la creatività|🎨|||cur_a2_59.creativity
+уява|imagination|en fantasi|l'immaginazione|🌈|||cur_a2_59.imagination
+особистість|personality|en personlighed|la personalità|🎭||osobowość|b2x02_psych.personality
+поведінка|behaviour|en adfærd|il comportamento|🐾||zachowanie|b2x02_psych.behaviour
+стосунки|relationship|et forhold|la relazione|💑||związek|b2m_relationships.relationship
+#cur_a2_60|Зовнішність і догляд|🧼|A2
+мило|soap|en sæbe|il sapone|🧼|soap|mydło|a1m_things.soap
+дзеркало|mirror|et spejl|lo specchio|🪞|mirror|lustro|a2x02_home.mirror
+білявий|blonde|blond|biondo|👱|||cur_a2_60.blonde
+привабливий|attractive|tiltrækkende|attraente|😍|||cur_a2_60.attractive
+зовнішність|appearance|et udseende|l'aspetto|🪞|||cur_a2_60.appearance
+парфуми|perfume|en parfume|il profumo|🌸|perfume||cur_a2_60.perfume
+гребінець|comb|en kam|il pettine|🪮|comb||cur_a2_60.comb
+шампунь|shampoo|en shampoo|lo shampoo|🧴|shampoo||cur_a2_60.shampoo
+зубна щітка|toothbrush|en tandbørste|lo spazzolino|🪥|toothbrush||cur_a2_60.toothbrush
+стрункий|slim|slank|snello|🧍||szczupły|b1x03_appearance.slim
+гарний на вигляд|good-looking|flot|di bell'aspetto|😎||przystojny|b1x03_appearance.good_looking
+макіяж|makeup|sminke|il trucco|💄|||cur_a2_60.makeup
+борода|beard|et skæg|la barba|🧔||broda|b1x03_appearance.beard
+#cur_a2_61|Комп'ютер та інтернет|💾|A2
+програмне забезпечення|software|en software|il software|💾|||cur_a2_61.software
+друкувати|to print|at printe|stampare|🖨️|||cur_a2_61.to_print
+вебсторінка|web page|en webside|la pagina web|📄|||cur_a2_61.web_page
+онлайн|online|online|online|🌐|||cur_a2_61.online
+клацати|to click|at klikke|cliccare|🖱️|||cur_a2_61.to_click
+пошук|search|en søgning|la ricerca|🔍|||cur_a2_61.search
+копіювати|to copy|at kopiere|copiare|📋|copy_,_to||cur_a2_61.to_copy
+принтер|printer|en printer|la stampante|🖨️|printer|drukarka|b1m_tech.printer
+публікувати|to publish|at offentliggøre|pubblicare|📤||publikować|b2m_gadgets.to_publish
+завантажувати (з інтернету)|to download|at downloade|scaricare|⬇️|download_,_to|pobierać|b2m_gadgets.to_download
+зарядний пристрій|charger|en oplader|il caricabatterie|🔌|charger_electric|ładowarka|b1m_tech.charger
+клавіатура|keyboard|et tastatur|la tastiera|⌨️|computer_keyboard|klawiatura|b1m_tech.keyboard
+шукати (в інтернеті)|to search|at søge|cercare|🔍||szukać|b1m_tech.to_search
+#cur_a2_62|Телефон і повідомлення|👤|A2
+контакт (у телефоні)|contact|en kontakt|il contatto|👤||kontakt|a2x01_phone.contact
+зв'язуватися|to contact|at kontakte|contattare|📇|||cur_a2_62.to_contact
+звуковий сигнал|tone|en tone|il segnale acustico|🔔|||cur_a2_62.tone
+надсилати імейл|to email|at e-maile|mandare un'email|📧|||cur_a2_62.to_email
+записувати|to record|at optage|registrare|🎙️|||cur_a2_62.to_record
+есемеска|text message|en sms|il messaggino|📱||SMS|b1x03_phone.text_message
+писати повідомлення|to text|at sms'e|mandare un messaggio|✉️||esemesować|b1x03_phone.to_text
+голос|voice|en stemme|la voce|🎙️||głos|b1x03_phone.voice
+смартфон|smartphone|en smartphone|lo smartphone|📱||smartfon|a2x01_phone.smartphone
+смайлик|emoji|en emoji|l'emoji|😀||emotka|a2x01_phone.emoji
+#cur_a2_63|Техніка|🤖|A2
+автоматичний|automatic|automatisk|automatico|🤖|||cur_a2_63.automatic
+автоматично|automatically|automatisk|automaticamente|⚙️|||cur_a2_63.automatically
+електричний|electric|elektrisk|elettrico|⚡|||cur_a2_63.electric
+цифровий фотоапарат|digital camera|et digitalkamera|la fotocamera digitale|📷|||cur_a2_63.digital_camera
+навушники|headphones|høretelefoner|le cuffie|🎧|headphones||cur_a2_63.headphones
+звук|audio|lyd|l'audio|🔊|||cur_a2_63.audio
+миттєвий|instant|øjeblikkelig|istantaneo|⚡|||cur_a2_63.instant
+будильник|alarm clock|et vækkeur|la sveglia|⏰|||cur_a2_63.alarm_clock
+опалення|heating|varme|il riscaldamento|🌡️||ogrzewanie|b1m_housing.heating
+екран|screen|en skærm|lo schermo|🖥️|touch_screen|ekran|b2m_gadgets.screen
+акумулятор|battery|et batteri|la batteria|🔋|battery_1|bateria|b2m_gadgets.battery
+коментар|comment|en kommentar|il commento|💬||komentarz|b2m_gadgets.comment
+застосунок|app|en app|l'app|📲||aplikacja|b2m_gadgets.app
+пароль|password|en adgangskode|la password|🔑||hasło|b2m_gadgets.password
+#cur_a2_64|Наука й відкриття|⚛️|A2
+атом|atom|et atom|l'atomo|⚛️|atom||cur_a2_64.atom
+діаграма|chart|et diagram|il grafico|📊|||cur_a2_64.chart
+дослідження|research|forskning|la ricerca scientifica|🔬|||cur_a2_64.research
+хімічний|chemical|kemisk|chimico|🧪|||cur_a2_64.chemical
+штучний|artificial|kunstig|artificiale|🦾|||cur_a2_64.artificial
+планета|planet|en planet|il pianeta|🪐|||cur_a2_64.planet
+космос|space|rummet|lo spazio|🌌|||cur_a2_64.space
+космічний корабель|spaceship|et rumskib|l'astronave|🚀|spaceship||cur_a2_64.spaceship
+винахід|invention|en opfindelse|l'invenzione|⚙️||wynalazek|b2x02_science.invention
+винаходити|to invent|at opfinde|inventare|🛠️||wynaleźć|b2x02_science.to_invent
+відкривати (науково)|to discover|at opdage|scoprire|🔭||odkrywać|b2x02_science.to_discover
+науковий|scientific|videnskabelig|scientifico|🔬||naukowy|b2x02_science.scientific
+#cur_a2_65|Злочин|🔪|A2
+вбивця|killer|en morder|l'assassino|🔪|||cur_a2_65.killer
+пістолет|gun|en pistol|la pistola|🔫|||cur_a2_65.gun
+стріляти|to shoot|at skyde|sparare|🎯|shoot_,_to||cur_a2_65.to_shoot
+постріл|shot|et skud|lo sparo|💥|||cur_a2_65.shot
+жорстокий|violent|voldelig|violento|👊|||cur_a2_65.violent
+небезпека|danger|en fare|il pericolo|⚠️|||cur_a2_65.danger
+красти|to steal|at stjæle|rubare|💰|steal_,_to|kraść|b1x03_crime.to_steal
+пограбування|robbery|et røveri|la rapina|🔫||napad|b1x03_crime.robbery
+злочин|crime|en forbrydelse|il crimine|🚨|handcuffs|przestępstwo|b2_society.crime
+злодій|thief|en tyv|il ladro|🦹||złodziej|b2x02_crime.thief
+грабувати|to rob|at røve|rapinare|🏦||rabować|b2x02_crime.to_rob
+вбивство|murder|et mord|l'omicidio|🔪||morderstwo|b2x02_crime.murder
+незаконний|illegal|ulovlig|illegale|❌||nielegalny|b2x01_law.illegal
+замикати (на ключ)|to lock|at låse|chiudere a chiave|🔐||zamykać na klucz|b1x03_crime.to_lock
+детектив|detective|en detektiv|l'investigatore|🕵️||detektyw|b2x02_crime.detective
+#cur_a2_66|Поліція й закон|🛡️|A2
+безпечний|safe|sikker|sicuro|🛡️||bezpieczny|a2x01_adjectives.safe
+поліція|police|politiet|la polizia|🚓|police_1a||cur_a2_66.police
+солдат|soldier|en soldat|il soldato|🪖|soldier_1a||cur_a2_66.soldier
+військовий|military|militær|militare|🎖️|||cur_a2_66.military
+напад|attack|et angreb|l'attacco|⚔️|||cur_a2_66.attack
+втеча|escape|en flugt|la fuga|🏃|||cur_a2_66.escape
+пастка|trap|en fælde|la trappola|🪤|trap||cur_a2_66.trap
+нападати|to attack|at angribe|aggredire|💥||atakować|b1x03_crime.to_attack
+уряд|government|en regering|il governo|🏢|Houses_of_Parliament|rząd|b2_society.government
+закон|law|en lov|la legge|📜||prawo|b2_society.law
+суд (установа)|court|en domstol|il tribunale|🏛️||sąd|b2x01_law.court
+#cur_a2_67|Суспільство|⚠️|A2
+небезпечний|dangerous|farlig|pericoloso|⚠️||niebezpieczny|a2x01_adjectives.dangerous
+громадськість|public|en offentlighed|il pubblico|👥|||cur_a2_67.public
+політичний|political|politisk|politico|🗳️|||cur_a2_67.political
+свобода|freedom|en frihed|la libertà|🕊️|||cur_a2_67.freedom
+незалежність|independence|en uafhængighed|l'indipendenza|🎆|||cur_a2_67.independence
+влада|power|en magt|il potere|👑|||cur_a2_67.power
+могутній|powerful|magtfuld|potente|💪|||cur_a2_67.powerful
+сила|force|en kraft|la forza|💥|||cur_a2_67.force
+королева|queen|en dronning|la regina|👸|||cur_a2_67.queen
+королівський|royal|kongelig|reale|🏰|||cur_a2_67.royal
+суспільство|society|et samfund|la società|🏛️||społeczeństwo|b2_society.society
+#cur_a2_68|Життя сьогодні|📱|A2
+у наш час|nowadays|nu om dage|oggigiorno|📱||w dzisiejszych czasach|a2x02_time.nowadays
+століття|century|et århundrede|il secolo|🏰||wiek|a2x02_time.century
+спосіб життя|lifestyle|en livsstil|lo stile di vita|🧘|||cur_a2_68.lifestyle
+фон|background|en baggrund|lo sfondo|🖼️|||cur_a2_68.background
+спілкування|communication|en kommunikation|la comunicazione|💬|||cur_a2_68.communication
+штат|state|en stat|lo stato|🗺️|||cur_a2_68.state
+покоління|generation|en generation|la generazione|👨‍👩‍👧|||cur_a2_68.generation
+сучасний|modern|moderne|moderno|🏙️|||cur_a2_68.modern
+ситуація|situation|en situation|la situazione|🤔|||cur_a2_68.situation
+традиція|tradition|en tradition|la tradizione|🎎|||cur_a2_68.tradition
+вплив|influence|en indflydelse|l'influenza|🧲|||cur_a2_68.influence
+по всьому світу|worldwide|verden over|in tutto il mondo|🌐|||cur_a2_68.worldwide
+#cur_a2_69|Медіа й зірки|🌟|A2
+суперзірка|superstar|en superstjerne|la superstar|🌟|||cur_a2_69.superstar
+невідомий|unknown|ukendt|sconosciuto|❓|||cur_a2_69.unknown
+імідж|image|et image|l'immagine|🪞|||cur_a2_69.image
+честь|honor|en ære|l'onore|🎖️|||cur_a2_69.honor
+сценарій|script|et manuskript|la sceneggiatura|📜|||cur_a2_69.script
+рейтинг|rating|en bedømmelse|la valutazione|⭐|||cur_a2_69.rating
+чутка|rumor|et rygte|la voce|🗣️|||cur_a2_69.rumor
+популярний|popular|populær|popolare|🔥||popularny|b1m_media.popular
+реклама|advertisement|en reklame|la pubblicità|📢||reklama|b2m_gadgets.advertisement
+джерело (інформації)|source|en kilde|la fonte|🗂️||źródło|c1m_media.source
+#cur_a2_70|Проблеми й рішення|😬|A2
+неприємності|trouble|en knibe|il guaio|😬|||cur_a2_70.trouble
+труднощі|difficulty|en vanskelighed|la difficoltà|🧗|||cur_a2_70.difficulty
+рішення|solution|en løsning|la soluzione|💡|||cur_a2_70.solution
+виклик|challenge|en udfordring|la sfida|🏔️|||cur_a2_70.challenge
+стан|condition|en stand|la condizione|🔧|||cur_a2_70.condition
+наслідок|consequence|en konsekvens|la conseguenza|➡️|||cur_a2_70.consequence
+ефект|effect|en effekt|l'effetto|✨|||cur_a2_70.effect
+сильний вплив|impact|en indvirkning|l'impatto|💥|||cur_a2_70.impact
+занепокоєння|concern|en bekymring|la preoccupazione|😟|||cur_a2_70.concern
+тиск|pressure|et pres|la pressione|🗜️|||cur_a2_70.pressure
+вина|fault|en skyld|la colpa|☝️|||cur_a2_70.fault
+стикатися|to face|at stå over for|affrontare|🧍|||cur_a2_70.to_face
+#cur_a2_71|Дієслова · вирішувати й хотіти|🤔|A2
+вирішувати|to decide|at beslutte|decidere|🤔||decydować|a2x01_verbs.to_decide
+обдумувати|to consider|at overveje|considerare|🤔|||cur_a2_71.to_consider
+залежати|to depend|at afhænge|dipendere|⚖️|||cur_a2_71.to_depend
+усвідомлювати|to realize|at indse|accorgersi|💡|||cur_a2_71.to_realize
+замислюватися|to wonder|at spekulere|chiedersi|💭|||cur_a2_71.to_wonder
+бажати|to wish|at ønske|augurare|🌠|||cur_a2_71.to_wish
+мріяти|to dream|at drømme|sognare|💤|dream_,_to||cur_a2_71.to_dream
+бути проти|to mind|at have noget imod|dispiacere|🙅|||cur_a2_71.to_mind
+мати значення|to matter|at betyde noget|importare|❗|||cur_a2_71.to_matter
+шкодувати|to regret|at fortryde|pentirsi|😔|||cur_a2_71.to_regret
+очікувати|to expect|at forvente|aspettarsi|🤞||spodziewać się|b1x01_verbs.to_expect
+віддавати перевагу|to prefer|at foretrække|preferire|❤️||woleć|b1x01_verbs.to_prefer
+пропонувати (ідею)|to suggest|at foreslå|suggerire|💡||proponować|b1x01_verbs.to_suggest
+#cur_a2_72|Дієслова · люди між собою|✅|A2
+приймати|to accept|at acceptere|accettare|✅|||cur_a2_72.to_accept
+радити|to advise|at råde|consigliare|🗨️|||cur_a2_72.to_advise
+вибачатися|to apologize|at undskylde|scusarsi|🙏|||cur_a2_72.to_apologize
+цінувати|to appreciate|at sætte pris på|apprezzare|💐|||cur_a2_72.to_appreciate
+звинувачувати|to blame|at bebrejde|incolpare|👉|||cur_a2_72.to_blame
+критикувати|to criticize|at kritisere|criticare|👎|||cur_a2_72.to_criticize
+вражати|to impress|at imponere|impressionare|🤩|||cur_a2_72.to_impress
+захоплюватися|to admire|at beundre|ammirare|😍|||cur_a2_72.to_admire
+спілкуватися|to communicate|at kommunikere|comunicare|📞|communicate_,_to||cur_a2_72.to_communicate
+визнавати (провину)|to admit|at indrømme|ammettere|🙋||przyznawać|b1x01_verbs.to_admit
+підбадьорювати|to encourage|at opmuntre|incoraggiare|👏||zachęcać|b1x01_verbs.to_encourage
+нагадувати|to remind|at minde|ricordare|🎗️||przypominać|b1x01_verbs.to_remind
+сварка|argument|et skænderi|il litigio|🗯️||kłótnia|b1x02_relationships.argument
+зменшувати|to reduce|at reducere|ridurre|⬇️||zmniejszać|b1x01_verbs.to_reduce
+згадувати (у розмові)|to mention|at nævne|menzionare|💬||wspominać|b1x01_verbs.to_mention
+#cur_a2_73|Дієслова · рух|🍂|A2
+падати|to fall|at falde|cadere|🍂||upadać|a2x01_verbs.to_fall
+входити|to enter|at gå ind|entrare|🚪|enter_,_to||cur_a2_73.to_enter
+іти слідом|to follow|at følge|seguire|👣|||cur_a2_73.to_follow
+дістатися|to reach|at nå|raggiungere|🏁|||cur_a2_73.to_reach
+тягнути|to pull|at trække|tirare|🪢|pull_,_to||cur_a2_73.to_pull
+бити|to hit|at slå|picchiare|🥊|hit_,_to||cur_a2_73.to_hit
+лежати|to lie|at ligge|sdraiarsi|🛌|||cur_a2_73.to_lie
+стояти|to stand|at stå|stare in piedi|🧍|stand_,_to||cur_a2_73.to_stand
+прямувати|to head|at begive sig|dirigersi|🧭|||cur_a2_73.to_head
+бризкати|to splash|at sprøjte|schizzare|💦|||cur_a2_73.to_splash
+збиратися|to gather|at samles|riunirsi|👨‍👩‍👧‍👦|||cur_a2_73.to_gather
+#cur_a2_74|Фразові дієслова|🧪|A2
+пробувати|to try|at prøve|provare|🧪||próbować|a2x01_verbs.to_try
+всередину|in|ind|dentro|📥|||cur_a2_74.in
+увімкнений|on|tændt|acceso|💡|||cur_a2_74.on
+вгору|up|op|su|⬆️|||cur_a2_74.up
+вимкнений|off|slukket|spento|🔌|off||cur_a2_74.off
+закінчено|over|forbi|finito|🏁|over||cur_a2_74.over
+на частини|apart|fra hinanden|a pezzi|🧩|||cur_a2_74.apart
+цифра|figure|et ciffer|la cifra|🔢|||cur_a2_74.figure
+тримати|to hold|at holde|tenere|✊|||cur_a2_74.to_hold
+подавати|to hand|at række|passare|🤲|||cur_a2_74.to_hand
+вказувати|to point|at pege|indicare|👉|||cur_a2_74.to_point
+#cur_a2_75|Дієслова · робимо щось|🎨|A2
+створювати|to create|at skabe|creare|🎨|||cur_a2_75.to_create
+розвивати|to develop|at udvikle|sviluppare|📈|||cur_a2_75.to_develop
+виробляти|to produce|at producere|produrre|🏭|||cur_a2_75.to_produce
+надавати|to provide|at sørge for|fornire|🎁|||cur_a2_75.to_provide
+включати|to include|at inkludere|includere|➕|||cur_a2_75.to_include
+продовжувати|to continue|at fortsætte|continuare|⏩|||cur_a2_75.to_continue
+вкривати|to cover|at dække|coprire|❄️|||cur_a2_75.to_cover
+керувати|to operate|at betjene|azionare|⚙️|||cur_a2_75.to_operate
+налаштовувати|to adjust|at justere|regolare|🔧|||cur_a2_75.to_adjust
+ділити|to divide|at dele|dividere|➗|||cur_a2_75.to_divide
+складатися|to consist|at bestå|consistere|🧱|||cur_a2_75.to_consist
+збільшувати|to increase|at øge|aumentare|⬆️||zwiększać|b1x01_verbs.to_increase
+замінювати|to replace|at erstatte|sostituire|🔁||wymieniać|b1x01_verbs.to_replace
+#cur_a2_76|Дієслова · у житті|🌌|A2
+існувати|to exist|at eksistere|esistere|🌌|||cur_a2_76.to_exist
+помирати|to die|at dø|morire|🥀|die_,_to||cur_a2_76.to_die
+належати|to belong|at tilhøre|appartenere|🏷️|||cur_a2_76.to_belong
+закопувати|to bury|at begrave|seppellire|🦴|||cur_a2_76.to_bury
+з'являтися|to appear|at dukke op|apparire|🎩|||cur_a2_76.to_appear
+спричиняти|to cause|at forårsage|causare|⚡|||cur_a2_76.to_cause
+закінчуватися|to end|at slutte|finire|🔚|||cur_a2_76.to_end
+прикидатися|to pretend|at lade som om|fingere|🎭|||cur_a2_76.to_pretend
+благати|to beg|at tigge|supplicare|🥺|||cur_a2_76.to_beg
+повернення|return|en tilbagekomst|il ritorno|🔙|||cur_a2_76.return
+розкривати|to reveal|at afsløre|rivelare|🔓|||cur_a2_76.to_reveal
+уникати|to avoid|at undgå|evitare|↪️||unikać|b1x01_verbs.to_avoid
+повертати (товар)|to return|at returnere|restituire|↩️|return_,_to|zwracać|b1x03_shopping.to_return
+#cur_a2_77|Дієслова · щодня|🏷️|A2
+пропозиція|offer|et tilbud|l'offerta|🏷️|||cur_a2_77.offer
+пропонувати|to offer|at tilbyde|offrire|🤲|||cur_a2_77.to_offer
+ненавидіти|to hate|at hade|odiare|😠|||cur_a2_77.to_hate
+курити|to smoke|at ryge|fumare|🚬|smoke_,_to||cur_a2_77.to_smoke
+сигарета|cigarette|en cigaret|la sigaretta|🚬|cigarette||cur_a2_77.cigarette
+задовольняти|to satisfy|at tilfredsstille|soddisfare|😌|||cur_a2_77.to_satisfy
+псувати|to ruin|at ødelægge|rovinare|💔|||cur_a2_77.to_ruin
+світити|to shine|at skinne|splendere|☀️|||cur_a2_77.to_shine
+звук|sound|en lyd|il suono|🔊|||cur_a2_77.sound
+звучати|to sound|at lyde|suonare|🎵|||cur_a2_77.to_sound
+відпочивати|to relax|at slappe af|rilassarsi|🛋️|relax_,_to|odpoczywać|a1x02_routine.to_relax
+стверджувати|to claim|at påstå|affermare|📢||twierdzić|b2x02_argue.to_claim
+#cur_a2_78|Форма й розмір|🔷|A2
+форма|shape|en form|la forma|🔷|||cur_a2_78.shape
+хрестик|cross|et kryds|la croce|❌|||cur_a2_78.cross
+величезний|enormous|enorm|enorme|🐘|||cur_a2_78.enormous
+глибокий|deep|dyb|profondo|🌊|deep||cur_a2_78.deep
+гладкий|smooth|glat|liscio|🪨|smooth||cur_a2_78.smooth
+рамка|frame|en ramme|la cornice|🖼️|||cur_a2_78.frame
+будова|structure|en struktur|la struttura|🏗️|||cur_a2_78.structure
+низький|low|lav|basso|🔻||niski|a1x02_opposites.low
+м'який|soft|blød|morbido|🧸|soft|miękki|a1x02_opposites.soft
+широкий|wide|bred|largo|↔️||szeroki|a1x02_opposites.wide
+близнюки|twins|tvillinger|i gemelli|👯||bliźnięta|a1x02_family.twins
+родичі|relatives|slægtninge|i parenti|👪||krewni|a1x02_family.relatives
+#cur_a2_79|Нове й звичне|🏺|A2
+стародавній|ancient|ældgammel|antico|🏺|||cur_a2_79.ancient
+класичний|classic|klassisk|classico|🎻|||cur_a2_79.classic
+оригінальний|original|original|originale|💡|||cur_a2_79.original
+найновіший|latest|nyeste|ultimo|🆕|||cur_a2_79.latest
+недавній|recent|nylig|recente|🕒|||cur_a2_79.recent
+барвистий|colorful|farverig|colorato|🌈|||cur_a2_79.colorful
+незвичайний|unusual|usædvanlig|insolito|🦄|||cur_a2_79.unusual
+звичний|usual|sædvanlig|solito|🔁|||cur_a2_79.usual
+нормальний|normal|normal|normale|👌|||cur_a2_79.normal
+регулярний|regular|regelmæssig|regolare|📆|||cur_a2_79.regular
+поширений|common|udbredt|diffuso|👥|||cur_a2_79.common
+#cur_a2_80|Схоже й різне|👯|A2
+схожий|similar|lignende|simile|👯|||cur_a2_80.similar
+на відміну від|unlike|i modsætning til|a differenza di|↔️|||cur_a2_80.unlike
+окремий|separate|separat|separato|✂️|||cur_a2_80.separate
+цілий|whole|hel|intero|🍕|whole||cur_a2_80.whole
+повний|complete|komplet|completo|✅|||cur_a2_80.complete
+порівнювати|to compare|at sammenligne|confrontare|⚖️|||cur_a2_80.to_compare
+контраст|contrast|en kontrast|il contrasto|🌗|||cur_a2_80.contrast
+по-іншому|differently|anderledes|diversamente|🔀|||cur_a2_80.differently
+просто|simply|simpelthen|semplicemente|👌|||cur_a2_80.simply
+конкретний|specific|specifik|specifico|🎯|||cur_a2_80.specific
+точний|precise|nøjagtig|preciso|📏|||cur_a2_80.precise
+простий|simple|enkel|semplice|➖||prosty|b1x02_adjectives.simple
+#cur_a2_81|Потрібне й можливе|✅|A2
+необхідний|necessary|nødvendig|necessario|✅|||cur_a2_81.necessary
+непотрібний|unnecessary|unødvendig|superfluo|🚫|||cur_a2_81.unnecessary
+ймовірний|likely|sandsynlig|probabile|🎲|||cur_a2_81.likely
+певний|certain|bestemt|certo|☑️|||cur_a2_81.certain
+невпевнений|uncertain|usikker|incerto|🤷|||cur_a2_81.uncertain
+підходящий|suitable|egnet|adatto|👌|||cur_a2_81.suitable
+доречний|appropriate|passende|appropriato|👔|||cur_a2_81.appropriate
+прийнятний|acceptable|acceptabel|accettabile|🙆|||cur_a2_81.acceptable
+належний|proper|ordentlig|adeguato|🧥|||cur_a2_81.proper
+неважливий|unimportant|uvigtig|poco importante|🤏|||cur_a2_81.unimportant
+можливий|possible|mulig|possibile|🤔||możliwy|b1x02_adjectives.possible
+неможливий|impossible|umulig|impossibile|⛔||niemożliwy|b1x02_adjectives.impossible
+корисний|useful|nyttig|utile|🔧||przydatny|b1x02_adjectives.useful
+звичайний|ordinary|almindelig|comune|🙂||zwyczajny|b1x02_adjectives.ordinary
+серйозний|serious|alvorlig|serio|😐||poważny|b1x02_adjectives.serious
+#cur_a2_82|Важливе й додаткове|🛣️|A2
+головний|major|større|principale|🛣️|||cur_a2_82.major
+суттєвий|significant|væsentlig|significativo|📈|||cur_a2_82.significant
+додатковий|additional|ekstra|aggiuntivo|➕|||cur_a2_82.additional
+зайвий|extra|til overs|in più|🎟️|extra||cur_a2_82.extra
+прямий|direct|direkte|diretto|➡️|||cur_a2_82.direct
+логічний|logical|logisk|logico|🧠|||cur_a2_82.logical
+негативний|negative|negativ|negativo|➖|||cur_a2_82.negative
+зрозумілий|clear|tydelig|chiaro|💡|||cur_a2_82.clear
+внутрішній|inner|indre|interno|👜|||cur_a2_82.inner
+розвинений|developed|udviklet|sviluppato|🏙️|||cur_a2_82.developed
+несправедливий|unfair|uretfærdig|ingiusto|😠||niesprawiedliwy|b1x02_adjectives.unfair
+#cur_a2_83|Живе й зникле|😴|A2
+сонний|sleepy|søvnig|assonnato|😴||śpiący|a1x01_feelings.sleepy
+живий|alive|i live|vivo|💓|||cur_a2_83.alive
+мертвий|dead|død|morto|🥀|dead||cur_a2_83.dead
+сплячий|asleep|sovende|addormentato|😴|||cur_a2_83.asleep
+зниклий|missing|forsvundet|scomparso|❓|||cur_a2_83.missing
+загублений|lost|bortkommen|perso|🐕|lost||cur_a2_83.lost
+людський|human|menneskelig|umano|🧍|||cur_a2_83.human
+раптовий|sudden|pludselig|improvviso|⚡|||cur_a2_83.sudden
+знайомий|familiar|bekendt|familiare|🫂|||cur_a2_83.familiar
+здаватися|to seem|at virke|sembrare|🤔|||cur_a2_83.to_seem
+смерть|death|en død|la morte|🪦|||cur_a2_83.death
+#cur_a2_84|Як? · прислівники|🐢|A2
+повільно|slowly|langsomt|lentamente|🐢||powoli|a2x01_connectors.slowly
+сердито|angrily|vredt|con rabbia|😠|||cur_a2_84.angrily
+погано|badly|dårligt|male|👎|||cur_a2_84.badly
+легко|easily|nemt|facilmente|🙂|||cur_a2_84.easily
+щасливо|happily|lykkeligt|felicemente|😊|||cur_a2_84.happily
+голосно|loudly|højt|forte|📢|||cur_a2_84.loudly
+тихо|quietly|stille|a bassa voce|🔈|||cur_a2_84.quietly
+безшумно|silently|lydløst|silenziosamente|🤐|||cur_a2_84.silently
+ніжно|softly|blidt|dolcemente|🪶|||cur_a2_84.softly
+гладко|smoothly|glat|liscio|🛞|||cur_a2_84.smoothly
+важко|heavily|tungt|pesantemente|🏋️|||cur_a2_84.heavily
+сильно|strongly|stærkt|fortemente|🌬️|||cur_a2_84.strongly
+сумно|sadly|trist|tristemente|😢|||cur_a2_84.sadly
+#cur_a2_85|Наскільки?|🔥|A2
+надзвичайно|extremely|ekstremt|estremamente|🔥|||cur_a2_85.extremely
+доволі|fairly|ret|abbastanza|🆗|||cur_a2_85.fairly
+цілком|quite|helt|del tutto|💯|||cur_a2_85.quite
+досить|rather|temmelig|piuttosto|🌡️|||cur_a2_85.rather
+здебільшого|mostly|for det meste|per lo più|📊|||cur_a2_85.mostly
+головним чином|mainly|hovedsageligt|principalmente|🔑|||cur_a2_85.mainly
+частково|partly|delvist|parzialmente|🌗|||cur_a2_85.partly
+значно|greatly|betydeligt|notevolmente|⬆️|||cur_a2_85.greatly
+щиро|truly|oprigtigt|sinceramente|💖|||cur_a2_85.truly
+навіть|even|endda|persino|😲|even||cur_a2_85.even
+майже|nearly|næsten|quasi|🤏||prawie|b1x03_linking.nearly
+ледве|hardly|knap nok|a malapena|🤏||ledwo|b1x03_linking.hardly
+негайно|immediately|straks|immediatamente|⚡||natychmiast|b1x03_linking.immediately
+повністю|completely|fuldstændig|completamente|✅||zupełnie|b1x03_linking.completely
+#cur_a2_86|Зв'язні слова|✔️|A2
+дійсно|indeed|ganske rigtigt|effettivamente|✔️|||cur_a2_86.indeed
+по суті|basically|dybest set|in pratica|🧱|||cur_a2_86.basically
+найважливіше|importantly|vigtigst af alt|soprattutto|❗|||cur_a2_86.importantly
+серйозно|seriously|alvorligt|sul serio|🧐|||cur_a2_86.seriously
+чітко|clearly|tydeligt|chiaramente|🔍|||cur_a2_86.clearly
+однак|however|imidlertid|tuttavia|🔄||jednak|b1_connectors.however
+отже|therefore|derfor|quindi|➡️||dlatego|b1_connectors.therefore
+нарешті|finally|endelig|finalmente|🏁||nareszcie|b1_connectors.finally
+особливо|especially|især|soprattutto|⭐||zwłaszcza|b1x03_linking.especially
+все одно|anyway|alligevel|comunque|🤷||i tak|b1x03_linking.anyway
+натомість|instead|i stedet|invece|🔀||zamiast tego|b2_connectors.instead
+насправді|actually|faktisk|in realtà|💡||tak naprawdę|b2_connectors.actually
+до того ж|besides|desuden|oltretutto|➕||poza tym|b2x03_linking.besides
+хоча|although|selvom|sebbene|↔️||chociaż|b1_connectors.although
+раптом|suddenly|pludselig|improvvisamente|⚡||nagle|b1_connectors.suddenly
+#cur_a2_87|Більше чи менше|🔽|A2
+менше|less|mindre|meno|🔽|||cur_a2_87.less
+найбільше|most|mest|di più|🥇|most||cur_a2_87.most
+гірший|worse|værre|peggiore|📉|||cur_a2_87.worse
+найгірший|worst|værst|il peggiore|🗑️|||cur_a2_87.worst
+подальший|further|yderligere|ulteriore|⏩|||cur_a2_87.further
+вдосталь|plenty|rigeligt|in abbondanza|🧺|||cur_a2_87.plenty
+нестача|lack|en mangel|la mancanza|🫙|||cur_a2_87.lack
+купа|pile|en bunke|il mucchio|📚|||cur_a2_87.pile
+доповнення|addition|en tilføjelse|l'aggiunta|🪴|||cur_a2_87.addition
+#cur_a2_88|Колись і десь|🆕|A2
+нещодавно|recently|for nylig|di recente|🆕||niedawno|a2x02_time.recently
+будь-де|anywhere|hvor som helst|ovunque|🗺️|||cur_a2_88.anywhere
+десь|somewhere|et sted|da qualche parte|📍|||cur_a2_88.somewhere
+деінде|elsewhere|et andet sted|altrove|🧭|||cur_a2_88.elsewhere
+коли-небудь|ever|nogensinde|mai|❔|||cur_a2_88.ever
+більше не|anymore|ikke længere|non più|🚭|||cur_a2_88.anymore
+зовсім|all|helt|tutto|💦|||cur_a2_88.all
+ідеально|perfectly|perfekt|perfettamente|✨|||cur_a2_88.perfectly
+успішно|successfully|med succes|con successo|🎉|||cur_a2_88.successfully
+широко|widely|bredt|ampiamente|🌐|||cur_a2_88.widely
+глибоко|deeply|dybt|profondamente|🌊|||cur_a2_88.deeply
+#cur_a2_89|Думки й факти|💭|A2
+думка|thought|en tanke|il pensiero|💭|||cur_a2_89.thought
+факт|fact|et faktum|il fatto|📌|||cur_a2_89.fact
+правда|truth|en sandhed|la verità|🪞|||cur_a2_89.truth
+почуття|sense|en sans|il senso|😄|||cur_a2_89.sense
+порада|advice|et råd|il consiglio|🗨️|||cur_a2_89.advice
+увага|attention|en opmærksomhed|l'attenzione|👀|||cur_a2_89.attention
+вибір|choice|et valg|la scelta|🔀|||cur_a2_89.choice
+мета|purpose|et formål|lo scopo|🏹|||cur_a2_89.purpose
+підказка|clue|et fingerpeg|l'indizio|🕵️|||cur_a2_89.clue
+неприязнь|dislike|en modvilje|l'avversione|🙅|||cur_a2_89.dislike
+згадка|mention|en omtale|la menzione|📝|||cur_a2_89.mention
+#cur_a2_90|Частини й системи|🍰|A2
+частина|part|en del|la parte|🍰|part||cur_a2_90.part
+деталь|detail|en detalje|il dettaglio|🔎|||cur_a2_90.detail
+функція|feature|en funktion|la funzione|📱|||cur_a2_90.feature
+рівень|level|et niveau|il livello|📶|||cur_a2_90.level
+одиниця|unit|en enhed|l'unità|📐|||cur_a2_90.unit
+система|system|et system|il sistema|⚙️|||cur_a2_90.system
+модель|model|en model|il modello|🚗|||cur_a2_90.model
+положення|position|en stilling|la posizione|🧘|||cur_a2_90.position
+асортимент|range|et udvalg|la gamma|🛍️|||cur_a2_90.range
+шкала|scale|en skala|la scala|🔢|||cur_a2_90.scale
+набір|set|et sæt|il set|🧰|||cur_a2_90.set
+основа|base|et grundlag|la base|🍚|||cur_a2_90.base
+стовпець|column|en kolonne|la colonna|📋|||cur_a2_90.column
+символ|symbol|et symbol|il simbolo|🔣|||cur_a2_90.symbol
+#cur_a2_91|Рух і сила|💪|A2
+сила|strength|en styrke|la forza|💪|||cur_a2_91.strength
+контроль|control|en kontrol|il controllo|🎮|||cur_a2_91.control
+підтримка|support|en støtte|il sostegno|🫶|||cur_a2_91.support
+крок|step|et skridt|il passo|👣|||cur_a2_91.step
+доріжка|track|en bane|la pista|🏟️|||cur_a2_91.track
+мішень|target|et mål|il bersaglio|🎯|||cur_a2_91.target
+вантаж|load|et læs|il carico|🚚|||cur_a2_91.load
+гірка|slide|en rutsjebane|lo scivolo|🛝|slide||cur_a2_91.slide
+булочка|roll|et rundstykke|il panino|🥯|||cur_a2_91.roll
+частка|share|en andel|la quota|🍕|||cur_a2_91.share
+удар|blow|et slag|la botta|👊|||cur_a2_91.blow
+стукіт|knock|et bank|il colpo|🚪|||cur_a2_91.knock
+#cur_a2_92|Плюси й мінуси|👍|A2
+перевага|advantage|en fordel|il vantaggio|👍|||cur_a2_92.advantage
+недолік|disadvantage|en ulempe|lo svantaggio|⚠️|||cur_a2_92.disadvantage
+зручність|convenience|en bekvemmelighed|la comodità|🛋️|||cur_a2_92.convenience
+важливість|importance|en betydning|l'importanza|🔝|||cur_a2_92.importance
+якість|quality|en kvalitet|la qualità|🏅|||cur_a2_92.quality
+використання|use|en brug|l'uso|🔧|||cur_a2_92.use
+угода|deal|en aftale|l'accordo|🤝|||cur_a2_92.deal
+кінцівка|ending|en slutning|il finale|🎬|||cur_a2_92.ending
+фінал|final|en finale|la finale|🏆|||cur_a2_92.final
+#mix_A2_cur|Інші слова|🧩|A2
+черепаха|turtle|en skildpadde|la tartaruga|🐢|turtle|żółw|a1m_wild.turtle
+павук|spider|en edderkop|il ragno|🕷️|spider|pająk|a1m_wild.spider
+пенал|pencil case|et penalhus|l'astuccio|✏️|pencil_case|piórnik|a1x01_school.pencil_case
+піднімати руку|to raise one's hand|at række hånden op|alzare la mano|✋||podnosić rękę|a1x01_school.to_raise_one_s_hand
+сідати (в автобус)|to get on|at stige på|salire|🚌||wsiadać|a1x01_transport.to_get_on
+виходити (з автобуса)|to get off|at stå af|scendere|🚶||wysiadać|a1x01_transport.to_get_off
+мити посуд|to wash up|at vaske op|lavare i piatti|🍽️|wash_up_,_to|zmywać naczynia|a1x01_kitchen.to_wash_up
+накривати на стіл|to set the table|at dække bord|apparecchiare la tavola|🍴|set_the_table_,_to|nakrywać do stołu|a1x01_kitchen.to_set_the_table
+гральні карти|playing cards|spillekort|le carte da gioco|🃏|playing_cards|karty do gry|a1x01_sport.playing_cards
+піти на пробіжку|to go for a run|at løbe en tur|andare a correre|🏃‍♀️||iść pobiegać|a1x01_sport.to_go_for_a_run
+Як дістатися до вокзалу?|How do I get to the station?|Hvordan kommer jeg til stationen?|Come arrivo alla stazione?|🧭||Jak dojść do dworca?|a1x01_town.how_do_i_get_to_the_station
+післязавтра|the day after tomorrow|i overmorgen|dopodomani|🗓️||pojutrze|a1x01_time.the_day_after_tomorrow
+позавчора|the day before yesterday|i forgårs|l'altro ieri|🔙||przedwczoraj|a1x01_time.the_day_before_yesterday
+вчасно|on time|til tiden|in orario|⏰||na czas|a1x01_time.on_time
+вхідні двері|front door|en hoveddør|la porta d'ingresso|🚪|front_door|drzwi wejściowe|a1x02_house.front_door
 дитяча кімната|children's room|et børneværelse|la cameretta|🧸||pokój dziecięcy|a1x02_house.children_s_room
 гостьова кімната|guest room|et gæsteværelse|la camera degli ospiti|🛏️||pokój gościnny|a1x02_house.guest_room
-кабінет (кімната)|study|et arbejdsværelse|lo studio|🖥️||gabinet|a1x02_house.study
-#a1x02_classroom~A2|Фрази на уроці|🧑‍🏫|A2
-Заповніть пропуски.|Fill in the gaps.|Udfyld hullerne.|Completate gli spazi vuoti.|✏️||Uzupełnijcie luki.|a1x02_classroom.fill_in_the_gaps
-Я закінчив.|I've finished.|Jeg er færdig.|Ho finito.|🏁||Skończyłem.|a1x02_classroom.i_ve_finished
-Можна позичити ручку?|Can I borrow a pen?|Må jeg låne en kuglepen?|Mi presti una penna?|🖊️||Czy mogę pożyczyć długopis?|a1x02_classroom.can_i_borrow_a_pen
-Як це вимовляється?|How do you pronounce this?|Hvordan udtaler man det?|Come si pronuncia?|🗣️||Jak to się wymawia?|a1x02_classroom.how_do_you_pronounce_this
-вимовляти|to pronounce|at udtale|pronunciare|👄||wymawiać|a1x02_classroom.to_pronounce
-#a1x02_polite~A2|Ввічливі вирази|🙏|A2
-Із задоволенням.|My pleasure.|Det var en fornøjelse.|È stato un piacere.|😊||Cała przyjemność po mojej stronie.|a1x02_polite.my_pleasure
-Пригощайтеся!|Help yourself!|Tag bare selv!|Serviti pure!|🍪||Częstujcie się!|a1x02_polite.help_yourself
-Усього найкращого!|All the best!|Alt det bedste!|Tante belle cose!|🌟||Wszystkiego najlepszego!|a1x02_polite.all_the_best
-Будь здоровий!|Bless you!|Prosit!|Salute!|🤧||Na zdrowie!|a1x02_polite.bless_you
-Це дуже мило з вашого боку.|That's very kind of you.|Det er meget venligt af dig.|È molto gentile da parte tua.|💐||To bardzo miło z twojej strony.|a1x02_polite.that_s_very_kind_of_you
-Мені шкода це чути.|I'm sorry to hear that.|Det er jeg ked af at høre.|Mi dispiace sentirlo.|😔||Przykro mi to słyszeć.|a1x02_polite.i_m_sorry_to_hear_that
+приміряти|to try on|at prøve|provare|👗||przymierzać|a2m_clothes.to_try_on
+курка|hen|en høne|la gallina|🐔|chicken_live|kura|a2m_animals.hen
+лисиця|fox|en ræv|la volpe|🦊|fox|lis|a2m_animals.fox
+вовк|wolf|en ulv|il lupo|🐺|wolf|wilk|a2m_animals.wolf
+продавець|shop assistant|en ekspedient|il commesso|🛒||sprzedawca|a2m_jobs.shop_assistant
+банкомат|cash machine|en hæveautomat|il bancomat|🏧||bankomat|a2x01_post_bank.cash_machine
+заповнювати бланк|to fill in a form|at udfylde en formular|compilare un modulo|📝||wypełniać formularz|a2x01_post_bank.to_fill_in_a_form
+феєрверк|fireworks|fyrværkeri|i fuochi d'artificio|🎇|fireworks|fajerwerki|a2x01_celebrations.fireworks
+шукати (загублене)|to look for|at lede efter|cercare|🔎||szukać|a2x01_verbs.to_look_for
+комод|chest of drawers|en kommode|il comò|🧺|chest_of_drawers|komoda|a2x02_home.chest_of_drawers
+прибирати (у кімнаті)|to tidy up|at rydde op|mettere in ordine|🧹|tidy_up_,_to|sprzątać|a2x02_home.to_tidy_up
+куштувати|to taste|at smage|assaggiare|👅|taste_,_to|kosztować|a2x02_kitchen.to_taste
+тостер|toaster|en brødrister|il tostapane|🍞|toaster|toster|a2x02_kitchen.toaster
+посудомийна машина|dishwasher|en opvaskemaskine|la lavastoviglie|🧽|dishwasher|zmywarka|a2x02_kitchen.dishwasher
+блузка|blouse|en bluse|la camicetta|👚|blouse|bluzka|a2x02_clothes.blouse
+кросівки|trainers|sneakers|le scarpe da ginnastica|👟||buty sportowe|a2x02_clothes.trainers
+піжама|pyjamas|en pyjamas|il pigiama|😴|pyjamas|piżama|a2x02_clothes.pyjamas
+вдягати|to put on|at tage på|mettersi|🧥||zakładać|a2x02_shopclothes.to_put_on
+знімати (одяг)|to take off|at tage af|togliersi|👟||zdejmować|a2x02_shopclothes.to_take_off
+одягатися|to get dressed|at klæde sig på|vestirsi|👔|get_dressed_,_to|ubierać się|a2x02_shopclothes.to_get_dressed
+шкіра (тіла)|skin|hud|la pelle|🧴|skin|skóra|a2x02_body.skin
+таблетка|tablet|en pille|la compressa|💊||tabletka|a2x02_body.tablet
+футболіст|soccer player|en fodboldspiller|il calciatore|⚽|||cur_a2_18.soccer_player
+лампочка|light bulb|en elpære|la lampadina|💡|||cur_a2_63.light_bulb
+розвеселяти|to cheer up|at muntre op|rallegrare|😄|||cur_a2_74.to_cheer_up
+замість|instead of|i stedet for|invece di|🔁||zamiast|b1_connectors.instead_of
+входити (в акаунт)|to log in|at logge ind|accedere|🔓||zalogować się|b1m_tech.to_log_in
+семестр|term|et semester|il semestre|📅||semestr|b1m_education.term
+директор школи|head teacher|en skoleleder|il preside|👩‍💼|head_teacher_1a|dyrektor szkoły|b1m_education.head_teacher
+скласти іспит|to pass an exam|at bestå en eksamen|superare un esame|✅||zdać egzamin|b1m_education.to_pass_an_exam
+серіал|TV series|en tv-serie|la serie tv|📺||serial|b1m_media.tv_series
+оплачувати рахунки|to pay the bills|at betale regninger|pagare le bollette|💸||płacić rachunki|b1x01_money.to_pay_the_bills
+банківський рахунок|bank account|en bankkonto|il conto bancario|🏦||konto bankowe|b1x01_money.bank_account
+заощаджувати гроші|to save money|at spare penge|risparmiare|💰||oszczędzać pieniądze|b1x01_money.to_save_money
+одружуватися|to get married|at blive gift|sposarsi|💍||wziąć ślub|b1x02_family.to_get_married
+жити разом|to live together|at bo sammen|convivere|🏠||mieszkać razem|b1x02_family.to_live_together
+біль у спині|back pain|rygsmerter|il mal di schiena|🦴||ból pleców|b1x02_symptoms.back_pain
+зламати ногу|to break one's leg|at brække benet|rompersi la gamba|🩼||złamać nogę|b1x02_symptoms.to_break_one_s_leg
+біль у животі|stomach ache|mavepine|il mal di pancia|😖|stomach_ache|ból brzucha|b1x02_symptoms.stomach_ache
+репортаж|news report|en reportage|il servizio|🎙️||reportaż|b1x02_news.news_report
+випуск новин|news programme|en nyhedsudsendelse|il telegiornale|📺||serwis informacyjny|b1x02_news.news_programme
+соціальні мережі|social media|sociale medier|i social media|📱||media społecznościowe|b1x02_news.social_media
+громадський транспорт|public transport|offentlig transport|i mezzi pubblici|🚌||transport publiczny|b1x03_transport.public_transport
+залишити повідомлення|to leave a message|at lægge en besked|lasciare un messaggio|💬||zostawić wiadomość|b1x03_phone.to_leave_a_message
+неправильний номер|wrong number|et forkert nummer|il numero sbagliato|🔢||zły numer|b1x03_phone.wrong_number
+викликати поліцію|to call the police|at ringe til politiet|chiamare la polizia|👮||wezwać policję|b1x03_crime.to_call_the_police
+пожежна частина|fire station|en brandstation|la caserma dei pompieri|🚒||remiza strażacka|b1x03_city.fire_station
+громадський туалет|public toilet|et offentligt toilet|il bagno pubblico|🚻||toaleta publiczna|b1x03_city.public_toilet
+години роботи|opening hours|åbningstider|l'orario di apertura|🕘||godziny otwarcia|b1x03_city.opening_hours
+принаймні|at least|i det mindste|almeno|👍||przynajmniej|b1x03_linking.at_least
+щойно (як тільки)|as soon as|så snart|appena|⏩||jak tylko|b1x03_linking.as_soon_as
+через (з причини)|because of|på grund af|a causa di|❗||z powodu|b1x03_linking.because_of
+переїжджати (в інше житло)|to move house|at flytte|traslocare|📦||przeprowadzać się|b2m_housing.to_move_house
+затор|traffic jam|en trafikprop|l'ingorgo|🚗🚗||korek|b2m_housing.traffic_jam
+робити пересадку|to change planes|at skifte fly|cambiare aereo|🔁||przesiadać się|b2x02_travel.to_change_planes
+посадковий талон|boarding pass|et boardingkort|la carta d'imbarco|🎫||karta pokładowa|b2x02_travel.boarding_pass
+туристична агенція|travel agency|et rejsebureau|l'agenzia di viaggi|🏢||biuro podróży|b2x02_travel.travel_agency
+в'язниця|prison|et fængsel|la prigione|⛓️||więzienie|b2x02_crime.prison
+єдина дитина|only child|et enebarn|il figlio unico|🧒||jedynak|a1x02_family.only_child
+розчісувати волосся|to comb one's hair|at rede sit hår|pettinarsi|🪮||czesać włosy|a1x02_routine.to_comb_one_s_hair
+вигулювати собаку|to walk the dog|at gå tur med hunden|portare a spasso il cane|🐕||wyprowadzać psa|a1x02_routine.to_walk_the_dog
+нижче нуля|below zero|under frysepunktet|sotto zero|🌡️||poniżej zera|b1x03_weather.below_zero
+Я не маю гадки.|I have no idea.|Jeg aner det ikke.|Non ne ho idea.|🤷|confused_man|Nie mam pojęcia.|b2_phrases.i_have_no_idea
+худнути|to lose weight|at tabe sig|dimagrire|⚖️||chudnąć|b2x02_fitness.to_lose_weight
+#cur_b1_001|Співбесіда|📄|B1
+резюме|CV|et CV|il curriculum|📄||CV|b1_work.cv
+вакансія|vacancy|en ledig stilling|il posto vacante|🪑||wolne stanowisko|b1x01_jobsearch.vacancy
+наймати (на роботу)|to hire|at ansætte|assumere|🤝||zatrudniać|b1x01_jobsearch.to_hire
+проводити співбесіду|to interview|at interviewe|fare un colloquio|🎙️|||cur_b1_001.to_interview
+заявка|application|en ansøgning|la domanda|📝|||cur_b1_001.application
+кваліфікований|qualified|kvalificeret|qualificato|🎓|||cur_b1_001.qualified
+кваліфікуватися|to qualify|at kvalificere sig|qualificarsi|✅|||cur_b1_001.to_qualify
+кар'єра|career|en karriere|la carriera|🧗|||cur_b1_001.career
+на повну ставку|full-time|på fuld tid|a tempo pieno|🕘|||cur_b1_001.full_time
+досвідчений|experienced|erfaren|esperto|🎓||doświadczony|b2_work.experienced
+зарплата|salary|en løn|lo stipendio|💰|money|pensja|b1_work.salary
+колега|colleague|en kollega|il collega|👥||współpracownik|b1_work.colleague
+кваліфікація|qualification|en kvalifikation|la qualifica|🎓||kwalifikacje|b1x01_jobsearch.qualification
+#cur_b1_002|Сильні сторони|⚖️|B1
+відповідальний|responsible|ansvarlig|responsabile|⚖️||odpowiedzialny|b1_work.responsible
+досягнення|achievement|en præstation|il traguardo|🏆|||cur_b1_002.achievement
+здатний|capable|dygtig|capace|💪|||cur_b1_002.capable
+ефективний|efficient|effektiv|efficiente|⚡|||cur_b1_002.efficient
+ефективність|efficiency|en effektivitet|l'efficienza|⚙️|||cur_b1_002.efficiency
+продуктивний|productive|produktiv|produttivo|📈|||cur_b1_002.productive
+відповідальність|responsibility|et ansvar|la responsabilità|🎯|||cur_b1_002.responsibility
+командна робота|teamwork|et teamwork|il lavoro di squadra|🤝|||cur_b1_002.teamwork
+лідерство|leadership|et lederskab|la leadership|🧭|||cur_b1_002.leadership
+мотивувати|to motivate|at motivere|motivare|🔥|||cur_b1_002.to_motivate
+вимога|requirement|et krav|il requisito|📋|||cur_b1_002.requirement
+спеціалізуватися|to specialize|at specialisere sig|specializzarsi|🔬|||cur_b1_002.to_specialize
+зайнятість|employment|beskæftigelse|l'occupazione|👷||zatrudnienie|b2x01_economy.employment
+#cur_b1_003|Професії|📐|B1
+архітектор|architect|en arkitekt|l'architetto|📐|||cur_b1_003.architect
+механік|mechanic|en mekaniker|il meccanico|🔧|||cur_b1_003.mechanic
+будівельник|builder|en bygningsarbejder|il muratore|👷|||cur_b1_003.builder
+пекар|baker|en bager|il fornaio|🥖|baker_1a||cur_b1_003.baker
+м'ясник|butcher|en slagter|il macellaio|🥩|||cur_b1_003.butcher
+торговий агент|salesman|en sælger|il venditore|🤵|||cur_b1_003.salesman
+бібліотекар|librarian|en bibliotekar|il bibliotecario|📚|||cur_b1_003.librarian
+інструктор|instructor|en instruktør|l'istruttore|📣|||cur_b1_003.instructor
+рятувальник|lifeguard|en livredder|il bagnino|🛟|||cur_b1_003.lifeguard
+ветеринар|vet|en dyrlæge|il veterinario|🐕|||cur_b1_003.vet
+інженерна справа|engineering|en ingeniørvidenskab|l'ingegneria|🏗️|||cur_b1_003.engineering
+дизайнер|designer|en designer|il designer|🎨|||cur_b1_003.designer
+#cur_b1_004|На роботі|⏳|B1
+кінцевий термін|deadline|en deadline|la scadenza|⏳|||cur_b1_004.deadline
+презентація|presentation|en præsentation|la presentazione|📊|||cur_b1_004.presentation
+ксерокопія|photocopy|en fotokopi|la fotocopia|🖨️|||cur_b1_004.photocopy
+доручати|to assign|at tildele|assegnare|📌|||cur_b1_004.to_assign
+перепрацювання|overwork|en overanstrengelse|il superlavoro|😩|||cur_b1_004.overwork
+практичний семінар|workshop|en workshop|il workshop|🛠️|||cur_b1_004.workshop
+сесія|session|en session|la sessione|🗓️|||cur_b1_004.session
+запізнілий|latecomer|en efternøler|il ritardatario|🐢|||cur_b1_004.latecomer
+порядок денний|agenda|en dagsorden|l'ordine del giorno|📋||porządek obrad|b1x01_workplace.agenda
+робоче місце|workplace|en arbejdsplads|il posto di lavoro|🏭||miejsce pracy|b1x01_workplace.workplace
+#cur_b1_005|Наради й переговори|🤝|B1
+згода|agreement|en enighed|l'accordo|🤝|||cur_b1_005.agreement
+компроміс|compromise|et kompromis|il compromesso|⚖️|||cur_b1_005.compromise
+заперечення|objection|en indvending|l'obiezione|✋|||cur_b1_005.objection
+точка зору|viewpoint|et synspunkt|il punto di vista|👁️|||cur_b1_005.viewpoint
+підтверджувати|to confirm|at bekræfte|confermare|✔️|||cur_b1_005.to_confirm
+віч-на-віч|face to face|ansigt til ansigt|faccia a faccia|👥|||cur_b1_005.face_to_face
+міцний|firm|fast|saldo|🤝|||cur_b1_154.firm
+вести переговори|to negotiate|at forhandle|negoziare|🤝|shake_hands_,_to|negocjować|b2_work.to_negotiate
+пропозиція (план)|proposal|et forslag|la proposta|📑||propozycja|b2x03_meetings.proposal
+переговори|negotiation|en forhandling|la trattativa|🤝||negocjacje|b2x03_meetings.negotiation
+перебивати|to interrupt|at afbryde|interrompere|✋||przerywać|b2x03_meetings.to_interrupt
+підсумовувати|to summarise|at opsummere|riassumere|🧾||podsumowywać|b2x03_meetings.to_summarise
+#cur_b1_006|Кар'єрне зростання|⬆️|B1
+підвищувати на посаді|to promote|at forfremme|promuovere|⬆️|||cur_b1_006.to_promote
+організація|organization|en organisation|l'organizzazione|🏛️|||cur_b1_006.organization
+конкурентний|competitive|konkurrencedygtig|competitivo|🏁|||cur_b1_006.competitive
+оплачуваний|paid|betalt|retribuito|💵|||cur_b1_006.paid
+безробітний|unemployed|arbejdsløs|disoccupato|🚫|||cur_b1_006.unemployed
+призначати|to appoint|at udnævne|nominare|📜|||cur_b1_006.to_appoint
+місія|mission|en mission|la missione|🚀|||cur_b1_006.mission
+підвищення (на посаді)|promotion|en forfremmelse|la promozione|🪜||awans|b2_work.promotion
+керівництво|management|en ledelse|la direzione|👔||kierownictwo|c1x01_management.management
+#cur_b1_007|Бізнес|📣|B1
+просувати на ринку|to market|at markedsføre|commercializzare|📣|||cur_b1_007.to_market
+роздрібна торгівля|retail|en detailhandel|il commercio al dettaglio|🛍️|||cur_b1_007.retail
+дилер|dealer|en forhandler|il rivenditore|🚗|||cur_b1_007.dealer
+запускати|to launch|at lancere|lanciare|🚀|||cur_b1_007.to_launch
+новатор|innovator|en innovator|l'innovatore|💡|||cur_b1_007.innovator
+стратегічний|strategic|strategisk|strategico|♟️|||cur_b1_007.strategic
+заснування|establishment|en etablering|la fondazione|🏗️|||cur_b1_007.establishment
+розширювати|to expand|at udvide|espandere|↔️|||cur_b1_007.to_expand
+промисловість|industry|en industri|l'industria|🏭|||cur_b1_007.industry
+промисловий|industrial|industriel|industriale|⚙️|||cur_b1_007.industrial
+конкурент|competitor|en konkurrent|il concorrente|🥊||konkurent|b2x01_business.competitor
+бухгалтер|accountant|en revisor|il commercialista|🧮||księgowy|b2x01_business.accountant
+маркетинг|marketing|markedsføring|il marketing|📣||marketing|b2x01_business.marketing
+#cur_b1_008|Робочий день|💬|B1
+радник|adviser|en rådgiver|il consulente|💬|||cur_b1_008.adviser
+обладнання|equipment|et udstyr|l'attrezzatura|🧰|||cur_b1_008.equipment
+заклад|facility|en facilitet|la struttura|🏢|||cur_b1_008.facility
+на неповну ставку|part-time|på deltid|a tempo parziale|🕐|||cur_b1_008.part_time
+розпорядок|routine|en rutine|la routine|🔁|||cur_b1_008.routine
+членство|membership|et medlemskab|l'iscrizione|🪪|||cur_b1_008.membership
+учасник|participant|en deltager|il partecipante|🙋|||cur_b1_008.participant
+брати участь|to participate|at deltage|partecipare|🙌|||cur_b1_008.to_participate
+#cur_b1_009|Оренда квартири|🏡|B1
+нерухомість|property|en ejendom|l'immobile|🏡|||cur_b1_009.property
+мебльувати|to furnish|at møblere|arredare|🛋️|||cur_b1_009.to_furnish
+по сусідству|next door|ved siden af|accanto|🚪|||cur_b1_009.next_door
+перший поверх|first floor|en stueetage|il piano terra|🏢|||cur_b1_009.first_floor
+орендодавець|landlord|en udlejer|il padrone di casa|🧑‍💼||właściciel mieszkania|b2m_housing.landlord
+район (міста)|neighbourhood|et kvarter|il quartiere|🏘️||dzielnica|b2m_housing.neighbourhood
+застава (за оренду)|deposit|et depositum|la caparra|💶||kaucja|b2m_housing.deposit
+хмарочос|skyscraper|en skyskraber|il grattacielo|🏙️||wieżowiec|b2m_housing.skyscraper
+тротуар|pavement|et fortov|il marciapiede|🚶||chodnik|b2m_housing.pavement
+передмістя|suburb|en forstad|il sobborgo|🏡||przedmieście|b2m_housing.suburb
+затишний|cosy|hyggelig|accogliente|🛋️||przytulny|b2m_housing.cosy
+житло|accommodation|en bolig|l'alloggio|🏢||zakwaterowanie|b2m_housing.accommodation
+#cur_b1_010|Опалення й світло|📦|B1
+зберігання|storage|en opbevaring|il deposito|📦|||cur_b1_010.storage
+центральне опалення|central heating|en centralvarme|il riscaldamento centralizzato|🔥|||cur_b1_010.central_heating
+кондиціонер|air conditioning|et klimaanlæg|l'aria condizionata|❄️|||cur_b1_010.air_conditioning
+обігрівач|heater|en varmeovn|la stufa|♨️|||cur_b1_010.heater
+плитка|tile|en flise|la piastrella|🔲|||cur_b1_010.tile
+труба|pipe|et rør|il tubo|🚰|||cur_b1_010.pipe
+штепсель|plug|et stik|la spina|🔌|||cur_b1_010.plug
+мінятися|to switch|at skifte|scambiare|🔄|||cur_b1_010.to_switch
+електрика|electricity|en elektricitet|l'elettricità|⚡|||cur_b1_010.electricity
+технічне обслуговування|maintenance|en vedligeholdelse|la manutenzione|🔧|||cur_b1_010.maintenance
+підвал|basement|en kælder|la cantina|🏚️||piwnica|a2x02_home.basement
+#cur_b1_011|Хатні справи|🏠|B1
+домогосподарство|household|en husstand|il nucleo familiare|🏠|||cur_b1_011.household
+прасування|ironing|en strygning|la stiratura|👕|||cur_b1_011.ironing
+праска|iron|et strygejern|il ferro da stiro|🧺|||cur_b1_011.iron
+безлад|mess|et rod|il disordine|🌀|||cur_b1_011.mess
+запилений|dusty|støvet|polveroso|🌫️|||cur_b1_011.dusty
+бруд|dirt|et snavs|lo sporco|🟤|||cur_b1_011.dirt
+губка|sponge|en svamp|la spugna|🧽|sponge||cur_b1_011.sponge
+розчищати|to clear|at rydde|sgombrare|🧹|||cur_b1_011.to_clear
+прасувати|to iron|at stryge|stirare|👔|iron_,_to|prasować|b1m_housing.to_iron
+#cur_b1_012|Ремонт|🔨|B1
+молоток|hammer|en hammer|il martello|🔨|hammer||cur_b1_012.hammer
+драбина|ladder|en stige|la scala a pioli|🪜|||cur_b1_012.ladder
+цвях|nail|et søm|il chiodo|📍|||cur_b1_012.nail
+голка|needle|en nål|l'ago|🪡|||cur_b1_012.needle
+провід|wire|en ledning|il filo|➰|||cur_b1_012.wire
+заклеювати скотчем|to tape|at tape|fissare con lo scotch|📎|||cur_b1_012.to_tape
+латати|to mend|at lappe|rammendare|🧵|||cur_b1_012.to_mend
+відбудовувати|to rebuild|at genopbygge|ricostruire|🏗️|||cur_b1_012.to_rebuild
+будівництво|construction|et byggeri|la costruzione|🚧|||cur_b1_012.construction
+затягувати|to tighten|at stramme|stringere|🔩|tighten_,_to||cur_b1_012.to_tighten
+пришпилювати|to pin|at hæfte|appuntare|📌|||cur_b1_012.to_pin
+механічний|mechanical|mekanisk|meccanico|⚙️|||cur_b1_012.mechanical
+#cur_b1_013|Будматеріали|🧱|B1
+цегла|brick|en mursten|il mattone|🧱|||cur_b1_013.brick
+сталь|steel|et stål|l'acciaio|🔩|||cur_b1_013.steel
+латунь|brass|en messing|l'ottone|🎺|||cur_b1_013.brass
+бронза|bronze|en bronze|il bronzo|🥉|||cur_b1_013.bronze
+мармур|marble|en marmor|il marmo|🏛️|||cur_b1_013.marble
+віск|wax|en voks|la cera|🕯️|||cur_b1_013.wax
+вощити|to wax|at vokse|incerare|✨|||cur_b1_013.to_wax
+солома|straw|en halm|la paglia|🌾|straw||cur_b1_013.straw
+порошок|powder|et pulver|la polvere|🧂|||cur_b1_013.powder
+бочка|barrel|en tønde|il barile|🛢️|||cur_b1_013.barrel
+бак|tank|en tank|il serbatoio|⛽|||cur_b1_013.tank
+насос|pump|en pumpe|la pompa|💧|||cur_b1_013.pump
+наліпка|sticker|et klistermærke|l'adesivo|🏷️|||cur_b1_013.sticker
+стрілка|arrow|en pil|la freccia|➡️|||cur_b1_013.arrow
+#cur_b1_014|Спальня й ванна|🛌|B1
+пухова ковдра|duvet|en dyne|il piumone|🛌|||cur_b1_014.duvet
+простирадло|sheet|et lagen|il lenzuolo|🛏️|||cur_b1_014.sheet
+диванна подушка|cushion|en pude|il cuscino|🛋️|||cur_b1_014.cushion
+паперова хусточка|tissue|et papirlommetørklæde|il fazzoletto di carta|🤧|||cur_b1_014.tissue
+пульт|remote control|en fjernbetjening|il telecomando|📺|remote_control||cur_b1_014.remote_control
+запальничка|lighter|en lighter|l'accendino|🔥|||cur_b1_014.lighter
+зубна паста|toothpaste|en tandpasta|il dentifricio|🪥|toothpaste||cur_b1_014.toothpaste
+бритва|razor|en skraber|il rasoio|🪒|razor||cur_b1_014.razor
+голитися|to shave|at barbere sig|radersi|🪒|shave_,_to||cur_b1_014.to_shave
+купати|to bathe|at bade|fare il bagno|🛁|bathe_,_to||cur_b1_014.to_bathe
+#cur_b1_015|Банк|💰|B1
+залишок (на рахунку)|balance|en saldo|il saldo|💰||saldo|b1x01_money.balance
+обмінний курс|exchange rate|en valutakurs|il tasso di cambio|💱||kurs wymiany|b1x01_money.exchange_rate
+дозволити собі (фінансово)|to afford|at have råd til|permettersi|🛍️||pozwolić sobie|b1x01_money.to_afford
+валюта|currency|en valuta|la valuta|💱|||cur_b1_015.currency
+банківський касир|teller|en kasserer|il cassiere|🏦|||cur_b1_015.teller
+дохід|income|en indkomst|il reddito|💵|||cur_b1_015.income
+бути винним|to owe|at skylde|dovere|🧾|||cur_b1_015.to_owe
+погашати|to repay|at tilbagebetale|rimborsare|💳|||cur_b1_015.to_repay
+страхування|insurance|en forsikring|l'assicurazione|🛡️|||cur_b1_015.insurance
+виставляти рахунок|to bill|at fakturere|fatturare|🧾|||cur_b1_015.to_bill
+спільний|joint|fælles|congiunto|👫|||cur_b1_015.joint
+борг|debt|en gæld|il debito|💳||dług|b2_work.debt
+#cur_b1_016|Гроші|🏦|B1
+фонд|fund|en fond|il fondo|🏦|||cur_b1_016.fund
+фінансувати|to fund|at finansiere|finanziare|💶|||cur_b1_016.to_fund
+фінансовий|financial|finansiel|finanziario|📑|||cur_b1_016.financial
+без гроша|penniless|pengeløs|squattrinato|🪙|||cur_b1_016.penniless
+фунт|pound|et pund|la libbra|⚖️|||cur_b1_016.pound
+лотерея|lottery|et lotteri|la lotteria|🎟️|||cur_b1_016.lottery
+розкіш|luxury|en luksus|il lusso|💎|||cur_b1_016.luxury
+заможний|prosperous|velstående|prospero|🏰|||cur_b1_016.prosperous
+переказувати|to transfer|at overføre|trasferire|💸|||cur_b1_016.to_transfer
+#cur_b1_017|Економіка|☝️|B1
+вимагати|to demand|at kræve|esigere|☝️||żądać|b1x01_travelproblems.to_demand
+економіка|economy|en økonomi|l'economia|📊|||cur_b1_017.economy
+економічний|economic|økonomisk|economico|📉|||cur_b1_017.economic
+економічна наука|economics|en nationaløkonomi|le scienze economiche|🎓|||cur_b1_017.economics
+зростання|growth|en vækst|la crescita|🌱|||cur_b1_017.growth
+спад|decline|en nedgang|il declino|📉|||cur_b1_017.decline
+зменшення|decrease|et fald|la diminuzione|🔽|||cur_b1_017.decrease
+зменшуватися|to decrease|at mindskes|diminuire|⬇️|||cur_b1_017.to_decrease
+збільшення|increase|en forøgelse|l'aumento|🔼|||cur_b1_017.increase
+скорочення|reduction|en reduktion|la riduzione|✂️|||cur_b1_017.reduction
+брак|shortage|en knaphed|la carenza|🚱|||cur_b1_017.shortage
+попит|demand|en efterspørgsel|la domanda|🛍️||popyt|b2x01_economy.demand
+пропозиція (на ринку)|supply|et udbud|l'offerta|📦||podaż|b2x01_economy.supply
+споживач|consumer|en forbruger|il consumatore|🛒||konsument|b2x01_economy.consumer
+скасування|cancellation|en aflysning|la cancellazione|🚫||odwołanie|b1x01_travelproblems.cancellation
+#cur_b1_018|Ціни й податки|📈|B1
+підвищення|rise|en stigning|il rialzo|📈|||cur_b1_018.rise
+зростати|to rise|at stige|salire|⬆️|||cur_b1_018.to_rise
+відсоток|percent|en procent|la percentuale|💯|percent||cur_b1_018.percent
+кількість|quantity|en mængde|la quantità|🔢|||cur_b1_018.quantity
+загальний|total|samlet|totale|➕|||cur_b1_018.total
+максимум|maximum|et maksimum|il massimo|🔝|||cur_b1_018.maximum
+мінімум|minimum|et minimum|il minimo|🔻|||cur_b1_018.minimum
+податок|tax|en skat|la tassa|🧾||podatek|b2_work.tax
+#cur_b1_019|Інвестиції|👍|B1
+користь|benefit|en fordel|il beneficio|👍|||cur_b1_019.benefit
+вигода|gain|en gevinst|il guadagno|💹|||cur_b1_019.gain
+набувати|to gain|at tilegne sig|acquisire|🏅|||cur_b1_019.to_gain
+ризик|risk|en risiko|il rischio|⚠️|||cur_b1_019.risk
+потенціал|potential|et potentiale|il potenziale|🌟|||cur_b1_019.potential
+винагорода|reward|en belønning|la ricompensa|🎁|||cur_b1_019.reward
+надійний|secure|sikker|sicuro|🔒|||cur_b1_019.secure
+вартий зусиль|worthwhile|givende|proficuo|✅|||cur_b1_019.worthwhile
+щорічний|annual|årlig|annuale|📅|||cur_b1_019.annual
+щороку|annually|årligt|annualmente|🗓️|||cur_b1_019.annually
+щомісячний|monthly|månedlig|mensile|📆|||cur_b1_019.monthly
+безробіття|unemployment|en arbejdsløshed|la disoccupazione|📉||bezrobocie|b2_work.unemployment
+інвестувати|to invest|at investere|investire|💹||inwestować|b2_work.to_invest
+прибуток|profit|en fortjeneste|il profitto|📈||zysk|b2_work.profit
+звільняти (з роботи)|to fire|at fyre|licenziare|🚪||zwalniać|b2_work.to_fire
+#cur_b1_020|У лікаря|📝|B1
+рецепт (від лікаря)|prescription|en recept|la ricetta|📝|medicine|recepta|b1_health.prescription
+грип|flu|en influenza|l'influenza|🤧|sneeze_cold|grypa|b1_health.flu
+рана|wound|et sår|la ferita|🩹|plaster|rana|b1_health.wound
+симптом|symptom|et symptom|il sintomo|🔍||objaw|b1_health.symptom
+кашляти|to cough|at hoste|tossire|😷||kaszleć|b1_health.to_cough
+одужувати|to recover|at komme sig|guarire|💪||wyzdrowieć|b1_health.to_recover
+лікар-спеціаліст|specialist|en speciallæge|lo specialista|👨‍⚕️||specjalista|b1x02_health.specialist
+клініка|clinic|en klinik|la clinica|🏥||klinika|b1x03_city.clinic
+аспірин|aspirin|en aspirin|l'aspirina|💊|||cur_b1_020.aspirin
+капсула|capsule|en kapsel|la capsula|💊|||cur_b1_020.capsule
+засіб|remedy|et middel|il rimedio|🌿|||cur_b1_020.remedy
+зцілення|cure|en kur|la cura|🩹|||cur_b1_020.cure
+знеболювальне|painkiller|et smertestillende middel|l'antidolorifico|💊||lek przeciwbólowy|b1x02_health.painkiller
+медичний огляд|check-up|et helbredstjek|il controllo medico|📋||badanie kontrolne|b1x02_health.check_up
+#cur_b1_021|Лікування|🏥|B1
+палата|ward|en stue|la corsia|🏥|||cur_b1_021.ward
+бинт|bandage|en forbinding|la benda|🩹|plaster|bandaż|b2m_medicine.bandage
+операція (хірургічна)|surgery|en operation|l'operazione|🏥|operation|operacja|b2m_medicine.surgery
+оглядати (пацієнта)|to examine|at undersøge|visitare|🩺||badać|b2m_medicine.to_examine
+інфекція|infection|en infektion|l'infezione|🦠||infekcja|b2m_medicine.infection
+хірург|surgeon|en kirurg|il chirurgo|👨‍⚕️||chirurg|b2m_medicine.surgeon
+страждати|to suffer|at lide|soffrire|😣||cierpieć|b2m_medicine.to_suffer
+травма (ушкодження)|injury|en skade|la lesione|🤕||uraz|b2m_medicine.injury
+виснажений|exhausted|udmattet|esausto|😩||wyczerpany|b2m_medicine.exhausted
+загоюватися (про рану)|to heal|at hele|guarire|❤️‍🩹||goić się|b2m_medicine.to_heal
+лікування|treatment|en behandling|il trattamento|💊|medicine|leczenie|c1m_health.treatment
+проходити (лікування)|to undergo|at gennemgå|sottoporsi|🏥|operation|przechodzić|c1m_health.to_undergo
+чхати|to sneeze|at nyse|starnutire|🤧|sneeze_cold|kichać|b2m_medicine.to_sneeze
+алергія|allergy|en allergi|l'allergia|🌼||alergia|b2m_medicine.allergy
+сюжет|plot|en handling|la trama|📖||fabuła|c1m_arts.plot
+#cur_b1_022|Тіло|💪|B1
+лікоть|elbow|en albue|il gomito|💪|elbow|łokieć|a2x02_body.elbow
+зап'ясток|wrist|et håndled|il polso|⌚|wrist|nadgarstek|a2x02_body.wrist
+лоб|forehead|en pande|la fronte|🤕||czoło|a2x02_body.forehead
+язик (орган)|tongue|en tunge|la lingua|👅|tongue|język|a2x02_body.tongue
+великий палець (руки)|thumb|en tommelfinger|il pollice|👍|thumb|kciuk|a2x02_body.thumb
+біль у спині|backache|rygsmerter|il mal di schiena|😣||ból pleców|a2x02_body.backache
+біль у вусі|earache|ørepine|il mal d'orecchi|👂||ból ucha|a2x02_body.earache
+стегно|hip|en hofte|l'anca|🦴|hip||cur_b1_022.hip
+п'ятка|heel|en hæl|il tallone|🦶|heel||cur_b1_022.heel
+ниючий|sore|øm|dolorante|🤕|||cur_b1_022.sore
+набряклий|swollen|hævet|gonfio|🦶||spuchnięty|b1x02_symptoms.swollen
+брова|eyebrow|et øjenbryn|il sopracciglio|🤨|eyebrow|brew|a2x02_body.eyebrow
+#cur_b1_023|Органи й дихання|🫁|B1
+легеня|lung|en lunge|il polmone|🫁|||cur_b1_023.lung
+печінка|liver|en lever|il fegato|🩺|||cur_b1_023.liver
+вена|vein|en vene|la vena|🩸|||cur_b1_023.vein
+орган|organ|et organ|l'organo|🫀|||cur_b1_023.organ
+дихання|breath|et åndedrag|il respiro|🌬️|||cur_b1_023.breath
+задиханий|breathless|forpustet|senza fiato|💨|||cur_b1_023.breathless
+вдихати|to inhale|at indånde|inspirare|👃|||cur_b1_023.to_inhale
+скелет|skeleton|et skelet|lo scheletro|💀|skeleton||cur_b1_023.skeleton
+слух|hearing|en hørelse|l'udito|👂|||cur_b1_023.hearing
+зір|eyesight|et syn|la vista|👁️|||cur_b1_023.eyesight
+кровоточити|to bleed|at bløde|sanguinare|🩸|||cur_b1_023.to_bleed
+серцевий напад|heart attack|et hjerteanfald|l'infarto|💔||zawał serca|b2x02_health.heart_attack
+#cur_b1_024|Хвороби|🤒|B1
+хвороба|illness|en sygdom|la malattia|🤒|||cur_b1_024.illness
+захворювання|disease|en sygdom|la malattia|🦠|||cur_b1_024.disease
+нездужання|sickness|et ildebefindende|il malessere|🤢|||cur_b1_024.sickness
+рак|cancer|kræft|il cancro|🎗️|||cur_b1_024.cancer
+вірус|virus|en virus|il virus|🦠|||cur_b1_024.virus
+алергічний|allergic|allergisk|allergico|🤧|||cur_b1_024.allergic
+дефіцит|deficiency|en mangel|la carenza|💊|||cur_b1_024.deficiency
+синдром|syndrome|et syndrom|la sindrome|🩺|||cur_b1_024.syndrome
+недужий|unwell|utilpas|indisposto|🤒|||cur_b1_024.unwell
+ледве відчутний|faint|svag|leggero|🌫️|||cur_b1_024.faint
+чхання|sneeze|et nys|lo starnuto|🤧|||cur_b1_024.sneeze
+давитися|to choke|at blive kvalt|strozzarsi|😵|choke_,_to||cur_b1_024.to_choke
+#cur_b1_025|Сон і звички|😴|B1
+сон|sleep|søvn|il sonno|😴|||cur_b1_025.sleep
+короткий сон|nap|en lur|il pisolino|🛌|||cur_b1_025.nap
+курець|smoker|en ryger|il fumatore|🚬|||cur_b1_025.smoker
+тютюн|tobacco|tobak|il tabacco|🍂|||cur_b1_025.tobacco
+робити ін'єкцію|to inject|at indsprøjte|iniettare|💉|||cur_b1_025.to_inject
+доглядати хворого|to nurse|at pleje|accudire|🩺|||cur_b1_025.to_nurse
+сканування|scan|en scanning|la scansione|🩻|||cur_b1_025.scan
+цілющий|healing|helende|curativo|🌿|||cur_b1_025.healing
+одужання|recovery|en bedring|la guarigione|💪|||cur_b1_025.recovery
+отрута|poison|en gift|il veleno|☠️|||cur_b1_025.poison
+отруйний|poisonous|giftig|velenoso|🍄|||cur_b1_025.poisonous
+розслаблювальний|relaxing|afslappende|rilassante|🛀|||cur_b1_025.relaxing
+дрімота|doze|en døs|il dormiveglia|💤|||cur_b1_025.doze
+#cur_b1_026|Травми й інвалідність|♿|B1
+інвалідність|disability|et handicap|la disabilità|♿|||cur_b1_026.disability
+з інвалідністю|disabled|handicappet|disabile|♿|||cur_b1_026.disabled
+сліпий|blind|blind|cieco|🦯|blind||cur_b1_026.blind
+глухий|deaf|døv|sordo|🧏|||cur_b1_026.deaf
+паралізувати|to paralyze|at lamme|paralizzare|🦽|||cur_b1_026.to_paralyze
+кульгати|to limp|at halte|zoppicare|🚶|||cur_b1_026.to_limp
+подряпина|scratch|en skramme|il graffio|🩹|||cur_b1_026.scratch
+поріз|cut|et snitsår|il taglio|🩸|||cur_b1_026.cut
+набрякати|to swell|at hæve|gonfiarsi|🦶|||cur_b1_026.to_swell
+болючий|painful|smertefuld|doloroso|😣|||cur_b1_026.painful
+поранений|hurt|såret|ferito|🤕|||cur_b1_026.hurt
+дискомфорт|discomfort|et ubehag|il fastidio|😖|||cur_b1_026.discomfort
+безбар'єрний|accessible|tilgængelig|accessibile|♿|||cur_b1_026.accessible
+#cur_b1_027|Психічне здоров'я|😫|B1
+стрес|stress|stress|lo stress|😫|||cur_b1_027.stress
+у стресі|stressed|stresset|stressato|😰|||cur_b1_027.stressed
+психічний|mental|psykisk|mentale|🧠|||cur_b1_027.mental
+психічно|mentally|mentalt|mentalmente|🧠|||cur_b1_027.mentally
+психологічний|psychological|psykologisk|psicologico|🧠|||cur_b1_027.psychological
+консультування|counseling|rådgivning|la consulenza|🗣️|||cur_b1_027.counseling
+медитувати|to meditate|at meditere|meditare|🧘|||cur_b1_027.to_meditate
+медитація|meditation|en meditation|la meditazione|🧘|||cur_b1_027.meditation
+стресовий|stressful|stressende|stressante|😫||stresujący|b2x02_psych.stressful
+депресія|depression|en depression|la depressione|🌧️||depresja|b2x02_psych.depression
+мотивація|motivation|en motivation|la motivazione|🔥||motywacja|b2x02_psych.motivation
+долати|to overcome|at overvinde|superare|🏔️||pokonywać|b2x02_psych.to_overcome
+розчарування (досада)|frustration|en frustration|la frustrazione|😤||frustracja|b2x02_psych.frustration
+емоційний|emotional|emotionel|emotivo|🥹||emocjonalny|b2x02_psych.emotional
+панікувати|to panic|at gå i panik|andare nel panico|😱||panikować|b2x02_psych.to_panic
+#cur_b1_028|Фітнес|🏋️|B1
+фізична форма|fitness|kondition|la forma fisica|🏋️|||cur_b1_028.fitness
+комплекс вправ|workout|et træningspas|l'allenamento|💪|||cur_b1_028.workout
+біг підтюпцем|jogging|jogging|il jogging|🏃|||cur_b1_028.jogging
+аеробіка|aerobics|aerobic|l'aerobica|🤸|||cur_b1_028.aerobics
+піт|sweat|sved|il sudore|💦|||cur_b1_028.sweat
+нетренований|unfit|i dårlig form|fuori forma|🛋️|||cur_b1_028.unfit
+спортивний|athletic|atletisk|atletico|🏃|||cur_b1_028.athletic
+харчування|nutrition|ernæring|la nutrizione|🥗|||cur_b1_028.nutrition
+розтягувати м'язи|to stretch|at strække ud|allungare i muscoli|🧘|stretch_,_to|rozciągać mięśnie|b2x02_fitness.to_stretch
+м'яз|muscle|en muskel|il muscolo|💪||mięsień|b2x02_fitness.muscle
+поживна речовина|nutrient|et næringsstof|la sostanza nutritiva|🥦||składnik odżywczy|b2x02_fitness.nutrient
+бігати підтюпцем|to jog|at jogge|fare jogging|🏃|jog_,_to|biegać truchtem|b2x02_fitness.to_jog
+розминка|warm-up|en opvarmning|il riscaldamento|🤸||rozgrzewka|b2x02_fitness.warm_up
+#cur_b1_029|Матч|🏆|B1
+чемпіон|champion|en mester|il campione|🏆||mistrz|a2x02_sport.champion
+ліга|league|en liga|la lega|🏆|||cur_b1_029.league
+рахунок|score|en stilling|il punteggio|🔢|||cur_b1_029.score
+забивати гол|to score|at score|segnare|⚽|||cur_b1_029.to_score
+воротар|goalkeeper|en målmand|il portiere|🧤|||cur_b1_029.goalkeeper
+захисник|defender|en forsvarsspiller|il difensore|🛡️|||cur_b1_029.defender
+товариш по команді|teammate|en holdkammerat|il compagno di squadra|🤝|||cur_b1_029.teammate
+глядач|spectator|en tilskuer|lo spettatore|👀|||cur_b1_029.spectator
+прихильник|supporter|en tilhænger|il sostenitore|📣|||cur_b1_029.supporter
+перемагати|to defeat|at besejre|sconfiggere|🏆|||cur_b1_029.to_defeat
+обігравати|to beat|at slå|battere|🥇|||cur_b1_029.to_beat
+турнір|tournament|en turnering|il torneo|🏆||turniej|b1m_sport.tournament
+перемога|victory|en sejr|la vittoria|🥇|winner|zwycięstwo|b1m_sport.victory
+суддя (у спорті)|referee|en dommer|l'arbitro|🟥||sędzia|b1m_sport.referee
+в'язання|knitting|strikning|il lavoro a maglia|🧶||robienie na drutach|a2x02_sport.knitting
+#cur_b1_030|Види спорту|🥊|B1
+бокс|boxing|boksning|la boxe|🥊|||cur_b1_030.boxing
+гімнастика|gymnastics|gymnastik|la ginnastica|🤸|||cur_b1_030.gymnastics
+гандбол|handball|håndbold|la pallamano|🤾|||cur_b1_030.handball
+сноуборд|snowboard|et snowboard|lo snowboard|🏂|||cur_b1_030.snowboard
+віндсерфінг|windsurfing|windsurfing|il windsurf|🏄|||cur_b1_030.windsurfing
+дайвінг|diving|dykning|le immersioni|🤿|||cur_b1_030.diving
+стрибок у воду|dive|et udspring|il tuffo|🏊|||cur_b1_030.dive
+пірнати|to dive|at dykke|tuffarsi|🤿|dive_,_to||cur_b1_030.to_dive
+дайвер|diver|en dykker|il subacqueo|🤿|||cur_b1_030.diver
+кататися на ковзанах|to skate|at skøjte|pattinare|⛸️|skate_,_to||cur_b1_030.to_skate
+плавець|swimmer|en svømmer|il nuotatore|🏊|||cur_b1_030.swimmer
+гольфіст|golfer|en golfspiller|il golfista|🏌️|||cur_b1_030.golfer
+#cur_b1_031|Екстрим і природа|🪂|B1
+екстремальні види спорту|extreme sports|ekstremsport|gli sport estremi|🪂|||cur_b1_031.extreme_sports
+альпініст|climber|en klatrer|lo scalatore|🧗|||cur_b1_031.climber
+парашут|parachute|en faldskærm|il paracadute|🪂|parachute||cur_b1_031.parachute
+весло|paddle|en pagaj|la pagaia|🛶|||cur_b1_031.paddle
+шолом|helmet|en hjelm|il casco|⛑️|helmet||cur_b1_031.helmet
+свисток|whistle|en fløjte|il fischietto|📢|||cur_b1_031.whistle
+під відкритим небом|outdoor|udendørs|all'aperto|🏕️|||cur_b1_031.outdoor
+на свіжому повітрі|outdoors|i det fri|all'aria aperta|🌳|||cur_b1_031.outdoors
+бігти наввипередки|to race|at løbe om kap|fare a gara|🏁|||cur_b1_031.to_race
+змагатися|to compete|at konkurrere|gareggiare|🏆|||cur_b1_031.to_compete
+чесна гра|sportsmanship|sportsånd|la sportività|🤝|||cur_b1_031.sportsmanship
+спонсор|sponsor|en sponsor|lo sponsor|💰|||cur_b1_031.sponsor
+ловити рибу|to fish|at fiske|pescare|🎣|fish_,_to||cur_b1_031.to_fish
+сітка|net|et net|la rete|🥅|||cur_b1_031.net
+#cur_b1_032|Новини|📡|B1
+телеканал|channel|en kanal|il canale|📡||kanał telewizyjny|b1x02_news.channel
+достовірний|trustworthy|troværdig|affidabile|✔️||wiarygodny|b1x02_news.trustworthy
+трансляція|broadcast|en udsendelse|la trasmissione|📡|||cur_b1_032.broadcast
+випуск новин|bulletin|en nyhedsudsendelse|il notiziario|📻|||cur_b1_032.bulletin
+оголошувати|to announce|at meddele|annunciare|📢|||cur_b1_032.to_announce
+оголошення|announcement|en meddelelse|l'annuncio|📢|||cur_b1_032.announcement
+преса|press|pressen|la stampa|🗞️|||cur_b1_032.press
+натискати|to press|at trykke|premere|👆|||cur_b1_032.to_press
+інцидент|incident|en hændelse|l'episodio|⚠️|||cur_b1_032.incident
+офіційно|officially|officielt|ufficialmente|📜|||cur_b1_032.officially
+заголовок (газетний)|headline|en overskrift|il titolo|📰|newspaper|nagłówek|c1m_media.headline
+наратив|narrative|et narrativ|la narrazione|📖||narracja|c1x02_media.narrative
+вводити в оману|to mislead|at vildlede|fuorviare|🌀||wprowadzać w błąd|c1x02_media.to_mislead
+засоби масової інформації|media|medier|i media|📡||media|b1x02_news.media
+підписник (у соцмережах)|follower|en følger|il follower|👥||obserwujący|b1x02_news.follower
+#cur_b1_033|Злочинність і безпека|🦹|B1
+квартирний злодій|burglar|en indbrudstyv|lo scassinatore|🦹||włamywacz|b1x03_crime.burglar
+заявляти (в поліцію)|to report|at anmelde|denunciare|📝||zgłaszać|b1x03_crime.to_report
+насильство|violence|vold|la violenza|👊||przemoc|b1x03_crime.violence
+розслідування|investigation|en efterforskning|l'indagine|🕵️||śledztwo|b1x03_crime.investigation
+попередження|warning|en advarsel|l'avvertimento|⚠️||ostrzeżenie|b1x03_crime.warning
+безпека|safety|sikkerhed|la sicurezza|🦺||bezpieczeństwo|b1x03_crime.safety
+винний|guilty|skyldig|colpevole|⚖️||winny|b1x03_crime.guilty
+покарання|punishment|en straf|la punizione|🔨||kara|b1x03_crime.punishment
+арешт|arrest|en anholdelse|l'arresto|🚔|||cur_b1_033.arrest
+підозрюваний|suspect|en mistænkt|il sospettato|🕵️||podejrzany|b2x02_crime.suspect
+жертва (злочину)|victim|et offer|la vittima|🩹||ofiara|b2x02_crime.victim
+заарештовувати|to arrest|at anholde|arrestare|🚓|arrest_,_to|aresztować|b2x02_crime.to_arrest
+крадіжка в магазині|shoplifting|et butikstyveri|il taccheggio|🛍️||kradzież sklepowa|b1x03_crime.shoplifting
+грабіжник|robber|en røver|il rapinatore|🥷||rabuś|b1x03_crime.robber
+розслідувати|to investigate|at efterforske|indagare|🔎||prowadzić śledztwo|b2x02_crime.to_investigate
+#cur_b1_034|Суд і в'язниця|🦹|B1
+крадіжка|theft|et tyveri|il furto|🦹||kradzież|b1x01_travelproblems.theft
+злочинець|criminal|en forbryder|il criminale|🦹|||cur_b1_034.criminal
+в'язень|prisoner|en fange|il detenuto|⛓️|||cur_b1_034.prisoner
+скоїти вбивство|to murder|at myrde|assassinare|🔪|||cur_b1_034.to_murder
+бути свідком|to witness|at overvære|assistere|👁️|||cur_b1_034.to_witness
+невинний|innocent|uskyldig|innocente|😇|||cur_b1_034.innocent
+звинувачувати|to accuse|at anklage|accusare|👉|||cur_b1_034.to_accuse
+скоювати|to commit|at begå|commettere|🦹|||cur_b1_034.to_commit
+карати|to punish|at straffe|punire|⚖️|||cur_b1_034.to_punish
+мотив|motive|et motiv|il movente|🔍|||cur_b1_034.motive
+свідок|witness|et vidne|il testimone|👁️||świadek|b2x02_crime.witness
+#cur_b1_035|Закон|⚖️|B1
+законно|legally|lovligt|legalmente|⚖️|||cur_b1_035.legally
+правомірний|lawful|retmæssig|legittimo|✅|||cur_b1_035.lawful
+незаконно|illegally|ulovligt|illegalmente|🚫|||cur_b1_035.illegally
+справедливість|justice|retfærdighed|la giustizia|⚖️|||cur_b1_035.justice
+заборонений|forbidden|forbudt|proibito|🚫|||cur_b1_035.forbidden
+заборона|prohibition|et forbud|il divieto|⛔|||cur_b1_035.prohibition
+дозволяти|to permit|at tillade|permettere|✅|||cur_b1_035.to_permit
+норма|regulation|en forskrift|la norma|📋|||cur_b1_035.regulation
+обмежувати|to restrict|at begrænse|limitare|🚧|||cur_b1_035.to_restrict
+рівність|equality|lighed|l'uguaglianza|⚖️||równość|b2x01_law.equality
+дискримінація|discrimination|diskrimination|la discriminazione|🚫||dyskryminacja|b2x01_law.discrimination
+суддя|judge|en dommer|il giudice|👨‍⚖️||sędzia|b2x01_law.judge
+законний|legal|lovlig|legale|✅||legalny|b2x01_law.legal
+#cur_b1_036|Катастрофи|🌪️|B1
+катастрофа|disaster|en katastrofe|il disastro|🌪️|||cur_b1_036.disaster
+катастрофічний|disastrous|katastrofal|disastroso|💥|||cur_b1_036.disastrous
+обвал|collapse|en sammenstyrtning|il crollo|🏚️|||cur_b1_036.collapse
+вибух|explosion|en eksplosion|l'esplosione|💥|||cur_b1_036.explosion
+уламки|debris|murbrokker|le macerie|🧱|||cur_b1_036.debris
+порятунок|rescue|en redning|il salvataggio|🚁|||cur_b1_036.rescue
+рятувати|to rescue|at redde|salvare|🛟|||cur_b1_036.to_rescue
+уцілілий|survivor|en overlevende|il sopravvissuto|🙏|||cur_b1_036.survivor
+виживання|survival|overlevelse|la sopravvivenza|🧭|||cur_b1_036.survival
+нищівний|devastating|ødelæggende|devastante|🌊|||cur_b1_036.devastating
+спустошувати|to devastate|at hærge|devastare|🔥|||cur_b1_036.to_devastate
+трагедія|tragedy|en tragedie|la tragedia|🎭|||cur_b1_036.tragedy
+трагічний|tragic|tragisk|tragico|😢|||cur_b1_036.tragic
+#cur_b1_037|Новини: безпека|🪖|B1
+армія|army|en hær|l'esercito|🪖|||cur_b1_037.army
+військово-повітряні сили|air force|et luftvåben|l'aeronautica|✈️|||cur_b1_037.air_force
+ворог|enemy|en fjende|il nemico|⚔️|||cur_b1_037.enemy
+вторгнення|invasion|en invasion|l'invasione|🪖|||cur_b1_037.invasion
+зброя|weapon|et våben|l'arma|🗡️|||cur_b1_037.weapon
+бомба|bomb|en bombe|la bomba|💣|||cur_b1_037.bomb
+бомбардувати|to bomb|at bombe|bombardare|💣|||cur_b1_037.to_bomb
+куля|bullet|en kugle|il proiettile|🔫|||cur_b1_037.bullet
+бій|battle|et slag|la battaglia|⚔️|||cur_b1_037.battle
+обороняти|to defend|at forsvare|difendere|🛡️|||cur_b1_037.to_defend
+оборона|defense|et forsvar|la difesa|🛡️|||cur_b1_037.defense
+наказ|command|en kommando|il comando|📢|||cur_b1_037.command
+генерал|general|en general|il generale|🎖️|||cur_b1_037.general
+укриття|shelter|et beskyttelsesrum|il rifugio|🏠|||cur_b1_037.shelter
+озброювати|to arm|at bevæbne|armare|🔫|||cur_b1_037.to_arm
+#cur_b1_038|Загрози й безпека|⚔️|B1
+конфлікт|conflict|en konflikt|il conflitto|⚔️|||cur_b1_038.conflict
+криза|crisis|en krise|la crisi|📉|||cur_b1_038.crisis
+терор|terror|terror|il terrore|😨|||cur_b1_038.terror
+тероризм|terrorism|terrorisme|il terrorismo|💣|||cur_b1_038.terrorism
+терорист|terrorist|en terrorist|il terrorista|💣|||cur_b1_038.terrorist
+загроза|threat|en trussel|la minaccia|⚠️|||cur_b1_038.threat
+загрозливий|threatening|truende|minaccioso|😠|||cur_b1_038.threatening
+патруль|patrol|en patrulje|la pattuglia|🚓|||cur_b1_038.patrol
+охорона|security|sikkerhed|la sicurezza|🛂|||cur_b1_038.security
+захоплення|capture|en tilfangetagelse|la cattura|🪤|||cur_b1_038.capture
+захоплювати|to capture|at pågribe|catturare|🪤|||cur_b1_038.to_capture
+підводний човен|submarine|en ubåd|il sottomarino|🌊|||cur_b1_038.submarine
+#cur_b1_039|Сенсації|😱|B1
+шокувальний|shocking|chokerende|scioccante|😱|||cur_b1_039.shocking
+виявляти|to uncover|at afdække|scoprire|🔍|||cur_b1_039.to_uncover
+таємно|secretly|i hemmelighed|segretamente|🤫|||cur_b1_039.secretly
+драматичний|dramatic|dramatisk|drammatico|🎭|||cur_b1_039.dramatic
+підозра|suspicion|en mistanke|il sospetto|🕵️|||cur_b1_039.suspicion
+викривати|to expose|at afsløre|smascherare|📰|||cur_b1_039.to_expose
+смертельний|deadly|dødelig|mortale|☠️|||cur_b1_039.deadly
+руйнування|destruction|en ødelæggelse|la distruzione|🏚️|||cur_b1_039.destruction
+руйнівний|destructive|destruktiv|distruttivo|💥|||cur_b1_039.destructive
+жорстоко|violently|voldeligt|violentemente|👊|||cur_b1_039.violently
+тікати|to escape|at flygte|scappare|🏃|escape_,_to||cur_b1_039.to_escape
+вилучати|to seize|at beslaglægge|sequestrare|🚔|||cur_b1_039.to_seize
+тонути|to drown|at drukne|annegare|🌊|drown_,_to||cur_b1_039.to_drown
+#cur_b1_040|Соцмережі|📝|B1
+блог|blog|en blog|il blog|📝|||cur_b1_040.blog
+блогер|blogger|en blogger|il blogger|🧑‍💻|||cur_b1_040.blogger
+форум|message board|et forum|il forum|💬|||cur_b1_040.message_board
+відеоролик|video clip|et videoklip|il filmato|🎬|||cur_b1_040.video_clip
+фрагмент|clip|et klip|lo spezzone|✂️|||cur_b1_040.clip
+вебкамера|webcam|et webcam|la webcam|📷|webcam||cur_b1_040.webcam
+посилання|link|et link|il link|🔗|||cur_b1_040.link
+пов'язувати|to link|at koble|collegare|🔗|||cur_b1_040.to_link
+клік|click|et klik|il clic|🖱️|||cur_b1_040.click
+встановлювати (програму)|to install|at installere|installare|💿||instalować|b2x02_tech.to_install
+приватність (даних)|privacy|et privatliv|la privacy|🔒||prywatność|c1m_tech.privacy
+завантажувати (на сервер)|to upload|at uploade|caricare|⬆️||wgrywać|c1m_tech.to_upload
+дрон|drone|en drone|il drone|🛸||dron|b2x02_tech.drone
+перезавантажувати|to restart|at genstarte|riavviare|🔄||restartować|b2x02_tech.to_restart
+сенсорний екран|touchscreen|en touchskærm|il touchscreen|👆||ekran dotykowy|b2x02_tech.touchscreen
+#cur_b1_041|Телефон і гаджети|📶|B1
+сигнал (мобільного зв'язку)|signal|et signal|il segnale|📶||zasięg|a2x01_phone.signal
+вкладення (у листі)|attachment|en vedhæftet fil|l'allegato|📎|email_attachment|załącznik|b1m_tech.attachment
+заряджати (телефон)|to charge|at oplade|caricare|🔋||ładować|b1m_tech.to_charge
+оновлення|update|en opdatering|l'aggiornamento|🔄||aktualizacja|b1m_tech.update
+видаляти|to delete|at slette|cancellare|🗑️||usuwać|b1m_tech.to_delete
+мережа|network|et netværk|la rete|🌐||sieć|b1m_tech.network
+набирати (номер)|to dial|at taste|comporre|☎️|dial_,_to|wybierać numer|b1x03_phone.to_dial
+заряд|charge|en opladning|la carica|🔋|charge||cur_b1_041.charge
+циферблат|dial|en urskive|il quadrante|🕰️|||cur_b1_041.dial
+той, хто телефонує|caller|en opkalder|il chiamante|📞|||cur_b1_041.caller
+гучномовець|loudspeaker|en højttaler|l'altoparlante|🔊|||cur_b1_041.loudspeaker
+пристрій|device|en enhed|il dispositivo|📱||urządzenie|b2m_gadgets.device
+оновлювати|to update|at opdatere|aggiornare|🔄||aktualizować|b2m_gadgets.to_update
+рингтон|ringtone|en ringetone|la suoneria|🎵||dzwonek|a2x01_phone.ringtone
+автовідповідач|voicemail|en telefonsvarer|la segreteria telefonica|📼||poczta głosowa|b1x03_phone.voicemail
+#cur_b1_042|Комп'ютер|💾|B1
+диск|disk|en disk|il disco|💾|||cur_b1_042.disk
+сервер|server|en server|il server|🖥️|||cur_b1_042.server
+формат|format|et format|il formato|📄|||cur_b1_042.format
+форматувати|to format|at formatere|formattare|💾|||cur_b1_042.to_format
+програмувати|to program|at programmere|programmare|👨‍💻|||cur_b1_042.to_program
+набирати текст|to type|at indtaste|digitare|⌨️|||cur_b1_042.to_type
+скасовувати дію|to undo|at fortryde|annullare|↩️|||cur_b1_042.to_undo
+графіка|graphics|grafik|la grafica|🎨|||cur_b1_042.graphics
+графічний|graphic|grafisk|grafico|🎨|||cur_b1_042.graphic
+віртуальний|virtual|virtuel|virtuale|🥽|||cur_b1_042.virtual
+монітор|monitor|en computerskærm|il monitor|🖥️|||cur_b1_042.monitor
+відстежувати|to monitor|at overvåge|monitorare|📈|||cur_b1_042.to_monitor
+перетягувати|to drag|at trække|trascinare|🖱️|||cur_b1_042.to_drag
+фільтр|filter|et filter|il filtro|📸|||cur_b1_042.filter
+#cur_b1_043|Онлайн|🔑|B1
+доступ|access|adgang|l'accesso|🔑|||cur_b1_043.access
+під'єднувати|to connect|at forbinde|connettere|🔌|||cur_b1_043.to_connect
+портативний|hand-held|håndholdt|portatile|📱|||cur_b1_043.hand_held
+електронний|electronic|elektronisk|elettronico|🔌|||cur_b1_043.electronic
+технологічний|technological|teknologisk|tecnologico|⚙️|||cur_b1_043.technological
+блокувати|to block|at blokere|bloccare|🚫|||cur_b1_043.to_block
+деактивувати|to disable|at deaktivere|disattivare|🔕|||cur_b1_043.to_disable
+дивитися онлайн|to stream|at streame|guardare in streaming|📺|||cur_b1_043.to_stream
+шрифт|print|en skrift|il carattere|🔤|||cur_b1_043.print
+актуальний|up-to-date|opdateret|aggiornato|🆕|||cur_b1_043.up_to_date
+неактуальний|out-of-date|forældet|non aggiornato|📅|||cur_b1_043.out_of_date
+публічно|publicly|offentligt|pubblicamente|📢|||cur_b1_043.publicly
+телекомунікації|telecommunications|telekommunikation|le telecomunicazioni|📡|||cur_b1_043.telecommunications
+#cur_b1_044|Скарга в магазині|↩️|B1
+повернення коштів|refund|en tilbagebetaling|il rimborso|↩️||zwrot pieniędzy|b1x01_travelproblems.refund
+гарантія|guarantee|en garanti|la garanzia|📜||gwarancja|b1x03_shopping.guarantee
+обмінювати (товар)|to exchange|at bytte|cambiare|🔁||wymieniać|b1x03_shopping.to_exchange
+доставка|delivery|en levering|la consegna|🚚||dostawa|b1x03_shopping.delivery
+пошкоджений|damaged|beskadiget|danneggiato|💔||uszkodzony|b1x03_shopping.damaged
+вибачення|apology|en undskyldning|le scuse|🙏|||cur_b1_044.apology
+доставляти|to deliver|at levere|consegnare|🚚|deliver_,_to||cur_b1_044.to_deliver
+пошкодження|damage|en skade|il danno|💔|||cur_b1_044.damage
+пошкоджувати|to damage|at beskadige|danneggiare|🔨|||cur_b1_044.to_damage
+задоволеність|satisfaction|tilfredshed|la soddisfazione|😊|||cur_b1_044.satisfaction
+гарантія (на товар)|warranty|en garanti|la garanzia|🧾||gwarancja|b2x03_money.warranty
+запит|enquiry|en forespørgsel|la richiesta|📨||zapytanie|c2x01_formal.enquiry
+касир|cashier|en kasseassistent|il cassiere|💁||kasjer|b1x03_shopping.cashier
+стояти в черзі|to queue|at stå i kø|fare la fila|🧍|queue_,_to|stać w kolejce|b1x03_shopping.to_queue
+#cur_b1_045|Посилки|📦|B1
+посилка|parcel|en pakke|il pacco|📦||paczka|a2x01_post_bank.parcel
+обгортка|wrap|en indpakning|l'involucro|🎁|||cur_b1_045.wrap
+загортати|to wrap|at pakke ind|incartare|🎁|wrap_,_to||cur_b1_045.to_wrap
+пакувальний папір|wrapping|indpakningspapir|la carta da pacchi|📜|||cur_b1_045.wrapping
+адресат|addressee|en modtager|il destinatario|📮|||cur_b1_045.addressee
+вкладати|to enclose|at vedlægge|allegare|✉️|||cur_b1_045.to_enclose
+відправляти|to ship|at afsende|spedire|🚢|||cur_b1_045.to_ship
+самообслуговування|self-service|selvbetjening|il self-service|🛒|||cur_b1_045.self_service
+каса|checkout|en kasse|la cassa|🧾||kasa|a1x01_shop.checkout
+кур'єр|courier|et bud|il corriere|🛵||kurier|a2x01_post_bank.courier
+банкнота|banknote|en pengeseddel|la banconota|💶||banknot|a2x01_post_bank.banknote
+#cur_b1_046|Вигідна покупка|♻️|B1
+вживаний (не новий)|second-hand|brugt|usato|♻️||używany|a2x02_shopclothes.second_hand
+абсолютно новий|brand-new|splinterny|nuovissimo|✨|||cur_b1_046.brand_new
+ятка|stall|en bod|la bancarella|🏪|||cur_b1_046.stall
+обслуговування|service|en betjening|il servizio|🛎️|||cur_b1_046.service
+обслуговувати|to service|at efterse|revisionare|🔧|||cur_b1_046.to_service
+робити покупки|to shop|at handle|fare acquisti|🛍️|||cur_b1_046.to_shop
+підроблений|fake|uægte|contraffatto|🎭|||cur_b1_046.fake
+цінний|valuable|værdifuld|prezioso|💎|||cur_b1_046.valuable
+вартий|worth|værd|degno|💰|||cur_b1_046.worth
+антикварна річ|antique|en antikvitet|il pezzo d'antiquariato|🏺|||cur_b1_046.antique
+тісний|tight|stram|stretto|🤏||ciasny|a2x02_shopclothes.tight
+смугастий|striped|stribet|a righe|🦓|striped|pasiasty|a2x02_shopclothes.striped
+картатий|checked|ternet|a quadri|🏁||kraciasty|a2x02_shopclothes.checked
+#cur_b1_047|Подорож по США|🎒|B1
+бекпекер|backpacker|en backpacker|il backpacker|🎒|||cur_b1_047.backpacker
+подорож з рюкзаком|backpacking|en rygsækrejse|il viaggio zaino in spalla|🏕️|||cur_b1_047.backpacking
+туризм|tourism|turisme|il turismo|🧳|||cur_b1_047.tourism
+турагент|travel agent|en rejseagent|l'agente di viaggio|💼|||cur_b1_047.travel_agent
+мальовничий|scenic|naturskøn|panoramico|🏞️|||cur_b1_047.scenic
+туристичний маршрут|trail|en vandrerute|il percorso escursionistico|🥾|||cur_b1_047.trail
+курорт|resort|et feriested|la località turistica|🏖️|||cur_b1_047.resort
+за ніч|overnight|i løbet af natten|durante la notte|🌙|||cur_b1_047.overnight
+хостел|hostel|et vandrerhjem|l'ostello|🛏️|||cur_b1_047.hostel
+напрямок (туристичний)|destination|et rejsemål|la destinazione|📍||kierunek|b2x02_travel.destination
+віза|visa|et visum|il visto|📑||wiza|b2x02_travel.visa
+#cur_b1_048|Переліт|⛴️|B1
+пором|ferry|en færge|il traghetto|⛴️|ferry|prom|a2x01_transport.ferry
+пересадка (на інший потяг)|connection|en forbindelse|la coincidenza|🔀||przesiadka|a2x01_transport.connection
+відправлення|departure|en afgang|la partenza|🛫||odjazd|a2x01_transport.departure
+прибуття|arrival|en ankomst|l'arrivo|🛬||przyjazd|a2x01_transport.arrival
+стійка реєстрації|check-in counter|en indtjekningsskranke|il banco del check-in|🛄|||cur_b1_048.check_in_counter
+злітна смуга|runway|en landingsbane|la pista|🛬|||cur_b1_048.runway
+зліт|takeoff|en letning|il decollo|🛫|||cur_b1_048.takeoff
+термінал|terminal|en terminal|il terminal|🏢|||cur_b1_048.terminal
+турбулентність|turbulence|turbulens|la turbolenza|🌪️|||cur_b1_048.turbulence
+сідати на борт|to board|at gå om bord|imbarcarsi|🎫|||cur_b1_048.to_board
+затримувати|to delay|at forsinke|ritardare|⏰|||cur_b1_048.to_delay
+на борту|aboard|om bord|a bordo|🛩️|||cur_b1_048.aboard
+#cur_b1_049|Бронювання|🦌|B1
+заповідник|reserve|et naturreservat|la riserva naturale|🦌|||cur_b1_049.reserve
+підтвердження|confirmation|en bekræftelse|la conferma|✅|||cur_b1_049.confirmation
+скасовувати|to cancel|at aflyse|annullare|❌|||cur_b1_049.to_cancel
+перебування|stay|et ophold|il soggiorno|🏨|||cur_b1_049.stay
+розпаковувати речі|to unpack|at pakke ud|disfare la valigia|📦|||cur_b1_049.to_unpack
+гірський готель|lodge|et bjerghotel|l'albergo di montagna|🏔️|||cur_b1_049.lodge
+дерев'яний будиночок|cabin|en bjælkehytte|la baita|🛖|||cur_b1_049.cabin
+засмагати|to sunbathe|at solbade|prendere il sole|☀️|||cur_b1_049.to_sunbathe
+бронювання|reservation|en reservation|la prenotazione|📖||rezerwacja|a2x01_restaurant.reservation
+#cur_b1_050|Дорога й авто|➕|B1
+перехрестя|crossroads|et vejkryds|l'incrocio|➕||skrzyżowanie|b1x03_transport.crossroads
+транспортний засіб|vehicle|et køretøj|il veicolo|🚙|||cur_b1_050.vehicle
+фургон|van|en varevogn|il furgone|🚐|van||cur_b1_050.van
+двигун|engine|en motor|il motore|⚙️|engine||cur_b1_050.engine
+пристібати|to fasten|at spænde|allacciare|🔒|fasten_,_to||cur_b1_050.to_fasten
+перевищувати швидкість|to speed|at køre for stærkt|correre|🚓|||cur_b1_050.to_speed
+аварія|crash|et sammenstød|lo scontro|💥|||cur_b1_050.crash
+врізатися|to crash|at køre ind i|schiantarsi|🚑|||cur_b1_050.to_crash
+узбіччя|roadside|en vejkant|il ciglio della strada|🛣️|||cur_b1_050.roadside
+залізничний переїзд|crossing|en jernbaneoverkørsel|il passaggio a livello|🚧|||cur_b1_050.crossing
+дорожній вказівник|signpost|en vejviser|il cartello stradale|🪧|signpost||cur_b1_050.signpost
+паркування|parking|parkering|la sosta|🅿️|||cur_b1_050.parking
+велосипедист|cyclist|en cyklist|il ciclista|🚴||rowerzysta|b1x03_transport.cyclist
+#cur_b1_051|Транспорт|🚌|B1
+транспорт|transportation|transport|il trasporto|🚌|||cur_b1_051.transportation
+залізниця|railroad|en jernbane|la ferrovia|🛤️|||cur_b1_051.railroad
+рейка|rail|en skinne|la rotaia|🚃|||cur_b1_051.rail
+віз|wagon|en vogn|il carro|🐂|||cur_b1_051.wagon
+карета|carriage|en karet|la carrozza|🐎|||cur_b1_051.carriage
+судно|vessel|et fartøj|l'imbarcazione|⛴️|||cur_b1_051.vessel
+порт|port|en havn|il porto|⚓|||cur_b1_051.port
+морська подорож|voyage|en sørejse|il viaggio per mare|🌊|||cur_b1_051.voyage
+канал|canal|en kanal|il canale|🛶|||cur_b1_051.canal
+авіакомпанія|airline|et flyselskab|la compagnia aerea|🛫|||cur_b1_051.airline
+#cur_b1_052|Пам'ятки|⛲|B1
+фонтан|fountain|et springvand|la fontana|⛲||fontanna|b1x03_city.fountain
+пам'ятник|monument|et monument|il monumento|🗿|||cur_b1_052.monument
+проспект|avenue|en boulevard|il viale|🏙️|||cur_b1_052.avenue
+квартал|district|et kvarter|il quartiere|🏘️|||cur_b1_052.district
+оглядати|to tour|at bese|girare|🚌|||cur_b1_052.to_tour
+вести|to guide|at guide|guidare|🧭|||cur_b1_052.to_guide
+видовищний|spectacular|spektakulær|spettacolare|🎆|||cur_b1_052.spectacular
+величний|magnificent|storslået|magnifico|🏰|||cur_b1_052.magnificent
+вражаючий|impressive|imponerende|impressionante|👏|||cur_b1_052.impressive
+історичний|historic|historisk|storico|📜|||cur_b1_052.historic
+напис|inscription|en indskrift|l'iscrizione|🪦|||cur_b1_052.inscription
+#cur_b1_053|Сторони світу|↗️|B1
+північний схід|northeast|nordøst|il nord-est|↗️|||cur_b1_053.northeast
+північно-східний|northeastern|nordøstlig|nordorientale|🧭|||cur_b1_053.northeastern
+північний|northern|nordlig|settentrionale|⬆️|||cur_b1_053.northern
+північний захід|northwest|nordvest|il nord-ovest|↖️|||cur_b1_053.northwest
+північно-західний|northwestern|nordvestlig|nordoccidentale|🧭|||cur_b1_053.northwestern
+південний схід|southeast|sydøst|il sud-est|↘️|||cur_b1_053.southeast
+південний|southern|sydlig|meridionale|⬇️|||cur_b1_053.southern
+південний захід|southwest|sydvest|il sud-ovest|↙️|||cur_b1_053.southwest
+східний|eastern|østlig|orientale|➡️|||cur_b1_053.eastern
+на захід|westward|mod vest|verso ovest|⬅️|||cur_b1_053.westward
+полюс|pole|en pol|il polo|🧊|||cur_b1_053.pole
+#cur_b1_054|Відстані й регіони|🗺️|B1
+регіон|region|en region|la regione|🗺️|||cur_b1_054.region
+регіональний|regional|regional|regionale|📰|||cur_b1_054.regional
+округ|county|et amt|la contea|🏛️|||cur_b1_054.county
+географічний|geographical|geografisk|geografico|🌍|||cur_b1_054.geographical
+мешканець|inhabitant|en indbygger|l'abitante|🧑|||cur_b1_054.inhabitant
+суша|land|land|la terraferma|🏝️|||cur_b1_054.land
+віддалений|distant|fjern|distante|🔭|||cur_b1_054.distant
+миля|mile|en engelsk mil|il miglio|📏|||cur_b1_054.mile
+відстань|distance|en afstand|la distanza|📐|||cur_b1_054.distance
+далі|farther|længere|più lontano|➡️|||cur_b1_054.farther
+найдалі|farthest|længst|più lontano di tutti|🎯|||cur_b1_054.farthest
+#cur_b1_055|Вхід і вихід|🏃|B1
+вихід|exit|en udgang|l'uscita|🏃|||cur_b1_055.exit
+виходити|to exit|at gå ud|uscire|🚶|exit_,_to||cur_b1_055.to_exit
+в'їзд|entry|en indrejse|l'entrata|🛂|||cur_b1_055.entry
+відправлятися|to depart|at afgå|partire|🚉|||cur_b1_055.to_depart
+безмитний|duty-free|toldfri|esentasse|🛍️|||cur_b1_055.duty_free
+доступний|available|tilgængelig|disponibile|✅|||cur_b1_055.available
+визначати місцезнаходження|to locate|at lokalisere|localizzare|📍|||cur_b1_055.to_locate
+розташування|location|en placering|la posizione|🗺️|||cur_b1_055.location
+ніде|nowhere|ingen steder|da nessuna parte|🚫|||cur_b1_055.nowhere
+у приміщенні|indoors|indendørs|al chiuso|🏠|||cur_b1_055.indoors
+хатина|hut|en hytte|la capanna|🛖|||cur_b1_055.hut
+#cur_b1_056|Коледж|👨‍🏫|B1
+професор|professor|en professor|il professore|👨‍🏫|||cur_b1_056.professor
+першокурсник|freshman|en førsteårsstuderende|la matricola|🧑‍🎓|||cur_b1_056.freshman
+другокурсник|sophomore|en andenårsstuderende|lo studente del secondo anno|📗|||cur_b1_056.sophomore
+випускний|graduation|en dimission|la cerimonia di laurea|🎓|||cur_b1_056.graduation
+академічний|academic|akademisk|accademico|📚|||cur_b1_056.academic
+академія|academy|et akademi|l'accademia|🏛️|||cur_b1_056.academy
+учений|scholar|en lærd|lo studioso|📜|||cur_b1_056.scholar
+стипендія|scholarship|et stipendium|la borsa di studio|💰||stypendium|b2m_education.scholarship
+лекція|lecture|en forelæsning|la lezione|🧑‍🏫||wykład|b2m_education.lecture
+завдання (письмове)|assignment|en opgave|il compito|📝||zadanie|b2m_education.assignment
+випускник (університету)|graduate|en dimittend|il laureato|🎓||absolwent|b2m_education.graduate
+навчальна програма|curriculum|en læseplan|il programma scolastico|📋||program nauczania|b2m_education.curriculum
+вивчати напам'ять|to memorize|at lære udenad|memorizzare|🧠||uczyć się na pamięć|b2m_education.to_memorize
+повторювати (матеріал)|to revise|at repetere|ripassare|🔁|study_,_to|powtarzać materiał|b2m_education.to_revise
+#cur_b1_057|Іспити|🧑‍⚖️|B1
+екзаменатор|examiner|en eksaminator|l'esaminatore|🧑‍⚖️|||cur_b1_057.examiner
+провалити іспит|to flunk|at dumpe|essere bocciato|📉|||cur_b1_057.to_flunk
+виправлення|correction|en rettelse|la correzione|✏️|||cur_b1_057.correction
+доопрацювання|revision|en gennemskrivning|la revisione|🔄|||cur_b1_057.revision
+переписувати|to rewrite|at omskrive|riscrivere|📝|||cur_b1_057.to_rewrite
+середній|intermediate|på mellemniveau|intermedio|📶|||cur_b1_057.intermediate
+інтенсивний|intensive|intensiv|intensivo|⚡|||cur_b1_057.intensive
+зосередженість|concentration|koncentration|la concentrazione|🎯|||cur_b1_057.concentration
+прокрастинація|procrastination|prokrastinering|la procrastinazione|⏳|||cur_b1_057.procrastination
+твердження|claim|en påstand|l'affermazione|💬||twierdzenie|c1x01_academic.claim
+анкета|questionnaire|et spørgeskema|il questionario|📋||ankieta|c1x01_academic.questionnaire
+окреслювати|to outline|at skitsere|delineare|✏️||nakreślić|c1x01_academic.to_outline
+підкреслювати|to underline|at understrege|sottolineare|〰️||podkreślać|a1x02_classroom.to_underline
+#cur_b1_058|Школа|🍲|B1
+шкільна їдальня|canteen|en kantine|la mensa|🍲||stołówka|a2x02_school.canteen
+товариш по школі|schoolmate|en skolekammerat|il compagno di scuola|🧒|||cur_b1_058.schoolmate
+інститут|institute|et institut|l'istituto|🏢|||cur_b1_058.institute
+інструкція|instruction|en vejledning|le istruzioni|📋|||cur_b1_058.instruction
+викладання|teaching|undervisning|l'insegnamento|👩‍🏫|||cur_b1_058.teaching
+давати освіту|to educate|at uddanne|istruire|🎓|||cur_b1_058.to_educate
+енциклопедія|encyclopedia|et leksikon|l'enciclopedia|📚|||cur_b1_058.encyclopedia
+відсутність|absence|et fravær|l'assenza|🚫|||cur_b1_058.absence
+відсутній|absent|fraværende|assente|❌|absent||cur_b1_058.absent
+вступ|admission|en optagelse|l'ammissione|📨|||cur_b1_058.admission
+почерк|handwriting|en håndskrift|la calligrafia|✍️|||cur_b1_058.handwriting
+#cur_b1_059|Як я вчуся|🗂️|B1
+розподіляти за категоріями|to categorize|at kategorisere|categorizzare|🗂️|||cur_b1_059.to_categorize
+класифікувати|to classify|at klassificere|classificare|📊|||cur_b1_059.to_classify
+хронологічний|chronological|kronologisk|cronologico|📅|||cur_b1_059.chronological
+групувати|to group|at gruppere|raggruppare|👥|||cur_b1_059.to_group
+групування|grouping|en gruppering|il raggruppamento|🧩|||cur_b1_059.grouping
+грант|grant|et legat|la sovvenzione|💶|||cur_b1_059.grant
+надавати|to grant|at bevilge|concedere|🤝|||cur_b1_059.to_grant
+бути присутнім|to attend|at deltage|partecipare|🙋|||cur_b1_059.to_attend
+ціль|aim|et mål|l'obiettivo|🎯|||cur_b1_059.aim
+прогрес|progress|fremskridt|il progresso|📈|||cur_b1_059.progress
+покращення|improvement|en forbedring|il miglioramento|⬆️|||cur_b1_059.improvement
+чорнило|ink|blæk|l'inchiostro|🖋️|||cur_b1_059.ink
+#cur_b1_060|Граматика|🔤|B1
+прислівник|adverb|et adverbium|l'avverbio|🔤|||cur_b1_060.adverb
+займенник|pronoun|et pronomen|il pronome|👤|||cur_b1_060.pronoun
+прийменник|preposition|en præposition|la preposizione|📍|||cur_b1_060.preposition
+префікс|prefix|et præfiks|il prefisso|⬅️|||cur_b1_060.prefix
+суфікс|suffix|et suffiks|il suffisso|➡️|||cur_b1_060.suffix
+інфінітив|infinitive|en infinitiv|l'infinito|♾️|||cur_b1_060.infinitive
+дієприкметник|participle|et participium|il participio|🔣|||cur_b1_060.participle
+модальне дієслово|modal verb|et modalverbum|il verbo modale|🔑|||cur_b1_060.modal_verb
+фразове дієслово|phrasal verb|et partikelverbum|il verbo frasale|🔗|||cur_b1_060.phrasal_verb
+означений артикль|definite article|en bestemt artikel|l'articolo determinativo|🅰️|||cur_b1_060.definite_article
+неозначений артикль|indefinite article|en ubestemt artikel|l'articolo indeterminativo|🔠|||cur_b1_060.indefinite_article
+граматичний час|tense|en tidsform|il tempo verbale|⏱️|||cur_b1_060.tense
+кома|comma|et komma|la virgola|✒️|||cur_b1_060.comma
+знак питання|question mark|et spørgsmålstegn|il punto interrogativo|❓|||cur_b1_060.question_mark
+#cur_b1_061|Звуки й слова|🗣️|B1
+акцент|accent|en accent|l'accento|🗣️|||cur_b1_061.accent
+абетка|alphabet|et alfabet|l'alfabeto|🔤|||cur_b1_061.alphabet
+приголосний|consonant|en konsonant|la consonante|🅱️|||cur_b1_061.consonant
+голосний|vowel|en vokal|la vocale|🅰️|||cur_b1_061.vowel
+правопис|spelling|en stavning|l'ortografia|✍️|||cur_b1_061.spelling
+вголос|aloud|højt|ad alta voce|📢|||cur_b1_061.aloud
+декламувати|to recite|at recitere|recitare|🎭|||cur_b1_061.to_recite
+фраза|phrase|en frase|l'espressione|💬|||cur_b1_061.phrase
+прислів'я|proverb|et ordsprog|il proverbio|📜|||cur_b1_061.proverb
+вільний|fluent|flydende|fluente|🗣️|||cur_b1_061.fluent
+вільно|fluently|flydende|correntemente|💬|||cur_b1_061.fluently
+девіз|motto|et motto|il motto|🏅|||cur_b1_061.motto
+антонім|antonym|et antonym|l'antonimo|🔀||antonim|c2x01_linguistics.antonym
+двомовний|bilingual|tosproget|bilingue|🌐||dwujęzyczny|c2x01_linguistics.bilingual
+ідіома|idiom|et idiom|l'espressione idiomatica|💬||idiom|c2x01_linguistics.idiom
+#cur_b1_062|Розмова|🌐|B1
+перекладати|to translate|at oversætte|tradurre|🌐||tłumaczyć|a2x02_school.to_translate
+діалог|dialog|en dialog|il dialogo|🗨️|||cur_b1_062.dialog
+давати визначення|to define|at definere|definire|📖|||cur_b1_062.to_define
+визначення|definition|en definition|la definizione|📘|||cur_b1_062.definition
+вживання|usage|en anvendelse|l'impiego|🔧|||cur_b1_062.usage
+жест|gesture|en gestus|il gesto|👋|||cur_b1_062.gesture
+кивок|nod|et nik|il cenno del capo|🙂|||cur_b1_062.nod
+шепіт|whisper|en hvisken|il sussurro|🤫|||cur_b1_062.whisper
+привітання|greeting|en hilsen|il saluto|🙋|||cur_b1_062.greeting
+рукостискання|handshake|et håndtryk|la stretta di mano|🤝|||cur_b1_062.handshake
+наголос|emphasis|en betoning|l'enfasi|❗|||cur_b1_062.emphasis
+підкреслювати|to emphasize|at understrege|sottolineare|🖍️|||cur_b1_062.to_emphasize
+зауважувати|to remark|at bemærke|osservare|💭|||cur_b1_062.to_remark
+доповідь|talk|et foredrag|il discorso|🎤|||cur_b1_062.talk
+переклад|translation|en oversættelse|la traduzione|🔤||tłumaczenie|a2x02_school.translation
+#cur_b1_063|Пояснюємо думку|💭|B1
+висловлювати|to express|at udtrykke|esprimere|💭|||cur_b1_063.to_express
+реагувати|to respond|at reagere|reagire|↩️|||cur_b1_063.to_respond
+переказувати|to retell|at genfortælle|raccontare di nuovo|🔁|||cur_b1_063.to_retell
+оповідати|to narrate|at berette|narrare|📖|||cur_b1_063.to_narrate
+ініціал|initial|et initial|l'iniziale|🔠|||cur_b1_063.initial
+повідомляти|to inform|at informere|informare|📢|||cur_b1_063.to_inform
+інформативний|informative|informativ|informativo|ℹ️|||cur_b1_063.informative
+наполягати|to insist|at insistere|insistere|✋|||cur_b1_063.to_insist
+пригадувати|to recall|at komme i tanke om|rammentare|🧠|||cur_b1_063.to_recall
+взаємодіяти|to interact|at interagere|interagire|🔄|||cur_b1_063.to_interact
+взаємодія|interaction|en interaktion|l'interazione|🤝|||cur_b1_063.interaction
+передавати (думку)|to convey|at formidle|trasmettere|📨||przekazywać|c1x01_verbs.to_convey
+#cur_b1_064|Наукові дослідження|🛡️|B1
+захід|measure|en foranstaltning|la misura|🛡️|||cur_b1_064.measure
+аналіз|analysis|en analyse|l'analisi|📊|||cur_b1_064.analysis
+аналізувати|to analyze|at analysere|analizzare|🔍|||cur_b1_064.to_analyze
+результат дослідження|finding|et forskningsresultat|il risultato della ricerca|📄|||cur_b1_064.finding
+експеримент|experiment|et eksperiment|l'esperimento|🧪||eksperyment|b2x02_science.experiment
+дослідник|researcher|en forsker|il ricercatore|👩‍🔬||badacz|b2x02_science.researcher
+відкриття (наукове)|discovery|en opdagelse|la scoperta|💡||odkrycie|b2x02_science.discovery
+лабораторія|laboratory|et laboratorium|il laboratorio|🥼||laboratorium|b2x02_science.laboratory
+теорія|theory|en teori|la teoria|📐||teoria|b2x02_science.theory
+висновок|conclusion|en konklusion|la conclusione|📝||wniosek|b2x02_science.conclusion
+вимірювати|to measure|at måle|misurare|📏||mierzyć|b2x02_science.to_measure
+прорив (у науці)|breakthrough|et gennembrud|la svolta|🚀||przełom|b2x02_science.breakthrough
+ретельний|thorough|grundig|approfondito|🔎||gruntowny|c1_science.thorough
+дані|data|data|i dati|📊||dane|b2x02_science.data
+мікроскоп|microscope|et mikroskop|il microscopio|🔬|microscope|mikroskop|b2x02_science.microscope
+#cur_b1_065|Хімія й фізика|⚛️|B1
+електрон|electron|en elektron|l'elettrone|⚛️|||cur_b1_065.electron
+ядро|nucleus|en kerne|il nucleo|🔴|||cur_b1_065.nucleus
+ядерний|nuclear|nuklear|nucleare|☢️|||cur_b1_065.nuclear
+атомний|atomic|atomar|atomico|⚛️|||cur_b1_065.atomic
+хімічний елемент|element|et grundstof|l'elemento|🧪|||cur_b1_065.element
+мінерал|mineral|et mineral|il minerale|💎|||cur_b1_065.mineral
+кисень|oxygen|ilt|l'ossigeno|🫁|||cur_b1_065.oxygen
+рідина|liquid|en væske|il liquido|💧|||cur_b1_065.liquid
+твердий|solid|fast|solido|🧊|||cur_b1_065.solid
+водяна пара|steam|damp|il vapore|♨️|||cur_b1_065.steam
+розчинятися|to dissolve|at opløse|sciogliere|🥄|||cur_b1_065.to_dissolve
+поглинати|to absorb|at absorbere|assorbire|🧽|||cur_b1_065.to_absorb
+молекула|molecule|et molekyle|la molecola|⚛️||cząsteczka|c2x02_science.molecule
+випромінювання|radiation|en stråling|la radiazione|☢️||promieniowanie|c2x02_science.radiation
+посольство|embassy|en ambassade|l'ambasciata|🏛️||ambasada|c2x01_diplomacy.embassy
+#cur_b1_066|Біологія|🧬|B1
+біологія|biology|biologi|la biologia|🧬|||cur_b1_066.biology
+біохімія|biochemistry|biokemi|la biochimica|⚗️|||cur_b1_066.biochemistry
+організм|organism|en organisme|l'organismo|🦠|||cur_b1_066.organism
+клітина|cell|en celle|la cellula|🔬|||cur_b1_066.cell
+ген|gene|et gen|il gene|🧬|||cur_b1_066.gene
+генетичний|genetic|genetisk|genetico|🧬|||cur_b1_066.genetic
+генетика|genetics|genetik|la genetica|🧪|||cur_b1_066.genetics
+генетично|genetically|genetisk|geneticamente|🧬|||cur_b1_066.genetically
+розмножуватися|to reproduce|at formere sig|riprodursi|🐇|||cur_b1_066.to_reproduce
+спостереження|observation|en observation|l'osservazione|👀|||cur_b1_066.observation
+спостерігати|to observe|at observere|osservare|🔭|||cur_b1_066.to_observe
+явище|phenomenon|et fænomen|il fenomeno|🌈|||cur_b1_066.phenomenon
+геологія|geology|geologi|la geologia|🪨|||cur_b1_066.geology
+#cur_b1_067|Космос|🔭|B1
+астроном|astronomer|en astronom|l'astronomo|🔭|||cur_b1_067.astronomer
+комета|comet|en komet|la cometa|☄️|comet||cur_b1_067.comet
+орбіта|orbit|et kredsløb|l'orbita|🛰️|||cur_b1_067.orbit
+всесвіт|universe|et univers|l'universo|🌌|||cur_b1_067.universe
+супутник|satellite|en satellit|il satellite|🛰️|satellite||cur_b1_067.satellite
+горизонт|horizon|en horisont|l'orizzonte|🌅|||cur_b1_067.horizon
+сфера|sphere|en kugle|la sfera|🔵|||cur_b1_067.sphere
+спіральний|spiral|spiralformet|a spirale|🌀|||cur_b1_067.spiral
+атмосфера|atmosphere|en atmosfære|l'atmosfera|🌍|||cur_b1_067.atmosphere
+поверхня|surface|en overflade|la superficie|🌕|||cur_b1_067.surface
+зовнішній|outer|ydre|esterno|🪐|||cur_b1_067.outer
+неосяжний|vast|vidtstrakt|vasto|🌌|||cur_b1_067.vast
+#cur_b1_068|Математика|🧮|B1
+математик|mathematician|en matematiker|il matematico|🧮|||cur_b1_068.mathematician
+арифметика|arithmetic|aritmetik|l'aritmetica|➕|||cur_b1_068.arithmetic
+обчислювати|to calculate|at beregne|calcolare|🧮|||cur_b1_068.to_calculate
+обчислення|calculation|en beregning|il calcolo|🔢|||cur_b1_068.calculation
+графік|graph|en graf|il grafico|📈|||cur_b1_068.graph
+схема|diagram|et diagram|lo schema|📊|||cur_b1_068.diagram
+діаметр|diameter|en diameter|il diametro|⭕|||cur_b1_068.diameter
+кут|angle|en vinkel|l'angolo|📐|||cur_b1_068.angle
+крива|curve|en kurve|la curva|〰️|||cur_b1_068.curve
+круглий|circular|rund|circolare|⭕|||cur_b1_068.circular
+крапка|dot|en prik|il punto|⚫|||cur_b1_068.dot
+формула|formula|en formel|la formula|🧪|||cur_b1_068.formula
+ймовірність|probability|en sandsynlighed|la probabilità|🎲|||cur_b1_068.probability
+пропорція|proportion|et forhold|la proporzione|⚖️|||cur_b1_068.proportion
+#cur_b1_069|Вимірювання|📏|B1
+вимірювання|measurement|en måling|la misurazione|📏|||cur_b1_069.measurement
+довжина|length|en længde|la lunghezza|📏|||cur_b1_069.length
+висота|height|en højde|l'altezza|📐|||cur_b1_069.height
+глибина|depth|en dybde|la profondità|🌊|||cur_b1_069.depth
+галон|gallon|en gallon|il gallone|🪣|||cur_b1_069.gallon
+шар|layer|et lag|lo strato|🍰|||cur_b1_069.layer
+об'єм|volume|et rumfang|il volume|🧊|||cur_b1_069.volume
+дюжина|dozen|et dusin|la dozzina|🥚|||cur_b1_069.dozen
+численний|numerous|talrig|numeroso|🔢|||cur_b1_069.numerous
+незліченний|countless|utallig|innumerevole|✨|||cur_b1_069.countless
+частковий|partial|delvis|parziale|◐|||cur_b1_069.partial
+підрахунок|count|en optælling|il conteggio|🔢|||cur_b1_069.count
+#cur_b1_070|Довкілля|🌦️|B1
+клімат|climate|et klima|il clima|🌦️||klimat|b1_environment.climate
+захищати|to protect|at beskytte|proteggere|🛡️|protect_,_to|chronić|b1_environment.to_protect
+переробка (вторсировини)|recycling|genbrug|il riciclaggio|♻️||recykling|b1x03_city.recycling
+марнувати|to waste|at spilde|sprecare|🗑️|||cur_b1_070.to_waste
+перероблений|recycled|genbrugt|riciclato|♻️|||cur_b1_070.recycled
+екологічний|environmental|miljømæssig|ambientale|🌍|||cur_b1_070.environmental
+захисник довкілля|environmentalist|en miljøforkæmper|l'ambientalista|🌱|||cur_b1_070.environmentalist
+марнотратний|wasteful|ødsel|sprecone|💸|||cur_b1_070.wasteful
+пальне|fuel|et brændstof|il carburante|⛽||paliwo|b2x03_energy.fuel
+відходи|waste|et affald|i rifiuti|🗑️|wheelie_bin|odpady|b2_environment.waste
+ресурс|resource|en ressource|la risorsa|⛏️||zasób|b2_environment.resource
+зберігати (природу)|to preserve|at bevare|preservare|🌳||chronić|b2_environment.to_preserve
+довкілля|environment|et miljø|l'ambiente|🌳|Earth|środowisko|b1_environment.environment
+забруднення|pollution|en forurening|l'inquinamento|🏭||zanieczyszczenie|b1_environment.pollution
+підвал (комора)|cellar|en kælder|la cantina|🏚️||piwnica|b1x02_housing.cellar
+#cur_b1_071|Екологія|🌿|B1
+екологія|ecology|økologi|l'ecologia|🌿|||cur_b1_071.ecology
+екосистема|ecosystem|et økosystem|l'ecosistema|🐟|||cur_b1_071.ecosystem
+ставити під загрозу|to endanger|at bringe i fare|mettere in pericolo|⚠️|||cur_b1_071.to_endanger
+вимерлий|extinct|uddød|estinto|🦖|||cur_b1_071.extinct
+вимирання|extinction|en udryddelse|l'estinzione|🦤|||cur_b1_071.extinction
+охорона природи|conservation|naturbeskyttelse|la tutela della natura|🌳|||cur_b1_071.conservation
+збереження|preservation|en bevarelse|la conservazione|🏛️|||cur_b1_071.preservation
+забруднювач|pollutant|et forurenende stof|l'inquinante|🏭|||cur_b1_071.pollutant
+теплиця|greenhouse|et drivhus|la serra|🪴|||cur_b1_071.greenhouse
+споживати|to consume|at forbruge|consumare|🔌|||cur_b1_071.to_consume
+споживання|consumption|et forbrug|il consumo|📉|||cur_b1_071.consumption
+вугілля|coal|kul|il carbone|⚫|||cur_b1_071.coal
+глобальний|global|global|globale|🌐|||cur_b1_071.global
+#cur_b1_072|Дика природа|🦌|B1
+дика природа|wildlife|et dyreliv|la fauna selvatica|🦌|||cur_b1_072.wildlife
+середовище існування|habitat|et levested|l'habitat|🏞️|||cur_b1_072.habitat
+тропічний ліс|rainforest|en regnskov|la foresta pluviale|🌳|||cur_b1_072.rainforest
+водно-болотне угіддя|wetland|et vådområde|la zona umida|🦆|||cur_b1_072.wetland
+джунглі|jungle|en jungle|la giungla|🐒|||cur_b1_072.jungle
+риф|reef|et rev|la barriera corallina|🪸|||cur_b1_072.reef
+водорості|seaweed|tang|le alghe|🌿|||cur_b1_072.seaweed
+морська вода|seawater|havvand|l'acqua di mare|🌊|||cur_b1_072.seawater
+морський|marine|marin|marino|🐠|||cur_b1_072.marine
+океан|ocean|et ocean|l'oceano|🌊|||cur_b1_072.ocean
+прибережний|coastal|kystnær|costiero|🏖️|||cur_b1_072.coastal
+приплив|tide|et tidevand|la marea|🌊|||cur_b1_072.tide
+обрив|cliff|en klint|la scogliera|🧗|||cur_b1_072.cliff
+#cur_b1_073|Краєвиди|🦆|B1
+ставок|pond|en dam|lo stagno|🦆|pond||cur_b1_073.pond
+струмок|stream|en bæk|il ruscello|💧|||cur_b1_073.stream
+багнюка|mud|et mudder|il fango|🟫|||cur_b1_073.mud
+мох|moss|et mos|il muschio|🌿|||cur_b1_073.moss
+схил|slope|en skråning|il pendio|⛰️|||cur_b1_073.slope
+крутий|steep|stejl|ripido|🧗|||cur_b1_073.steep
+вершина гори|mountaintop|en bjergtop|la cima|🏔️|||cur_b1_073.mountaintop
+вулкан|volcano|en vulkan|il vulcano|🌋|||cur_b1_073.volcano
+мілкий|shallow|lavvandet|poco profondo|🏊|shallow||cur_b1_073.shallow
+колода|log|en træstamme|il tronco|🪵|log||cur_b1_073.log
+край|edge|en kant|il bordo|📐|||cur_b1_073.edge
+хвилястий|rolling|bølgende|ondulato|⛰️|||cur_b1_073.rolling
+водоспад|waterfall|et vandfald|la cascata|💦||wodospad|a2x02_nature.waterfall
+печера|cave|en hule|la grotta|🦇||jaskinia|a2x02_nature.cave
+коридор (у квартирі)|hallway|en entré|l'ingresso|🚪||przedpokój|a2x02_home.hallway
+#cur_b1_074|Погода і клімат|💧|B1
+вологий (про повітря)|humid|fugtig|umido|💧||wilgotny|b1x03_weather.humid
+грім|thunder|torden|il tuono|🌩️||grzmot|b1x03_weather.thunder
+блискавка|lightning|et lyn|il fulmine|⚡||piorun|b1x03_weather.lightning
+морозний (дуже холодний)|freezing|iskold|gelido|🥶||mroźny|b1x03_weather.freezing
+м'який (про клімат)|mild|mild|mite|🌤️||łagodny|b1x03_weather.mild
+мороз|frost|frost|il gelo|❄️||mróz|b1x03_weather.frost
+штормовий|stormy|stormfuld|tempestoso|⛈️|||cur_b1_074.stormy
+імлистий|misty|diset|nebbioso|🌫️|||cur_b1_074.misty
+вогкий|damp|fugtig|umido|💧|||cur_b1_074.damp
+волога|moisture|fugt|l'umidità|💦|||cur_b1_074.moisture
+опади|rainfall|nedbør|le precipitazioni|🌧️|||cur_b1_074.rainfall
+снігова буря|snowstorm|en snestorm|la tempesta di neve|🌨️|||cur_b1_074.snowstorm
+торнадо|tornado|en tornado|il tornado|🌪️|||cur_b1_074.tornado
+тропічний|tropical|tropisk|tropicale|🌴|||cur_b1_074.tropical
+ураган|hurricane|en orkan|l'uragano|🌀||huragan|b1x03_weather.hurricane
+#cur_b1_075|Небо й світло|🌄|B1
+схід сонця|sunrise|en solopgang|l'alba|🌄|||cur_b1_075.sunrise
+захід сонця|sunset|en solnedgang|il tramonto|🌇|||cur_b1_075.sunset
+темрява|darkness|et mørke|il buio|🌑|||cur_b1_075.darkness
+затоплювати|to flood|at oversvømme|allagare|🌊|||cur_b1_075.to_flood
+блиск|sparkle|en funklen|lo scintillio|✨|||cur_b1_075.sparkle
+запалювати|to light|at tænde|accendere|🕯️|||cur_b1_075.to_light
+яскраво|brightly|klart|intensamente|☀️|||cur_b1_075.brightly
+блискучий|shiny|skinnende|lucido|✨|shiny||cur_b1_075.shiny
+побіжний погляд|glimpse|et glimt|lo scorcio|👀|||cur_b1_075.glimpse
+видимий|visible|synlig|visibile|👁️|||cur_b1_075.visible
+згасати|to fade|at blegne|svanire|🌫️|||cur_b1_075.to_fade
+оточувати|to surround|at omgive|circondare|⭕|||cur_b1_075.to_surround
+навколишній|surrounding|omkringliggende|circostante|🏘️|||cur_b1_075.surrounding
+#cur_b1_076|Тварини|🐜|B1
+мураха|ant|en myre|la formica|🐜|ant|mrówka|a2x02_animals.ant
+комар|mosquito|en myg|la zanzara|🦟||komar|a2x02_animals.mosquito
+кит|whale|en hval|la balena|🐋||wieloryb|a2x02_animals.whale
+папуга|parrot|en papegøje|il pappagallo|🦜|parrot|papuga|a2x02_animals.parrot
+людиноподібна мавпа|ape|en menneskeabe|la scimmia antropomorfa|🦧|||cur_b1_076.ape
+бобер|beaver|en bæver|il castoro|🦫|||cur_b1_076.beaver
+верблюд|camel|en kamel|il cammello|🐫|camel||cur_b1_076.camel
+горила|gorilla|en gorilla|il gorilla|🦍|gorilla||cur_b1_076.gorilla
+ворона|crow|en krage|la cornacchia|🐦‍⬛|||cur_b1_076.crow
+мул|mule|et muldyr|il mulo|🫏|||cur_b1_076.mule
+кошеня|kitten|en killing|il gattino|🐱|||cur_b1_076.kitten
+цуценя|puppy|en hvalp|il cucciolo|🐶|||cur_b1_076.puppy
+звір|beast|et bæst|la bestia|🐻|||cur_b1_076.beast
+білка|squirrel|et egern|lo scoiattolo|🐿️|squirrel_1a|wiewiórka|a2x02_animals.squirrel
+сова|owl|en ugle|il gufo|🦉|owl|sowa|a2x02_animals.owl
+#cur_b1_077|Ферма|🚜|B1
+фермерство|farming|landbrugsdrift|l'attività agricola|🚜|||cur_b1_077.farming
+орна земля|farmland|landbrugsjord|il terreno agricolo|🌾|||cur_b1_077.farmland
+сільське господарство|agriculture|et landbrug|l'agricoltura|🌾|||cur_b1_077.agriculture
+сільськогосподарський|agricultural|landbrugsmæssig|agricolo|🚜|||cur_b1_077.agricultural
+врожай|crop|en afgrøde|il raccolto|🌽|||cur_b1_077.crop
+вирощувати|to cultivate|at dyrke|coltivare|🌱|||cur_b1_077.to_cultivate
+худоба|cattle|kvæg|il bestiame|🐄|||cur_b1_077.cattle
+бик|bull|en tyr|il toro|🐂|||cur_b1_077.bull
+теля|calf|en kalv|il vitello|🐮|calf||cur_b1_077.calf
+ягня|lamb|et lam|l'agnello|🐑|lamb||cur_b1_077.lamb
+стадо|herd|en hjord|la mandria|🐄|||cur_b1_077.herd
+зграя|flock|en flok|lo stormo|🐦|||cur_b1_077.flock
+розводити|to breed|at opdrætte|allevare|🐖|||cur_b1_077.to_breed
+розведення|breeding|et opdræt|l'allevamento|🐓|||cur_b1_077.breeding
+годувати|to feed|at fodre|dare da mangiare|🥣|||cur_b1_077.to_feed
+#cur_b1_078|Звірі й рослини|🐝|B1
+рій|swarm|en sværm|lo sciame|🐝|||cur_b1_078.swarm
+клітка|cage|et bur|la gabbia|🐦|cage||cur_b1_078.cage
+хутро|fur|en pels|il pelo|🐻|||cur_b1_078.fur
+крило|wing|en vinge|l'ala|🪽|||cur_b1_078.wing
+ріг|horn|et horn|il corno|🦏|||cur_b1_078.horn
+кора|bark|en bark|la corteccia|🌳|||cur_b1_078.bark
+кусати|to bite|at bide|mordere|🦷|bite_,_to||cur_b1_078.to_bite
+полювання|hunt|en jagt|la caccia|🏹|||cur_b1_078.hunt
+полювати|to hunt|at jage|cacciare|🐺|hunt_,_to||cur_b1_078.to_hunt
+ромашка|daisy|en marguerit|la margherita|🌼|daisy||cur_b1_078.daisy
+клен|maple|en ahorn|l'acero|🍁|||cur_b1_078.maple
+пальма|palm|en palme|la palma|🌴|||cur_b1_078.palm
+нектар|nectar|en nektar|il nettare|🐝|||cur_b1_078.nectar
+сафарі|safari|en safari|il safari|🦒|||cur_b1_078.safari
+садити|to plant|at plante|piantare|🌱|||cur_b1_078.to_plant
+#cur_b1_079|Овочі й фрукти|🌱|B1
+органічний|organic|økologisk|biologico|🌱||ekologiczny|b1x01_nutrition.organic
+заморожений|frozen|frossen|surgelato|🧊||mrożony|b1x01_nutrition.frozen
+броколі|broccoli|en broccoli|i broccoli|🥦|broccoli||cur_b1_079.broccoli
+капуста|cabbage|et kålhoved|il cavolo|🥬|cabbage||cur_b1_079.cabbage
+листовий салат|lettuce|et salathoved|la lattuga|🥬|lettuce||cur_b1_079.lettuce
+шпинат|spinach|spinat|gli spinaci|🥬|spinach||cur_b1_079.spinach
+ананас|pineapple|en ananas|l'ananas|🍍|pineapple||cur_b1_079.pineapple
+малина|raspberry|et hindbær|il lampone|🍇|||cur_b1_079.raspberry
+арахіс|peanut|en jordnød|l'arachide|🥜|peanut||cur_b1_079.peanut
+імбир|ginger|ingefær|lo zenzero|🫚|||cur_b1_079.ginger
+стиглий|ripe|moden|maturo|🍑|||cur_b1_079.ripe
+гнилий|rotten|rådden|marcio|🍎|||cur_b1_079.rotten
+соковитий|juicy|saftig|succoso|🍊|||cur_b1_079.juicy
+калорія|calorie|en kalorie|la caloria|🔥||kaloria|b1x01_nutrition.calorie
+веган|vegan|en veganer|il vegano|🥦||weganin|b1x01_nutrition.vegan
+#cur_b1_080|М'ясо й риба|🥓|B1
+бекон|bacon|bacon|la pancetta|🥓|bacon||cur_b1_080.bacon
+свинина|pork|svinekød|la carne di maiale|🐖|||cur_b1_080.pork
+лосось|salmon|en laks|il salmone|🐟|||cur_b1_080.salmon
+креветка|shrimp|en reje|il gambero|🦐|shrimp||cur_b1_080.shrimp
+тунець|tuna|en tun|il tonno|🐟|tuna||cur_b1_080.tuna
+тріска|cod|en torsk|il merluzzo|🐟|||cur_b1_080.cod
+гірчиця|mustard|sennep|la senape|🌭|||cur_b1_080.mustard
+підлива|gravy|en sovs|il sugo|🍲|||cur_b1_080.gravy
+гриль|grill|en grill|la griglia|🔥|||cur_b1_080.grill
+консервований|canned|konserveret|in scatola|🥫|||cur_b1_080.canned
+буханець|loaf|et brød|la pagnotta|🍞|||cur_b1_080.loaf
+#cur_b1_081|Кухня|🍳|B1
+сковорода|frying pan|en pande|la padella|🍳|frying_pan|patelnia|a1x01_kitchen.frying_pan
+каструля|saucepan|en gryde|la pentola|🍲|saucepan|garnek|a1x01_kitchen.saucepan
+чайник|kettle|en elkedel|il bollitore|🫖|kettle|czajnik|a1x01_kitchen.kettle
+помішувати|to stir|at røre|mescolare|🥄|stir_,_to|mieszać|a2x02_kitchen.to_stir
+розтоплювати|to melt|at smelte|sciogliere|🧈|melt_,_to|roztapiać|a2x02_kitchen.to_melt
+підігрівати|to heat|at varme|scaldare|🔥|heat_,_to|podgrzewać|a2x02_kitchen.to_heat
+морозильна камера|freezer|en fryser|il congelatore|🧊|freezer|zamrażarka|a2x02_kitchen.freezer
+блюдце|saucer|en underkop|il piattino|☕|saucer||cur_b1_081.saucer
+банка|jar|en krukke|il barattolo|🫙|jar||cur_b1_081.jar
+глечик|jug|en kande|la brocca|🫗|||cur_b1_081.jug
+картонна упаковка|carton|en karton|il cartone|🥛|carton_1||cur_b1_081.carton
+миска для змішування|mixing bowl|en røreskål|la terrina|🥣|||cur_b1_081.mixing_bowl
+рецепт (страви)|recipe|en opskrift|la ricetta|📖|recipe|przepis|a1x01_kitchen.recipe
+дрібно нарізати|to chop|at hakke|tritare|🔪|chop_,_to|siekać|a2x02_kitchen.to_chop
+нарізати скибочками|to slice|at skære i skiver|affettare|🍞||kroić w plasterki|a2x02_kitchen.to_slice
+#cur_b1_082|Готуємо|🥔|B1
+розминати|to mash|at mose|schiacciare|🥔|mash_,_to||cur_b1_082.to_mash
+змішувати|to blend|at blande|mescolare|🥤|||cur_b1_082.to_blend
+начинка|filling|et fyld|il ripieno|🥟|||cur_b1_082.filling
+пиріг|pie|en tærte|la torta|🥧|pie||cur_b1_082.pie
+попкорн|popcorn|popcorn|i popcorn|🍿|||cur_b1_082.popcorn
+інгредієнт|ingredient|en ingrediens|l'ingrediente|🧂|||cur_b1_082.ingredient
+смак|flavor|en smag|il sapore|🍦|||cur_b1_082.flavor
+спеція|spice|et krydderi|la spezia|🌶️|||cur_b1_082.spice
+кислий|sour|sur|aspro|🍋|sour||cur_b1_082.sour
+гіркий|bitter|bitter|amaro|☕|||cur_b1_082.bitter
+почуття смаку|taste|en smagssans|il gusto|👅|||cur_b1_082.taste
+жирний|oily|fedtet|oleoso|🫒|||cur_b1_082.oily
+гострий (на смак)|spicy|stærk|piccante|🌶️|spicy|ostry|a2x01_restaurant.spicy
+#cur_b1_083|Застілля|🍗|B1
+бенкет|feast|et festmåltid|il banchetto|🍗|||cur_b1_083.feast
+апетит|appetite|en appetit|l'appetito|🍽️|||cur_b1_083.appetite
+поживний|nutritious|nærende|nutriente|🥗|||cur_b1_083.nutritious
+ситний|hearty|mættende|sostanzioso|🍲|||cur_b1_083.hearty
+частування|refreshments|forfriskninger|i rinfreschi|🥤|||cur_b1_083.refreshments
+ласощі|treat|en godbid|il dolcetto|🍬|||cur_b1_083.treat
+жуйка|chewing gum|et tyggegummi|la gomma da masticare|🍬|chewing_gum||cur_b1_083.chewing_gum
+алкоголь|alcohol|alkohol|l'alcol|🍷|||cur_b1_083.alcohol
+алкогольний|alcoholic|alkoholisk|alcolico|🍺|||cur_b1_083.alcoholic
+п'яний|drunk|fuld|ubriaco|🥴|||cur_b1_083.drunk
+паб|pub|en pub|il pub|🍺|||cur_b1_083.pub
+святковий|festive|festlig|festivo|🎉|||cur_b1_083.festive
+#cur_b1_084|Мистецтво|🎨|B1
+митець|artist|en kunstner|l'artista|🎨|||cur_b1_084.artist
+художній|artistic|kunstnerisk|artistico|🖌️|||cur_b1_084.artistic
+ремесло|craft|et håndværk|l'artigianato|🧶|||cur_b1_084.craft
+гончарство|pottery|keramik|la ceramica|🏺|pottery||cur_b1_084.pottery
+творець|creator|en skaber|il creatore|✍️|||cur_b1_084.creator
+культурний|cultural|kulturel|culturale|🎭|||cur_b1_084.cultural
+скульптура|sculpture|en skulptur|la scultura|🗿||rzeźba|b2x02_arts.sculpture
+оркестр|orchestra|et orkester|l'orchestra|🎻||orkiestra|b2x02_arts.orchestra
+оплески|applause|et bifald|l'applauso|👏||oklaski|b2x02_arts.applause
+критик|critic|en anmelder|il critico|🧐||krytyk|b2x02_arts.critic
+поет|poet|en digter|il poeta|✒️||poeta|b2x02_arts.poet
+аплодувати|to applaud|at klappe|applaudire|👏|clap_hands_,_to|bić brawo|b1m_media.to_applaud
+абстрактний|abstract|abstrakt|astratto|🌀||abstrakcyjny|c1m_arts.abstract
+вірш|poem|et digt|la poesia|📜||wiersz|b2x02_arts.poem
+#cur_b1_085|Реклама й зірки|📢|B1
+рекламувати|to advertise|at reklamere|pubblicizzare|📢|||cur_b1_085.to_advertise
+кумир|idol|et idol|l'idolo|🌟|||cur_b1_085.idol
+хіт|hit|et hit|il successo|🎵|||cur_b1_085.hit
+грати головну роль|to star|at spille hovedrollen|essere protagonista|🎬|||cur_b1_085.to_star
+студія|studio|et studie|lo studio|🎙️|||cur_b1_085.studio
+продюсер|producer|en producer|il produttore|🎬|||cur_b1_085.producer
+знаменитість|celebrity|en kendis|la celebrità|🌟||celebryta|b2x02_media.celebrity
+ток-шоу|talk show|et talkshow|il talk show|🎙️||talk-show|b2x02_media.talk_show
+рекламний ролик|commercial|en reklamefilm|lo spot pubblicitario|📺||spot reklamowy|b2x03_media.commercial
+рекламне гасло|slogan|et slogan|lo slogan|🗯️||hasło reklamowe|b2x03_media.slogan
+логотип|logo|et logo|il logo|🔰||logo|b2x03_media.logo
+субтитри|subtitles|undertekster|i sottotitoli|💬||napisy|b2x02_media.subtitles
+трейлер|trailer|en trailer|il trailer|🎥||zwiastun|b2x02_media.trailer
+глядач|viewer|en seer|lo spettatore|👀||widz|b2x02_media.viewer
+захопливий|entertaining|underholdende|divertente|😄||zajmujący|b2x02_media.entertaining
+#cur_b1_086|Кіно й серіали|🍷|B1
+антракт|interval|en pause|l'intervallo|🍷||antrakt|b1x03_culture.interval
+документальний фільм|documentary|en dokumentarfilm|il documentario|🎥||film dokumentalny|b1x03_culture.documentary
+акторка|actress|en skuespillerinde|l'attrice|🎭|||cur_b1_086.actress
+анімаційний|animated|animeret|animato|🎞️|||cur_b1_086.animated
+анімація|animation|en animation|l'animazione|🎨|||cur_b1_086.animation
+знімати|to film|at filme|filmare|🎥|||cur_b1_086.to_film
+мильна опера|soap opera|en sæbeopera|la soap opera|📺|||cur_b1_086.soap_opera
+трилер|thriller|en thriller|il thriller|🔪|||cur_b1_086.thriller
+наукова фантастика|science fiction|science fiction|la fantascienza|🚀|||cur_b1_086.science_fiction
+місце дії|setting|en ramme|l'ambientazione|🏞️|||cur_b1_086.setting
+фентезі|fantasy|fantasy|il fantasy|🐉|||cur_b1_086.fantasy
+чудовисько|monster|et monster|il mostro|👹|monster||cur_b1_086.monster
+налаштування|settings|indstillinger|le impostazioni|⚙️||ustawienia|b2x02_tech.settings
+балет|ballet|en ballet|il balletto|🩰||balet|b1x03_culture.ballet
+опера|opera|en opera|l'opera|🎼||opera|b1x03_culture.opera
+#cur_b1_087|Музика й сцена|🎶|B1
+хор|choir|et kor|il coro|🎶||chór|a2x02_sport.choir
+джаз|jazz|jazz|il jazz|🎷|||cur_b1_087.jazz
+флейта|flute|en fløjte|il flauto|🎶|flute||cur_b1_087.flute
+труба|trumpet|en trompet|la tromba|🎺|||cur_b1_087.trumpet
+гітарист|guitarist|en guitarist|il chitarrista|🎸|||cur_b1_087.guitarist
+діджей|DJ|en dj|il dj|🎧|||cur_b1_087.dj
+читати реп|to rap|at rappe|rappare|🎤|||cur_b1_087.to_rap
+фолк|folk|folkemusik|la musica folk|🪕|||cur_b1_087.folk
+писати музику|to compose|at komponere|comporre|🎼|||cur_b1_087.to_compose
+виконавець|performer|en optrædende|l'interprete|🎭|||cur_b1_087.performer
+на сцені|onstage|på scenen|sul palco|🎙️|||cur_b1_087.onstage
+наживо|live|live|dal vivo|🔴|||cur_b1_087.live
+запис|recording|en optagelse|la registrazione|💿|||cur_b1_087.recording
+артист|entertainer|en entertainer|l'intrattenitore|🤹|||cur_b1_087.entertainer
+розважати|to entertain|at underholde|intrattenere|🎉|||cur_b1_087.to_entertain
+#cur_b1_088|Книжки|📚|B1
+література|literature|en litteratur|la letteratura|📚|||cur_b1_088.literature
+літературний|literary|litterær|letterario|📖|||cur_b1_088.literary
+романіст|novelist|en romanforfatter|il romanziere|✍️|||cur_b1_088.novelist
+поезія|poetry|en poesi|la poesia|📜|||cur_b1_088.poetry
+біографія|biography|en biografi|la biografia|📘|||cur_b1_088.biography
+казка|tale|et eventyr|la fiaba|🧚|||cur_b1_088.tale
+оповідач|storyteller|en fortæller|il narratore|🗣️|||cur_b1_088.storyteller
+міф|myth|en myte|il mito|🏛️|||cur_b1_088.myth
+видання|edition|en udgave|l'edizione|📕|||cur_b1_088.edition
+видавництво|publisher|et forlag|la casa editrice|🏢|||cur_b1_088.publisher
+часопис|journal|et tidsskrift|la rivista|📰|||cur_b1_088.journal
+авторське право|copyright|en ophavsret|il diritto d'autore|©️|||cur_b1_088.copyright
+#cur_b1_089|Розваги|🌱|B1
+садівництво|gardening|havearbejde|il giardinaggio|🌱||ogrodnictwo|a2x02_sport.gardening
+цирк|circus|et cirkus|il circo|🎪|||cur_b1_089.circus
+фокусник|magician|en tryllekunstner|il prestigiatore|🎩|||cur_b1_089.magician
+магічний|magical|magisk|magico|✨|||cur_b1_089.magical
+комік|comedian|en komiker|il comico|🎤|||cur_b1_089.comedian
+нічне життя|nightlife|et natteliv|la vita notturna|🌃|||cur_b1_089.nightlife
+приз|prize|en præmie|il premio|🏆|||cur_b1_089.prize
+нагороджувати|to award|at tildele|premiare|🥇|||cur_b1_089.to_award
+в'язати|to knit|at strikke|lavorare a maglia|🧶|knit_,_to||cur_b1_089.to_knit
+кумедний|amusing|morsom|divertente|😄|||cur_b1_089.amusing
+#cur_b1_090|Стосунки|💑|B1
+зустрічатися (з кимось)|to date|at date|frequentare|💑||spotykać się|b1x02_relationships.to_date
+поважати|to respect|at respektere|rispettare|🙏||szanować|b1x02_relationships.to_respect
+освідчуватися|to propose|at fri|fare la proposta di matrimonio|💍||oświadczać się|b1x02_relationships.to_propose
+повага|respect|en respekt|il rispetto|🤝|||cur_b1_090.respect
+вірність|loyalty|en loyalitet|la lealtà|🐕|||cur_b1_090.loyalty
+підтримувати (емоційно)|to support|at støtte|sostenere|🫂||wspierać|b2m_relationships.to_support
+ревнивий|jealous|jaloux|geloso|😤|jealous_man|zazdrosny|b2m_relationships.jealous
+вірний (партнерові)|faithful|trofast|fedele|💞||wierny|b2m_relationships.faithful
+знайомий (людина)|acquaintance|en bekendt|il conoscente|🙋||znajomy|b2m_relationships.acquaintance
+непорозуміння|misunderstanding|en misforståelse|il malinteso|🤔||nieporozumienie|b2m_relationships.misunderstanding
+взаємний|mutual|gensidig|reciproco|🔁||wzajemny|b2m_relationships.mutual
+прощати|to forgive|at tilgive|perdonare|🙏||wybaczać|b2m_relationships.to_forgive
+вірний|loyal|loyal|leale|🐕||wierny|b2x03_social.loyal
+який підтримує|supportive|støttende|solidale|🤗||wspierający|b2x03_social.supportive
+довіра|trust|tillid|la fiducia|🤝||zaufanie|b1x02_relationships.trust
+#cur_b1_091|Знайомства й побачення|💑|B1
+знайомства|dating|dating|gli incontri|💑|||cur_b1_091.dating
+закоханість|crush|en forelskelse|la cotta|😍|||cur_b1_091.crush
+супутник|companion|en ledsager|il compagno|🧑‍🤝‍🧑|||cur_b1_091.companion
+чувак|dude|en gut|il tipo|😎|||cur_b1_091.dude
+прізвисько|nickname|et kaldenavn|il soprannome|🏷️|||cur_b1_091.nickname
+цілувати|to kiss|at kysse|baciare|💋|||cur_b1_091.to_kiss
+комплімент|compliment|en kompliment|il complimento|💐|||cur_b1_091.compliment
+плітки|gossip|sladder|il pettegolezzo|🗨️|||cur_b1_091.gossip
+прив'язаний|fond|glad for|affezionato|💞|||cur_b1_091.fond
+уподобання|fondness|en forkærlighed|la predilezione|🤗|||cur_b1_091.fondness
+розігрувати|to kid|at lave sjov|prendere in giro|😜|||cur_b1_091.to_kid
+жартувати|to joke|at spøge|scherzare|😂|||cur_b1_091.to_joke
+#cur_b1_092|Весілля й діти|🤰|B1
+вагітна|pregnant|gravid|incinta|🤰||w ciąży|b1x02_family.pregnant
+усиновлювати|to adopt|at adoptere|adottare|💞||adoptować|b1x02_family.to_adopt
+заручений|engaged|forlovet|fidanzato|💍|||cur_b1_092.engaged
+шлюб|marriage|et ægteskab|il matrimonio|💒|||cur_b1_092.marriage
+наречений|groom|en brudgom|lo sposo|🤵|||cur_b1_092.groom
+медовий місяць|honeymoon|en bryllupsrejse|la luna di miele|🌙|||cur_b1_092.honeymoon
+церемонія|ceremony|en ceremoni|la cerimonia|🎊|||cur_b1_092.ceremony
+розлучений|divorced|fraskilt|divorziato|💔|||cur_b1_092.divorced
+розставання|separation|en separation|la separazione|↔️|||cur_b1_092.separation
+новонароджений|newborn|nyfødt|neonato|👶|||cur_b1_092.newborn
+підгузок|diaper|en ble|il pannolino|🧷|||cur_b1_092.diaper
+доглядати дитину|to babysit|at passe børn|fare da babysitter|🍼|||cur_b1_092.to_babysit
+батьківський|parental|forældrenes|genitoriale|👪|||cur_b1_092.parental
+брати й сестри|siblings|søskende|i fratelli|👫||rodzeństwo|b1x02_family.siblings
+теща (свекруха)|mother-in-law|en svigermor|la suocera|👵||teściowa|b1x02_family.mother_in_law
+#cur_b1_093|Родина|🔗|B1
+зв'язок|relation|en relation|la relazione|🔗|||cur_b1_093.relation
+джентльмен|gentleman|en gentleman|il gentiluomo|🎩|||cur_b1_093.gentleman
+схожість|likeness|en lighed|la somiglianza|👯|||cur_b1_093.likeness
+бути схожим|to resemble|at ligne|assomigliare|🪞|||cur_b1_093.to_resemble
+дорожити|to cherish|at værne om|custodire|💝|||cur_b1_093.to_cherish
+відданість|devotion|en hengivelse|la dedizione|🙏|||cur_b1_093.devotion
+прихильність|affection|en hengivenhed|l'affetto|🥰|||cur_b1_093.affection
+з любов'ю|lovingly|kærligt|amorevolmente|❤️|||cur_b1_093.lovingly
+братерство|brotherhood|et broderskab|la fratellanza|🤜|||cur_b1_093.brotherhood
+племінник|nephew|en nevø|il nipote|👦||siostrzeniec|a1x02_family.nephew
+племінниця|niece|en niece|la nipote|👧||bratanica|a1x02_family.niece
+черга|queue|en kø|la fila|🧍||kolejka|a1x01_shop.queue
+візок (у магазині)|trolley|en indkøbsvogn|il carrello|🛒||wózek sklepowy|a1x02_shopping.trolley
+тераса|terrace|en terrasse|la terrazza|🪴||taras|a1x02_house.terrace
+батарея (опалення)|radiator|en radiator|il termosifone|♨️||kaloryfer|a1x02_house.radiator
+#cur_b1_094|Прощання|⚰️|B1
+похорон|funeral|en begravelse|il funerale|⚰️|||cur_b1_094.funeral
+труна|coffin|en kiste|la bara|⚱️|||cur_b1_094.coffin
+могила|grave|en grav|la tomba|🪦|||cur_b1_094.grave
+оплакувати|to mourn|at sørge|piangere|😢|||cur_b1_094.to_mourn
+прощання|farewell|et farvel|l'addio|👋|||cur_b1_094.farewell
+вшанування пам'яті|remembrance|et minde|il ricordo|🕯️|||cur_b1_094.remembrance
+втрата|loss|et tab|la perdita|🥀|||cur_b1_094.loss
+на все життя|lifelong|livslang|di una vita|♾️|||cur_b1_094.lifelong
+тривалий|lasting|varig|duraturo|⏳|||cur_b1_094.lasting
+пам'ятний|memorable|mindeværdig|memorabile|🌟|||cur_b1_094.memorable
+коханий|beloved|elsket|amato|💗|||cur_b1_094.beloved
+#cur_b1_095|Почуття|❤️|B1
+емоція|emotion|en følelse|l'emozione|❤️||emocja|b1x02_opinions.emotion
+роздратований|annoyed|irriteret|infastidito|😒||zirytowany|b1x02_opinions.annoyed
+збентежений (ніяковий)|embarrassed|flov|imbarazzato|😳||zawstydzony|b1x02_opinions.embarrassed
+присоромлений|ashamed|skamfuld|mortificato|😳|||cur_b1_095.ashamed
+незручний|awkward|akavet|imbarazzante|😬|||cur_b1_095.awkward
+вражений|amazed|forbløffet|stupito|😮|||cur_b1_095.amazed
+у захваті|delighted|henrykt|felicissimo|😁|||cur_b1_095.delighted
+пригнічений|depressed|deprimeret|depresso|😞|||cur_b1_095.depressed
+роздосадуваний|frustrated|frustreret|frustrato|😤|||cur_b1_095.frustrated
+шокований|shocked|chokeret|scioccato|😱|||cur_b1_095.shocked
+нажаханий|terrified|skrækslagen|terrorizzato|😨|||cur_b1_095.terrified
+безмежно щасливий|overjoyed|ovenud lykkelig|euforico|🥳|||cur_b1_095.overjoyed
+жалюгідний|miserable|elendig|avvilito|😩|||cur_b1_095.miserable
+#cur_b1_096|Емоції й характер|🎁|B1
+щедрий|generous|gavmild|generoso|🎁|give_,_to|hojny|b2_character.generous
+надійний (про людину)|reliable|pålidelig|affidabile|🛡️||niezawodny|b2_character.reliable
+чесність|honesty|en ærlighed|l'onestà|😇||uczciwość|b2_character.honesty
+терпіння|patience|en tålmodighed|la pazienza|⏳|wait_,_to|cierpliwość|b2_character.patience
+тривога (почуття)|anxiety|en angst|l'ansia|😰|worried_lady|niepokój|b2_character.anxiety
+спокійний|calm|rolig|calmo|😌||spokojny|a1x01_feelings.calm
+гордий|proud|stolt|orgoglioso|🦚||dumny|b1_feelings.proud
+чесний|honest|ærlig|onesto|😇||uczciwy|b1_feelings.honest
+сповнений ентузіазму|enthusiastic|entusiastisk|entusiasta|🤩||pełen entuzjazmu|b2x03_feelings.enthusiastic
+задоволений (життям)|content|tilfreds|appagato|😌||zadowolony|b2x03_feelings.content
+впертий|stubborn|stædig|testardo|🐐||uparty|b2x03_feelings.stubborn
+вдячність|gratitude|en taknemmelighed|la gratitudine|🙏||wdzięczność|c2x02_emotions.gratitude
+сором|shame|en skam|la vergogna|🙈||wstyd|c2x02_emotions.shame
+сором'язливий|shy|genert|timido|🙈||nieśmiały|b1_feelings.shy
+незважаючи на|despite|på trods af|nonostante|🚧||mimo|b1_connectors.despite
+#cur_b1_097|Страх і напруга|😠|B1
+гнів|anger|en vrede|la rabbia|😠|||cur_b1_097.anger
+лють|rage|et raseri|la furia|🤬|||cur_b1_097.rage
+ненависть|hatred|et had|l'odio|💢|||cur_b1_097.hatred
+переляк|fright|en forskrækkelse|lo spavento|😱|||cur_b1_097.fright
+жахати|to horrify|at forfærde|inorridire|😨|||cur_b1_097.to_horrify
+верещати|to scream|at skrige|urlare|🗣️|||cur_b1_097.to_scream
+тремтіти|to tremble|at skælve|tremare|🫨|||cur_b1_097.to_tremble
+дрижати|to shiver|at ryste|rabbrividire|🥶|||cur_b1_097.to_shiver
+напруга|tension|en spænding|la tensione|⚡|||cur_b1_097.tension
+нервозність|nervousness|en nervøsitet|il nervosismo|😰|||cur_b1_097.nervousness
+#cur_b1_098|Радість і смуток|🤩|B1
+захват|delight|en fryd|la gioia|🤩|||cur_b1_098.delight
+чудесний|delightful|henrivende|incantevole|🌸|||cur_b1_098.delightful
+насолода|enjoyment|en nydelse|il piacere|😋|||cur_b1_098.enjoyment
+радісне хвилювання|excitement|en begejstring|l'emozione|🎢|||cur_b1_098.excitement
+схвильовано|excitedly|begejstret|con entusiasmo|🙌|||cur_b1_098.excitedly
+сміх|laughter|en latter|le risate|😂|||cur_b1_098.laughter
+хихикання|giggle|et fnis|la risatina|🤭|||cur_b1_098.giggle
+смуток|sadness|en tristhed|la tristezza|😢|||cur_b1_098.sadness
+страждання|misery|en elendighed|la sofferenza|😩|||cur_b1_098.misery
+зітхання|sigh|et suk|il sospiro|😮‍💨|||cur_b1_098.sigh
+рум'янець|blush|en rødme|il rossore|☺️|||cur_b1_098.blush
+розчарування|disappointment|en skuffelse|la delusione|😞|||cur_b1_098.disappointment
+розчаровувати|to disappoint|at skuffe|deludere|😔|||cur_b1_098.to_disappoint
+смішок|chuckle|et kluk|il risolino|😏|||cur_b1_098.chuckle
+#cur_b1_099|Нудьга й роздратування|😒|B1
+роздратування|annoyance|en irritation|il fastidio|😒|||cur_b1_099.annoyance
+набридати|to bore|at kede|annoiare|🥱|||cur_b1_099.to_bore
+нудьга|boredom|en kedsomhed|la noia|😴|||cur_b1_099.boredom
+клопіт|bother|et besvær|il disturbo|😓|||cur_b1_099.bother
+метушня|fuss|et postyr|la scenata|🌀|||cur_b1_099.fuss
+незацікавлений|uninterested|uinteresseret|disinteressato|😑|||cur_b1_099.uninterested
+безпорадний|helpless|hjælpeløs|indifeso|🆘|||cur_b1_099.helpless
+безнадійний|hopeless|håbløs|senza speranza|🕳️|||cur_b1_099.hopeless
+сповнений надії|hopeful|håbefuld|speranzoso|🌈|||cur_b1_099.hopeful
+відчайдушний|desperate|desperat|disperato|😫|||cur_b1_099.desperate
+прагнення|desire|en lyst|il desiderio|🎯|||cur_b1_099.desire
+пристрасть|passion|en lidenskab|la passione|🔥|||cur_b1_099.passion
+#cur_b1_100|Тривога і спокій|🙈|B1
+ганебний|shameful|skammelig|vergognoso|🙈|||cur_b1_100.shameful
+бентежити|to embarrass|at gøre flov|mettere in imbarazzo|😳|||cur_b1_100.to_embarrass
+збентеження|embarrassment|en forlegenhed|l'imbarazzo|😖|||cur_b1_100.embarrassment
+тривожно|anxiously|ængsteligt|ansiosamente|😟|||cur_b1_100.anxiously
+спокій|calmness|en rolighed|la calma|😌|||cur_b1_100.calmness
+заспокоювати|to soothe|at berolige|calmare|🫂|||cur_b1_100.to_soothe
+втіха|comfort|en trøst|il conforto|🤗|||cur_b1_100.comfort
+тепло|warmth|en varme|il calore|☀️|||cur_b1_100.warmth
+емоційно|emotionally|følelsesmæssigt|emotivamente|💭|||cur_b1_100.emotionally
+переповнювати|to overwhelm|at overvælde|sopraffare|🌊|||cur_b1_100.to_overwhelm
+приголомшливий|overwhelming|overvældende|travolgente|🌋|||cur_b1_100.overwhelming
+провина|guilt|en skyld|la colpa|😞||wina|c2x02_ethics.guilt
+#cur_b1_101|Сварки й примирення|🙅|B1
+незгода|disagreement|en uenighed|il disaccordo|🙅|||cur_b1_101.disagreement
+вибачати|to excuse|at undskylde|scusare|🙏|||cur_b1_101.to_excuse
+вітати|to congratulate|at lykønske|congratularsi|🎉|||cur_b1_101.to_congratulate
+похвала|praise|en ros|l'elogio|👏|||cur_b1_101.praise
+сварити|to scold|at skælde ud|sgridare|😠|||cur_b1_101.to_scold
+кричати|to shout|at råbe|gridare|📢|shout_,_to||cur_b1_101.to_shout
+лаятися|to swear|at bande|dire parolacce|🤐|||cur_b1_101.to_swear
+неввічливо|rudely|uhøfligt|maleducatamente|😤|||cur_b1_101.rudely
+ввічливо|politely|høfligt|educatamente|🙂|||cur_b1_101.politely
+образливий|offensive|stødende|offensivo|🚫|||cur_b1_101.offensive
+#cur_b1_102|Риси характеру|🚀|B1
+амбітний|ambitious|ambitiøs|ambizioso|🚀||ambitny|b1x03_personality.ambitious
+егоїстичний|selfish|egoistisk|egoista|🙄||egoistyczny|b1x03_personality.selfish
+життєрадісний|cheerful|munter|allegro|😄||pogodny|b1x03_personality.cheerful
+допитливий|curious|nysgerrig|curioso|🧐||ciekawski|b1x03_personality.curious
+необачний|careless|skødesløs|sbadato|🤦||nieostrożny|b1x03_personality.careless
+працьовитий|hard-working|flittig|laborioso|💪||pracowity|b1x03_personality.hard_working
+балакучий|talkative|snakkesalig|chiacchierone|🗣️||gadatliwy|b1x03_personality.talkative
+неохайний|messy|rodet|disordinato|🌀||niechlujny|b1x03_personality.messy
+недбалість|carelessness|en skødesløshed|la negligenza|🤷|||cur_b1_102.carelessness
+недбало|carelessly|skødesløst|sbadatamente|🙃|||cur_b1_102.carelessly
+обачний|cautious|varsom|cauto|🚧|||cur_b1_102.cautious
+чутливий|sensitive|følsom|sensibile|🥺||wrażliwy|b1x03_personality.sensitive
+легкий у спілкуванні|easy-going|afslappet|alla mano|😌||łatwy w obyciu|b1x03_personality.easy_going
+розсудливий|sensible|fornuftig|assennato|🧠||rozsądny|b1x03_personality.sensible
+оптимістичний|optimistic|optimistisk|ottimista|🌈||optymistyczny|b1x03_personality.optimistic
+#cur_b1_103|Зовнішність|➰|B1
+кучерявий|curly|krøllet|riccio|➰|curly|kręcony|b1x03_appearance.curly
+лисий|bald|skaldet|calvo|👨‍🦲||łysy|b1x03_appearance.bald
+середнього віку|middle-aged|midaldrende|di mezza età|🧑‍🦳||w średnim wieku|b1x03_appearance.middle_aged
+блідий|pale|bleg|pallido|😶||blady|b1x03_appearance.pale
+розкішний|gorgeous|pragtfuld|splendido|💃|||cur_b1_103.gorgeous
+худорлявий|lean|mager|asciutto|🏃|||cur_b1_103.lean
+середнього розміру|medium|mellemstor|medio|📏|||cur_b1_103.medium
+добре вдягнений|well-dressed|velklædt|ben vestito|👔|||cur_b1_103.well_dressed
+стильний|stylish|stilfuld|elegante|🕶️|||cur_b1_103.stylish
+чарівний|adorable|bedårende|adorabile|🐶|||cur_b1_103.adorable
+несмачний (про стиль)|tasteless|smagløs|pacchiano|🦩||niegustowny|c2x01_style.tasteless
+граційний|graceful|yndefuld|aggraziato|🩰||pełen gracji|c2x01_style.graceful
+вуса|moustache|et overskæg|i baffi|🥸||wąsy|b1x03_appearance.moustache
+татуювання|tattoo|en tatovering|il tatuaggio|🖋️|tattoo|tatuaż|b1x03_appearance.tattoo
+засмаглий|tanned|solbrun|abbronzato|🏖️||opalony|b1x03_appearance.tanned
+#cur_b1_104|Сміливість|🦁|B1
+мужність|courage|et mod|il coraggio|🦁|||cur_b1_104.courage
+сміливо|bravely|modigt|coraggiosamente|🛡️|||cur_b1_104.bravely
+відважний|bold|dristig|audace|⚡|||cur_b1_104.bold
+відважно|boldly|dristigt|audacemente|🚀|||cur_b1_104.boldly
+безстрашний|unafraid|frygtløs|impavido|🦸|||cur_b1_104.unafraid
+впевненість|confidence|en selvtillid|la sicurezza|💪|||cur_b1_104.confidence
+рішучість|determination|en beslutsomhed|la determinazione|🏁|||cur_b1_104.determination
+охочий|eager|ivrig|desideroso|🙋|||cur_b1_104.eager
+запал|eagerness|en iver|lo zelo|🔥|||cur_b1_104.eagerness
+ентузіазм|enthusiasm|en entusiasme|l'entusiasmo|🤩|||cur_b1_104.enthusiasm
+ентузіаст|enthusiast|en entusiast|l'appassionato|🧗|||cur_b1_104.enthusiast
+готовність|willingness|en villighed|la disponibilità|✋|||cur_b1_104.willingness
+#cur_b1_105|Добрі й злі|💖|B1
+доброта|kindness|en venlighed|la gentilezza|💖|||cur_b1_105.kindness
+привітність|friendliness|en imødekommenhed|la cordialità|😊|||cur_b1_105.friendliness
+непривітний|unfriendly|uvenlig|scontroso|😠|||cur_b1_105.unfriendly
+жорстокий|cruel|grusom|crudele|😈|||cur_b1_105.cruel
+огидний|nasty|modbydelig|cattivo|🤢|||cur_b1_105.nasty
+агресивний|aggressive|aggressiv|aggressivo|👊|||cur_b1_105.aggressive
+нерозумний|foolish|tåbelig|sciocco|🤡|||cur_b1_105.foolish
+дурний|stupid|dum|stupido|🙄|||cur_b1_105.stupid
+пустощі|mischief|ugagn|la marachella|😜|||cur_b1_105.mischief
+вдача|temper|et temperament|il temperamento|🌋|||cur_b1_105.temper
+слабкість|weakness|en svaghed|la debolezza|🪫|||cur_b1_105.weakness
+чарівність|charm|en charme|il fascino|✨|||cur_b1_105.charm
+гумор|humor|en humor|l'umorismo|😆|||cur_b1_105.humor
+гумористичний|humorous|humoristisk|umoristico|🤣|||cur_b1_105.humorous
+#cur_b1_106|Таланти|🌟|B1
+талановитий|talented|talentfuld|talentuoso|🌟|||cur_b1_106.talented
+обдарований|gifted|begavet|dotato|🎁|||cur_b1_106.gifted
+хвалитися|to boast|at prale|vantarsi|🦚|||cur_b1_106.to_boast
+поводитися|to behave|at opføre sig|comportarsi|🙇|||cur_b1_106.to_behave
+брехун|liar|en løgner|il bugiardo|🤥|||cur_b1_106.liar
+брехня|lie|en løgn|la bugia|🤐|||cur_b1_106.lie
+поважний|respectable|respektabel|rispettabile|🎩|||cur_b1_106.respectable
+незалежний|independent|uafhængig|indipendente|🗽|||cur_b1_106.independent
+індивідуальний|individual|individuel|individuale|👤|||cur_b1_106.individual
+здоровий глузд|common sense|en sund fornuft|il buon senso|🧠|||cur_b1_106.common_sense
+унікальний|unique|unik|unico|🦄|||cur_b1_106.unique
+наслідувати|to imitate|at efterligne|imitare|🦜|||cur_b1_106.to_imitate
+#cur_b1_107|Одяг і мода|👔|B1
+комір|collar|en krave|il colletto|👔|collar_1||cur_b1_107.collar
+предмет одягу|garment|et klædningsstykke|il capo d'abbigliamento|👕|||cur_b1_107.garment
+вечірня сукня|gown|en aftenkjole|l'abito da sera|👗|||cur_b1_107.gown
+сандалія|sandal|en sandal|il sandalo|👡|||cur_b1_107.sandal
+смужка|stripe|en stribe|la riga|🦓|||cur_b1_107.stripe
+світшот|sweatshirt|en sweatshirt|la felpa|👕|sweatshirt||cur_b1_107.sweatshirt
+спортивний костюм|tracksuit|en træningsdragt|la tuta da ginnastica|🏃|tracksuit||cur_b1_107.tracksuit
+труси|underpants|et par underbukser|le mutande|🩲|||cur_b1_107.underpants
+темно-синій|navy blue|marineblå|blu marino|🔵|||cur_b1_107.navy_blue
+повсякденний|casual|afslappet|informale|👟|||cur_b1_107.casual
+модний|fashionable|moderigtig|alla moda|💃|||cur_b1_107.fashionable
+старомодний|old-fashioned|gammeldags|antiquato|👴|||cur_b1_107.old_fashioned
+рукав|sleeve|et ærme|la manica|👕||rękaw|a2x02_clothes.sleeve
+#cur_b1_108|Прикраси й аксесуари|👜|B1
+аксесуар|accessory|et tilbehør|l'accessorio|👜|||cur_b1_108.accessory
+браслет|bracelet|et armbånd|il braccialetto|📿|bracelet_1||cur_b1_108.bracelet
+коштовність|jewel|en juvel|il gioiello|💎|||cur_b1_108.jewel
+намисто|necklace|en halskæde|la collana|📿|necklace||cur_b1_108.necklace
+носова хустинка|handkerchief|et lommetørklæde|il fazzoletto|🤧|||cur_b1_108.handkerchief
+шовк|silk|en silke|la seta|🧣|||cur_b1_108.silk
+слонова кістка|ivory|et elfenben|l'avorio|🐘|||cur_b1_108.ivory
+нефрит|jade|en jade|la giada|💚|||cur_b1_108.jade
+поношений|worn|slidt|consumato|👖|||cur_b1_108.worn
+бути впору|to fit|at passe|andare bene|📏|||cur_b1_108.to_fit
+позувати|to model|at stå model|posare|📸|||cur_b1_108.to_model
+роздягатися|to undress|at klæde sig af|spogliarsi|🛁|undress_,_to||cur_b1_108.to_undress
+#cur_b1_109|Вибори|🗳️|B1
+демократичний|democratic|demokratisk|democratico|🗳️|||cur_b1_109.democratic
+вибори|election|et valg|le elezioni|🗳️|||cur_b1_109.election
+губернатор|governor|en guvernør|il governatore|🏛️|||cur_b1_109.governor
+політик|politician|en politiker|il politico|🎤|||cur_b1_109.politician
+політика|politics|en politik|la politica|🏛️|||cur_b1_109.politics
+президент|president|en præsident|il presidente|🇺🇸|||cur_b1_109.president
+віцепрезидент|vice president|en vicepræsident|il vicepresidente|👔|||cur_b1_109.vice_president
+перша леді|first lady|en førstedame|la first lady|👒|||cur_b1_109.first_lady
+республіка|republic|en republik|la repubblica|🏛️|||cur_b1_109.republic
+опозиція|opposition|en opposition|l'opposizione|🙅||opozycja|b2x01_politics.opposition
+мер|mayor|en borgmester|il sindaco|🎖️||burmistrz|b2x01_politics.mayor
+демократія|democracy|et demokrati|la democrazia|🗽||demokracja|b2x01_politics.democracy
+конституція|constitution|en grundlov|la costituzione|📘||konstytucja|b2x01_politics.constitution
+голосувати|to vote|at stemme|votare|🗳️|vote_,_to|głosować|b2_society.to_vote
+парламент|parliament|et parlament|il parlamento|🏛️||parlament|b2x01_politics.parliament
+#cur_b1_110|Громадянське суспільство|✊|B1
+протест|protest|en protest|la protesta|✊|||cur_b1_110.protest
+благодійність|charity|en velgørenhed|la beneficenza|💝|||cur_b1_110.charity
+волонтерити|to volunteer|at arbejde frivilligt|fare volontariato|🙋|||cur_b1_110.to_volunteer
+голод|hunger|en sult|la fame|🍽️|||cur_b1_110.hunger
+людяність|humanity|en menneskelighed|l'umanità|❤️|||cur_b1_110.humanity
+людство|mankind|en menneskehed|il genere umano|🌍|||cur_b1_110.mankind
+рада|council|et råd|il consiglio|🏛️|||cur_b1_110.council
+представник|representative|en repræsentant|il rappresentante|🧑‍💼|||cur_b1_110.representative
+політичний курс|policy|en politisk linje|la linea politica|📋|||cur_b1_110.policy
+розкол|divide|en kløft|il divario|↔️|divide||cur_b1_110.divide
+демонстрація (протест)|demonstration|en demonstration|la manifestazione|🪧||demonstracja|b2x01_civic.demonstration
+волонтер|volunteer|en frivillig|il volontario|🙌||wolontariusz|b2x01_civic.volunteer
+меншина|minority|et mindretal|la minoranza|🧩||mniejszość|b2x01_civic.minority
+більшість|majority|et flertal|la maggioranza|📊||większość|b2x01_civic.majority
+безпритульний|homeless|hjemløs|senzatetto|🛏️||bezdomny|b2x03_urban.homeless
+бідність|poverty|en fattigdom|la povertà|🪙||ubóstwo|b2_society.poverty
+#cur_b1_111|Документи|🖋️|B1
+підпис|signature|en underskrift|la firma|🖋️||podpis|b1x01_paperwork.signature
+реєструватися|to register|at registrere sig|registrarsi|🗂️||rejestrować się|b1x01_paperwork.to_register
+продовжувати (документ)|to renew|at forny|rinnovare|🔄||przedłużać|b1x01_paperwork.to_renew
+відхиляти (заяву)|to reject|at afvise|respingere|❌||odrzucać|b1x01_paperwork.to_reject
+схвалювати|to approve|at godkende|approvare|👍||zatwierdzać|b1x01_paperwork.to_approve
+реєстр|register|et register|il registro|📒|||cur_b1_111.register
+реєстрація|registration|en registrering|la registrazione|📝|||cur_b1_111.registration
+документ|document|et dokument|il documento|📄|||cur_b1_111.document
+ідентичність|identity|en identitet|l'identità|🪪|||cur_b1_111.identity
+бюро|bureau|et bureau|l'ufficio|🏢|||cur_b1_111.bureau
+адміністрація|administration|en administration|l'amministrazione|🏢|||cur_b1_111.administration
+скарга (на рішення органу)|appeal|en klage|il ricorso|📨||odwołanie|c1x02_admin.appeal
+довідка (офіційна)|certificate|en attest|il certificato|📜|certificate|zaświadczenie|b1x01_paperwork.certificate
+іноземець|foreigner|en udlænding|lo straniero|🌍||obcokrajowiec|b1x01_paperwork.foreigner
+#cur_b1_112|Міграція|🧳|B1
+іммігрувати|to immigrate|at indvandre|immigrare|🧳|||cur_b1_112.to_immigrate
+імміграція|immigration|en indvandring|l'immigrazione|🛂|||cur_b1_112.immigration
+новоприбулий|newcomer|en nytilflytter|il nuovo arrivato|👋|||cur_b1_112.newcomer
+расовий|racial|racemæssig|razziale|✊|||cur_b1_112.racial
+різноманітний|diverse|mangfoldig|eterogeneo|🌈|||cur_b1_112.diverse
+ізоляція|isolation|en isolation|l'isolamento|🏝️|||cur_b1_112.isolation
+статус|status|en status|lo status|📊|||cur_b1_112.status
+громадянський|civil|borgerlig|civile|⚖️|||cur_b1_112.civil
+неповнолітній|underage|mindreårig|minorenne|🔞|||cur_b1_112.underage
+рівний|equal|lige|uguale|⚖️|||cur_b1_112.equal
+однаково|equally|lige|ugualmente|🟰|||cur_b1_112.equally
+кордон|border|en grænse|il confine|🚧||granica|b2x02_global.border
+пристосовуватися|to adapt|at tilpasse sig|adattarsi|🦎||przystosowywać się|b2x02_global.to_adapt
+упередження|prejudice|en fordom|il pregiudizio|🙈||uprzedzenie|c1x01_society.prejudice
+#cur_b1_113|Влада|👮|B1
+повноваження|authority|en myndighed|l'autorità|👮|||cur_b1_113.authority
+правити|to govern|at regere|governare|👑|||cur_b1_113.to_govern
+націоналіст|nationalist|en nationalist|il nazionalista|🚩|||cur_b1_113.nationalist
+консервативний|conservative|konservativ|conservatore|🎩|||cur_b1_113.conservative
+декларація|declaration|en erklæring|la dichiarazione|📜|||cur_b1_113.declaration
+оголошувати|to declare|at erklære|dichiarare|📢|||cur_b1_113.to_declare
+єднати|to unite|at forene|unire|🤝|||cur_b1_113.to_unite
+об'єднувати|to unify|at samle|unificare|🧩|||cur_b1_113.to_unify
+батьківщина|motherland|et fædreland|la patria|🏞️|||cur_b1_113.motherland
+шериф|sheriff|en sherif|lo sceriffo|⭐|||cur_b1_113.sheriff
+обов'язок|duty|en pligt|il dovere|📋|||cur_b1_113.duty
+саміт|summit|et topmøde|il vertice|🏔️||szczyt|c2x01_diplomacy.summit
+#cur_b1_114|Історія|🏺|B1
+цивілізація|civilization|en civilisation|la civiltà|🏺|||cur_b1_114.civilization
+династія|dynasty|et dynasti|la dinastia|👑|||cur_b1_114.dynasty
+імператор|emperor|en kejser|l'imperatore|👑|||cur_b1_114.emperor
+епоха|era|en æra|l'era|⏳|||cur_b1_114.era
+завойовувати|to conquer|at erobre|conquistare|⚔️|||cur_b1_114.to_conquer
+визволяти|to liberate|at befri|liberare|🕊️|||cur_b1_114.to_liberate
+визволення|liberation|en befrielse|la liberazione|🕊️|||cur_b1_114.liberation
+пригноблювати|to oppress|at undertrykke|opprimere|⛓️|||cur_b1_114.to_oppress
+гноблення|oppression|en undertrykkelse|l'oppressione|⛓️|||cur_b1_114.oppression
+рабство|slavery|et slaveri|la schiavitù|⛓️|||cur_b1_114.slavery
+історик|historian|en historiker|lo storico|📚|||cur_b1_114.historian
+історичний|historical|historisk|storico|🏛️|||cur_b1_114.historical
+примітивний|primitive|primitiv|primitivo|🪨|||cur_b1_114.primitive
+імперія|empire|et imperium|l'impero|🏛️||imperium|c2x02_history.empire
+#cur_b1_115|Дикий Захід|🏘️|B1
+поселення|settlement|en bosættelse|l'insediamento|🏘️|||cur_b1_115.settlement
+поселенець|settler|en nybygger|il colono|🤠|||cur_b1_115.settler
+розбійник|outlaw|en fredløs|il fuorilegge|🤠|||cur_b1_115.outlaw
+воїн|warrior|en kriger|il guerriero|🛡️|||cur_b1_115.warrior
+меч|sword|et sværd|la spada|⚔️|||cur_b1_115.sword
+слава|glory|en hæder|la gloria|🏆|||cur_b1_115.glory
+тріумф|triumph|en triumf|il trionfo|🏆|||cur_b1_115.triumph
+купець|merchant|en købmand|il mercante|💰|||cur_b1_115.merchant
+втікач|runaway|en rømningsmand|il fuggitivo|🏃|||cur_b1_115.runaway
+погоня|chase|en jagt|l'inseguimento|🐎|||cur_b1_115.chase
+нестатки|hardship|et afsavn|la privazione|🥀|||cur_b1_115.hardship
+витримувати|to endure|at udholde|sopportare|💪|||cur_b1_115.to_endure
+#cur_b1_116|Віра|⛪|B1
+релігія|religion|en religion|la religione|⛪|||cur_b1_116.religion
+релігійний|religious|religiøs|religioso|⛪|||cur_b1_116.religious
+священник|priest|en præst|il prete|⛪|||cur_b1_116.priest
+єпископ|bishop|en biskop|il vescovo|⛪|||cur_b1_116.bishop
+чернець|monk|en munk|il monaco|🧘|||cur_b1_116.monk
+молитва|prayer|en bøn|la preghiera|🙏|prayer||cur_b1_116.prayer
+святий|holy|hellig|santo|😇|||cur_b1_116.holy
+священний|sacred|sakral|sacro|🛕|||cur_b1_116.sacred
+божественний|divine|guddommelig|divino|✨|||cur_b1_116.divine
+богиня|goddess|en gudinde|la dea|👸|||cur_b1_116.goddess
+небеса|heaven|et himmerig|il cielo|☁️|||cur_b1_116.heaven
+небесний|heavenly|himmelsk|celeste|☁️|||cur_b1_116.heavenly
+душа|soul|en sjæl|l'anima|🕊️|||cur_b1_116.soul
+дух|spirit|en ånd|lo spirito|👻|||cur_b1_116.spirit
+духовний|spiritual|åndelig|spirituale|🧘|||cur_b1_116.spiritual
+#cur_b1_117|Вірування й мораль|🙏|B1
+благословляти|to bless|at velsigne|benedire|🙏|bless_,_to||cur_b1_117.to_bless
+благословення|blessing|en velsignelse|la benedizione|🙏|||cur_b1_117.blessing
+чудо|miracle|et mirakel|il miracolo|✨|||cur_b1_117.miracle
+забобон|superstition|en overtro|la superstizione|🐈‍⬛|||cur_b1_117.superstition
+переконання|belief|en overbevisning|la convinzione|💭|||cur_b1_117.belief
+вічний|eternal|evig|eterno|♾️|||cur_b1_117.eternal
+вічність|eternity|en evighed|l'eternità|♾️|||cur_b1_117.eternity
+філософія|philosophy|en filosofi|la filosofia|🤔|||cur_b1_117.philosophy
+філософ|philosopher|en filosof|il filosofo|🧔|||cur_b1_117.philosopher
+повчання|moral|en morale|la morale|📖|||cur_b1_117.moral
+рай|paradise|et paradis|il paradiso|🌴|||cur_b1_117.paradise
+існування|existence|en eksistens|l'esistenza|🌱||istnienie|c2x01_philosophy.existence
+#cur_b1_118|Мислення й аргументація|🧠|B1
+логіка|logic|en logik|la logica|🧠|||cur_b1_118.logic
+концепція|concept|et koncept|il concetto|💡|||cur_b1_118.concept
+глибоке розуміння|insight|en indsigt|la comprensione|🔍|||cur_b1_118.insight
+припускати|to assume|at antage|supporre|🤔||zakładać|b2x02_argue.to_assume
+заперечувати (факт)|to deny|at benægte|negare|🙅||zaprzeczać|b2x02_argue.to_deny
+робити висновок|to conclude|at konkludere|concludere|🧾||wyciągać wnioski|b2x02_argue.to_conclude
+оцінювати (приблизно)|to estimate|at anslå|stimare|📊||szacować|b2x02_argue.to_estimate
+спірний|controversial|kontroversiel|controverso|🔥||kontrowersyjny|c1_argument.controversial
+неминучий|inevitable|uundgåelig|inevitabile|⏳||nieunikniony|c1_argument.inevitable
+визнавати (помилку)|to acknowledge|at erkende|riconoscere|🙋✅||przyznawać się|c1_argument.to_acknowledge
+отже|consequently|følgelig|di conseguenza|➡️||w konsekwencji|c1_argument.consequently
+проте|nevertheless|ikke desto mindre|tuttavia|🔄||mimo to|c1_argument.nevertheless
+поняття|notion|en forestilling|la nozione|💡||pojęcie|c2x01_thinking.notion
+сумніватися|to doubt|at tvivle|dubitare|❓||wątpić|b2x02_argue.to_doubt
+#cur_b1_119|Ідеї й поняття|🔎|B1
+аспект|aspect|et aspekt|l'aspetto|🔎|||cur_b1_119.aspect
+принцип|principle|et princip|il principio|⚖️|||cur_b1_119.principle
+походження|origin|en oprindelse|l'origine|🌱|||cur_b1_119.origin
+фундамент|foundation|et fundament|il fondamento|🧱|||cur_b1_119.foundation
+характерна риса|characteristic|et kendetegn|la caratteristica|🏷️|||cur_b1_119.characteristic
+категорія|category|en kategori|la categoria|🗂️|||cur_b1_119.category
+призначення|function|en funktion|la funzione|⚙️|||cur_b1_119.function
+процес|process|en proces|il processo|🔄|||cur_b1_119.process
+послідовність|sequence|en rækkefølge|la sequenza|🔢|||cur_b1_119.sequence
+закономірність|pattern|et mønster|lo schema|🔁|||cur_b1_119.pattern
+випадок|instance|et tilfælde|il caso|📌|||cur_b1_119.instance
+#cur_b1_120|Вибір і рішення|🔘|B1
+варіант|option|en valgmulighed|l'opzione|🔘|||cur_b1_120.option
+альтернатива|alternative|et alternativ|l'alternativa|🔀|||cur_b1_120.alternative
+уподобання|preference|en præference|la preferenza|❤️|||cur_b1_120.preference
+ймовірність|possibility|en mulighed|la possibilità|🎲|||cur_b1_120.possibility
+рішення|decision|en beslutning|la decisione|✅|||cur_b1_120.decision
+судження|judgment|en vurdering|il giudizio|⚖️|||cur_b1_120.judgment
+підхід|approach|en tilgang|l'approccio|🧭|||cur_b1_120.approach
+розгляд|consideration|en overvejelse|la considerazione|🤔|||cur_b1_120.consideration
+певність|certainty|en vished|la certezza|💯|||cur_b1_120.certainty
+невизначеність|uncertainty|en usikkerhed|l'incertezza|❓|||cur_b1_120.uncertainty
+здогадка|guess|et gæt|l'ipotesi|🤷|||cur_b1_120.guess
+#cur_b1_121|Труднощі|🚧|B1
+перешкода|obstacle|en forhindring|l'ostacolo|🚧|||cur_b1_121.obstacle
+боротьба|struggle|en kamp|la lotta|🥊|||cur_b1_121.struggle
+тягар|burden|en byrde|il fardello|🎒|||cur_b1_121.burden
+навантаження|strain|en belastning|lo sforzo|🏋️|||cur_b1_121.strain
+невдача|failure|en fiasko|il fallimento|👎|||cur_b1_121.failure
+хаос|chaos|et kaos|il caos|🌪️|||cur_b1_121.chaos
+плутанина|confusion|en forvirring|la confusione|😵|||cur_b1_121.confusion
+порушення спокою|disturbance|en forstyrrelse|il disturbo|🔊|||cur_b1_121.disturbance
+прогалина|gap|et hul|la lacuna|🕳️|||cur_b1_121.gap
+обмеження|limitation|en begrænsning|la limitazione|🚫|||cur_b1_121.limitation
+межа|limit|en grænse|il limite|🛑|||cur_b1_121.limit
+руїна|ruin|en ruin|la rovina|🏚️|||cur_b1_121.ruin
+непокоїти|to trouble|at plage|turbare|😟|||cur_b1_121.to_trouble
+#cur_b1_122|Розвиток і зміни|📈|B1
+розвиток|development|en udvikling|lo sviluppo|📈|||cur_b1_122.development
+перетворення|transformation|en forvandling|la trasformazione|🦋|||cur_b1_122.transformation
+рух|movement|en bevægelse|il movimento|🏃|||cur_b1_122.movement
+тенденція|trend|en trend|la tendenza|📈|||cur_b1_122.trend
+схильність|tendency|en tilbøjelighed|la propensione|↗️|||cur_b1_122.tendency
+цикл|cycle|en cyklus|il ciclo|🔄|||cur_b1_122.cycle
+потік|flow|en strøm|il flusso|🌊|||cur_b1_122.flow
+темп|pace|et tempo|il ritmo|⏱️|||cur_b1_122.pace
+просуватися|to advance|at rykke frem|avanzare|⏩|||cur_b1_122.to_advance
+виникати|to emerge|at opstå|emergere|🌅|||cur_b1_122.to_emerge
+перетворювати|to transform|at forvandle|trasformare|🦋|||cur_b1_122.to_transform
+різнитися|to vary|at variere|variare|🎨|||cur_b1_122.to_vary
+різноманітність|variety|en variation|la varietà|🌈|||cur_b1_122.variety
+#cur_b1_123|Враження|✨|B1
+враження|impression|et indtryk|l'impressione|✨|||cur_b1_123.impression
+фізичне відчуття|sensation|en fornemmelse|la sensazione|🔥|||cur_b1_123.sensation
+відображення|reflection|et spejlbillede|il riflesso|🪞|||cur_b1_123.reflection
+бачення|vision|en vision|la visione|🔭|||cur_b1_123.vision
+захоплення|admiration|en beundring|l'ammirazione|😍|||cur_b1_123.admiration
+поцінування|appreciation|en påskønnelse|l'apprezzamento|👏|||cur_b1_123.appreciation
+цікавість|curiosity|en nysgerrighed|la curiosità|🧐|||cur_b1_123.curiosity
+змістовний|meaningful|meningsfuld|significativo|💬|||cur_b1_123.meaningful
+досконалість|excellence|en fortræffelighed|l'eccellenza|🏅|||cur_b1_123.excellence
+репутація|reputation|et ry|la reputazione|⭐|||cur_b1_123.reputation
+значущість|significance|en betydning|la rilevanza|❗|||cur_b1_123.significance
+присутність|presence|en tilstedeværelse|la presenza|🙋|||cur_b1_123.presence
+#cur_b1_124|Кількість і масштаб|🧺|B1
+достаток|abundance|en overflod|l'abbondanza|🧺|||cur_b1_124.abundance
+надлишок|excess|et overmål|l'eccesso|➕|||cur_b1_124.excess
+залишок|remainder|en rest|il resto|🍰|||cur_b1_124.remainder
+міра|extent|et omfang|l'entità|📏|||cur_b1_124.extent
+рамки|scope|en rækkevidde|la portata|🔭|||cur_b1_124.scope
+місткість|capacity|en kapacitet|la capacità|🫙|||cur_b1_124.capacity
+звання|rank|en rang|il grado|🎖️|||cur_b1_124.rank
+стандарт|standard|en standard|lo standard|📐|||cur_b1_124.standard
+в'язка|bunch|et bundt|il mazzo|🔑|||cur_b1_124.bunch
+уламок|fragment|et fragment|il frammento|🧩|||cur_b1_124.fragment
+слід|trace|et spor|la traccia|👣|||cur_b1_124.trace
+маса|mass|en masse|la massa|👥|||cur_b1_124.mass
+масивний|massive|massiv|massiccio|🏔️|||cur_b1_124.massive
+#cur_b1_125|Події й справи|🤝|B1
+зустріч|encounter|et møde|l'incontro|🤝|||cur_b1_125.encounter
+нагода|occasion|en anledning|l'occasione|🎉|||cur_b1_125.occasion
+відкриття|opening|en åbning|l'inaugurazione|🎀|||cur_b1_125.opening
+вступ|introduction|en indledning|l'introduzione|📖|||cur_b1_125.introduction
+інспекція|inspection|en inspektion|l'ispezione|🔍|||cur_b1_125.inspection
+підготовка|preparation|en forberedelse|la preparazione|📝|||cur_b1_125.preparation
+домовленість|arrangement|en ordning|l'intesa|🤝|||cur_b1_125.arrangement
+внесок|contribution|et bidrag|il contributo|🎁|||cur_b1_125.contribution
+прийняття|acceptance|en accept|l'accettazione|✅|||cur_b1_125.acceptance
+схвалення|approval|en godkendelse|l'approvazione|👍|||cur_b1_125.approval
+відмова|refusal|et afslag|il rifiuto|🙅|||cur_b1_125.refusal
+рекорд|record|en rekord|il record|🏅|||cur_b1_125.record
+вчинок|deed|en gerning|l'azione|🦸|||cur_b1_125.deed
+#cur_b1_126|Абстрактні слова|🏠|B1
+володіння|possession|en besiddelse|il possesso|🏠|||cur_b1_126.possession
+предмет|object|en genstand|l'oggetto|📦|||cur_b1_126.object
+реальність|reality|en virkelighed|la realtà|🌍|||cur_b1_126.reality
+нісенітниця|nonsense|et sludder|la sciocchezza|🙃|||cur_b1_126.nonsense
+головоломка|puzzle|en gåde|il rompicapo|🧩|||cur_b1_126.puzzle
+техніка|technique|en teknik|la tecnica|🛠️|||cur_b1_126.technique
+заміна|substitute|en erstatning|il sostituto|🔄|||cur_b1_126.substitute
+схожість|similarity|en lighed|la somiglianza|👯|||cur_b1_126.similarity
+порівняння|comparison|en sammenligning|il confronto|⚖️|||cur_b1_126.comparison
+відмінність|distinction|en sondring|la distinzione|🔀|||cur_b1_126.distinction
+поєднання|combination|en kombination|la combinazione|🧩|||cur_b1_126.combination
+частота|frequency|en hyppighed|la frequenza|📶|||cur_b1_126.frequency
+настанови|guidance|en vejledning|la guida|🧭|||cur_b1_126.guidance
+намір|intention|en hensigt|l'intenzione|🎯|||cur_b1_126.intention
+#cur_b1_127|Поради й прохання|🔬|B1
+доводити (правоту)|to prove|at bevise|dimostrare|🔬||udowadniać|b1x01_verbs.to_prove
+відмовлятися (робити щось)|to refuse|at nægte|rifiutare|🙅||odmawiać|b1x01_verbs.to_refuse
+попереджати|to warn|at advare|avvertire|⚠️||ostrzegać|b1x01_verbs.to_warn
+переконувати|to persuade|at overtale|convincere|🗣️||przekonywać|b1x01_verbs.to_persuade
+заслуговувати|to deserve|at fortjene|meritare|🏅||zasługiwać|b1x01_verbs.to_deserve
+переконувати|to convince|at overbevise|convincere|🗣️||przekonywać|b1x02_opinions.to_convince
+рекомендувати|to recommend|at anbefale|raccomandare|👍|||cur_b1_127.to_recommend
+просити|to request|at anmode om|richiedere|📝|||cur_b1_127.to_request
+вимагати|to require|at kræve|esigere|📋|||cur_b1_127.to_require
+сильне бажання|urge|en trang|la voglia|🔥|||cur_b1_127.urge
+відраджувати|to discourage|at fraråde|sconsigliare|✋|||cur_b1_127.to_discourage
+підбадьорення|encouragement|en opmuntring|l'incoraggiamento|👏|||cur_b1_127.encouragement
+обнадійливий|encouraging|opmuntrende|incoraggiante|🌟|||cur_b1_127.encouraging
+#cur_b1_128|Рухи|🫨|B1
+трясти|to shake|at ryste|scuotere|🫨|shake_,_to||cur_b1_128.to_shake
+витріщатися|to stare|at stirre|fissare|👀|||cur_b1_128.to_stare
+швидкий погляд|glance|et blik|l'occhiata|👁️|||cur_b1_128.glance
+глянути|to glance|at kaste et blik|dare un'occhiata|👁️|||cur_b1_128.to_glance
+хапати|to grab|at gribe|afferrare|✊|grab_,_to||cur_b1_128.to_grab
+піднімати|to lift|at løfte|sollevare|🏋️|||cur_b1_128.to_lift
+жбурляти|to toss|at smide|buttare|🤾|||cur_b1_128.to_toss
+перестрибувати|to leap|at springe|balzare|🦘|||cur_b1_128.to_leap
+спотикатися|to stumble|at snuble|inciampare|🤕|||cur_b1_128.to_stumble
+посковзнутися|to slip|at glide|scivolare|⛸️|||cur_b1_128.to_slip
+відскакувати|to bounce|at hoppe|rimbalzare|🏀|bounce_,_to||cur_b1_128.to_bounce
+натикатися|to bump|at støde|urtare|💢|||cur_b1_128.to_bump
+падати кубарем|to tumble|at styrte|ruzzolare|🤸|||cur_b1_128.to_tumble
+#cur_b1_129|Звуки й удари|💥|B1
+гуркіт|bang|et brag|il botto|💥|||cur_b1_129.bang
+грюкати|to bang|at smække|sbattere|🚪|||cur_b1_129.to_bang
+гул|boom|et drøn|il rimbombo|🔊|||cur_b1_129.boom
+лопатися|to burst|at briste|scoppiare|🫧|||cur_b1_129.to_burst
+стукати|to knock|at banke|bussare|✊|knock_,_to||cur_b1_129.to_knock
+влучати|to strike|at ramme|colpire|⚡|||cur_b1_129.to_strike
+рвати|to tear|at rive|strappare|📃|||cur_b1_129.to_tear
+горіти|to burn|at brænde|bruciare|🔥|||cur_b1_129.to_burn
+палаючий|burning|brændende|in fiamme|🔥|||cur_b1_129.burning
+тонути|to sink|at synke|affondare|🚢|||cur_b1_129.to_sink
+триматися на воді|to float|at flyde|galleggiare|🛟|||cur_b1_129.to_float
+складка|fold|en fold|la piega|📄|||cur_b1_129.fold
+складати|to fold|at folde|piegare|👕|||cur_b1_129.to_fold
+#cur_b1_130|Дії з речами|🖼️|B1
+вішати|to hang|at hænge|appendere|🖼️|hang_,_to||cur_b1_130.to_hang
+підвісний|hanging|hængende|appeso|🪴|||cur_b1_130.hanging
+розміщувати|to place|at placere|sistemare|📍|||cur_b1_130.to_place
+знімати|to remove|at fjerne|togliere|👟|remove_,_to||cur_b1_130.to_remove
+прикріплювати|to attach|at vedhæfte|allegare|📎|||cur_b1_130.to_attach
+копати|to dig|at grave|scavare|⛏️|dig_,_to||cur_b1_130.to_dig
+розкидати|to scatter|at sprede|spargere|🍂|||cur_b1_130.to_scatter
+приклеювати|to stick|at klistre|incollare|🩹|||cur_b1_130.to_stick
+зав'язувати|to tie|at binde|legare|🎀|||cur_b1_130.to_tie
+несподіваний поворот|twist|et twist|il colpo di scena|🎬|||cur_b1_130.twist
+викручувати|to twist|at vride|torcere|🌀|||cur_b1_130.to_twist
+#cur_b1_131|Керувати й володіти|🎛️|B1
+контролювати|to control|at kontrollere|controllare|🎛️|||cur_b1_131.to_control
+обслуговувати|to maintain|at vedligeholde|mantenere|🔧|||cur_b1_131.to_maintain
+режисерувати|to direct|at instruere|dirigere|🎬|||cur_b1_131.to_direct
+очолювати|to lead|at anføre|guidare|🚩|||cur_b1_131.to_lead
+провідний|leading|førende|di punta|🥇|||cur_b1_131.leading
+займати|to occupy|at optage|occupare|💺|||cur_b1_131.to_occupy
+володіти|to possess|at besidde|disporre di|💎|||cur_b1_131.to_possess
+мати у власності|to own|at eje|possedere|🏠|||cur_b1_131.to_own
+утримувати|to retain|at holde på|trattenere|🧊|||cur_b1_131.to_retain
+випускати|to release|at udgive|pubblicare|💿|||cur_b1_131.to_release
+відновлювати|to restore|at restaurere|restaurare|🏛️|||cur_b1_131.to_restore
+#cur_b1_132|Думати й помічати|👀|B1
+впізнавати|to recognise|at genkende|riconoscere|👀||rozpoznawać|b1x01_verbs.to_recognise
+гадати|to suppose|at formode|supporre|🤔|||cur_b1_132.to_suppose
+вважати|to regard|at betragte|considerare|🧐|||cur_b1_132.to_regard
+помічати|to notice|at lægge mærke til|notare|👀|||cur_b1_132.to_notice
+розрізняти|to distinguish|at skelne|distinguere|🔍|||cur_b1_132.to_distinguish
+пов'язувати|to relate|at relatere|collegare|🔗|||cur_b1_132.to_relate
+асоціювати|to associate|at forbinde|associare|🧠|||cur_b1_132.to_associate
+визначати|to determine|at fastslå|stabilire|📏|||cur_b1_132.to_determine
+мати намір|to intend|at have til hensigt|avere intenzione|🎯|||cur_b1_132.to_intend
+вагатися|to hesitate|at tøve|esitare|😕|||cur_b1_132.to_hesitate
+диво|wonder|et under|la meraviglia|✨|||cur_b1_132.wonder
+наважуватися|to dare|at turde|osare|🦁|||cur_b1_132.to_dare
+спокушати|to tempt|at friste|tentare|🍰|||cur_b1_132.to_tempt
+#cur_b1_133|Досягати мети|✅|B1
+виконувати|to accomplish|at udføre|portare a termine|✅|||cur_b1_133.to_accomplish
+намагатися|to attempt|at forsøge|cercare di|💪|||cur_b1_133.to_attempt
+здобувати|to obtain|at indhente|ottenere|📥|||cur_b1_133.to_obtain
+набувати|to acquire|at tilegne sig|acquisire|🧠|||cur_b1_133.to_acquire
+повертати собі|to regain|at genvinde|recuperare|🔋|||cur_b1_133.to_regain
+забезпечувати|to ensure|at sikre|garantire|🛡️|||cur_b1_133.to_ensure
+давати змогу|to enable|at muliggøre|permettere|🔓|||cur_b1_133.to_enable
+переходити далі|to proceed|at gå videre|procedere|➡️|||cur_b1_133.to_proceed
+завершувати|to complete|at gennemføre|completare|🏁|||cur_b1_133.to_complete
+призводити|to result|at resultere|comportare|📊|||cur_b1_133.to_result
+#cur_b1_134|Більше й менше|↔️|B1
+подовжувати|to extend|at forlænge|prolungare|↔️|||cur_b1_134.to_extend
+послаблювати|to lessen|at mindske|attenuare|📉|||cur_b1_134.to_lessen
+мінімізувати|to minimize|at minimere|ridurre al minimo|🔽|||cur_b1_134.to_minimize
+усувати|to eliminate|at eliminere|eliminare|❌|||cur_b1_134.to_eliminate
+зміцнювати|to strengthen|at styrke|rafforzare|💪|||cur_b1_134.to_strengthen
+збагачувати|to enrich|at berige|arricchire|💰|||cur_b1_134.to_enrich
+спрощувати|to simplify|at forenkle|semplificare|🧩|||cur_b1_134.to_simplify
+видозмінювати|to modify|at modificere|modificare|🛠️|||cur_b1_134.to_modify
+переставляти|to rearrange|at flytte rundt på|risistemare|🛋️|||cur_b1_134.to_rearrange
+генерувати|to generate|at generere|generare|⚡|||cur_b1_134.to_generate
+долучатися|to contribute|at bidrage|contribuire|🤲|||cur_b1_134.to_contribute
+містити|to contain|at indeholde|contenere|📦|||cur_b1_134.to_contain
+залучати|to involve|at inddrage|coinvolgere|🙋|||cur_b1_134.to_involve
+#cur_b1_135|Дії й реакції|😮|B1
+реагувати|to react|at reagere|reagire|😮|||cur_b1_135.to_react
+опиратися|to resist|at modsætte sig|resistere|🛑|||cur_b1_135.to_resist
+ігнорувати|to ignore|at ignorere|ignorare|🙉|||cur_b1_135.to_ignore
+кидати напризволяще|to abandon|at efterlade|abbandonare|🐶|||cur_b1_135.to_abandon
+позбавляти|to deprive|at berøve|privare|🚫|||cur_b1_135.to_deprive
+врегульовувати|to resolve|at løse|risolvere|🤝|||cur_b1_135.to_resolve
+оселятися|to settle|at slå sig ned|stabilirsi|🏡|||cur_b1_135.to_settle
+балувати|to spoil|at forkæle|viziare|🍭|||cur_b1_135.to_spoil
+обдурювати|to fool|at narre|ingannare|🃏|||cur_b1_135.to_fool
+мчати|to rush|at fare|precipitarsi|🏃|||cur_b1_135.to_rush
+позначатися|to affect|at påvirke|influire|🌧️|||cur_b1_135.to_affect
+виникати|to arise|at opstå|sorgere|❓|||cur_b1_135.to_arise
+#cur_b1_136|Створювати й показувати|🖥️|B1
+відображати|to display|at vise|mostrare|🖥️|||cur_b1_136.to_display
+демонструвати|to demonstrate|at demonstrere|dimostrare|👩‍🏫|||cur_b1_136.to_demonstrate
+виділяти|to highlight|at fremhæve|evidenziare|🖍️|||cur_b1_136.to_highlight
+проєктувати|to design|at designe|progettare|📐|||cur_b1_136.to_design
+утворювати|to form|at danne|formare|⭕|||cur_b1_136.to_form
+формувати|to shape|at forme|modellare|🏺|||cur_b1_136.to_shape
+характеризувати|to characterize|at karakterisere|caratterizzare|📝|||cur_b1_136.to_characterize
+влаштовувати|to arrange|at arrangere|organizzare|📅|||cur_b1_136.to_arrange
+поєднувати|to combine|at kombinere|combinare|🔀|||cur_b1_136.to_combine
+роздавати|to distribute|at uddele|distribuire|📦|||cur_b1_136.to_distribute
+присвячувати|to dedicate|at dedikere|dedicare|💌|||cur_b1_136.to_dedicate
+надихати|to inspire|at inspirere|ispirare|💡|||cur_b1_136.to_inspire
+захоплювати|to fascinate|at fascinere|affascinare|🤩|||cur_b1_136.to_fascinate
+приваблювати|to attract|at tiltrække|attirare|🧲|attract_,_to||cur_b1_136.to_attract
+#cur_b1_137|Щоденні дієслова|🏷️|B1
+називати|to name|at kalde|chiamare|🏷️|||cur_b1_137.to_name
+планувати|to plan|at planlægge|pianificare|🗓️|||cur_b1_137.to_plan
+догоджати|to please|at gøre tilpas|accontentare|😊|||cur_b1_137.to_please
+обіцяти|to promise|at love|promettere|🤞|||cur_b1_137.to_promise
+дбати|to care|at gå op i|tenere a|💚|||cur_b1_137.to_care
+цікавити|to interest|at interessere|interessare|🧐|||cur_b1_137.to_interest
+не любити|to dislike|ikke at kunne lide|non amare|👎|||cur_b1_137.to_dislike
+переживати|to experience|at opleve|provare|🎢|||cur_b1_137.to_experience
+торкатися|to touch|at røre|toccare|👆|touch_,_to||cur_b1_137.to_touch
+пахнути|to smell|at lugte|profumare|👃|||cur_b1_137.to_smell
+зігрівати|to warm|at varme|scaldare|🔥|||cur_b1_137.to_warm
+махати|to wave|at vinke|salutare con la mano|👋|||cur_b1_137.to_wave
+переглядати|to view|at se|visualizzare|💻|||cur_b1_137.to_view
+сповільнювати|to slow|at sætte farten ned|rallentare|🐢|||cur_b1_137.to_slow
+#cur_b1_138|Сюрпризи|🎁|B1
+дивувати|to surprise|at overraske|sorprendere|🎁|||cur_b1_138.to_surprise
+приголомшувати|to stun|at lamslå|sbalordire|😲|||cur_b1_138.to_stun
+приголомшливо гарний|stunning|blændende|stupendo|🌅|||cur_b1_138.stunning
+неочікуваний|unexpected|uventet|inaspettato|❗|||cur_b1_138.unexpected
+неочікувано|unexpectedly|uventet|inaspettatamente|⚡|||cur_b1_138.unexpectedly
+неправдоподібний|unbelievable|ufattelig|inverosimile|🤯|||cur_b1_138.unbelievable
+неймовірний|incredible|utrolig|incredibile|🤩|||cur_b1_138.incredible
+неймовірно|incredibly|utroligt|incredibilmente|🚀|||cur_b1_138.incredibly
+надзвичайний|extraordinary|ekstraordinær|straordinario|🌠|||cur_b1_138.extraordinary
+визначний|remarkable|bemærkelsesværdig|notevole|🏅|||cur_b1_138.remarkable
+вражаючий|amazing|forbløffende|stupefacente|😍|||cur_b1_138.amazing
+класний|awesome|fed|fantastico|🤘|||cur_b1_138.awesome
+#cur_b1_139|Позиції й погляди|✊|B1
+боротися|to fight|at kæmpe|lottare|✊|fight_,_to||cur_b1_139.to_fight
+маршувати|to march|at marchere|marciare|🚶|||cur_b1_139.to_march
+допомога|aid|bistand|l'aiuto|🆘|||cur_b1_139.aid
+битися об заклад|to bet|at vædde|scommettere|🎲|||cur_b1_139.to_bet
+відрізнятися|to differ|at adskille sig|differire|↔️|||cur_b1_139.to_differ
+ґрунтувати|to base|at basere|basare|🧱|||cur_b1_139.to_base
+походити|to derive|at stamme|derivare|🌳|||cur_b1_139.to_derive
+залежний|dependent|afhængig|dipendente|🔗|||cur_b1_139.dependent
+нейтральний|neutral|neutral|neutrale|⚖️|||cur_b1_139.neutral
+позитивний|positive|positiv|positivo|➕|||cur_b1_139.positive
+позитивно|positively|positivt|positivamente|😊|||cur_b1_139.positively
+#cur_b1_140|Час і тривалість|🔚|B1
+востаннє|last|sidst|l'ultima volta|🔚|||cur_b1_140.last
+тривати|to last|at vare|durare|⏳|||cur_b1_140.to_last
+пауза|pause|en pause|la pausa|⏸️|||cur_b1_140.pause
+робити паузу|to pause|at holde pause|fare una pausa|⏸️|||cur_b1_140.to_pause
+бути схильним|to tend|at have tendens til|tendere|📈|||cur_b1_140.to_tend
+тимчасовий|temporary|midlertidig|temporaneo|⏱️|||cur_b1_140.temporary
+постійний|permanent|permanent|permanente|♾️|||cur_b1_140.permanent
+постійно|permanently|permanent|stabilmente|📌|||cur_b1_140.permanently
+своєчасний|timely|rettidig|tempestivo|⏰|||cur_b1_140.timely
+незабаром|shortly|inden længe|tra poco|🔜|||cur_b1_140.shortly
+якось|sometime|engang|prima o poi|📆|||cur_b1_140.sometime
+щоразу, коли|whenever|hver gang|ogni volta che|🔁|||cur_b1_140.whenever
+деякий час|while|et stykke tid|un po' di tempo|⌛|||cur_b1_140.while
+#cur_b1_141|Розмір і форма|🦕|B1
+гігантський|giant|kæmpestor|gigantesco|🦕|||cur_b1_141.giant
+крихітний|tiny|lillebitte|minuscolo|🐜|||cur_b1_141.tiny
+круглий|round|rund|rotondo|⚪|||cur_b1_141.round
+зігнутий|bent|bøjet|piegato|🪝|||cur_b1_141.bent
+гострий|sharp|skarp|affilato|🔪|sharp||cur_b1_141.sharp
+шорсткий|rough|ru|ruvido|🪨|||cur_b1_141.rough
+однотонний|plain|ensfarvet|in tinta unita|👕|||cur_b1_141.plain
+голий|bare|bar|spoglio|🧱|||cur_b1_141.bare
+верхній|upper|øverste|superiore|⬆️|||cur_b1_141.upper
+вузький|narrow|smal|stretto|🚪||wąski|a1x02_opposites.narrow
+температура (хвороба)|fever|en feber|la febbre|🥵|thermometer|gorączka|a2_health.fever
+скатертина|tablecloth|en dug|la tovaglia|🍽️|tablecloth|obrus|a2x01_restaurant.tablecloth
+прикрашати|to decorate|at pynte|decorare|🎀|decorate_,_to|dekorować|a2x01_celebrations.to_decorate
+#cur_b1_142|Складно й просто|🧩|B1
+складний|complicated|kompliceret|complicato|🧩||skomplikowany|b1x02_adjectives.complicated
+марний|useless|ubrugelig|inutile|🙃||bezużyteczny|b1x02_adjectives.useless
+типовий|typical|typisk|tipico|📌||typowy|b1x02_adjectives.typical
+заплутаний|confusing|forvirrende|confuso|😵‍💫|||cur_b1_142.confusing
+непростий|challenging|udfordrende|impegnativo|🧗|||cur_b1_142.challenging
+практичний|practical|praktisk|pratico|🛠️|||cur_b1_142.practical
+незрозумілий|unclear|uklar|poco chiaro|🌫️|||cur_b1_142.unclear
+систематичний|systematic|systematisk|sistematico|🗂️|||cur_b1_142.systematic
+розмитий (нечіткий)|vague|vag|vago|🌫️||niejasny|c1x01_adjectives.vague
+значний|substantial|betydelig|sostanziale|🏋️||znaczny|c1x01_adjectives.substantial
+справедливий|fair|retfærdig|giusto|⚖️||sprawiedliwy|b1x02_adjectives.fair
+суворий|strict|streng|severo|📏||surowy|b1x02_adjectives.strict
+заощадження|savings|en opsparing|i risparmi|🐷||oszczędności|c1m_finance.savings
+ясла|nursery|en vuggestue|l'asilo nido|🧸||żłobek|c1x01_welfare.nursery
+#cur_b1_143|Добре й погано|🤢|B1
+огидний|disgusting|ulækker|disgustoso|🤢|||cur_b1_143.disgusting
+безглуздий|ridiculous|latterlig|ridicolo|🤡|||cur_b1_143.ridiculous
+чудернацький|weird|underlig|bizzarro|👽|||cur_b1_143.weird
+своєрідний|peculiar|ejendommelig|singolare|🦄|||cur_b1_143.peculiar
+тьмяний|dull|mat|spento|🌫️|||cur_b1_143.dull
+нецікавий|uninteresting|uinteressant|poco interessante|😐|||cur_b1_143.uninteresting
+сприятливий|favorable|gunstig|favorevole|🍀|||cur_b1_143.favorable
+прикрий|unfortunate|beklagelig|spiacevole|😞|||cur_b1_143.unfortunate
+невезучий|unlucky|uheldig|sfortunato|🐈‍⬛|||cur_b1_143.unlucky
+гідний|worthy|værdig|degno|🏆|||cur_b1_143.worthy
+#cur_b1_144|Головне й другорядне|⭐|B1
+основний|main|vigtigste|principale|⭐|||cur_b1_144.main
+центральний|central|central|centrale|🎯|||cur_b1_144.central
+життєво важливий|essential|uundværlig|essenziale|❤️|||cur_b1_144.essential
+незначний|minor|mindre|minore|🔹|||cur_b1_144.minor
+помітний|prominent|fremtrædende|di spicco|🔦|||cur_b1_144.prominent
+видатний|outstanding|enestående|eccezionale|🌟|||cur_b1_144.outstanding
+чималий|considerable|betragtelig|considerevole|📊|||cur_b1_144.considerable
+вирішальний|critical|afgørende|cruciale|⚠️|||cur_b1_144.critical
+негайний|immediate|omgående|immediato|⚡|||cur_b1_144.immediate
+терміновий|urgent|presserende|urgente|🚨|||cur_b1_144.urgent
+вищий|superior|overlegen|superiore|🥇|||cur_b1_144.superior
+#cur_b1_145|Правильно й точно|🎯|B1
+точність|accuracy|nøjagtighed|la precisione|🎯|||cur_b1_145.accuracy
+точно|accurately|nøjagtigt|con precisione|📐|||cur_b1_145.accurately
+остаточний|definite|endelig|definitivo|✔️|||cur_b1_145.definite
+явний|evident|åbenlys|evidente|👁️|||cur_b1_145.evident
+видимий|apparent|tilsyneladende|apparente|🔎|||cur_b1_145.apparent
+очевидний|obvious|indlysende|ovvio|💡|||cur_b1_145.obvious
+реалістичний|realistic|realistisk|realistico|🌍|||cur_b1_145.realistic
+раціональний|rational|rationel|razionale|🧠|||cur_b1_145.rational
+прийнятний|reasonable|rimelig|ragionevole|⚖️|||cur_b1_145.reasonable
+формальний|formal|formel|formale|🎩|||cur_b1_145.formal
+офіційно|formally|formelt|formalmente|📜|||cur_b1_145.formally
+письмовий|written|skriftlig|scritto|✍️|||cur_b1_145.written
+#cur_b1_146|Безпечно й стабільно|⚖️|B1
+стабільний|stable|stabil|stabile|⚖️|stable||cur_b1_146.stable
+сталий|steady|jævn|costante|📈|||cur_b1_146.steady
+неухильно|steadily|støt|stabilmente|📶|||cur_b1_146.steadily
+тяжкий|severe|alvorlig|grave|🤕|||cur_b1_146.severe
+тяжко|severely|alvorligt|gravemente|🚑|||cur_b1_146.severely
+інтенсивний|intense|intens|intenso|🔥|||cur_b1_146.intense
+екстремальний|extreme|ekstrem|estremo|🌋|||cur_b1_146.extreme
+помірний|moderate|moderat|moderato|🌤️|||cur_b1_146.moderate
+тендітний|delicate|sart|delicato|🌸|||cur_b1_146.delicate
+захисний|protective|beskyttende|protettivo|🦺|||cur_b1_146.protective
+захист|protection|en beskyttelse|la protezione|🛡️|||cur_b1_146.protection
+безпечно|safely|sikkert|in sicurezza|✅|||cur_b1_146.safely
+небезпечно|dangerously|farligt|pericolosamente|⚠️|||cur_b1_146.dangerously
+#cur_b1_147|Схожі й залучені|👯|B1
+однаковий|alike|ens|uguale|👯|||cur_b1_147.alike
+власницький|possessive|possessiv|possessivo|🔒|||cur_b1_147.possessive
+залучений|involved|involveret|coinvolto|🙋|||cur_b1_147.involved
+обізнаний|aware|opmærksom|consapevole|👀|||cur_b1_147.aware
+притомний|conscious|bevidst|cosciente|🧠|||cur_b1_147.conscious
+обізнаність|awareness|en bevidsthed|la consapevolezza|💡|||cur_b1_147.awareness
+підсвідомий|subconscious|underbevidst|subconscio|🌀|||cur_b1_147.subconscious
+пасивний|passive|passiv|passivo|🛋️|||cur_b1_147.passive
+активний|active|aktiv|attivo|🏃|||cur_b1_147.active
+здатний|able|i stand til|capace|💪|||cur_b1_147.able
+нездатний|unable|ude af stand til|incapace|🚫|||cur_b1_147.unable
+#cur_b1_148|Нове й давнє|📅|B1
+поточний|current|nuværende|attuale|📅|||cur_b1_148.current
+наразі|currently|for tiden|attualmente|⏳|||cur_b1_148.currently
+попередній|previous|tidligere|precedente|⏮️|||cur_b1_148.previous
+колишній|former|forhenværende|ex|👴|||cur_b1_148.former
+останнім часом|lately|på det seneste|ultimamente|📆|||cur_b1_148.lately
+традиційно|traditionally|traditionelt|tradizionalmente|🎎|||cur_b1_148.traditionally
+нескінченний|endless|endeløs|interminabile|♾️|||cur_b1_148.endless
+постійний|continual|evindelig|continuo|🔄|||cur_b1_148.continual
+безперервний|continuous|uafbrudt|ininterrotto|➰|||cur_b1_148.continuous
+раз у раз|continually|hele tiden|continuamente|🔂|||cur_b1_148.continually
+безперервно|continuously|uafbrudt|ininterrottamente|⏩|||cur_b1_148.continuously
+#cur_b1_149|Рідко й часто|🐢|B1
+рідко|rarely|sjældent|raramente|🐢||rzadko|a2x02_time.rarely
+рідкісний|rare|sjælden|raro|💎|||cur_b1_149.rare
+частий|frequent|hyppig|frequente|🔁|||cur_b1_149.frequent
+епізодичний|occasional|lejlighedsvis|occasionale|🌦️|||cur_b1_149.occasional
+повсюдно|commonly|almindeligt|comunemente|👥|||cur_b1_149.commonly
+як правило|typically|typisk|tipicamente|📌|||cur_b1_149.typically
+загалом|generally|generelt|generalmente|🌐|||cur_b1_149.generally
+широко розповсюджений|widespread|vidt udbredt|diffuso|🗺️|||cur_b1_149.widespread
+постійно|constantly|konstant|costantemente|🔃|||cur_b1_149.constantly
+неодноразово|repeatedly|gentagne gange|ripetutamente|🔁|||cur_b1_149.repeatedly
+#cur_b1_150|Стан речей і людей|😩|B1
+втомлювати|to tire|at trætte|stancare|😩|||cur_b1_150.to_tire
+втомливий|tiring|trættende|faticoso|🥱|||cur_b1_150.tiring
+застряглий|stuck|fastlåst|bloccato|🚧|||cur_b1_150.stuck
+фарширований|stuffed|fyldt|ripieno|🫑|||cur_b1_150.stuffed
+липкий|sticky|klistret|appiccicoso|🍯|sticky||cur_b1_150.sticky
+нерухомий|motionless|ubevægelig|immobile|🗿|||cur_b1_150.motionless
+голий|naked|nøgen|nudo|🚿|||cur_b1_150.naked
+гучний|loud|høj|forte|🔊|loud||cur_b1_150.loud
+безмовний|silent|tavs|silenzioso|🤫|||cur_b1_150.silent
+галасливо|noisily|larmende|rumorosamente|📢|||cur_b1_150.noisily
+чистий|pure|ren|puro|💧|||cur_b1_150.pure
+прихований|hidden|skjult|nascosto|🙈|||cur_b1_150.hidden
+#cur_b1_151|Можливо й навряд|🎲|B1
+малоймовірний|unlikely|usandsynlig|improbabile|🎲|||cur_b1_151.unlikely
+непередбачуваний|unpredictable|uforudsigelig|imprevedibile|🌪️|||cur_b1_151.unpredictable
+некерований|uncontrollable|ukontrollabel|incontrollabile|🌀|||cur_b1_151.uncontrollable
+нібито|supposedly|angiveligt|apparentemente|🤨|||cur_b1_151.supposedly
+напевно|surely|vel|sicuramente|🤞|||cur_b1_151.surely
+безперечно|definitely|helt sikkert|di sicuro|✔️|||cur_b1_151.definitely
+сподіваюся|hopefully|forhåbentlig|speriamo|🙏|||cur_b1_151.hopefully
+особисто|personally|personligt|personalmente|🙋|||cur_b1_151.personally
+чесно|honestly|ærligt|onestamente|🤝|||cur_b1_151.honestly
+явно|obviously|åbenlyst|ovviamente|💡|||cur_b1_151.obviously
+природно|naturally|naturligt|naturalmente|🌿|||cur_b1_151.naturally
+уявний|imaginary|imaginær|immaginario|🦄|||cur_b1_151.imaginary
+непов'язаний|unrelated|urelateret|scollegato|🔀|||cur_b1_151.unrelated
+#cur_b1_152|Різне про речі|❗|B1
+аномальний|abnormal|unormal|anormale|❗|||cur_b1_152.abnormal
+абсолютний|absolute|absolut|assoluto|💯|||cur_b1_152.absolute
+рясний|abundant|rigelig|abbondante|🍇|||cur_b1_152.abundant
+ефективний|effective|effektiv|efficace|🎯|||cur_b1_152.effective
+достатній|sufficient|tilstrækkelig|sufficiente|✅|||cur_b1_152.sufficient
+різноманітний|various|diverse|vario|🎨|||cur_b1_152.various
+даремний|vain|forgæves|vano|🌫️|||cur_b1_152.vain
+небажаний|unwanted|uønsket|indesiderato|🚫|||cur_b1_152.unwanted
+поспішний|hasty|forhastet|affrettato|⏱️|||cur_b1_152.hasty
+незручний|inconvenient|ubelejlig|scomodo|😕|||cur_b1_152.inconvenient
+нерегулярний|irregular|uregelmæssig|irregolare|📉|||cur_b1_152.irregular
+упорядкований|orderly|velordnet|ordinato|🗂️|||cur_b1_152.orderly
+переконливий|persuasive|overbevisende|persuasivo|🗣️|||cur_b1_152.persuasive
+дорогоцінний|precious|dyrebar|prezioso|💍|||cur_b1_152.precious
+#cur_b1_153|Зв'язні слова|😮|B1
+на диво|surprisingly|overraskende nok|sorprendentemente|😮||zaskakująco|b1x03_linking.surprisingly
+початково|initially|til at begynde med|inizialmente|🏁|||cur_b1_153.initially
+усього|altogether|i alt|in tutto|🧮|||cur_b1_153.altogether
+убік|aside|til side|da parte|↔️|||cur_b1_153.aside
+більше того|furthermore|endvidere|per di più|➕||ponadto|b2x03_linking.furthermore
+таким чином|thus|således|pertanto|➡️||tym samym|b2x03_linking.thus
+інакше|otherwise|ellers|altrimenti|🔀||inaczej|b2x03_linking.otherwise
+так само|similarly|på samme måde|allo stesso modo|🟰||podobnie|b2x03_linking.similarly
+потім|afterwards|bagefter|dopo|⏭️||potem|a2x01_connectors.afterwards
+крім того|moreover|desuden|inoltre|➕||poza tym|b1_connectors.moreover
+зрештою|eventually|til sidst|alla fine|🏁||w końcu|b2_connectors.eventually
+тим часом|meanwhile|i mellemtiden|nel frattempo|⏱️||w międzyczasie|b2_connectors.meanwhile
+якщо не|unless|medmindre|a meno che|🚧||chyba że|b1x03_linking.unless
+#cur_b1_154|Як саме|🎶|B1
+гарно|beautifully|smukt|magnificamente|🎶|||cur_b1_154.beautifully
+тепло|warmly|varmt|calorosamente|🤗|||cur_b1_154.warmly
+люб'язно|kindly|venligt|gentilmente|😊|||cur_b1_154.kindly
+приємно|pleasantly|behageligt|piacevolmente|😌|||cur_b1_154.pleasantly
+легенько|lightly|let|leggermente|🪶|||cur_b1_154.lightly
+міцно|tightly|stramt|strettamente|🪢|||cur_b1_154.tightly
+твердо|firmly|bestemt|fermamente|✊|||cur_b1_154.firmly
+вільно|freely|frit|liberamente|🕊️|||cur_b1_154.freely
+порівну|evenly|ligeligt|equamente|⚖️|||cur_b1_154.evenly
+пильно|closely|nøje|attentamente|🔍|||cur_b1_154.closely
+поспіхом|hurriedly|skyndsomt|frettolosamente|🏃|||cur_b1_154.hurriedly
+шалено|wildly|vildt|freneticamente|🎉|||cur_b1_154.wildly
+#cur_b1_155|Наскільки|💯|B1
+абсолютно|absolutely|absolut|assolutamente|💯|||cur_b1_155.absolutely
+зовсім|totally|totalt|totalmente|🔟|||cur_b1_155.totally
+відносно|relatively|relativt|relativamente|⚖️|||cur_b1_155.relatively
+злегка|slightly|lidt|lievemente|🤏|||cur_b1_155.slightly
+вкрай|highly|yderst|altamente|📈|||cur_b1_155.highly
+жахливо|terribly|frygteligt|terribilmente|😖|||cur_b1_155.terribly
+всього лише|merely|blot|soltanto|☝️|||cur_b1_155.merely
+докладно|extensively|indgående|ampiamente|📚|||cur_b1_155.extensively
+#cur_b1_156|Навмисно чи випадково|🎲|B1
+випадковий|accidental|utilsigtet|accidentale|🎲|||cur_b1_156.accidental
+безпосередньо|directly|direkte|direttamente|➡️|||cur_b1_156.directly
+опосередковано|indirectly|indirekte|indirettamente|↪️|||cur_b1_156.indirectly
+непрямий|indirect|indirekte|indiretto|↩️|||cur_b1_156.indirect
+одночасно|simultaneously|samtidig|contemporaneamente|⏱️|||cur_b1_156.simultaneously
+спеціально|specially|specielt|appositamente|🎁|||cur_b1_156.specially
+дивно|strangely|mærkeligt|stranamente|🤨|||cur_b1_156.strangely
+з цікавістю|curiously|nysgerrigt|con curiosità|🧐|||cur_b1_156.curiously
+незвично|unusually|usædvanligt|insolitamente|🦓|||cur_b1_156.unusually
+несправедливо|unfairly|uretfærdigt|ingiustamente|⚖️|||cur_b1_156.unfairly
+#cur_b1_157|Яскраво й помітно|👥|B1
+соціально|socially|socialt|socialmente|👥|||cur_b1_157.socially
+на міжнародному рівні|internationally|internationalt|internazionalmente|🌍|||cur_b1_157.internationally
+візуальний|visual|visuel|visivo|👁️|||cur_b1_157.visual
+візуально|visually|visuelt|visivamente|🖼️|||cur_b1_157.visually
+яскравий|vivid|levende|vivido|🌈|||cur_b1_157.vivid
+яскраво|vividly|levende|vividamente|🎨|||cur_b1_157.vividly
+розкішний|glorious|herlig|splendido|☀️|||cur_b1_157.glorious
+виразно|distinctly|tydeligt|distintamente|🔊|||cur_b1_157.distinctly
+помітний|noticeable|mærkbar|percettibile|🔎|||cur_b1_157.noticeable
+стрімкий|rapid|hastig|rapido|🚀|||cur_b1_157.rapid
+стрімко|rapidly|hastigt|rapidamente|⚡|||cur_b1_157.rapidly
+дедалі більше|increasingly|i stigende grad|sempre più|📈|||cur_b1_157.increasingly
+як слід|properly|ordentligt|per bene|👌|||cur_b1_157.properly
+#cur_b1_158|Ще корисні дієслова|🚶|B1
+супроводжувати|to accompany|at ledsage|accompagnare|🚶|||cur_b1_158.to_accompany
+адресувати|to address|at adressere|indirizzare|✉️|||cur_b1_158.to_address
+тривожити|to alarm|at forurolige|allarmare|🚨|||cur_b1_158.to_alarm
+бульбашка|bubble|en boble|la bolla|🫧|||cur_b1_158.bubble
+уклін|bow|et buk|l'inchino|🙇|||cur_b1_158.bow
+обережність|caution|en forsigtighed|la cautela|⚠️|||cur_b1_158.caution
+розподіл|distribution|en fordeling|la distribuzione|📦|||cur_b1_158.distribution
+скидати|to dump|at dumpe|scaricare|🚮|||cur_b1_158.to_dump
+освоєння|exploration|en udforskning|l'esplorazione|🧭|||cur_b1_158.exploration
+текти|to flow|at flyde|scorrere|🌊|||cur_b1_158.to_flow
+розгортати|to unfold|at folde ud|spiegare|🗺️|||cur_b1_158.to_unfold
+пасувати|to match|at matche|abbinare|🧦|||cur_b1_158.to_match
+очищати|to purify|at rense|purificare|💧|||cur_b1_158.to_purify
+#cur_b1_159|Ще корисні прикметники|⏱️|B1
+нетривалий|brief|kortvarig|breve|⏱️|||cur_b1_159.brief
+коротко|briefly|kort|brevemente|💬|||cur_b1_159.briefly
+гнітючий|depressing|deprimerende|deprimente|🌧️|||cur_b1_159.depressing
+низхідний|downward|nedadgående|discendente|⬇️|||cur_b1_159.downward
+висхідний|upward|opadgående|ascendente|⬆️|||cur_b1_159.upward
+ексклюзивний|exclusive|eksklusiv|esclusivo|💎|||cur_b1_159.exclusive
+опалий|fallen|falden|caduto|🍂|||cur_b1_159.fallen
+обмежений|limited|begrænset|limitato|🔒|||cur_b1_159.limited
+підготовлений|prepared|forberedt|preparato|📋|||cur_b1_159.prepared
+колосальний|tremendous|vældig|straordinario|🏔️|||cur_b1_159.tremendous
+якось|somehow|på en eller anden måde|in qualche modo|🤷|||cur_b1_159.somehow
+#cur_b1_160|Різні слова|🙏|B1
+визнання|acknowledgment|en anerkendelse|il riconoscimento|🙏|||cur_b1_160.acknowledgment
+діяти|to act|at handle|agire|🎬|||cur_b1_160.to_act
+кружляти|to circle|at kredse|volteggiare|🦅|||cur_b1_160.to_circle
+ускладнювати|to complicate|at komplicere|complicare|🧶|||cur_b1_160.to_complicate
+залучати|to engage|at engagere|coinvolgere|🤝|||cur_b1_160.to_engage
+найменше|least|mindst|meno|📉|||cur_b1_160.least
+обмежувати|to limit|at begrænse|limitare|🚧|||cur_b1_160.to_limit
+поштовх|push|et skub|la spinta|👐|||cur_b1_160.push
+досяжність|reach|en rækkevidde|la portata|🤲|||cur_b1_160.reach
+решта|rest|en rest|il resto|🧩|||cur_b1_160.rest
+щілина|slot|en sprække|la fessura|📮|||cur_b1_160.slot
+смужка|strip|en strimmel|la striscia|📏|||cur_b1_160.strip
+тригер|trigger|en udløser|il fattore scatenante|⚡|||cur_b1_160.trigger
+#mix_B1_cur|Інші слова|🧩|B1
+проїзний|season ticket|et periodekort|l'abbonamento|🪪||bilet okresowy|a2x01_transport.season_ticket
+класти слухавку|to hang up|at lægge på|riattaccare|📴||rozłączać się|a2x01_phone.to_hang_up
+Телефон розрядився.|My phone is dead.|Min telefon er død.|Il telefono è scarico.|🪫||Rozładował mi się telefon.|a2x01_phone.my_phone_is_dead
+чистити (овочі)|to peel|at skrælle|sbucciare|🥔|peel_,_to|obierać|a2x02_kitchen.to_peel
+кришка (каструлі)|lid|et låg|il coperchio|🫕|lid|pokrywka|a2x02_kitchen.lid
+обробна дошка|chopping board|et skærebræt|il tagliere|🪵|chopping_board|deska do krojenia|a2x02_kitchen.chopping_board
+примірювальна|fitting room|et prøverum|il camerino|🚪||przymierzalnia|a2x02_shopclothes.fitting_room
+цінник|price tag|et prismærke|il cartellino del prezzo|💲||metka|a2x02_shopclothes.price_tag
+підтримувати форму|to keep fit|at holde sig i form|tenersi in forma|💪||utrzymywać formę|a2x02_sport.to_keep_fit
+вчити напам'ять|to learn by heart|at lære udenad|imparare a memoria|🧠||uczyć się na pamięć|a2x02_school.to_learn_by_heart
+робити нотатки|to take notes|at tage noter|prendere appunti|🗒️||robić notatki|a2x02_school.to_take_notes
+майже ніколи|hardly ever|næsten aldrig|quasi mai|🚫||prawie nigdy|a2x02_time.hardly_ever
+час від часу|from time to time|fra tid til anden|di tanto in tanto|🔁||od czasu do czasu|a2x02_time.from_time_to_time
+цілу вічність|for ages|i evigheder|da secoli|🕰️||od wieków|a2x02_time.for_ages
+співбесіда|job interview|en jobsamtale|il colloquio di lavoro|🤝||rozmowa kwalifikacyjna|b1_work.job_interview
+бланк заяви|application form|en ansøgningsblanket|il modulo di domanda|📋||formularz wniosku|b1x01_paperwork.application_form
+персональні дані|personal data|personoplysninger|i dati personali|🔐||dane osobowe|b1x01_paperwork.personal_data
+банківський переказ|bank transfer|en bankoverførsel|il bonifico|🏦||przelew bankowy|b1x01_money.bank_transfer
+нагадування про оплату|payment reminder|en rykker|il sollecito di pagamento|🔔||przypomnienie o płatności|b1x01_money.payment_reminder
+закохатися|to fall in love|at forelske sig|innamorarsi|😍||zakochać się|b1x02_relationships.to_fall_in_love
+самотній|lonely|ensom|solo|😔||samotny|b1x02_relationships.lonely
+стосунки на відстані|long-distance relationship|et langdistanceforhold|la relazione a distanza|🌍||związek na odległość|b1x02_relationships.long_distance_relationship
+відділення невідкладної допомоги|emergency department|en skadestue|il pronto soccorso|🏥||szpitalny oddział ratunkowy|b1x02_health.emergency_department
+записатися на прийом|to make an appointment|at bestille tid|prendere un appuntamento|📅||umówić się na wizytę|b1x02_health.to_make_an_appointment
+аналіз крові|blood test|en blodprøve|l'esame del sangue|🩸||badanie krwi|b1x02_health.blood_test
+фейкові новини|fake news|falske nyheder|le notizie false|🤥||fałszywe wiadomości|b1x02_news.fake_news
+новина|news story|en nyhed|la notizia|🗞️||wiadomość|b1x02_news.news_story
+стежити за новинами|to follow the news|at følge med i nyhederne|seguire le notizie|👀||śledzić wiadomości|b1x02_news.to_follow_the_news
+владний (любить командувати)|bossy|dominerende|prepotente|👑||apodyktyczny|b1x03_personality.bossy
+йому за тридцять|in his thirties|i trediverne|sulla trentina|🎂||po trzydziestce|b1x03_appearance.in_his_thirties
+захоплюватися (чимось)|to be keen on|at være vild med|essere appassionato di|😍||pasjonować się|b1x03_culture.to_be_keen_on
+колекція|collection|en samling|la collezione|🗃️||kolekcja|b1x03_culture.collection
+камера відеоспостереження|security camera|et overvågningskamera|la telecamera di sorveglianza|📹||kamera monitoringu|b1x03_crime.security_camera
+приліжкова тумбочка|bedside table|et natbord|il comodino|🛏️|||cur_b1_014.bedside_table
+фен|hair dryer|en hårtørrer|l'asciugacapelli|💨|||cur_b1_014.hair_dryer
+кінематографіст|filmmaker|en filmskaber|il cineasta|🎬|||cur_b1_086.filmmaker
+гортати (стрічку)|to scroll|at scrolle|scorrere|📜||przewijać|b2m_gadgets.to_scroll
+бездротовий|wireless|trådløs|senza fili|📶||bezprzewodowy|b2m_gadgets.wireless
+кров'яний тиск|blood pressure|et blodtryk|la pressione sanguigna|🩸|blood_pressure|ciśnienie krwi|b2m_medicine.blood_pressure
+розлучення|divorce|en skilsmisse|il divorzio|💔||rozwód|b2m_relationships.divorce
+місцева громада|local community|et lokalsamfund|la comunità locale|🏘️||lokalna społeczność|b2x01_civic.local_community
+голосувати проти|to vote against|at stemme imod|votare contro|👎||głosować przeciw|b2x01_civic.to_vote_against
+кандидат|candidate|en kandidat|il candidato|🙋‍♂️||kandydat|b2x01_civic.candidate
+порушувати закон|to break the law|at bryde loven|violare la legge|🚷||łamać prawo|b2x01_law.to_break_the_law
+експорт|export|eksport|l'esportazione|🚢||eksport|b2x01_economy.export
+імпорт|import|import|l'importazione|📥||import|b2x01_economy.import
+відкрити власну справу|to start a business|at starte en virksomhed|avviare un'attività|🏁||otworzyć własną firmę|b2x01_business.to_start_a_business
+бізнес-план|business plan|en forretningsplan|il piano aziendale|🗂️||biznesplan|b2x01_business.business_plan
+телескоп|telescope|et teleskop|il telescopio|🔭||teleskop|b2x02_science.telescope
+комп'ютерний вірус|computer virus|en computervirus|il virus informatico|🦠||wirus komputerowy|b2x02_tech.computer_virus
+винахідник|inventor|en opfinder|l'inventore|🧑‍🔧||wynalazca|b2x02_tech.inventor
+зберігати спокій|to keep calm|at bevare roen|mantenere la calma|🧘||zachować spokój|b2x02_psych.to_keep_calm
+твір мистецтва|work of art|et kunstværk|l'opera d'arte|🎨||dzieło sztuki|b2x02_arts.work_of_art
+стримінговий сервіс|streaming service|en streamingtjeneste|il servizio di streaming|📺||serwis streamingowy|b2x02_media.streaming_service
+спецефекти|special effects|specialeffekter|gli effetti speciali|✨||efekty specjalne|b2x02_media.special_effects
+бути розпроданим|to be sold out|at være udsolgt|essere esaurito|🎫||być wyprzedanym|b2x02_media.to_be_sold_out
+інфлюенсер|influencer|en influencer|l'influencer|🤳||influencer|b2x03_media.influencer
+перша шпальта|front page|en forside|la prima pagina|📄||pierwsza strona|b2x03_media.front_page
+розійтися (про пару)|to split up|at gå fra hinanden|lasciarsi|💔||rozstać się|b2x03_social.to_split_up
+тусуватися (проводити час разом)|to hang out|at hænge ud|passare il tempo insieme|🛹||spędzać czas|b2x03_social.to_hang_out
+заручитися|to get engaged|at blive forlovet|fidanzarsi|💍||zaręczyć się|b2x03_social.to_get_engaged
+давати зворотний зв'язок|to give feedback|at give feedback|dare un feedback|💬||przekazywać informację zwrotną|b2x03_meetings.to_give_feedback
+на завершення|in conclusion|afslutningsvis|in conclusione|🔚||podsumowując|c1x01_academic.in_conclusion
+мова жестів|sign language|et tegnsprog|la lingua dei segni|🤟||język migowy|c2x01_linguistics.sign_language
+ратуша|town hall|et rådhus|il municipio|🏢||ratusz|a1x01_town.town_hall
+Не сумуй!|Cheer up!|Op med humøret!|Su con la vita!|🌞||Nie smuć się!|a1x01_feelings.cheer_up
+вимикач|light switch|en lyskontakt|l'interruttore|💡||włącznik światła|a1x02_house.light_switch
+Вибачте, що турбую.|Sorry to bother you.|Undskyld, at jeg forstyrrer.|Scusi il disturbo.|🙇||Przepraszam, że przeszkadzam.|a1x02_polite.sorry_to_bother_you
+Почувайся як удома.|Make yourself at home.|Føl dig hjemme.|Fai come se fossi a casa tua.|🏠||Czuj się jak u siebie w domu.|a1x02_polite.make_yourself_at_home
+рецензія|review|en anmeldelse|la recensione|📝||recenzja|c1m_arts.review
+позика|loan|et lån|il prestito|🤲||pożyczka|c1m_finance.loan
+соціальний працівник|social worker|en socialrådgiver|l'assistente sociale|🤝||pracownik socjalny|c1x01_welfare.social_worker
+будинок для літніх людей|nursing home|et plejehjem|la casa di riposo|🏠||dom spokojnej starości|c1x01_welfare.nursing_home
+студентська позика|student loan|et studielån|il prestito studentesco|🏧||kredyt studencki|c1x02_research.student_loan
+щодо|regarding|vedrørende|riguardo a|✉️||w sprawie|c2x01_formal.regarding
+З повагою (у листі)|Yours faithfully|Med venlig hilsen|Distinti saluti|✒️||Z poważaniem|c2x01_formal.yours_faithfully
 #a1x03_months|Пори року й місяці|🗓️|A1
 січень|January|januar|gennaio|❄️|||a1x03_months.january
 лютий|February|februar|febbraio|❄️|||a1x03_months.february
@@ -1226,370 +4710,6 @@ DVD-диск|DVD|en dvd|il dvd|📀|||cur_a1_23.dvd
 Зачиніть, будь ласка, двері.|Could you close the door, please?|Kan du lukke døren?|Può chiudere la porta, per favore?|🚪|||a1x04_phr_a1_polite.could_you_close_the_door_please
 Перепрошую, це ваша сумка?|Excuse me, is this your bag?|Undskyld, er det din taske?|Scusi, è sua questa borsa?|👜|||a1x04_phr_a1_polite.excuse_me_is_this_your_bag
 Я не хотів.|I didn't mean to.|Det var ikke meningen.|Non l'ho fatto apposta.|😬|||a1x04_phr_a1_polite.i_didn_t_mean_to
-#a2_health|Здоров'я|🩺|A2
-шлунок|stomach|en mave|lo stomaco|🤢|stomach|żołądek|a2_health.stomach
-хворий|ill|syg|malato|🤒|sneeze_cold|chory|a2_health.ill
-біль|pain|en smerte|il dolore|🤕|headache|ból|a2_health.pain
-аптека|pharmacy|et apotek|la farmacia|🏥💊|medicine_cabinet|apteka|a2_health.pharmacy
-відпочивати|to rest|at hvile|riposare|🛋️|rest_,_to|odpoczywać|a2_health.to_rest
-#a2_phrases|Вирази|💬|A2
-Рахунок, будь ласка.|The bill, please.|Regningen, tak.|Il conto, per favore.|🧾||Poproszę rachunek.|a2_phrases.the_bill_please
-Удачі!|Good luck!|Held og lykke!|Buona fortuna!|🍀|lucky|Powodzenia!|a2_phrases.good_luck
-Що сталося?|What happened?|Hvad skete der?|Cos'è successo?|😮||Co się stało?|a2_phrases.what_happened
-Я заблукав.|I'm lost.|Jeg er faret vild.|Mi sono perso.|🧭|lost|Zgubiłem się.|a2_phrases.i_m_lost
-Хвилинку.|Just a moment.|Et øjeblik.|Un momento.|⏳|wait_,_to|Chwileczkę.|a2_phrases.just_a_moment
-Будьмо!|Cheers!|Skål!|Salute!|🥂|champagne|Na zdrowie!|a2_phrases.cheers
-#a2m_clothes|Одяг|👕|A2
-светр|sweater|en sweater|il maglione|🧶|jumper|sweter|a2m_clothes.sweater
-шарф|scarf|et halstørklæde|la sciarpa|🧣|scarf|szalik|a2m_clothes.scarf
-рукавичка|glove|en handske|il guanto|🧤|gloves|rękawiczka|a2m_clothes.glove
-шкарпетка|sock|en sok|il calzino|🧦|socks|skarpetka|a2m_clothes.sock
-приміряти|to try on|at prøve|provare|👗||przymierzać|a2m_clothes.to_try_on
-#a2m_animals|Тварини|🐾|A2
-курка|hen|en høne|la gallina|🐔|chicken_live|kura|a2m_animals.hen
-лисиця|fox|en ræv|la volpe|🦊|fox|lis|a2m_animals.fox
-качка|duck|en and|l'anatra|🦆|duck|kaczka|a2m_animals.duck
-вовк|wolf|en ulv|il lupo|🐺|wolf|wilk|a2m_animals.wolf
-#a2m_jobs|Професії|👷|A2
-продавець|shop assistant|en ekspedient|il commesso|🛒||sprzedawca|a2m_jobs.shop_assistant
-пожежник|firefighter|en brandmand|il pompiere|🧑‍🚒||strażak|a2m_jobs.firefighter
-програміст|programmer|en programmør|il programmatore|💻||programista|a2m_jobs.programmer
-пілот|pilot|en pilot|il pilota|🧑‍✈️|pilot_1a|pilot|a2m_jobs.pilot
-перукар|hairdresser|en frisør|il parrucchiere|💇||fryzjer|a2m_jobs.hairdresser
-#a2m_phrases|Корисні вирази|🗨️|A2
-Одужуй швидше!|Get well soon!|God bedring!|Guarisci presto!|🤒||Wracaj szybko do zdrowia!|a2m_phrases.get_well_soon
-Смачного!|Enjoy your meal!|God appetit!|Buon appetito!|🍽️||Smacznego!|a2m_phrases.enjoy_your_meal
-Вітаю!|Congratulations!|Tillykke!|Congratulazioni!|🎉||Gratuluję!|a2m_phrases.congratulations
-Нічого страшного.|It doesn't matter.|Det gør ikke noget.|Non importa.|🤷||Nic nie szkodzi.|a2m_phrases.it_doesn_t_matter
-Я погано почуваюся.|I don't feel well.|Jeg har det ikke godt.|Non mi sento bene.|🤢||Źle się czuję.|a2m_phrases.i_don_t_feel_well
-Це місце вільне?|Is this seat free?|Er denne plads ledig?|È libero questo posto?|💺||Czy to miejsce jest wolne?|a2m_phrases.is_this_seat_free
-Із задоволенням!|With pleasure!|Med glæde!|Con piacere!|😊||Z przyjemnością!|a2m_phrases.with_pleasure
-Щасливої дороги!|Have a good trip!|God rejse!|Buon viaggio!|🧳||Szczęśliwej podróży!|a2m_phrases.have_a_good_trip
-#a2x01_restaurant|Ресторан і кафе|🍽️|A2
-закуска (перша страва)|starter|en forret|l'antipasto|🥗||przystawka|a2x01_restaurant.starter
-основна страва|main course|en hovedret|il piatto principale|🍝|main_course|danie główne|a2x01_restaurant.main_course
-десерт|dessert|en dessert|il dolce|🍰|dessert|deser|a2x01_restaurant.dessert
-рахунок (у ресторані)|bill|en regning|il conto|🧾||rachunek|a2x01_restaurant.bill
-чайові|tip|drikkepenge|la mancia|💶||napiwek|a2x01_restaurant.tip
-замовляти|to order|at bestille|ordinare|📝||zamawiać|a2x01_restaurant.to_order
-забронювати столик|to book a table|at bestille bord|prenotare un tavolo|📞||zarezerwować stolik|a2x01_restaurant.to_book_a_table
-серветка|napkin|en serviet|il tovagliolo|🧻||serwetka|a2x01_restaurant.napkin
-вегетаріанський|vegetarian|vegetarisk|vegetariano|🥦||wegetariański|a2x01_restaurant.vegetarian
-соус|sauce|en sovs|la salsa|🥫||sos|a2x01_restaurant.sauce
-газована вода|sparkling water|danskvand|l'acqua frizzante|🫧||woda gazowana|a2x01_restaurant.sparkling_water
-Що ви порадите?|What do you recommend?|Hvad kan du anbefale?|Cosa mi consiglia?|🤔||Co pan poleca?|a2x01_restaurant.what_do_you_recommend
-#a2x01_doctor|У лікаря та в аптеці|🩺|A2
-запис (до лікаря)|appointment|en aftale|l'appuntamento|📅||wizyta|a2x01_doctor.appointment
-біль у горлі|sore throat|ondt i halsen|il mal di gola|😷||ból gardła|a2x01_doctor.sore_throat
-зубний біль|toothache|en tandpine|il mal di denti|🦷|toothache|ból zęba|a2x01_doctor.toothache
-застудитися|to catch a cold|at blive forkølet|prendere il raffreddore|🤧||przeziębić się|a2x01_doctor.to_catch_a_cold
-кашель|cough|en hoste|la tosse|😮‍💨||kaszel|a2x01_doctor.cough
-стоматолог|dentist|en tandlæge|il dentista|🪥|dentist_1a|dentysta|a2x01_doctor.dentist
-пацієнт|patient|en patient|il paziente|🤒||pacjent|a2x01_doctor.patient
-зала очікування|waiting room|et venteværelse|la sala d'attesa|🪑||poczekalnia|a2x01_doctor.waiting_room
-приймати ліки|to take medicine|at tage medicin|prendere le medicine|💊||brać leki|a2x01_doctor.to_take_medicine
-двічі на день|twice a day|to gange om dagen|due volte al giorno|🕑||dwa razy dziennie|a2x01_doctor.twice_a_day
-нудити (мене нудить)|to feel sick|at have kvalme|avere la nausea|🤢||mieć mdłości|a2x01_doctor.to_feel_sick
-швидка допомога|ambulance|en ambulance|l'ambulanza|🚑|ambulance|karetka|a2x01_doctor.ambulance
-одужувати|to get better|at få det bedre|migliorare|🙂||zdrowieć|a2x01_doctor.to_get_better
-#a2x01_doctor~B1|У лікаря та в аптеці|🩺|B1
-сироп від кашлю|cough syrup|en hostesaft|lo sciroppo per la tosse|🍯||syrop na kaszel|a2x01_doctor.cough_syrup
-пластир|plaster|et plaster|il cerotto|🩹|plaster|plaster|a2x01_doctor.plaster
-фармацевт|pharmacist|en farmaceut|il farmacista|⚕️||farmaceuta|a2x01_doctor.pharmacist
-термометр|thermometer|et termometer|il termometro|🌡️|thermometer|termometr|a2x01_doctor.thermometer
-#a2x01_post_bank|Пошта і банк|🏦|A2
-поштова марка|stamp|et frimærke|il francobollo|📮||znaczek pocztowy|a2x01_post_bank.stamp
-конверт|envelope|en kuvert|la busta|✉️|envelope|koperta|a2x01_post_bank.envelope
-листівка|postcard|et postkort|la cartolina|🏞️||pocztówka|a2x01_post_bank.postcard
-поштова скринька|postbox|en postkasse|la cassetta delle lettere|📮||skrzynka pocztowa|a2x01_post_bank.postbox
-отримувати|to receive|at modtage|ricevere|📥|receive_,_to|otrzymywać|a2x01_post_bank.to_receive
-листоноша|postman|et postbud|il postino|📬||listonosz|a2x01_post_bank.postman
-банкомат|cash machine|en hæveautomat|il bancomat|🏧||bankomat|a2x01_post_bank.cash_machine
-кидати (лист у скриньку)|to post|at poste|imbucare|📮||wrzucać do skrzynki|a2x01_post_bank.to_post
-заповнювати бланк|to fill in a form|at udfylde en formular|compilare un modulo|📝||wypełniać formularz|a2x01_post_bank.to_fill_in_a_form
-#a2x01_post_bank~B1|Пошта і банк|🏦|B1
-посилка|parcel|en pakke|il pacco|📦||paczka|a2x01_post_bank.parcel
-дрібні гроші|small change|småpenge|gli spiccioli|🪙||drobne|a2x01_post_bank.small_change
-дебетова картка|debit card|et betalingskort|la carta di debito|💳||karta debetowa|a2x01_post_bank.debit_card
-обмінювати гроші|to exchange money|at veksle penge|cambiare i soldi|💱||wymieniać pieniądze|a2x01_post_bank.to_exchange_money
-кур'єр|courier|et bud|il corriere|🛵||kurier|a2x01_post_bank.courier
-банкнота|banknote|en pengeseddel|la banconota|💶||banknot|a2x01_post_bank.banknote
-ПІН-код|PIN code|en pinkode|il codice PIN|🔢||kod PIN|a2x01_post_bank.pin_code
-#a2x01_flat|Оренда житла і хатні справи|🏠|A2
-орендувати|to rent|at leje|affittare|🔑||wynajmować|a2x01_flat.to_rent
-меблі|furniture|møbler|i mobili|🛋️|furniture|meble|a2x01_flat.furniture
-рахунок за електрику|electricity bill|en elregning|la bolletta della luce|🧾⚡||rachunek za prąd|a2x01_flat.electricity_bill
-мити посуд|to do the washing-up|at vaske op|lavare i piatti|🍽️||zmywać naczynia|a2x01_flat.to_do_the_washing_up
-застеляти ліжко|to make the bed|at rede seng|rifare il letto|🛏️|make_the_bed_,_to|ścielić łóżko|a2x01_flat.to_make_the_bed
-виносити сміття|to take out the rubbish|at tage skraldet ud|portare fuori la spazzatura|🗑️||wynosić śmieci|a2x01_flat.to_take_out_the_rubbish
-поливати рослини|to water the plants|at vande planterne|annaffiare le piante|🪴||podlewać rośliny|a2x01_flat.to_water_the_plants
-сусід по квартирі|flatmate|en bofælle|il coinquilino|🧑‍🤝‍🧑||współlokator|a2x01_flat.flatmate
-#a2x01_flat~B1|Оренда житла і хатні справи|🏠|B1
-мебльований|furnished|møbleret|arredato|🪑||umeblowany|a2x01_flat.furnished
-пилососити|to vacuum|at støvsuge|passare l'aspirapolvere|🧹||odkurzać|a2x01_flat.to_vacuum
-витирати пил|to dust|at tørre støv af|spolverare|🪶|dust_,_to|ścierać kurze|a2x01_flat.to_dust
-підмітати|to sweep|at feje|spazzare|🧹||zamiatać|a2x01_flat.to_sweep
-мити підлогу|to mop the floor|at vaske gulv|lavare il pavimento|🧽||myć podłogę|a2x01_flat.to_mop_the_floor
-#a2x01_transport|Громадський транспорт і квитки|🚌|A2
-вокзал|railway station|en banegård|la stazione ferroviaria|🚉||dworzec|a2x01_transport.railway_station
-платформа|platform|en perron|il binario|🛤️||peron|a2x01_transport.platform
-місце біля вікна|window seat|en vinduesplads|il posto al finestrino|🪟||miejsce przy oknie|a2x01_transport.window_seat
-квиток в один бік|single ticket|en enkeltbillet|il biglietto di sola andata|🎫||bilet w jedną stronę|a2x01_transport.single_ticket
-квиток туди й назад|return ticket|en returbillet|il biglietto di andata e ritorno|🎟️||bilet w obie strony|a2x01_transport.return_ticket
-пересідати на інший потяг|to change trains|at skifte tog|cambiare treno|🔁||przesiadać się|a2x01_transport.to_change_trains
-багаж|luggage|bagage|i bagagli|🧳||bagaż|a2x01_transport.luggage
-затримка|delay|en forsinkelse|il ritardo|⏰||opóźnienie|a2x01_transport.delay
-пасажир|passenger|en passager|il passeggero|🧳||pasażer|a2x01_transport.passenger
-вартість проїзду|fare|en billetpris|il prezzo del biglietto|💶||cena biletu|a2x01_transport.fare
-спізнитися на потяг|to miss the train|at komme for sent til toget|perdere il treno|😩||spóźnić się na pociąg|a2x01_transport.to_miss_the_train
-квиткова каса|ticket office|et billetkontor|la biglietteria|🏢||kasa biletowa|a2x01_transport.ticket_office
-подорож (поїздка)|journey|en rejse|il viaggio|🗺️||przejazd|a2x01_transport.journey
-#a2x01_transport~B1|Громадський транспорт і квитки|🚌|B1
-пором|ferry|en færge|il traghetto|⛴️|ferry|prom|a2x01_transport.ferry
-проїзний|season ticket|et periodekort|l'abbonamento|🪪||bilet okresowy|a2x01_transport.season_ticket
-пересадка (на інший потяг)|connection|en forbindelse|la coincidenza|🔀||przesiadka|a2x01_transport.connection
-відправлення|departure|en afgang|la partenza|🛫||odjazd|a2x01_transport.departure
-прибуття|arrival|en ankomst|l'arrivo|🛬||przyjazd|a2x01_transport.arrival
-#a2x01_phone|Телефон і повідомлення|📱|A2
-надсилати есемеску|to send a text|at sende en sms|mandare un messaggio|💬||wysyłać SMS-a|a2x01_phone.to_send_a_text
-відповідати на дзвінок|to answer the phone|at tage telefonen|rispondere al telefono|☎️||odbierać telefon|a2x01_phone.to_answer_the_phone
-пропущений дзвінок|missed call|et ubesvaret opkald|la chiamata persa|📵||nieodebrane połączenie|a2x01_phone.missed_call
-голосове повідомлення|voice message|en talebesked|il messaggio vocale|🎙️||wiadomość głosowa|a2x01_phone.voice_message
-сім-карта|SIM card|et SIM-kort|la scheda SIM|📶||karta SIM|a2x01_phone.sim_card
-контакт (у телефоні)|contact|en kontakt|il contatto|👤||kontakt|a2x01_phone.contact
-смартфон|smartphone|en smartphone|lo smartphone|📱||smartfon|a2x01_phone.smartphone
-телефонна розмова|phone call|et opkald|la telefonata|📞||rozmowa telefoniczna|a2x01_phone.phone_call
-передзвонювати|to call back|at ringe tilbage|richiamare|🔁||oddzwaniać|a2x01_phone.to_call_back
-чат|chat|en chat|la chat|💬||czat|a2x01_phone.chat
-смайлик|emoji|en emoji|l'emoji|😀||emotka|a2x01_phone.emoji
-Хто дзвонить?|Who's calling?|Hvem taler jeg med?|Chi parla?|❓||Kto mówi?|a2x01_phone.who_s_calling
-вимикати|to switch off|at slukke|spegnere|📴||wyłączać|a2x01_phone.to_switch_off
-вмикати|to switch on|at tænde|accendere|💡||włączać|a2x01_phone.to_switch_on
-#a2x01_phone~B1|Телефон і повідомлення|📱|B1
-рингтон|ringtone|en ringetone|la suoneria|🎵||dzwonek|a2x01_phone.ringtone
-класти слухавку|to hang up|at lægge på|riattaccare|📴||rozłączać się|a2x01_phone.to_hang_up
-Телефон розрядився.|My phone is dead.|Min telefon er død.|Il telefono è scarico.|🪫||Rozładował mi się telefon.|a2x01_phone.my_phone_is_dead
-сигнал (мобільного зв'язку)|signal|et signal|il segnale|📶||zasięg|a2x01_phone.signal
-#a2x01_celebrations|Свята і святкування|🎉|A2
-свічка|candle|et lys|la candela|🕯️||świeczka|a2x01_celebrations.candle
-Великдень|Easter|påske|la Pasqua|🐣||Wielkanoc|a2x01_celebrations.easter
-весілля|wedding|et bryllup|il matrimonio|💒||wesele|a2x01_celebrations.wedding
-запрошення|invitation|en invitation|l'invito|💌||zaproszenie|a2x01_celebrations.invitation
-запрошувати|to invite|at invitere|invitare|📨||zapraszać|a2x01_celebrations.to_invite
-повітряна кулька|balloon|en ballon|il palloncino|🎈|balloon|balonik|a2x01_celebrations.balloon
-феєрверк|fireworks|fyrværkeri|i fuochi d'artificio|🎇|fireworks|fajerwerki|a2x01_celebrations.fireworks
-#a2x01_verbs|Часті дієслова|🏃|A2
-позичати (комусь)|to lend|at låne ud|prestare|🤝||pożyczać komuś|a2x01_verbs.to_lend
-вирішувати|to decide|at beslutte|decidere|🤔||decydować|a2x01_verbs.to_decide
-падати|to fall|at falde|cadere|🍂||upadać|a2x01_verbs.to_fall
-сподіватися|to hope|at håbe|sperare|🤞||mieć nadzieję|a2x01_verbs.to_hope
-шукати (загублене)|to look for|at lede efter|cercare|🔎||szukać|a2x01_verbs.to_look_for
-пробувати|to try|at prøve|provare|🧪||próbować|a2x01_verbs.to_try
-#a2x01_adjectives|Часті прикметники|✨|A2
-галасливий|noisy|støjende|rumoroso|📢|noisy|hałaśliwy|a2x01_adjectives.noisy
-небезпечний|dangerous|farlig|pericoloso|⚠️||niebezpieczny|a2x01_adjectives.dangerous
-безпечний|safe|sikker|sicuro|🛡️||bezpieczny|a2x01_adjectives.safe
-порожній|empty|tom|vuoto|🫙|empty|pusty|a2x01_adjectives.empty
-свіжий|fresh|frisk|fresco|🥖||świeży|a2x01_adjectives.fresh
-#a2x01_connectors|Прислівники та сполучники|🔗|A2
-мабуть|probably|sandsynligvis|probabilmente|🤔||prawdopodobnie|a2x01_connectors.probably
-на щастя|luckily|heldigvis|per fortuna|🍀||na szczęście|a2x01_connectors.luckily
-повільно|slowly|langsomt|lentamente|🐢||powoli|a2x01_connectors.slowly
-на жаль|unfortunately|desværre|purtroppo|😔||niestety|a2x01_connectors.unfortunately
-#a2x01_phrases|Корисні фрази|💬|A2
-Що не так?|What's wrong?|Hvad er der galt?|Cosa c'è che non va?|😟||Co jest nie tak?|a2x01_phrases.what_s_wrong
-Чи не могли б ви мені допомогти?|Could you help me?|Kunne du hjælpe mig?|Può aiutarmi?|🙋||Czy mógłby mi pan pomóc?|a2x01_phrases.could_you_help_me
-Бережи себе!|Take care!|Pas på dig selv!|Abbi cura di te!|💛||Uważaj na siebie!|a2x01_phrases.take_care
-Дай мені знати.|Let me know.|Giv mig besked.|Fammi sapere.|📲||Daj mi znać.|a2x01_phrases.let_me_know
-Моя черга.|It's my turn.|Det er min tur.|Tocca a me.|🎲||Moja kolej.|a2x01_phrases.it_s_my_turn
-Поквапся!|Hurry up!|Skynd dig!|Sbrigati!|🏃||Pospiesz się!|a2x01_phrases.hurry_up
-Як пройшов твій день?|How was your day?|Hvordan var din dag?|Com'è andata la giornata?|🌇||Jak ci minął dzień?|a2x01_phrases.how_was_your_day
-І вам того ж!|Same to you!|I lige måde!|Altrettanto!|🔄||Wzajemnie!|a2x01_phrases.same_to_you
-#a2x02_home|Дім і меблі|🛋️|A2
-крісло|armchair|en lænestol|la poltrona|🪑||fotel|a2x02_home.armchair
-книжкова шафа|bookcase|en reol|la libreria|📖|bookcase|regał|a2x02_home.bookcase
-шухляда|drawer|en skuffe|il cassetto|🗄️|drawer|szuflada|a2x02_home.drawer
-штора|curtain|et gardin|la tenda|🪟||zasłona|a2x02_home.curtain
-килим|carpet|et gulvtæppe|il tappeto|🟫||dywan|a2x02_home.carpet
-дзеркало|mirror|et spejl|lo specchio|🪞|mirror|lustro|a2x02_home.mirror
-подушка (для сну)|pillow|en hovedpude|il cuscino|🛏️||poduszka|a2x02_home.pillow
-ковдра|blanket|et tæppe|la coperta|🛌|blanket|koc|a2x02_home.blanket
-комод|chest of drawers|en kommode|il comò|🧺|chest_of_drawers|komoda|a2x02_home.chest_of_drawers
-стеля|ceiling|et loft|il soffitto|⬆️|ceiling|sufit|a2x02_home.ceiling
-дах|roof|et tag|il tetto|🏠||dach|a2x02_home.roof
-кран (водопровідний)|tap|en vandhane|il rubinetto|🚰||kran|a2x02_home.tap
-прибирати (у кімнаті)|to tidy up|at rydde op|mettere in ordine|🧹|tidy_up_,_to|sprzątać|a2x02_home.to_tidy_up
-#a2x02_kitchen|Кухня і приготування їжі|🍳|A2
-пекти|to bake|at bage|cuocere al forno|🥧|bake_,_to|piec|a2x02_kitchen.to_bake
-смажити на грилі|to grill|at grille|grigliare|🍖|grill_,_to|grillować|a2x02_kitchen.to_grill
-наливати|to pour|at hælde|versare|🫗|pour_,_to|nalewać|a2x02_kitchen.to_pour
-куштувати|to taste|at smage|assaggiare|👅|taste_,_to|kosztować|a2x02_kitchen.to_taste
-подавати (страву)|to serve|at servere|servire|🍽️|serve_,_to|podawać|a2x02_kitchen.to_serve
-тостер|toaster|en brødrister|il tostapane|🍞|toaster|toster|a2x02_kitchen.toaster
-посудомийна машина|dishwasher|en opvaskemaskine|la lavastoviglie|🧽|dishwasher|zmywarka|a2x02_kitchen.dishwasher
-#a2x02_kitchen~B1|Кухня і приготування їжі|🍳|B1
-дрібно нарізати|to chop|at hakke|tritare|🔪|chop_,_to|siekać|a2x02_kitchen.to_chop
-нарізати скибочками|to slice|at skære i skiver|affettare|🍞||kroić w plasterki|a2x02_kitchen.to_slice
-чистити (овочі)|to peel|at skrælle|sbucciare|🥔|peel_,_to|obierać|a2x02_kitchen.to_peel
-помішувати|to stir|at røre|mescolare|🥄|stir_,_to|mieszać|a2x02_kitchen.to_stir
-розтоплювати|to melt|at smelte|sciogliere|🧈|melt_,_to|roztapiać|a2x02_kitchen.to_melt
-підігрівати|to heat|at varme|scaldare|🔥|heat_,_to|podgrzewać|a2x02_kitchen.to_heat
-кришка (каструлі)|lid|et låg|il coperchio|🫕|lid|pokrywka|a2x02_kitchen.lid
-обробна дошка|chopping board|et skærebræt|il tagliere|🪵|chopping_board|deska do krojenia|a2x02_kitchen.chopping_board
-морозильна камера|freezer|en fryser|il congelatore|🧊|freezer|zamrażarka|a2x02_kitchen.freezer
-#a2x02_clothes|Одяг|👗|A2
-блузка|blouse|en bluse|la camicetta|👚|blouse|bluzka|a2x02_clothes.blouse
-светр|jumper|en sweater|il maglione|🧶||sweter|a2x02_clothes.jumper
-костюм (діловий)|suit|et jakkesæt|il completo|🤵||garnitur|a2x02_clothes.suit
-краватка|tie|et slips|la cravatta|👔||krawat|a2x02_clothes.tie
-рукавички|gloves|handsker|i guanti|🧤|gloves|rękawiczki|a2x02_clothes.gloves
-шкарпетки|socks|sokker|i calzini|🧦|socks|skarpetki|a2x02_clothes.socks
-колготки|tights|strømpebukser|i collant|🦵|tights|rajstopy|a2x02_clothes.tights
-кросівки|trainers|sneakers|le scarpe da ginnastica|👟||buty sportowe|a2x02_clothes.trainers
-ремінь (пасок)|belt|et bælte|la cintura|🪢|belt|pasek|a2x02_clothes.belt
-піжама|pyjamas|en pyjamas|il pigiama|😴|pyjamas|piżama|a2x02_clothes.pyjamas
-купальник|swimsuit|en badedragt|il costume da bagno|👙||strój kąpielowy|a2x02_clothes.swimsuit
-дощовик|raincoat|en regnfrakke|l'impermeabile|🧥|raincoat|płaszcz przeciwdeszczowy|a2x02_clothes.raincoat
-#a2x02_shopclothes|Купівля одягу|🛍️|A2
-личити (про одяг)|to suit|at klæde|stare bene|😍||pasować|a2x02_shopclothes.to_suit
-вдягати|to put on|at tage på|mettersi|🧥||zakładać|a2x02_shopclothes.to_put_on
-знімати (одяг)|to take off|at tage af|togliersi|👟||zdejmować|a2x02_shopclothes.to_take_off
-одягатися|to get dressed|at klæde sig på|vestirsi|👔|get_dressed_,_to|ubierać się|a2x02_shopclothes.to_get_dressed
-каса (у магазині)|till|en kasse|la cassa|💳||kasa|a2x02_shopclothes.till
-бавовна|cotton|bomuld|il cotone|🌿||bawełna|a2x02_shopclothes.cotton
-вовна|wool|uld|la lana|🐑|wool|wełna|a2x02_shopclothes.wool
-шкіра (матеріал)|leather|læder|la pelle|👜||skóra|a2x02_shopclothes.leather
-#a2x02_shopclothes~B1|Купівля одягу|🛍️|B1
-примірювальна|fitting room|et prøverum|il camerino|🚪||przymierzalnia|a2x02_shopclothes.fitting_room
-тісний|tight|stram|stretto|🤏||ciasny|a2x02_shopclothes.tight
-цінник|price tag|et prismærke|il cartellino del prezzo|💲||metka|a2x02_shopclothes.price_tag
-смугастий|striped|stribet|a righe|🦓|striped|pasiasty|a2x02_shopclothes.striped
-картатий|checked|ternet|a quadri|🏁||kraciasty|a2x02_shopclothes.checked
-вживаний (не новий)|second-hand|brugt|usato|♻️||używany|a2x02_shopclothes.second_hand
-#a2x02_body|Тіло і здоров'я|🫀|A2
-кров|blood|blod|il sangue|🩸||krew|a2x02_body.blood
-шкіра (тіла)|skin|hud|la pelle|🧴|skin|skóra|a2x02_body.skin
-щиколотка|ankle|en ankel|la caviglia|🦶|ankle|kostka|a2x02_body.ankle
-підборіддя|chin|en hage|il mento|🧔|chin|podbródek|a2x02_body.chin
-щока|cheek|en kind|la guancia|😊|cheek|policzek|a2x02_body.cheek
-губа|lip|en læbe|il labbro|👄||warga|a2x02_body.lip
-палець ноги|toe|en tå|il dito del piede|🦶||palec u nogi|a2x02_body.toe
-таблетка|tablet|en pille|la compressa|💊||tabletka|a2x02_body.tablet
-#a2x02_body~B1|Тіло і здоров'я|🫀|B1
-лікоть|elbow|en albue|il gomito|💪|elbow|łokieć|a2x02_body.elbow
-зап'ясток|wrist|et håndled|il polso|⌚|wrist|nadgarstek|a2x02_body.wrist
-лоб|forehead|en pande|la fronte|🤕||czoło|a2x02_body.forehead
-брова|eyebrow|et øjenbryn|il sopracciglio|🤨|eyebrow|brew|a2x02_body.eyebrow
-язик (орган)|tongue|en tunge|la lingua|👅|tongue|język|a2x02_body.tongue
-великий палець (руки)|thumb|en tommelfinger|il pollice|👍|thumb|kciuk|a2x02_body.thumb
-біль у спині|backache|rygsmerter|il mal di schiena|😣||ból pleców|a2x02_body.backache
-біль у вусі|earache|ørepine|il mal d'orecchi|👂||ból ucha|a2x02_body.earache
-#a2x02_nature|Природа|🌲|A2
-ліс|forest|en skov|la foresta|🌲||las|a2x02_nature.forest
-озеро|lake|en sø|il lago|🛶||jezioro|a2x02_nature.lake
-долина|valley|en dal|la valle|🌄||dolina|a2x02_nature.valley
-узбережжя|coast|en kyst|la costa|🌊||wybrzeże|a2x02_nature.coast
-пісок|sand|sand|la sabbia|🏖️||piasek|a2x02_nature.sand
-#a2x02_animals|Тварини і птахи|🦔|B1
-білка|squirrel|et egern|lo scoiattolo|🐿️|squirrel_1a|wiewiórka|a2x02_animals.squirrel
-сова|owl|en ugle|il gufo|🦉|owl|sowa|a2x02_animals.owl
-орел|eagle|en ørn|l'aquila|🦅||orzeł|a2x02_animals.eagle
-мураха|ant|en myre|la formica|🐜|ant|mrówka|a2x02_animals.ant
-комар|mosquito|en myg|la zanzara|🦟||komar|a2x02_animals.mosquito
-кит|whale|en hval|la balena|🐋||wieloryb|a2x02_animals.whale
-акула|shark|en haj|lo squalo|🦈||rekin|a2x02_animals.shark
-папуга|parrot|en papegøje|il pappagallo|🦜|parrot|papuga|a2x02_animals.parrot
-гуска|goose|en gås|l'oca|🪿|goose|gęś|a2x02_animals.goose
-лебідь|swan|en svane|il cigno|🦢|swan|łabędź|a2x02_animals.swan
-олень|deer|en hjort|il cervo|🦌|deer|jeleń|a2x02_animals.deer
-черепаха (суходільна)|tortoise|en skildpadde|la tartaruga|🐢|tortoise|żółw|a2x02_animals.tortoise
-#a2x02_sport|Спорт і хобі|⚽|A2
-велоспорт|cycling|cykling|il ciclismo|🚴||kolarstwo|a2x02_sport.cycling
-катання на лижах|skiing|skiløb|lo sci|⛷️||jazda na nartach|a2x02_sport.skiing
-катання на ковзанах|ice skating|skøjteløb|il pattinaggio su ghiaccio|⛸️||jazda na łyżwach|a2x02_sport.ice_skating
-гольф|golf|golf|il golf|⛳|golf|golf|a2x02_sport.golf
-йога|yoga|yoga|lo yoga|🧘||joga|a2x02_sport.yoga
-перегони (змагання)|race|et løb|la gara|🏁||wyścig|a2x02_sport.race
-ракетка|racket|en ketsjer|la racchetta|🎾||rakieta|a2x02_sport.racket
-тренування|training|træning|l'allenamento|🏋️||trening|a2x02_sport.training
-ходити на риболовлю|to go fishing|at tage ud at fiske|andare a pescare|🎣||chodzić na ryby|a2x02_sport.to_go_fishing
-їздити з наметами|to go camping|at tage på camping|andare in campeggio|🏕️||jeździć pod namiot|a2x02_sport.to_go_camping
-ходити в похід (пішки)|to go hiking|at tage på vandretur|fare escursioni|🥾||chodzić na wędrówki|a2x02_sport.to_go_hiking
-фотографія (хобі)|photography|fotografering|la fotografia|📷||fotografia|a2x02_sport.photography
-#a2x02_sport~B1|Спорт і хобі|⚽|B1
-чемпіон|champion|en mester|il campione|🏆||mistrz|a2x02_sport.champion
-підтримувати форму|to keep fit|at holde sig i form|tenersi in forma|💪||utrzymywać formę|a2x02_sport.to_keep_fit
-в'язання|knitting|strikning|il lavoro a maglia|🧶||robienie na drutach|a2x02_sport.knitting
-садівництво|gardening|havearbejde|il giardinaggio|🌱||ogrodnictwo|a2x02_sport.gardening
-хор|choir|et kor|il coro|🎶||chór|a2x02_sport.choir
-#a2x02_school|Школа і навчання|🏫|A2
-географія|geography|geografi|la geografia|🌍|geography|geografia|a2x02_school.geography
-хімія|chemistry|kemi|la chimica|⚗️||chemia|a2x02_school.chemistry
-фізика|physics|fysik|la fisica|⚛️||fizyka|a2x02_school.physics
-оцінка|mark|en karakter|il voto|💯||ocena|a2x02_school.mark
-підручник|textbook|en lærebog|il libro di testo|📘||podręcznik|a2x02_school.textbook
-зошит|exercise book|et hæfte|il quaderno|📓||zeszyt|a2x02_school.exercise_book
-гумка (для стирання)|rubber|et viskelæder|la gomma|🧽||gumka|a2x02_school.rubber
-шкільний портфель|schoolbag|en skoletaske|la cartella|🎒||tornister|a2x02_school.schoolbag
-зробити помилку|to make a mistake|at lave en fejl|fare un errore|❌||popełnić błąd|a2x02_school.to_make_a_mistake
-підняти руку|to raise your hand|at række hånden op|alzare la mano|✋||podnieść rękę|a2x02_school.to_raise_your_hand
-шкільна форма|school uniform|en skoleuniform|la divisa scolastica|🏫👔||mundurek szkolny|a2x02_school.school_uniform
-#a2x02_school~B1|Школа і навчання|🏫|B1
-вчити напам'ять|to learn by heart|at lære udenad|imparare a memoria|🧠||uczyć się na pamięć|a2x02_school.to_learn_by_heart
-переклад|translation|en oversættelse|la traduzione|🔤||tłumaczenie|a2x02_school.translation
-перекладати|to translate|at oversætte|tradurre|🌐||tłumaczyć|a2x02_school.to_translate
-робити нотатки|to take notes|at tage noter|prendere appunti|🗒️||robić notatki|a2x02_school.to_take_notes
-шкільна їдальня|canteen|en kantine|la mensa|🍲||stołówka|a2x02_school.canteen
-#a2x02_time|Час і частотність|⏰|A2
-двічі|twice|to gange|due volte|2️⃣||dwa razy|a2x02_time.twice
-раз на тиждень|once a week|en gang om ugen|una volta alla settimana|📅||raz w tygodniu|a2x02_time.once_a_week
-щоденний|daily|daglig|quotidiano|📆||codzienny|a2x02_time.daily
-зараз (у цей момент)|at the moment|i øjeblikket|al momento|⏳||w tej chwili|a2x02_time.at_the_moment
-у наш час|nowadays|nu om dage|oggigiorno|📱||w dzisiejszych czasach|a2x02_time.nowadays
-нещодавно|recently|for nylig|di recente|🆕||niedawno|a2x02_time.recently
-опівдні|at noon|ved middagstid|a mezzogiorno|🕛||w południe|a2x02_time.at_noon
-століття|century|et århundrede|il secolo|🏰||wiek|a2x02_time.century
-спочатку|at first|i begyndelsen|all'inizio|🥇||na początku|a2x02_time.at_first
-зрештою|in the end|til sidst|alla fine|🏁||w końcu|a2x02_time.in_the_end
-#a2x02_time~B1|Час і частотність|⏰|B1
-рідко|rarely|sjældent|raramente|🐢||rzadko|a2x02_time.rarely
-майже ніколи|hardly ever|næsten aldrig|quasi mai|🚫||prawie nigdy|a2x02_time.hardly_ever
-час від часу|from time to time|fra tid til anden|di tanto in tanto|🔁||od czasu do czasu|a2x02_time.from_time_to_time
-цілу вічність|for ages|i evigheder|da secoli|🕰️||od wieków|a2x02_time.for_ages
-#a2x02_hotel|Подорожі й готель|🏨|A2
-рецепція|reception|en reception|la reception|🛎️||recepcja|a2x02_hotel.reception
-одномісний номер|single room|et enkeltværelse|la camera singola|🛏️||pokój jednoosobowy|a2x02_hotel.single_room
-двомісний номер|double room|et dobbeltværelse|la camera matrimoniale|🛌||pokój dwuosobowy|a2x02_hotel.double_room
-заселятися (в готель)|to check in|at tjekke ind|fare il check-in|🔑||zameldować się|a2x02_hotel.to_check_in
-виселятися (з готелю)|to check out|at tjekke ud|fare il check-out|🧳||wymeldować się|a2x02_hotel.to_check_out
-картка-ключ|key card|et nøglekort|la tessera magnetica|💳||karta magnetyczna|a2x02_hotel.key_card
-обслуговування номерів|room service|roomservice|il servizio in camera|🍽️||room service|a2x02_hotel.room_service
-сніданок включено|breakfast included|morgenmad inkluderet|colazione inclusa|🥐||śniadanie wliczone w cenę|a2x02_hotel.breakfast_included
-рейс (авіа)|flight|en flyrejse|il volo|✈️||lot|a2x02_hotel.flight
-путівник|guidebook|en rejseguide|la guida turistica|📖||przewodnik|a2x02_hotel.guidebook
-за кордоном|abroad|i udlandet|all'estero|🌍||za granicą|a2x02_hotel.abroad
-пакувати (валізу)|to pack|at pakke|fare la valigia|🎒||pakować|a2x02_hotel.to_pack
-хостел|youth hostel|et vandrerhjem|l'ostello|🏠||hostel|a2x02_hotel.youth_hostel
-кемпінг|campsite|en campingplads|il campeggio|⛺||kemping|a2x02_hotel.campsite
-намет|tent|et telt|la tenda|🏕️||namiot|a2x02_hotel.tent
-#a2x02_phrasal|Фразові дієслова і сталі вирази|🔗|A2
-доглядати (за кимось)|to look after|at passe på|prendersi cura di|🧑‍🍼||opiekować się|a2x02_phrasal.to_look_after
-повертати (річ)|to give back|at give tilbage|restituire|🤲||oddawać|a2x02_phrasal.to_give_back
-виходити (розважитися)|to go out|at gå ud|uscire|🎉||wychodzić|a2x02_phrasal.to_go_out
-поспішати|to hurry up|at skynde sig|sbrigarsi|🏃||spieszyć się|a2x02_phrasal.to_hurry_up
-заводити друзів|to make friends|at få venner|fare amicizia|🤝||zaprzyjaźniać się|a2x02_phrasal.to_make_friends
-розважатися|to have fun|at have det sjovt|divertirsi|🥳||bawić się|a2x02_phrasal.to_have_fun
-робити перерву|to take a break|at holde en pause|fare una pausa|☕||robić przerwę|a2x02_phrasal.to_take_a_break
-відпочивати|to have a rest|at hvile sig|riposarsi|😌||odpoczywać|a2x02_phrasal.to_have_a_rest
-проводити час|to spend time|at tilbringe tid|passare il tempo|⏱️||spędzać czas|a2x02_phrasal.to_spend_time
-казати правду|to tell the truth|at sige sandheden|dire la verità|🗣️||mówić prawdę|a2x02_phrasal.to_tell_the_truth
-зберігати таємницю|to keep a secret|at holde på en hemmelighed|mantenere un segreto|🤫||dochowywać tajemnicy|a2x02_phrasal.to_keep_a_secret
-заблукати|to get lost|at fare vild|perdersi|🧭||zgubić się|a2x02_phrasal.to_get_lost
-#a2x02_phrasal~B1|Фразові дієслова і сталі вирази|🔗|B1
-шукати (у словнику)|to look up|at slå op|cercare|🔎||sprawdzać|a2x02_phrasal.to_look_up
-класти на місце|to put away|at lægge på plads|mettere via|📦|put_away_,_to|odkładać na miejsce|a2x02_phrasal.to_put_away
-залишатися вдома|to stay in|at blive hjemme|restare a casa|🏡||zostawać w domu|a2x02_phrasal.to_stay_in
-вирушати (в дорогу)|to set off|at tage af sted|partire|🚗||wyruszać|a2x02_phrasal.to_set_off
 #a2x03_phr_a2_doctor|Фрази: лікар і аптека|🩺|A2
 Я хочу записатися до лікаря.|I'd like to make a doctor's appointment.|Jeg vil gerne bestille tid hos lægen.|Vorrei prendere un appuntamento dal medico.|🩺|||a2x03_phr_a2_doctor.i_d_like_to_make_a_doctor_s_appointment
 У мене болить горло.|I have a sore throat.|Jeg har ondt i halsen.|Ho mal di gola.|🤒|||a2x03_phr_a2_doctor.i_have_a_sore_throat
@@ -1720,114 +4840,6 @@ DVD-диск|DVD|en dvd|il dvd|📀|||cur_a1_23.dvd
 Де саме ти?|Where exactly are you?|Hvor er du helt præcist?|Dove sei esattamente?|🗺️|||a2x04_phr_a2_meet.where_exactly_are_you
 Давай якось вип'ємо кави.|Let's grab a coffee sometime.|Skal vi ikke tage en kop kaffe en dag?|Prendiamo un caffè uno di questi giorni.|🫖|||a2x04_phr_a2_meet.let_s_grab_a_coffee_sometime
 Мені доведеться скасувати наші плани.|I need to cancel our plans.|Jeg bliver nødt til at aflyse vores aftale.|Devo annullare i nostri programmi.|❌|||a2x04_phr_a2_meet.i_need_to_cancel_our_plans
-#b1_work|Робота і кар'єра|💼|B1
-співбесіда|job interview|en jobsamtale|il colloquio di lavoro|🤝||rozmowa kwalifikacyjna|b1_work.job_interview
-зарплата|salary|en løn|lo stipendio|💰|money|pensja|b1_work.salary
-колега|colleague|en kollega|il collega|👥||współpracownik|b1_work.colleague
-резюме|CV|et CV|il curriculum|📄||CV|b1_work.cv
-відповідальний|responsible|ansvarlig|responsabile|⚖️||odpowiedzialny|b1_work.responsible
-#b1_health|Здоров'я|🩺|B1
-рецепт (від лікаря)|prescription|en recept|la ricetta|📝|medicine|recepta|b1_health.prescription
-грип|flu|en influenza|l'influenza|🤧|sneeze_cold|grypa|b1_health.flu
-рана|wound|et sår|la ferita|🩹|plaster|rana|b1_health.wound
-симптом|symptom|et symptom|il sintomo|🔍||objaw|b1_health.symptom
-кашляти|to cough|at hoste|tossire|😷||kaszleć|b1_health.to_cough
-одужувати|to recover|at komme sig|guarire|💪||wyzdrowieć|b1_health.to_recover
-#b1_environment|Природа і довкілля|🌍|B1
-довкілля|environment|et miljø|l'ambiente|🌳|Earth|środowisko|b1_environment.environment
-забруднення|pollution|en forurening|l'inquinamento|🏭||zanieczyszczenie|b1_environment.pollution
-клімат|climate|et klima|il clima|🌦️||klimat|b1_environment.climate
-захищати|to protect|at beskytte|proteggere|🛡️|protect_,_to|chronić|b1_environment.to_protect
-#b1_environment~A2|Природа і довкілля|🌍|A2
-пустеля|desert|en ørken|il deserto|🏜️|cactus|pustynia|b1_environment.desert
-землетрус|earthquake|et jordskælv|il terremoto|🏚️||trzęsienie ziemi|b1_environment.earthquake
-повінь|flood|en oversvømmelse|l'alluvione|🌊||powódź|b1_environment.flood
-переробляти (відходи)|to recycle|at genbruge|riciclare|♻️|recycling_bins|poddawać recyklingowi|b1_environment.to_recycle
-зникати|to disappear|at forsvinde|scomparire|💨||znikać|b1_environment.to_disappear
-#b1_feelings|Почуття і характер|😊|A2
-настрій|mood|et humør|l'umore|🎭||nastrój|b1_feelings.mood
-розчарований|disappointed|skuffet|deluso|😞|sad_lady|rozczarowany|b1_feelings.disappointed
-впевнений у собі|confident|selvsikker|sicuro di sé|😎||pewny siebie|b1_feelings.confident
-здивований|surprised|overrasket|sorpreso|😲|surprised_lady|zdziwiony|b1_feelings.surprised
-ввічливий|polite|høflig|educato|🎩||uprzejmy|b1_feelings.polite
-хвилюватися|to worry|at bekymre sig|preoccuparsi|😟|worried_man|martwić się|b1_feelings.to_worry
-#b1_connectors|Сполучники і прислівники|🔗|A2
-однак|however|imidlertid|tuttavia|🔄||jednak|b1_connectors.however
-хоча|although|selvom|sebbene|↔️||chociaż|b1_connectors.although
-отже|therefore|derfor|quindi|➡️||dlatego|b1_connectors.therefore
-замість|instead of|i stedet for|invece di|🔁||zamiast|b1_connectors.instead_of
-нарешті|finally|endelig|finalmente|🏁||nareszcie|b1_connectors.finally
-раптом|suddenly|pludselig|improvvisamente|⚡||nagle|b1_connectors.suddenly
-#b1_phrases|Вирази|💬|B1
-На мою думку|In my opinion|Efter min mening|Secondo me|💭|think_,_to|Moim zdaniem|b1_phrases.in_my_opinion
-Я не згоден|I disagree|Jeg er uenig|Non sono d'accordo|👎||Nie zgadzam się|b1_phrases.i_disagree
-Це залежить|It depends|Det kommer an på|Dipende|⚖️||To zależy|b1_phrases.it_depends
-Наскільки я знаю|As far as I know|Så vidt jeg ved|Per quanto ne so|📚||O ile wiem|b1_phrases.as_far_as_i_know
-Іншими словами|In other words|Med andre ord|In altre parole|🗣️||Innymi słowy|b1_phrases.in_other_words
-З одного боку|On the one hand|På den ene side|Da un lato|☝️|left_hand|Z jednej strony|b1_phrases.on_the_one_hand
-З іншого боку|On the other hand|På den anden side|D'altra parte|✌️|right_hand|Z drugiej strony|b1_phrases.on_the_other_hand
-До речі|By the way|Forresten|A proposito|💡||Przy okazji|b1_phrases.by_the_way
-#b1_phrases~A2|Вирази|💬|A2
-Ти маєш рацію|You're right|Du har ret|Hai ragione|✅|correct|Masz rację|b1_phrases.you_re_right
-Я так не думаю|I don't think so|Det tror jeg ikke|Non credo|🙅|wrong_thought|Nie sądzę|b1_phrases.i_don_t_think_so
-Я не впевнений|I'm not sure|Jeg er ikke sikker|Non sono sicuro|🤷|confused_man|Nie jestem pewien|b1_phrases.i_m_not_sure
-Що ти маєш на увазі?|What do you mean?|Hvad mener du?|Cosa intendi?|🤔|confused_lady|Co masz na myśli?|b1_phrases.what_do_you_mean
-Мені все одно|I don't mind|Det er lige meget for mig|Per me è lo stesso|😐||Wszystko mi jedno|b1_phrases.i_don_t_mind
-Не хвилюйся!|Don't worry!|Bare rolig!|Non preoccuparti!|😌||Nie martw się!|b1_phrases.don_t_worry
-Нічого страшного|Never mind|Det gør ikke noget|Non fa niente|🙂||Nic nie szkodzi|b1_phrases.never_mind
-Шкода!|What a pity!|Hvor ærgerligt!|Che peccato!|😢|sad_lady|Szkoda!|b1_phrases.what_a_pity
-#b1m_tech|Технології та інтернет|💻|B1
-вкладення (у листі)|attachment|en vedhæftet fil|l'allegato|📎|email_attachment|załącznik|b1m_tech.attachment
-заряджати (телефон)|to charge|at oplade|caricare|🔋||ładować|b1m_tech.to_charge
-оновлення|update|en opdatering|l'aggiornamento|🔄||aktualizacja|b1m_tech.update
-видаляти|to delete|at slette|cancellare|🗑️||usuwać|b1m_tech.to_delete
-мережа|network|et netværk|la rete|🌐||sieć|b1m_tech.network
-#b1m_tech~A2|Технології та інтернет|💻|A2
-принтер|printer|en printer|la stampante|🖨️|printer|drukarka|b1m_tech.printer
-входити (в акаунт)|to log in|at logge ind|accedere|🔓||zalogować się|b1m_tech.to_log_in
-зарядний пристрій|charger|en oplader|il caricabatterie|🔌|charger_electric|ładowarka|b1m_tech.charger
-обліковий запис|account|en konto|l'account|👤||konto|b1m_tech.account
-клавіатура|keyboard|et tastatur|la tastiera|⌨️|computer_keyboard|klawiatura|b1m_tech.keyboard
-шукати (в інтернеті)|to search|at søge|cercare|🔍||szukać|b1m_tech.to_search
-#b1m_education|Освіта і навчання|🎓|A2
-семестр|term|et semester|il semestre|📅||semestr|b1m_education.term
-директор школи|head teacher|en skoleleder|il preside|👩‍💼|head_teacher_1a|dyrektor szkoły|b1m_education.head_teacher
-твір (письмовий)|essay|en stil|il tema|✍️||wypracowanie|b1m_education.essay
-скласти іспит|to pass an exam|at bestå en eksamen|superare un esame|✅||zdać egzamin|b1m_education.to_pass_an_exam
-готуватися|to prepare|at forberede sig|prepararsi|🗂️||przygotowywać się|b1m_education.to_prepare
-розклад|timetable|et skema|l'orario|🗓️||plan zajęć|b1m_education.timetable
-#b1m_media|Медіа й розваги|🎬|A2
-журналіст|journalist|en journalist|il giornalista|🗒️||dziennikarz|b1m_media.journalist
-серіал|TV series|en tv-serie|la serie tv|📺||serial|b1m_media.tv_series
-глядачі|audience|et publikum|il pubblico|👏||publiczność|b1m_media.audience
-виставка|exhibition|en udstilling|la mostra|🖼️||wystawa|b1m_media.exhibition
-вистава|performance|en forestilling|lo spettacolo|🎭||przedstawienie|b1m_media.performance
-популярний|popular|populær|popolare|🔥||popularny|b1m_media.popular
-#b1m_housing|Житло і побут|🏘️|A2
-балкон|balcony|en altan|il balcone|🌇||balkon|b1m_housing.balcony
-шафа (для одягу)|wardrobe|et klædeskab|l'armadio|🚪|wardrobe|szafa|b1m_housing.wardrobe
-ліфт|lift|en elevator|l'ascensore|🛗|lift|winda|b1m_housing.lift
-пральна машина|washing machine|en vaskemaskine|la lavatrice|🧺|washing_machine|pralka|b1m_housing.washing_machine
-опалення|heating|varme|il riscaldamento|🌡️||ogrzewanie|b1m_housing.heating
-ремонтувати|to repair|at reparere|riparare|🔧||naprawiać|b1m_housing.to_repair
-зручний|comfortable|behagelig|comodo|🛏️||wygodny|b1m_housing.comfortable
-сходи|stairs|en trappe|le scale|🪜|stairs|schody|b1m_housing.stairs
-#b1m_phrases|Ще вирази|🗨️|B1
-Це не моя справа|It's none of my business|Det er ikke min sag|Non sono affari miei|🤐||To nie moja sprawa|b1m_phrases.it_s_none_of_my_business
-Чесно кажучи|To be honest|Ærligt talt|Sinceramente|😬||Szczerze mówiąc|b1m_phrases.to_be_honest
-Не можу дочекатися|I can't wait|Jeg glæder mig|Non vedo l'ora|🤩||Nie mogę się doczekać|b1m_phrases.i_can_t_wait
-Нема за що|Don't mention it|Ingen årsag|Di niente|🙂||Nie ma za co|b1m_phrases.don_t_mention_it
-Я передумав|I've changed my mind|Jeg har ombestemt mig|Ho cambiato idea|🔀|change_mind_,_to|Zmieniłem zdanie|b1m_phrases.i_ve_changed_my_mind
-Яке полегшення!|What a relief!|Sikke en lettelse!|Che sollievo!|😮‍💨||Co za ulga!|b1m_phrases.what_a_relief
-Мене це влаштовує|That suits me|Det passer mig fint|Mi va bene|👌||To mi pasuje|b1m_phrases.that_suits_me
-Як пройшло?|How did it go?|Hvordan gik det?|Com'è andata?|❓||Jak poszło?|b1m_phrases.how_did_it_go
-Залиш це мені|Leave it to me|Lad mig klare det|Lascia fare a me|💪||Zostaw to mnie|b1m_phrases.leave_it_to_me
-#b1m_phrases~A2|Ще вирази|🗨️|A2
-Я так і думав|I thought so|Det tænkte jeg nok|Lo immaginavo|🤔||Tak myślałem|b1m_phrases.i_thought_so
-Яка гарна ідея!|What a good idea!|Sikke en god idé!|Che bella idea!|💡||Świetny pomysł!|b1m_phrases.what_a_good_idea
-Я поспішаю|I'm in a hurry|Jeg har travlt|Ho fretta|🏃||Spieszę się|b1m_phrases.i_m_in_a_hurry
-Поживемо — побачимо|We'll see|Vi får se|Vedremo|🔮||Zobaczymy|b1m_phrases.we_ll_see
-Ти серйозно?|Are you serious?|Mener du det?|Dici sul serio?|😳||Mówisz poważnie?|b1m_phrases.are_you_serious
 #b1x01_dkservices|Життя в Данії: державні послуги|🇩🇰|B1
 муніципалітет (комуна)|municipality|en kommune|il comune|🏛️||gmina|b1x01_dkservices.municipality
 персональний номер CPR|personal identification number|et CPR-nummer|il codice fiscale|🔢||numer CPR|b1x01_dkservices.personal_identification_number
@@ -1849,16 +4861,6 @@ DVD-диск|DVD|en dvd|il dvd|📀|||cur_a1_23.dvd
 мовний іспит|language test|en sprogprøve|l'esame di lingua|📝||egzamin językowy|b1x01_dkservices.language_test
 іспит на громадянство|citizenship test|en indfødsretsprøve|l'esame di cittadinanza|🧠||egzamin na obywatelstwo|b1x01_dkservices.citizenship_test
 програма інтеграції|integration programme|et integrationsprogram|il programma di integrazione|🤝||program integracyjny|b1x01_dkservices.integration_programme
-#b1x01_paperwork|Документи й офіційні справи|📑|B1
-бланк заяви|application form|en ansøgningsblanket|il modulo di domanda|📋||formularz wniosku|b1x01_paperwork.application_form
-підпис|signature|en underskrift|la firma|🖋️||podpis|b1x01_paperwork.signature
-довідка (офіційна)|certificate|en attest|il certificato|📜|certificate|zaświadczenie|b1x01_paperwork.certificate
-реєструватися|to register|at registrere sig|registrarsi|🗂️||rejestrować się|b1x01_paperwork.to_register
-продовжувати (документ)|to renew|at forny|rinnovare|🔄||przedłużać|b1x01_paperwork.to_renew
-відхиляти (заяву)|to reject|at afvise|respingere|❌||odrzucać|b1x01_paperwork.to_reject
-схвалювати|to approve|at godkende|approvare|👍||zatwierdzać|b1x01_paperwork.to_approve
-іноземець|foreigner|en udlænding|lo straniero|🌍||obcokrajowiec|b1x01_paperwork.foreigner
-персональні дані|personal data|personoplysninger|i dati personali|🔐||dane osobowe|b1x01_paperwork.personal_data
 #b1x01_paperwork~B2|Документи й офіційні справи|📑|B2
 посвідчення особи|proof of identity|legitimation|il documento d'identità|🪪||dokument tożsamości|b1x01_paperwork.proof_of_identity
 закінчуватися (про термін дії)|to expire|at udløbe|scadere|⏳||wygasać|b1x01_paperwork.to_expire
@@ -1868,17 +4870,6 @@ DVD-диск|DVD|en dvd|il dvd|📀|||cur_a1_23.dvd
 іммігрант|immigrant|en indvandrer|l'immigrato|🧳||imigrant|b1x01_paperwork.immigrant
 тимчасовий захист|temporary protection|midlertidig beskyttelse|la protezione temporanea|🛡️||ochrona czasowa|b1x01_paperwork.temporary_protection
 подавати (документи)|to submit|at indsende|presentare|📤||składać|b1x01_paperwork.to_submit
-#b1x01_jobsearch|Пошук роботи|🔎|B1
-оголошення про вакансію|job advert|en jobannonce|l'annuncio di lavoro|📰||ogłoszenie o pracy|b1x01_jobsearch.job_advert
-вакансія|vacancy|en ledig stilling|il posto vacante|🪑||wolne stanowisko|b1x01_jobsearch.vacancy
-супровідний лист|cover letter|en motiveret ansøgning|la lettera di presentazione|✉️||list motywacyjny|b1x01_jobsearch.cover_letter
-кваліфікація|qualification|en kvalifikation|la qualifica|🎓||kwalifikacje|b1x01_jobsearch.qualification
-досвід роботи|work experience|erhvervserfaring|l'esperienza lavorativa|💼||doświadczenie zawodowe|b1x01_jobsearch.work_experience
-трудовий договір|employment contract|en ansættelseskontrakt|il contratto di lavoro|📑||umowa o pracę|b1x01_jobsearch.employment_contract
-робота на повну ставку|full-time job|et fuldtidsjob|il lavoro a tempo pieno|🕘||praca na pełen etat|b1x01_jobsearch.full_time_job
-робота на неповну ставку|part-time job|et deltidsjob|il lavoro part-time|🕐||praca na pół etatu|b1x01_jobsearch.part_time_job
-наймати (на роботу)|to hire|at ansætte|assumere|🤝||zatrudniać|b1x01_jobsearch.to_hire
-подаватися на вакансію|to apply for a job|at søge et job|candidarsi per un lavoro|📨||ubiegać się o pracę|b1x01_jobsearch.to_apply_for_a_job
 #b1x01_jobsearch~B2|Пошук роботи|🔎|B2
 кандидат (на посаду)|applicant|en ansøger|il candidato|🧑‍💼||kandydat|b1x01_jobsearch.applicant
 рекомендація (від роботодавця)|reference|en anbefaling|la referenza|📝||referencje|b1x01_jobsearch.reference
@@ -1897,22 +4888,6 @@ DVD-диск|DVD|en dvd|il dvd|📀|||cur_a1_23.dvd
 гнучкий графік|flexible hours|flekstid|l'orario flessibile|⏱️||elastyczne godziny pracy|b1x01_workplace.flexible_hours
 розрахунковий лист|pay slip|en lønseddel|la busta paga|🧾||pasek wypłaty|b1x01_workplace.pay_slip
 робоче навантаження|workload|en arbejdsbyrde|il carico di lavoro|📚||obciążenie pracą|b1x01_workplace.workload
-#b1x01_workplace~A2|На роботі|🏢|A2
-відділ|department|en afdeling|il reparto|🏢||dział|b1x01_workplace.department
-обідня перерва|lunch break|en frokostpause|la pausa pranzo|🥪||przerwa obiadowa|b1x01_workplace.lunch_break
-працювати з дому|to work from home|at arbejde hjemmefra|lavorare da casa|🏡||pracować z domu|b1x01_workplace.to_work_from_home
-різдвяний корпоратив|Christmas party|en julefrokost|la cena aziendale di Natale|🎄||wigilia firmowa|b1x01_workplace.christmas_party
-#b1x01_money|Гроші й рахунки|💰|B1
-банківський переказ|bank transfer|en bankoverførsel|il bonifico|🏦||przelew bankowy|b1x01_money.bank_transfer
-залишок (на рахунку)|balance|en saldo|il saldo|💰||saldo|b1x01_money.balance
-нагадування про оплату|payment reminder|en rykker|il sollecito di pagamento|🔔||przypomnienie o płatności|b1x01_money.payment_reminder
-обмінний курс|exchange rate|en valutakurs|il tasso di cambio|💱||kurs wymiany|b1x01_money.exchange_rate
-дозволити собі (фінансово)|to afford|at have råd til|permettersi|🛍️||pozwolić sobie|b1x01_money.to_afford
-#b1x01_money~A2|Гроші й рахунки|💰|A2
-оплачувати рахунки|to pay the bills|at betale regninger|pagare le bollette|💸||płacić rachunki|b1x01_money.to_pay_the_bills
-банківський рахунок|bank account|en bankkonto|il conto bancario|🏦||konto bankowe|b1x01_money.bank_account
-заощаджувати гроші|to save money|at spare penge|risparmiare|💰||oszczędzać pieniądze|b1x01_money.to_save_money
-комісія (плата)|fee|et gebyr|la commissione|💳||prowizja|b1x01_money.fee
 #b1x01_money~B2|Гроші й рахунки|💰|B2
 рахунок-фактура|invoice|en faktura|la fattura|🧾||faktura|b1x01_money.invoice
 відсотки (банківські)|interest|renter|gli interessi|📈||odsetki|b1x01_money.interest
@@ -1921,31 +4896,6 @@ DVD-диск|DVD|en dvd|il dvd|📀|||cur_a1_23.dvd
 коштувати цілий статок|to cost a fortune|at koste en formue|costare una fortuna|💎||kosztować fortunę|b1x01_money.to_cost_a_fortune
 податкова декларація|tax return|en selvangivelse|la dichiarazione dei redditi|📄||zeznanie podatkowe|b1x01_money.tax_return
 пенсія|pension|en pension|la pensione|👴||emerytura|b1x01_money.pension
-#b1x01_travelproblems|Проблеми в подорожі та скарги|🧳|B1
-скасування|cancellation|en aflysning|la cancellazione|🚫||odwołanie|b1x01_travelproblems.cancellation
-проміжна посадка|stopover|en mellemlanding|lo scalo|🛬||międzylądowanie|b1x01_travelproblems.stopover
-бюро знахідок|lost property office|et hittegodskontor|l'ufficio oggetti smarriti|🔎||biuro rzeczy znalezionych|b1x01_travelproblems.lost_property_office
-туристична страховка|travel insurance|en rejseforsikring|l'assicurazione di viaggio|🛡️||ubezpieczenie podróżne|b1x01_travelproblems.travel_insurance
-не працює (про апарат)|out of order|ude af drift|fuori servizio|⛔||nieczynny|b1x01_travelproblems.out_of_order
-вимагати|to demand|at kræve|esigere|☝️||żądać|b1x01_travelproblems.to_demand
-ваучер|voucher|en værdikupon|il buono|🎟️||bon|b1x01_travelproblems.voucher
-застрягнути|to get stuck|at sidde fast|rimanere bloccato|🚧||utknąć|b1x01_travelproblems.to_get_stuck
-служба підтримки клієнтів|customer service|kundeservice|il servizio clienti|☎️||obsługa klienta|b1x01_travelproblems.customer_service
-проколене колесо|flat tyre|en punktering|la gomma bucata|🛞|flat_tyre|przebita opona|b1x01_travelproblems.flat_tyre
-крадіжка|theft|et tyveri|il furto|🦹||kradzież|b1x01_travelproblems.theft
-кишеньковий злодій|pickpocket|en lommetyv|il borseggiatore|👛||kieszonkowiec|b1x01_travelproblems.pickpocket
-повернення коштів|refund|en tilbagebetaling|il rimborso|↩️||zwrot pieniędzy|b1x01_travelproblems.refund
-ламатися (про машину)|to break down|at gå i stykker|guastarsi|🚗||psuć się|b1x01_travelproblems.to_break_down
-#b1x01_nutrition|Їжа й харчування|🥗|B1
-калорія|calorie|en kalorie|la caloria|🔥||kaloria|b1x01_nutrition.calorie
-органічний|organic|økologisk|biologico|🌱||ekologiczny|b1x01_nutrition.organic
-веган|vegan|en veganer|il vegano|🥦||weganin|b1x01_nutrition.vegan
-харчова алергія|food allergy|en fødevareallergi|l'allergia alimentare|🥜||alergia pokarmowa|b1x01_nutrition.food_allergy
-безглютеновий|gluten-free|glutenfri|senza glutine|🌽||bezglutenowy|b1x01_nutrition.gluten_free
-термін придатності|best-before date|en holdbarhedsdato|la data di scadenza|📅||termin przydatności do spożycia|b1x01_nutrition.best_before_date
-порція|portion|en portion|la porzione|🍽️||porcja|b1x01_nutrition.portion
-житній хліб|rye bread|et rugbrød|il pane di segale|🍞||chleb żytni|b1x01_nutrition.rye_bread
-заморожений|frozen|frossen|surgelato|🧊||mrożony|b1x01_nutrition.frozen
 #b1x01_nutrition~B2|Їжа й харчування|🥗|B2
 білок|protein|et protein|la proteina|🥚|protein|białko|b1x01_nutrition.protein
 вуглеводи|carbohydrates|kulhydrater|i carboidrati|🍝|carbohydrates|węglowodany|b1x01_nutrition.carbohydrates
@@ -1956,63 +4906,11 @@ DVD-диск|DVD|en dvd|il dvd|📀|||cur_a1_23.dvd
 залишки їжі|leftovers|rester|gli avanzi|🍲||resztki|b1x01_nutrition.leftovers
 псуватися (про їжу)|to go off|at blive dårlig|andare a male|🤢||psuć się|b1x01_nutrition.to_go_off
 переїдати|to overeat|at overspise|abbuffarsi|🤰||przejadać się|b1x01_nutrition.to_overeat
-#b1x01_verbs|Поширені дієслова|🔤|B1
-доводити (правоту)|to prove|at bevise|dimostrare|🔬||udowadniać|b1x01_verbs.to_prove
-впізнавати|to recognise|at genkende|riconoscere|👀||rozpoznawać|b1x01_verbs.to_recognise
-відмовлятися (робити щось)|to refuse|at nægte|rifiutare|🙅||odmawiać|b1x01_verbs.to_refuse
-попереджати|to warn|at advare|avvertire|⚠️||ostrzegać|b1x01_verbs.to_warn
-переконувати|to persuade|at overtale|convincere|🗣️||przekonywać|b1x01_verbs.to_persuade
-заслуговувати|to deserve|at fortjene|meritare|🏅||zasługiwać|b1x01_verbs.to_deserve
-#b1x01_verbs~A2|Поширені дієслова|🔤|A2
-досягати|to achieve|at opnå|raggiungere|🏆||osiągać|b1x01_verbs.to_achieve
-визнавати (провину)|to admit|at indrømme|ammettere|🙋||przyznawać|b1x01_verbs.to_admit
-уникати|to avoid|at undgå|evitare|↪️||unikać|b1x01_verbs.to_avoid
-підбадьорювати|to encourage|at opmuntre|incoraggiare|👏||zachęcać|b1x01_verbs.to_encourage
-очікувати|to expect|at forvente|aspettarsi|🤞||spodziewać się|b1x01_verbs.to_expect
-покращувати|to improve|at forbedre|migliorare|📈||poprawiać|b1x01_verbs.to_improve
-збільшувати|to increase|at øge|aumentare|⬆️||zwiększać|b1x01_verbs.to_increase
-зменшувати|to reduce|at reducere|ridurre|⬇️||zmniejszać|b1x01_verbs.to_reduce
-згадувати (у розмові)|to mention|at nævne|menzionare|💬||wspominać|b1x01_verbs.to_mention
-віддавати перевагу|to prefer|at foretrække|preferire|❤️||woleć|b1x01_verbs.to_prefer
-нагадувати|to remind|at minde|ricordare|🎗️||przypominać|b1x01_verbs.to_remind
-пропонувати (ідею)|to suggest|at foreslå|suggerire|💡||proponować|b1x01_verbs.to_suggest
-замінювати|to replace|at erstatte|sostituire|🔁||wymieniać|b1x01_verbs.to_replace
-#b1x01_phrasal|Фразові дієслова|🧷|B1
-здаватися (припиняти спроби)|to give up|at give op|arrendersi|🏳️||poddawać się|b1x01_phrasal.to_give_up
-засновувати (бізнес)|to set up|at starte|avviare|🚀||zakładać|b1x01_phrasal.to_set_up
-залагоджувати (проблему)|to sort out|at ordne|sistemare|🔧||załatwiać|b1x01_phrasal.to_sort_out
-відкладати (на потім)|to put off|at udsætte|rimandare|⏸️||odkładać|b1x01_phrasal.to_put_off
-залишитися без (запасів)|to run out of|at løbe tør for|rimanere senza|🪫||skończyć się|b1x01_phrasal.to_run_out_of
-з нетерпінням чекати|to look forward to|at glæde sig til|non vedere l'ora|🤩||nie móc się doczekać|b1x01_phrasal.to_look_forward_to
-ладнати з (кимось)|to get on with|at komme godt ud af det med|andare d'accordo con|😊||dogadywać się|b1x01_phrasal.to_get_on_with
-висаджувати (когось)|to drop off|at sætte af|lasciare|🚕||podwozić|b1x01_phrasal.to_drop_off
-здавати (роботу)|to hand in|at aflevere|consegnare|📥||oddawać|b1x01_phrasal.to_hand_in
-справлятися з|to deal with|at håndtere|affrontare|🛠️||radzić sobie z|b1x01_phrasal.to_deal_with
-скорочувати (споживання)|to cut down on|at skære ned på|limitare|✂️||ograniczać|b1x01_phrasal.to_cut_down_on
-позбуватися|to get rid of|at slippe af med|sbarazzarsi di|🗑️||pozbywać się|b1x01_phrasal.to_get_rid_of
-надолужувати|to catch up|at indhente|recuperare|🏃||nadrabiać|b1x01_phrasal.to_catch_up
 #b1x01_phrasal~B2|Фразові дієслова|🧷|B2
 покладатися на|to rely on|at stole på|contare su|🫂||polegać na|b1x01_phrasal.to_rely_on
 відхиляти (пропозицію)|to turn down|at takke nej til|declinare|👎||odrzucać|b1x01_phrasal.to_turn_down
 вигадувати (ідею)|to come up with|at finde på|escogitare|💭||wymyślać|b1x01_phrasal.to_come_up_with
 відставати|to fall behind|at komme bagud|restare indietro|🐢||zostawać w tyle|b1x01_phrasal.to_fall_behind
-#b1x01_collocations|Сталі вирази|🔗|B1
-ухвалювати рішення|to make a decision|at træffe en beslutning|prendere una decisione|🤔||podejmować decyzję|b1x01_collocations.to_make_a_decision
-ризикувати|to take a risk|at tage en risiko|correre un rischio|🎲||ryzykować|b1x01_collocations.to_take_a_risk
-робити успіхи|to make progress|at gøre fremskridt|fare progressi|📶||robić postępy|b1x01_collocations.to_make_progress
-звертати увагу|to pay attention|at være opmærksom|prestare attenzione|👂||zwracać uwagę|b1x01_collocations.to_pay_attention
-підтримувати зв'язок|to keep in touch|at holde kontakten|tenersi in contatto|📲||utrzymywać kontakt|b1x01_collocations.to_keep_in_touch
-докладати зусиль|to make an effort|at gøre en indsats|fare uno sforzo|💪||dokładać starań|b1x01_collocations.to_make_an_effort
-дотримувати обіцянки|to keep a promise|at holde et løfte|mantenere una promessa|🤙||dotrzymywać obietnicy|b1x01_collocations.to_keep_a_promise
-марнувати час|to waste time|at spilde tid|perdere tempo|⌛||marnować czas|b1x01_collocations.to_waste_time
-робити все можливе|to do your best|at gøre sit bedste|fare del proprio meglio|🥇||dać z siebie wszystko|b1x01_collocations.to_do_your_best
-мати сенс|to make sense|at give mening|avere senso|💡||mieć sens|b1x01_collocations.to_make_sense
-скористатися (нагодою)|to take advantage of|at udnytte|approfittare di|🎯||skorzystać z|b1x01_collocations.to_take_advantage_of
-вести бізнес|to run a business|at drive en virksomhed|gestire un'attività|🏪||prowadzić firmę|b1x01_collocations.to_run_a_business
-брати на себе відповідальність|to take responsibility|at tage ansvar|assumersi la responsabilità|🫡||brać odpowiedzialność|b1x01_collocations.to_take_responsibility
-звикати до|to get used to|at vænne sig til|abituarsi a|🔄||przyzwyczajać się do|b1x01_collocations.to_get_used_to
-навмисно|on purpose|med vilje|apposta|😈||celowo|b1x01_collocations.on_purpose
-помилково|by mistake|ved en fejl|per sbaglio|🙈||przez pomyłkę|b1x01_collocations.by_mistake
 #b1x02_housing|Житло|🏠|B2
 кооперативна квартира|cooperative flat|en andelsbolig|l'appartamento in cooperativa|🏢||mieszkanie spółdzielcze|b1x02_housing.cooperative_flat
 оплата оренди наперед|advance rent|forudbetalt leje|l'affitto anticipato|💵||czynsz z góry|b1x02_housing.advance_rent
@@ -2020,31 +4918,6 @@ DVD-диск|DVD|en dvd|il dvd|📀|||cur_a1_23.dvd
 внутрішній двір|courtyard|en baggård|il cortile|🌳||podwórko|b1x02_housing.courtyard
 житлова допомога|housing benefit|boligstøtte|il contributo per l'affitto|💶||dodatek mieszkaniowy|b1x02_housing.housing_benefit
 власник житла|homeowner|en husejer|il proprietario di casa|🏡||właściciel mieszkania|b1x02_housing.homeowner
-#b1x02_housing~A2|Житло|🏠|A2
-орендована квартира|rented flat|en lejebolig|l'appartamento in affitto|🔑||wynajęte mieszkanie|b1x02_housing.rented_flat
-в'їжджати (у житло)|to move in|at flytte ind|trasferirsi|📦||wprowadzać się|b1x02_housing.to_move_in
-виїжджати (з житла)|to move out|at flytte ud|lasciare l'appartamento|🚚||wyprowadzać się|b1x02_housing.to_move_out
-двокімнатна квартира|two-room flat|en toværelseslejlighed|il bilocale|🚪||mieszkanie dwupokojowe|b1x02_housing.two_room_flat
-#b1x02_neighbours|Сусіди і життя в будинку|🏘️|B1
-загальні збори|general meeting|en generalforsamling|l'assemblea condominiale|🗳️||walne zgromadzenie|b1x02_neighbours.general_meeting
-поштова скринька|letterbox|en postkasse|la cassetta delle lettere|📬||skrzynka pocztowa|b1x02_neighbours.letterbox
-дверний дзвоник|doorbell|en dørklokke|il campanello|🛎️||dzwonek do drzwi|b1x02_neighbours.doorbell
-добре ладнати (з кимось)|to get on well with|at komme godt ud af det med|andare d'accordo con|🙂||dobrze się dogadywać|b1x02_neighbours.to_get_on_well_with
-навіс для велосипедів|bike shed|et cykelskur|il deposito per biciclette|🚲||wiata na rowery|b1x02_neighbours.bike_shed
-#b1x02_neighbours~A2|Сусіди і життя в будинку|🏘️|A2
-правила будинку|house rules|en husorden|il regolamento condominiale|📋||regulamin porządku domowego|b1x02_neighbours.house_rules
-скаржитися|to complain|at klage|lamentarsi|😤||skarżyć się|b1x02_neighbours.to_complain
-скарга|complaint|en klage|il reclamo|📢||skarga|b1x02_neighbours.complaint
-шуміти|to make noise|at larme|fare rumore|🥁||hałasować|b1x02_neighbours.to_make_noise
-сусідське свято|street party|en gadefest|la festa di quartiere|🎉||festyn sąsiedzki|b1x02_neighbours.street_party
-допомагати одне одному|to help each other|at hjælpe hinanden|aiutarsi a vicenda|🤝||pomagać sobie nawzajem|b1x02_neighbours.to_help_each_other
-паркомісце|parking space|en parkeringsplads|il posto auto|🅿️||miejsce parkingowe|b1x02_neighbours.parking_space
-#b1x02_environment|Довкілля і клімат|🌍|B1
-глобальне потепління|global warming|global opvarmning|il riscaldamento globale|🔥||globalne ocieplenie|b1x02_environment.global_warming
-зміна клімату|climate change|klimaforandringer|il cambiamento climatico|🌡️||zmiana klimatu|b1x02_environment.climate_change
-сонячна панель|solar panel|et solpanel|il pannello solare|🔆||panel słoneczny|b1x02_environment.solar_panel
-екологічний|environmentally friendly|miljøvenlig|ecologico|🌱||ekologiczny|b1x02_environment.environmentally_friendly
-енергоощадний|energy-saving|energibesparende|a risparmio energetico|💡||energooszczędny|b1x02_environment.energy_saving
 #b1x02_environment~B2|Довкілля і клімат|🌍|B2
 парниковий газ|greenhouse gas|en drivhusgas|il gas serra|🏭||gaz cieplarniany|b1x02_environment.greenhouse_gas
 відновлювана енергія|renewable energy|vedvarende energi|l'energia rinnovabile|☀️||energia odnawialna|b1x02_environment.renewable_energy
@@ -2055,50 +4928,11 @@ DVD-диск|DVD|en dvd|il dvd|📀|||cur_a1_23.dvd
 забруднювати|to pollute|at forurene|inquinare|🏭||zanieczyszczać|b1x02_environment.to_pollute
 вуглецевий слід|carbon footprint|et CO2-aftryk|l'impronta di carbonio|👣||ślad węglowy|b1x02_environment.carbon_footprint
 вимирати|to die out|at uddø|estinguersi|🦣||wymierać|b1x02_environment.to_die_out
-#b1x02_recycling|Сортування та переробка|♻️|B1
-сортувати сміття|to sort waste|at sortere affald|fare la raccolta differenziata|🗂️||segregować śmieci|b1x02_recycling.to_sort_waste
-харчові відходи|food waste|madaffald|gli scarti alimentari|🍌||odpady spożywcze|b1x02_recycling.food_waste
-застава за пляшку|bottle deposit|pant|la cauzione|🍾||kaucja za butelkę|b1x02_recycling.bottle_deposit
-контейнер для скла|bottle bank|en glascontainer|la campana del vetro|🫙||pojemnik na szkło|b1x02_recycling.bottle_bank
-картон|cardboard|pap|il cartone|📦|cardboard|tektura|b1x02_recycling.cardboard
-пункт переробки|recycling centre|en genbrugsstation|l'isola ecologica|♻️||punkt zbiórki odpadów|b1x02_recycling.recycling_centre
-повторно використовувати|to reuse|at genbruge|riutilizzare|🔁||ponownie wykorzystywać|b1x02_recycling.to_reuse
-секонд-хенд (магазин)|second-hand shop|en genbrugsbutik|il negozio dell'usato|👕||second hand|b1x02_recycling.second_hand_shop
 #b1x02_recycling~B2|Сортування та переробка|♻️|B2
 упаковка|packaging|emballage|l'imballaggio|🎁||opakowanie|b1x02_recycling.packaging
 компост|compost|kompost|il compost|🪱||kompost|b1x02_recycling.compost
 придатний до переробки|recyclable|genanvendelig|riciclabile|🔃||nadający się do recyklingu|b1x02_recycling.recyclable
 одноразовий пластик|single-use plastic|engangsplastik|la plastica monouso|🥤||jednorazowy plastik|b1x02_recycling.single_use_plastic
-#b1x02_family|Сімейне життя|👨‍👩‍👧|B1
-брати й сестри|siblings|søskende|i fratelli|👫||rodzeństwo|b1x02_family.siblings
-теща (свекруха)|mother-in-law|en svigermor|la suocera|👵||teściowa|b1x02_family.mother_in_law
-вагітна|pregnant|gravid|incinta|🤰||w ciąży|b1x02_family.pregnant
-одинокий батько (мати)|single parent|en enlig forsørger|il genitore single|👤||samotny rodzic|b1x02_family.single_parent
-усиновлювати|to adopt|at adoptere|adottare|💞||adoptować|b1x02_family.to_adopt
-розлучатися|to get divorced|at blive skilt|divorziare|💔||rozwodzić się|b1x02_family.to_get_divorced
-сімейна традиція|family tradition|en familietradition|la tradizione di famiglia|🎄||tradycja rodzinna|b1x02_family.family_tradition
-хатні справи|household chores|husarbejde|le faccende domestiche|🧽||obowiązki domowe|b1x02_family.household_chores
-#b1x02_family~A2|Сімейне життя|👨‍👩‍👧|A2
-онук|grandchild|et barnebarn|il nipote|👧||wnuk|b1x02_family.grandchild
-дитячий садок|kindergarten|en børnehave|l'asilo|🧸||przedszkole|b1x02_family.kindergarten
-няня|babysitter|en babysitter|la babysitter|👩‍🍼||niania|b1x02_family.babysitter
-одружуватися|to get married|at blive gift|sposarsi|💍||wziąć ślub|b1x02_family.to_get_married
-жити разом|to live together|at bo sammen|convivere|🏠||mieszkać razem|b1x02_family.to_live_together
-#b1x02_relationships|Стосунки|❤️|B1
-закохатися|to fall in love|at forelske sig|innamorarsi|😍||zakochać się|b1x02_relationships.to_fall_in_love
-зустрічатися (з кимось)|to date|at date|frequentare|💑||spotykać się|b1x02_relationships.to_date
-довіра|trust|tillid|la fiducia|🤝||zaufanie|b1x02_relationships.trust
-самотній|lonely|ensom|solo|😔||samotny|b1x02_relationships.lonely
-поважати|to respect|at respektere|rispettare|🙏||szanować|b1x02_relationships.to_respect
-стосунки на відстані|long-distance relationship|et langdistanceforhold|la relazione a distanza|🌍||związek na odległość|b1x02_relationships.long_distance_relationship
-освідчуватися|to propose|at fri|fare la proposta di matrimonio|💍||oświadczać się|b1x02_relationships.to_propose
-#b1x02_health|Охорона здоров'я|🏥|B1
-відділення невідкладної допомоги|emergency department|en skadestue|il pronto soccorso|🏥||szpitalny oddział ratunkowy|b1x02_health.emergency_department
-записатися на прийом|to make an appointment|at bestille tid|prendere un appuntamento|📅||umówić się na wizytę|b1x02_health.to_make_an_appointment
-лікар-спеціаліст|specialist|en speciallæge|lo specialista|👨‍⚕️||specjalista|b1x02_health.specialist
-знеболювальне|painkiller|et smertestillende middel|l'antidolorifico|💊||lek przeciwbólowy|b1x02_health.painkiller
-аналіз крові|blood test|en blodprøve|l'esame del sangue|🩸||badanie krwi|b1x02_health.blood_test
-медичний огляд|check-up|et helbredstjek|il controllo medico|📋||badanie kontrolne|b1x02_health.check_up
 #b1x02_symptoms|Симптоми і травми|🤒|B2
 відчувати запаморочення|to feel dizzy|at være svimmel|avere le vertigini|😵‍💫||mieć zawroty głowy|b1x02_symptoms.to_feel_dizzy
 нудота|nausea|kvalme|la nausea|🤢||nudności|b1x02_symptoms.nausea
@@ -2109,141 +4943,22 @@ DVD-диск|DVD|en dvd|il dvd|📀|||cur_a1_23.dvd
 підвернути щиколотку|to sprain one's ankle|at forstuve anklen|slogarsi la caviglia|🩼||skręcić kostkę|b1x02_symptoms.to_sprain_one_s_ankle
 кровотеча з носа|nosebleed|næseblod|il sangue dal naso|🩸||krwawienie z nosa|b1x02_symptoms.nosebleed
 безсоння|insomnia|søvnløshed|l'insonnia|😴||bezsenność|b1x02_symptoms.insomnia
-#b1x02_symptoms~A2|Симптоми і травми|🤒|A2
-біль у спині|back pain|rygsmerter|il mal di schiena|🦴||ból pleców|b1x02_symptoms.back_pain
-зламати ногу|to break one's leg|at brække benet|rompersi la gamba|🩼||złamać nogę|b1x02_symptoms.to_break_one_s_leg
-біль у животі|stomach ache|mavepine|il mal di pancia|😖|stomach_ache|ból brzucha|b1x02_symptoms.stomach_ache
-опік|burn|en forbrænding|l'ustione|🔥||oparzenie|b1x02_symptoms.burn
-#b1x02_news|Новини і медіа|📰|B1
-засоби масової інформації|media|medier|i media|📡||media|b1x02_news.media
-фейкові новини|fake news|falske nyheder|le notizie false|🤥||fałszywe wiadomości|b1x02_news.fake_news
-підписник (у соцмережах)|follower|en følger|il follower|👥||obserwujący|b1x02_news.follower
-новина|news story|en nyhed|la notizia|🗞️||wiadomość|b1x02_news.news_story
-стежити за новинами|to follow the news|at følge med i nyhederne|seguire le notizie|👀||śledzić wiadomości|b1x02_news.to_follow_the_news
-телеканал|channel|en kanal|il canale|📡||kanał telewizyjny|b1x02_news.channel
-достовірний|trustworthy|troværdig|affidabile|✔️||wiarygodny|b1x02_news.trustworthy
-#b1x02_news~A2|Новини і медіа|📰|A2
-репортаж|news report|en reportage|il servizio|🎙️||reportaż|b1x02_news.news_report
-випуск новин|news programme|en nyhedsudsendelse|il telegiornale|📺||serwis informacyjny|b1x02_news.news_programme
-соціальні мережі|social media|sociale medier|i social media|📱||media społecznościowe|b1x02_news.social_media
-редактор|editor|en redaktør|il redattore|✏️||redaktor|b1x02_news.editor
-подкаст|podcast|en podcast|il podcast|🎧||podcast|b1x02_news.podcast
 #b1x02_news~B2|Новини і медіа|📰|B2
 останні новини|breaking news|seneste nyt|le ultime notizie|🚨||najnowsze wiadomości|b1x02_news.breaking_news
 пряма трансляція|live broadcast|en direkte udsendelse|la diretta|🔴||transmisja na żywo|b1x02_news.live_broadcast
 опитування громадської думки|opinion poll|en meningsmåling|il sondaggio|📊||sondaż|b1x02_news.opinion_poll
 прес-конференція|press conference|et pressemøde|la conferenza stampa|🗣️||konferencja prasowa|b1x02_news.press_conference
-#b1x02_opinions|Думки та емоції|💭|B1
-Я розумію твою думку|I see your point|Jeg kan godt se din pointe|Capisco il tuo punto di vista|👍||Rozumiem twój punkt widzenia|b1x02_opinions.i_see_your_point
-Боюся, я не можу погодитися|I'm afraid I can't agree|Jeg er desværre ikke enig|Mi dispiace, ma non sono d'accordo|🙅||Obawiam się, że nie mogę się zgodzić|b1x02_opinions.i_m_afraid_i_can_t_agree
-Аж ніяк!|Absolutely not!|Absolut ikke!|Assolutamente no!|🚫||Absolutnie nie!|b1x02_opinions.absolutely_not
-Слушне зауваження|That's a good point|Det er en god pointe|È un'osservazione giusta|💡||Słuszna uwaga|b1x02_opinions.that_s_a_good_point
-Вирішувати тобі|It's up to you|Det er op til dig|Decidi tu|🤷||To zależy od ciebie|b1x02_opinions.it_s_up_to_you
-переконувати|to convince|at overbevise|convincere|🗣️||przekonywać|b1x02_opinions.to_convince
-емоція|emotion|en følelse|l'emozione|❤️||emocja|b1x02_opinions.emotion
-роздратований|annoyed|irriteret|infastidito|😒||zirytowany|b1x02_opinions.annoyed
-збентежений (ніяковий)|embarrassed|flov|imbarazzato|😳||zawstydzony|b1x02_opinions.embarrassed
-#b1x02_opinions~A2|Думки та емоції|💭|A2
-Саме так!|Exactly!|Præcis!|Esatto!|🎯||Właśnie tak!|b1x02_opinions.exactly
-Це неправда|That's not true|Det passer ikke|Non è vero|❌||To nieprawda|b1x02_opinions.that_s_not_true
-Я теж так думаю|I think so too|Det synes jeg også|Lo penso anch'io|🤝||Też tak myślę|b1x02_opinions.i_think_so_too
-думка (погляд)|opinion|en mening|l'opinione|💭||zdanie|b1x02_opinions.opinion
-погоджуватися (з кимось)|to agree with|at være enig med|essere d'accordo con|✅||zgadzać się|b1x02_opinions.to_agree_with
-не погоджуватися (з кимось)|to disagree with|at være uenig med|non essere d'accordo con|🙅‍♂️||nie zgadzać się|b1x02_opinions.to_disagree_with
-наляканий|scared|bange|spaventato|😱||przestraszony|b1x02_opinions.scared
-засмучений|upset|ked af det|dispiaciuto|😢||zmartwiony|b1x02_opinions.upset
-#b1x02_adjectives|Поширені прикметники|✨|B1
-складний|complicated|kompliceret|complicato|🧩||skomplikowany|b1x02_adjectives.complicated
-марний|useless|ubrugelig|inutile|🙃||bezużyteczny|b1x02_adjectives.useless
-справедливий|fair|retfærdig|giusto|⚖️||sprawiedliwy|b1x02_adjectives.fair
-типовий|typical|typisk|tipico|📌||typowy|b1x02_adjectives.typical
-суворий|strict|streng|severo|📏||surowy|b1x02_adjectives.strict
-#b1x02_adjectives~A2|Поширені прикметники|✨|A2
-зручний (практичний)|convenient|praktisk|pratico|👌||wygodny|b1x02_adjectives.convenient
-звичайний|ordinary|almindelig|comune|🙂||zwyczajny|b1x02_adjectives.ordinary
-можливий|possible|mulig|possibile|🤔||możliwy|b1x02_adjectives.possible
-неможливий|impossible|umulig|impossibile|⛔||niemożliwy|b1x02_adjectives.impossible
-корисний|useful|nyttig|utile|🔧||przydatny|b1x02_adjectives.useful
-несправедливий|unfair|uretfærdig|ingiusto|😠||niesprawiedliwy|b1x02_adjectives.unfair
-серйозний|serious|alvorlig|serio|😐||poważny|b1x02_adjectives.serious
-простий|simple|enkel|semplice|➖||prosty|b1x02_adjectives.simple
-приватний|private|privat|privato|🔒||prywatny|b1x02_adjectives.private
-#b1x03_transport|Транспорт і дорожній рух|🚦|B1
-пішохідний перехід|pedestrian crossing|et fodgængerfelt|il passaggio pedonale|🚸||przejście dla pieszych|b1x03_transport.pedestrian_crossing
-обмеження швидкості|speed limit|en hastighedsgrænse|il limite di velocità|🚫||ograniczenie prędkości|b1x03_transport.speed_limit
-ремінь безпеки|seat belt|en sikkerhedssele|la cintura di sicurezza|💺|seat_belt|pas bezpieczeństwa|b1x03_transport.seat_belt
-година пік|rush hour|en myldretid|l'ora di punta|⏰||godzina szczytu|b1x03_transport.rush_hour
-підвезти когось|to give someone a lift|at give nogen et lift|dare un passaggio a qualcuno|🚗||podwieźć kogoś|b1x03_transport.to_give_someone_a_lift
-велосипедист|cyclist|en cyklist|il ciclista|🚴||rowerzysta|b1x03_transport.cyclist
-контролер (квитків)|ticket inspector|en billetkontrollør|il controllore|🎫||kontroler biletów|b1x03_transport.ticket_inspector
-перехрестя|crossroads|et vejkryds|l'incrocio|➕||skrzyżowanie|b1x03_transport.crossroads
-вулиця з одностороннім рухом|one-way street|en ensrettet gade|la strada a senso unico|⬆️||ulica jednokierunkowa|b1x03_transport.one_way_street
-застрягти в заторі|to be stuck in traffic|at sidde fast i trafikken|restare bloccato nel traffico|🚙||utknąć w korku|b1x03_transport.to_be_stuck_in_traffic
-штраф за паркування|parking ticket|en parkeringsbøde|la multa per divieto di sosta|🧾||mandat za parkowanie|b1x03_transport.parking_ticket
-камера контролю швидкості|speed camera|et fartkamera|l'autovelox|📸||fotoradar|b1x03_transport.speed_camera
-заправляти (машину)|to fill up|at tanke op|fare il pieno|⛽||tankować|b1x03_transport.to_fill_up
-#b1x03_transport~A2|Транспорт і дорожній рух|🚦|A2
-кільцева розв'язка|roundabout|en rundkørsel|la rotonda|🔄||rondo|b1x03_transport.roundabout
-водійські права|driving licence|et kørekort|la patente|🪪🚗||prawo jazdy|b1x03_transport.driving_licence
-автозаправка|petrol station|en tankstation|il distributore di benzina|⛽||stacja benzynowa|b1x03_transport.petrol_station
-автомагістраль|motorway|en motorvej|l'autostrada|🛣️||autostrada|b1x03_transport.motorway
-громадський транспорт|public transport|offentlig transport|i mezzi pubblici|🚌||transport publiczny|b1x03_transport.public_transport
-#b1x03_shopping|Покупки і права споживача|🛍️|B1
-гарантія|guarantee|en garanti|la garanzia|📜||gwarancja|b1x03_shopping.guarantee
-обмінювати (товар)|to exchange|at bytte|cambiare|🔁||wymieniać|b1x03_shopping.to_exchange
-доставка|delivery|en levering|la consegna|🚚||dostawa|b1x03_shopping.delivery
-візок для покупок|shopping trolley|en indkøbsvogn|il carrello della spesa|🛒||wózek sklepowy|b1x03_shopping.shopping_trolley
-чек для обміну подарунка|gift receipt|en byttelap|lo scontrino di cortesia|🎁||paragon prezentowy|b1x03_shopping.gift_receipt
-пошкоджений|damaged|beskadiget|danneggiato|💔||uszkodzony|b1x03_shopping.damaged
-касир|cashier|en kasseassistent|il cassiere|💁||kasjer|b1x03_shopping.cashier
-стояти в черзі|to queue|at stå i kø|fare la fila|🧍|queue_,_to|stać w kolejce|b1x03_shopping.to_queue
-отримати гроші назад|to get a refund|at få pengene tilbage|ottenere un rimborso|💶||dostać zwrot pieniędzy|b1x03_shopping.to_get_a_refund
-вітрина|shop window|et udstillingsvindue|la vetrina|🪟||wystawa sklepowa|b1x03_shopping.shop_window
-#b1x03_shopping~A2|Покупки і права споживача|🛍️|A2
-повертати (товар)|to return|at returnere|restituire|↩️|return_,_to|zwracać|b1x03_shopping.to_return
-замовляти онлайн|to order online|at bestille online|ordinare online|🛒||zamawiać przez internet|b1x03_shopping.to_order_online
-платити карткою|to pay by card|at betale med kort|pagare con la carta|💳||płacić kartą|b1x03_shopping.to_pay_by_card
-спеціальна пропозиція|special offer|et særtilbud|l'offerta speciale|🏷️||oferta specjalna|b1x03_shopping.special_offer
-інтернет-магазин|online shop|en netbutik|il negozio online|🖥️||sklep internetowy|b1x03_shopping.online_shop
 #b1x03_shopping~B2|Покупки і права споживача|🛍️|B2
 права споживача|consumer rights|forbrugerrettigheder|i diritti dei consumatori|⚖️||prawa konsumenta|b1x03_shopping.consumer_rights
 бракований|faulty|defekt|difettoso|⚠️||wadliwy|b1x03_shopping.faulty
 це грабунок (про ціну)|it's a rip-off|det er rent røveri|è un furto|💸||to zdzierstwo|b1x03_shopping.it_s_a_rip_off
 немає в наявності|out of stock|ikke på lager|non disponibile|❌||niedostępny|b1x03_shopping.out_of_stock
-#b1x03_personality|Риси характеру|😊|B1
-амбітний|ambitious|ambitiøs|ambizioso|🚀||ambitny|b1x03_personality.ambitious
-егоїстичний|selfish|egoistisk|egoista|🙄||egoistyczny|b1x03_personality.selfish
-чутливий|sensitive|følsom|sensibile|🥺||wrażliwy|b1x03_personality.sensitive
-життєрадісний|cheerful|munter|allegro|😄||pogodny|b1x03_personality.cheerful
-допитливий|curious|nysgerrig|curioso|🧐||ciekawski|b1x03_personality.curious
-необачний|careless|skødesløs|sbadato|🤦||nieostrożny|b1x03_personality.careless
-легкий у спілкуванні|easy-going|afslappet|alla mano|😌||łatwy w obyciu|b1x03_personality.easy_going
-працьовитий|hard-working|flittig|laborioso|💪||pracowity|b1x03_personality.hard_working
-балакучий|talkative|snakkesalig|chiacchierone|🗣️||gadatliwy|b1x03_personality.talkative
-неохайний|messy|rodet|disordinato|🌀||niechlujny|b1x03_personality.messy
-розсудливий|sensible|fornuftig|assennato|🧠||rozsądny|b1x03_personality.sensible
-оптимістичний|optimistic|optimistisk|ottimista|🌈||optymistyczny|b1x03_personality.optimistic
-владний (любить командувати)|bossy|dominerende|prepotente|👑||apodyktyczny|b1x03_personality.bossy
 #b1x03_personality~B2|Риси характеру|😊|B2
 товариський|outgoing|udadvendt|estroverso|🥳||towarzyski|b1x03_personality.outgoing
 песимістичний|pessimistic|pessimistisk|pessimista|🌧️||pesymistyczny|b1x03_personality.pessimistic
 скромний|modest|beskeden|modesto|🙂||skromny|b1x03_personality.modest
 зарозумілий|arrogant|arrogant|arrogante|😤||zarozumiały|b1x03_personality.arrogant
 пунктуальний|punctual|punktlig|puntuale|⏰||punktualny|b1x03_personality.punctual
-#b1x03_appearance|Зовнішність|🪞|B1
-кучерявий|curly|krøllet|riccio|➰|curly|kręcony|b1x03_appearance.curly
-вуса|moustache|et overskæg|i baffi|🥸||wąsy|b1x03_appearance.moustache
-лисий|bald|skaldet|calvo|👨‍🦲||łysy|b1x03_appearance.bald
-йому за тридцять|in his thirties|i trediverne|sulla trentina|🎂||po trzydziestce|b1x03_appearance.in_his_thirties
-середнього віку|middle-aged|midaldrende|di mezza età|🧑‍🦳||w średnim wieku|b1x03_appearance.middle_aged
-татуювання|tattoo|en tatovering|il tatuaggio|🖋️|tattoo|tatuaż|b1x03_appearance.tattoo
-блідий|pale|bleg|pallido|😶||blady|b1x03_appearance.pale
-засмаглий|tanned|solbrun|abbronzato|🏖️||opalony|b1x03_appearance.tanned
-#b1x03_appearance~A2|Зовнішність|🪞|A2
-борода|beard|et skæg|la barba|🧔||broda|b1x03_appearance.beard
-стрункий|slim|slank|snello|🧍||szczupły|b1x03_appearance.slim
-з надмірною вагою|overweight|overvægtig|sovrappeso|⚖️||z nadwagą|b1x03_appearance.overweight
-гарний на вигляд|good-looking|flot|di bell'aspetto|😎||przystojny|b1x03_appearance.good_looking
 #b1x03_appearance~B2|Зовнішність|🪞|B2
 веснянки|freckles|fregner|le lentiggini|🌞|freckles|piegi|b1x03_appearance.freckles
 зморшки|wrinkles|rynker|le rughe|👵||zmarszczki|b1x03_appearance.wrinkles
@@ -2251,73 +4966,12 @@ DVD-диск|DVD|en dvd|il dvd|📀|||cur_a1_23.dvd
 кінський хвіст (зачіска)|ponytail|en hestehale|la coda di cavallo|👱‍♀️||koński ogon|b1x03_appearance.ponytail
 шрам|scar|et ar|la cicatrice|🩹|scar|blizna|b1x03_appearance.scar
 чубчик|fringe|et pandehår|la frangia|💇||grzywka|b1x03_appearance.fringe
-#b1x03_culture|Культура і дозвілля|🎭|B1
-захоплюватися (чимось)|to be keen on|at være vild med|essere appassionato di|😍||pasjonować się|b1x03_culture.to_be_keen_on
-антракт|interval|en pause|l'intervallo|🍷||antrakt|b1x03_culture.interval
-документальний фільм|documentary|en dokumentarfilm|il documentario|🎥||film dokumentalny|b1x03_culture.documentary
-балет|ballet|en ballet|il balletto|🩰||balet|b1x03_culture.ballet
-опера|opera|en opera|l'opera|🎼||opera|b1x03_culture.opera
-колекція|collection|en samling|la collezione|🗃️||kolekcja|b1x03_culture.collection
-#b1x03_culture~A2|Культура і дозвілля|🎭|A2
-роман|novel|en roman|il romanzo|📕||powieść|b1x03_culture.novel
-автор|author|en forfatter|l'autore|✍️||autor|b1x03_culture.author
-вільний час|free time|fritid|il tempo libero|⏳||czas wolny|b1x03_culture.free_time
-записатися до клубу|to join a club|at melde sig ind i en klub|iscriversi a un club|🏸||zapisać się do klubu|b1x03_culture.to_join_a_club
-вечірні курси|evening class|en aftenskole|il corso serale|🌙||kurs wieczorowy|b1x03_culture.evening_class
-вікторина|quiz|en quiz|il quiz|❓||quiz|b1x03_culture.quiz
-комедія|comedy|en komedie|la commedia|😂||komedia|b1x03_culture.comedy
-мюзикл|musical|en musical|il musical|🎤||musical|b1x03_culture.musical
-художня галерея|art gallery|et kunstgalleri|la galleria d'arte|🖼️||galeria sztuki|b1x03_culture.art_gallery
-концертна зала|concert hall|en koncertsal|la sala da concerto|🎻||sala koncertowa|b1x03_culture.concert_hall
-#b1x03_phone|Спілкування і телефонні дзвінки|📞|B1
-зачекати (на лінії)|to hold on|at vente et øjeblik|restare in linea|⏳||nie rozłączać się|b1x03_phone.to_hold_on
-автовідповідач|voicemail|en telefonsvarer|la segreteria telefonica|📼||poczta głosowa|b1x03_phone.voicemail
-код країни|country code|en landekode|il prefisso internazionale|🌍||numer kierunkowy kraju|b1x03_phone.country_code
-набирати (номер)|to dial|at taste|comporre|☎️|dial_,_to|wybierać numer|b1x03_phone.to_dial
-бути зайнятим (про лінію)|to be engaged|at være optaget|essere occupato|🔴||być zajętym|b1x03_phone.to_be_engaged
-шепотіти|to whisper|at hviske|sussurrare|🤫|whisper_,_to|szeptać|b1x03_phone.to_whisper
-#b1x03_phone~A2|Спілкування і телефонні дзвінки|📞|A2
-есемеска|text message|en sms|il messaggino|📱||SMS|b1x03_phone.text_message
-залишити повідомлення|to leave a message|at lægge en besked|lasciare un messaggio|💬||zostawić wiadomość|b1x03_phone.to_leave_a_message
-неправильний номер|wrong number|et forkert nummer|il numero sbagliato|🔢||zły numer|b1x03_phone.wrong_number
-писати повідомлення|to text|at sms'e|mandare un messaggio|✉️||esemesować|b1x03_phone.to_text
-диктувати по літерах|to spell|at stave|fare lo spelling|🔤||przeliterować|b1x03_phone.to_spell
-базікати|to chat|at sludre|chiacchierare|☕||gadać|b1x03_phone.to_chat
-голос|voice|en stemme|la voce|🎙️||głos|b1x03_phone.voice
 #b1x03_phone~B2|Спілкування і телефонні дзвінки|📞|B2
 з'єднати (по телефону)|to put someone through|at stille om|passare|🔀||połączyć|b1x03_phone.to_put_someone_through
 стаціонарний телефон|landline|en fastnettelefon|il telefono fisso|📟||telefon stacjonarny|b1x03_phone.landline
 поставити на очікування|to put on hold|at sætte på hold|mettere in attesa|🎵||kazać czekać na linii|b1x03_phone.to_put_on_hold
 говорити голосніше|to speak up|at tale højere|parlare più forte|🔊||mówić głośniej|b1x03_phone.to_speak_up
 втратити зв'язок (з кимось)|to lose touch|at miste kontakten|perdere i contatti|💔||stracić kontakt|b1x03_phone.to_lose_touch
-#b1x03_crime|Злочинність і безпека|🚨|B1
-квартирний злодій|burglar|en indbrudstyv|lo scassinatore|🦹||włamywacz|b1x03_crime.burglar
-заявляти (в поліцію)|to report|at anmelde|denunciare|📝||zgłaszać|b1x03_crime.to_report
-крадіжка в магазині|shoplifting|et butikstyveri|il taccheggio|🛍️||kradzież sklepowa|b1x03_crime.shoplifting
-грабіжник|robber|en røver|il rapinatore|🥷||rabuś|b1x03_crime.robber
-насильство|violence|vold|la violenza|👊||przemoc|b1x03_crime.violence
-розслідування|investigation|en efterforskning|l'indagine|🕵️||śledztwo|b1x03_crime.investigation
-попередження|warning|en advarsel|l'avvertimento|⚠️||ostrzeżenie|b1x03_crime.warning
-камера відеоспостереження|security camera|et overvågningskamera|la telecamera di sorveglianza|📹||kamera monitoringu|b1x03_crime.security_camera
-безпека|safety|sikkerhed|la sicurezza|🦺||bezpieczeństwo|b1x03_crime.safety
-винний|guilty|skyldig|colpevole|⚖️||winny|b1x03_crime.guilty
-покарання|punishment|en straf|la punizione|🔨||kara|b1x03_crime.punishment
-#b1x03_crime~A2|Злочинність і безпека|🚨|A2
-красти|to steal|at stjæle|rubare|💰|steal_,_to|kraść|b1x03_crime.to_steal
-пограбування|robbery|et røveri|la rapina|🔫||napad|b1x03_crime.robbery
-сигналізація|alarm|en alarm|l'allarme|🔔||alarm|b1x03_crime.alarm
-замок (дверний)|lock|en lås|la serratura|🔒||zamek do drzwi|b1x03_crime.lock
-замикати (на ключ)|to lock|at låse|chiudere a chiave|🔐||zamykać na klucz|b1x03_crime.to_lock
-нападати|to attack|at angribe|aggredire|💥||atakować|b1x03_crime.to_attack
-викликати поліцію|to call the police|at ringe til politiet|chiamare la polizia|👮||wezwać policję|b1x03_crime.to_call_the_police
-#b1x03_weather|Погода і клімат|🌦️|B1
-вологий (про повітря)|humid|fugtig|umido|💧||wilgotny|b1x03_weather.humid
-грім|thunder|torden|il tuono|🌩️||grzmot|b1x03_weather.thunder
-блискавка|lightning|et lyn|il fulmine|⚡||piorun|b1x03_weather.lightning
-морозний (дуже холодний)|freezing|iskold|gelido|🥶||mroźny|b1x03_weather.freezing
-м'який (про клімат)|mild|mild|mite|🌤️||łagodny|b1x03_weather.mild
-мороз|frost|frost|il gelo|❄️||mróz|b1x03_weather.frost
-ураган|hurricane|en orkan|l'uragano|🌀||huragan|b1x03_weather.hurricane
 #b1x03_weather~B2|Погода і клімат|🌦️|B2
 спека (хвиля спеки)|heatwave|en hedebølge|l'ondata di caldo|🥵||fala upałów|b1x03_weather.heatwave
 легкий вітерець|breeze|en brise|la brezza|🍃||bryza|b1x03_weather.breeze
@@ -2327,51 +4981,6 @@ DVD-диск|DVD|en dvd|il dvd|📀|||cur_a1_23.dvd
 калюжа|puddle|en vandpyt|la pozzanghera|💦||kałuża|b1x03_weather.puddle
 розпогоджуватися|to clear up|at klare op|schiarirsi|🌤️||rozpogadzać się|b1x03_weather.to_clear_up
 слизький|slippery|glat|scivoloso|⛸️|slippery|śliski|b1x03_weather.slippery
-#b1x03_city|Місто і послуги|🏙️|B1
-вивезення сміття|rubbish collection|skraldeafhentning|la raccolta dei rifiuti|🚛||wywóz śmieci|b1x03_city.rubbish_collection
-переробка (вторсировини)|recycling|genbrug|il riciclaggio|♻️||recykling|b1x03_city.recycling
-центр обслуговування громадян|citizen service centre|Borgerservice|lo sportello del cittadino|🏢||biuro obsługi mieszkańców|b1x03_city.citizen_service_centre
-фонтан|fountain|et springvand|la fontana|⛲||fontanna|b1x03_city.fountain
-клініка|clinic|en klinik|la clinica|🏥||klinika|b1x03_city.clinic
-хімчистка|dry cleaner's|et renseri|la tintoria|👔||pralnia chemiczna|b1x03_city.dry_cleaner_s
-вуличний ліхтар|street light|en gadelygte|il lampione|💡||latarnia uliczna|b1x03_city.street_light
-стоянка таксі|taxi rank|en taxaholdeplads|il posteggio dei taxi|🚕||postój taksówek|b1x03_city.taxi_rank
-подавати заяву (на щось)|to apply for|at ansøge om|fare domanda di|📝||składać wniosek o|b1x03_city.to_apply_for
-не працювати (про техніку)|to be out of order|at være i stykker|essere fuori servizio|🚫||być nieczynnym|b1x03_city.to_be_out_of_order
-#b1x03_city~A2|Місто і послуги|🏙️|A2
-пожежна частина|fire station|en brandstation|la caserma dei pompieri|🚒||remiza strażacka|b1x03_city.fire_station
-торговий центр|shopping centre|et indkøbscenter|il centro commerciale|🏬||centrum handlowe|b1x03_city.shopping_centre
-громадський туалет|public toilet|et offentligt toilet|il bagno pubblico|🚻||toaleta publiczna|b1x03_city.public_toilet
-години роботи|opening hours|åbningstider|l'orario di apertura|🕘||godziny otwarcia|b1x03_city.opening_hours
-центр міста|town centre|en bymidte|il centro città|🏙️||centrum miasta|b1x03_city.town_centre
-#b1x03_linking|Прислівники і зв'язні слова|🔗|B1
-насправді|in fact|faktisk|in realtà|🔎||w rzeczywistości|b1x03_linking.in_fact
-якщо не|unless|medmindre|a meno che|🚧||chyba że|b1x03_linking.unless
-досі (до цього часу)|so far|indtil videre|finora|📍||do tej pory|b1x03_linking.so_far
-випадково|by accident|ved et uheld|per sbaglio|😬||przypadkiem|b1x03_linking.by_accident
-крім того|in addition|derudover|inoltre|➕||ponadto|b1x03_linking.in_addition
-зрештою (адже)|after all|trods alt|dopotutto|🤝||w końcu|b1x03_linking.after_all
-на диво|surprisingly|overraskende nok|sorprendentemente|😮||zaskakująco|b1x03_linking.surprisingly
-#b1x03_linking~A2|Прислівники і зв'язні слова|🔗|A2
-на щастя|fortunately|heldigvis|fortunatamente|🍀||na szczęście|b1x03_linking.fortunately
-майже|nearly|næsten|quasi|🤏||prawie|b1x03_linking.nearly
-ледве|hardly|knap nok|a malapena|🤏||ledwo|b1x03_linking.hardly
-особливо|especially|især|soprattutto|⭐||zwłaszcza|b1x03_linking.especially
-принаймні|at least|i det mindste|almeno|👍||przynajmniej|b1x03_linking.at_least
-все одно|anyway|alligevel|comunque|🤷||i tak|b1x03_linking.anyway
-негайно|immediately|straks|immediatamente|⚡||natychmiast|b1x03_linking.immediately
-щойно (як тільки)|as soon as|så snart|appena|⏩||jak tylko|b1x03_linking.as_soon_as
-через (з причини)|because of|på grund af|a causa di|❗||z powodu|b1x03_linking.because_of
-повністю|completely|fuldstændig|completamente|✅||zupełnie|b1x03_linking.completely
-#b1x03_idioms|Ідіоми і сталі вирази|💡|B1
-вирішити (остаточно)|to make up one's mind|at bestemme sig|decidersi|🤔||zdecydować się|b1x03_idioms.to_make_up_one_s_mind
-розслабитися (не перевтомлюватися)|to take it easy|at tage det roligt|prendersela comoda|😎||wyluzować się|b1x03_idioms.to_take_it_easy
-рано чи пізно|sooner or later|før eller siden|prima o poi|⌛||prędzej czy później|b1x03_idioms.sooner_or_later
-набриднути (бути ситим по горло)|to be fed up with|at være træt af|essere stufo di|😤||mieć dość|b1x03_idioms.to_be_fed_up_with
-передумати|to change one's mind|at skifte mening|cambiare idea|🔄||zmienić zdanie|b1x03_idioms.to_change_one_s_mind
-бути вартим того|to be worth it|at være det værd|valerne la pena|💎||być tego wartym|b1x03_idioms.to_be_worth_it
-почуватися як удома|to feel at home|at føle sig hjemme|sentirsi a casa|🏠||czuć się jak w domu|b1x03_idioms.to_feel_at_home
-шкода|that's a shame|det er en skam|è un peccato|😔||szkoda|b1x03_idioms.that_s_a_shame
 #b1x03_idioms~B2|Ідіоми і сталі вирази|💡|B2
 нездужати|under the weather|at være lidt sløj|non sentirsi in forma|🤒||czuć się kiepsko|b1x03_idioms.under_the_weather
 не дивно|no wonder|intet under|non c'è da stupirsi|😏||nic dziwnego|b1x03_idioms.no_wonder
@@ -2447,28 +5056,6 @@ Wi-Fi постійно зникає.|The Wi-Fi keeps cutting out.|Wi-fi'en falde
 Це не твоя провина.|It's not your fault.|Det er ikke din skyld.|Non è colpa tua.|🙅|||b1x04_phr_b1_support.it_s_not_your_fault
 Ти не сам.|You're not alone.|Du er ikke alene.|Non sei solo.|🧑‍🤝‍🧑|||b1x04_phr_b1_support.you_re_not_alone
 Усе налагодиться.|Things will get better.|Det skal nok blive bedre.|Le cose miglioreranno.|🌈|||b1x04_phr_b1_support.things_will_get_better
-#b2_society|Суспільство|🏛️|A2
-суспільство|society|et samfund|la società|🏛️||społeczeństwo|b2_society.society
-уряд|government|en regering|il governo|🏢|Houses_of_Parliament|rząd|b2_society.government
-громадянин|citizen|en borger|il cittadino|🪪||obywatel|b2_society.citizen
-закон|law|en lov|la legge|📜||prawo|b2_society.law
-злочин|crime|en forbrydelse|il crimine|🚨|handcuffs|przestępstwo|b2_society.crime
-#b2_work|Робота й економіка|💼|B1
-податок|tax|en skat|la tassa|🧾||podatek|b2_work.tax
-безробіття|unemployment|en arbejdsløshed|la disoccupazione|📉||bezrobocie|b2_work.unemployment
-прибуток|profit|en fortjeneste|il profitto|📈||zysk|b2_work.profit
-борг|debt|en gæld|il debito|💳||dług|b2_work.debt
-підвищення (на посаді)|promotion|en forfremmelse|la promozione|🪜||awans|b2_work.promotion
-інвестувати|to invest|at investere|investire|💹||inwestować|b2_work.to_invest
-звільняти (з роботи)|to fire|at fyre|licenziare|🚪||zwalniać|b2_work.to_fire
-вести переговори|to negotiate|at forhandle|negoziare|🤝|shake_hands_,_to|negocjować|b2_work.to_negotiate
-досвідчений|experienced|erfaren|esperto|🎓||doświadczony|b2_work.experienced
-#b2_character|Емоції й характер|🎭|B1
-щедрий|generous|gavmild|generoso|🎁|give_,_to|hojny|b2_character.generous
-надійний (про людину)|reliable|pålidelig|affidabile|🛡️||niezawodny|b2_character.reliable
-чесність|honesty|en ærlighed|l'onestà|😇||uczciwość|b2_character.honesty
-терпіння|patience|en tålmodighed|la pazienza|⏳|wait_,_to|cierpliwość|b2_character.patience
-тривога (почуття)|anxiety|en angst|l'ansia|😰|worried_lady|niepokój|b2_character.anxiety
 #b2_phrases|Вирази й ідіоми|💬|B2
 убити двох зайців|to kill two birds with one stone|at slå to fluer med ét smæk|prendere due piccioni con una fava|🐦🐦|bird|upiec dwie pieczenie na jednym ogniu|b2_phrases.to_kill_two_birds_with_one_stone
 ллє як з відра|it's raining cats and dogs|det regner skomagerdrenge|piove a catinelle|🌧️🌧️|thunder_storm|leje jak z cebra|b2_phrases.it_s_raining_cats_and_dogs
@@ -2489,64 +5076,6 @@ Wi-Fi постійно зникає.|The Wi-Fi keeps cutting out.|Wi-fi'en falde
 бути в курсі справ|to be in the loop|at være orienteret|essere al corrente|📢||być na bieżąco|b2_phrases.to_be_in_the_loop
 яблуко від яблуні недалеко падає|the apple doesn't fall far from the tree|æblet falder ikke langt fra stammen|la mela non cade lontano dall'albero|🍎||niedaleko pada jabłko od jabłoni|b2_phrases.the_apple_doesn_t_fall_far_from_the_tree
 хто рано встає, тому Бог дає|the early bird catches the worm|morgenstund har guld i mund|il mattino ha l'oro in bocca|🌅||kto rano wstaje, temu Pan Bóg daje|b2_phrases.the_early_bird_catches_the_worm
-#b2m_gadgets|Гаджети й інтернет|📱|A2
-коментар|comment|en kommentar|il commento|💬||komentarz|b2m_gadgets.comment
-реклама|advertisement|en reklame|la pubblicità|📢||reklama|b2m_gadgets.advertisement
-застосунок|app|en app|l'app|📲||aplikacja|b2m_gadgets.app
-пароль|password|en adgangskode|la password|🔑||hasło|b2m_gadgets.password
-екран|screen|en skærm|lo schermo|🖥️|touch_screen|ekran|b2m_gadgets.screen
-публікувати|to publish|at offentliggøre|pubblicare|📤||publikować|b2m_gadgets.to_publish
-завантажувати (з інтернету)|to download|at downloade|scaricare|⬇️|download_,_to|pobierać|b2m_gadgets.to_download
-акумулятор|battery|et batteri|la batteria|🔋|battery_1|bateria|b2m_gadgets.battery
-#b2m_gadgets~B1|Гаджети й інтернет|📱|B1
-пристрій|device|en enhed|il dispositivo|📱||urządzenie|b2m_gadgets.device
-оновлювати|to update|at opdatere|aggiornare|🔄||aktualizować|b2m_gadgets.to_update
-гортати (стрічку)|to scroll|at scrolle|scorrere|📜||przewijać|b2m_gadgets.to_scroll
-бездротовий|wireless|trådløs|senza fili|📶||bezprzewodowy|b2m_gadgets.wireless
-#b2m_education|Освіта й навчання|🎓|B1
-стипендія|scholarship|et stipendium|la borsa di studio|💰||stypendium|b2m_education.scholarship
-лекція|lecture|en forelæsning|la lezione|🧑‍🏫||wykład|b2m_education.lecture
-завдання (письмове)|assignment|en opgave|il compito|📝||zadanie|b2m_education.assignment
-випускник (університету)|graduate|en dimittend|il laureato|🎓||absolwent|b2m_education.graduate
-навчальна програма|curriculum|en læseplan|il programma scolastico|📋||program nauczania|b2m_education.curriculum
-вивчати напам'ять|to memorize|at lære udenad|memorizzare|🧠||uczyć się na pamięć|b2m_education.to_memorize
-повторювати (матеріал)|to revise|at repetere|ripassare|🔁|study_,_to|powtarzać materiał|b2m_education.to_revise
-#b2m_medicine|Медицина й лікування|🏥|B1
-бинт|bandage|en forbinding|la benda|🩹|plaster|bandaż|b2m_medicine.bandage
-операція (хірургічна)|surgery|en operation|l'operazione|🏥|operation|operacja|b2m_medicine.surgery
-чхати|to sneeze|at nyse|starnutire|🤧|sneeze_cold|kichać|b2m_medicine.to_sneeze
-оглядати (пацієнта)|to examine|at undersøge|visitare|🩺||badać|b2m_medicine.to_examine
-інфекція|infection|en infektion|l'infezione|🦠||infekcja|b2m_medicine.infection
-алергія|allergy|en allergi|l'allergia|🌼||alergia|b2m_medicine.allergy
-хірург|surgeon|en kirurg|il chirurgo|👨‍⚕️||chirurg|b2m_medicine.surgeon
-страждати|to suffer|at lide|soffrire|😣||cierpieć|b2m_medicine.to_suffer
-травма (ушкодження)|injury|en skade|la lesione|🤕||uraz|b2m_medicine.injury
-виснажений|exhausted|udmattet|esausto|😩||wyczerpany|b2m_medicine.exhausted
-кров'яний тиск|blood pressure|et blodtryk|la pressione sanguigna|🩸|blood_pressure|ciśnienie krwi|b2m_medicine.blood_pressure
-загоюватися (про рану)|to heal|at hele|guarire|❤️‍🩹||goić się|b2m_medicine.to_heal
-#b2m_housing|Житло й місто|🏘️|B1
-орендодавець|landlord|en udlejer|il padrone di casa|🧑‍💼||właściciel mieszkania|b2m_housing.landlord
-район (міста)|neighbourhood|et kvarter|il quartiere|🏘️||dzielnica|b2m_housing.neighbourhood
-передмістя|suburb|en forstad|il sobborgo|🏡||przedmieście|b2m_housing.suburb
-застава (за оренду)|deposit|et depositum|la caparra|💶||kaucja|b2m_housing.deposit
-затишний|cosy|hyggelig|accogliente|🛋️||przytulny|b2m_housing.cosy
-житло|accommodation|en bolig|l'alloggio|🏢||zakwaterowanie|b2m_housing.accommodation
-хмарочос|skyscraper|en skyskraber|il grattacielo|🏙️||wieżowiec|b2m_housing.skyscraper
-тротуар|pavement|et fortov|il marciapiede|🚶||chodnik|b2m_housing.pavement
-#b2m_housing~A2|Житло й місто|🏘️|A2
-орендна плата|rent|en husleje|l'affitto|🏠||czynsz|b2m_housing.rent
-переїжджати (в інше житло)|to move house|at flytte|traslocare|📦||przeprowadzać się|b2m_housing.to_move_house
-переповнений|crowded|overfyldt|affollato|👥||zatłoczony|b2m_housing.crowded
-затор|traffic jam|en trafikprop|l'ingorgo|🚗🚗||korek|b2m_housing.traffic_jam
-#b2m_relationships|Стосунки|💞|B1
-розлучення|divorce|en skilsmisse|il divorzio|💔||rozwód|b2m_relationships.divorce
-підтримувати (емоційно)|to support|at støtte|sostenere|🫂||wspierać|b2m_relationships.to_support
-ревнивий|jealous|jaloux|geloso|😤|jealous_man|zazdrosny|b2m_relationships.jealous
-вірний (партнерові)|faithful|trofast|fedele|💞||wierny|b2m_relationships.faithful
-знайомий (людина)|acquaintance|en bekendt|il conoscente|🙋||znajomy|b2m_relationships.acquaintance
-непорозуміння|misunderstanding|en misforståelse|il malinteso|🤔||nieporozumienie|b2m_relationships.misunderstanding
-взаємний|mutual|gensidig|reciproco|🔁||wzajemny|b2m_relationships.mutual
-прощати|to forgive|at tilgive|perdonare|🙏||wybaczać|b2m_relationships.to_forgive
 #b2m_idioms|Ще ідіоми й прислів'я|💬|B2
 повторення — мати навчання|practice makes perfect|øvelse gør mester|la pratica rende perfetti|🏋️||praktyka czyni mistrza|b2m_idioms.practice_makes_perfect
 не слова, а діла|actions speak louder than words|handling siger mere end ord|i fatti contano più delle parole|💪||nie słowa, lecz czyny|b2m_idioms.actions_speak_louder_than_words
@@ -2570,11 +5099,6 @@ Wi-Fi постійно зникає.|The Wi-Fi keeps cutting out.|Wi-fi'en falde
 баланс між роботою та особистим життям|work-life balance|en balance mellem arbejde og fritid|l'equilibrio tra lavoro e vita privata|⚖️||równowaga między pracą a życiem prywatnym|b2x01_labour.work_life_balance
 гнучкий графік|flexitime|flekstid|l'orario flessibile|🕘||elastyczny czas pracy|b2x01_labour.flexitime
 страйкувати|to go on strike|at gå i strejke|scioperare|🪧||strajkować|b2x01_labour.to_go_on_strike
-#b2x01_labour~B1|Ринок праці в Данії|👷|B1
-роботодавець|employer|en arbejdsgiver|il datore di lavoro|🏢||pracodawca|b2x01_labour.employer
-працівник|employee|en medarbejder|il dipendente|🧑‍💼||pracownik|b2x01_labour.employee
-працювати неповний робочий день|to work part-time|at arbejde på deltid|lavorare part-time|🕒||pracować w niepełnym wymiarze godzin|b2x01_labour.to_work_part_time
-лікарняний|sick leave|en sygemelding|il congedo per malattia|🤒||zwolnienie lekarskie|b2x01_labour.sick_leave
 #b2x01_workplace|Робоче місце й кар'єра|🧑‍💼|B2
 мінімальна зарплата|minimum wage|en mindsteløn|il salario minimo|💷||płaca minimalna|b2x01_workplace.minimum_wage
 підвищення зарплати|pay rise|en lønforhøjelse|l'aumento di stipendio|⬆️||podwyżka|b2x01_workplace.pay_rise
@@ -2608,17 +5132,6 @@ Wi-Fi постійно зникає.|The Wi-Fi keeps cutting out.|Wi-fi'en falde
 виборча кампанія|election campaign|en valgkamp|la campagna elettorale|📢||kampania wyborcza|b2x01_politics.election_campaign
 ухвалювати закон|to pass a law|at vedtage en lov|approvare una legge|✅||uchwalać ustawę|b2x01_politics.to_pass_a_law
 референдум|referendum|en folkeafstemning|il referendum|🗳️||referendum|b2x01_politics.referendum
-#b2x01_politics~B1|Політика й вибори|🗳️|B1
-парламент|parliament|et parlament|il parlamento|🏛️||parlament|b2x01_politics.parliament
-депутат парламенту|member of parliament|et folketingsmedlem|il deputato|🧑‍💼||poseł|b2x01_politics.member_of_parliament
-місцеві вибори|local elections|et kommunalvalg|le elezioni amministrative|🗳️||wybory samorządowe|b2x01_politics.local_elections
-прем'єр-міністр|prime minister|en statsminister|il primo ministro|👔||premier|b2x01_politics.prime_minister
-опозиція|opposition|en opposition|l'opposizione|🙅||opozycja|b2x01_politics.opposition
-політична партія|political party|et politisk parti|il partito politico|🎗️||partia polityczna|b2x01_politics.political_party
-мер|mayor|en borgmester|il sindaco|🎖️||burmistrz|b2x01_politics.mayor
-демократія|democracy|et demokrati|la democrazia|🗽||demokracja|b2x01_politics.democracy
-виборче право|right to vote|stemmeret|il diritto di voto|✋||prawo wyborcze|b2x01_politics.right_to_vote
-конституція|constitution|en grundlov|la costituzione|📘||konstytucja|b2x01_politics.constitution
 #b2x01_politics~C1|Політика й вибори|🗳️|C1
 законопроєкт|parliamentary bill|et lovforslag|il disegno di legge|📜||projekt ustawy|b2x01_politics.parliamentary_bill
 лівий (у політиці)|left-wing|venstreorienteret|di sinistra|⬅️||lewicowy|b2x01_politics.left_wing
@@ -2630,14 +5143,6 @@ Wi-Fi постійно зникає.|The Wi-Fi keeps cutting out.|Wi-fi'en falde
 корупція|corruption|korruption|la corruzione|💰||korupcja|b2x01_civic.corruption
 державний службовець|civil servant|en embedsmand|il funzionario pubblico|🧑‍💼||urzędnik państwowy|b2x01_civic.civil_servant
 протестувати|to protest|at protestere|protestare|📣||protestować|b2x01_civic.to_protest
-#b2x01_civic~B1|Громадянське суспільство|🤲|B1
-демонстрація (протест)|demonstration|en demonstration|la manifestazione|🪧||demonstracja|b2x01_civic.demonstration
-волонтер|volunteer|en frivillig|il volontario|🙌||wolontariusz|b2x01_civic.volunteer
-місцева громада|local community|et lokalsamfund|la comunità locale|🏘️||lokalna społeczność|b2x01_civic.local_community
-меншина|minority|et mindretal|la minoranza|🧩||mniejszość|b2x01_civic.minority
-більшість|majority|et flertal|la maggioranza|📊||większość|b2x01_civic.majority
-голосувати проти|to vote against|at stemme imod|votare contro|👎||głosować przeciw|b2x01_civic.to_vote_against
-кандидат|candidate|en kandidat|il candidato|🙋‍♂️||kandydat|b2x01_civic.candidate
 #b2x01_civic~C1|Громадянське суспільство|🤲|C1
 петиція|petition|en underskriftindsamling|la petizione|✍️||petycja|b2x01_civic.petition
 громадянський обов'язок|civic duty|en borgerpligt|il dovere civico|🫡||obowiązek obywatelski|b2x01_civic.civic_duty
@@ -2655,12 +5160,6 @@ Wi-Fi постійно зникає.|The Wi-Fi keeps cutting out.|Wi-fi'en falde
 обов'язок|obligation|en forpligtelse|l'obbligo|📌||obowiązek|b2x01_law.obligation
 подавати до суду|to sue|at sagsøge|fare causa|⚖️||pozywać|b2x01_law.to_sue
 згода (дозвіл)|consent|et samtykke|il consenso|✍️||zgoda|b2x01_law.consent
-#b2x01_law~B1|Право й права людини|⚖️|B1
-рівність|equality|lighed|l'uguaglianza|⚖️||równość|b2x01_law.equality
-дискримінація|discrimination|diskrimination|la discriminazione|🚫||dyskryminacja|b2x01_law.discrimination
-суддя|judge|en dommer|il giudice|👨‍⚖️||sędzia|b2x01_law.judge
-законний|legal|lovlig|legale|✅||legalny|b2x01_law.legal
-порушувати закон|to break the law|at bryde loven|violare la legge|🚷||łamać prawo|b2x01_law.to_break_the_law
 #b2x01_education|Система освіти|🎓|B2
 професійна освіта|vocational education|en erhvervsuddannelse|la formazione professionale|🛠️||kształcenie zawodowe|b2x01_education.vocational_education
 вища освіта|higher education|en videregående uddannelse|l'istruzione universitaria|🎓||szkolnictwo wyższe|b2x01_education.higher_education
@@ -2672,15 +5171,6 @@ Wi-Fi постійно зникає.|The Wi-Fi keeps cutting out.|Wi-fi'en falde
 магістерська робота|master's thesis|et speciale|la tesi di laurea|📘||praca magisterska|b2x01_education.master_s_thesis
 факультет|faculty|et fakultet|la facoltà|🏛️||wydział|b2x01_education.faculty
 народна вища школа|folk high school|en højskole|la scuola popolare superiore|🏡||uniwersytet ludowy|b2x01_education.folk_high_school
-#b2x01_education~B1|Система освіти|🎓|B1
-державна школа|state school|en folkeskole|la scuola pubblica|🏫||szkoła publiczna|b2x01_education.state_school
-гімназія (старша школа)|upper secondary school|et gymnasium|il liceo|🎓||liceum|b2x01_education.upper_secondary_school
-ступінь бакалавра|bachelor's degree|en bachelorgrad|la laurea triennale|📜||licencjat|b2x01_education.bachelor_s_degree
-ступінь магістра|master's degree|en kandidatgrad|la laurea magistrale|📜||tytuł magistra|b2x01_education.master_s_degree
-навчальний рік|academic year|et studieår|l'anno accademico|📅||rok akademicki|b2x01_education.academic_year
-викладач університету|lecturer|en lektor|il docente universitario|👩‍🏫||wykładowca|b2x01_education.lecturer
-усний іспит|oral exam|en mundtlig eksamen|l'esame orale|🗣️||egzamin ustny|b2x01_education.oral_exam
-освіта для дорослих|adult education|voksenuddannelse|l'educazione degli adulti|🧓||kształcenie dorosłych|b2x01_education.adult_education
 #b2x01_economy|Економіка|📈|B2
 економічне зростання|economic growth|økonomisk vækst|la crescita economica|📈||wzrost gospodarczy|b2x01_economy.economic_growth
 ринок праці|labour market|et arbejdsmarked|il mercato del lavoro|👷||rynek pracy|b2x01_economy.labour_market
@@ -2693,13 +5183,6 @@ Wi-Fi постійно зникає.|The Wi-Fi keeps cutting out.|Wi-fi'en falde
 державні витрати|public spending|offentlige udgifter|la spesa pubblica|🏛️||wydatki publiczne|b2x01_economy.public_spending
 скорочувати витрати|to cut costs|at skære ned på udgifterne|tagliare i costi|✂️||ciąć koszty|b2x01_economy.to_cut_costs
 підвищувати податки|to raise taxes|at hæve skatten|aumentare le tasse|⬆️||podnosić podatki|b2x01_economy.to_raise_taxes
-#b2x01_economy~B1|Економіка|📈|B1
-попит|demand|en efterspørgsel|la domanda|🛍️||popyt|b2x01_economy.demand
-пропозиція (на ринку)|supply|et udbud|l'offerta|📦||podaż|b2x01_economy.supply
-споживач|consumer|en forbruger|il consumatore|🛒||konsument|b2x01_economy.consumer
-зайнятість|employment|beskæftigelse|l'occupazione|👷||zatrudnienie|b2x01_economy.employment
-експорт|export|eksport|l'esportazione|🚢||eksport|b2x01_economy.export
-імпорт|import|import|l'importazione|📥||import|b2x01_economy.import
 #b2x01_business|Бізнес і підприємництво|🏢|B2
 підприємець|entrepreneur|en iværksætter|l'imprenditore|🚀||przedsiębiorca|b2x01_business.entrepreneur
 постачальник|supplier|en leverandør|il fornitore|🚚||dostawca|b2x01_business.supplier
@@ -2713,12 +5196,6 @@ Wi-Fi постійно зникає.|The Wi-Fi keeps cutting out.|Wi-fi'en falde
 фрилансер|freelancer|en freelancer|il libero professionista|💻||freelancer|b2x01_business.freelancer
 річний звіт|annual report|en årsrapport|la relazione annuale|📘||raport roczny|b2x01_business.annual_report
 головний офіс|headquarters|et hovedkontor|la sede centrale|🏙️||siedziba główna|b2x01_business.headquarters
-#b2x01_business~B1|Бізнес і підприємництво|🏢|B1
-відкрити власну справу|to start a business|at starte en virksomhed|avviare un'attività|🏁||otworzyć własną firmę|b2x01_business.to_start_a_business
-конкурент|competitor|en konkurrent|il concorrente|🥊||konkurent|b2x01_business.competitor
-бізнес-план|business plan|en forretningsplan|il piano aziendale|🗂️||biznesplan|b2x01_business.business_plan
-маркетинг|marketing|markedsføring|il marketing|📣||marketing|b2x01_business.marketing
-бухгалтер|accountant|en revisor|il commercialista|🧮||księgowy|b2x01_business.accountant
 #b2x01_collocations|Колокації з make, take, do, have|🧩|B2
 зазнавати збитків|to make a loss|at give underskud|chiudere in perdita|📉||ponosić straty|b2x01_collocations.to_make_a_loss
 мати вагоме значення|to make a difference|at gøre en forskel|fare la differenza|🌟||mieć duże znaczenie|b2x01_collocations.to_make_a_difference
@@ -2726,49 +5203,11 @@ Wi-Fi постійно зникає.|The Wi-Fi keeps cutting out.|Wi-fi'en falde
 завдавати шкоди|to do harm|at gøre skade|fare danni|⚠️||szkodzić|b2x01_collocations.to_do_harm
 мати вплив на|to have an impact on|at have indflydelse på|avere un impatto su|💥||mieć wpływ na|b2x01_collocations.to_have_an_impact_on
 мати право голосу|to have a say|at have medbestemmelse|avere voce in capitolo|🗣️||mieć prawo głosu|b2x01_collocations.to_have_a_say
-#b2x01_collocations~B1|Колокації з make, take, do, have|🧩|B1
-отримувати прибуток|to make a profit|at give overskud|realizzare un profitto|💰||osiągać zysk|b2x01_collocations.to_make_a_profit
-брати участь у|to take part in|at deltage i|partecipare a|🙋‍♀️||brać udział w|b2x01_collocations.to_take_part_in
-відбуватися|to take place|at finde sted|avere luogo|📍||odbywać się|b2x01_collocations.to_take_place
-вести бізнес|to do business|at gøre forretninger|fare affari|🤝||prowadzić interesy|b2x01_collocations.to_do_business
-робити все можливе|to do one's best|at gøre sit bedste|fare del proprio meglio|🏅||robić wszystko, co w swojej mocy|b2x01_collocations.to_do_one_s_best
-зробити комусь послугу|to do someone a favour|at gøre nogen en tjeneste|fare un favore a qualcuno|🙏||wyświadczyć komuś przysługę|b2x01_collocations.to_do_someone_a_favour
-мати щось спільне|to have something in common|at have noget til fælles|avere qualcosa in comune|🔗||mieć coś wspólnego|b2x01_collocations.to_have_something_in_common
-#b2x02_science|Наукові дослідження|🔬|B1
-експеримент|experiment|et eksperiment|l'esperimento|🧪||eksperyment|b2x02_science.experiment
-дослідник|researcher|en forsker|il ricercatore|👩‍🔬||badacz|b2x02_science.researcher
-відкриття (наукове)|discovery|en opdagelse|la scoperta|💡||odkrycie|b2x02_science.discovery
-лабораторія|laboratory|et laboratorium|il laboratorio|🥼||laboratorium|b2x02_science.laboratory
-теорія|theory|en teori|la teoria|📐||teoria|b2x02_science.theory
-висновок|conclusion|en konklusion|la conclusione|📝||wniosek|b2x02_science.conclusion
-дані|data|data|i dati|📊||dane|b2x02_science.data
-вимірювати|to measure|at måle|misurare|📏||mierzyć|b2x02_science.to_measure
-прорив (у науці)|breakthrough|et gennembrud|la svolta|🚀||przełom|b2x02_science.breakthrough
-мікроскоп|microscope|et mikroskop|il microscopio|🔬|microscope|mikroskop|b2x02_science.microscope
-телескоп|telescope|et teleskop|il telescopio|🔭||teleskop|b2x02_science.telescope
-#b2x02_science~A2|Наукові дослідження|🔬|A2
-винахід|invention|en opfindelse|l'invenzione|⚙️||wynalazek|b2x02_science.invention
-винаходити|to invent|at opfinde|inventare|🛠️||wynaleźć|b2x02_science.to_invent
-відкривати (науково)|to discover|at opdage|scoprire|🔭||odkrywać|b2x02_science.to_discover
-науковий|scientific|videnskabelig|scientifico|🔬||naukowy|b2x02_science.scientific
 #b2x02_tech|Цифрові технології|💻|B2
 інновація|innovation|en innovation|l'innovazione|💡||innowacja|b2x02_tech.innovation
 база даних|database|en database|il database|🗄️||baza danych|b2x02_tech.database
 помилка (у програмі)|bug|en programfejl|il bug|🐞||błąd|b2x02_tech.bug
 автоматизувати|to automate|at automatisere|automatizzare|🏭||automatyzować|b2x02_tech.to_automate
-#b2x02_tech~A2|Цифрові технології|💻|A2
-робот|robot|en robot|il robot|🤖||robot|b2x02_tech.robot
-користувач|user|en bruger|l'utente|👤||użytkownik|b2x02_tech.user
-цифровий|digital|digital|digitale|💾||cyfrowy|b2x02_tech.digital
-відеодзвінок|video call|et videoopkald|la videochiamata|📹||rozmowa wideo|b2x02_tech.video_call
-#b2x02_tech~B1|Цифрові технології|💻|B1
-дрон|drone|en drone|il drone|🛸||dron|b2x02_tech.drone
-комп'ютерний вірус|computer virus|en computervirus|il virus informatico|🦠||wirus komputerowy|b2x02_tech.computer_virus
-встановлювати (програму)|to install|at installere|installare|💿||instalować|b2x02_tech.to_install
-перезавантажувати|to restart|at genstarte|riavviare|🔄||restartować|b2x02_tech.to_restart
-налаштування|settings|indstillinger|le impostazioni|⚙️||ustawienia|b2x02_tech.settings
-сенсорний екран|touchscreen|en touchskærm|il touchscreen|👆||ekran dotykowy|b2x02_tech.touchscreen
-винахідник|inventor|en opfinder|l'inventore|🧑‍🔧||wynalazca|b2x02_tech.inventor
 #b2x02_health|Здоров'я і медицина|🩺|B2
 імунна система|immune system|et immunforsvar|il sistema immunitario|🛡️||układ odpornościowy|b2x02_health.immune_system
 запалення|inflammation|en betændelse|l'infiammazione|🔥||stan zapalny|b2x02_health.inflammation
@@ -2779,31 +5218,12 @@ Wi-Fi постійно зникає.|The Wi-Fi keeps cutting out.|Wi-fi'en falde
 діагностувати|to diagnose|at diagnosticere|diagnosticare|🩺||diagnozować|b2x02_health.to_diagnose
 призначати (ліки)|to prescribe|at ordinere|prescrivere|📝||przepisywać|b2x02_health.to_prescribe
 вагітність|pregnancy|en graviditet|la gravidanza|🤰||ciąża|b2x02_health.pregnancy
-#b2x02_fitness|Фітнес і спосіб життя|🏋️|B1
-бути у гарній формі|to be in good shape|at være i god form|essere in forma|💪||być w dobrej formie|b2x02_fitness.to_be_in_good_shape
-розминка|warm-up|en opvarmning|il riscaldamento|🤸||rozgrzewka|b2x02_fitness.warm_up
-розтягувати м'язи|to stretch|at strække ud|allungare i muscoli|🧘|stretch_,_to|rozciągać mięśnie|b2x02_fitness.to_stretch
-м'яз|muscle|en muskel|il muscolo|💪||mięsień|b2x02_fitness.muscle
-сідати на дієту|to go on a diet|at gå på kur|mettersi a dieta|🥗||przejść na dietę|b2x02_fitness.to_go_on_a_diet
-набирати вагу|to put on weight|at tage på|ingrassare|🍰||przybierać na wadze|b2x02_fitness.to_put_on_weight
-поживна речовина|nutrient|et næringsstof|la sostanza nutritiva|🥦||składnik odżywczy|b2x02_fitness.nutrient
-бігати підтюпцем|to jog|at jogge|fare jogging|🏃|jog_,_to|biegać truchtem|b2x02_fitness.to_jog
-піднімати штангу|to lift weights|at løfte vægte|sollevare pesi|🏋️||podnosić ciężary|b2x02_fitness.to_lift_weights
 #b2x02_psych|Психологія та емоції|🧠|B2
 самооцінка|self-esteem|et selvværd|l'autostima|🪞||samoocena|b2x02_psych.self_esteem
 терапія|therapy|en terapi|la terapia|🛋️||terapia|b2x02_psych.therapy
 справлятися (з труднощами)|to cope with|at håndtere|gestire|🧗||radzić sobie z|b2x02_psych.to_cope_with
 сприйняття|perception|en opfattelse|la percezione|👁️||postrzeganie|b2x02_psych.perception
 фобія|phobia|en fobi|la fobia|🕷️||fobia|b2x02_psych.phobia
-#b2x02_psych~B1|Психологія та емоції|🧠|B1
-стресовий|stressful|stressende|stressante|😫||stresujący|b2x02_psych.stressful
-депресія|depression|en depression|la depressione|🌧️||depresja|b2x02_psych.depression
-мотивація|motivation|en motivation|la motivazione|🔥||motywacja|b2x02_psych.motivation
-долати|to overcome|at overvinde|superare|🏔️||pokonywać|b2x02_psych.to_overcome
-розчарування (досада)|frustration|en frustration|la frustrazione|😤||frustracja|b2x02_psych.frustration
-емоційний|emotional|emotionel|emotivo|🥹||emocjonalny|b2x02_psych.emotional
-зберігати спокій|to keep calm|at bevare roen|mantenere la calma|🧘||zachować spokój|b2x02_psych.to_keep_calm
-панікувати|to panic|at gå i panik|andare nel panico|😱||panikować|b2x02_psych.to_panic
 #b2x02_arts|Мистецтво й культура|🎨|B2
 скульптор|sculptor|en billedhugger|lo scultore|🔨||rzeźbiarz|b2x02_arts.sculptor
 полотно (картина)|canvas|et lærred|la tela|🖼️||płótno|b2x02_arts.canvas
@@ -2811,20 +5231,6 @@ Wi-Fi постійно зникає.|The Wi-Fi keeps cutting out.|Wi-fi'en falde
 прем'єра|premiere|en premiere|la prima|🎟️||premiera|b2x02_arts.premiere
 репетиція|rehearsal|en prøve|la prova|🎬||próba|b2x02_arts.rehearsal
 виставляти (твори)|to exhibit|at udstille|esporre|🖼️||wystawiać|b2x02_arts.to_exhibit
-#b2x02_arts~A2|Мистецтво й культура|🎨|A2
-художник|painter|en maler|il pittore|👨‍🎨||malarz|b2x02_arts.painter
-портрет|portrait|et portræt|il ritratto|🖼️||portret|b2x02_arts.portrait
-пейзаж|landscape|et landskab|il paesaggio|🏞️||pejzaż|b2x02_arts.landscape
-галерея|gallery|et galleri|la galleria|🖼️||galeria|b2x02_arts.gallery
-композитор|composer|en komponist|il compositore|🎹||kompozytor|b2x02_arts.composer
-#b2x02_arts~B1|Мистецтво й культура|🎨|B1
-скульптура|sculpture|en skulptur|la scultura|🗿||rzeźba|b2x02_arts.sculpture
-твір мистецтва|work of art|et kunstværk|l'opera d'arte|🎨||dzieło sztuki|b2x02_arts.work_of_art
-оркестр|orchestra|et orkester|l'orchestra|🎻||orkiestra|b2x02_arts.orchestra
-оплески|applause|et bifald|l'applauso|👏||oklaski|b2x02_arts.applause
-критик|critic|en anmelder|il critico|🧐||krytyk|b2x02_arts.critic
-поет|poet|en digter|il poeta|✒️||poeta|b2x02_arts.poet
-вірш|poem|et digt|la poesia|📜||wiersz|b2x02_arts.poem
 #b2x02_media|Розваги та медіа|🎬|B2
 блокбастер|blockbuster|en kassesucces|il blockbuster|🍿||hit kinowy|b2x02_media.blockbuster
 сиквел|sequel|en efterfølger|il sequel|🎞️||kontynuacja|b2x02_media.sequel
@@ -2832,34 +5238,6 @@ Wi-Fi постійно зникає.|The Wi-Fi keeps cutting out.|Wi-fi'en falde
 рейтинги (переглядів)|ratings|seertal|gli ascolti|📈||oglądalność|b2x02_media.ratings
 жанр|genre|en genre|il genere|📚||gatunek|b2x02_media.genre
 сюжетний поворот|plot twist|en uventet drejning|il colpo di scena|🌀||zwrot akcji|b2x02_media.plot_twist
-#b2x02_media~B1|Розваги та медіа|🎬|B1
-субтитри|subtitles|undertekster|i sottotitoli|💬||napisy|b2x02_media.subtitles
-трейлер|trailer|en trailer|il trailer|🎥||zwiastun|b2x02_media.trailer
-стримінговий сервіс|streaming service|en streamingtjeneste|il servizio di streaming|📺||serwis streamingowy|b2x02_media.streaming_service
-знаменитість|celebrity|en kendis|la celebrità|🌟||celebryta|b2x02_media.celebrity
-спецефекти|special effects|specialeffekter|gli effetti speciali|✨||efekty specjalne|b2x02_media.special_effects
-глядач|viewer|en seer|lo spettatore|👀||widz|b2x02_media.viewer
-ток-шоу|talk show|et talkshow|il talk show|🎙️||talk-show|b2x02_media.talk_show
-бути розпроданим|to be sold out|at være udsolgt|essere esaurito|🎫||być wyprzedanym|b2x02_media.to_be_sold_out
-захопливий|entertaining|underholdende|divertente|😄||zajmujący|b2x02_media.entertaining
-#b2x02_travel|Подорожі|🧳|B1
-напрямок (туристичний)|destination|et rejsemål|la destinazione|📍||kierunek|b2x02_travel.destination
-затримка рейсу|flight delay|en flyforsinkelse|il ritardo del volo|⏳||opóźnienie lotu|b2x02_travel.flight_delay
-прикордонний контроль|border control|en grænsekontrol|il controllo di frontiera|🛂||kontrola graniczna|b2x02_travel.border_control
-віза|visa|et visum|il visto|📑||wiza|b2x02_travel.visa
-видача багажу|baggage reclaim|et bagagebånd|il ritiro bagagli|🧳||odbiór bagażu|b2x02_travel.baggage_reclaim
-туристична пам'ятка|tourist attraction|en turistattraktion|l'attrazione turistica|🗽||atrakcja turystyczna|b2x02_travel.tourist_attraction
-обмінний пункт|bureau de change|et vekselkontor|l'ufficio di cambio|💱||kantor|b2x02_travel.bureau_de_change
-високий сезон|high season|en højsæson|l'alta stagione|☀️||wysoki sezon|b2x02_travel.high_season
-подорожувати з рюкзаком|to go backpacking|at tage på rygsækrejse|viaggiare zaino in spalla|🎒||podróżować z plecakiem|b2x02_travel.to_go_backpacking
-#b2x02_travel~A2|Подорожі|🧳|A2
-робити пересадку|to change planes|at skifte fly|cambiare aereo|🔁||przesiadać się|b2x02_travel.to_change_planes
-реєстрація (на рейс)|check-in|en indtjekning|il check-in|🛄||odprawa|b2x02_travel.check_in
-посадковий талон|boarding pass|et boardingkort|la carta d'imbarco|🎫||karta pokładowa|b2x02_travel.boarding_pass
-турист|tourist|en turist|il turista|📸||turysta|b2x02_travel.tourist
-екскурсовод|tour guide|en guide|la guida turistica|🚩||przewodnik|b2x02_travel.tour_guide
-сувенір|souvenir|en souvenir|il souvenir|🎁||pamiątka|b2x02_travel.souvenir
-туристична агенція|travel agency|et rejsebureau|l'agenzia di viaggi|🏢||biuro podróży|b2x02_travel.travel_agency
 #b2x02_global|Глобалізація та міграція|🌍|B2
 глобалізація|globalisation|en globalisering|la globalizzazione|🌐||globalizacja|b2x02_global.globalisation
 мультикультурний|multicultural|multikulturel|multiculturale|🌈||wielokulturowy|b2x02_global.multicultural
@@ -2872,22 +5250,6 @@ Wi-Fi постійно зникає.|The Wi-Fi keeps cutting out.|Wi-fi'en falde
 шахрайство|fraud|et bedrageri|la frode|🎭||oszustwo|b2x02_crime.fraud
 викрадати (людину)|to kidnap|at kidnappe|rapire|🚐||porywać|b2x02_crime.to_kidnap
 відбитки пальців|fingerprints|fingeraftryk|le impronte digitali|🖐️||odciski palców|b2x02_crime.fingerprints
-#b2x02_crime~A2|Злочинність і безпека|🚨|A2
-злодій|thief|en tyv|il ladro|🦹||złodziej|b2x02_crime.thief
-детектив|detective|en detektiv|l'investigatore|🕵️||detektyw|b2x02_crime.detective
-в'язниця|prison|et fængsel|la prigione|⛓️||więzienie|b2x02_crime.prison
-грабувати|to rob|at røve|rapinare|🏦||rabować|b2x02_crime.to_rob
-вбивство|murder|et mord|l'omicidio|🔪||morderstwo|b2x02_crime.murder
-#b2x02_crime~B1|Злочинність і безпека|🚨|B1
-свідок|witness|et vidne|il testimone|👁️||świadek|b2x02_crime.witness
-підозрюваний|suspect|en mistænkt|il sospettato|🕵️||podejrzany|b2x02_crime.suspect
-жертва (злочину)|victim|et offer|la vittima|🩹||ofiara|b2x02_crime.victim
-заарештовувати|to arrest|at anholde|arrestare|🚓|arrest_,_to|aresztować|b2x02_crime.to_arrest
-розслідувати|to investigate|at efterforske|indagare|🔎||prowadzić śledztwo|b2x02_crime.to_investigate
-камера спостереження|CCTV camera|et overvågningskamera|la telecamera di sorveglianza|📹||kamera monitoringu|b2x02_crime.cctv_camera
-сигналізація (від злодіїв)|burglar alarm|en tyverialarm|l'antifurto|🚨||alarm antywłamaniowy|b2x02_crime.burglar_alarm
-заявляти в поліцію|to report to the police|at anmelde til politiet|denunciare alla polizia|📞||zgłosić na policję|b2x02_crime.to_report_to_the_police
-штраф|fine|en bøde|la multa|🧾||mandat|b2x02_crime.fine
 #b2x02_idioms|Ідіоми та сталі вирази|💬|B2
 нездужати|to be under the weather|at være sløj|sentirsi poco bene|🤒||niedomagać|b2x02_idioms.to_be_under_the_weather
 раз у житті|once in a lifetime|én gang i livet|una volta nella vita|🌠||raz w życiu|b2x02_idioms.once_in_a_lifetime
@@ -2915,12 +5277,6 @@ Wi-Fi постійно зникає.|The Wi-Fi keeps cutting out.|Wi-fi'en falde
 виступати проти|to object|at protestere|opporsi|✋||sprzeciwiać się|b2x02_argue.to_object
 узагальнювати|to generalise|at generalisere|generalizzare|🌐||uogólniać|b2x02_argue.to_generalise
 відкидати (ідею)|to dismiss|at afvise|respingere|🚫||odrzucać|b2x02_argue.to_dismiss
-#b2x02_argue~B1|Дієслова для аргументації|🗣️|B1
-припускати|to assume|at antage|supporre|🤔||zakładać|b2x02_argue.to_assume
-заперечувати (факт)|to deny|at benægte|negare|🙅||zaprzeczać|b2x02_argue.to_deny
-сумніватися|to doubt|at tvivle|dubitare|❓||wątpić|b2x02_argue.to_doubt
-робити висновок|to conclude|at konkludere|concludere|🧾||wyciągać wnioski|b2x02_argue.to_conclude
-оцінювати (приблизно)|to estimate|at anslå|stimare|📊||szacować|b2x02_argue.to_estimate
 #b2x03_media|Медіа й реклама|📺|B2
 цільова аудиторія|target audience|en målgruppe|il pubblico di riferimento|🎯||grupa docelowa|b2x03_media.target_audience
 білборд|billboard|en reklametavle|il cartellone pubblicitario|🪧||billboard|b2x03_media.billboard
@@ -2933,12 +5289,6 @@ Wi-Fi постійно зникає.|The Wi-Fi keeps cutting out.|Wi-fi'en falde
 рекламна кампанія|advertising campaign|en reklamekampagne|la campagna pubblicitaria|📣||kampania reklamowa|b2x03_media.advertising_campaign
 рекламна пауза|commercial break|en reklamepause|la pausa pubblicitaria|⏸️||przerwa reklamowa|b2x03_media.commercial_break
 стати вірусним|to go viral|at gå viralt|diventare virale|🚀||stać się viralem|b2x03_media.to_go_viral
-#b2x03_media~B1|Медіа й реклама|📺|B1
-рекламний ролик|commercial|en reklamefilm|lo spot pubblicitario|📺||spot reklamowy|b2x03_media.commercial
-рекламне гасло|slogan|et slogan|lo slogan|🗯️||hasło reklamowe|b2x03_media.slogan
-інфлюенсер|influencer|en influencer|l'influencer|🤳||influencer|b2x03_media.influencer
-логотип|logo|et logo|il logo|🔰||logo|b2x03_media.logo
-перша шпальта|front page|en forside|la prima pagina|📄||pierwsza strona|b2x03_media.front_page
 #b2x03_money|Споживання й гроші|💳|B2
 суспільство споживання|consumer society|et forbrugssamfund|la società dei consumi|🛍️||społeczeństwo konsumpcyjne|b2x03_money.consumer_society
 імпульсивні покупки|impulse buying|impulskøb|gli acquisti d'impulso|🛒||zakupy impulsywne|b2x03_money.impulse_buying
@@ -2967,12 +5317,6 @@ Wi-Fi постійно зникає.|The Wi-Fi keeps cutting out.|Wi-fi'en falde
 вітрова електростанція|wind farm|en vindmøllepark|il parco eolico|🌬️||farma wiatrowa|b2x03_energy.wind_farm
 енергетична етикетка|energy label|et energimærke|l'etichetta energetica|🏷️||świadectwo energetyczne|b2x03_energy.energy_label
 кліматична ціль|climate target|et klimamål|l'obiettivo climatico|🎯||cel klimatyczny|b2x03_energy.climate_target
-#b2x03_energy~B1|Енергія і сталий розвиток|🔋|B1
-відключення світла|power cut|en strømafbrydelse|l'interruzione di corrente|🕯️||przerwa w dostawie prądu|b2x03_energy.power_cut
-атомна енергетика|nuclear power|atomkraft|l'energia nucleare|⚛️||energetyka jądrowa|b2x03_energy.nuclear_power
-зарядна станція|charging station|en ladestander|la colonnina di ricarica|🔌||stacja ładowania|b2x03_energy.charging_station
-сонячна енергія|solar energy|solenergi|l'energia solare|☀️||energia słoneczna|b2x03_energy.solar_energy
-пальне|fuel|et brændstof|il carburante|⛽||paliwo|b2x03_energy.fuel
 #b2x03_energy~C1|Енергія і сталий розвиток|🔋|C1
 утеплювати (будинок)|to insulate|at isolere|isolare|🧱||ocieplać|b2x03_energy.to_insulate
 теплоізоляція|insulation|en isolering|l'isolamento termico|🏠||izolacja termiczna|b2x03_energy.insulation
@@ -2990,13 +5334,6 @@ Wi-Fi постійно зникає.|The Wi-Fi keeps cutting out.|Wi-fi'en falde
 ремонт (реконструкція)|renovation|en renovering|la ristrutturazione|🛠️||remont|b2x03_urban.renovation
 ріелтор|estate agent|en ejendomsmægler|l'agente immobiliare|🔑||agent nieruchomości|b2x03_urban.estate_agent
 людина, яка щодня їздить на роботу|commuter|en pendler|il pendolare|🚆||osoba dojeżdżająca do pracy|b2x03_urban.commuter
-#b2x03_urban~B1|Містобудування й житло|🏙️|B1
-пішохідна вулиця|pedestrian street|en gågade|la via pedonale|🚶||deptak|b2x03_urban.pedestrian_street
-велодоріжка|cycle lane|en cykelsti|la pista ciclabile|🚲||ścieżka rowerowa|b2x03_urban.cycle_lane
-окремий будинок|detached house|et parcelhus|la casa indipendente|🏡||dom jednorodzinny|b2x03_urban.detached_house
-безпритульний|homeless|hjemløs|senzatetto|🛏️||bezdomny|b2x03_urban.homeless
-зелена зона|green space|et grønt område|l'area verde|🌳||teren zielony|b2x03_urban.green_space
-підвищення орендної плати|rent increase|en huslejestigning|l'aumento dell'affitto|📈||podwyżka czynszu|b2x03_urban.rent_increase
 #b2x03_social|Стосунки й соціальне життя|🤝|B2
 посваритися|to fall out|at blive uvenner|litigare|😤||pokłócić się|b2x03_social.to_fall_out
 помиритися|to make up|at slutte fred|fare pace|🕊️||pogodzić się|b2x03_social.to_make_up
@@ -3010,12 +5347,6 @@ Wi-Fi постійно зникає.|The Wi-Fi keeps cutting out.|Wi-fi'en falde
 екстраверт|extrovert|en ekstrovert|l'estroverso|🎉||ekstrawertyk|b2x03_social.extrovert
 світська бесіда|small talk|småsnak|le chiacchiere|💬||rozmowa o niczym|b2x03_social.small_talk
 бути закоханим (у когось)|to have a crush on|at være lun på|avere una cotta per|😍||podkochiwać się|b2x03_social.to_have_a_crush_on
-#b2x03_social~B1|Стосунки й соціальне життя|🤝|B1
-розійтися (про пару)|to split up|at gå fra hinanden|lasciarsi|💔||rozstać się|b2x03_social.to_split_up
-вірний|loyal|loyal|leale|🐕||wierny|b2x03_social.loyal
-який підтримує|supportive|støttende|solidale|🤗||wspierający|b2x03_social.supportive
-тусуватися (проводити час разом)|to hang out|at hænge ud|passare il tempo insieme|🛹||spędzać czas|b2x03_social.to_hang_out
-заручитися|to get engaged|at blive forlovet|fidanzarsi|💍||zaręczyć się|b2x03_social.to_get_engaged
 #b2x03_meetings|Робоча комунікація й наради|🗂️|B2
 відкладати (на пізніше)|to postpone|at udskyde|rimandare|⏳||przekładać|b2x03_meetings.to_postpone
 переносити (зустріч)|to reschedule|at flytte|spostare|📅||przenosić|b2x03_meetings.to_reschedule
@@ -3027,12 +5358,6 @@ Wi-Fi постійно зникає.|The Wi-Fi keeps cutting out.|Wi-fi'en falde
 пункт порядку денного|agenda item|et dagsordenspunkt|il punto all'ordine del giorno|📋||punkt porządku obrad|b2x03_meetings.agenda_item
 завершувати (нараду)|to wrap up|at runde af|concludere|🎁||kończyć|b2x03_meetings.to_wrap_up
 проводити мозковий штурм|to brainstorm|at brainstorme|fare un brainstorming|🧠||robić burzę mózgów|b2x03_meetings.to_brainstorm
-#b2x03_meetings~B1|Робоча комунікація й наради|🗂️|B1
-давати зворотний зв'язок|to give feedback|at give feedback|dare un feedback|💬||przekazywać informację zwrotną|b2x03_meetings.to_give_feedback
-пропозиція (план)|proposal|et forslag|la proposta|📑||propozycja|b2x03_meetings.proposal
-переговори|negotiation|en forhandling|la trattativa|🤝||negocjacje|b2x03_meetings.negotiation
-перебивати|to interrupt|at afbryde|interrompere|✋||przerywać|b2x03_meetings.to_interrupt
-підсумовувати|to summarise|at opsummere|riassumere|🧾||podsumowywać|b2x03_meetings.to_summarise
 #b2x03_meetings~C1|Робоча комунікація й наради|🗂️|C1
 вести протокол|to take minutes|at tage referat|redigere il verbale|📝||pisać protokół|b2x03_meetings.to_take_minutes
 головувати (на нараді)|to chair|at lede|presiedere|🪑||przewodniczyć|b2x03_meetings.to_chair
@@ -3087,18 +5412,6 @@ Wi-Fi постійно зникає.|The Wi-Fi keeps cutting out.|Wi-fi'en falde
 понад усе|above all|frem for alt|soprattutto|🥇||przede wszystkim|b2x03_linking.above_all
 щоправда|admittedly|ganske vist|è vero che|🙋||co prawda|b2x03_linking.admittedly
 незалежно від|regardless of|uanset|indipendentemente da|🤷||niezależnie od|b2x03_linking.regardless_of
-#b2x03_linking~B1|Зв'язки для есе|🔗|B1
-більше того|furthermore|endvidere|per di più|➕||ponadto|b2x03_linking.furthermore
-попри те що|even though|selvom|anche se|🌧️||mimo że|b2x03_linking.even_though
-попри|in spite of|til trods for|malgrado|🛡️||mimo|b2x03_linking.in_spite_of
-як наслідок|as a result|som følge heraf|di conseguenza|📊||w rezultacie|b2x03_linking.as_a_result
-наприклад|for instance|for eksempel|ad esempio|👉||na przykład|b2x03_linking.for_instance
-таким чином|thus|således|pertanto|➡️||tym samym|b2x03_linking.thus
-якщо тільки (за умови)|as long as|så længe|purché|⏳||o ile|b2x03_linking.as_long_as
-інакше|otherwise|ellers|altrimenti|🔀||inaczej|b2x03_linking.otherwise
-так само|similarly|på samme måde|allo stesso modo|🟰||podobnie|b2x03_linking.similarly
-через (з причини)|due to|på grund af|a causa di|🧲||z powodu|b2x03_linking.due_to
-окрім|apart from|bortset fra|a parte|🧩||oprócz|b2x03_linking.apart_from
 #b2x03_idioms|Ідіоми|💬|B2
 бути на одній хвилі|to be on the same page|at være på samme bølgelængde|essere sulla stessa lunghezza d'onda|📻||nadawać na tych samych falach|b2x03_idioms.to_be_on_the_same_page
 на сьогодні досить|to call it a day|at holde fyraften|chiudere per oggi|🌇||na dziś wystarczy|b2x03_idioms.to_call_it_a_day
@@ -3137,12 +5450,6 @@ Wi-Fi постійно зникає.|The Wi-Fi keeps cutting out.|Wi-fi'en falde
 законодавчий|legislative|lovgivende|legislativo|🏛️|Houses_of_Parliament|ustawodawczy|c1_politics.legislative
 ухвалювати (закон)|to pass|at vedtage|approvare|👍📜|vote_,_to|uchwalać|c1_politics.to_pass
 порушувати (закон)|to violate|at overtræde|violare|🚫📜||naruszać|c1_politics.to_violate
-#c1_argument|Мислення й аргументація|🧠|B1
-спірний|controversial|kontroversiel|controverso|🔥||kontrowersyjny|c1_argument.controversial
-неминучий|inevitable|uundgåelig|inevitabile|⏳||nieunikniony|c1_argument.inevitable
-визнавати (помилку)|to acknowledge|at erkende|riconoscere|🙋✅||przyznawać się|c1_argument.to_acknowledge
-отже|consequently|følgelig|di conseguenza|➡️||w konsekwencji|c1_argument.consequently
-проте|nevertheless|ikke desto mindre|tuttavia|🔄||mimo to|c1_argument.nevertheless
 #c1_business|Бізнес і переговори|💼|B2
 поступка|concession|en indrømmelse|la concessione|🤝||ustępstwo|c1_business.concession
 злиття (компаній)|merger|en fusion|la fusione|🔗|shake_hands_,_to|fuzja|c1_business.merger
@@ -3256,11 +5563,6 @@ Wi-Fi постійно зникає.|The Wi-Fi keeps cutting out.|Wi-fi'en falde
 кореляція|correlation|en korrelation|la correlazione|📈||korelacja|c1x01_academic.correlation
 причинно-наслідковий зв'язок|causality|en kausalitet|la causalità|🔗||związek przyczynowo-skutkowy|c1x01_academic.causality
 детальніше пояснювати|to elaborate|at uddybe|approfondire|🗣️||rozwinąć myśl|c1x01_academic.to_elaborate
-#c1x01_academic~B1|Академічне письмо|📝|B1
-твердження|claim|en påstand|l'affermazione|💬||twierdzenie|c1x01_academic.claim
-анкета|questionnaire|et spørgeskema|il questionario|📋||ankieta|c1x01_academic.questionnaire
-окреслювати|to outline|at skitsere|delineare|✏️||nakreślić|c1x01_academic.to_outline
-на завершення|in conclusion|afslutningsvis|in conclusione|🔚||podsumowując|c1x01_academic.in_conclusion
 #c1x01_academic~B2|Академічне письмо|📝|B2
 виноска|footnote|en fodnote|la nota a piè di pagina|📄||przypis|c1x01_academic.footnote
 бібліографія|bibliography|en litteraturliste|la bibliografia|📚||bibliografia|c1x01_academic.bibliography
@@ -3897,11 +6199,6 @@ Wi-Fi постійно зникає.|The Wi-Fi keeps cutting out.|Wi-fi'en falde
 формулювати|to formulate|at formulere|formulare|✍️||formułować|c2x01_linguistics.to_formulate
 монолог|monologue|en monolog|il monologo|🎙️||monolog|c2x01_linguistics.monologue
 риторичне питання|rhetorical question|et retorisk spørgsmål|la domanda retorica|❔||pytanie retoryczne|c2x01_linguistics.rhetorical_question
-#c2x01_linguistics~B1|Лінгвістика й комунікація|🗣️|B1
-антонім|antonym|et antonym|l'antonimo|🔀||antonim|c2x01_linguistics.antonym
-двомовний|bilingual|tosproget|bilingue|🌐||dwujęzyczny|c2x01_linguistics.bilingual
-ідіома|idiom|et idiom|l'espressione idiomatica|💬||idiom|c2x01_linguistics.idiom
-мова жестів|sign language|et tegnsprog|la lingua dei segni|🤟||język migowy|c2x01_linguistics.sign_language
 #c2x01_linguistics~B2|Лінгвістика й комунікація|🗣️|B2
 діалект|dialect|en dialekt|il dialetto|🗺️||dialekt|c2x01_linguistics.dialect
 синонім|synonym|et synonym|il sinonimo|🟰||synonim|c2x01_linguistics.synonym
@@ -4111,12 +6408,6 @@ Wi-Fi постійно зникає.|The Wi-Fi keeps cutting out.|Wi-fi'en falde
 хочу висловити вдячність|I would like to express my gratitude|jeg vil gerne udtrykke min taknemmelighed|desidero esprimere la mia gratitudine|💐||chciałbym wyrazić wdzięczność|c2x02_formal.i_would_like_to_express_my_gratitude
 мені дуже приємно|it gives me great pleasure|det er mig en stor glæde|è per me un grande piacere|😊||mam wielką przyjemność|c2x02_formal.it_gives_me_great_pleasure
 з нагоди|on the occasion of|i anledning af|in occasione di|🎊||z okazji|c2x02_formal.on_the_occasion_of
-#c2x02_formal~B1|Звороти для листів і промов|✉️|B1
-У додатку надсилаю|Please find attached|Vedhæftet finder du|Trova in allegato|📎||W załączeniu przesyłam|c2x02_formal.please_find_attached
-Чекаю на вашу відповідь|I look forward to hearing from you|Jeg ser frem til at høre fra dig|Resto in attesa di un Suo riscontro|📬||Czekam na Państwa odpowiedź|c2x02_formal.i_look_forward_to_hearing_from_you
-дякую за увагу|thank you for your attention|tak for opmærksomheden|grazie per l'attenzione|🙏||dziękuję za uwagę|c2x02_formal.thank_you_for_your_attention
-дозвольте представити|allow me to introduce|tillad mig at præsentere|mi permetta di presentare|🤝||pozwólcie, że przedstawię|c2x02_formal.allow_me_to_introduce
-прийміть мої вибачення|please accept my apologies|modtag venligst min undskyldning|La prego di accettare le mie scuse|🙇||proszę przyjąć moje przeprosiny|c2x02_formal.please_accept_my_apologies
 #c2x02_formal~C1|Звороти для листів і промов|✉️|C1
 за першої нагоди|at your earliest convenience|hurtigst muligt|al più presto|⏰||przy pierwszej okazji|c2x02_formal.at_your_earliest_convenience
 шановні гості|distinguished guests|ærede gæster|illustri ospiti|🎩||szanowni goście|c2x02_formal.distinguished_guests
@@ -4450,236 +6741,6 @@ Wi-Fi постійно зникає.|The Wi-Fi keeps cutting out.|Wi-fi'en falde
 у повному розумінні слова|par excellence|par excellence|per eccellenza|🏅|||c2x08_formal.par_excellence
 завдяки (наполегливим зусиллям)|by dint of|i kraft af|a forza di|💪|||c2x08_formal.by_dint_of
 на вимогу (з волі когось)|at the behest of|på foranledning af|per volere di|👉|||c2x08_formal.at_the_behest_of
-#mix_A2_1|Різні слова 1|🧩|A2
-палець|finger|en finger|il dito|☝️|finger|palec|a1m_body.finger
-я хочу пити|I'm thirsty|jeg er tørstig|ho sete|💧😮‍💨|thirsty|chce mi się pić|a1m_phrases.i_m_thirsty
-ось, тримай|here you are|værsgo|ecco a te|🤲||proszę bardzo|a1m_phrases.here_you_are
-ніхто|nobody|ingen|nessuno|🚫👤||nikt|a1x01_questions.nobody
-представлятися|to introduce oneself|at præsentere sig|presentarsi|🙋||przedstawiać się|a1x02_meet.to_introduce_oneself
-тиснути руку|to shake hands|at give hånd|stringere la mano|🤝|shake_hands_,_to|podawać rękę|a1x02_meet.to_shake_hands
-Викличте швидку!|Call an ambulance!|Ring efter en ambulance!|Chiamate un'ambulanza!|🚑||Wezwijcie karetkę!|a1x02_help.call_an_ambulance
-мільйон|million|en million|il milione|💰||milion|a1x02_prices.million
-півціни|half price|halv pris|metà prezzo|✂️||pół ceny|a1x02_prices.half_price
-півкілограма|half a kilo|et halvt kilo|mezzo chilo|⚖️||pół kilo|a1x02_prices.half_a_kilo
-#mix_A2_2|Різні слова 2|🧩|A2
-близнюки|twins|tvillinger|i gemelli|👯||bliźnięta|a1x02_family.twins
-єдина дитина|only child|et enebarn|il figlio unico|🧒||jedynak|a1x02_family.only_child
-родичі|relatives|slægtninge|i parenti|👪||krewni|a1x02_family.relatives
-розчісувати волосся|to comb one's hair|at rede sit hår|pettinarsi|🪮||czesać włosy|a1x02_routine.to_comb_one_s_hair
-відпочивати|to relax|at slappe af|rilassarsi|🛋️|relax_,_to|odpoczywać|a1x02_routine.to_relax
-вигулювати собаку|to walk the dog|at gå tur med hunden|portare a spasso il cane|🐕||wyprowadzać psa|a1x02_routine.to_walk_the_dog
-низький|low|lav|basso|🔻||niski|a1x02_opposites.low
-м'який|soft|blød|morbido|🧸|soft|miękki|a1x02_opposites.soft
-широкий|wide|bred|largo|↔️||szeroki|a1x02_opposites.wide
-мокрий|wet|våd|bagnato|💦|wet|mokry|a2_weather.wet
-#mix_A2_3|Різні слова 3|🧩|A2
-температура|temperature|en temperatur|la temperatura|🌡️|thermometer|temperatura|a2_weather.temperature
-прогноз погоди|weather forecast|en vejrudsigt|le previsioni del tempo|📺🌦️||prognoza pogody|a2_weather.weather_forecast
-гаманець|wallet|en pung|il portafoglio|👛|wallet|portfel|a2_shopping.wallet
-чек (з магазину)|receipt|en kvittering|lo scontrino|🧾||paragon|a2_shopping.receipt
-знижка|discount|en rabat|lo sconto|🔖||zniżka|a2_shopping.discount
-валіза|suitcase|en kuffert|la valigia|🧳|suitcase_1|walizka|a2_travel.suitcase
-бронювати|to book|at bestille|prenotare|📅||rezerwować|a2_travel.to_book
-їздити на велосипеді|to cycle|at cykle|andare in bicicletta|🚴|cycle_,_to|jeździć na rowerze|a2m_hobbies.to_cycle
-рюкзак|backpack|en rygsæk|lo zaino|🎒|school_bag|plecak|a2m_school.backpack
-учень|pupil|en elev|l'alunno|🧑‍🎓||uczeń|a2m_school.pupil
-#mix_A2_4|Різні слова 4|🧩|A2
-пояснювати|to explain|at forklare|spiegare|🗣️||wyjaśniać|a2m_school.to_explain
-дельфін|dolphin|en delfin|il delfino|🐬|dolphin|delfin|a2x02_animals.dolphin
-пінгвін|penguin|en pingvin|il pinguino|🐧|penguin|pingwin|a2x02_animals.penguin
-коза|goat|en ged|la capra|🐐||koza|a2x02_animals.goat
-досвід|experience|en erfaring|l'esperienza|🧠||doświadczenie|b1_work.experience
-начальник|boss|en chef|il capo|👔||szef|b1_work.boss
-заробляти|to earn|at tjene|guadagnare|💵|money|zarabiać|b1_work.to_earn
-таблетка|pill|en pille|la pillola|💊|tablets|tabletka|b1_health.pill
-програвати|to lose|at tabe|perdere|👎||przegrywać|b1m_sport.to_lose
-тренуватися|to train|at træne|allenarsi|🏋️||trenować|b1m_sport.to_train
-#mix_A2_5|Різні слова 5|🧩|A2
-стадіон|stadium|et stadion|lo stadio|🏟️||stadion|b1m_sport.stadium
-заповнювати (бланк)|to fill in|at udfylde|compilare|✍️||wypełniać|b1x01_paperwork.to_fill_in
-підписувати|to sign|at underskrive|firmare|✒️||podpisywać|b1x01_paperwork.to_sign
-фото на документи|passport photo|et pasfoto|la fototessera|📸||zdjęcie do dokumentów|b1x01_paperwork.passport_photo
-загублений багаж|lost luggage|bortkommen bagage|il bagaglio smarrito|🧳||zagubiony bagaż|b1x01_travelproblems.lost_luggage
-поговорити з адміністратором|to speak to the manager|at tale med lederen|parlare con il responsabile|🗣️||porozmawiać z kierownikiem|b1x01_travelproblems.to_speak_to_the_manager
-відкритий бутерброд (smørrebrød)|open sandwich|et smørrebrød|la tartina|🥪||otwarta kanapka|b1x01_nutrition.open_sandwich
-здорове харчування|healthy eating|sund kost|l'alimentazione sana|🥕||zdrowe odżywianie|b1x01_nutrition.healthy_eating
-дізнаватися|to find out|at finde ud af|scoprire|🕵️||dowiedzieć się|b1x01_phrasal.to_find_out
-забирати (когось)|to pick up|at hente|andare a prendere|🚙|pick_up_,_to|odbierać|b1x01_phrasal.to_pick_up
-#mix_A2_6|Різні слова 6|🧩|A2
-давати поради|to give advice|at give råd|dare consigli|🗨️||udzielać rad|b1x01_collocations.to_give_advice
-якнайшвидше|as soon as possible|så hurtigt som muligt|il prima possibile|⚡||jak najszybciej|b1x01_collocations.as_soon_as_possible
-заощаджувати енергію|to save energy|at spare på energien|risparmiare energia|🔌||oszczędzać energię|b1x02_environment.to_save_energy
-пластиковий пакет|plastic bag|en plastikpose|il sacchetto di plastica|🛍️|plastic_bag|torba foliowa|b1x02_environment.plastic_bag
-викидати|to throw away|at smide ud|buttare via|🚮|throw_away_,_to|wyrzucać|b1x02_recycling.to_throw_away
-сміттєвий бак|bin|en skraldespand|il bidone della spazzatura|🗑️||kosz na śmieci|b1x02_recycling.bin
-сварка|argument|et skænderi|il litigio|🗯️||kłótnia|b1x02_relationships.argument
-близький друг|close friend|en nær ven|l'amico stretto|🫂||bliski przyjaciel|b1x02_relationships.close_friend
-обіймати|to hug|at kramme|abbracciare|🤗|hug_,_to|przytulać|b1x02_relationships.to_hug
-психолог|psychologist|en psykolog|lo psicologo|🧠||psycholog|b1x02_health.psychologist
-#mix_A2_7|Різні слова 7|🧩|A2
-сміливий|brave|modig|coraggioso|🦁||odważny|b1x03_personality.brave
-охайний|tidy|ordentlig|ordinato|🧹||schludny|b1x03_personality.tidy
-замерзати|to freeze|at fryse|gelare|🧊||zamarzać|b1x03_weather.to_freeze
-нижче нуля|below zero|under frysepunktet|sotto zero|🌡️||poniżej zera|b1x03_weather.below_zero
-запобігати|to prevent|at forhindre|prevenire|🛑||zapobiegać|b2_environment.to_prevent
-конкуренція|competition|en konkurrence|la concorrenza|🥊|race_athletics|konkurencja|b2_work.competition
-вдячний|grateful|taknemmelig|grato|🙏||wdzięczny|b2_character.grateful
-натомість|instead|i stedet|invece|🔀||zamiast tego|b2_connectors.instead
-насправді|actually|faktisk|in realtà|💡||tak naprawdę|b2_connectors.actually
-Я не маю гадки.|I have no idea.|Jeg aner det ikke.|Non ne ho idea.|🤷|confused_man|Nie mam pojęcia.|b2_phrases.i_have_no_idea
-#mix_A2_8|Різні слова 8|🧩|A2
-подавати заявку|to apply|at søge|candidarsi|📨||składać podanie|b2m_education.to_apply
-зосереджуватися|to concentrate|at koncentrere sig|concentrarsi|🎯|concentrating_man|skupiać się|b2m_education.to_concentrate
-стосунки|relationship|et forhold|la relazione|💑||związek|b2m_relationships.relationship
-довіряти|to trust|at stole på|fidarsi|🤝||ufać|b2m_relationships.to_trust
-суд (установа)|court|en domstol|il tribunale|🏛️||sąd|b2x01_law.court
-адвокат|lawyer|en advokat|l'avvocato|💼||adwokat|b2x01_law.lawyer
-незаконний|illegal|ulovlig|illegale|❌||nielegalny|b2x01_law.illegal
-худнути|to lose weight|at tabe sig|dimagrire|⚖️||chudnąć|b2x02_fitness.to_lose_weight
-особистість|personality|en personlighed|la personalità|🎭||osobowość|b2x02_psych.personality
-поведінка|behaviour|en adfærd|il comportamento|🐾||zachowanie|b2x02_psych.behaviour
-#mix_A2_9|Різні слова 9|🧩|A2
-стверджувати|to claim|at påstå|affermare|📢||twierdzić|b2x02_argue.to_claim
-бренд|brand|et mærke|il marchio|🏷️||marka|b2x03_media.brand
-вигідна покупка|bargain|et godt køb|l'affare|🏷️||okazja|b2x03_money.bargain
-кишенькові гроші|pocket money|lommepenge|la paghetta|👛||kieszonkowe|b2x03_money.pocket_money
-електромобіль|electric car|en elbil|l'auto elettrica|🚗🔌||samochód elektryczny|b2x03_energy.electric_car
-багатоквартирний будинок|block of flats|en etageejendom|il condominio|🏢||blok|b2x03_urban.block_of_flats
-до того ж|besides|desuden|oltretutto|➕||poza tym|b2x03_linking.besides
-джерело (інформації)|source|en kilde|la fonte|🗂️||źródło|c1m_media.source
-виступати (на сцені)|to perform|at optræde|esibirsi|🎭||występować|c1m_arts.to_perform
-З найкращими побажаннями (у листі)|Best wishes|De bedste hilsner|Un caro saluto|💌||Z najlepszymi życzeniami|c2x02_formal.best_wishes
-пані та панове|ladies and gentlemen|mine damer og herrer|signore e signori|🎤||panie i panowie|c2x02_formal.ladies_and_gentlemen
-#mix_B1_1|Різні слова 1|🧩|B1
-каса|checkout|en kasse|la cassa|🧾||kasa|a1x01_shop.checkout
-черга|queue|en kø|la fila|🧍||kolejka|a1x01_shop.queue
-ратуша|town hall|et rådhus|il municipio|🏢||ratusz|a1x01_town.town_hall
-спокійний|calm|rolig|calmo|😌||spokojny|a1x01_feelings.calm
-Не сумуй!|Cheer up!|Op med humøret!|Su con la vita!|🌞||Nie smuć się!|a1x01_feelings.cheer_up
-візок (у магазині)|trolley|en indkøbsvogn|il carrello|🛒||wózek sklepowy|a1x02_shopping.trolley
-племінник|nephew|en nevø|il nipote|👦||siostrzeniec|a1x02_family.nephew
-племінниця|niece|en niece|la nipote|👧||bratanica|a1x02_family.niece
-тераса|terrace|en terrasse|la terrazza|🪴||taras|a1x02_house.terrace
-батарея (опалення)|radiator|en radiator|il termosifone|♨️||kaloryfer|a1x02_house.radiator
-#mix_B1_2|Різні слова 2|🧩|B1
-вимикач|light switch|en lyskontakt|l'interruttore|💡||włącznik światła|a1x02_house.light_switch
-вузький|narrow|smal|stretto|🚪||wąski|a1x02_opposites.narrow
-підкреслювати|to underline|at understrege|sottolineare|〰️||podkreślać|a1x02_classroom.to_underline
-Вибачте, що турбую.|Sorry to bother you.|Undskyld, at jeg forstyrrer.|Scusi il disturbo.|🙇||Przepraszam, że przeszkadzam.|a1x02_polite.sorry_to_bother_you
-Почувайся як удома.|Make yourself at home.|Føl dig hjemme.|Fai come se fossi a casa tua.|🏠||Czuj się jak u siebie w domu.|a1x02_polite.make_yourself_at_home
-температура (хвороба)|fever|en feber|la febbre|🥵|thermometer|gorączka|a2_health.fever
-бронювання|reservation|en reservation|la prenotazione|📖||rezerwacja|a2x01_restaurant.reservation
-гострий (на смак)|spicy|stærk|piccante|🌶️|spicy|ostry|a2x01_restaurant.spicy
-скатертина|tablecloth|en dug|la tovaglia|🍽️|tablecloth|obrus|a2x01_restaurant.tablecloth
-прикрашати|to decorate|at pynte|decorare|🎀|decorate_,_to|dekorować|a2x01_celebrations.to_decorate
-#mix_B1_3|Різні слова 3|🧩|B1
-загадувати бажання|to make a wish|at ønske sig noget|esprimere un desiderio|🌠||pomyśleć życzenie|a2x01_celebrations.to_make_a_wish
-потім|afterwards|bagefter|dopo|⏭️||potem|a2x01_connectors.afterwards
-Ні в якому разі!|No way!|Ikke tale om!|Neanche per sogno!|🙅||Nie ma mowy!|a2x01_phrases.no_way
-коридор (у квартирі)|hallway|en entré|l'ingresso|🚪||przedpokój|a2x02_home.hallway
-підвал|basement|en kælder|la cantina|🏚️||piwnica|a2x02_home.basement
-капці|slippers|hjemmesko|le pantofole|🥿|slippers|kapcie|a2x02_clothes.slippers
-блискавка (застібка)|zip|en lynlås|la cerniera|🤐|zip|suwak|a2x02_clothes.zip
-рукав|sleeve|et ærme|la manica|👕||rękaw|a2x02_clothes.sleeve
-водоспад|waterfall|et vandfald|la cascata|💦||wodospad|a2x02_nature.waterfall
-печера|cave|en hule|la grotta|🦇||jaskinia|a2x02_nature.cave
-#mix_B1_4|Різні слова 4|🧩|B1
-сором'язливий|shy|genert|timido|🙈||nieśmiały|b1_feelings.shy
-гордий|proud|stolt|orgoglioso|🦚||dumny|b1_feelings.proud
-чесний|honest|ærlig|onesto|😇||uczciwy|b1_feelings.honest
-крім того|moreover|desuden|inoltre|➕||poza tym|b1_connectors.moreover
-незважаючи на|despite|på trods af|nonostante|🚧||mimo|b1_connectors.despite
-диплом|diploma|et eksamensbevis|il diploma|📜||dyplom|b1m_education.diploma
-списувати (на іспиті)|to cheat|at snyde|copiare|🙈|cheat_,_to|ściągać|b1m_education.to_cheat
-ведучий (програми)|presenter|en vært|il conduttore|🎙️||prowadzący|b1m_media.presenter
-аплодувати|to applaud|at klappe|applaudire|👏|clap_hands_,_to|bić brawo|b1m_media.to_applaud
-кінорежисер|film director|en instruktør|il regista|🎬||reżyser|b1m_media.film_director
-#mix_B1_5|Різні слова 5|🧩|B1
-пилосос|vacuum cleaner|en støvsuger|l'aspirapolvere|🧹|vacuum_cleaner_1|odkurzacz|b1m_housing.vacuum_cleaner
-прасувати|to iron|at stryge|stirare|👔|iron_,_to|prasować|b1m_housing.to_iron
-прати (одяг)|to do the laundry|at vaske tøj|fare il bucato|👕|laundry_basket|robić pranie|b1m_housing.to_do_the_laundry
-турнір|tournament|en turnering|il torneo|🏆||turniej|b1m_sport.tournament
-перемога|victory|en sejr|la vittoria|🥇|winner|zwycięstwo|b1m_sport.victory
-суддя (у спорті)|referee|en dommer|l'arbitro|🟥||sędzia|b1m_sport.referee
-порядок денний|agenda|en dagsorden|l'ordine del giorno|📋||porządek obrad|b1x01_workplace.agenda
-робоче місце|workplace|en arbejdsplads|il posto di lavoro|🏭||miejsce pracy|b1x01_workplace.workplace
-робоча атмосфера|working environment|et arbejdsmiljø|l'ambiente di lavoro|🌤️||atmosfera w pracy|b1x01_workplace.working_environment
-лист очікування|waiting list|en venteliste|la lista d'attesa|⏳||lista oczekujących|b1x02_housing.waiting_list
-#mix_B1_6|Різні слова 6|🧩|B1
-підвал (комора)|cellar|en kælder|la cantina|🏚️||piwnica|b1x02_housing.cellar
-пральня (спільна)|laundry room|et vaskeri|la lavanderia|🧺||pralnia|b1x02_housing.laundry_room
-нежить|runny nose|snue|il naso che cola|🤧||katar|b1x02_symptoms.runny_nose
-закладений ніс|blocked nose|en tilstoppet næse|il naso chiuso|👃||zatkany nos|b1x02_symptoms.blocked_nose
-набряклий|swollen|hævet|gonfio|🦶||spuchnięty|b1x02_symptoms.swollen
-бідність|poverty|en fattigdom|la povertà|🪙||ubóstwo|b2_society.poverty
-голосувати|to vote|at stemme|votare|🗳️|vote_,_to|głosować|b2_society.to_vote
-впливати|to influence|at påvirke|influenzare|🎯||wpływać|b2_society.to_influence
-відходи|waste|et affald|i rifiuti|🗑️|wheelie_bin|odpady|b2_environment.waste
-ресурс|resource|en ressource|la risorsa|⛏️||zasób|b2_environment.resource
-#mix_B1_7|Різні слова 7|🧩|B1
-зберігати (природу)|to preserve|at bevare|preservare|🌳||chronić|b2_environment.to_preserve
-зрештою|eventually|til sidst|alla fine|🏁||w końcu|b2_connectors.eventually
-тим часом|meanwhile|i mellemtiden|nel frattempo|⏱️||w międzyczasie|b2_connectors.meanwhile
-час — гроші|time is money|tid er penge|il tempo è denaro|⏳💰||czas to pieniądz|b2_phrases.time_is_money
-заява на роботу|job application|en jobansøgning|la candidatura|📨||podanie o pracę|b2x01_workplace.job_application
-нарада персоналу|staff meeting|et personalemøde|la riunione del personale|👥||zebranie pracowników|b2x01_workplace.staff_meeting
-посадова інструкція|job description|en stillingsbeskrivelse|il mansionario|📄||zakres obowiązków|b2x01_workplace.job_description
-серцевий напад|heart attack|et hjerteanfald|l'infarto|💔||zawał serca|b2x02_health.heart_attack
-бути на лікарняному|to be on sick leave|at være sygemeldt|essere in malattia|🤒||być na zwolnieniu lekarskim|b2x02_health.to_be_on_sick_leave
-прийом у лікаря|doctor's appointment|en lægetid|l'appuntamento dal medico|📅||wizyta u lekarza|b2x02_health.doctor_s_appointment
-#mix_B1_8|Різні слова 8|🧩|B1
-рідна мова|mother tongue|et modersmål|la madrelingua|🗣️||język ojczysty|b2x02_global.mother_tongue
-кордон|border|en grænse|il confine|🚧||granica|b2x02_global.border
-пристосовуватися|to adapt|at tilpasse sig|adattarsi|🦎||przystosowywać się|b2x02_global.to_adapt
-напам'ять|by heart|udenad|a memoria|🧠||na pamięć|b2x02_idioms.by_heart
-гарантія (на товар)|warranty|en garanti|la garanzia|🧾||gwarancja|b2x03_money.warranty
-відкладати гроші|to save up|at spare op|mettere da parte|🐷||odkładać pieniądze|b2x03_money.to_save_up
-картка лояльності|loyalty card|et kundekort|la carta fedeltà|💳||karta lojalnościowa|b2x03_money.loyalty_card
-сповнений ентузіазму|enthusiastic|entusiastisk|entusiasta|🤩||pełen entuzjazmu|b2x03_feelings.enthusiastic
-задоволений (життям)|content|tilfreds|appagato|😌||zadowolony|b2x03_feelings.content
-впертий|stubborn|stædig|testardo|🐐||uparty|b2x03_feelings.stubborn
-#mix_B1_9|Різні слова 9|🧩|B1
-ретельний|thorough|grundig|approfondito|🔎||gruntowny|c1_science.thorough
-заголовок (газетний)|headline|en overskrift|il titolo|📰|newspaper|nagłówek|c1m_media.headline
-лікування|treatment|en behandling|il trattamento|💊|medicine|leczenie|c1m_health.treatment
-проходити (лікування)|to undergo|at gennemgå|sottoporsi|🏥|operation|przechodzić|c1m_health.to_undergo
-приватність (даних)|privacy|et privatliv|la privacy|🔒||prywatność|c1m_tech.privacy
-завантажувати (на сервер)|to upload|at uploade|caricare|⬆️||wgrywać|c1m_tech.to_upload
-сюжет|plot|en handling|la trama|📖||fabuła|c1m_arts.plot
-рецензія|review|en anmeldelse|la recensione|📝||recenzja|c1m_arts.review
-абстрактний|abstract|abstrakt|astratto|🌀||abstrakcyjny|c1m_arts.abstract
-позика|loan|et lån|il prestito|🤲||pożyczka|c1m_finance.loan
-#mix_B1_10|Різні слова 10|🧩|B1
-заощадження|savings|en opsparing|i risparmi|🐷||oszczędności|c1m_finance.savings
-ясла|nursery|en vuggestue|l'asilo nido|🧸||żłobek|c1x01_welfare.nursery
-соціальний працівник|social worker|en socialrådgiver|l'assistente sociale|🤝||pracownik socjalny|c1x01_welfare.social_worker
-будинок для літніх людей|nursing home|et plejehjem|la casa di riposo|🏠||dom spokojnej starości|c1x01_welfare.nursing_home
-упередження|prejudice|en fordom|il pregiudizio|🙈||uprzedzenie|c1x01_society.prejudice
-керівництво|management|en ledelse|la direzione|👔||kierownictwo|c1x01_management.management
-передавати (думку)|to convey|at formidle|trasmettere|📨||przekazywać|c1x01_verbs.to_convey
-розмитий (нечіткий)|vague|vag|vago|🌫️||niejasny|c1x01_adjectives.vague
-значний|substantial|betydelig|sostanziale|🏋️||znaczny|c1x01_adjectives.substantial
-студентська позика|student loan|et studielån|il prestito studentesco|🏧||kredyt studencki|c1x02_research.student_loan
-#mix_B1_11|Різні слова 11|🧩|B1
-наратив|narrative|et narrativ|la narrazione|📖||narracja|c1x02_media.narrative
-вводити в оману|to mislead|at vildlede|fuorviare|🌀||wprowadzać w błąd|c1x02_media.to_mislead
-скарга (на рішення органу)|appeal|en klage|il ricorso|📨||odwołanie|c1x02_admin.appeal
-існування|existence|en eksistens|l'esistenza|🌱||istnienie|c2x01_philosophy.existence
-поняття|notion|en forestilling|la nozione|💡||pojęcie|c2x01_thinking.notion
-несмачний (про стиль)|tasteless|smagløs|pacchiano|🦩||niegustowny|c2x01_style.tasteless
-граційний|graceful|yndefuld|aggraziato|🩰||pełen gracji|c2x01_style.graceful
-щодо|regarding|vedrørende|riguardo a|✉️||w sprawie|c2x01_formal.regarding
-запит|enquiry|en forespørgsel|la richiesta|📨||zapytanie|c2x01_formal.enquiry
-З повагою (у листі)|Yours faithfully|Med venlig hilsen|Distinti saluti|✒️||Z poważaniem|c2x01_formal.yours_faithfully
-#mix_B1_12|Різні слова 12|🧩|B1
-посольство|embassy|en ambassade|l'ambasciata|🏛️||ambasada|c2x01_diplomacy.embassy
-саміт|summit|et topmøde|il vertice|🏔️||szczyt|c2x01_diplomacy.summit
-молекула|molecule|et molekyle|la molecola|⚛️||cząsteczka|c2x02_science.molecule
-випромінювання|radiation|en stråling|la radiazione|☢️||promieniowanie|c2x02_science.radiation
-провина|guilt|en skyld|la colpa|😞||wina|c2x02_ethics.guilt
-імперія|empire|et imperium|l'impero|🏛️||imperium|c2x02_history.empire
-вдячність|gratitude|en taknemmelighed|la gratitudine|🙏||wdzięczność|c2x02_emotions.gratitude
-сором|shame|en skam|la vergogna|🙈||wstyd|c2x02_emotions.shame
 #mix_B2_1|Різні слова 1|🧩|B2
 знімати (гроші)|to withdraw|at hæve|prelevare|💸||wypłacać|a2x01_post_bank.to_withdraw
 договір оренди|tenancy agreement|en lejekontrakt|il contratto d'affitto|📄||umowa najmu|a2x01_flat.tenancy_agreement
@@ -5113,8 +7174,527 @@ Wi-Fi постійно зникає.|The Wi-Fi keeps cutting out.|Wi-fi'en falde
 сідати|to sit down|at sætte sig|sedersi|🪑||siadać|a2x02_phrasal.to_sit_down
 повертатися|to come back|at komme tilbage|tornare|↩️||wracać|a2x02_phrasal.to_come_back
 фотографувати|to take a photo|at tage et billede|fare una foto|📸||robić zdjęcie|a2x02_phrasal.to_take_a_photo
-ходити по магазинах|to go shopping|at shoppe|fare shopping|🛍️||chodzić na zakupy|a2x02_phrasal.to_go_shopping`;
-const CURRIC={"themes":{"cur_a1_01":{"o":1,"t":"Привітання і ввічливість","life":"Знайомство","g":"to be · I'm / you're","ph":[["How are you? — I'm fine, thanks. And you?","Як справи? — Добре, дякую. А в тебе?"],["Thank you very much. — You're welcome.","Дуже дякую. — Будь ласка."],["Excuse me. / I'm sorry.","Перепрошую. / Вибачте."]],"src":"greet"},"cur_a1_02":{"o":2,"t":"Знайомство · 1","life":"Знайомство","g":"to be · am / is / are, питання Are you…?","ph":[["Hi, I'm Olena. Nice to meet you.","Привіт, я Олена. Приємно познайомитися."],["Can you spell that, please?","Можете сказати це по літерах?"],["Bye! Have a nice day!","Бувай! Гарного дня!"]],"src":"cur_a1_02"},"cur_a1_03":{"o":3,"t":"Знайомство · 2: про себе","life":"Знайомство","g":"Present Simple · I live / I speak","ph":[["I'm from Ukraine. I live in Chicago.","Я з України. Я живу в Чикаго."],["My phone number is 555-0134.","Мій номер телефону 555-0134."],["Can you speak more slowly, please?","Можете говорити повільніше?"]],"src":"cur_a1_03"},"cur_a1_04":{"o":4,"t":"Люди навколо","life":"Знайомство","g":"this/that · This is… / That's…","ph":[["This is my friend Max.","Це мій друг Макс."],["That man is my neighbor.","Той чоловік — мій сусід."],["Who is that girl? — That's Anna, my friend.","Хто та дівчина? — Це Анна, моя подруга."]],"src":"cur_a1_04"},"cur_a1_05":{"o":5,"t":"Сім'я · 1","life":"Сім'я","g":"possessive 's / my, your · my, your, his, her","ph":[["I have two kids. My son is five.","У мене двоє дітей. Синові п'ять."],["This is my mom, and this is my dad.","Це моя мама, а це мій тато."],["My sister is ten, and my brother is a baby.","Моїй сестрі десять, а мій брат ще немовля."]],"src":"family"},"cur_a1_06":{"o":6,"t":"Сім'я · 2","life":"Сім'я","g":"possessive 's / my, your · grandma's house","ph":[["This is my grandma's house.","Це бабусин дім."],["My uncle's wife is my aunt.","Дружина мого дядька — моя тітка."],["My grandpa is old, but my cousin is young.","Мій дідусь старий, а мій двоюрідний брат молодий."]],"src":"a1x02_family"},"cur_a1_07":{"o":7,"t":"Стосунки","life":"Сім'я","g":"have (US) · I have / Do you have…?","ph":[["I have a lot of friends at the club.","У мене багато друзів у клубі."],["I love you. I miss you!","Я тебе кохаю. Я сумую за тобою!"],["Do you live alone? — No, we live together.","Ти живеш сам? — Ні, ми живемо разом."]],"src":"cur_a1_07"},"cur_a1_08":{"o":8,"t":"Їжа й напої · 1","life":"Їжа й напої","g":"Present Simple · I eat / Do you eat…?","ph":[["I drink coffee every morning.","Я п'ю каву щоранку."],["Do you eat meat? — No, I eat fish.","Ти їси м'ясо? — Ні, я їм рибу."],["She doesn't drink milk.","Вона не п'є молока."]],"src":"food"},"cur_a1_09":{"o":9,"t":"Фрукти й овочі","life":"Їжа й напої","g":"a/an/the · a banana, an apple","ph":[["An apple and a banana, please.","Яблуко і банан, будь ласка."],["I eat an orange every day.","Я щодня з'їдаю апельсин."],["The tomatoes are in the salad.","Помідори — у салаті."]],"src":"a1m_fruitveg"},"cur_a1_10":{"o":10,"t":"Сніданок, обід, вечеря","life":"Їжа й напої","g":"Present Simple · he/she eats (-s)","ph":[["I'd like a sandwich, please.","Мені сандвіч, будь ласка."],["I'm hungry! What's for dinner?","Я голодний! Що на вечерю?"],["My son eats pizza for lunch.","Мій син їсть піцу на обід."]],"src":"cur_a1_10"},"cur_a1_11":{"o":11,"t":"Солодощі","life":"Їжа й напої","g":"Present Simple · заперечення don't / doesn't","ph":[["I like chocolate, but I don't like candy.","Я люблю шоколад, але не люблю цукерки."],["This cake is delicious!","Цей торт дуже смачний!"],["Does your son like ice cream?","Твій син любить морозиво?"]],"src":"cur_a1_11"},"cur_a1_12":{"o":12,"t":"На кухні","life":"Їжа й напої","g":"imperatives · Cut… / Don't…","ph":[["Cut the bread, please.","Поріж хліб, будь ласка."],["Add sugar and fill the cup with milk.","Додай цукру й долий у чашку молока."],["Don't touch the knife!","Не чіпай ніж!"]],"src":"a1m_things"},"cur_a1_13":{"o":13,"t":"У кафе","life":"Їжа й напої","g":"can · Can I have…?","ph":[["Can I have a coffee, please?","Можна мені каву, будь ласка?"],["Can we have the check, please?","Можна нам рахунок, будь ласка?"],["Can I sit here? — Sure!","Можна мені тут сісти? — Звісно!"]],"src":"cur_a1_13"},"cur_a1_14":{"o":14,"t":"Числа 1–20","life":"Числа й гроші","g":"plural nouns · two cats, three boxes","ph":[["I have three brothers and two sisters.","У мене три брати й дві сестри."],["My son is six, and my daughter is twelve.","Синові шість, а доньці дванадцять."],["There are twenty students in my class.","У моєму класі двадцять учнів."]],"src":"a1x02_prices"},"cur_a1_15":{"o":15,"t":"Десятки й порядок","life":"Числа й гроші","g":"question words · How old / How many","ph":[["How old is your grandpa? — He's eighty.","Скільки років твоєму дідусеві? — Вісімдесят."],["How many people are here? — About fifty.","Скільки тут людей? — Десь п'ятдесят."],["This is my first day here.","Це мій перший день тут."]],"src":"a1x02_prices"},"cur_a1_16":{"o":16,"t":"Гроші","life":"Числа й гроші","g":"this/that · How much is this?","ph":[["How much is this?","Скільки це коштує?"],["That bag is expensive. It's ninety dollars.","Та сумка дорога. Вона коштує дев'яносто доларів."],["Can I pay by credit card?","Можна заплатити карткою?"]],"src":"cur_a1_16"},"cur_a1_17":{"o":17,"t":"Котра година","life":"Мій день","g":"in/on/at · at seven o'clock","ph":[["What time is it? — It's ten thirty.","Котра година? — Пів на одинадцяту."],["The class starts at nine o'clock.","Заняття починається о дев'ятій."],["I'm late! Wait a minute, please.","Я запізнююся! Зачекай хвилинку, будь ласка."]],"src":"cur_a1_17"},"cur_a1_18":{"o":18,"t":"Частини дня","life":"Мій день","g":"in/on/at · in the morning, at night","ph":[["I get up at seven every day.","Я встаю о сьомій щодня."],["I brush my teeth in the morning and at night.","Я чищу зуби вранці й увечері."],["We have dinner in the evening.","Ми вечеряємо ввечері."]],"src":"cur_a1_18"},"cur_a1_19":{"o":19,"t":"Як часто","life":"Мій день","g":"Present Simple · always / usually / never","ph":[["I always go home at six.","Я завжди йду додому о шостій."],["She is often busy on Monday.","У понеділок вона часто зайнята."],["Do you usually come here? — Yes, once a week.","Ти зазвичай сюди приходиш? — Так, раз на тиждень."]],"src":"a2_daily"},"cur_a1_20":{"o":20,"t":"Мій дім · кімнати","life":"Мій дім","g":"there is/are · There are two bedrooms","ph":[["There are two bedrooms in my apartment.","У моїй квартирі дві спальні."],["Is there a garden? — No, but there's a yard.","Там є сад? — Ні, але є подвір'я."],["The kitchen is next to the living room.","Кухня поруч із вітальнею."]],"src":"a2x01_flat"},"cur_a1_21":{"o":21,"t":"Меблі","life":"Мій дім","g":"there is/are · There's a table in…","ph":[["There's a table and four chairs in the kitchen.","На кухні є стіл і чотири стільці."],["The book is on the desk.","Книжка лежить на письмовому столі."],["Please close the door and open the window.","Зачини, будь ласка, двері й відчини вікно."]],"src":"home"},"cur_a1_22":{"o":22,"t":"Речі вдома","life":"Мій дім","g":"this/that · this/these, that/those","ph":[["Is this your key? — Yes, thanks!","Це твій ключ? — Так, дякую!"],["These towels are clean.","Ці рушники чисті."],["Turn on the light, please.","Увімкни світло, будь ласка."]],"src":"cur_a1_22"},"cur_a1_23":{"o":23,"t":"Техніка вдома","life":"Мій дім","g":"have (US) · I have / Do you have…?","ph":[["I have a new computer.","У мене новий комп'ютер."],["Do you have a TV? — No, I watch videos on my phone.","У тебе є телевізор? — Ні, я дивлюся відео на телефоні."],["Can I use your camera?","Можна скористатися твоїм фотоапаратом?"]],"src":"cur_a1_23"},"cur_a1_24":{"o":24,"t":"Хатні справи","life":"Мій дім","g":"imperatives · Clean… / Don't drop…","ph":[["Clean your room, please!","Прибери свою кімнату, будь ласка!"],["Put the dirty cups in the kitchen.","Віднеси брудні чашки на кухню."],["Don't drop the box! Hold it with two hands.","Не впусти коробку! Тримай її двома руками."]],"src":"cur_a1_24"},"cur_a1_25":{"o":25,"t":"Магазини","life":"Покупки","g":"can · Where can I buy…?","ph":[["Is the store open? — No, it's closed.","Магазин відчинений? — Ні, зачинений."],["Where can I buy bread?","Де можна купити хліб?"],["The supermarket has a big sale today.","У супермаркеті сьогодні великий розпродаж."]],"src":"a1x01_shop"},"cur_a1_26":{"o":26,"t":"Кольори","life":"Покупки","g":"to be · The car is red","ph":[["My favorite color is blue.","Мій улюблений колір — синій."],["The car is red and white.","Машина червоно-біла."],["What color is your bag? — It's black.","Якого кольору твоя сумка? — Чорного."]]},"cur_a1_27":{"o":27,"t":"Дні тижня","life":"Дні й дати","g":"in/on/at · on Monday, on the weekend","ph":[["See you on Monday!","Побачимося в понеділок!"],["Today is Friday. Tomorrow is Saturday!","Сьогодні п'ятниця. Завтра субота!"],["I don't work on the weekend.","Я не працюю на вихідних."]],"src":"time"},"cur_a1_28":{"o":28,"t":"Місяці","life":"Дні й дати","g":"in/on/at · in May, on June 5th","ph":[["My birthday is in May.","Мій день народження в травні."],["What's the date today? — It's June fifth.","Яке сьогодні число? — П'яте червня."],["We go to the sea in July.","У липні ми їдемо на море."]]},"cur_a1_29":{"o":29,"t":"Свята","life":"Дні й дати","g":"object pronouns · for you, I love it","ph":[["Happy birthday! This gift is for you.","З днем народження! Цей подарунок для тебе."],["Thank you for the present. I love it!","Дякую за подарунок. Він мені дуже подобається!"],["Merry Christmas to you and your family!","Веселого Різдва тобі й твоїй родині!"]],"src":"cur_a1_29"},"cur_a1_30":{"o":30,"t":"Тепер, потім, уже","life":"Дні й дати","g":"Present Continuous (now) · I'm finishing…","ph":[["I'm busy now. Call me later.","Я зараз зайнятий. Подзвони мені пізніше."],["Wait, I'm finishing my work.","Зачекай, я закінчую роботу."],["See you soon!","До скорої зустрічі!"]],"src":"a1x01_time"},"cur_a1_31":{"o":31,"t":"Місто","life":"Місто","g":"there is/are · Is there a… near here?","ph":[["It's next to the bank.","Це поруч із банком."],["There's a big park in my town.","У моєму місті є великий парк."],["Is there a hotel near here?","Тут поблизу є готель?"]],"src":"a1x01_town"},"cur_a1_32":{"o":32,"t":"Де? Слова місця","life":"Місто","g":"in/on/at · at home, in the middle","ph":[["Where is the restroom?","Де туалет?"],["My bag is behind the door.","Моя сумка за дверима."],["I'm at home. Come here!","Я вдома. Іди сюди!"]],"src":"cur_a1_32"},"cur_a1_33":{"o":33,"t":"Як пройти","life":"Місто","g":"imperatives · Turn left / Go straight","ph":[["Turn left at the corner.","На розі поверни ліворуч."],["Go straight and then turn right.","Іди прямо, а потім поверни праворуч."],["The bus stop is near the bridge.","Автобусна зупинка біля мосту."]],"src":"cur_a1_33"},"cur_a1_34":{"o":34,"t":"Транспорт","life":"Транспорт і подорожі","g":"a/an/the · a car, the subway, by bus","ph":[["I go to work by bus.","Я їжджу на роботу автобусом."],["Take a taxi or the subway.","Візьми таксі або поїдь метро."],["I have a bike and a car.","У мене є велосипед і машина."]],"src":"a1x01_transport"},"cur_a1_35":{"o":35,"t":"У дорозі","life":"Транспорт і подорожі","g":"Present Simple · питання When does…?","ph":[["When does the train leave?","Коли відправляється потяг?"],["Where is the station? — It's over there.","Де вокзал? — Он там."],["Does the plane arrive at six?","Літак прилітає о шостій?"]],"src":"cur_a1_35"},"cur_a1_36":{"o":36,"t":"Подорожі","life":"Транспорт і подорожі","g":"can · Can we visit…?","ph":[["Can we visit the old palace?","Ми можемо відвідати старий палац?"],["I travel a lot in the summer.","Улітку я багато подорожую."],["Have a nice trip!","Гарної подорожі!"]],"src":"cur_a1_36"},"cur_a1_37":{"o":37,"t":"Тіло · 1","life":"Тіло і здоров'я","g":"plural nouns · eyes, teeth (tooth → teeth)","ph":[["I have two eyes, two ears, and one nose.","У мене двоє очей, двоє вух і один ніс."],["Brush your teeth!","Почисти зуби!"],["She has long hair.","У неї довге волосся."]],"src":"a1m_body"},"cur_a1_38":{"o":38,"t":"Тіло · 2 і відчуття","life":"Тіло і здоров'я","g":"can · I can't see / Can you hear me?","ph":[["I can't see. Can you hear me?","Я не бачу. Ти мене чуєш?"],["My back hurts.","У мене болить спина."],["Can you touch your knees?","Ти можеш торкнутися колін?"]],"src":"cur_a1_38"},"cur_a1_39":{"o":39,"t":"Здоров'я","life":"Тіло і здоров'я","g":"have (US) · I have a headache","ph":[["I have a headache and a fever.","У мене болить голова і температура."],["You're sick. Go to the doctor.","Ти хворий. Іди до лікаря."],["Take this medicine and get well soon!","Прийми ці ліки й одужуй швидше!"]],"src":"cur_a1_39"},"cur_a1_40":{"o":40,"t":"Одяг · 1","life":"Одяг","g":"Present Continuous (now) · I'm wearing…","ph":[["I'm wearing a black coat today.","Сьогодні я в чорному пальті."],["She's wearing a red dress.","Вона в червоній сукні."],["Where are my shoes?","Де моє взуття?"]],"src":"a2m_clothes"},"cur_a1_41":{"o":41,"t":"Одяг · 2: аксесуари","life":"Одяг","g":"this/that · Can I try this on?","ph":[["Can I try this on?","Можна це приміряти?"],["This size is too small.","Цей розмір замалий."],["Take an umbrella! It's raining.","Візьми парасольку! Іде дощ."]],"src":"cur_a1_41"},"cur_a1_42":{"o":42,"t":"Погода","life":"Погода й природа","g":"to be · It's sunny / It's cold","ph":[["It's sunny today.","Сьогодні сонячно."],["Look, it's snowing!","Дивись, іде сніг!"],["What's the weather like? — It's cloudy and windy.","Яка погода? — Хмарно й вітряно."]],"src":"a2_weather"},"cur_a1_43":{"o":43,"t":"Пори року","life":"Погода й природа","g":"in/on/at · in winter, in the fall","ph":[["It's cold in winter and hot in summer.","Узимку холодно, а влітку спекотно."],["I love the fall.","Я люблю осінь."],["Look at the moon and the stars!","Подивися на місяць і зорі!"]],"src":"a1x01_weather"},"cur_a1_44":{"o":44,"t":"Природа","life":"Погода й природа","g":"there is/are · There are many trees","ph":[["There are many trees on the hill.","На пагорбі багато дерев."],["Is there a river near your town?","Біля твого міста є річка?"],["We go to the beach in the summer.","Улітку ми їздимо на пляж."]],"src":"a2x02_nature"},"cur_a1_45":{"o":45,"t":"Домашні тварини","life":"Тварини","g":"plural nouns · sheep → sheep, mouse → mice","ph":[["Do you have a pet? — Yes, a cat and two dogs.","У тебе є домашня тварина? — Так, кіт і два собаки."],["There are ten sheep and five cows on the farm.","На фермі десять овець і п'ять корів."],["Feed the rabbit, please.","Погодуй кролика, будь ласка."]],"src":"a2m_animals"},"cur_a1_46":{"o":46,"t":"Дикі тварини","life":"Тварини","g":"can · Monkeys can climb","ph":[["Monkeys can climb trees.","Мавпи вміють лазити по деревах."],["Birds can fly, but frogs can't.","Птахи вміють літати, а жаби — ні."],["Let's go to the zoo and see the lions!","Ходімо в зоопарк подивитися на левів!"]],"src":"a1m_wild"},"cur_a1_47":{"o":47,"t":"Школа","life":"Школа","g":"Present Simple · I study / The lesson starts…","ph":[["I'm a student. I study English.","Я студент. Я вчу англійську."],["Our teacher gives us a lot of homework.","Наш учитель задає нам багато домашнього завдання."],["The lesson starts at nine.","Урок починається о дев'ятій."]],"src":"a1x01_school"},"cur_a1_48":{"o":48,"t":"Шкільне приладдя","life":"Школа","g":"a/an/the · a pen, the book","ph":[["I need a pen and a notebook.","Мені потрібні ручка й зошит."],["Open the book to page ten.","Відкрий книжку на десятій сторінці."],["Can I use your dictionary?","Можна взяти твій словник?"]],"src":"a2m_school"},"cur_a1_49":{"o":49,"t":"Шкільні предмети","life":"Школа","g":"question words · What / Why","ph":[["What's your favorite subject? — Math!","Який твій улюблений предмет? — Математика!"],["Is history difficult? — No, it's easy.","Історія складна? — Ні, легка."],["Why do you study science?","Чому ти вивчаєш природничі науки?"]],"src":"cur_a1_49"},"cur_a1_50":{"o":50,"t":"На уроці","life":"Школа","g":"imperatives · Underline… / Circle…","ph":[["Underline the new words.","Підкресли нові слова."],["Answer the question, please.","Дай відповідь на запитання, будь ласка."],["Circle the correct answer.","Обведи правильну відповідь."]],"src":"cur_a1_50"},"cur_a1_51":{"o":51,"t":"Слова вчителя","life":"Школа","g":"object pronouns · tell me, listen to me","ph":[["Sorry, I don't understand. Can you say that again?","Вибачте, я не розумію. Можете повторити?"],["Tell me, what does this word mean?","Скажи мені, що означає це слово?"],["Listen to me and repeat.","Послухай мене й повтори."]],"src":"cur_a1_51"},"cur_a1_52":{"o":52,"t":"Робота","life":"Робота","g":"a/an/the · a farmer, an engineer","ph":[["I'm an engineer. I work in an office.","Я інженер. Я працюю в офісі."],["My dad is a farmer.","Мій тато — фермер."],["I have a meeting at ten.","У мене зустріч о десятій."]],"src":"cur_a1_52"},"cur_a1_53":{"o":53,"t":"Професії","life":"Робота","g":"question words · What do you do? / Who…?","ph":[["What do you do? — I'm a nurse.","Ким ти працюєш? — Я медсестра."],["My sister is a writer.","Моя сестра — письменниця."],["Who is the owner of this cafe?","Хто власник цього кафе?"]],"src":"cur_a1_53"},"cur_a1_54":{"o":54,"t":"Хобі","life":"Вільний час","g":"Present Simple · What do you do…?","ph":[["What do you do in your free time? — I play games.","Що ти робиш у вільний час? — Граю в ігри."],["My daughter has a big doll collection.","У моєї доньки велика колекція ляльок."],["Enjoy the game!","Гарної гри!"]],"src":"cur_a1_54"},"cur_a1_55":{"o":55,"t":"Музика й танці","life":"Вільний час","g":"can · I can play the guitar","ph":[["I like music. I don't like rain.","Я люблю музику. Я не люблю дощ."],["I can play the guitar and the piano.","Я вмію грати на гітарі й піаніно."],["Let's go to a concert!","Ходімо на концерт!"]],"src":"cur_a1_55"},"cur_a1_56":{"o":56,"t":"Мистецтво й фото","life":"Вільний час","g":"Present Continuous (now) · I'm drawing…","ph":[["Look! I'm drawing a picture.","Дивись! Я малюю картинку."],["She's painting the wall blue.","Вона фарбує стіну в синій колір."],["Can I take a photo?","Можна сфотографувати?"]],"src":"cur_a1_56"},"cur_a1_57":{"o":57,"t":"Кіно й театр","life":"Вільний час","g":"object pronouns · I love him / watch it","ph":[["Do you like this actor? — Yes, I love him!","Тобі подобається цей актор? — Так, я його обожнюю!"],["Let's watch a movie tonight.","Давай подивимося фільм сьогодні ввечері."],["The show starts at eight.","Шоу починається о восьмій."]],"src":"cur_a1_57"},"cur_a1_58":{"o":58,"t":"Читання й новини","life":"Вільний час","g":"Present Simple · I read / Do you watch…?","ph":[["I read the newspaper every morning.","Я щоранку читаю газету."],["My mom reads me a story at night.","Мама читає мені казку на ніч."],["Do you watch the news?","Ти дивишся новини?"]],"src":"cur_a1_58"},"cur_a1_59":{"o":59,"t":"Казки","life":"Вільний час","g":"possessive 's / my, your · the king's daughter","ph":[["The king's daughter is a princess.","Дочка короля — принцеса."],["Do you believe in ghosts?","Ти віриш у привидів?"],["It's a strange dream.","Це дивний сон."]],"src":"cur_a1_59"},"cur_a1_60":{"o":60,"t":"Зв'язок та інтернет","life":"Вільний час","g":"object pronouns · call me, share it","ph":[["Call me tonight!","Подзвони мені сьогодні ввечері!"],["Send me a message.","Напиши мені повідомлення."],["Share it with your friends!","Поділися цим із друзями!"]],"src":"cur_a1_60"},"cur_a1_61":{"o":61,"t":"Спорт · 1","life":"Спорт","g":"there is/are · There are eleven players…","ph":[["There are eleven players on a soccer team.","У футбольній команді одинадцять гравців."],["I play basketball. What sport do you play?","Я граю в баскетбол. А ти яким спортом займаєшся?"],["Goal! Our team wins!","Гол! Наша команда перемагає!"]],"src":"a1x01_sport"},"cur_a1_62":{"o":62,"t":"Спорт · 2","life":"Спорт","g":"can · Can you swim?","ph":[["Can you swim? — Yes, I can.","Ти вмієш плавати? — Так, умію."],["I run in the park every morning.","Я щоранку бігаю в парку."],["Kick the ball to me!","Дай мені пас!"]],"src":"cur_a1_62"},"cur_a1_63":{"o":63,"t":"Активний відпочинок","life":"Спорт","g":"Present Continuous (now) · We're having a picnic","ph":[["We're having a picnic in the park.","Ми влаштовуємо пікнік у парку."],["My dad is fishing at the river.","Тато рибалить на річці."],["Let's go for a walk!","Ходімо погуляємо!"]],"src":"cur_a1_63"},"cur_a1_64":{"o":64,"t":"Зовнішність","life":"Опис людей і речей","g":"have (US) · She has long hair","ph":[["She's tall and has long hair.","Вона висока, і в неї довге волосся."],["My brother is short and thin.","Мій брат невисокий і худий."],["What a beautiful smile!","Яка гарна усмішка!"]],"src":"a1x02_opposites"},"cur_a1_65":{"o":65,"t":"Характер","life":"Опис людей і речей","g":"to be · He is… / Are you…?","ph":[["My teacher is strict but fair.","Мій учитель суворий, але справедливий."],["Are you shy? — A little.","Ти сором'язливий? — Трохи."],["Be careful!","Будь обережний!"]],"src":"a2x01_adjectives"},"cur_a1_66":{"o":66,"t":"Почуття","life":"Опис людей і речей","g":"to be · I'm tired / Are you angry?","ph":[["I'm tired and a little sad.","Я втомився, і мені трохи сумно."],["Don't worry. Be happy!","Не хвилюйся. Будь щасливий!"],["Are you angry with me?","Ти на мене сердишся?"]],"src":"a1x01_feelings"},"cur_a1_67":{"o":67,"t":"Розмір і форма","life":"Опис людей і речей","g":"this/that · This box is big","ph":[["This box is big and heavy.","Ця коробка велика й важка."],["That room is too dark.","Та кімната надто темна."],["My phone is broken.","Мій телефон зламаний."]],"src":"cur_a1_67"},"cur_a1_68":{"o":68,"t":"Дієслова · дати й узяти","life":"Корисні дієслова","g":"imperatives · Give me… / Wait…","ph":[["Give me the key, please.","Дай мені ключ, будь ласка."],["Wait for me!","Зачекай на мене!"],["Help! I can't find my bag.","Допоможи! Я не можу знайти свою сумку."]],"src":"a1x01_verbs"},"cur_a1_69":{"o":69,"t":"Дієслова · думати й знати","life":"Корисні дієслова","g":"Present Simple · I think / Do you remember…?","ph":[["I think you're right.","Я думаю, ти маєш рацію."],["Do you remember my name?","Ти пам'ятаєш, як мене звати?"],["I agree. That's a good idea!","Згоден. Це гарна ідея!"]],"src":"cur_a1_69"},"cur_a1_70":{"o":70,"t":"Дієслова · початок і зміни","life":"Корисні дієслова","g":"Present Continuous (now) · What's happening?","ph":[["What's happening?","Що відбувається?"],["They're building a new school.","Вони будують нову школу."],["The kids are growing fast.","Діти швидко ростуть."]],"src":"cur_a1_70"},"cur_a1_71":{"o":71,"t":"Питання й маленькі слова","life":"Корисні слова","g":"question words · Where / When / How / Why","ph":[["Where are you from? How old are you?","Звідки ти? Скільки тобі років?"],["Why are you late?","Чому ти запізнився?"],["I'm very tired too.","Я теж дуже втомився."]],"src":"cur_a1_71"},"cur_a1_72":{"o":72,"t":"Добре й погано","life":"Корисні слова","g":"to be · It's great! / It isn't bad","ph":[["This is my favorite song!","Це моя улюблена пісня!"],["The movie is great! — No, it's terrible.","Фільм чудовий! — Ні, жахливий."],["Your English is very good. — Thanks!","У тебе дуже гарна англійська. — Дякую!"]],"src":"cur_a1_72"},"cur_a1_73":{"o":73,"t":"Протилежності","life":"Корисні слова","g":"plural nouns · these pictures, rich people","ph":[["My car is old, but it's fast.","Моя машина стара, але швидка."],["These two pictures are different.","Ці дві картинки різні."],["Rich people aren't always happy.","Багаті люди не завжди щасливі."]],"src":"a1x02_opposites"},"cur_a1_74":{"o":74,"t":"Корисні слова: речі й життя","life":"Корисні слова","g":"a/an/the · a piece of cake","ph":[["What kind of music do you like?","Яку музику ти любиш?"],["Can I have a piece of cake?","Можна мені шматочок торта?"],["You can do it! Good luck!","У тебе все вийде! Удачі!"]],"src":"cur_a1_74"}}};
+ходити по магазинах|to go shopping|at shoppe|fare shopping|🛍️||chodzić na zakupy|a2x02_phrasal.to_go_shopping
+#a1x01_shop~A2|Магазин і гроші|🛒|A2
+список покупок|shopping list|en indkøbsliste|la lista della spesa|📝||lista zakupów|a1x01_shop.shopping_list
+робити покупки|to do the shopping|at handle ind|fare la spesa|🛍️||robić zakupy|a1x01_shop.to_do_the_shopping
+Можна оплатити карткою?|Can I pay by card?|Kan jeg betale med kort?|Posso pagare con la carta?|💳||Czy mogę zapłacić kartą?|a1x01_shop.can_i_pay_by_card
+Я просто дивлюся|I'm just looking|Jeg kigger bare|Sto solo guardando|👀||Tylko się rozglądam|a1x01_shop.i_m_just_looking
+#a1x02_shopping~A2|Фрази в магазині|🛍️|A2
+Я це візьму.|I'll take it.|Jeg tager den.|Lo prendo.|👍||Wezmę to.|a1x02_shopping.i_ll_take_it
+Можна це приміряти?|Can I try it on?|Må jeg prøve den?|Posso provarlo?|👗||Czy mogę to przymierzyć?|a1x02_shopping.can_i_try_it_on
+У вас є менший розмір?|Do you have a smaller size?|Har I en mindre størrelse?|Avete una taglia più piccola?|📏||Czy jest mniejszy rozmiar?|a1x02_shopping.do_you_have_a_smaller_size
+Де примірювальна?|Where is the fitting room?|Hvor er prøverummet?|Dov'è il camerino?|🚪||Gdzie jest przymierzalnia?|a1x02_shopping.where_is_the_fitting_room
+Ось ваша решта.|Here's your change.|Her er dine byttepenge.|Ecco il resto.|🪙||Oto reszta.|a1x02_shopping.here_s_your_change
+Я шукаю подарунок.|I'm looking for a gift.|Jeg leder efter en gave.|Cerco un regalo.|🎁||Szukam prezentu.|a1x02_shopping.i_m_looking_for_a_gift
+#a1x02_cafe~A2|Фрази в кафе і ресторані|☕|A2
+Можна заплатити готівкою?|Can I pay in cash?|Kan jeg betale kontant?|Posso pagare in contanti?|💵||Czy mogę zapłacić gotówką?|a1x02_cafe.can_i_pay_in_cash
+Тут чи з собою?|For here or to take away?|Spise her eller tage med?|Qui o da portare via?|🥡||Na miejscu czy na wynos?|a1x02_cafe.for_here_or_to_take_away
+Я вегетаріанець.|I'm vegetarian.|Jeg er vegetar.|Sono vegetariano.|🥗||Jestem wegetarianinem.|a1x02_cafe.i_m_vegetarian
+Їжа була дуже смачна.|The food was delicious.|Maden var lækker.|Il cibo era delizioso.|😋||Jedzenie było pyszne.|a1x02_cafe.the_food_was_delicious
+Можна ще хліба?|Could I have some more bread?|Må jeg få lidt mere brød?|Potrei avere ancora un po' di pane?|🍞||Czy mogę prosić o jeszcze trochę chleba?|a1x02_cafe.could_i_have_some_more_bread
+#a1x02_directions~A2|Як пройти|🧭|A2
+Я шукаю аптеку.|I'm looking for a pharmacy.|Jeg leder efter et apotek.|Cerco una farmacia.|💊||Szukam apteki.|a1x02_directions.i_m_looking_for_a_pharmacy
+Це на розі.|It's on the corner.|Det ligger på hjørnet.|È all'angolo.|📐||To jest na rogu.|a1x02_directions.it_s_on_the_corner
+Це п'ять хвилин пішки.|It's five minutes on foot.|Det tager fem minutter til fods.|Sono cinque minuti a piedi.|🚶||To pięć minut pieszo.|a1x02_directions.it_s_five_minutes_on_foot
+Поверніть на першу вулицю ліворуч.|Take the first street on the left.|Tag den første gade til venstre.|Prenda la prima strada a sinistra.|↩️||Proszę skręcić w pierwszą ulicę w lewo.|a1x02_directions.take_the_first_street_on_the_left
+Перейдіть вулицю.|Cross the street.|Gå over gaden.|Attraversi la strada.|🚸||Proszę przejść przez ulicę.|a1x02_directions.cross_the_street
+Пройдіть повз церкву.|Go past the church.|Gå forbi kirken.|Passi davanti alla chiesa.|⛪||Proszę przejść obok kościoła.|a1x02_directions.go_past_the_church
+Це дорога до вокзалу?|Is this the way to the station?|Er det her vejen til stationen?|È questa la strada per la stazione?|🛤️||Czy to droga na dworzec?|a1x02_directions.is_this_the_way_to_the_station
+#a1x02_classroom~A2|Фрази на уроці|🧑‍🏫|A2
+Заповніть пропуски.|Fill in the gaps.|Udfyld hullerne.|Completate gli spazi vuoti.|✏️||Uzupełnijcie luki.|a1x02_classroom.fill_in_the_gaps
+Я закінчив.|I've finished.|Jeg er færdig.|Ho finito.|🏁||Skończyłem.|a1x02_classroom.i_ve_finished
+Можна позичити ручку?|Can I borrow a pen?|Må jeg låne en kuglepen?|Mi presti una penna?|🖊️||Czy mogę pożyczyć długopis?|a1x02_classroom.can_i_borrow_a_pen
+Як це вимовляється?|How do you pronounce this?|Hvordan udtaler man det?|Come si pronuncia?|🗣️||Jak to się wymawia?|a1x02_classroom.how_do_you_pronounce_this
+#a1x02_polite~A2|Ввічливі вирази|🙏|A2
+Із задоволенням.|My pleasure.|Det var en fornøjelse.|È stato un piacere.|😊||Cała przyjemność po mojej stronie.|a1x02_polite.my_pleasure
+Пригощайтеся!|Help yourself!|Tag bare selv!|Serviti pure!|🍪||Częstujcie się!|a1x02_polite.help_yourself
+Усього найкращого!|All the best!|Alt det bedste!|Tante belle cose!|🌟||Wszystkiego najlepszego!|a1x02_polite.all_the_best
+Будь здоровий!|Bless you!|Prosit!|Salute!|🤧||Na zdrowie!|a1x02_polite.bless_you
+Це дуже мило з вашого боку.|That's very kind of you.|Det er meget venligt af dig.|È molto gentile da parte tua.|💐||To bardzo miło z twojej strony.|a1x02_polite.that_s_very_kind_of_you
+Мені шкода це чути.|I'm sorry to hear that.|Det er jeg ked af at høre.|Mi dispiace sentirlo.|😔||Przykro mi to słyszeć.|a1x02_polite.i_m_sorry_to_hear_that
+#a2_phrases|Вирази|💬|A2
+Рахунок, будь ласка.|The bill, please.|Regningen, tak.|Il conto, per favore.|🧾||Poproszę rachunek.|a2_phrases.the_bill_please
+Удачі!|Good luck!|Held og lykke!|Buona fortuna!|🍀|lucky|Powodzenia!|a2_phrases.good_luck
+Що сталося?|What happened?|Hvad skete der?|Cos'è successo?|😮||Co się stało?|a2_phrases.what_happened
+Я заблукав.|I'm lost.|Jeg er faret vild.|Mi sono perso.|🧭|lost|Zgubiłem się.|a2_phrases.i_m_lost
+Хвилинку.|Just a moment.|Et øjeblik.|Un momento.|⏳|wait_,_to|Chwileczkę.|a2_phrases.just_a_moment
+Будьмо!|Cheers!|Skål!|Salute!|🥂|champagne|Na zdrowie!|a2_phrases.cheers
+#a2m_phrases|Корисні вирази|🗨️|A2
+Одужуй швидше!|Get well soon!|God bedring!|Guarisci presto!|🤒||Wracaj szybko do zdrowia!|a2m_phrases.get_well_soon
+Смачного!|Enjoy your meal!|God appetit!|Buon appetito!|🍽️||Smacznego!|a2m_phrases.enjoy_your_meal
+Вітаю!|Congratulations!|Tillykke!|Congratulazioni!|🎉||Gratuluję!|a2m_phrases.congratulations
+Нічого страшного.|It doesn't matter.|Det gør ikke noget.|Non importa.|🤷||Nic nie szkodzi.|a2m_phrases.it_doesn_t_matter
+Я погано почуваюся.|I don't feel well.|Jeg har det ikke godt.|Non mi sento bene.|🤢||Źle się czuję.|a2m_phrases.i_don_t_feel_well
+Це місце вільне?|Is this seat free?|Er denne plads ledig?|È libero questo posto?|💺||Czy to miejsce jest wolne?|a2m_phrases.is_this_seat_free
+Із задоволенням!|With pleasure!|Med glæde!|Con piacere!|😊||Z przyjemnością!|a2m_phrases.with_pleasure
+Щасливої дороги!|Have a good trip!|God rejse!|Buon viaggio!|🧳||Szczęśliwej podróży!|a2m_phrases.have_a_good_trip
+#a2x01_restaurant|Ресторан і кафе|🍽️|A2
+основна страва|main course|en hovedret|il piatto principale|🍝|main_course|danie główne|a2x01_restaurant.main_course
+забронювати столик|to book a table|at bestille bord|prenotare un tavolo|📞||zarezerwować stolik|a2x01_restaurant.to_book_a_table
+газована вода|sparkling water|danskvand|l'acqua frizzante|🫧||woda gazowana|a2x01_restaurant.sparkling_water
+Що ви порадите?|What do you recommend?|Hvad kan du anbefale?|Cosa mi consiglia?|🤔||Co pan poleca?|a2x01_restaurant.what_do_you_recommend
+#a2x01_doctor|У лікаря та в аптеці|🩺|A2
+біль у горлі|sore throat|ondt i halsen|il mal di gola|😷||ból gardła|a2x01_doctor.sore_throat
+застудитися|to catch a cold|at blive forkølet|prendere il raffreddore|🤧||przeziębić się|a2x01_doctor.to_catch_a_cold
+зала очікування|waiting room|et venteværelse|la sala d'attesa|🪑||poczekalnia|a2x01_doctor.waiting_room
+приймати ліки|to take medicine|at tage medicin|prendere le medicine|💊||brać leki|a2x01_doctor.to_take_medicine
+двічі на день|twice a day|to gange om dagen|due volte al giorno|🕑||dwa razy dziennie|a2x01_doctor.twice_a_day
+нудити (мене нудить)|to feel sick|at have kvalme|avere la nausea|🤢||mieć mdłości|a2x01_doctor.to_feel_sick
+одужувати|to get better|at få det bedre|migliorare|🙂||zdrowieć|a2x01_doctor.to_get_better
+#a2x01_flat|Оренда житла і хатні справи|🏠|A2
+рахунок за електрику|electricity bill|en elregning|la bolletta della luce|🧾⚡||rachunek za prąd|a2x01_flat.electricity_bill
+мити посуд|to do the washing-up|at vaske op|lavare i piatti|🍽️||zmywać naczynia|a2x01_flat.to_do_the_washing_up
+застеляти ліжко|to make the bed|at rede seng|rifare il letto|🛏️|make_the_bed_,_to|ścielić łóżko|a2x01_flat.to_make_the_bed
+виносити сміття|to take out the rubbish|at tage skraldet ud|portare fuori la spazzatura|🗑️||wynosić śmieci|a2x01_flat.to_take_out_the_rubbish
+поливати рослини|to water the plants|at vande planterne|annaffiare le piante|🪴||podlewać rośliny|a2x01_flat.to_water_the_plants
+#a2x01_transport|Громадський транспорт і квитки|🚌|A2
+вокзал|railway station|en banegård|la stazione ferroviaria|🚉||dworzec|a2x01_transport.railway_station
+місце біля вікна|window seat|en vinduesplads|il posto al finestrino|🪟||miejsce przy oknie|a2x01_transport.window_seat
+квиток в один бік|single ticket|en enkeltbillet|il biglietto di sola andata|🎫||bilet w jedną stronę|a2x01_transport.single_ticket
+квиток туди й назад|return ticket|en returbillet|il biglietto di andata e ritorno|🎟️||bilet w obie strony|a2x01_transport.return_ticket
+пересідати на інший потяг|to change trains|at skifte tog|cambiare treno|🔁||przesiadać się|a2x01_transport.to_change_trains
+багаж|luggage|bagage|i bagagli|🧳||bagaż|a2x01_transport.luggage
+спізнитися на потяг|to miss the train|at komme for sent til toget|perdere il treno|😩||spóźnić się na pociąg|a2x01_transport.to_miss_the_train
+квиткова каса|ticket office|et billetkontor|la biglietteria|🏢||kasa biletowa|a2x01_transport.ticket_office
+#a2x01_phone|Телефон і повідомлення|📱|A2
+надсилати есемеску|to send a text|at sende en sms|mandare un messaggio|💬||wysyłać SMS-a|a2x01_phone.to_send_a_text
+відповідати на дзвінок|to answer the phone|at tage telefonen|rispondere al telefono|☎️||odbierać telefon|a2x01_phone.to_answer_the_phone
+пропущений дзвінок|missed call|et ubesvaret opkald|la chiamata persa|📵||nieodebrane połączenie|a2x01_phone.missed_call
+голосове повідомлення|voice message|en talebesked|il messaggio vocale|🎙️||wiadomość głosowa|a2x01_phone.voice_message
+сім-карта|SIM card|et SIM-kort|la scheda SIM|📶||karta SIM|a2x01_phone.sim_card
+телефонна розмова|phone call|et opkald|la telefonata|📞||rozmowa telefoniczna|a2x01_phone.phone_call
+передзвонювати|to call back|at ringe tilbage|richiamare|🔁||oddzwaniać|a2x01_phone.to_call_back
+Хто дзвонить?|Who's calling?|Hvem taler jeg med?|Chi parla?|❓||Kto mówi?|a2x01_phone.who_s_calling
+вимикати|to switch off|at slukke|spegnere|📴||wyłączać|a2x01_phone.to_switch_off
+вмикати|to switch on|at tænde|accendere|💡||włączać|a2x01_phone.to_switch_on
+#a2x01_phrases|Корисні фрази|💬|A2
+Що не так?|What's wrong?|Hvad er der galt?|Cosa c'è che non va?|😟||Co jest nie tak?|a2x01_phrases.what_s_wrong
+Чи не могли б ви мені допомогти?|Could you help me?|Kunne du hjælpe mig?|Può aiutarmi?|🙋||Czy mógłby mi pan pomóc?|a2x01_phrases.could_you_help_me
+Бережи себе!|Take care!|Pas på dig selv!|Abbi cura di te!|💛||Uważaj na siebie!|a2x01_phrases.take_care
+Дай мені знати.|Let me know.|Giv mig besked.|Fammi sapere.|📲||Daj mi znać.|a2x01_phrases.let_me_know
+Моя черга.|It's my turn.|Det er min tur.|Tocca a me.|🎲||Moja kolej.|a2x01_phrases.it_s_my_turn
+Поквапся!|Hurry up!|Skynd dig!|Sbrigati!|🏃||Pospiesz się!|a2x01_phrases.hurry_up
+Як пройшов твій день?|How was your day?|Hvordan var din dag?|Com'è andata la giornata?|🌇||Jak ci minął dzień?|a2x01_phrases.how_was_your_day
+І вам того ж!|Same to you!|I lige måde!|Altrettanto!|🔄||Wzajemnie!|a2x01_phrases.same_to_you
+#a2x02_sport|Спорт і хобі|⚽|A2
+катання на ковзанах|ice skating|skøjteløb|il pattinaggio su ghiaccio|⛸️||jazda na łyżwach|a2x02_sport.ice_skating
+ходити на риболовлю|to go fishing|at tage ud at fiske|andare a pescare|🎣||chodzić na ryby|a2x02_sport.to_go_fishing
+їздити з наметами|to go camping|at tage på camping|andare in campeggio|🏕️||jeździć pod namiot|a2x02_sport.to_go_camping
+ходити в похід (пішки)|to go hiking|at tage på vandretur|fare escursioni|🥾||chodzić na wędrówki|a2x02_sport.to_go_hiking
+#a2x02_school|Школа і навчання|🏫|A2
+географія|geography|geografi|la geografia|🌍|geography|geografia|a2x02_school.geography
+хімія|chemistry|kemi|la chimica|⚗️||chemia|a2x02_school.chemistry
+фізика|physics|fysik|la fisica|⚛️||fizyka|a2x02_school.physics
+зошит|exercise book|et hæfte|il quaderno|📓||zeszyt|a2x02_school.exercise_book
+гумка (для стирання)|rubber|et viskelæder|la gomma|🧽||gumka|a2x02_school.rubber
+шкільний портфель|schoolbag|en skoletaske|la cartella|🎒||tornister|a2x02_school.schoolbag
+зробити помилку|to make a mistake|at lave en fejl|fare un errore|❌||popełnić błąd|a2x02_school.to_make_a_mistake
+підняти руку|to raise your hand|at række hånden op|alzare la mano|✋||podnieść rękę|a2x02_school.to_raise_your_hand
+шкільна форма|school uniform|en skoleuniform|la divisa scolastica|🏫👔||mundurek szkolny|a2x02_school.school_uniform
+#a2x02_time|Час і частотність|⏰|A2
+раз на тиждень|once a week|en gang om ugen|una volta alla settimana|📅||raz w tygodniu|a2x02_time.once_a_week
+зараз (у цей момент)|at the moment|i øjeblikket|al momento|⏳||w tej chwili|a2x02_time.at_the_moment
+опівдні|at noon|ved middagstid|a mezzogiorno|🕛||w południe|a2x02_time.at_noon
+спочатку|at first|i begyndelsen|all'inizio|🥇||na początku|a2x02_time.at_first
+зрештою|in the end|til sidst|alla fine|🏁||w końcu|a2x02_time.in_the_end
+#a2x02_hotel|Подорожі й готель|🏨|A2
+одномісний номер|single room|et enkeltværelse|la camera singola|🛏️||pokój jednoosobowy|a2x02_hotel.single_room
+двомісний номер|double room|et dobbeltværelse|la camera matrimoniale|🛌||pokój dwuosobowy|a2x02_hotel.double_room
+заселятися (в готель)|to check in|at tjekke ind|fare il check-in|🔑||zameldować się|a2x02_hotel.to_check_in
+виселятися (з готелю)|to check out|at tjekke ud|fare il check-out|🧳||wymeldować się|a2x02_hotel.to_check_out
+картка-ключ|key card|et nøglekort|la tessera magnetica|💳||karta magnetyczna|a2x02_hotel.key_card
+обслуговування номерів|room service|roomservice|il servizio in camera|🍽️||room service|a2x02_hotel.room_service
+сніданок включено|breakfast included|morgenmad inkluderet|colazione inclusa|🥐||śniadanie wliczone w cenę|a2x02_hotel.breakfast_included
+хостел|youth hostel|et vandrerhjem|l'ostello|🏠||hostel|a2x02_hotel.youth_hostel
+кемпінг|campsite|en campingplads|il campeggio|⛺||kemping|a2x02_hotel.campsite
+намет|tent|et telt|la tenda|🏕️||namiot|a2x02_hotel.tent
+#a2x02_phrasal|Фразові дієслова і сталі вирази|🔗|A2
+доглядати (за кимось)|to look after|at passe på|prendersi cura di|🧑‍🍼||opiekować się|a2x02_phrasal.to_look_after
+повертати (річ)|to give back|at give tilbage|restituire|🤲||oddawać|a2x02_phrasal.to_give_back
+виходити (розважитися)|to go out|at gå ud|uscire|🎉||wychodzić|a2x02_phrasal.to_go_out
+поспішати|to hurry up|at skynde sig|sbrigarsi|🏃||spieszyć się|a2x02_phrasal.to_hurry_up
+заводити друзів|to make friends|at få venner|fare amicizia|🤝||zaprzyjaźniać się|a2x02_phrasal.to_make_friends
+розважатися|to have fun|at have det sjovt|divertirsi|🥳||bawić się|a2x02_phrasal.to_have_fun
+робити перерву|to take a break|at holde en pause|fare una pausa|☕||robić przerwę|a2x02_phrasal.to_take_a_break
+відпочивати|to have a rest|at hvile sig|riposarsi|😌||odpoczywać|a2x02_phrasal.to_have_a_rest
+проводити час|to spend time|at tilbringe tid|passare il tempo|⏱️||spędzać czas|a2x02_phrasal.to_spend_time
+казати правду|to tell the truth|at sige sandheden|dire la verità|🗣️||mówić prawdę|a2x02_phrasal.to_tell_the_truth
+зберігати таємницю|to keep a secret|at holde på en hemmelighed|mantenere un segreto|🤫||dochowywać tajemnicy|a2x02_phrasal.to_keep_a_secret
+заблукати|to get lost|at fare vild|perdersi|🧭||zgubić się|a2x02_phrasal.to_get_lost
+#b1_phrases~A2|Вирази|💬|A2
+Ти маєш рацію|You're right|Du har ret|Hai ragione|✅|correct|Masz rację|b1_phrases.you_re_right
+Я так не думаю|I don't think so|Det tror jeg ikke|Non credo|🙅|wrong_thought|Nie sądzę|b1_phrases.i_don_t_think_so
+Я не впевнений|I'm not sure|Jeg er ikke sikker|Non sono sicuro|🤷|confused_man|Nie jestem pewien|b1_phrases.i_m_not_sure
+Що ти маєш на увазі?|What do you mean?|Hvad mener du?|Cosa intendi?|🤔|confused_lady|Co masz na myśli?|b1_phrases.what_do_you_mean
+Мені все одно|I don't mind|Det er lige meget for mig|Per me è lo stesso|😐||Wszystko mi jedno|b1_phrases.i_don_t_mind
+Не хвилюйся!|Don't worry!|Bare rolig!|Non preoccuparti!|😌||Nie martw się!|b1_phrases.don_t_worry
+Нічого страшного|Never mind|Det gør ikke noget|Non fa niente|🙂||Nic nie szkodzi|b1_phrases.never_mind
+Шкода!|What a pity!|Hvor ærgerligt!|Che peccato!|😢|sad_lady|Szkoda!|b1_phrases.what_a_pity
+#b1m_phrases~A2|Ще вирази|🗨️|A2
+Я так і думав|I thought so|Det tænkte jeg nok|Lo immaginavo|🤔||Tak myślałem|b1m_phrases.i_thought_so
+Яка гарна ідея!|What a good idea!|Sikke en god idé!|Che bella idea!|💡||Świetny pomysł!|b1m_phrases.what_a_good_idea
+Я поспішаю|I'm in a hurry|Jeg har travlt|Ho fretta|🏃||Spieszę się|b1m_phrases.i_m_in_a_hurry
+Поживемо — побачимо|We'll see|Vi får se|Vedremo|🔮||Zobaczymy|b1m_phrases.we_ll_see
+Ти серйозно?|Are you serious?|Mener du det?|Dici sul serio?|😳||Mówisz poważnie?|b1m_phrases.are_you_serious
+#b1x01_workplace~A2|На роботі|🏢|A2
+відділ|department|en afdeling|il reparto|🏢||dział|b1x01_workplace.department
+обідня перерва|lunch break|en frokostpause|la pausa pranzo|🥪||przerwa obiadowa|b1x01_workplace.lunch_break
+працювати з дому|to work from home|at arbejde hjemmefra|lavorare da casa|🏡||pracować z domu|b1x01_workplace.to_work_from_home
+різдвяний корпоратив|Christmas party|en julefrokost|la cena aziendale di Natale|🎄||wigilia firmowa|b1x01_workplace.christmas_party
+#b1x02_housing~A2|Житло|🏠|A2
+орендована квартира|rented flat|en lejebolig|l'appartamento in affitto|🔑||wynajęte mieszkanie|b1x02_housing.rented_flat
+в'їжджати (у житло)|to move in|at flytte ind|trasferirsi|📦||wprowadzać się|b1x02_housing.to_move_in
+виїжджати (з житла)|to move out|at flytte ud|lasciare l'appartamento|🚚||wyprowadzać się|b1x02_housing.to_move_out
+двокімнатна квартира|two-room flat|en toværelseslejlighed|il bilocale|🚪||mieszkanie dwupokojowe|b1x02_housing.two_room_flat
+#b1x02_neighbours~A2|Сусіди і життя в будинку|🏘️|A2
+правила будинку|house rules|en husorden|il regolamento condominiale|📋||regulamin porządku domowego|b1x02_neighbours.house_rules
+шуміти|to make noise|at larme|fare rumore|🥁||hałasować|b1x02_neighbours.to_make_noise
+сусідське свято|street party|en gadefest|la festa di quartiere|🎉||festyn sąsiedzki|b1x02_neighbours.street_party
+допомагати одне одному|to help each other|at hjælpe hinanden|aiutarsi a vicenda|🤝||pomagać sobie nawzajem|b1x02_neighbours.to_help_each_other
+паркомісце|parking space|en parkeringsplads|il posto auto|🅿️||miejsce parkingowe|b1x02_neighbours.parking_space
+#b1x02_opinions~A2|Думки та емоції|💭|A2
+Це неправда|That's not true|Det passer ikke|Non è vero|❌||To nieprawda|b1x02_opinions.that_s_not_true
+Я теж так думаю|I think so too|Det synes jeg også|Lo penso anch'io|🤝||Też tak myślę|b1x02_opinions.i_think_so_too
+погоджуватися (з кимось)|to agree with|at være enig med|essere d'accordo con|✅||zgadzać się|b1x02_opinions.to_agree_with
+не погоджуватися (з кимось)|to disagree with|at være uenig med|non essere d'accordo con|🙅‍♂️||nie zgadzać się|b1x02_opinions.to_disagree_with
+#b1x03_shopping~A2|Покупки і права споживача|🛍️|A2
+замовляти онлайн|to order online|at bestille online|ordinare online|🛒||zamawiać przez internet|b1x03_shopping.to_order_online
+платити карткою|to pay by card|at betale med kort|pagare con la carta|💳||płacić kartą|b1x03_shopping.to_pay_by_card
+спеціальна пропозиція|special offer|et særtilbud|l'offerta speciale|🏷️||oferta specjalna|b1x03_shopping.special_offer
+інтернет-магазин|online shop|en netbutik|il negozio online|🖥️||sklep internetowy|b1x03_shopping.online_shop
+#b1x03_culture~A2|Культура і дозвілля|🎭|A2
+вільний час|free time|fritid|il tempo libero|⏳||czas wolny|b1x03_culture.free_time
+записатися до клубу|to join a club|at melde sig ind i en klub|iscriversi a un club|🏸||zapisać się do klubu|b1x03_culture.to_join_a_club
+вечірні курси|evening class|en aftenskole|il corso serale|🌙||kurs wieczorowy|b1x03_culture.evening_class
+художня галерея|art gallery|et kunstgalleri|la galleria d'arte|🖼️||galeria sztuki|b1x03_culture.art_gallery
+концертна зала|concert hall|en koncertsal|la sala da concerto|🎻||sala koncertowa|b1x03_culture.concert_hall
+#b2x02_tech~A2|Цифрові технології|💻|A2
+робот|robot|en robot|il robot|🤖||robot|b2x02_tech.robot
+користувач|user|en bruger|l'utente|👤||użytkownik|b2x02_tech.user
+цифровий|digital|digital|digitale|💾||cyfrowy|b2x02_tech.digital
+відеодзвінок|video call|et videoopkald|la videochiamata|📹||rozmowa wideo|b2x02_tech.video_call
+#mix_A2_1|Різні слова 1|🧩|A2
+я хочу пити|I'm thirsty|jeg er tørstig|ho sete|💧😮‍💨|thirsty|chce mi się pić|a1m_phrases.i_m_thirsty
+ось, тримай|here you are|værsgo|ecco a te|🤲||proszę bardzo|a1m_phrases.here_you_are
+представлятися|to introduce oneself|at præsentere sig|presentarsi|🙋||przedstawiać się|a1x02_meet.to_introduce_oneself
+тиснути руку|to shake hands|at give hånd|stringere la mano|🤝|shake_hands_,_to|podawać rękę|a1x02_meet.to_shake_hands
+Викличте швидку!|Call an ambulance!|Ring efter en ambulance!|Chiamate un'ambulanza!|🚑||Wezwijcie karetkę!|a1x02_help.call_an_ambulance
+півціни|half price|halv pris|metà prezzo|✂️||pół ceny|a1x02_prices.half_price
+півкілограма|half a kilo|et halvt kilo|mezzo chilo|⚖️||pół kilo|a1x02_prices.half_a_kilo
+#mix_A2_3|Різні слова 3|🧩|A2
+прогноз погоди|weather forecast|en vejrudsigt|le previsioni del tempo|📺🌦️||prognoza pogody|a2_weather.weather_forecast
+бронювати|to book|at bestille|prenotare|📅||rezerwować|a2_travel.to_book
+їздити на велосипеді|to cycle|at cykle|andare in bicicletta|🚴|cycle_,_to|jeździć na rowerze|a2m_hobbies.to_cycle
+рюкзак|backpack|en rygsæk|lo zaino|🎒|school_bag|plecak|a2m_school.backpack
+учень|pupil|en elev|l'alunno|🧑‍🎓||uczeń|a2m_school.pupil
+#mix_A2_5|Різні слова 5|🧩|A2
+заповнювати (бланк)|to fill in|at udfylde|compilare|✍️||wypełniać|b1x01_paperwork.to_fill_in
+фото на документи|passport photo|et pasfoto|la fototessera|📸||zdjęcie do dokumentów|b1x01_paperwork.passport_photo
+загублений багаж|lost luggage|bortkommen bagage|il bagaglio smarrito|🧳||zagubiony bagaż|b1x01_travelproblems.lost_luggage
+поговорити з адміністратором|to speak to the manager|at tale med lederen|parlare con il responsabile|🗣️||porozmawiać z kierownikiem|b1x01_travelproblems.to_speak_to_the_manager
+відкритий бутерброд (smørrebrød)|open sandwich|et smørrebrød|la tartina|🥪||otwarta kanapka|b1x01_nutrition.open_sandwich
+здорове харчування|healthy eating|sund kost|l'alimentazione sana|🥕||zdrowe odżywianie|b1x01_nutrition.healthy_eating
+дізнаватися|to find out|at finde ud af|scoprire|🕵️||dowiedzieć się|b1x01_phrasal.to_find_out
+забирати (когось)|to pick up|at hente|andare a prendere|🚙|pick_up_,_to|odbierać|b1x01_phrasal.to_pick_up
+#mix_A2_6|Різні слова 6|🧩|A2
+давати поради|to give advice|at give råd|dare consigli|🗨️||udzielać rad|b1x01_collocations.to_give_advice
+якнайшвидше|as soon as possible|så hurtigt som muligt|il prima possibile|⚡||jak najszybciej|b1x01_collocations.as_soon_as_possible
+заощаджувати енергію|to save energy|at spare på energien|risparmiare energia|🔌||oszczędzać energię|b1x02_environment.to_save_energy
+пластиковий пакет|plastic bag|en plastikpose|il sacchetto di plastica|🛍️|plastic_bag|torba foliowa|b1x02_environment.plastic_bag
+викидати|to throw away|at smide ud|buttare via|🚮|throw_away_,_to|wyrzucać|b1x02_recycling.to_throw_away
+сміттєвий бак|bin|en skraldespand|il bidone della spazzatura|🗑️||kosz na śmieci|b1x02_recycling.bin
+близький друг|close friend|en nær ven|l'amico stretto|🫂||bliski przyjaciel|b1x02_relationships.close_friend
+#mix_A2_9|Різні слова 9|🧩|A2
+кишенькові гроші|pocket money|lommepenge|la paghetta|👛||kieszonkowe|b2x03_money.pocket_money
+електромобіль|electric car|en elbil|l'auto elettrica|🚗🔌||samochód elektryczny|b2x03_energy.electric_car
+багатоквартирний будинок|block of flats|en etageejendom|il condominio|🏢||blok|b2x03_urban.block_of_flats
+З найкращими побажаннями (у листі)|Best wishes|De bedste hilsner|Un caro saluto|💌||Z najlepszymi życzeniami|c2x02_formal.best_wishes
+пані та панове|ladies and gentlemen|mine damer og herrer|signore e signori|🎤||panie i panowie|c2x02_formal.ladies_and_gentlemen
+#a2x01_doctor~B1|У лікаря та в аптеці|🩺|B1
+сироп від кашлю|cough syrup|en hostesaft|lo sciroppo per la tosse|🍯||syrop na kaszel|a2x01_doctor.cough_syrup
+пластир|plaster|et plaster|il cerotto|🩹|plaster|plaster|a2x01_doctor.plaster
+фармацевт|pharmacist|en farmaceut|il farmacista|⚕️||farmaceuta|a2x01_doctor.pharmacist
+термометр|thermometer|et termometer|il termometro|🌡️|thermometer|termometr|a2x01_doctor.thermometer
+#a2x01_post_bank~B1|Пошта і банк|🏦|B1
+дрібні гроші|small change|småpenge|gli spiccioli|🪙||drobne|a2x01_post_bank.small_change
+дебетова картка|debit card|et betalingskort|la carta di debito|💳||karta debetowa|a2x01_post_bank.debit_card
+обмінювати гроші|to exchange money|at veksle penge|cambiare i soldi|💱||wymieniać pieniądze|a2x01_post_bank.to_exchange_money
+ПІН-код|PIN code|en pinkode|il codice PIN|🔢||kod PIN|a2x01_post_bank.pin_code
+#a2x01_flat~B1|Оренда житла і хатні справи|🏠|B1
+мебльований|furnished|møbleret|arredato|🪑||umeblowany|a2x01_flat.furnished
+пилососити|to vacuum|at støvsuge|passare l'aspirapolvere|🧹||odkurzać|a2x01_flat.to_vacuum
+витирати пил|to dust|at tørre støv af|spolverare|🪶|dust_,_to|ścierać kurze|a2x01_flat.to_dust
+підмітати|to sweep|at feje|spazzare|🧹||zamiatać|a2x01_flat.to_sweep
+мити підлогу|to mop the floor|at vaske gulv|lavare il pavimento|🧽||myć podłogę|a2x01_flat.to_mop_the_floor
+#a2x02_animals|Тварини і птахи|🦔|B1
+орел|eagle|en ørn|l'aquila|🦅||orzeł|a2x02_animals.eagle
+акула|shark|en haj|lo squalo|🦈||rekin|a2x02_animals.shark
+гуска|goose|en gås|l'oca|🪿|goose|gęś|a2x02_animals.goose
+лебідь|swan|en svane|il cigno|🦢|swan|łabędź|a2x02_animals.swan
+олень|deer|en hjort|il cervo|🦌|deer|jeleń|a2x02_animals.deer
+черепаха (суходільна)|tortoise|en skildpadde|la tartaruga|🐢|tortoise|żółw|a2x02_animals.tortoise
+#a2x02_phrasal~B1|Фразові дієслова і сталі вирази|🔗|B1
+шукати (у словнику)|to look up|at slå op|cercare|🔎||sprawdzać|a2x02_phrasal.to_look_up
+класти на місце|to put away|at lægge på plads|mettere via|📦|put_away_,_to|odkładać na miejsce|a2x02_phrasal.to_put_away
+залишатися вдома|to stay in|at blive hjemme|restare a casa|🏡||zostawać w domu|a2x02_phrasal.to_stay_in
+вирушати (в дорогу)|to set off|at tage af sted|partire|🚗||wyruszać|a2x02_phrasal.to_set_off
+#b1_phrases|Вирази|💬|B1
+На мою думку|In my opinion|Efter min mening|Secondo me|💭|think_,_to|Moim zdaniem|b1_phrases.in_my_opinion
+Я не згоден|I disagree|Jeg er uenig|Non sono d'accordo|👎||Nie zgadzam się|b1_phrases.i_disagree
+Це залежить|It depends|Det kommer an på|Dipende|⚖️||To zależy|b1_phrases.it_depends
+Наскільки я знаю|As far as I know|Så vidt jeg ved|Per quanto ne so|📚||O ile wiem|b1_phrases.as_far_as_i_know
+Іншими словами|In other words|Med andre ord|In altre parole|🗣️||Innymi słowy|b1_phrases.in_other_words
+З одного боку|On the one hand|På den ene side|Da un lato|☝️|left_hand|Z jednej strony|b1_phrases.on_the_one_hand
+З іншого боку|On the other hand|På den anden side|D'altra parte|✌️|right_hand|Z drugiej strony|b1_phrases.on_the_other_hand
+До речі|By the way|Forresten|A proposito|💡||Przy okazji|b1_phrases.by_the_way
+#b1m_phrases|Ще вирази|🗨️|B1
+Це не моя справа|It's none of my business|Det er ikke min sag|Non sono affari miei|🤐||To nie moja sprawa|b1m_phrases.it_s_none_of_my_business
+Чесно кажучи|To be honest|Ærligt talt|Sinceramente|😬||Szczerze mówiąc|b1m_phrases.to_be_honest
+Не можу дочекатися|I can't wait|Jeg glæder mig|Non vedo l'ora|🤩||Nie mogę się doczekać|b1m_phrases.i_can_t_wait
+Нема за що|Don't mention it|Ingen årsag|Di niente|🙂||Nie ma za co|b1m_phrases.don_t_mention_it
+Я передумав|I've changed my mind|Jeg har ombestemt mig|Ho cambiato idea|🔀|change_mind_,_to|Zmieniłem zdanie|b1m_phrases.i_ve_changed_my_mind
+Яке полегшення!|What a relief!|Sikke en lettelse!|Che sollievo!|😮‍💨||Co za ulga!|b1m_phrases.what_a_relief
+Мене це влаштовує|That suits me|Det passer mig fint|Mi va bene|👌||To mi pasuje|b1m_phrases.that_suits_me
+Як пройшло?|How did it go?|Hvordan gik det?|Com'è andata?|❓||Jak poszło?|b1m_phrases.how_did_it_go
+Залиш це мені|Leave it to me|Lad mig klare det|Lascia fare a me|💪||Zostaw to mnie|b1m_phrases.leave_it_to_me
+#b1x01_jobsearch|Пошук роботи|🔎|B1
+оголошення про вакансію|job advert|en jobannonce|l'annuncio di lavoro|📰||ogłoszenie o pracy|b1x01_jobsearch.job_advert
+супровідний лист|cover letter|en motiveret ansøgning|la lettera di presentazione|✉️||list motywacyjny|b1x01_jobsearch.cover_letter
+досвід роботи|work experience|erhvervserfaring|l'esperienza lavorativa|💼||doświadczenie zawodowe|b1x01_jobsearch.work_experience
+трудовий договір|employment contract|en ansættelseskontrakt|il contratto di lavoro|📑||umowa o pracę|b1x01_jobsearch.employment_contract
+робота на повну ставку|full-time job|et fuldtidsjob|il lavoro a tempo pieno|🕘||praca na pełen etat|b1x01_jobsearch.full_time_job
+робота на неповну ставку|part-time job|et deltidsjob|il lavoro part-time|🕐||praca na pół etatu|b1x01_jobsearch.part_time_job
+подаватися на вакансію|to apply for a job|at søge et job|candidarsi per un lavoro|📨||ubiegać się o pracę|b1x01_jobsearch.to_apply_for_a_job
+#b1x01_travelproblems|Проблеми в подорожі та скарги|🧳|B1
+проміжна посадка|stopover|en mellemlanding|lo scalo|🛬||międzylądowanie|b1x01_travelproblems.stopover
+бюро знахідок|lost property office|et hittegodskontor|l'ufficio oggetti smarriti|🔎||biuro rzeczy znalezionych|b1x01_travelproblems.lost_property_office
+туристична страховка|travel insurance|en rejseforsikring|l'assicurazione di viaggio|🛡️||ubezpieczenie podróżne|b1x01_travelproblems.travel_insurance
+не працює (про апарат)|out of order|ude af drift|fuori servizio|⛔||nieczynny|b1x01_travelproblems.out_of_order
+ваучер|voucher|en værdikupon|il buono|🎟️||bon|b1x01_travelproblems.voucher
+застрягнути|to get stuck|at sidde fast|rimanere bloccato|🚧||utknąć|b1x01_travelproblems.to_get_stuck
+служба підтримки клієнтів|customer service|kundeservice|il servizio clienti|☎️||obsługa klienta|b1x01_travelproblems.customer_service
+проколене колесо|flat tyre|en punktering|la gomma bucata|🛞|flat_tyre|przebita opona|b1x01_travelproblems.flat_tyre
+кишеньковий злодій|pickpocket|en lommetyv|il borseggiatore|👛||kieszonkowiec|b1x01_travelproblems.pickpocket
+ламатися (про машину)|to break down|at gå i stykker|guastarsi|🚗||psuć się|b1x01_travelproblems.to_break_down
+#b1x01_nutrition|Їжа й харчування|🥗|B1
+харчова алергія|food allergy|en fødevareallergi|l'allergia alimentare|🥜||alergia pokarmowa|b1x01_nutrition.food_allergy
+безглютеновий|gluten-free|glutenfri|senza glutine|🌽||bezglutenowy|b1x01_nutrition.gluten_free
+термін придатності|best-before date|en holdbarhedsdato|la data di scadenza|📅||termin przydatności do spożycia|b1x01_nutrition.best_before_date
+порція|portion|en portion|la porzione|🍽️||porcja|b1x01_nutrition.portion
+житній хліб|rye bread|et rugbrød|il pane di segale|🍞||chleb żytni|b1x01_nutrition.rye_bread
+#b1x01_phrasal|Фразові дієслова|🧷|B1
+здаватися (припиняти спроби)|to give up|at give op|arrendersi|🏳️||poddawać się|b1x01_phrasal.to_give_up
+засновувати (бізнес)|to set up|at starte|avviare|🚀||zakładać|b1x01_phrasal.to_set_up
+залагоджувати (проблему)|to sort out|at ordne|sistemare|🔧||załatwiać|b1x01_phrasal.to_sort_out
+відкладати (на потім)|to put off|at udsætte|rimandare|⏸️||odkładać|b1x01_phrasal.to_put_off
+залишитися без (запасів)|to run out of|at løbe tør for|rimanere senza|🪫||skończyć się|b1x01_phrasal.to_run_out_of
+з нетерпінням чекати|to look forward to|at glæde sig til|non vedere l'ora|🤩||nie móc się doczekać|b1x01_phrasal.to_look_forward_to
+ладнати з (кимось)|to get on with|at komme godt ud af det med|andare d'accordo con|😊||dogadywać się|b1x01_phrasal.to_get_on_with
+висаджувати (когось)|to drop off|at sætte af|lasciare|🚕||podwozić|b1x01_phrasal.to_drop_off
+здавати (роботу)|to hand in|at aflevere|consegnare|📥||oddawać|b1x01_phrasal.to_hand_in
+справлятися з|to deal with|at håndtere|affrontare|🛠️||radzić sobie z|b1x01_phrasal.to_deal_with
+скорочувати (споживання)|to cut down on|at skære ned på|limitare|✂️||ograniczać|b1x01_phrasal.to_cut_down_on
+позбуватися|to get rid of|at slippe af med|sbarazzarsi di|🗑️||pozbywać się|b1x01_phrasal.to_get_rid_of
+надолужувати|to catch up|at indhente|recuperare|🏃||nadrabiać|b1x01_phrasal.to_catch_up
+#b1x01_collocations|Сталі вирази|🔗|B1
+ухвалювати рішення|to make a decision|at træffe en beslutning|prendere una decisione|🤔||podejmować decyzję|b1x01_collocations.to_make_a_decision
+ризикувати|to take a risk|at tage en risiko|correre un rischio|🎲||ryzykować|b1x01_collocations.to_take_a_risk
+робити успіхи|to make progress|at gøre fremskridt|fare progressi|📶||robić postępy|b1x01_collocations.to_make_progress
+звертати увагу|to pay attention|at være opmærksom|prestare attenzione|👂||zwracać uwagę|b1x01_collocations.to_pay_attention
+підтримувати зв'язок|to keep in touch|at holde kontakten|tenersi in contatto|📲||utrzymywać kontakt|b1x01_collocations.to_keep_in_touch
+докладати зусиль|to make an effort|at gøre en indsats|fare uno sforzo|💪||dokładać starań|b1x01_collocations.to_make_an_effort
+дотримувати обіцянки|to keep a promise|at holde et løfte|mantenere una promessa|🤙||dotrzymywać obietnicy|b1x01_collocations.to_keep_a_promise
+марнувати час|to waste time|at spilde tid|perdere tempo|⌛||marnować czas|b1x01_collocations.to_waste_time
+робити все можливе|to do your best|at gøre sit bedste|fare del proprio meglio|🥇||dać z siebie wszystko|b1x01_collocations.to_do_your_best
+мати сенс|to make sense|at give mening|avere senso|💡||mieć sens|b1x01_collocations.to_make_sense
+скористатися (нагодою)|to take advantage of|at udnytte|approfittare di|🎯||skorzystać z|b1x01_collocations.to_take_advantage_of
+вести бізнес|to run a business|at drive en virksomhed|gestire un'attività|🏪||prowadzić firmę|b1x01_collocations.to_run_a_business
+брати на себе відповідальність|to take responsibility|at tage ansvar|assumersi la responsabilità|🫡||brać odpowiedzialność|b1x01_collocations.to_take_responsibility
+звикати до|to get used to|at vænne sig til|abituarsi a|🔄||przyzwyczajać się do|b1x01_collocations.to_get_used_to
+навмисно|on purpose|med vilje|apposta|😈||celowo|b1x01_collocations.on_purpose
+помилково|by mistake|ved en fejl|per sbaglio|🙈||przez pomyłkę|b1x01_collocations.by_mistake
+#b1x02_neighbours|Сусіди і життя в будинку|🏘️|B1
+загальні збори|general meeting|en generalforsamling|l'assemblea condominiale|🗳️||walne zgromadzenie|b1x02_neighbours.general_meeting
+поштова скринька|letterbox|en postkasse|la cassetta delle lettere|📬||skrzynka pocztowa|b1x02_neighbours.letterbox
+дверний дзвоник|doorbell|en dørklokke|il campanello|🛎️||dzwonek do drzwi|b1x02_neighbours.doorbell
+добре ладнати (з кимось)|to get on well with|at komme godt ud af det med|andare d'accordo con|🙂||dobrze się dogadywać|b1x02_neighbours.to_get_on_well_with
+навіс для велосипедів|bike shed|et cykelskur|il deposito per biciclette|🚲||wiata na rowery|b1x02_neighbours.bike_shed
+#b1x02_environment|Довкілля і клімат|🌍|B1
+глобальне потепління|global warming|global opvarmning|il riscaldamento globale|🔥||globalne ocieplenie|b1x02_environment.global_warming
+зміна клімату|climate change|klimaforandringer|il cambiamento climatico|🌡️||zmiana klimatu|b1x02_environment.climate_change
+сонячна панель|solar panel|et solpanel|il pannello solare|🔆||panel słoneczny|b1x02_environment.solar_panel
+екологічний|environmentally friendly|miljøvenlig|ecologico|🌱||ekologiczny|b1x02_environment.environmentally_friendly
+енергоощадний|energy-saving|energibesparende|a risparmio energetico|💡||energooszczędny|b1x02_environment.energy_saving
+#b1x02_recycling|Сортування та переробка|♻️|B1
+сортувати сміття|to sort waste|at sortere affald|fare la raccolta differenziata|🗂️||segregować śmieci|b1x02_recycling.to_sort_waste
+харчові відходи|food waste|madaffald|gli scarti alimentari|🍌||odpady spożywcze|b1x02_recycling.food_waste
+застава за пляшку|bottle deposit|pant|la cauzione|🍾||kaucja za butelkę|b1x02_recycling.bottle_deposit
+контейнер для скла|bottle bank|en glascontainer|la campana del vetro|🫙||pojemnik na szkło|b1x02_recycling.bottle_bank
+картон|cardboard|pap|il cartone|📦|cardboard|tektura|b1x02_recycling.cardboard
+пункт переробки|recycling centre|en genbrugsstation|l'isola ecologica|♻️||punkt zbiórki odpadów|b1x02_recycling.recycling_centre
+повторно використовувати|to reuse|at genbruge|riutilizzare|🔁||ponownie wykorzystywać|b1x02_recycling.to_reuse
+секонд-хенд (магазин)|second-hand shop|en genbrugsbutik|il negozio dell'usato|👕||second hand|b1x02_recycling.second_hand_shop
+#b1x02_family|Сімейне життя|👨‍👩‍👧|B1
+одинокий батько (мати)|single parent|en enlig forsørger|il genitore single|👤||samotny rodzic|b1x02_family.single_parent
+розлучатися|to get divorced|at blive skilt|divorziare|💔||rozwodzić się|b1x02_family.to_get_divorced
+сімейна традиція|family tradition|en familietradition|la tradizione di famiglia|🎄||tradycja rodzinna|b1x02_family.family_tradition
+хатні справи|household chores|husarbejde|le faccende domestiche|🧽||obowiązki domowe|b1x02_family.household_chores
+#b1x02_opinions|Думки та емоції|💭|B1
+Я розумію твою думку|I see your point|Jeg kan godt se din pointe|Capisco il tuo punto di vista|👍||Rozumiem twój punkt widzenia|b1x02_opinions.i_see_your_point
+Боюся, я не можу погодитися|I'm afraid I can't agree|Jeg er desværre ikke enig|Mi dispiace, ma non sono d'accordo|🙅||Obawiam się, że nie mogę się zgodzić|b1x02_opinions.i_m_afraid_i_can_t_agree
+Аж ніяк!|Absolutely not!|Absolut ikke!|Assolutamente no!|🚫||Absolutnie nie!|b1x02_opinions.absolutely_not
+Слушне зауваження|That's a good point|Det er en god pointe|È un'osservazione giusta|💡||Słuszna uwaga|b1x02_opinions.that_s_a_good_point
+Вирішувати тобі|It's up to you|Det er op til dig|Decidi tu|🤷||To zależy od ciebie|b1x02_opinions.it_s_up_to_you
+#b1x03_transport|Транспорт і дорожній рух|🚦|B1
+пішохідний перехід|pedestrian crossing|et fodgængerfelt|il passaggio pedonale|🚸||przejście dla pieszych|b1x03_transport.pedestrian_crossing
+обмеження швидкості|speed limit|en hastighedsgrænse|il limite di velocità|🚫||ograniczenie prędkości|b1x03_transport.speed_limit
+ремінь безпеки|seat belt|en sikkerhedssele|la cintura di sicurezza|💺|seat_belt|pas bezpieczeństwa|b1x03_transport.seat_belt
+година пік|rush hour|en myldretid|l'ora di punta|⏰||godzina szczytu|b1x03_transport.rush_hour
+підвезти когось|to give someone a lift|at give nogen et lift|dare un passaggio a qualcuno|🚗||podwieźć kogoś|b1x03_transport.to_give_someone_a_lift
+контролер (квитків)|ticket inspector|en billetkontrollør|il controllore|🎫||kontroler biletów|b1x03_transport.ticket_inspector
+вулиця з одностороннім рухом|one-way street|en ensrettet gade|la strada a senso unico|⬆️||ulica jednokierunkowa|b1x03_transport.one_way_street
+застрягти в заторі|to be stuck in traffic|at sidde fast i trafikken|restare bloccato nel traffico|🚙||utknąć w korku|b1x03_transport.to_be_stuck_in_traffic
+штраф за паркування|parking ticket|en parkeringsbøde|la multa per divieto di sosta|🧾||mandat za parkowanie|b1x03_transport.parking_ticket
+камера контролю швидкості|speed camera|et fartkamera|l'autovelox|📸||fotoradar|b1x03_transport.speed_camera
+заправляти (машину)|to fill up|at tanke op|fare il pieno|⛽||tankować|b1x03_transport.to_fill_up
+#b1x03_shopping|Покупки і права споживача|🛍️|B1
+візок для покупок|shopping trolley|en indkøbsvogn|il carrello della spesa|🛒||wózek sklepowy|b1x03_shopping.shopping_trolley
+чек для обміну подарунка|gift receipt|en byttelap|lo scontrino di cortesia|🎁||paragon prezentowy|b1x03_shopping.gift_receipt
+отримати гроші назад|to get a refund|at få pengene tilbage|ottenere un rimborso|💶||dostać zwrot pieniędzy|b1x03_shopping.to_get_a_refund
+вітрина|shop window|et udstillingsvindue|la vetrina|🪟||wystawa sklepowa|b1x03_shopping.shop_window
+#b1x03_phone|Спілкування і телефонні дзвінки|📞|B1
+зачекати (на лінії)|to hold on|at vente et øjeblik|restare in linea|⏳||nie rozłączać się|b1x03_phone.to_hold_on
+код країни|country code|en landekode|il prefisso internazionale|🌍||numer kierunkowy kraju|b1x03_phone.country_code
+бути зайнятим (про лінію)|to be engaged|at være optaget|essere occupato|🔴||być zajętym|b1x03_phone.to_be_engaged
+шепотіти|to whisper|at hviske|sussurrare|🤫|whisper_,_to|szeptać|b1x03_phone.to_whisper
+#b1x03_city|Місто і послуги|🏙️|B1
+вивезення сміття|rubbish collection|skraldeafhentning|la raccolta dei rifiuti|🚛||wywóz śmieci|b1x03_city.rubbish_collection
+центр обслуговування громадян|citizen service centre|Borgerservice|lo sportello del cittadino|🏢||biuro obsługi mieszkańców|b1x03_city.citizen_service_centre
+хімчистка|dry cleaner's|et renseri|la tintoria|👔||pralnia chemiczna|b1x03_city.dry_cleaner_s
+вуличний ліхтар|street light|en gadelygte|il lampione|💡||latarnia uliczna|b1x03_city.street_light
+стоянка таксі|taxi rank|en taxaholdeplads|il posteggio dei taxi|🚕||postój taksówek|b1x03_city.taxi_rank
+подавати заяву (на щось)|to apply for|at ansøge om|fare domanda di|📝||składać wniosek o|b1x03_city.to_apply_for
+не працювати (про техніку)|to be out of order|at være i stykker|essere fuori servizio|🚫||być nieczynnym|b1x03_city.to_be_out_of_order
+#b1x03_linking|Прислівники і зв'язні слова|🔗|B1
+насправді|in fact|faktisk|in realtà|🔎||w rzeczywistości|b1x03_linking.in_fact
+досі (до цього часу)|so far|indtil videre|finora|📍||do tej pory|b1x03_linking.so_far
+випадково|by accident|ved et uheld|per sbaglio|😬||przypadkiem|b1x03_linking.by_accident
+крім того|in addition|derudover|inoltre|➕||ponadto|b1x03_linking.in_addition
+зрештою (адже)|after all|trods alt|dopotutto|🤝||w końcu|b1x03_linking.after_all
+#b1x03_idioms|Ідіоми і сталі вирази|💡|B1
+вирішити (остаточно)|to make up one's mind|at bestemme sig|decidersi|🤔||zdecydować się|b1x03_idioms.to_make_up_one_s_mind
+розслабитися (не перевтомлюватися)|to take it easy|at tage det roligt|prendersela comoda|😎||wyluzować się|b1x03_idioms.to_take_it_easy
+рано чи пізно|sooner or later|før eller siden|prima o poi|⌛||prędzej czy później|b1x03_idioms.sooner_or_later
+набриднути (бути ситим по горло)|to be fed up with|at være træt af|essere stufo di|😤||mieć dość|b1x03_idioms.to_be_fed_up_with
+передумати|to change one's mind|at skifte mening|cambiare idea|🔄||zmienić zdanie|b1x03_idioms.to_change_one_s_mind
+бути вартим того|to be worth it|at være det værd|valerne la pena|💎||być tego wartym|b1x03_idioms.to_be_worth_it
+почуватися як удома|to feel at home|at føle sig hjemme|sentirsi a casa|🏠||czuć się jak w domu|b1x03_idioms.to_feel_at_home
+шкода|that's a shame|det er en skam|è un peccato|😔||szkoda|b1x03_idioms.that_s_a_shame
+#b2x01_labour~B1|Ринок праці в Данії|👷|B1
+роботодавець|employer|en arbejdsgiver|il datore di lavoro|🏢||pracodawca|b2x01_labour.employer
+працівник|employee|en medarbejder|il dipendente|🧑‍💼||pracownik|b2x01_labour.employee
+працювати неповний робочий день|to work part-time|at arbejde på deltid|lavorare part-time|🕒||pracować w niepełnym wymiarze godzin|b2x01_labour.to_work_part_time
+лікарняний|sick leave|en sygemelding|il congedo per malattia|🤒||zwolnienie lekarskie|b2x01_labour.sick_leave
+#b2x01_politics~B1|Політика й вибори|🗳️|B1
+депутат парламенту|member of parliament|et folketingsmedlem|il deputato|🧑‍💼||poseł|b2x01_politics.member_of_parliament
+місцеві вибори|local elections|et kommunalvalg|le elezioni amministrative|🗳️||wybory samorządowe|b2x01_politics.local_elections
+прем'єр-міністр|prime minister|en statsminister|il primo ministro|👔||premier|b2x01_politics.prime_minister
+політична партія|political party|et politisk parti|il partito politico|🎗️||partia polityczna|b2x01_politics.political_party
+виборче право|right to vote|stemmeret|il diritto di voto|✋||prawo wyborcze|b2x01_politics.right_to_vote
+#b2x01_education~B1|Система освіти|🎓|B1
+державна школа|state school|en folkeskole|la scuola pubblica|🏫||szkoła publiczna|b2x01_education.state_school
+гімназія (старша школа)|upper secondary school|et gymnasium|il liceo|🎓||liceum|b2x01_education.upper_secondary_school
+ступінь бакалавра|bachelor's degree|en bachelorgrad|la laurea triennale|📜||licencjat|b2x01_education.bachelor_s_degree
+ступінь магістра|master's degree|en kandidatgrad|la laurea magistrale|📜||tytuł magistra|b2x01_education.master_s_degree
+навчальний рік|academic year|et studieår|l'anno accademico|📅||rok akademicki|b2x01_education.academic_year
+викладач університету|lecturer|en lektor|il docente universitario|👩‍🏫||wykładowca|b2x01_education.lecturer
+усний іспит|oral exam|en mundtlig eksamen|l'esame orale|🗣️||egzamin ustny|b2x01_education.oral_exam
+освіта для дорослих|adult education|voksenuddannelse|l'educazione degli adulti|🧓||kształcenie dorosłych|b2x01_education.adult_education
+#b2x01_collocations~B1|Колокації з make, take, do, have|🧩|B1
+отримувати прибуток|to make a profit|at give overskud|realizzare un profitto|💰||osiągać zysk|b2x01_collocations.to_make_a_profit
+брати участь у|to take part in|at deltage i|partecipare a|🙋‍♀️||brać udział w|b2x01_collocations.to_take_part_in
+відбуватися|to take place|at finde sted|avere luogo|📍||odbywać się|b2x01_collocations.to_take_place
+вести бізнес|to do business|at gøre forretninger|fare affari|🤝||prowadzić interesy|b2x01_collocations.to_do_business
+робити все можливе|to do one's best|at gøre sit bedste|fare del proprio meglio|🏅||robić wszystko, co w swojej mocy|b2x01_collocations.to_do_one_s_best
+зробити комусь послугу|to do someone a favour|at gøre nogen en tjeneste|fare un favore a qualcuno|🙏||wyświadczyć komuś przysługę|b2x01_collocations.to_do_someone_a_favour
+мати щось спільне|to have something in common|at have noget til fælles|avere qualcosa in comune|🔗||mieć coś wspólnego|b2x01_collocations.to_have_something_in_common
+#b2x02_fitness|Фітнес і спосіб життя|🏋️|B1
+бути у гарній формі|to be in good shape|at være i god form|essere in forma|💪||być w dobrej formie|b2x02_fitness.to_be_in_good_shape
+сідати на дієту|to go on a diet|at gå på kur|mettersi a dieta|🥗||przejść na dietę|b2x02_fitness.to_go_on_a_diet
+набирати вагу|to put on weight|at tage på|ingrassare|🍰||przybierać na wadze|b2x02_fitness.to_put_on_weight
+піднімати штангу|to lift weights|at løfte vægte|sollevare pesi|🏋️||podnosić ciężary|b2x02_fitness.to_lift_weights
+#b2x02_travel|Подорожі|🧳|B1
+затримка рейсу|flight delay|en flyforsinkelse|il ritardo del volo|⏳||opóźnienie lotu|b2x02_travel.flight_delay
+прикордонний контроль|border control|en grænsekontrol|il controllo di frontiera|🛂||kontrola graniczna|b2x02_travel.border_control
+видача багажу|baggage reclaim|et bagagebånd|il ritiro bagagli|🧳||odbiór bagażu|b2x02_travel.baggage_reclaim
+туристична пам'ятка|tourist attraction|en turistattraktion|l'attrazione turistica|🗽||atrakcja turystyczna|b2x02_travel.tourist_attraction
+обмінний пункт|bureau de change|et vekselkontor|l'ufficio di cambio|💱||kantor|b2x02_travel.bureau_de_change
+високий сезон|high season|en højsæson|l'alta stagione|☀️||wysoki sezon|b2x02_travel.high_season
+подорожувати з рюкзаком|to go backpacking|at tage på rygsækrejse|viaggiare zaino in spalla|🎒||podróżować z plecakiem|b2x02_travel.to_go_backpacking
+#b2x02_crime~B1|Злочинність і безпека|🚨|B1
+камера спостереження|CCTV camera|et overvågningskamera|la telecamera di sorveglianza|📹||kamera monitoringu|b2x02_crime.cctv_camera
+сигналізація (від злодіїв)|burglar alarm|en tyverialarm|l'antifurto|🚨||alarm antywłamaniowy|b2x02_crime.burglar_alarm
+заявляти в поліцію|to report to the police|at anmelde til politiet|denunciare alla polizia|📞||zgłosić na policję|b2x02_crime.to_report_to_the_police
+штраф|fine|en bøde|la multa|🧾||mandat|b2x02_crime.fine
+#b2x03_energy~B1|Енергія і сталий розвиток|🔋|B1
+відключення світла|power cut|en strømafbrydelse|l'interruzione di corrente|🕯️||przerwa w dostawie prądu|b2x03_energy.power_cut
+атомна енергетика|nuclear power|atomkraft|l'energia nucleare|⚛️||energetyka jądrowa|b2x03_energy.nuclear_power
+зарядна станція|charging station|en ladestander|la colonnina di ricarica|🔌||stacja ładowania|b2x03_energy.charging_station
+сонячна енергія|solar energy|solenergi|l'energia solare|☀️||energia słoneczna|b2x03_energy.solar_energy
+#b2x03_urban~B1|Містобудування й житло|🏙️|B1
+пішохідна вулиця|pedestrian street|en gågade|la via pedonale|🚶||deptak|b2x03_urban.pedestrian_street
+велодоріжка|cycle lane|en cykelsti|la pista ciclabile|🚲||ścieżka rowerowa|b2x03_urban.cycle_lane
+окремий будинок|detached house|et parcelhus|la casa indipendente|🏡||dom jednorodzinny|b2x03_urban.detached_house
+зелена зона|green space|et grønt område|l'area verde|🌳||teren zielony|b2x03_urban.green_space
+підвищення орендної плати|rent increase|en huslejestigning|l'aumento dell'affitto|📈||podwyżka czynszu|b2x03_urban.rent_increase
+#b2x03_linking~B1|Зв'язки для есе|🔗|B1
+попри те що|even though|selvom|anche se|🌧️||mimo że|b2x03_linking.even_though
+попри|in spite of|til trods for|malgrado|🛡️||mimo|b2x03_linking.in_spite_of
+як наслідок|as a result|som følge heraf|di conseguenza|📊||w rezultacie|b2x03_linking.as_a_result
+наприклад|for instance|for eksempel|ad esempio|👉||na przykład|b2x03_linking.for_instance
+якщо тільки (за умови)|as long as|så længe|purché|⏳||o ile|b2x03_linking.as_long_as
+через (з причини)|due to|på grund af|a causa di|🧲||z powodu|b2x03_linking.due_to
+окрім|apart from|bortset fra|a parte|🧩||oprócz|b2x03_linking.apart_from
+#c2x02_formal~B1|Звороти для листів і промов|✉️|B1
+У додатку надсилаю|Please find attached|Vedhæftet finder du|Trova in allegato|📎||W załączeniu przesyłam|c2x02_formal.please_find_attached
+Чекаю на вашу відповідь|I look forward to hearing from you|Jeg ser frem til at høre fra dig|Resto in attesa di un Suo riscontro|📬||Czekam na Państwa odpowiedź|c2x02_formal.i_look_forward_to_hearing_from_you
+дякую за увагу|thank you for your attention|tak for opmærksomheden|grazie per l'attenzione|🙏||dziękuję za uwagę|c2x02_formal.thank_you_for_your_attention
+дозвольте представити|allow me to introduce|tillad mig at præsentere|mi permetta di presentare|🤝||pozwólcie, że przedstawię|c2x02_formal.allow_me_to_introduce
+прийміть мої вибачення|please accept my apologies|modtag venligst min undskyldning|La prego di accettare le mie scuse|🙇||proszę przyjąć moje przeprosiny|c2x02_formal.please_accept_my_apologies
+#mix_B1_3|Різні слова 3|🧩|B1
+загадувати бажання|to make a wish|at ønske sig noget|esprimere un desiderio|🌠||pomyśleć życzenie|a2x01_celebrations.to_make_a_wish
+Ні в якому разі!|No way!|Ikke tale om!|Neanche per sogno!|🙅||Nie ma mowy!|a2x01_phrases.no_way
+капці|slippers|hjemmesko|le pantofole|🥿|slippers|kapcie|a2x02_clothes.slippers
+блискавка (застібка)|zip|en lynlås|la cerniera|🤐|zip|suwak|a2x02_clothes.zip
+#mix_B1_4|Різні слова 4|🧩|B1
+диплом|diploma|et eksamensbevis|il diploma|📜||dyplom|b1m_education.diploma
+списувати (на іспиті)|to cheat|at snyde|copiare|🙈|cheat_,_to|ściągać|b1m_education.to_cheat
+ведучий (програми)|presenter|en vært|il conduttore|🎙️||prowadzący|b1m_media.presenter
+кінорежисер|film director|en instruktør|il regista|🎬||reżyser|b1m_media.film_director
+#mix_B1_5|Різні слова 5|🧩|B1
+пилосос|vacuum cleaner|en støvsuger|l'aspirapolvere|🧹|vacuum_cleaner_1|odkurzacz|b1m_housing.vacuum_cleaner
+прати (одяг)|to do the laundry|at vaske tøj|fare il bucato|👕|laundry_basket|robić pranie|b1m_housing.to_do_the_laundry
+робоча атмосфера|working environment|et arbejdsmiljø|l'ambiente di lavoro|🌤️||atmosfera w pracy|b1x01_workplace.working_environment
+лист очікування|waiting list|en venteliste|la lista d'attesa|⏳||lista oczekujących|b1x02_housing.waiting_list
+#mix_B1_6|Різні слова 6|🧩|B1
+пральня (спільна)|laundry room|et vaskeri|la lavanderia|🧺||pralnia|b1x02_housing.laundry_room
+нежить|runny nose|snue|il naso che cola|🤧||katar|b1x02_symptoms.runny_nose
+закладений ніс|blocked nose|en tilstoppet næse|il naso chiuso|👃||zatkany nos|b1x02_symptoms.blocked_nose
+впливати|to influence|at påvirke|influenzare|🎯||wpływać|b2_society.to_influence
+#mix_B1_7|Різні слова 7|🧩|B1
+час — гроші|time is money|tid er penge|il tempo è denaro|⏳💰||czas to pieniądz|b2_phrases.time_is_money
+заява на роботу|job application|en jobansøgning|la candidatura|📨||podanie o pracę|b2x01_workplace.job_application
+нарада персоналу|staff meeting|et personalemøde|la riunione del personale|👥||zebranie pracowników|b2x01_workplace.staff_meeting
+посадова інструкція|job description|en stillingsbeskrivelse|il mansionario|📄||zakres obowiązków|b2x01_workplace.job_description
+бути на лікарняному|to be on sick leave|at være sygemeldt|essere in malattia|🤒||być na zwolnieniu lekarskim|b2x02_health.to_be_on_sick_leave
+прийом у лікаря|doctor's appointment|en lægetid|l'appuntamento dal medico|📅||wizyta u lekarza|b2x02_health.doctor_s_appointment
+#mix_B1_8|Різні слова 8|🧩|B1
+рідна мова|mother tongue|et modersmål|la madrelingua|🗣️||język ojczysty|b2x02_global.mother_tongue
+напам'ять|by heart|udenad|a memoria|🧠||na pamięć|b2x02_idioms.by_heart
+відкладати гроші|to save up|at spare op|mettere da parte|🐷||odkładać pieniądze|b2x03_money.to_save_up
+картка лояльності|loyalty card|et kundekort|la carta fedeltà|💳||karta lojalnościowa|b2x03_money.loyalty_card`;
+const CURRIC={"themes":{"cur_a1_01":{"lv":"A1","o":1,"t":"Привітання і ввічливість","life":"Знайомство","g":"to be · I'm / you're","ph":[["How are you? — I'm fine, thanks. And you?","Як справи? — Добре, дякую. А в тебе?"],["Thank you very much. — You're welcome.","Дуже дякую. — Будь ласка."],["Excuse me. / I'm sorry.","Перепрошую. / Вибачте."]],"src":"greet"},"cur_a1_02":{"lv":"A1","o":2,"t":"Знайомство · 1","life":"Знайомство","g":"to be · am / is / are, питання Are you…?","ph":[["Hi, I'm Olena. Nice to meet you.","Привіт, я Олена. Приємно познайомитися."],["Can you spell that, please?","Можете сказати це по літерах?"],["Bye! Have a nice day!","Бувай! Гарного дня!"]],"src":"cur_a1_02"},"cur_a1_03":{"lv":"A1","o":3,"t":"Знайомство · 2: про себе","life":"Знайомство","g":"Present Simple · I live / I speak","ph":[["I'm from Ukraine. I live in Chicago.","Я з України. Я живу в Чикаго."],["My phone number is 555-0134.","Мій номер телефону 555-0134."],["Can you speak more slowly, please?","Можете говорити повільніше?"]],"src":"cur_a1_03"},"cur_a1_04":{"lv":"A1","o":4,"t":"Люди навколо","life":"Знайомство","g":"this/that · This is… / That's…","ph":[["This is my friend Max.","Це мій друг Макс."],["That man is my neighbor.","Той чоловік — мій сусід."],["Who is that girl? — That's Anna, my friend.","Хто та дівчина? — Це Анна, моя подруга."]],"src":"cur_a1_04"},"cur_a1_05":{"lv":"A1","o":5,"t":"Сім'я · 1","life":"Сім'я","g":"possessive 's / my, your · my, your, his, her","ph":[["I have two kids. My son is five.","У мене двоє дітей. Синові п'ять."],["This is my mom, and this is my dad.","Це моя мама, а це мій тато."],["My sister is ten, and my brother is a baby.","Моїй сестрі десять, а мій брат ще немовля."]],"src":"family"},"cur_a1_06":{"lv":"A1","o":6,"t":"Сім'я · 2","life":"Сім'я","g":"possessive 's / my, your · grandma's house","ph":[["This is my grandma's house.","Це бабусин дім."],["My uncle's wife is my aunt.","Дружина мого дядька — моя тітка."],["My grandpa is old, but my cousin is young.","Мій дідусь старий, а мій двоюрідний брат молодий."]],"src":"a1x02_family"},"cur_a1_07":{"lv":"A1","o":7,"t":"Стосунки","life":"Сім'я","g":"have (US) · I have / Do you have…?","ph":[["I have a lot of friends at the club.","У мене багато друзів у клубі."],["I love you. I miss you!","Я тебе кохаю. Я сумую за тобою!"],["Do you live alone? — No, we live together.","Ти живеш сам? — Ні, ми живемо разом."]],"src":"cur_a1_07"},"cur_a1_08":{"lv":"A1","o":8,"t":"Їжа й напої · 1","life":"Їжа й напої","g":"Present Simple · I eat / Do you eat…?","ph":[["I drink coffee every morning.","Я п'ю каву щоранку."],["Do you eat meat? — No, I eat fish.","Ти їси м'ясо? — Ні, я їм рибу."],["She doesn't drink milk.","Вона не п'є молока."]],"src":"food"},"cur_a1_09":{"lv":"A1","o":9,"t":"Фрукти й овочі","life":"Їжа й напої","g":"a/an/the · a banana, an apple","ph":[["An apple and a banana, please.","Яблуко і банан, будь ласка."],["I eat an orange every day.","Я щодня з'їдаю апельсин."],["The tomatoes are in the salad.","Помідори — у салаті."]],"src":"a1m_fruitveg"},"cur_a1_10":{"lv":"A1","o":10,"t":"Сніданок, обід, вечеря","life":"Їжа й напої","g":"Present Simple · he/she eats (-s)","ph":[["I'd like a sandwich, please.","Мені сандвіч, будь ласка."],["I'm hungry! What's for dinner?","Я голодний! Що на вечерю?"],["My son eats pizza for lunch.","Мій син їсть піцу на обід."]],"src":"cur_a1_10"},"cur_a1_11":{"lv":"A1","o":11,"t":"Солодощі","life":"Їжа й напої","g":"Present Simple · заперечення don't / doesn't","ph":[["I like chocolate, but I don't like candy.","Я люблю шоколад, але не люблю цукерки."],["This cake is delicious!","Цей торт дуже смачний!"],["Does your son like ice cream?","Твій син любить морозиво?"]],"src":"cur_a1_11"},"cur_a1_12":{"lv":"A1","o":12,"t":"На кухні","life":"Їжа й напої","g":"imperatives · Cut… / Don't…","ph":[["Cut the bread, please.","Поріж хліб, будь ласка."],["Add sugar and fill the cup with milk.","Додай цукру й долий у чашку молока."],["Don't touch the knife!","Не чіпай ніж!"]],"src":"a1m_things"},"cur_a1_13":{"lv":"A1","o":13,"t":"У кафе","life":"Їжа й напої","g":"can · Can I have…?","ph":[["Can I have a coffee, please?","Можна мені каву, будь ласка?"],["Can we have the check, please?","Можна нам рахунок, будь ласка?"],["Can I sit here? — Sure!","Можна мені тут сісти? — Звісно!"]],"src":"cur_a1_13"},"cur_a1_14":{"lv":"A1","o":14,"t":"Числа 1–20","life":"Числа й гроші","g":"plural nouns · two cats, three boxes","ph":[["I have three brothers and two sisters.","У мене три брати й дві сестри."],["My son is six, and my daughter is twelve.","Синові шість, а доньці дванадцять."],["There are twenty students in my class.","У моєму класі двадцять учнів."]],"src":"a1x02_prices"},"cur_a1_15":{"lv":"A1","o":15,"t":"Десятки й порядок","life":"Числа й гроші","g":"question words · How old / How many","ph":[["How old is your grandpa? — He's eighty.","Скільки років твоєму дідусеві? — Вісімдесят."],["How many people are here? — About fifty.","Скільки тут людей? — Десь п'ятдесят."],["This is my first day here.","Це мій перший день тут."]],"src":"a1x02_prices"},"cur_a1_16":{"lv":"A1","o":16,"t":"Гроші","life":"Числа й гроші","g":"this/that · How much is this?","ph":[["How much is this?","Скільки це коштує?"],["That bag is expensive. It's ninety dollars.","Та сумка дорога. Вона коштує дев'яносто доларів."],["Can I pay by credit card?","Можна заплатити карткою?"]],"src":"cur_a1_16"},"cur_a1_17":{"lv":"A1","o":17,"t":"Котра година","life":"Мій день","g":"in/on/at · at seven o'clock","ph":[["What time is it? — It's ten thirty.","Котра година? — Пів на одинадцяту."],["The class starts at nine o'clock.","Заняття починається о дев'ятій."],["I'm late! Wait a minute, please.","Я запізнююся! Зачекай хвилинку, будь ласка."]],"src":"cur_a1_17"},"cur_a1_18":{"lv":"A1","o":18,"t":"Частини дня","life":"Мій день","g":"in/on/at · in the morning, at night","ph":[["I get up at seven every day.","Я встаю о сьомій щодня."],["I brush my teeth in the morning and at night.","Я чищу зуби вранці й увечері."],["We have dinner in the evening.","Ми вечеряємо ввечері."]],"src":"cur_a1_18"},"cur_a1_19":{"lv":"A1","o":19,"t":"Як часто","life":"Мій день","g":"Present Simple · always / usually / never","ph":[["I always go home at six.","Я завжди йду додому о шостій."],["She is often busy on Monday.","У понеділок вона часто зайнята."],["Do you usually come here? — Yes, once a week.","Ти зазвичай сюди приходиш? — Так, раз на тиждень."]],"src":"a2_daily"},"cur_a1_20":{"lv":"A1","o":20,"t":"Мій дім · кімнати","life":"Мій дім","g":"there is/are · There are two bedrooms","ph":[["There are two bedrooms in my apartment.","У моїй квартирі дві спальні."],["Is there a garden? — No, but there's a yard.","Там є сад? — Ні, але є подвір'я."],["The kitchen is next to the living room.","Кухня поруч із вітальнею."]],"src":"a2x01_flat"},"cur_a1_21":{"lv":"A1","o":21,"t":"Меблі","life":"Мій дім","g":"there is/are · There's a table in…","ph":[["There's a table and four chairs in the kitchen.","На кухні є стіл і чотири стільці."],["The book is on the desk.","Книжка лежить на письмовому столі."],["Please close the door and open the window.","Зачини, будь ласка, двері й відчини вікно."]],"src":"home"},"cur_a1_22":{"lv":"A1","o":22,"t":"Речі вдома","life":"Мій дім","g":"this/that · this/these, that/those","ph":[["Is this your key? — Yes, thanks!","Це твій ключ? — Так, дякую!"],["These towels are clean.","Ці рушники чисті."],["Turn on the light, please.","Увімкни світло, будь ласка."]],"src":"cur_a1_22"},"cur_a1_23":{"lv":"A1","o":23,"t":"Техніка вдома","life":"Мій дім","g":"have (US) · I have / Do you have…?","ph":[["I have a new computer.","У мене новий комп'ютер."],["Do you have a TV? — No, I watch videos on my phone.","У тебе є телевізор? — Ні, я дивлюся відео на телефоні."],["Can I use your camera?","Можна скористатися твоїм фотоапаратом?"]],"src":"cur_a1_23"},"cur_a1_24":{"lv":"A1","o":24,"t":"Хатні справи","life":"Мій дім","g":"imperatives · Clean… / Don't drop…","ph":[["Clean your room, please!","Прибери свою кімнату, будь ласка!"],["Put the dirty cups in the kitchen.","Віднеси брудні чашки на кухню."],["Don't drop the box! Hold it with two hands.","Не впусти коробку! Тримай її двома руками."]],"src":"cur_a1_24"},"cur_a1_25":{"lv":"A1","o":25,"t":"Магазини","life":"Покупки","g":"can · Where can I buy…?","ph":[["Is the store open? — No, it's closed.","Магазин відчинений? — Ні, зачинений."],["Where can I buy bread?","Де можна купити хліб?"],["The supermarket has a big sale today.","У супермаркеті сьогодні великий розпродаж."]],"src":"a1x01_shop"},"cur_a1_26":{"lv":"A1","o":26,"t":"Кольори","life":"Покупки","g":"to be · The car is red","ph":[["My favorite color is blue.","Мій улюблений колір — синій."],["The car is red and white.","Машина червоно-біла."],["What color is your bag? — It's black.","Якого кольору твоя сумка? — Чорного."]]},"cur_a1_27":{"lv":"A1","o":27,"t":"Дні тижня","life":"Дні й дати","g":"in/on/at · on Monday, on the weekend","ph":[["See you on Monday!","Побачимося в понеділок!"],["Today is Friday. Tomorrow is Saturday!","Сьогодні п'ятниця. Завтра субота!"],["I don't work on the weekend.","Я не працюю на вихідних."]],"src":"time"},"cur_a1_28":{"lv":"A1","o":28,"t":"Місяці","life":"Дні й дати","g":"in/on/at · in May, on June 5th","ph":[["My birthday is in May.","Мій день народження в травні."],["What's the date today? — It's June fifth.","Яке сьогодні число? — П'яте червня."],["We go to the sea in July.","У липні ми їдемо на море."]]},"cur_a1_29":{"lv":"A1","o":29,"t":"Свята","life":"Дні й дати","g":"object pronouns · for you, I love it","ph":[["Happy birthday! This gift is for you.","З днем народження! Цей подарунок для тебе."],["Thank you for the present. I love it!","Дякую за подарунок. Він мені дуже подобається!"],["Merry Christmas to you and your family!","Веселого Різдва тобі й твоїй родині!"]],"src":"cur_a1_29"},"cur_a1_30":{"lv":"A1","o":30,"t":"Тепер, потім, уже","life":"Дні й дати","g":"Present Continuous (now) · I'm finishing…","ph":[["I'm busy now. Call me later.","Я зараз зайнятий. Подзвони мені пізніше."],["Wait, I'm finishing my work.","Зачекай, я закінчую роботу."],["See you soon!","До скорої зустрічі!"]],"src":"a1x01_time"},"cur_a1_31":{"lv":"A1","o":31,"t":"Місто","life":"Місто","g":"there is/are · Is there a… near here?","ph":[["It's next to the bank.","Це поруч із банком."],["There's a big park in my town.","У моєму місті є великий парк."],["Is there a hotel near here?","Тут поблизу є готель?"]],"src":"a1x01_town"},"cur_a1_32":{"lv":"A1","o":32,"t":"Де? Слова місця","life":"Місто","g":"in/on/at · at home, in the middle","ph":[["Where is the restroom?","Де туалет?"],["My bag is behind the door.","Моя сумка за дверима."],["I'm at home. Come here!","Я вдома. Іди сюди!"]],"src":"cur_a1_32"},"cur_a1_33":{"lv":"A1","o":33,"t":"Як пройти","life":"Місто","g":"imperatives · Turn left / Go straight","ph":[["Turn left at the corner.","На розі поверни ліворуч."],["Go straight and then turn right.","Іди прямо, а потім поверни праворуч."],["The bus stop is near the bridge.","Автобусна зупинка біля мосту."]],"src":"cur_a1_33"},"cur_a1_34":{"lv":"A1","o":34,"t":"Транспорт","life":"Транспорт і подорожі","g":"a/an/the · a car, the subway, by bus","ph":[["I go to work by bus.","Я їжджу на роботу автобусом."],["Take a taxi or the subway.","Візьми таксі або поїдь метро."],["I have a bike and a car.","У мене є велосипед і машина."]],"src":"a1x01_transport"},"cur_a1_35":{"lv":"A1","o":35,"t":"У дорозі","life":"Транспорт і подорожі","g":"Present Simple · питання When does…?","ph":[["When does the train leave?","Коли відправляється потяг?"],["Where is the station? — It's over there.","Де вокзал? — Он там."],["Does the plane arrive at six?","Літак прилітає о шостій?"]],"src":"cur_a1_35"},"cur_a1_36":{"lv":"A1","o":36,"t":"Подорожі","life":"Транспорт і подорожі","g":"can · Can we visit…?","ph":[["Can we visit the old palace?","Ми можемо відвідати старий палац?"],["I travel a lot in the summer.","Улітку я багато подорожую."],["Have a nice trip!","Гарної подорожі!"]],"src":"cur_a1_36"},"cur_a1_37":{"lv":"A1","o":37,"t":"Тіло · 1","life":"Тіло і здоров'я","g":"plural nouns · eyes, teeth (tooth → teeth)","ph":[["I have two eyes, two ears, and one nose.","У мене двоє очей, двоє вух і один ніс."],["Brush your teeth!","Почисти зуби!"],["She has long hair.","У неї довге волосся."]],"src":"a1m_body"},"cur_a1_38":{"lv":"A1","o":38,"t":"Тіло · 2 і відчуття","life":"Тіло і здоров'я","g":"can · I can't see / Can you hear me?","ph":[["I can't see. Can you hear me?","Я не бачу. Ти мене чуєш?"],["My back hurts.","У мене болить спина."],["Can you touch your knees?","Ти можеш торкнутися колін?"]],"src":"cur_a1_38"},"cur_a1_39":{"lv":"A1","o":39,"t":"Здоров'я","life":"Тіло і здоров'я","g":"have (US) · I have a headache","ph":[["I have a headache and a fever.","У мене болить голова і температура."],["You're sick. Go to the doctor.","Ти хворий. Іди до лікаря."],["Take this medicine and get well soon!","Прийми ці ліки й одужуй швидше!"]],"src":"cur_a1_39"},"cur_a1_40":{"lv":"A1","o":40,"t":"Одяг · 1","life":"Одяг","g":"Present Continuous (now) · I'm wearing…","ph":[["I'm wearing a black coat today.","Сьогодні я в чорному пальті."],["She's wearing a red dress.","Вона в червоній сукні."],["Where are my shoes?","Де моє взуття?"]],"src":"a2m_clothes"},"cur_a1_41":{"lv":"A1","o":41,"t":"Одяг · 2: аксесуари","life":"Одяг","g":"this/that · Can I try this on?","ph":[["Can I try this on?","Можна це приміряти?"],["This size is too small.","Цей розмір замалий."],["Take an umbrella! It's raining.","Візьми парасольку! Іде дощ."]],"src":"cur_a1_41"},"cur_a1_42":{"lv":"A1","o":42,"t":"Погода","life":"Погода й природа","g":"to be · It's sunny / It's cold","ph":[["It's sunny today.","Сьогодні сонячно."],["Look, it's snowing!","Дивись, іде сніг!"],["What's the weather like? — It's cloudy and windy.","Яка погода? — Хмарно й вітряно."]],"src":"a2_weather"},"cur_a1_43":{"lv":"A1","o":43,"t":"Пори року","life":"Погода й природа","g":"in/on/at · in winter, in the fall","ph":[["It's cold in winter and hot in summer.","Узимку холодно, а влітку спекотно."],["I love the fall.","Я люблю осінь."],["Look at the moon and the stars!","Подивися на місяць і зорі!"]],"src":"a1x01_weather"},"cur_a1_44":{"lv":"A1","o":44,"t":"Природа","life":"Погода й природа","g":"there is/are · There are many trees","ph":[["There are many trees on the hill.","На пагорбі багато дерев."],["Is there a river near your town?","Біля твого міста є річка?"],["We go to the beach in the summer.","Улітку ми їздимо на пляж."]],"src":"a2x02_nature"},"cur_a1_45":{"lv":"A1","o":45,"t":"Домашні тварини","life":"Тварини","g":"plural nouns · sheep → sheep, mouse → mice","ph":[["Do you have a pet? — Yes, a cat and two dogs.","У тебе є домашня тварина? — Так, кіт і два собаки."],["There are ten sheep and five cows on the farm.","На фермі десять овець і п'ять корів."],["Feed the rabbit, please.","Погодуй кролика, будь ласка."]],"src":"a2m_animals"},"cur_a1_46":{"lv":"A1","o":46,"t":"Дикі тварини","life":"Тварини","g":"can · Monkeys can climb","ph":[["Monkeys can climb trees.","Мавпи вміють лазити по деревах."],["Birds can fly, but frogs can't.","Птахи вміють літати, а жаби — ні."],["Let's go to the zoo and see the lions!","Ходімо в зоопарк подивитися на левів!"]],"src":"a1m_wild"},"cur_a1_47":{"lv":"A1","o":47,"t":"Школа","life":"Школа","g":"Present Simple · I study / The lesson starts…","ph":[["I'm a student. I study English.","Я студент. Я вчу англійську."],["Our teacher gives us a lot of homework.","Наш учитель задає нам багато домашнього завдання."],["The lesson starts at nine.","Урок починається о дев'ятій."]],"src":"a1x01_school"},"cur_a1_48":{"lv":"A1","o":48,"t":"Шкільне приладдя","life":"Школа","g":"a/an/the · a pen, the book","ph":[["I need a pen and a notebook.","Мені потрібні ручка й зошит."],["Open the book to page ten.","Відкрий книжку на десятій сторінці."],["Can I use your dictionary?","Можна взяти твій словник?"]],"src":"a2m_school"},"cur_a1_49":{"lv":"A1","o":49,"t":"Шкільні предмети","life":"Школа","g":"question words · What / Why","ph":[["What's your favorite subject? — Math!","Який твій улюблений предмет? — Математика!"],["Is history difficult? — No, it's easy.","Історія складна? — Ні, легка."],["Why do you study science?","Чому ти вивчаєш природничі науки?"]],"src":"cur_a1_49"},"cur_a1_50":{"lv":"A1","o":50,"t":"На уроці","life":"Школа","g":"imperatives · Underline… / Circle…","ph":[["Underline the new words.","Підкресли нові слова."],["Answer the question, please.","Дай відповідь на запитання, будь ласка."],["Circle the correct answer.","Обведи правильну відповідь."]],"src":"cur_a1_50"},"cur_a1_51":{"lv":"A1","o":51,"t":"Слова вчителя","life":"Школа","g":"object pronouns · tell me, listen to me","ph":[["Sorry, I don't understand. Can you say that again?","Вибачте, я не розумію. Можете повторити?"],["Tell me, what does this word mean?","Скажи мені, що означає це слово?"],["Listen to me and repeat.","Послухай мене й повтори."]],"src":"cur_a1_51"},"cur_a1_52":{"lv":"A1","o":52,"t":"Робота","life":"Робота","g":"a/an/the · a farmer, an engineer","ph":[["I'm an engineer. I work in an office.","Я інженер. Я працюю в офісі."],["My dad is a farmer.","Мій тато — фермер."],["I have a meeting at ten.","У мене зустріч о десятій."]],"src":"cur_a1_52"},"cur_a1_53":{"lv":"A1","o":53,"t":"Професії","life":"Робота","g":"question words · What do you do? / Who…?","ph":[["What do you do? — I'm a nurse.","Ким ти працюєш? — Я медсестра."],["My sister is a writer.","Моя сестра — письменниця."],["Who is the owner of this cafe?","Хто власник цього кафе?"]],"src":"cur_a1_53"},"cur_a1_54":{"lv":"A1","o":54,"t":"Хобі","life":"Вільний час","g":"Present Simple · What do you do…?","ph":[["What do you do in your free time? — I play games.","Що ти робиш у вільний час? — Граю в ігри."],["My daughter has a big doll collection.","У моєї доньки велика колекція ляльок."],["Enjoy the game!","Гарної гри!"]],"src":"cur_a1_54"},"cur_a1_55":{"lv":"A1","o":55,"t":"Музика й танці","life":"Вільний час","g":"can · I can play the guitar","ph":[["I like music. I don't like rain.","Я люблю музику. Я не люблю дощ."],["I can play the guitar and the piano.","Я вмію грати на гітарі й піаніно."],["Let's go to a concert!","Ходімо на концерт!"]],"src":"cur_a1_55"},"cur_a1_56":{"lv":"A1","o":56,"t":"Мистецтво й фото","life":"Вільний час","g":"Present Continuous (now) · I'm drawing…","ph":[["Look! I'm drawing a picture.","Дивись! Я малюю картинку."],["She's painting the wall blue.","Вона фарбує стіну в синій колір."],["Can I take a photo?","Можна сфотографувати?"]],"src":"cur_a1_56"},"cur_a1_57":{"lv":"A1","o":57,"t":"Кіно й театр","life":"Вільний час","g":"object pronouns · I love him / watch it","ph":[["Do you like this actor? — Yes, I love him!","Тобі подобається цей актор? — Так, я його обожнюю!"],["Let's watch a movie tonight.","Давай подивимося фільм сьогодні ввечері."],["The show starts at eight.","Шоу починається о восьмій."]],"src":"cur_a1_57"},"cur_a1_58":{"lv":"A1","o":58,"t":"Читання й новини","life":"Вільний час","g":"Present Simple · I read / Do you watch…?","ph":[["I read the newspaper every morning.","Я щоранку читаю газету."],["My mom reads me a story at night.","Мама читає мені казку на ніч."],["Do you watch the news?","Ти дивишся новини?"]],"src":"cur_a1_58"},"cur_a1_59":{"lv":"A1","o":59,"t":"Казки","life":"Вільний час","g":"possessive 's / my, your · the king's daughter","ph":[["The king's daughter is a princess.","Дочка короля — принцеса."],["Do you believe in ghosts?","Ти віриш у привидів?"],["It's a strange dream.","Це дивний сон."]],"src":"cur_a1_59"},"cur_a1_60":{"lv":"A1","o":60,"t":"Зв'язок та інтернет","life":"Вільний час","g":"object pronouns · call me, share it","ph":[["Call me tonight!","Подзвони мені сьогодні ввечері!"],["Send me a message.","Напиши мені повідомлення."],["Share it with your friends!","Поділися цим із друзями!"]],"src":"cur_a1_60"},"cur_a1_61":{"lv":"A1","o":61,"t":"Спорт · 1","life":"Спорт","g":"there is/are · There are eleven players…","ph":[["There are eleven players on a soccer team.","У футбольній команді одинадцять гравців."],["I play basketball. What sport do you play?","Я граю в баскетбол. А ти яким спортом займаєшся?"],["Goal! Our team wins!","Гол! Наша команда перемагає!"]],"src":"a1x01_sport"},"cur_a1_62":{"lv":"A1","o":62,"t":"Спорт · 2","life":"Спорт","g":"can · Can you swim?","ph":[["Can you swim? — Yes, I can.","Ти вмієш плавати? — Так, умію."],["I run in the park every morning.","Я щоранку бігаю в парку."],["Kick the ball to me!","Дай мені пас!"]],"src":"cur_a1_62"},"cur_a1_63":{"lv":"A1","o":63,"t":"Активний відпочинок","life":"Спорт","g":"Present Continuous (now) · We're having a picnic","ph":[["We're having a picnic in the park.","Ми влаштовуємо пікнік у парку."],["My dad is fishing at the river.","Тато рибалить на річці."],["Let's go for a walk!","Ходімо погуляємо!"]],"src":"cur_a1_63"},"cur_a1_64":{"lv":"A1","o":64,"t":"Зовнішність","life":"Опис людей і речей","g":"have (US) · She has long hair","ph":[["She's tall and has long hair.","Вона висока, і в неї довге волосся."],["My brother is short and thin.","Мій брат невисокий і худий."],["What a beautiful smile!","Яка гарна усмішка!"]],"src":"a1x02_opposites"},"cur_a1_65":{"lv":"A1","o":65,"t":"Характер","life":"Опис людей і речей","g":"to be · He is… / Are you…?","ph":[["My teacher is strict but fair.","Мій учитель суворий, але справедливий."],["Are you shy? — A little.","Ти сором'язливий? — Трохи."],["Be careful!","Будь обережний!"]],"src":"a2x01_adjectives"},"cur_a1_66":{"lv":"A1","o":66,"t":"Почуття","life":"Опис людей і речей","g":"to be · I'm tired / Are you angry?","ph":[["I'm tired and a little sad.","Я втомився, і мені трохи сумно."],["Don't worry. Be happy!","Не хвилюйся. Будь щасливий!"],["Are you angry with me?","Ти на мене сердишся?"]],"src":"a1x01_feelings"},"cur_a1_67":{"lv":"A1","o":67,"t":"Розмір і форма","life":"Опис людей і речей","g":"this/that · This box is big","ph":[["This box is big and heavy.","Ця коробка велика й важка."],["That room is too dark.","Та кімната надто темна."],["My phone is broken.","Мій телефон зламаний."]],"src":"cur_a1_67"},"cur_a1_68":{"lv":"A1","o":68,"t":"Дієслова · дати й узяти","life":"Корисні дієслова","g":"imperatives · Give me… / Wait…","ph":[["Give me the key, please.","Дай мені ключ, будь ласка."],["Wait for me!","Зачекай на мене!"],["Help! I can't find my bag.","Допоможи! Я не можу знайти свою сумку."]],"src":"a1x01_verbs"},"cur_a1_69":{"lv":"A1","o":69,"t":"Дієслова · думати й знати","life":"Корисні дієслова","g":"Present Simple · I think / Do you remember…?","ph":[["I think you're right.","Я думаю, ти маєш рацію."],["Do you remember my name?","Ти пам'ятаєш, як мене звати?"],["I agree. That's a good idea!","Згоден. Це гарна ідея!"]],"src":"cur_a1_69"},"cur_a1_70":{"lv":"A1","o":70,"t":"Дієслова · початок і зміни","life":"Корисні дієслова","g":"Present Continuous (now) · What's happening?","ph":[["What's happening?","Що відбувається?"],["They're building a new school.","Вони будують нову школу."],["The kids are growing fast.","Діти швидко ростуть."]],"src":"cur_a1_70"},"cur_a1_71":{"lv":"A1","o":71,"t":"Питання й маленькі слова","life":"Корисні слова","g":"question words · Where / When / How / Why","ph":[["Where are you from? How old are you?","Звідки ти? Скільки тобі років?"],["Why are you late?","Чому ти запізнився?"],["I'm very tired too.","Я теж дуже втомився."]],"src":"cur_a1_71"},"cur_a1_72":{"lv":"A1","o":72,"t":"Добре й погано","life":"Корисні слова","g":"to be · It's great! / It isn't bad","ph":[["This is my favorite song!","Це моя улюблена пісня!"],["The movie is great! — No, it's terrible.","Фільм чудовий! — Ні, жахливий."],["Your English is very good. — Thanks!","У тебе дуже гарна англійська. — Дякую!"]],"src":"cur_a1_72"},"cur_a1_73":{"lv":"A1","o":73,"t":"Протилежності","life":"Корисні слова","g":"plural nouns · these pictures, rich people","ph":[["My car is old, but it's fast.","Моя машина стара, але швидка."],["These two pictures are different.","Ці дві картинки різні."],["Rich people aren't always happy.","Багаті люди не завжди щасливі."]],"src":"a1x02_opposites"},"cur_a1_74":{"lv":"A1","o":74,"t":"Корисні слова: речі й життя","life":"Корисні слова","g":"a/an/the · a piece of cake","ph":[["What kind of music do you like?","Яку музику ти любиш?"],["Can I have a piece of cake?","Можна мені шматочок торта?"],["You can do it! Good luck!","У тебе все вийде! Удачі!"]],"src":"cur_a1_74"},"cur_a2_01":{"lv":"A2","o":1,"t":"Кав'ярня","life":"Кав'ярня","g":"Past Simple · правильні дієслова: I ordered, we wanted","ph":[["For here or to go? — To go, please.","Тут чи з собою? — З собою, будь ласка."],["I ordered a lemonade, not a soda.","Я замовляв лимонад, а не газовану воду."],["Could I get a napkin and a spoon, please?","Можна мені серветку й ложку, будь ласка?"]],"src":"cur_a2_01"},"cur_a2_02":{"lv":"A2","o":2,"t":"Ресторан","life":"Кав'ярня","g":"will · рішення зараз: I'll have the steak","ph":[["Could I get the chicken salad, please?","Можна мені салат з куркою?"],["Can we get the check, please?","Можна рахунок, будь ласка?"],["I'll have the steak and a glass of red wine.","Я візьму стейк і келих червоного вина."]],"src":"cur_a2_02"},"cur_a2_03":{"lv":"A2","o":3,"t":"Фаст-фуд і обід","life":"Кав'ярня","g":"Past Simple · неправильні дієслова: ate, drank, had","ph":[["I had an omelet and a coffee for breakfast.","На сніданок я з'їв омлет і випив каву."],["We ate fried chicken in the cafeteria at lunchtime.","В обідню перерву ми їли смажену курку в кафетерії."],["I'm on a diet, so no fast food for me.","Я на дієті, тож жодного фаст-фуду."]],"src":"cur_a2_03"},"cur_a2_04":{"lv":"A2","o":4,"t":"Супермаркет","life":"Супермаркет","g":"countable / uncountable · a coin — cash, a can of soda","ph":[["Can I pay by card?","Можна заплатити карткою?"],["Do you need a receipt? — No, thanks.","Вам потрібен чек? — Ні, дякую."],["This cereal is half-price today. What a bargain!","Ці пластівці сьогодні за пів ціни. Яка вигода!"]],"src":"cur_a2_04"},"cur_a2_05":{"lv":"A2","o":5,"t":"Овочі, фрукти й солодке","life":"Супермаркет","g":"Past Simple · питання й заперечення: Did you buy…? — No, I didn't.","ph":[["Did you buy onions and garlic? — Yes, I did.","Ти купив цибулю й часник? — Так, купив."],["Oh no, I didn't get the lemons!","Ой, я не купила лимони!"],["Toast with honey or jam?","Тост із медом чи з джемом?"]],"src":"cur_a2_05"},"cur_a2_06":{"lv":"A2","o":6,"t":"Тіло","life":"У лікаря","g":"Past Simple · I fell and hurt my ankle (fall — fell, hurt — hurt)","ph":[["I fell and hurt my ankle.","Я впав і забив щиколотку."],["Bend your knees and touch your toes.","Зігни коліна й торкнися пальців ніг."],["It hurts when I swallow.","Мені боляче ковтати."]],"src":"a2x02_body"},"cur_a2_07":{"lv":"A2","o":7,"t":"У лікаря","life":"У лікаря","g":"was / were · I was ill. Were you at the dentist?","ph":[["I'd like to make an appointment.","Я хочу записатися на прийом."],["I have a headache and a sore throat.","У мене болить голова і горло."],["I was ill last week, and I felt dizzy.","Минулого тижня я хворів, і в мене паморочилося в голові."]],"src":"a2x01_doctor"},"cur_a2_08":{"lv":"A2","o":8,"t":"Нещасний випадок","life":"У лікаря","g":"Past Simple · заперечення: I didn't break it","ph":[["Call 911! It's an emergency!","Телефонуйте 911! Це екстрений випадок!"],["Don't panic! I didn't break my leg.","Без паніки! Я не зламав ногу."],["I didn't sleep at all. It was a sleepless night.","Я зовсім не спав. Це була безсонна ніч."]],"src":"cur_a2_08"},"cur_a2_09":{"lv":"A2","o":9,"t":"Громадський транспорт","life":"Транспорт у місті","g":"Present Continuous · I'm waiting for the bus","ph":[["Does this bus go downtown?","Цей автобус їде в центр?"],["A round-trip ticket to Boston, please.","Квиток туди й назад до Бостона, будь ласка."],["I'm waiting for the bus. It's really crowded today.","Я чекаю на автобус. Сьогодні дуже людно."]],"src":"a2x01_transport"},"cur_a2_10":{"lv":"A2","o":10,"t":"За кермом","life":"Транспорт у місті","g":"Present Continuous · Are you driving? — Yes, I'm on the highway","ph":[["I'm driving on the highway, so I can't talk.","Я їду трасою, тож не можу говорити."],["Where can I park? — There's a parking lot over there.","Де можна припаркуватися? — Он там є стоянка."],["We need gas. Is there a gas station near here?","Нам треба заправитися. Тут поблизу є заправка?"]],"src":"cur_a2_10"},"cur_a2_11":{"lv":"A2","o":11,"t":"Як пройти","life":"Транспорт у місті","g":"prepositions of movement · across, along, past, through","ph":[["How do I get to the train station?","Як дістатися до вокзалу?"],["Go straight and turn left at the light.","Ідіть прямо й поверніть ліворуч на світлофорі."],["Cross the street. The entrance is opposite the bank.","Перейдіть вулицю. Вхід навпроти банку."]],"src":"cur_a2_11"},"cur_a2_12":{"lv":"A2","o":12,"t":"Сторони світу","life":"Транспорт у місті","g":"prepositions of movement · go north, drive west, from east to west","ph":[["We drove west for three days.","Ми їхали на захід три дні."],["Florida is in the south of the US.","Флорида — на півдні США."],["The sun comes up in the east.","Сонце сходить на сході."]],"src":"cur_a2_12"},"cur_a2_13":{"lv":"A2","o":13,"t":"Місця в місті","life":"Транспорт у місті","g":"Present Continuous · Where are you going? — To the mall","ph":[["Where are you going? — To the mall. I need new shoes.","Куди ти йдеш? — У торговий центр. Мені потрібні нові черевики."],["Is there a drugstore in this area?","У цьому районі є аптека?"],["The kids are playing in the playground.","Діти граються на майданчику."]],"src":"cur_a2_13"},"cur_a2_14":{"lv":"A2","o":14,"t":"Мій тиждень","life":"Вихідні й хобі","g":"adverbs of frequency · always, usually, twice a week","ph":[["I go to the gym twice a week.","Я ходжу в спортзал двічі на тиждень."],["On weekdays I usually go to bed at midnight.","У будні я зазвичай лягаю спати опівночі."],["We meet regularly, every Friday at noon.","Ми регулярно зустрічаємося, щоп'ятниці опівдні."]],"src":"cur_a2_14"},"cur_a2_15":{"lv":"A2","o":15,"t":"Хобі вдома","life":"Вихідні й хобі","g":"like / love + -ing · I like drawing","ph":[["I like playing chess and board games.","Я люблю грати в шахи й настільні ігри."],["What do you do in your leisure time? — I love drawing.","Що ти робиш у вільний час? — Дуже люблю малювати."],["My grandma enjoys sewing.","Моя бабуся любить шити."]],"src":"cur_a2_15"},"cur_a2_16":{"lv":"A2","o":16,"t":"Активний відпочинок","life":"Вихідні й хобі","g":"Past Simple · Last weekend we went camping","ph":[["Last weekend I went to the beach with my friends.","Минулих вихідних я їздив на пляж із друзями."],["We went camping and had a barbecue.","Ми ходили в похід і влаштували барбекю."],["Did you go hiking? — Yes, it was a great adventure!","Ти ходив у похід? — Так, це була чудова пригода!"]],"src":"cur_a2_16"},"cur_a2_17":{"lv":"A2","o":17,"t":"Зимові й ігрові види спорту","life":"Вихідні й хобі","g":"adverbs of frequency · I often go skiing / I never play golf","ph":[["We often go skiing in winter.","Взимку ми часто катаємося на лижах."],["I never play golf. It's boring!","Я ніколи не граю в гольф. Це нудно!"],["Do you have a racket? Let's play badminton.","У тебе є ракетка? Пограймо в бадмінтон."]],"src":"cur_a2_17"},"cur_a2_18":{"lv":"A2","o":18,"t":"Змагання","life":"Вихідні й хобі","g":"Past Simple · неправильні: win — won, lose — lost, throw — threw","ph":[["She won a gold medal at the Olympic Games.","Вона виграла золоту медаль на Олімпійських іграх."],["Our team lost the championship.","Наша команда програла чемпіонат."],["We lost 2–1, but it was a good game.","Ми програли 2:1, але гра була хороша."]],"src":"cur_a2_18"},"cur_a2_19":{"lv":"A2","o":19,"t":"Музика","life":"Вихідні й хобі","g":"want / would like + to · I want to learn the violin","ph":[["I want to learn a musical instrument.","Я хочу навчитися грати на музичному інструменті."],["Do you like classical music or hip hop?","Тобі подобається класична музика чи хіп-хоп?"],["I listen to music on my headphones.","Я слухаю музику в навушниках."]],"src":"cur_a2_19"},"cur_a2_20":{"lv":"A2","o":20,"t":"Кіно й шоу","life":"Вихідні й хобі","g":"Present Continuous · What are you watching?","ph":[["What are you watching? — A new show. This is episode five.","Що ти дивишся? — Нове шоу. Це п'ята серія."],["I don't like horror movies. I like mysteries.","Я не люблю фільми жахів. Мені подобаються детективи."],["The audience loved her performance.","Глядачам дуже сподобався її виступ."]],"src":"cur_a2_20"},"cur_a2_21":{"lv":"A2","o":21,"t":"Книжки й мистецтво","life":"Вихідні й хобі","g":"object pronouns · I read it / Show it to me","ph":[["This novel is great. I read it in two days.","Цей роман чудовий. Я прочитав його за два дні."],["Who is the author? — I don't know him.","Хто автор? — Я його не знаю."],["Let's go to the photo exhibition on Sunday.","Ходімо в неділю на фотовиставку."]],"src":"cur_a2_21"},"cur_a2_22":{"lv":"A2","o":22,"t":"Казки й пригоди","life":"Вихідні й хобі","g":"was / were · there was / there were: Once there was a king","ph":[["Once upon a time, there was a king in a big castle.","Колись давно у великому замку жив король."],["There was a strange shadow on the wall.","На стіні була дивна тінь."],["It wasn't magic. It was just a trick!","Це була не магія. Це був просто фокус!"]],"src":"cur_a2_22"},"cur_a2_23":{"lv":"A2","o":23,"t":"Аеропорт","life":"Аеропорт","g":"going to · I'm going to fly to Denver","ph":[["Where do I check in for Flight 302?","Де реєстрація на рейс 302?"],["I'm going to pack my suitcase tonight.","Сьогодні ввечері я збираюся спакувати валізу."],["Window or aisle seat? — Aisle, please.","Місце біля вікна чи біля проходу? — Біля проходу, будь ласка."]],"src":"cur_a2_23"},"cur_a2_24":{"lv":"A2","o":24,"t":"Подорож","life":"Аеропорт","g":"prepositions of time · in July, for two weeks, during the trip","ph":[["In July we're going to explore Mexico for two weeks.","У липні ми збираємося два тижні мандрувати Мексикою."],["Our tour guide was a local.","Нашим гідом був місцевий житель."],["It was an unforgettable trip!","Це була незабутня подорож!"]],"src":"cur_a2_24"},"cur_a2_25":{"lv":"A2","o":25,"t":"Готель","life":"Готель","g":"comparatives · bigger, quieter, more comfortable","ph":[["I have a reservation under Petrenko.","У мене бронювання на прізвище Петренко."],["Do you have a bigger room with a balcony?","У вас є більший номер із балконом?"],["The heating doesn't work. Can I have another blanket?","Опалення не працює. Можна мені ще одну ковдру?"]],"src":"cur_a2_25"},"cur_a2_26":{"lv":"A2","o":26,"t":"Враження від готелю","life":"Готель","g":"superlatives · the best, the most comfortable","ph":[["This is the most comfortable bed in the world!","Це найзручніше ліжко на світі!"],["The room was noisy, and the bed was uncomfortable.","У номері було шумно, а ліжко було незручне."],["It's the best hotel in town.","Це найкращий готель у місті."]],"src":"cur_a2_26"},"cur_a2_27":{"lv":"A2","o":27,"t":"Друзі","life":"Друзі й плани","g":"going to · We're going to meet on Friday","ph":[["Do you want to grab lunch tomorrow?","Хочеш завтра разом пообідати?"],["Sounds great! / Sorry, I can't. I'm busy.","Чудово! / Вибач, не можу. Я зайнятий."],["I'm going to visit my mom next month.","Наступного місяця я збираюся відвідати маму."]],"src":"cur_a2_27"},"cur_a2_28":{"lv":"A2","o":28,"t":"Кохання й весілля","life":"Друзі й плани","g":"going to · They're going to get married","ph":[["Anna and Tom are going to get married in May.","Анна й Том збираються одружитися в травні."],["Happy anniversary, sweetheart!","Щасливої річниці, кохана!"],["He gave her a diamond ring.","Він подарував їй каблучку з діамантом."]],"src":"cur_a2_28"},"cur_a2_29":{"lv":"A2","o":29,"t":"Можливо, колись","life":"Друзі й плани","g":"will · прогнози й обіцянки: I'll probably be late","ph":[["I'll probably be late. Sorry!","Я, мабуть, запізнюся. Вибач!"],["Someday I'll visit New York.","Колись я поїду в Нью-Йорк."],["Unfortunately, I can't come. Maybe next time!","На жаль, я не можу прийти. Може, наступного разу!"]],"src":"cur_a2_29"},"cur_a2_30":{"lv":"A2","o":30,"t":"Родина й люди","life":"Друзі й плани","g":"possessive pronouns · mine, yours, hers, ours","ph":[["Are you married or single? — Married.","Ви одружені чи ні? — Одружена."],["Whose kids are these? — They're ours.","Чиї це діти? — Наші."],["My granny has five grandchildren.","У моєї бабусі п'ятеро онуків."]],"src":"cur_a2_30"},"cur_a2_31":{"lv":"A2","o":31,"t":"Покоління","life":"Друзі й плани","g":"comparatives · older than, younger than","ph":[["My brother is three years older than me.","Мій брат на три роки старший за мене."],["My grandpa retired last year.","Мій дідусь торік вийшов на пенсію."],["I had a happy childhood.","У мене було щасливе дитинство."]],"src":"cur_a2_31"},"cur_a2_32":{"lv":"A2","o":32,"t":"Одяг","life":"Покупки й одяг","g":"too / enough · too big, not warm enough","ph":[["Do you have this in a medium?","У вас є це розміру M?"],["This sweater is too big for me.","Цей светр мені завеликий."],["That suit really suits you!","Цей костюм тобі дуже пасує!"]],"src":"a2x02_clothes"},"cur_a2_33":{"lv":"A2","o":33,"t":"Мода й аксесуари","life":"Покупки й одяг","g":"comparatives · cheaper, better, more expensive","ph":[["This one is cheaper, but that one is better.","Цей дешевший, а той кращий."],["I like your style! Where did you get those earrings?","Мені подобається твій стиль! Де ти купила ці сережки?"],["Can I see the handbag on display?","Можна подивитися сумочку з вітрини?"]],"src":"cur_a2_33"},"cur_a2_34":{"lv":"A2","o":34,"t":"Матеріали","life":"Покупки й одяг","g":"countable / uncountable · wood, plastic — a rope, two chains","ph":[["Is it plastic or metal?","Це пластик чи метал?"],["I need a piece of string and some tape.","Мені потрібен шматок мотузки й трохи скотчу."],["She has a silver ring and a golden chain.","У неї срібна каблучка й золотий ланцюжок."]],"src":"cur_a2_34"},"cur_a2_35":{"lv":"A2","o":35,"t":"Квартира в оренду","life":"Дім і оренда","g":"some / any · Is there any furniture? — There are some chairs","ph":[["We want to rent an apartment downtown.","Ми хочемо винайняти квартиру в центрі."],["Is there any furniture? — Yes, there's some.","Там є якісь меблі? — Так, трохи є."],["How much is the rent? — $1,200 a month.","Скільки коштує оренда? — 1200 доларів на місяць."]],"src":"a1x02_house"},"cur_a2_36":{"lv":"A2","o":36,"t":"Меблі й техніка","life":"Дім і оренда","g":"much / many · How many lamps? There isn't much space","ph":[["How many lamps do we need?","Скільки ламп нам потрібно?"],["Is there any milk in the fridge? — Not much.","У холодильнику є молоко? — Небагато."],["The kitchen faucet is broken.","Кухонний кран зламаний."]],"src":"a2x02_home"},"cur_a2_37":{"lv":"A2","o":37,"t":"Кухня й готування","life":"Дім і оренда","g":"some / any · a little / a few: some flour, a few eggs","ph":[["Mix some flour with two eggs.","Змішай трохи борошна з двома яйцями."],["Pour a tablespoon of olive oil into the pan.","Налий у сковорідку столову ложку оливкової олії."],["Do we have any fresh bread?","У нас є свіжий хліб?"]],"src":"cur_a2_37"},"cur_a2_38":{"lv":"A2","o":38,"t":"Хатні справи","life":"Дім і оренда","g":"have to · I have to tidy my room","ph":[["I have to tidy my room before dinner.","Мені треба прибрати в кімнаті перед вечерею."],["The door handle is broken. Can you fix it?","Ручка дверей зламана. Можеш її полагодити?"],["Oops! I spilled my coffee.","Ой! Я розлив каву."]],"src":"cur_a2_38"},"cur_a2_39":{"lv":"A2","o":39,"t":"Професії · 1","life":"Робота","g":"have to · A chef has to work late","ph":[["My boss is nice, but I have to work late.","Мій начальник хороший, але мені доводиться працювати допізна."],["What does your sister do? — She's a lawyer.","Ким працює твоя сестра? — Вона юристка."],["Does a manager have to wear a suit?","Менеджер мусить носити костюм?"]],"src":"cur_a2_39"},"cur_a2_40":{"lv":"A2","o":40,"t":"Професії · 2","life":"Робота","g":"must / mustn't · Astronauts must be fit","ph":[["What's your occupation? — I'm a travel agent.","Ваш рід занять? — Я турагент."],["Astronauts must be very fit.","Астронавти мусять бути в чудовій формі."],["He's a junior assistant at a big company.","Він молодший помічник у великій компанії."]],"src":"cur_a2_40"},"cur_a2_41":{"lv":"A2","o":41,"t":"На роботі","life":"Робота","g":"should · You should ask for a bonus","ph":[["Do you have any experience? — Yes, three years.","У вас є досвід? — Так, три роки."],["You should ask your boss for a bonus.","Тобі варто попросити в начальника премію."],["Our company makes great products.","Наша компанія робить чудові продукти."]],"src":"cur_a2_41"},"cur_a2_42":{"lv":"A2","o":42,"t":"Успіх","life":"Робота","g":"should · You should apply. You shouldn't give up","ph":[["You should apply for the job!","Тобі варто подати заявку на цю роботу!"],["She has a real talent for music.","У неї справжній талант до музики."],["I failed the test, but I'm going to try again.","Я провалив тест, але збираюся спробувати ще раз."]],"src":"cur_a2_42"},"cur_a2_43":{"lv":"A2","o":43,"t":"Школа","life":"Школа й навчання","g":"must / mustn't · You mustn't use your phone in class","ph":[["You mustn't use your phone during the quiz.","Під час тесту не можна користуватися телефоном."],["I graduated from high school in 2019.","Я закінчив старшу школу 2019 року."],["We have to write an essay this semester.","Цього семестру ми маємо написати есе."]],"src":"cur_a2_43"},"cur_a2_44":{"lv":"A2","o":44,"t":"Урок англійської","life":"Школа й навчання","g":"comparatives / superlatives · big — bigger — the biggest","ph":[["What's the plural of \"child\"? — \"Children.\"","Яка множина слова «child»? — «Children»."],["How do you pronounce this word?","Як вимовляється це слово?"],["Start a sentence with a capital letter.","Починай речення з великої літери."]],"src":"cur_a2_44"},"cur_a2_45":{"lv":"A2","o":45,"t":"Навчання","life":"Школа й навчання","g":"should · You should prepare for the test","ph":[["Can you explain that again, please?","Можете пояснити це ще раз, будь ласка?"],["You should prepare for the test.","Тобі варто підготуватися до тесту."],["I can't concentrate. It's too noisy.","Я не можу зосередитися. Тут надто шумно."]],"src":"cur_a2_45"},"cur_a2_46":{"lv":"A2","o":46,"t":"Думки й обговорення","life":"Школа й навчання","g":"should · What should we do? — We should…","ph":[["In my opinion, we should start now.","На мою думку, нам варто почати зараз."],["What's the meaning of this expression?","Що означає цей вислів?"],["Let's brainstorm some ideas.","Давайте накидаємо ідей."]],"src":"cur_a2_46"},"cur_a2_47":{"lv":"A2","o":47,"t":"Банк і гроші","life":"Гроші й пошта","g":"too / enough · I don't have enough money","ph":[["I'd like to open a bank account.","Я хотів би відкрити рахунок у банку."],["Can you lend me twenty dollars? I don't have enough cash.","Можеш позичити мені двадцять доларів? У мене не вистачає готівки."],["What's the exchange rate for euros today?","Який сьогодні курс євро?"]],"src":"cur_a2_47"},"cur_a2_48":{"lv":"A2","o":48,"t":"Великі числа й міри","life":"Гроші й пошта","g":"much / many · How many kilometers? How much water?","ph":[["How many kilometers is a marathon? — About 42.","Скільки кілометрів у марафоні? — Близько 42."],["How much water do you drink? — Two liters a day.","Скільки води ти п'єш? — Два літри на день."],["It's about a hundred degrees today!","Сьогодні близько ста градусів (за Фаренгейтом)!"]],"src":"cur_a2_48"},"cur_a2_49":{"lv":"A2","o":49,"t":"Пошта й документи","life":"Гроші й пошта","g":"have to / must · You have to sign here","ph":[["Two stamps and an envelope, please.","Дві марки й конверт, будь ласка."],["You have to ask for permission.","Вам потрібно попросити дозволу."],["You can't smoke here. It isn't allowed.","Тут не можна курити. Це заборонено."]],"src":"a2x01_post_bank"},"cur_a2_50":{"lv":"A2","o":50,"t":"Погода","life":"Природа й погода","g":"going to · прогноз: It's going to rain","ph":[["It's going to rain this afternoon.","По обіді буде дощ."],["Look at those clouds! There's going to be a storm.","Подивися на ці хмари! Буде гроза."],["It's freezing! The temperature is below zero.","Страшенно холодно! Температура нижче нуля."]],"src":"cur_a2_50"},"cur_a2_51":{"lv":"A2","o":51,"t":"Природа · краєвиди","life":"Природа й погода","g":"superlatives · the biggest lake, the most beautiful coast","ph":[["Lake Superior is the biggest of the Great Lakes.","Верхнє — найбільше з Великих озер."],["We walked along the path through the forest.","Ми йшли стежкою через ліс."],["California has some of the most beautiful scenery in the US.","У Каліфорнії одні з найкрасивіших краєвидів у США."]],"src":"cur_a2_51"},"cur_a2_52":{"lv":"A2","o":52,"t":"Рослини й природа","life":"Природа й погода","g":"some / any · Are there any wild animals here?","ph":[["Are there any wild animals in this forest?","У цьому лісі є дикі тварини?"],["We planted some sunflower seeds.","Ми посадили трохи насіння соняшника."],["I found a beautiful shell on the beach.","Я знайшов на пляжі гарну мушлю."]],"src":"cur_a2_52"},"cur_a2_53":{"lv":"A2","o":53,"t":"Тварини й довкілля","life":"Природа й погода","g":"should · We should recycle more","ph":[["We should recycle plastic and paper.","Нам варто переробляти пластик і папір."],["Elephants are endangered animals.","Слони — тварини, яким загрожує зникнення."],["Dinosaurs disappeared millions of years ago.","Динозаври зникли мільйони років тому."]],"src":"cur_a2_53"},"cur_a2_54":{"lv":"A2","o":54,"t":"Країни й народи","life":"Природа й погода","g":"much / many · How many people live there? — Not many","ph":[["What's the capital of Canada? — Ottawa.","Яка столиця Канади? — Оттава."],["How many people live in your village? — Not many.","Скільки людей живе у твоєму селі? — Небагато."],["Every country has its own traditions.","У кожної країни свої традиції."]],"src":"cur_a2_54"},"cur_a2_55":{"lv":"A2","o":55,"t":"Почуття · -ed чи -ing","life":"Почуття й характер","g":"-ing / -ed adjectives · bored vs. boring","ph":[["I'm bored. This movie is boring.","Мені нудно. Цей фільм нудний."],["The ending was disappointing. I was really disappointed.","Кінцівка розчарувала. Я був дуже розчарований."],["That was so embarrassing!","Це було так соромно!"]],"src":"cur_a2_55"},"cur_a2_56":{"lv":"A2","o":56,"t":"Емоції","life":"Почуття й характер","g":"too / enough · I was too nervous to speak","ph":[["I was too nervous to speak.","Я надто нервувала, щоб говорити."],["Don't be upset. It's OK.","Не засмучуйся. Усе гаразд."],["I'm so grateful for your help.","Я тобі така вдячна за допомогу."]],"src":"cur_a2_56"},"cur_a2_57":{"lv":"A2","o":57,"t":"Коли щось дратує","life":"Почуття й характер","g":"object pronouns · It annoys me. Don't bother him","ph":[["Please don't disturb me. I'm working.","Будь ласка, не заважай мені. Я працюю."],["Spiders terrify me!","Я страшенно боюся павуків!"],["I'm in a bad mood today.","У мене сьогодні поганий настрій."]],"src":"cur_a2_57"},"cur_a2_58":{"lv":"A2","o":58,"t":"Характер · 1","life":"Почуття й характер","g":"comparatives · braver than, more polite than","ph":[["My sister is more confident than me.","Моя сестра впевненіша за мене."],["Be polite and helpful.","Будь ввічливим і допомагай іншим."],["Don't be mean to your brother!","Не будь злим до брата!"]],"src":"cur_a2_58"},"cur_a2_59":{"lv":"A2","o":59,"t":"Характер · 2","life":"Почуття й характер","g":"superlatives · the wisest, the most creative","ph":[["She has a great personality.","У неї чудовий характер."],["My grandpa is the wisest person I know.","Мій дідусь — наймудріша людина, яку я знаю."],["Stop being silly!","Годі дуркувати!"]],"src":"cur_a2_59"},"cur_a2_60":{"lv":"A2","o":60,"t":"Зовнішність і догляд","life":"Почуття й характер","g":"Present Continuous · She's wearing make-up","ph":[["He's tall, slim, and good-looking.","Він високий, стрункий і гарний."],["She's looking in the mirror and putting on make-up.","Вона дивиться в дзеркало й фарбується."],["Don't forget your toothbrush and shampoo!","Не забудь зубну щітку й шампунь!"]],"src":"cur_a2_60"},"cur_a2_61":{"lv":"A2","o":61,"t":"Комп'ютер та інтернет","life":"Телефон та інтернет","g":"Present Perfect · знайомство: I've just downloaded it","ph":[["I've just downloaded the new software.","Я щойно завантажив нову програму."],["Click here to print the page.","Натисніть тут, щоб надрукувати сторінку."],["Have you ever bought clothes online?","Ти колись купувала одяг онлайн?"]],"src":"cur_a2_61"},"cur_a2_62":{"lv":"A2","o":62,"t":"Телефон і повідомлення","life":"Телефон та інтернет","g":"Present Perfect · already / yet: Have you texted her yet?","ph":[["Can I leave a message for Mr. Smith?","Можна залишити повідомлення для містера Сміта?"],["Have you texted Mom yet? — Yes, I've already texted her.","Ти вже написала мамі? — Так, уже написала."],["Text me when you get home.","Напиши мені, коли доберешся додому."]],"src":"cur_a2_62"},"cur_a2_63":{"lv":"A2","o":63,"t":"Техніка","life":"Телефон та інтернет","g":"will · рішення й пропозиції: I'll fix it","ph":[["My battery is dead. I'll call you later.","У мене сів телефон. Я подзвоню тобі пізніше."],["The light bulb has gone out.","Лампочка перегоріла."],["The doors open automatically.","Двері відчиняються автоматично."]],"src":"cur_a2_63"},"cur_a2_64":{"lv":"A2","o":64,"t":"Наука й відкриття","life":"Суспільство й новини","g":"Past Simple · Who invented…? Scientists discovered…","ph":[["Scientists discovered a new planet last year.","Минулого року науковці відкрили нову планету."],["Who invented the telephone?","Хто винайшов телефон?"],["This chart shows the results of our research.","Ця діаграма показує результати нашого дослідження."]],"src":"cur_a2_64"},"cur_a2_65":{"lv":"A2","o":65,"t":"Злочин","life":"Суспільство й новини","g":"Present Perfect · Someone has stolen my wallet!","ph":[["Help! Someone has stolen my wallet!","Рятуйте! У мене вкрали гаманець!"],["Was there a robbery at the bank?","У банку було пограбування?"],["Stealing is a crime.","Крадіжка — це злочин."]],"src":"cur_a2_65"},"cur_a2_66":{"lv":"A2","o":66,"t":"Поліція й закон","life":"Суспільство й новини","g":"must / mustn't · You mustn't drive without a license","ph":[["Call the police!","Викличте поліцію!"],["You mustn't drive without a license. It's the law.","Не можна кермувати без прав. Такий закон."],["Are you safe? — Yes, I'm fine now.","Ви в безпеці? — Так, тепер усе гаразд."]],"src":"cur_a2_66"},"cur_a2_67":{"lv":"A2","o":67,"t":"Суспільство","life":"Суспільство й новини","g":"Present Perfect · ever / never: Have you ever seen…?","ph":[["Freedom is important for every society.","Свобода важлива для кожного суспільства."],["Have you ever seen the Statue of Liberty?","Ти колись бачив Статую Свободи?"],["August 24 is Ukraine's Independence Day.","24 серпня — День Незалежності України."]],"src":"cur_a2_67"},"cur_a2_68":{"lv":"A2","o":68,"t":"Життя сьогодні","life":"Суспільство й новини","g":"comparatives · Life is easier now than…","ph":[["Life is much easier now than 100 years ago.","Зараз життя набагато легше, ніж сто років тому."],["Nowadays a lot of people work from home.","Тепер багато людей працює з дому."],["This app is popular worldwide.","Цей застосунок популярний у всьому світі."]],"src":"cur_a2_68"},"cur_a2_69":{"lv":"A2","o":69,"t":"Медіа й зірки","life":"Суспільство й новини","g":"Present Continuous · Is she singing tonight?","ph":[["Is she singing on TV tonight? — Yes, she is.","Вона сьогодні ввечері співає на телебаченні? — Так."],["Is it true or just a rumor?","Це правда чи просто чутки?"],["This show is very popular in the US.","Це шоу дуже популярне в США."]],"src":"cur_a2_69"},"cur_a2_70":{"lv":"A2","o":70,"t":"Проблеми й рішення","life":"Суспільство й новини","g":"should · What should we do?","ph":[["It's not your fault.","Це не твоя провина."],["We're in a difficult situation. What should we do?","Ми в складній ситуації. Що нам робити?"],["I've found a solution!","Я знайшов рішення!"]],"src":"cur_a2_70"},"cur_a2_71":{"lv":"A2","o":71,"t":"Дієслова · вирішувати й хотіти","life":"Корисні дієслова","g":"verb + to / -ing · decide to go, mind waiting","ph":[["I've decided to learn English.","Я вирішила вивчати англійську."],["Do you mind waiting a minute?","Ви не проти зачекати хвилинку?"],["I prefer walking to driving.","Я більше люблю ходити пішки, ніж їздити."]],"src":"cur_a2_71"},"cur_a2_72":{"lv":"A2","o":72,"t":"Дієслова · люди між собою","life":"Корисні дієслова","g":"object pronouns · Don't blame me! I appreciate it","ph":[["Don't blame me!","Не звинувачуй мене!"],["Thank you. I really appreciate it.","Дякую. Я дуже це ціную."],["Can you remind me tomorrow?","Можеш нагадати мені завтра?"]],"src":"cur_a2_72"},"cur_a2_73":{"lv":"A2","o":73,"t":"Дієслова · рух","life":"Корисні дієслова","g":"Past Simple · повторення: fell, hit, stood, lay","ph":[["He fell and hit his head.","Він упав і вдарився головою."],["Follow me, please.","Ідіть за мною, будь ласка."],["Hurry up! We're late!","Швидше! Ми запізнюємося!"]],"src":"cur_a2_73"},"cur_a2_74":{"lv":"A2","o":74,"t":"Фразові дієслова","life":"Корисні дієслова","g":"object pronouns · try it on, turn it off, figure it out","ph":[["Can I try it on?","Можна це приміряти?"],["Turn off the light, please.","Вимкни світло, будь ласка."],["Hold on! I'll figure it out.","Зачекай! Я з цим розберуся."]],"src":"cur_a2_74"},"cur_a2_75":{"lv":"A2","o":75,"t":"Дієслова · робимо щось","life":"Корисні дієслова","g":"Past Simple · Prices went up last month","ph":[["Prices went up again last month.","Минулого місяця ціни знову зросли."],["Does the price include breakfast?","Чи входить у ціну сніданок?"],["Divide the cake into eight pieces.","Поділи торт на вісім шматків."]],"src":"cur_a2_75"},"cur_a2_76":{"lv":"A2","o":76,"t":"Дієслова · у житті","life":"Корисні дієслова","g":"verb + to / -ing · avoid eating, pretend to sleep","ph":[["Does this bag belong to you?","Це ваша сумка?"],["He pretended to be asleep.","Він удавав, що спить."],["Try to avoid eating late.","Намагайся не їсти пізно."]],"src":"cur_a2_76"},"cur_a2_77":{"lv":"A2","o":77,"t":"Дієслова · щодня","life":"Корисні дієслова","g":"will · пропозиції: I'll help you","ph":[["Can I offer you a drink? — Yes, please.","Можна запропонувати вам щось випити? — Так, будь ласка."],["That sounds great! I'll come.","Звучить чудово! Я прийду."],["Please don't smoke here.","Будь ласка, не куріть тут."]],"src":"cur_a2_77"},"cur_a2_78":{"lv":"A2","o":78,"t":"Форма й розмір","life":"Корисні прикметники","g":"too / enough · too wide, not deep enough","ph":[["The pool isn't deep enough for diving.","Басейн недостатньо глибокий, щоб пірнати."],["This sofa is soft and comfortable.","Цей диван м'який і зручний."],["What shape is it? — It's square.","Якої воно форми? — Квадратне."]],"src":"cur_a2_78"},"cur_a2_79":{"lv":"A2","o":79,"t":"Нове й звичне","life":"Корисні прикметники","g":"superlatives · the latest, the most unusual","ph":[["This is the most unusual building in town.","Це найнезвичніша будівля в місті."],["We bought a used car.","Ми купили вживану машину."],["That's unusual. — No, it's quite normal here.","Це незвично. — Ні, тут це цілком нормально."]],"src":"cur_a2_79"},"cur_a2_80":{"lv":"A2","o":80,"t":"Схоже й різне","life":"Корисні прикметники","g":"comparatives · as … as / not as … as","ph":[["Your bag is similar to mine.","Твоя сумка схожа на мою."],["My English isn't as good as yours.","Моя англійська не така добра, як твоя."],["Exactly! That's what I mean.","Саме так! Я це й маю на увазі."]],"src":"cur_a2_80"},"cur_a2_81":{"lv":"A2","o":81,"t":"Потрібне й можливе","life":"Корисні прикметники","g":"have to / don't have to · You don't have to come","ph":[["Is it necessary? — No, you don't have to do it.","Це обов'язково? — Ні, тобі не треба цього робити."],["Nothing is impossible!","Немає нічого неможливого!"],["This dress isn't suitable for a wedding.","Ця сукня не підходить для весілля."]],"src":"cur_a2_81"},"cur_a2_82":{"lv":"A2","o":82,"t":"Важливе й додаткове","life":"Корисні прикметники","g":"comparatives · clearer, more logical","ph":[["Is that clear? — Yes, it's clearer now.","Це зрозуміло? — Так, тепер зрозуміліше."],["That's so unfair!","Це так несправедливо!"],["Is there an extra charge? — No, it's free.","Чи є додаткова плата? — Ні, це безкоштовно."]],"src":"cur_a2_82"},"cur_a2_83":{"lv":"A2","o":83,"t":"Живе й зникле","life":"Корисні прикметники","g":"was / were · Was he asleep? There was a sudden noise","ph":[["Is the fish alive or dead?","Риба жива чи мертва?"],["My cat is missing!","Мій кіт зник!"],["The baby was asleep, so we were very quiet.","Малюк спав, тож ми були дуже тихо."]],"src":"cur_a2_83"},"cur_a2_84":{"lv":"A2","o":84,"t":"Як? · прислівники","life":"Корисні слова","g":"comparatives · прислівники: more slowly, more quietly","ph":[["Please speak more quietly. The baby's asleep.","Будь ласка, говоріть тихіше. Малюк спить."],["It's raining heavily.","Іде сильний дощ."],["She smiled happily.","Вона радісно всміхнулася."]],"src":"cur_a2_84"},"cur_a2_85":{"lv":"A2","o":85,"t":"Наскільки?","life":"Корисні слова","g":"too / enough · quite cold, too cold, warm enough","ph":[["It's quite cold today.","Сьогодні досить холодно."],["I can hardly hear you.","Я тебе ледве чую."],["We're nearly there!","Ми майже на місці!"]],"src":"cur_a2_85"},"cur_a2_86":{"lv":"A2","o":86,"t":"Зв'язні слова","life":"Корисні слова","g":"will · I'll have tea instead","ph":[["Actually, I'll have tea, please.","Насправді я буду чай, будь ласка."],["Seriously? I don't believe it!","Серйозно? Не можу повірити!"],["Let's have tea instead of coffee.","Давай вип'ємо чаю замість кави."]],"src":"cur_a2_86"},"cur_a2_87":{"lv":"A2","o":87,"t":"Більше чи менше","life":"Корисні слова","g":"superlatives · bad — worse — the worst","ph":[["This is the worst day of my life!","Це найгірший день у моєму житті!"],["Don't worry, we have plenty of time.","Не хвилюйся, у нас повно часу."],["Can I have a bit more?","Можна мені ще трошки?"]],"src":"cur_a2_87"},"cur_a2_88":{"lv":"A2","o":88,"t":"Колись і десь","life":"Корисні слова","g":"Past Simple · Did you go anywhere…?","ph":[["Did you go anywhere interesting last weekend?","Ти кудись цікаво їздив минулих вихідних?"],["I don't live there anymore.","Я більше там не живу."],["It works perfectly.","Усе чудово працює."]],"src":"cur_a2_88"},"cur_a2_89":{"lv":"A2","o":89,"t":"Думки й факти","life":"Корисні слова","g":"should · You should tell her the truth","ph":[["Can I give you some advice?","Можна дати тобі пораду?"],["Tell me the truth.","Скажи мені правду."],["You should tell her the truth.","Тобі варто сказати їй правду."]],"src":"cur_a2_89"},"cur_a2_90":{"lv":"A2","o":90,"t":"Частини й системи","life":"Корисні слова","g":"countable / uncountable · a detail, a part — information","ph":[["What's your English level? — A2.","Який у тебе рівень англійської? — A2."],["Read the first part. Don't worry about every detail.","Прочитай першу частину. Не переймайся кожною деталлю."],["The new model has some great features.","Нова модель має кілька чудових функцій."]],"src":"cur_a2_90"},"cur_a2_91":{"lv":"A2","o":91,"t":"Рух і сила","life":"Корисні слова","g":"possessive pronouns · Thanks for your support. This share is yours","ph":[["Thanks for your support.","Дякую за підтримку."],["There's a knock at the door.","Хтось стукає у двері."],["Step by step.","Крок за кроком."]],"src":"cur_a2_91"},"cur_a2_92":{"lv":"A2","o":92,"t":"Плюси й мінуси","life":"Корисні слова","g":"comparatives · more advantages than disadvantages","ph":[["There are more advantages than disadvantages.","Переваг більше, ніж недоліків."],["It's a deal!","Домовилися!"],["What's the use of it?","Яка з цього користь?"]],"src":"cur_a2_92"},"cur_b1_001":{"lv":"B1","o":1,"t":"Співбесіда","life":"Співбесіда","g":"Present Perfect vs Past Simple · I've worked here for two years. I worked in Kyiv in 2020.","ph":[["I've worked as a nurse for five years.","Я працюю медсестрою п'ять років."],["I saw the vacancy last week, and I've already sent my CV.","Я побачив вакансію минулого тижня й уже надіслав резюме."],["Have you ever worked full-time? — Yes, I worked at a hotel in 2023.","Ви колись працювали на повну ставку? — Так, у 2023 році я працював у готелі."]],"src":"cur_b1_001"},"cur_b1_002":{"lv":"B1","o":2,"t":"Сильні сторони","life":"Співбесіда","g":"Present Perfect + for / since · I've been responsible for the team since 2021","ph":[["My greatest strength is that I'm well organized.","Моя найсильніша сторона — я добре організований."],["I've been responsible for a team of ten people since 2021.","З 2021 року я відповідаю за команду з десяти людей."],["My biggest achievement? I've made our team more efficient.","Моє найбільше досягнення? Я зробив нашу команду ефективнішою."]],"src":"cur_b1_002"},"cur_b1_003":{"lv":"B1","o":3,"t":"Професії","life":"Співбесіда","g":"Present Perfect + ever / never · Have you ever wanted to be an architect?","ph":[["Have you ever wanted to be an architect?","Ти колись хотів стати архітектором?"],["My uncle has been a mechanic all his life.","Мій дядько все життя працює механіком."],["My sister has always loved animals, so she became a vet.","Моя сестра завжди любила тварин, тож стала ветеринаркою."]],"src":"cur_b1_003"},"cur_b1_004":{"lv":"B1","o":4,"t":"На роботі","life":"Робота й кар'єра","g":"Present Perfect + just / already / yet · I've just finished the presentation","ph":[["Have you finished the presentation yet? — Not yet. The deadline is Friday.","Ти вже закінчив презентацію? — Ще ні. Дедлайн у п'ятницю."],["I've just sent you the agenda for the workshop.","Я щойно надіслав тобі порядок денний семінару."],["We've already had three brainstorming sessions this week.","Цього тижня в нас уже було три мозкові штурми."]],"src":"cur_b1_004"},"cur_b1_005":{"lv":"B1","o":5,"t":"Наради й переговори","life":"Робота й кар'єра","g":"Present Perfect vs Past Simple · We met on Monday, but we haven't agreed yet","ph":[["So, if I understand correctly, the meeting is on Friday?","Тобто, якщо я правильно зрозумів, зустріч у п'ятницю?"],["Why don't we meet halfway?","Може, зустрінемося посередині?"],["We negotiated for hours yesterday, but we haven't reached an agreement yet.","Учора ми годинами вели переговори, але ще не дійшли згоди."]],"src":"cur_b1_005"},"cur_b1_006":{"lv":"B1","o":6,"t":"Кар'єрне зростання","life":"Робота й кар'єра","g":"Present Perfect + just / already / yet · They've already appointed a new manager","ph":[["Guess what? I've just gotten a promotion!","Уяви, мене щойно підвищили!"],["They've already appointed a new manager.","Вони вже призначили нового менеджера."],["Are you taking paid leave in July? — I haven't decided yet.","Ти береш оплачувану відпустку в липні? — Я ще не вирішив."]],"src":"cur_b1_006"},"cur_b1_007":{"lv":"B1","o":7,"t":"Бізнес","life":"Робота й кар'єра","g":"Present Perfect vs Past Simple · We launched in 2019 and have grown a lot since then","ph":[["We've expanded a lot since we launched in 2019.","Ми дуже розширилися відтоді, як запустилися у 2019-му."],["Our main competitor has just opened a store downtown.","Наш головний конкурент щойно відкрив магазин у центрі."],["Have you talked to the accountant yet?","Ти вже поговорив з бухгалтером?"]],"src":"cur_b1_007"},"cur_b1_008":{"lv":"B1","o":8,"t":"Робочий день","life":"Робота й кар'єра","g":"Present Perfect vs Past Simple · I've worked part-time since January. Last year I worked full-time.","ph":[["I've worked part-time since January, but last year I worked full-time.","З січня я працюю на пів ставки, а торік працював на повну."],["Have you dealt with this kind of problem before?","Ви вже мали справу з такою проблемою?"],["Who handled the equipment order last month?","Хто минулого місяця займався замовленням обладнання?"]],"src":"cur_b1_008"},"cur_b1_009":{"lv":"B1","o":9,"t":"Оренда квартири","life":"Оренда квартири","g":"Present Perfect + for / since · I've lived in this neighborhood since 2020","ph":[["Are utilities included in the rent?","Комунальні входять в оренду?"],["When can I move in?","Коли я можу заселитися?"],["I've lived in this neighborhood for three years.","Я живу в цьому районі вже три роки."]],"src":"b2m_housing"},"cur_b1_010":{"lv":"B1","o":10,"t":"Опалення й світло","life":"Оренда квартири","g":"Past Continuous · The heater wasn't working when we moved in","ph":[["The heater wasn't working when we moved in.","Коли ми заселилися, обігрівач не працював."],["I was taking a shower when the electricity went off.","Я приймав душ, коли зникла електрика."],["Could you send someone from maintenance? A pipe is leaking.","Чи не могли б ви надіслати когось з обслуговування? Протікає труба."]],"src":"cur_b1_010"},"cur_b1_011":{"lv":"B1","o":11,"t":"Хатні справи","life":"Оренда квартири","g":"Past Continuous · What were you doing at eight? — I was ironing","ph":[["What were you doing at eight? — I was ironing my shirts.","Що ти робив о восьмій? — Прасував сорочки."],["Sorry about the mess! I was cleaning the kitchen.","Вибач за безлад! Я прибирав кухню."],["Can you take out the trash and clear the table, please?","Можеш винести сміття й прибрати зі столу, будь ласка?"]],"src":"cur_b1_011"},"cur_b1_012":{"lv":"B1","o":12,"t":"Ремонт","life":"Оренда квартири","g":"Past Continuous · I was standing on the ladder when the phone rang","ph":[["I was standing on the ladder when the phone rang.","Я стояв на драбині, коли задзвонив телефон."],["Hand me the hammer and a few nails, please.","Подай мені молоток і кілька цвяхів, будь ласка."],["Grandma was mending my jeans with a needle and thread.","Бабуся зашивала мої джинси голкою з ниткою."]],"src":"cur_b1_012"},"cur_b1_013":{"lv":"B1","o":13,"t":"Будматеріали","life":"Оренда квартири","g":"might / may / could · This old pump might still work","ph":[["This old pump might still work.","Цей старий насос, може, ще працює."],["The wall could be brick or stone — I'm not sure.","Стіна може бути з цегли або з каменю — я не певен."],["Put a \"fragile\" sticker on the box, and follow the arrows.","Наклей на коробку наліпку «крихке» і дивися на стрілки."]],"src":"cur_b1_013"},"cur_b1_014":{"lv":"B1","o":14,"t":"Спальня й ванна","life":"Оренда квартири","g":"question tags · You've seen the remote, haven't you?","ph":[["You've seen the remote control, haven't you? — Look under the cushion.","Ти ж бачив пульт, так? — Подивися під подушкою."],["We're out of toothpaste again, aren't we?","У нас знову закінчилася зубна паста, так?"],["You didn't take my hairdryer, did you?","Ти ж не брав мій фен, правда?"]],"src":"cur_b1_014"},"cur_b1_015":{"lv":"B1","o":15,"t":"Банк","life":"Банк і картки","g":"First conditional · If you pay late, they'll charge you a fee","ph":[["I'd like to open a checking account.","Я хочу відкрити поточний рахунок."],["If you pay the bill late, they'll charge you a fee.","Якщо ви сплатите рахунок із запізненням, з вас візьмуть комісію."],["What's the exchange rate for euros today?","Який сьогодні курс євро?"]],"src":"cur_b1_015"},"cur_b1_016":{"lv":"B1","o":16,"t":"Гроші","life":"Банк і картки","g":"Second conditional · If I won the lottery, I'd travel the world","ph":[["If I won the lottery, I'd travel the world.","Якби я виграв у лотерею, я б подорожував світом."],["My parents give me a small allowance every week.","Батьки щотижня дають мені трохи кишенькових."],["If I had more money, I wouldn't worry about every penny.","Якби в мене було більше грошей, я б не рахував кожну копійку."]],"src":"cur_b1_016"},"cur_b1_017":{"lv":"B1","o":17,"t":"Економіка","life":"Банк і картки","g":"First conditional · If demand grows, prices will go up","ph":[["If demand grows, prices will go up.","Якщо попит зросте, ціни підуть угору."],["There's a shortage of nurses in many states.","У багатьох штатах бракує медсестер."],["If the economy doesn't grow, people will spend less.","Якщо економіка не зростатиме, люди витрачатимуть менше."]],"src":"cur_b1_017"},"cur_b1_018":{"lv":"B1","o":18,"t":"Ціни й податки","life":"Банк і картки","g":"might / may / could · Prices might rise again next year","ph":[["Taxes might go up again next year.","Податки наступного року можуть знову зрости."],["What's the total? — It's $45, including tax.","Скільки разом? — 45 доларів із податком."],["The minimum wage may rise to $15 an hour.","Мінімальна зарплата може зрости до 15 доларів на годину."]],"src":"cur_b1_018"},"cur_b1_019":{"lv":"B1","o":19,"t":"Інвестиції","life":"Банк і картки","g":"Second conditional · If I had $10,000, I'd invest it","ph":[["If I had $10,000, I'd invest it in an index fund.","Якби я мав 10 000 доларів, я б уклав їх в індексний фонд."],["If I lost my job, I'd get unemployment benefits for a few months.","Якби я втратив роботу, кілька місяців отримував би допомогу по безробіттю."],["Is it really worth the risk?","Чи справді воно варте ризику?"]],"src":"cur_b1_019"},"cur_b1_020":{"lv":"B1","o":20,"t":"У лікаря","life":"Здоров'я і спорт","g":"First conditional · If you take these, you'll feel better","ph":[["You should probably see a doctor.","Тобі, мабуть, варто піти до лікаря."],["If you take these capsules, you'll recover in a few days.","Якщо ви прийматимете ці капсули, то одужаєте за кілька днів."],["If the cough doesn't stop, I'll see a specialist.","Якщо кашель не минеться, я піду до фахівця."]],"src":"b1_health"},"cur_b1_021":{"lv":"B1","o":21,"t":"Лікування","life":"Здоров'я і спорт","g":"Past Continuous · I was playing soccer when I hurt my knee","ph":[["I was playing soccer when I hurt my knee.","Я грав у футбол, коли пошкодив коліно."],["How long will it take to heal? — About two weeks.","Скільки часу це загоюватиметься? — Приблизно два тижні."],["She was feeling exhausted after the surgery.","Після операції вона почувалася виснаженою."]],"src":"b2m_medicine"},"cur_b1_022":{"lv":"B1","o":22,"t":"Тіло","life":"Здоров'я і спорт","g":"Present Perfect + for / since · My wrist has been swollen since Monday","ph":[["My wrist has been swollen since Monday.","Зап'ястя опухле з понеділка."],["I've had a backache for a week.","У мене вже тиждень болить спина."],["Does it hurt when you move your elbow? — Yes, it's very sore.","Болить, коли ви рухаєте ліктем? — Так, дуже."]],"src":"a2x02_body"},"cur_b1_023":{"lv":"B1","o":23,"t":"Органи й дихання","life":"Здоров'я і спорт","g":"Passive · Oxygen is carried by the blood","ph":[["Oxygen is carried around the body by the blood.","Кисень розноситься тілом з кров'ю."],["Take a deep breath, please. Now breathe out.","Глибоко вдихніть, будь ласка. Тепер видихніть."],["My grandpa was taken to the hospital after a heart attack.","Дідуся забрали до лікарні після серцевого нападу."]],"src":"cur_b1_023"},"cur_b1_024":{"lv":"B1","o":24,"t":"Хвороби","life":"Здоров'я і спорт","g":"might / may / could · It might be a virus","ph":[["It might be a virus. Let's wait a day or two.","Можливо, це вірус. Почекаймо день-два."],["Are you allergic to anything? — Yes, to peanuts.","У вас є на щось алергія? — Так, на арахіс."],["I feel unwell. I may stay home today.","Мені зле. Можливо, я сьогодні залишуся вдома."]],"src":"cur_b1_024"},"cur_b1_025":{"lv":"B1","o":25,"t":"Сон і звички","life":"Здоров'я і спорт","g":"gerund / infinitive · My dad quit smoking. Try to take a nap.","ph":[["My dad quit smoking last year.","Тато торік кинув палити."],["Try to take a short nap after lunch.","Спробуй трохи подрімати після обіду."],["Remember to get enough sleep before your scan.","Не забудь добре виспатися перед обстеженням."]],"src":"cur_b1_025"},"cur_b1_026":{"lv":"B1","o":26,"t":"Травми й інвалідність","life":"Здоров'я і спорт","g":"Passive · Nobody was badly hurt","ph":[["Nobody was badly hurt, just a few cuts and scratches.","Ніхто серйозно не постраждав, лише кілька порізів і подряпин."],["Is the entrance accessible for people with disabilities?","Чи доступний вхід для людей з інвалідністю?"],["He was paralyzed after the accident, but now he plays wheelchair basketball.","Після аварії його паралізувало, але тепер він грає в баскетбол на візках."]],"src":"cur_b1_026"},"cur_b1_027":{"lv":"B1","o":27,"t":"Психічне здоров'я","life":"Здоров'я і спорт","g":"used to · I used to feel stressed all the time","ph":[["I used to feel stressed all the time, but meditation really helps.","Раніше я постійно був у стресі, але медитація справді допомагає."],["It's OK to ask for counseling. Mental health matters.","Звертатися по психологічну допомогу — це нормально. Психічне здоров'я важливе."],["Did you use to get stressed before exams?","Ти раніше нервував перед іспитами?"]],"src":"cur_b1_027"},"cur_b1_028":{"lv":"B1","o":28,"t":"Фітнес","life":"Здоров'я і спорт","g":"gerund / infinitive · I enjoy jogging. I've decided to start","ph":[["I enjoy jogging, but I hate stretching.","Я люблю бігати, але ненавиджу розтяжку."],["I've decided to start working out.","Я вирішив почати тренуватися."],["Don't forget to stretch after your workout.","Не забудь розтягнутися після тренування."]],"src":"cur_b1_028"},"cur_b1_029":{"lv":"B1","o":29,"t":"Матч","life":"Здоров'я і спорт","g":"Passive · The tournament is held every summer","ph":[["The tournament is held every summer.","Турнір проводять щоліта."],["The game was stopped by the referee.","Гру зупинив суддя."],["Who scored the winning goal? — Our goalkeeper, believe it or not!","Хто забив переможний гол? — Хочеш вір, хочеш ні — наш воротар!"]],"src":"cur_b1_029"},"cur_b1_030":{"lv":"B1","o":30,"t":"Види спорту","life":"Здоров'я і спорт","g":"Present Perfect + ever / never · Have you ever tried snowboarding?","ph":[["Have you ever tried snowboarding? — No, but I've always wanted to.","Ти колись пробував сноуборд? — Ні, але завжди хотів."],["Ice hockey is really popular in Minnesota.","У Міннесоті хокей дуже популярний."],["I've never been diving. Is it scary?","Я ніколи не пірнав з аквалангом. Це страшно?"]],"src":"cur_b1_030"},"cur_b1_031":{"lv":"B1","o":31,"t":"Екстрим і природа","life":"Здоров'я і спорт","g":"First conditional · If you don't wear a helmet, you can't ride with us","ph":[["If you don't wear a helmet, you can't ride with us.","Якщо не вдягнеш шолом, не поїдеш з нами."],["If the weather is good, we'll rent a canoe — don't forget the paddle!","Якщо буде гарна погода, візьмемо каное — не забудь весло!"],["We'll race to the tree. Ready? I'll blow the whistle.","Біжимо наввипередки до дерева. Готові? Я свисну."]],"src":"cur_b1_031"},"cur_b1_032":{"lv":"B1","o":32,"t":"Новини","life":"Новини простими словами","g":"Passive · The results were announced on every channel","ph":[["The results were announced on every channel.","Результати оголосили на всіх каналах."],["Don't believe every headline — some are misleading.","Не вір кожному заголовку — деякі вводять в оману."],["Is this news channel trustworthy?","Цьому новинному каналу можна довіряти?"]],"src":"cur_b1_032"},"cur_b1_033":{"lv":"B1","o":33,"t":"Злочинність і безпека","life":"Новини простими словами","g":"Passive · The burglar was arrested last night","ph":[["The burglar was arrested last night.","Злодія заарештували минулої ночі."],["The victim reported the crime to the police.","Потерпілий повідомив про злочин у поліцію."],["The suspect was found guilty.","Підозрюваного визнали винним."]],"src":"b1x03_crime"},"cur_b1_034":{"lv":"B1","o":34,"t":"Суд і в'язниця","life":"Новини простими словами","g":"used to · This building used to be a jail","ph":[["This old building used to be a jail.","Ця стара будівля колись була в'язницею."],["He was accused of theft, but he was innocent.","Його звинуватили в крадіжці, але він був невинний."],["There didn't use to be so much crime here.","Раніше тут не було стільки злочинів."]],"src":"cur_b1_034"},"cur_b1_035":{"lv":"B1","o":35,"t":"Закон","life":"Новини простими словами","g":"Passive · Smoking is forbidden in public buildings","ph":[["Smoking is forbidden in all public buildings.","Палити заборонено в усіх громадських будівлях."],["Everyone should be treated equally by the law.","Закон має ставитися до всіх однаково."],["Is it legal to drive at sixteen in the US? — In most states, yes.","У США можна законно водити в шістнадцять? — У більшості штатів так."]],"src":"cur_b1_035"},"cur_b1_036":{"lv":"B1","o":36,"t":"Катастрофи","life":"Новини простими словами","g":"Past Continuous · Most people were sleeping when the building collapsed","ph":[["Most people were sleeping when the building collapsed.","Більшість людей спали, коли будинок обвалився."],["What were you doing when you heard the explosion?","Що ти робив, коли почув вибух?"],["Rescue teams were working all night.","Рятувальники працювали всю ніч."]],"src":"cur_b1_036"},"cur_b1_037":{"lv":"B1","o":37,"t":"Новини: безпека","life":"Новини простими словами","g":"Passive · The castle was built to defend the city","ph":[["This old castle was built to defend the city.","Цей старий замок збудували, щоб захищати місто."],["The museum tells the history of the army.","Музей розповідає історію армії."],["The news is often about defense and security.","У новинах часто говорять про оборону й безпеку."]],"src":"cur_b1_037"},"cur_b1_038":{"lv":"B1","o":38,"t":"Загрози й безпека","life":"Новини простими словами","g":"might / may / could · Security might check your bag","ph":[["Security might check your bag at the entrance.","На вході охорона може перевірити вашу сумку."],["This could be a serious threat.","Це може бути серйозною загрозою."],["The crisis may last for months.","Криза може тривати місяцями."]],"src":"cur_b1_038"},"cur_b1_039":{"lv":"B1","o":39,"t":"Сенсації","life":"Новини простими словами","g":"Past Continuous · The prisoners escaped while the guards were sleeping","ph":[["The prisoners escaped while the guards were sleeping.","В'язні втекли, поки охоронці спали."],["A journalist was secretly recording the meeting.","Журналіст таємно записував зустріч."],["What was happening when the fire started?","Що відбувалося, коли почалася пожежа?"]],"src":"cur_b1_039"},"cur_b1_040":{"lv":"B1","o":40,"t":"Соцмережі","life":"Соцмережі","g":"Present Perfect + just / already / yet · I've just uploaded a new video","ph":[["I've just uploaded a new video. Have you seen it yet?","Я щойно завантажив нове відео. Ти вже бачив?"],["Check your privacy settings before you post photos.","Перевір налаштування приватності, перш ніж публікувати фото."],["Click the link in the description.","Натисніть на посилання в описі."]],"src":"cur_b1_040"},"cur_b1_041":{"lv":"B1","o":41,"t":"Телефон і гаджети","life":"Соцмережі","g":"relative clauses · a cable that can charge two devices","ph":[["I need a cable that can charge two devices at once.","Мені потрібен кабель, який може заряджати два пристрої одночасно."],["Sorry, I have no signal here. I'll call you back.","Вибач, тут немає зв'язку. Я тобі передзвоню."],["Did you get the email that I sent with the attachment?","Ти отримав лист із вкладенням, який я надіслав?"]],"src":"b1m_tech"},"cur_b1_042":{"lv":"B1","o":42,"t":"Комп'ютер","life":"Соцмережі","g":"phrasal verbs · back up, log in, type in","ph":[["Don't forget to back up your files to the server.","Не забудь зробити резервну копію файлів на сервері."],["Oops! Press Ctrl+Z to undo it.","Ой! Натисни Ctrl+Z, щоб скасувати."],["Type in your password and log in.","Введи пароль і увійди."]],"src":"cur_b1_042"},"cur_b1_043":{"lv":"B1","o":43,"t":"Онлайн","life":"Соцмережі","g":"question tags · This app is out of date, isn't it?","ph":[["This app is out of date, isn't it?","Цей застосунок застарів, так?"],["You can't access the site without a password, can you?","Без пароля на сайт не зайдеш, правда?"],["We're streaming the game tonight. Come over!","Сьогодні ввечері дивимося матч онлайн. Приходь!"]],"src":"cur_b1_043"},"cur_b1_044":{"lv":"B1","o":44,"t":"Скарга в магазині","life":"Скарга в магазині","g":"reported speech · They told me it would arrive on Monday","ph":[["I'm calling about a problem with my order.","Я телефоную щодо проблеми із замовленням."],["I'd like a refund, please. The item arrived damaged.","Я хочу повернути гроші. Товар прийшов пошкодженим."],["They told me the delivery would arrive on Monday.","Мені сказали, що доставка прийде в понеділок."]],"src":"b1x03_shopping"},"cur_b1_045":{"lv":"B1","o":45,"t":"Посилки","life":"Скарга в магазині","g":"Passive · Your package was shipped yesterday","ph":[["Your package was shipped yesterday.","Ваше замовлення відправили вчора."],["Could you wrap it as a gift, please?","Чи не могли б ви загорнути це як подарунок?"],["Use the self-service checkout — it's faster.","Скористайся касою самообслуговування — так швидше."]],"src":"cur_b1_045"},"cur_b1_046":{"lv":"B1","o":46,"t":"Вигідна покупка","life":"Скарга в магазині","g":"so / such · It was such a good deal that I bought two","ph":[["It's second-hand, but it looks brand-new!","Воно вживане, але виглядає як нове!"],["It was such a good deal that I bought two.","Це була така вигідна покупка, що я взяв дві."],["The service here is so slow!","Обслуговування тут таке повільне!"]],"src":"cur_b1_046"},"cur_b1_047":{"lv":"B1","o":47,"t":"Подорож по США","life":"Подорож по США","g":"Present Perfect + ever / never · Have you ever been to New York?","ph":[["Have you ever been to New York? — No, never.","Ти колись був у Нью-Йорку? — Ні, ніколи."],["Do I need a visa to visit the US?","Чи потрібна мені віза, щоб поїхати в США?"],["I've never stayed in a hostel. Is it OK?","Я ніколи не зупинявся в хостелі. Це нормально?"]],"src":"cur_b1_047"},"cur_b1_048":{"lv":"B1","o":48,"t":"Переліт","life":"Подорож по США","g":"Past Continuous · We were boarding when they announced the delay","ph":[["While I was waiting for the bus, it started to rain.","Поки я чекав автобус, почався дощ."],["We were boarding when they announced the delay.","Ми саме сідали на рейс, коли оголосили затримку."],["Excuse me, where's the check-in counter for flight 245?","Перепрошую, де стійка реєстрації на рейс 245?"]],"src":"cur_b1_048"},"cur_b1_049":{"lv":"B1","o":49,"t":"Бронювання","life":"Подорож по США","g":"future forms · We're staying at a cabin. I'll cancel it.","ph":[["I have a reservation for two nights under Kovalenko.","У мене бронювання на дві ночі на прізвище Коваленко."],["We're staying at a cabin in the mountains this weekend.","Цими вихідними ми зупинимося в будиночку в горах."],["I'll cancel the booking and ask for a refund.","Я скасую бронювання й попрошу повернути гроші."]],"src":"cur_b1_049"},"cur_b1_050":{"lv":"B1","o":50,"t":"Дорога й авто","life":"Подорож по США","g":"First conditional · If you speed here, you'll get a ticket","ph":[["Fasten your seat belt, please.","Пристебніть пасок безпеки, будь ласка."],["If you speed here, you'll get a ticket.","Якщо перевищиш швидкість, отримаєш штраф."],["If we don't find parking soon, we'll be late.","Якщо ми скоро не знайдемо, де припаркуватися, то запізнимося."]],"src":"cur_b1_050"},"cur_b1_051":{"lv":"B1","o":51,"t":"Транспорт","life":"Подорож по США","g":"used to · People used to cross the country by wagon","ph":[["People used to cross the country by wagon.","Колись люди перетинали країну у фургонах."],["Public transportation in New York is really good.","Громадський транспорт у Нью-Йорку справді хороший."],["Did ships use to stop at this harbor?","Сюди раніше заходили кораблі?"]],"src":"cur_b1_051"},"cur_b1_052":{"lv":"B1","o":52,"t":"Пам'ятки","life":"Подорож по США","g":"Passive · The Statue of Liberty was built in France","ph":[["The Statue of Liberty was built in France.","Статую Свободи збудували у Франції."],["Fifth Avenue is one of the most famous streets in the world.","П'ята авеню — одна з найвідоміших вулиць світу."],["Can we take a guided tour of the district?","Можна замовити екскурсію з гідом цим районом?"]],"src":"cur_b1_052"},"cur_b1_053":{"lv":"B1","o":53,"t":"Сторони світу","life":"Подорож по США","g":"relative clauses · the Northwest, where it rains a lot","ph":[["Seattle is in the Northwest, where it rains a lot.","Сіетл на північному заході, де часто йде дощ."],["My cousin lives in a small town that's in the Northeast.","Мій двоюрідний брат живе в містечку, що на північному сході."],["We drove westward for two days.","Ми два дні їхали на захід."]],"src":"cur_b1_053"},"cur_b1_054":{"lv":"B1","o":54,"t":"Відстані й регіони","life":"Подорож по США","g":"so / such · It's such a small county that everybody knows each other","ph":[["It's such a small county that everybody knows each other.","Це такий маленький округ, що всі одне одного знають."],["How far is the next town? — About fifty miles.","Як далеко до наступного містечка? — Близько п'ятдесяти миль."],["The town was so far away that we stayed overnight.","Містечко було так далеко, що ми там заночували."]],"src":"cur_b1_054"},"cur_b1_055":{"lv":"B1","o":55,"t":"Вхід і вихід","life":"Подорож по США","g":"future forms · Our flight departs at 6:40. I'm going to shop at duty-free.","ph":[["Our flight departs at 6:40 tomorrow morning.","Наш рейс вилітає завтра о 6:40 ранку."],["Do you have a room available for tonight?","У вас є вільний номер на сьогодні?"],["I'm going to buy some perfume at the duty-free shop.","Я куплю парфуми в дьюті-фрі."]],"src":"cur_b1_055"},"cur_b1_056":{"lv":"B1","o":56,"t":"Коледж","life":"Освіта","g":"Present Perfect Continuous · I've been revising all week","ph":[["I've been revising for my exams all week.","Я цілий тиждень повторюю матеріал до іспитів."],["How long have you been studying here? — Since I was a freshman.","Ти давно тут навчаєшся? — З першого курсу."],["I've been memorizing these words for an hour!","Я вже годину зубрю ці слова!"]],"src":"cur_b1_056"},"cur_b1_057":{"lv":"B1","o":57,"t":"Іспити","life":"Освіта","g":"First conditional · If you don't stop procrastinating, you'll flunk","ph":[["If you don't stop procrastinating, you'll flunk the exam.","Якщо не перестанеш усе відкладати, завалиш іспит."],["Underline the main idea in each paragraph.","Підкресліть головну думку в кожному абзаці."],["If you finish early, you'll have time to check your answers.","Якщо закінчиш раніше, матимеш час перевірити відповіді."]],"src":"cur_b1_057"},"cur_b1_058":{"lv":"B1","o":58,"t":"Школа","life":"Освіта","g":"used to · We used to eat lunch in the school canteen","ph":[["We used to eat lunch in the school canteen.","Ми колись обідали в шкільній їдальні."],["My mom used to be a schoolteacher.","Моя мама колись була шкільною вчителькою."],["Your handwriting used to be so neat!","У тебе раніше був такий акуратний почерк!"]],"src":"cur_b1_058"},"cur_b1_059":{"lv":"B1","o":59,"t":"Як я вчуся","life":"Освіта","g":"gerund / infinitive · Try grouping words. I want to improve.","ph":[["Try grouping new words by topic.","Спробуй групувати нові слова за темами."],["My aim is to reach B2 by summer.","Моя мета — дійти до B2 до літа."],["I keep forgetting to attend the online classes.","Я постійно забуваю ходити на онлайн-заняття."]],"src":"cur_b1_059"},"cur_b1_060":{"lv":"B1","o":60,"t":"Граматика","life":"Мова й спілкування","g":"phrasal verbs · figure out, look up, leave out","ph":[["I need to figure out how this works.","Мені треба розібратися, як це працює."],["Look up this phrasal verb in a dictionary.","Знайди це фразове дієслово в словнику."],["Don't leave out the comma here.","Не пропускай тут кому."]],"src":"cur_b1_060"},"cur_b1_061":{"lv":"B1","o":61,"t":"Звуки й слова","life":"Мова й спілкування","g":"relative clauses · a word that means the opposite","ph":[["An antonym is a word that means the opposite.","Антонім — це слово, яке має протилежне значення."],["My friend, who is bilingual, speaks Ukrainian and English fluently.","Мій друг, який з дитинства знає дві мови, вільно говорить українською й англійською."],["Read the phrase aloud, please.","Прочитай фразу вголос, будь ласка."]],"src":"cur_b1_061"},"cur_b1_062":{"lv":"B1","o":62,"t":"Розмова","life":"Мова й спілкування","g":"reported speech · He whispered that he was tired","ph":[["What do you mean by that?","Що ти маєш на увазі?"],["He whispered that he was tired.","Він прошепотів, що втомився."],["I asked her what the word meant.","Я спитав її, що означає це слово."]],"src":"cur_b1_062"},"cur_b1_063":{"lv":"B1","o":63,"t":"Пояснюємо думку","life":"Мова й спілкування","g":"reported speech · He insisted that he was right","ph":[["He insisted that he was right.","Він наполягав, що має рацію."],["Can you retell the story in your own words?","Можеш переказати історію своїми словами?"],["She told me she couldn't recall his name.","Вона сказала, що не може пригадати його ім'я."]],"src":"cur_b1_063"},"cur_b1_064":{"lv":"B1","o":64,"t":"Наукові дослідження","life":"Наука","g":"Passive · The discovery was made by accident","ph":[["The discovery was made by accident.","Відкриття зробили випадково."],["The results were analyzed in the lab.","Результати проаналізували в лабораторії."],["What's the conclusion of the study?","Який висновок дослідження?"]],"src":"b2x02_science"},"cur_b1_065":{"lv":"B1","o":65,"t":"Хімія й фізика","life":"Наука","g":"First conditional · If you heat the water, the salt will dissolve faster","ph":[["If you heat the water, the salt will dissolve faster.","Якщо нагрієш воду, сіль розчиниться швидше."],["Water is a liquid, and ice is a solid.","Вода — рідина, а лід — тверде тіло."],["If the plant doesn't get light, it won't absorb enough water.","Якщо рослина не отримає світла, вона не вбиратиме достатньо води."]],"src":"cur_b1_065"},"cur_b1_066":{"lv":"B1","o":66,"t":"Біологія","life":"Наука","g":"relative clauses · organisms that have only one cell","ph":[["Bacteria are organisms that have only one cell.","Бактерії — це організми, які мають лише одну клітину."],["Genes are what make you look like your parents.","Гени — це те, що робить тебе схожим на батьків."],["Scientists who study rocks work in geology.","Науковці, які вивчають гірські породи, працюють у геології."]],"src":"cur_b1_066"},"cur_b1_067":{"lv":"B1","o":67,"t":"Космос","life":"Наука","g":"might / may / could · There might be life in the universe","ph":[["There might be life somewhere in the universe.","Десь у Всесвіті може бути життя."],["The satellite orbits the Earth every 90 minutes.","Супутник облітає Землю кожні 90 хвилин."],["You may see a comet tonight if the sky is clear.","Якщо небо буде ясним, сьогодні вночі можна побачити комету."]],"src":"cur_b1_067"},"cur_b1_068":{"lv":"B1","o":68,"t":"Математика","life":"Наука","g":"gerund / infinitive · I'm not good at calculating. Try to draw it.","ph":[["I'm not very good at calculating in my head.","Я не дуже вмію рахувати в голові."],["Try to draw a diagram first.","Спробуй спершу намалювати схему."],["Stop worrying about the formula and look at the graph.","Не переймайся формулою, подивися на графік."]],"src":"cur_b1_068"},"cur_b1_069":{"lv":"B1","o":69,"t":"Вимірювання","life":"Наука","g":"question tags · A gallon is almost four liters, isn't it?","ph":[["A gallon is almost four liters, isn't it?","Галон — це майже чотири літри, так?"],["What's the exact length? — Approximately ten feet.","Яка точна довжина? — Приблизно десять футів."],["We need a dozen eggs, don't we?","Нам потрібен десяток яєць, так?"]],"src":"cur_b1_069"},"cur_b1_070":{"lv":"B1","o":70,"t":"Довкілля","life":"Довкілля","g":"First conditional · If we recycle more, there will be less waste","ph":[["If we don't protect the environment, our kids will pay for it.","Якщо ми не захистимо довкілля, за це заплатять наші діти."],["If we recycle more, there will be less waste.","Якщо ми більше перероблятимемо, відходів буде менше."],["Don't waste water — it's an important resource.","Не марнуй воду — це важливий ресурс."]],"src":"cur_b1_070"},"cur_b1_071":{"lv":"B1","o":71,"t":"Екологія","life":"Довкілля","g":"Passive · Many species are endangered by pollution","ph":[["Many species are endangered by pollution.","Багатьом видам загрожує забруднення."],["Too much coal is still burned around the world.","У світі досі спалюють забагато вугілля."],["This forest is protected by law.","Цей ліс охороняється законом."]],"src":"cur_b1_071"},"cur_b1_072":{"lv":"B1","o":72,"t":"Дика природа","life":"Довкілля","g":"relative clauses · the place where an animal lives","ph":[["A habitat is the place where an animal lives.","Середовище існування — це місце, де живе тварина."],["The Everglades are wetlands in Florida where alligators live.","Еверглейдс — це болота у Флориді, де живуть алігатори."],["The coral reef, which is very old, is in danger.","Кораловий риф, який дуже старий, у небезпеці."]],"src":"cur_b1_072"},"cur_b1_073":{"lv":"B1","o":73,"t":"Краєвиди","life":"Довкілля","g":"both / either / neither · Both trails are steep","ph":[["Both trails are steep, but the views are amazing.","Обидві стежки круті, але краєвиди неймовірні."],["Neither the pond nor the stream was deep.","Ні ставок, ні струмок не були глибокими."],["We can either climb to the mountaintop or visit the cave.","Можемо або піднятися на вершину, або піти до печери."]],"src":"cur_b1_073"},"cur_b1_074":{"lv":"B1","o":74,"t":"Погода і клімат","life":"Довкілля","g":"might / may / could · It might snow tonight","ph":[["The forecast says it might snow tonight.","Прогноз каже, що вночі може піти сніг."],["Summers in Florida are hot and humid.","Літо у Флориді спекотне й вологе."],["There may be thunder and lightning later.","Пізніше може бути гроза з блискавками."]],"src":"cur_b1_074"},"cur_b1_075":{"lv":"B1","o":75,"t":"Небо й світло","life":"Довкілля","g":"Past Continuous · We were watching the sunset when it got cold","ph":[["The sun was rising when we reached the top.","Сонце сходило, коли ми дісталися вершини."],["We were watching the sunset when it started to get cold.","Ми дивилися на захід сонця, коли почало холоднішати."],["Stars were shining brightly in the darkness.","У темряві яскраво світили зорі."]],"src":"cur_b1_075"},"cur_b1_076":{"lv":"B1","o":76,"t":"Тварини","life":"Тварини й рослини","g":"so / such · Our parrot is so smart!","ph":[["Our parrot is so smart — it can say \"hello\"!","Наш папуга такий розумний — уміє казати «hello»!"],["There were such huge whales near the boat!","Біля човна були такі величезні кити!"],["Why are mosquitoes so annoying?","Чому комарі такі набридливі?"]],"src":"cur_b1_076"},"cur_b1_077":{"lv":"B1","o":77,"t":"Ферма","life":"Тварини й рослини","g":"Passive · A lot of corn is grown in Iowa","ph":[["A lot of corn is grown in Iowa.","В Айові вирощують багато кукурудзи."],["The cattle are fed twice a day.","Худобу годують двічі на день."],["This farmland has been cultivated for a hundred years.","Цю землю обробляють уже сто років."]],"src":"cur_b1_077"},"cur_b1_078":{"lv":"B1","o":78,"t":"Звірі й рослини","life":"Тварини й рослини","g":"relative clauses · flowers that grow nearby","ph":[["Bees collect nectar from flowers that grow nearby.","Бджоли збирають нектар із квітів, що ростуть поблизу."],["The maple is the tree whose leaf is on Canada's flag.","Клен — це дерево, чий лист на прапорі Канади."],["The dog that lives next door has a very loud bark.","У собаки, яка живе по сусідству, дуже гучний гавкіт."]],"src":"cur_b1_078"},"cur_b1_079":{"lv":"B1","o":79,"t":"Овочі й фрукти","life":"Їжа й кухня","g":"both / either / neither · I don't like either broccoli or spinach","ph":[["I don't like either broccoli or spinach.","Я не люблю ні броколі, ні шпинату."],["Both of these pineapples are ripe.","Обидва ці ананаси стиглі."],["Raspberries or pineapple? — Either is fine.","Малину чи ананас? — Мені однаково."]],"src":"cur_b1_079"},"cur_b1_080":{"lv":"B1","o":80,"t":"М'ясо й риба","life":"Їжа й кухня","g":"future forms · We're having a barbecue on Saturday","ph":[["We're having a barbecue on Saturday. Are you coming?","У суботу в нас барбекю. Прийдеш?"],["I'll grill the salmon, and you make the salad.","Я засмажу лосося на грилі, а ти зроби салат."],["For Thanksgiving we're going to have turkey with gravy.","На День подяки в нас буде індичка з підливою."]],"src":"cur_b1_080"},"cur_b1_081":{"lv":"B1","o":81,"t":"Кухня","life":"Їжа й кухня","g":"phrasal verbs · turn on, take out, pour in","ph":[["Turn on the kettle, please.","Увімкни чайник, будь ласка."],["Take the butter out of the freezer and let it melt.","Дістань масло з морозилки, нехай розтане."],["We ran out of milk.","У нас закінчилося молоко."]],"src":"a2x02_kitchen"},"cur_b1_082":{"lv":"B1","o":82,"t":"Готуємо","life":"Їжа й кухня","g":"gerund / infinitive · Try adding ginger. I love making pies.","ph":[["Try adding a little ginger — it gives a nice flavor.","Спробуй додати трохи імбиру — він дає гарний смак."],["I love making pies with my grandma.","Я обожнюю пекти пироги з бабусею."],["This soup is too spicy for me to eat.","Цей суп для мене загострий."]],"src":"cur_b1_082"},"cur_b1_083":{"lv":"B1","o":83,"t":"Застілля","life":"Їжа й кухня","g":"so / such · It was such a huge feast that nobody could move","ph":[["It was such a huge feast that nobody could move.","Це був такий бенкет, що ніхто не міг поворухнутися."],["I'm so hungry — I have a huge appetite today.","Я такий голодний — сьогодні в мене величезний апетит."],["Never drive when you're drunk.","Ніколи не сідай за кермо п'яним."]],"src":"cur_b1_083"},"cur_b1_084":{"lv":"B1","o":84,"t":"Мистецтво","life":"Культура й медіа","g":"relative clauses · the artist who made this sculpture","ph":[["The artist who made this sculpture is from Chicago.","Митець, який зробив цю скульптуру, з Чикаго."],["The audience applauded for five minutes.","Глядачі аплодували п'ять хвилин."],["I like art that makes me think.","Мені подобається мистецтво, яке змушує думати."]],"src":"cur_b1_084"},"cur_b1_085":{"lv":"B1","o":85,"t":"Реклама й зірки","life":"Культура й медіа","g":"reported speech · The ad said the app was free","ph":[["The ad said the app was free, but it wasn't.","У рекламі казали, що застосунок безкоштовний, але це не так."],["The host asked the celebrity why she quit acting.","Ведучий спитав зірку, чому вона кинула акторство."],["My friend told me the song was a huge hit in the 90s.","Друг сказав мені, що в 90-х ця пісня була величезним хітом."]],"src":"cur_b1_085"},"cur_b1_086":{"lv":"B1","o":86,"t":"Кіно й серіали","life":"Культура й медіа","g":"Present Perfect Continuous · I've been watching this series for months","ph":[["I've been watching this series for months, and I still love it.","Я дивлюся цей серіал уже кілька місяців, і він мені досі подобається."],["My grandma has been watching the same soap opera for twenty years.","Бабуся двадцять років дивиться ту саму мильну оперу."],["Is it a thriller or a documentary?","Це трилер чи документальний фільм?"]],"src":"cur_b1_086"},"cur_b1_087":{"lv":"B1","o":87,"t":"Музика й сцена","life":"Культура й медіа","g":"used to · I used to sing in a choir","ph":[["I used to sing in the school choir.","Колись я співав у шкільному хорі."],["My dad used to play the trumpet in a jazz band.","Мій тато колись грав на трубі в джаз-бенді."],["Did you use to listen to rap? — Not really, more folk music.","Ти раніше слухав реп? — Не дуже, більше фолк."]],"src":"cur_b1_087"},"cur_b1_088":{"lv":"B1","o":88,"t":"Книжки","life":"Культура й медіа","g":"Past Perfect · I'd read the book before I saw the movie","ph":[["I'd read the book before I saw the movie.","Я прочитав книжку ще до того, як подивився фільм."],["By the time she was 30, she had published three novels.","До тридцяти років вона вже видала три романи."],["Who wrote this biography? — A journalist from Boston.","Хто написав цю біографію? — Журналіст із Бостона."]],"src":"cur_b1_088"},"cur_b1_089":{"lv":"B1","o":89,"t":"Розваги","life":"Культура й медіа","g":"gerund / infinitive · Grandpa loves gardening. Would you like to go?","ph":[["My grandpa loves gardening, and my grandma enjoys knitting.","Дідусь обожнює порпатися в саду, а бабуся любить в'язати."],["Would you like to go to the circus? — I'd love to!","Хочеш піти в цирк? — Залюбки!"],["We decided to stay for the fireworks.","Ми вирішили залишитися на феєрверк."]],"src":"cur_b1_089"},"cur_b1_090":{"lv":"B1","o":90,"t":"Стосунки","life":"Стосунки й почуття","g":"Second conditional · If you really respected me, you wouldn't be so jealous","ph":[["If you really respected me, you wouldn't be so jealous.","Якби ти справді мене поважав, то не ревнував би так."],["It was just a misunderstanding. Can you forgive me?","Це просто непорозуміння. Пробачиш мене?"],["If I were in your place, I'd support him.","На твоєму місці я б його підтримав."]],"src":"b2m_relationships"},"cur_b1_091":{"lv":"B1","o":91,"t":"Знайомства й побачення","life":"Стосунки й почуття","g":"question tags · You have a crush on him, don't you?","ph":[["You have a crush on him, don't you?","Ти в нього закохана, так?"],["Hey dude, you're coming tonight, aren't you?","Гей, друже, ти ж прийдеш сьогодні ввечері, так?"],["She paid me a really nice compliment.","Вона зробила мені дуже приємний комплімент."]],"src":"cur_b1_091"},"cur_b1_092":{"lv":"B1","o":92,"t":"Весілля й діти","life":"Стосунки й почуття","g":"future forms · They're getting married in June","ph":[["They're getting married in June, and they're going to Hawaii for their honeymoon.","Вони одружуються в червні, а на медовий місяць поїдуть на Гаваї."],["My sister is pregnant with twins!","Моя сестра вагітна двійнятами!"],["Don't worry, I'll babysit on Friday.","Не хвилюйся, я посиджу з дитиною в п'ятницю."]],"src":"cur_b1_092"},"cur_b1_093":{"lv":"B1","o":93,"t":"Родина","life":"Стосунки й почуття","g":"relative clauses · my niece, who lives in Ohio","ph":[["My niece, who lives in Ohio, is coming to visit.","Моя племінниця, яка живе в Огайо, приїде в гості."],["You really resemble your dad.","Ти дуже схожий на тата."],["This is a family photo that I really cherish.","Це родинне фото, яке мені дуже дороге."]],"src":"cur_b1_093"},"cur_b1_094":{"lv":"B1","o":94,"t":"Прощання","life":"Стосунки й почуття","g":"Past Perfect · When we arrived, the funeral had already started","ph":[["When we arrived, the funeral had already started.","Коли ми приїхали, похорон уже почався."],["I'm so sorry for your loss.","Мені дуже шкода вашої втрати."],["We had never said a proper farewell.","Ми так і не попрощалися як слід."]],"src":"cur_b1_094"},"cur_b1_095":{"lv":"B1","o":95,"t":"Почуття","life":"Стосунки й почуття","g":"so / such · I was so embarrassed that I couldn't say a word","ph":[["I was so embarrassed that I couldn't say a word.","Мені було так соромно, що я не міг і слова сказати."],["It was such an awkward moment!","Це був такий незручний момент!"],["Why do you look so annoyed?","Чого ти такий роздратований?"]],"src":"cur_b1_095"},"cur_b1_096":{"lv":"B1","o":96,"t":"Емоції й характер","life":"Стосунки й почуття","g":"Second conditional · If I were more patient, I'd be a better teacher","ph":[["If I were more patient, I'd be a better teacher.","Якби я був терплячішим, то був би кращим учителем."],["If you were honest with me, I'd trust you.","Якби ти був чесним зі мною, я б тобі довіряв."],["Thanks for being so generous and reliable.","Дякую, що ти такий щедрий і надійний."]],"src":"b2_character"},"cur_b1_097":{"lv":"B1","o":97,"t":"Страх і напруга","life":"Стосунки й почуття","g":"Past Continuous · We were watching a scary movie when someone screamed","ph":[["My hands were trembling when I went on stage.","Коли я виходив на сцену, у мене тремтіли руки."],["We were watching a scary movie when someone screamed outside.","Ми дивилися страшний фільм, коли хтось закричав надворі."],["There was a lot of tension in the room.","У кімнаті була велика напруга."]],"src":"cur_b1_097"},"cur_b1_098":{"lv":"B1","o":98,"t":"Радість і смуток","life":"Стосунки й почуття","g":"gerund / infinitive · We couldn't stop laughing","ph":[["I was really disappointed when they canceled the trip.","Я був дуже засмучений, коли поїздку скасували."],["We couldn't stop laughing!","Ми не могли перестати сміятися!"],["She blushed and started to giggle.","Вона почервоніла й почала хихотіти."]],"src":"cur_b1_098"},"cur_b1_099":{"lv":"B1","o":99,"t":"Нудьга й роздратування","life":"Стосунки й почуття","g":"wish · I wish I didn't get bored so easily","ph":[["I wish I didn't get bored so easily.","Шкода, що мені так швидко стає нудно."],["Don't make a fuss — it's not a big deal.","Не здіймай галасу — нічого страшного."],["I wish this meeting weren't so long.","Хотів би я, щоб ця нарада не була такою довгою."]],"src":"cur_b1_099"},"cur_b1_100":{"lv":"B1","o":100,"t":"Тривога і спокій","life":"Стосунки й почуття","g":"Present Perfect Continuous · I've been feeling overwhelmed lately","ph":[["I've been feeling a bit overwhelmed lately.","Останнім часом мені все трохи забагато."],["Have you been sleeping well? You look concerned.","Ти добре спиш останнім часом? Виглядаєш стурбованим."],["Warm milk soothes me when I can't sleep.","Тепле молоко заспокоює мене, коли я не можу заснути."]],"src":"cur_b1_100"},"cur_b1_101":{"lv":"B1","o":101,"t":"Сварки й примирення","life":"Стосунки й почуття","g":"reported speech · Mom told us not to yell at each other","ph":[["She said she was sorry and asked me to forgive her.","Вона сказала, що їй шкода, і попросила її пробачити."],["Mom told us not to yell at each other.","Мама сказала нам не кричати одне на одного."],["Don't blame me — it wasn't my fault!","Не звинувачуй мене — я не винен!"]],"src":"cur_b1_101"},"cur_b1_102":{"lv":"B1","o":102,"t":"Риси характеру","life":"Описуємо людей","g":"both / either / neither · Both of my sisters are talkative","ph":[["Both of my sisters are very talkative.","Обидві мої сестри дуже балакучі."],["Neither of them is selfish.","Жодна з них не егоїстка."],["My roommate is either very messy or very busy.","Мій сусід по кімнаті або дуже неохайний, або дуже зайнятий."]],"src":"b1x03_personality"},"cur_b1_103":{"lv":"B1","o":103,"t":"Зовнішність","life":"Описуємо людей","g":"relative clauses · the girl who always looks so stylish","ph":[["Who's the middle-aged man with curly hair? — The one who's talking to Anna?","Хто той чоловік середнього віку з кучерявим волоссям? — Той, що розмовляє з Анною?"],["She's the girl who always looks so stylish.","Вона та дівчина, яка завжди виглядає так стильно."],["You look pale. Are you OK?","Ти блідий. Усе гаразд?"]],"src":"b1x03_appearance"},"cur_b1_104":{"lv":"B1","o":104,"t":"Сміливість","life":"Описуємо людей","g":"Second conditional · If I had more confidence, I'd sing in public","ph":[["If I had more confidence, I'd sing in public.","Якби я був упевненішим, то співав би на публіці."],["It takes a lot of courage to start a new life abroad.","Потрібно багато сміливості, щоб почати нове життя за кордоном."],["What would you do if you weren't afraid?","Що б ти робив, якби не боявся?"]],"src":"cur_b1_104"},"cur_b1_105":{"lv":"B1","o":105,"t":"Добрі й злі","life":"Описуємо людей","g":"reported speech · She told me I had a great sense of humor","ph":[["She told me I had a great sense of humor.","Вона сказала, що в мене чудове почуття гумору."],["He said he was sorry for losing his temper.","Він сказав, що йому шкода, що він вийшов із себе."],["Don't be so nasty to your brother.","Не будь такий злий до брата."]],"src":"cur_b1_105"},"cur_b1_106":{"lv":"B1","o":106,"t":"Таланти","life":"Описуємо людей","g":"gerund / infinitive · He's good at imitating people. Stop boasting!","ph":[["My brother is really good at imitating people.","Мій брат чудово вміє пародіювати людей."],["Stop boasting about your new car!","Перестань хвалитися новою машиною!"],["Try to behave yourself at dinner.","Спробуй поводитися пристойно за вечерею."]],"src":"cur_b1_106"},"cur_b1_107":{"lv":"B1","o":107,"t":"Одяг і мода","life":"Описуємо людей","g":"might / may / could · These boots might be too small","ph":[["These boots might be too small for me.","Ці черевики, можливо, мені замалі."],["Is this sweatshirt too casual for the party? — It could be.","Цей світшот не надто простий для вечірки? — Може бути."],["Stripes may make you look taller.","Смужки можуть зробити тебе вищим на вигляд."]],"src":"cur_b1_107"},"cur_b1_108":{"lv":"B1","o":108,"t":"Прикраси й аксесуари","life":"Описуємо людей","g":"question tags · This bracelet doesn't fit, does it?","ph":[["This bracelet doesn't fit, does it?","Цей браслет не підходить, так?"],["It's a beautiful necklace. It isn't real jade, is it?","Гарне намисто. Це ж не справжній нефрит, правда?"],["Your jeans are a bit worn, aren't they?","Твої джинси трохи поношені, так?"]],"src":"cur_b1_108"},"cur_b1_109":{"lv":"B1","o":109,"t":"Вибори","life":"Суспільство й закон","g":"reported speech · The governor said he would lower taxes","ph":[["The governor said he would lower taxes.","Губернатор сказав, що знизить податки."],["Did you vote in the last election?","Ти голосував на останніх виборах?"],["The mayor promised that the park would be ready by May.","Мер пообіцяв, що парк буде готовий до травня."]],"src":"cur_b1_109"},"cur_b1_110":{"lv":"B1","o":110,"t":"Громадянське суспільство","life":"Суспільство й закон","g":"Second conditional · If I had more free time, I'd volunteer","ph":[["If I had more free time, I'd volunteer at a homeless shelter.","Якби я мав більше вільного часу, то волонтерив би в притулку для безхатьків."],["Thousands of people joined the demonstration.","Тисячі людей долучилися до демонстрації."],["What would you change if you were on the city council?","Що б ти змінив, якби був у міській раді?"]],"src":"cur_b1_110"},"cur_b1_111":{"lv":"B1","o":111,"t":"Документи","life":"Суспільство й закон","g":"Passive · My application was rejected","ph":[["My application was rejected, so I'm going to appeal.","Мою заяву відхилили, тож я подам апеляцію."],["Your registration has been approved.","Вашу реєстрацію схвалено."],["All documents must be signed by both parents.","Усі документи мають підписати обоє батьків."]],"src":"b1x01_paperwork"},"cur_b1_112":{"lv":"B1","o":112,"t":"Міграція","life":"Суспільство й закон","g":"Present Perfect Continuous · We've been living here for two years","ph":[["We've been living in the US for two years, and we're still adapting.","Ми живемо в США два роки й досі звикаємо."],["Newcomers sometimes face prejudice.","Новоприбулі іноді стикаються з упередженнями."],["How long have you been waiting for your status? — Since March.","Скільки ти вже чекаєш на статус? — З березня."]],"src":"cur_b1_112"},"cur_b1_113":{"lv":"B1","o":113,"t":"Влада","life":"Суспільство й закон","g":"relative clauses · a police officer who is elected","ph":[["A sheriff is a police officer who is elected by the people of a county.","Шериф — це поліцейський, якого обирають мешканці округу."],["Ukraine declared independence in 1991.","Україна проголосила незалежність у 1991 році."],["The leaders who met at the summit signed a declaration.","Лідери, які зустрілися на саміті, підписали декларацію."]],"src":"cur_b1_113"},"cur_b1_114":{"lv":"B1","o":114,"t":"Історія","life":"Історія й віра","g":"Past Perfect · By the end of 1865, slavery had ended","ph":[["By the end of 1865, slavery had ended in the US.","До кінця 1865 року рабство в США скасували."],["The empire had already collapsed when the war ended.","Коли війна закінчилася, імперія вже розпалася."],["Historians study how civilizations rise and fall.","Історики вивчають, як цивілізації виникають і занепадають."]],"src":"cur_b1_114"},"cur_b1_115":{"lv":"B1","o":115,"t":"Дикий Захід","life":"Історія й віра","g":"used to · Settlers used to travel west in wagons","ph":[["Settlers used to travel west in wagons.","Поселенці колись їхали на захід у фургонах."],["Life on the frontier was full of hardship.","Життя на фронтирі було сповнене труднощів."],["Outlaws used to hide in these hills.","Колись у цих пагорбах ховалися розбійники."]],"src":"cur_b1_115"},"cur_b1_116":{"lv":"B1","o":116,"t":"Віра","life":"Історія й віра","g":"both / either / neither · Both of my grandparents are religious","ph":[["Both of my grandparents are very religious.","І дідусь, і бабуся в мене дуже релігійні."],["Neither of us goes to church very often.","Ніхто з нас не ходить до церкви часто."],["This place is sacred to many people.","Це місце священне для багатьох людей."]],"src":"cur_b1_116"},"cur_b1_117":{"lv":"B1","o":117,"t":"Вірування й мораль","life":"Історія й віра","g":"might / may / could · It might be just a superstition","ph":[["It might be just a superstition, but I never walk under ladders.","Можливо, це просто забобон, але я ніколи не ходжу під драбиною."],["Bless you! — Thank you.","Будь здоровий! — Дякую."],["Some philosophers think time may be an illusion.","Деякі філософи вважають, що час може бути ілюзією."]],"src":"cur_b1_117"},"cur_b1_118":{"lv":"B1","o":118,"t":"Мислення й аргументація","life":"Думки й ідеї","g":"reported speech · He denied that he had taken the money","ph":[["He denied that he had taken the money.","Він заперечив, що взяв гроші."],["Experts estimated that the project would cost $2 million.","Експерти підрахували, що проєкт коштуватиме 2 мільйони доларів."],["In my opinion, it's a good idea, but it's too expensive.","На мою думку, ідея добра, але задорога."]],"src":"b2x02_argue"},"cur_b1_119":{"lv":"B1","o":119,"t":"Ідеї й поняття","life":"Думки й ідеї","g":"phrasal verbs · come up with, break down, point out","ph":[["Who came up with this idea?","Хто придумав цю ідею?"],["Let's break the process down into small steps.","Розбиймо процес на маленькі кроки."],["Can you point out the main pattern here?","Можеш показати головну закономірність тут?"]],"src":"cur_b1_119"},"cur_b1_120":{"lv":"B1","o":120,"t":"Вибір і рішення","life":"Думки й ідеї","g":"Second conditional · If there were another option, I'd take it","ph":[["If there were another option, I'd take it.","Якби був інший варіант, я б ним скористався."],["It's a difficult decision. What would you do?","Це важке рішення. А ти що б зробив?"],["If I had to choose, I'd go for the cheaper alternative.","Якби мені довелося обирати, я б узяв дешевший варіант."]],"src":"cur_b1_120"},"cur_b1_121":{"lv":"B1","o":121,"t":"Труднощі","life":"Думки й ідеї","g":"wish · I wish things weren't so complicated","ph":[["I wish things weren't so complicated.","Шкода, що все так складно."],["Failure is part of learning.","Невдачі — частина навчання."],["I wish there weren't such a big gap between rich and poor.","Шкода, що між багатими й бідними така велика прірва."]],"src":"cur_b1_121"},"cur_b1_122":{"lv":"B1","o":122,"t":"Розвиток і зміни","life":"Думки й ідеї","g":"Present Perfect vs Past Simple · The city has changed a lot. Prices varied last year.","ph":[["The city has transformed a lot since I was a kid.","Місто дуже змінилося з часів мого дитинства."],["New trends have emerged in the last few years.","За останні кілька років з'явилися нові тенденції."],["Prices varied a lot last year.","Торік ціни дуже коливалися."]],"src":"cur_b1_122"},"cur_b1_123":{"lv":"B1","o":123,"t":"Враження","life":"Думки й ідеї","g":"so / such · She made such a good impression","ph":[["She made such a good impression at the interview!","Вона справила таке гарне враження на співбесіді!"],["The view was so beautiful that we stood in silence.","Краєвид був такий гарний, що ми стояли мовчки."],["This hotel has such a good reputation.","У цього готелю така гарна репутація."]],"src":"cur_b1_123"},"cur_b1_124":{"lv":"B1","o":124,"t":"Кількість і масштаб","life":"Думки й ідеї","g":"question tags · That's a massive amount of work, isn't it?","ph":[["That's a massive amount of work, isn't it?","Це величезний обсяг роботи, так?"],["You can't eat the whole bunch of grapes, can you?","Ти ж не з'їси ціле гроно винограду, правда?"],["The stadium has a capacity of 70,000, doesn't it?","Стадіон уміщує 70 000 людей, так?"]],"src":"cur_b1_124"},"cur_b1_125":{"lv":"B1","o":125,"t":"Події й справи","life":"Думки й ідеї","g":"future forms · The opening is going to be on Friday","ph":[["The opening of the new library is going to be on Friday.","Відкриття нової бібліотеки буде в п'ятницю."],["I'll make all the arrangements for the trip.","Я все підготую до поїздки."],["Thanks for your contribution — it'll make a big difference.","Дякую за внесок — це дуже допоможе."]],"src":"cur_b1_125"},"cur_b1_126":{"lv":"B1","o":126,"t":"Абстрактні слова","life":"Думки й ідеї","g":"gerund / infinitive · I have no intention of giving up","ph":[["I have no intention of giving up.","Я не маю наміру здаватися."],["That's nonsense! Stop worrying about it.","Це нісенітниця! Перестань про це хвилюватися."],["There's no substitute for practicing every day.","Ніщо не замінить щоденної практики."]],"src":"cur_b1_126"},"cur_b1_127":{"lv":"B1","o":127,"t":"Поради й прохання","life":"Корисні дієслова","g":"Second conditional · If I were you, I'd talk to your manager","ph":[["If I were you, I'd talk to your manager.","На твоєму місці я б поговорив з менеджером."],["I'd persuade him if I could, but he refuses to listen.","Я б його переконав, якби міг, але він відмовляється слухати."],["If you warned them earlier, they wouldn't be so upset.","Якби ти попередив їх раніше, вони б так не засмучувалися."]],"src":"cur_b1_127"},"cur_b1_128":{"lv":"B1","o":128,"t":"Рухи","life":"Корисні дієслова","g":"Past Continuous · I slipped while I was running for the bus","ph":[["I slipped while I was running for the bus.","Я послизнувся, коли біг до автобуса."],["He was staring at me the whole time.","Він увесь час на мене витріщався."],["She glanced at her phone and grabbed her bag.","Вона глянула на телефон і схопила сумку."]],"src":"cur_b1_128"},"cur_b1_129":{"lv":"B1","o":129,"t":"Звуки й удари","life":"Корисні дієслова","g":"phrasal verbs · burn down, tear up, knock over","ph":[["The old barn burned down last summer.","Минулого літа старий сарай згорів дотла."],["Don't tear up the letter!","Не рви листа!"],["Oops, I knocked over a glass of water.","Ой, я перекинув склянку води."]],"src":"cur_b1_129"},"cur_b1_130":{"lv":"B1","o":130,"t":"Дії з речами","life":"Корисні дієслова","g":"phrasal verbs · hang up, put away, tie up","ph":[["Hang up your coat and put away your shoes.","Повісь пальто й прибери взуття."],["Tie up your shoelaces, or you'll trip.","Зав'яжи шнурки, а то перечепишся."],["Can you pick me up at six?","Можеш забрати мене о шостій?"]],"src":"cur_b1_130"},"cur_b1_131":{"lv":"B1","o":131,"t":"Керувати й володіти","life":"Корисні дієслова","g":"Second conditional · If I owned a restaurant, I'd hire my friends","ph":[["If I owned a restaurant, I'd hire my friends.","Якби в мене був ресторан, я б найняв друзів."],["Who's leading the project now?","Хто зараз керує проєктом?"],["If they restored the old theater, it would be amazing.","Якби старий театр відреставрували, було б чудово."]],"src":"cur_b1_131"},"cur_b1_132":{"lv":"B1","o":132,"t":"Думати й помічати","life":"Корисні дієслова","g":"reported speech · I wondered if he would recognize me","ph":[["I wondered if he would recognize me.","Я думав, чи впізнає він мене."],["She asked me whether I intended to stay.","Вона спитала, чи я збираюся залишитися."],["Don't hesitate to ask!","Не соромся питати!"]],"src":"cur_b1_132"},"cur_b1_133":{"lv":"B1","o":133,"t":"Досягати мети","life":"Корисні дієслова","g":"Present Perfect Continuous · I've been trying to fix this for hours","ph":[["I've been attempting to fix this for hours!","Я вже кілька годин намагаюся це полагодити!"],["She's been working hard, and she's finally accomplished her goal.","Вона багато працювала й нарешті досягла мети."],["You can rely on me.","Можеш на мене покластися."]],"src":"cur_b1_133"},"cur_b1_134":{"lv":"B1","o":134,"t":"Більше й менше","life":"Корисні дієслова","g":"First conditional · If we simplify the form, more people will fill it out","ph":[["If we simplify the form, more people will fill it out.","Якщо ми спростимо форму, більше людей її заповнять."],["If you extend your stay, it'll cost $50 more per night.","Якщо подовжите перебування, це коштуватиме на 50 доларів більше за ніч."],["Regular exercise strengthens your heart.","Регулярні вправи зміцнюють серце."]],"src":"cur_b1_134"},"cur_b1_135":{"lv":"B1","o":135,"t":"Дії й реакції","life":"Корисні дієслова","g":"phrasal verbs · get rid of, calm down, give up","ph":[["We need to get rid of all this old stuff.","Нам треба позбутися всього цього старого мотлоху."],["Calm down and don't react so fast.","Заспокойся й не реагуй так швидко."],["Don't give up — you'll figure it out.","Не здавайся — ти розберешся."]],"src":"cur_b1_135"},"cur_b1_136":{"lv":"B1","o":136,"t":"Створювати й показувати","life":"Корисні дієслова","g":"gerund / infinitive · I'd love to design my own house","ph":[["I'd love to design my own house one day.","Колись я хотів би спроєктувати власний будинок."],["I enjoy arranging flowers.","Мені подобається складати букети."],["Try combining the two colors.","Спробуй поєднати ці два кольори."]],"src":"cur_b1_136"},"cur_b1_137":{"lv":"B1","o":137,"t":"Щоденні дієслова","life":"Корисні дієслова","g":"future forms · I promise I'll call. We're going to visit friends.","ph":[["I promise I'll call you when I land.","Обіцяю, що подзвоню, коли приземлюся."],["What are you planning to do this weekend? — We're going to visit friends.","Що плануєш робити на вихідних? — Ми збираємося провідати друзів."],["Slow down, or you'll miss the exit!","Пригальмуй, бо проїдеш з'їзд!"]],"src":"cur_b1_137"},"cur_b1_138":{"lv":"B1","o":138,"t":"Сюрпризи","life":"Корисні дієслова","g":"Past Perfect · I had never seen such a view before","ph":[["I had never seen such a stunning view before.","Я ще ніколи не бачив такого приголомшливого краєвиду."],["We were surprised because nobody had told us.","Ми здивувалися, бо нам ніхто не сказав."],["That's awesome! Congratulations!","Це чудово! Вітаю!"]],"src":"cur_b1_138"},"cur_b1_139":{"lv":"B1","o":139,"t":"Позиції й погляди","life":"Корисні дієслова","g":"question tags · You'll back me up, won't you?","ph":[["You'll back me up at the meeting, won't you?","Ти ж підтримаєш мене на нараді, правда?"],["Our opinions differ, don't they?","Наші думки розходяться, так?"],["I think so too. / I'm not so sure about that.","Я теж так думаю. / Я не дуже в цьому впевнений."]],"src":"cur_b1_139"},"cur_b1_140":{"lv":"B1","o":140,"t":"Час і тривалість","life":"Корисні дієслова","g":"used to · Winters used to last longer","ph":[["Winters used to last longer when I was a kid.","Коли я був малим, зима тривала довше."],["I'll be back shortly.","Я скоро повернуся."],["We used to meet whenever we had a free moment.","Колись ми зустрічалися щоразу, коли мали вільну хвилину."]],"src":"cur_b1_140"},"cur_b1_141":{"lv":"B1","o":141,"t":"Розмір і форма","life":"Корисні прикметники","g":"so / such · The apartment was so tiny that we couldn't fit a sofa","ph":[["The apartment was so tiny that we couldn't fit a sofa.","Квартира була така крихітна, що ми не змогли поставити диван."],["It's such a huge country!","Це така величезна країна!"],["Be careful — the knife is very sharp.","Обережно — ніж дуже гострий."]],"src":"cur_b1_141"},"cur_b1_142":{"lv":"B1","o":142,"t":"Складно й просто","life":"Корисні прикметники","g":"might / may / could · It might look complicated","ph":[["It might look complicated, but it's actually very simple.","Може здатися складним, але насправді все дуже просто."],["This tool could be really handy on the trip.","Цей інструмент може дуже знадобитися в поїздці."],["The instructions may be vague, but the pictures help.","Інструкція, може, й нечітка, але малюнки допомагають."]],"src":"b1x02_adjectives"},"cur_b1_143":{"lv":"B1","o":143,"t":"Добре й погано","life":"Корисні прикметники","g":"both / either / neither · Neither movie was worth the money","ph":[["Both movies were horrible — neither was worth the money.","Обидва фільми жахливі — жоден не вартий грошей."],["That's a weird idea, but it's not ridiculous.","Дивна ідея, але не безглузда."],["We were unlucky with the weather, but neither of us minded.","Нам не пощастило з погодою, але нікого з нас це не засмутило."]],"src":"cur_b1_143"},"cur_b1_144":{"lv":"B1","o":144,"t":"Головне й другорядне","life":"Корисні прикметники","g":"relative clauses · the main thing that matters","ph":[["The main thing that matters is your health.","Головне, що має значення, — це твоє здоров'я."],["Is it urgent? — Not really, it's a minor problem.","Це терміново? — Не дуже, це дрібна проблема."],["She's an outstanding student who always helps others.","Вона видатна студентка, яка завжди допомагає іншим."]],"src":"cur_b1_144"},"cur_b1_145":{"lv":"B1","o":145,"t":"Правильно й точно","life":"Корисні прикметники","g":"reported speech · The seller said the price was reasonable","ph":[["The seller said the price was reasonable.","Продавець сказав, що ціна розумна."],["She told me my answer was incorrect.","Вона сказала, що моя відповідь неправильна."],["It's obvious that he's tired.","Очевидно, що він утомився."]],"src":"cur_b1_145"},"cur_b1_146":{"lv":"B1","o":146,"t":"Безпечно й стабільно","life":"Корисні прикметники","g":"First conditional · If you drive safely, you'll get there in one piece","ph":[["If you drive safely, you'll get there in one piece.","Якщо їхатимеш обережно, доїдеш цілим."],["If the pain gets severe, call a doctor immediately.","Якщо біль посилиться, негайно викличте лікаря."],["Prices have risen steadily this year.","Цього року ціни стабільно зростали."]],"src":"cur_b1_146"},"cur_b1_147":{"lv":"B1","o":147,"t":"Схожі й залучені","life":"Корисні прикметники","g":"both / either / neither · We both look alike","ph":[["My brother and I look alike, but we're both very different inside.","Ми з братом схожі зовні, але обидва дуже різні всередині."],["Neither of them was aware of the problem.","Жоден із них не знав про проблему."],["Are you involved in the project? — Yes, we both are.","Ти долучений до проєкту? — Так, ми обоє."]],"src":"cur_b1_147"},"cur_b1_148":{"lv":"B1","o":148,"t":"Нове й давнє","life":"Корисні прикметники","g":"Present Perfect Continuous · It has been raining continuously since morning","ph":[["What have you been doing lately? — Nothing much.","Що ти робив останнім часом? — Та нічого особливого."],["My previous job was in Texas, but currently I'm working in Ohio.","Моя попередня робота була в Техасі, а зараз я працюю в Огайо."],["It has been raining continuously since morning.","Дощ ллє безперервно з самого ранку."]],"src":"cur_b1_148"},"cur_b1_149":{"lv":"B1","o":149,"t":"Рідко й часто","life":"Корисні прикметники","g":"used to · I rarely go out now, but I used to every weekend","ph":[["I rarely go out now, but I used to go out every weekend.","Зараз я рідко кудись ходжу, а колись виходив щовихідних."],["Snow is rare in Miami.","У Маямі сніг — рідкість."],["We didn't use to eat out so frequently.","Раніше ми не їли в ресторанах так часто."]],"src":"cur_b1_149"},"cur_b1_150":{"lv":"B1","o":150,"t":"Стан речей і людей","life":"Корисні прикметники","g":"Past Perfect · When I got home, the kids had already fallen asleep","ph":[["When I got home, the kids had already fallen asleep.","Коли я прийшов додому, діти вже поснули."],["I'm stuck in traffic. — Again?","Я застряг у заторі. — Знову?"],["The door was shut because everyone had left.","Двері були зачинені, бо всі вже пішли."]],"src":"cur_b1_150"},"cur_b1_151":{"lv":"B1","o":151,"t":"Можливо й навряд","life":"Корисні прикметники","g":"might / may / could · It might rain, but it's unlikely","ph":[["It might rain, but it's unlikely.","Може піти дощ, але навряд."],["Hopefully the weather will be good. — It could change, it's so unpredictable here.","Сподіваюся, погода буде гарною. — Вона може змінитися, тут вона така непередбачувана."],["Honestly, I don't know. It may be true.","Чесно, не знаю. Можливо, це правда."]],"src":"cur_b1_151"},"cur_b1_152":{"lv":"B1","o":152,"t":"Різне про речі","life":"Корисні прикметники","g":"wish · I wish I hadn't been so hasty","ph":[["I wish I hadn't been so hasty.","Шкода, що я так поспішив."],["I wish this medicine were more effective.","Хотілося б, щоб ці ліки діяли краще."],["Time is precious — don't waste it.","Час дорогоцінний — не марнуй його."]],"src":"cur_b1_152"},"cur_b1_153":{"lv":"B1","o":153,"t":"Зв'язні слова","life":"Корисні прислівники","g":"First conditional · If it rains, we'll stay home. Otherwise, we'll go to the beach.","ph":[["Leave now; otherwise, you'll miss the train.","Виходь зараз, інакше спізнишся на потяг."],["Initially I hated New York, but eventually I fell in love with it.","Спершу я ненавидів Нью-Йорк, але згодом закохався в нього."],["If it rains, we'll stay home. Otherwise, we'll go to the beach.","Якщо піде дощ, залишимося вдома. Інакше поїдемо на пляж."]],"src":"b2x03_linking"},"cur_b1_154":{"lv":"B1","o":154,"t":"Як саме","life":"Корисні прислівники","g":"phrasal verbs · hold on, show around, write down","ph":[["Hold on tightly — the ride is starting!","Тримайся міцно — атракціон починається!"],["They welcomed us warmly and showed us around.","Нас тепло зустріли й усе показали."],["Watch closely and write it down.","Уважно дивись і записуй."]],"src":"cur_b1_154"},"cur_b1_155":{"lv":"B1","o":155,"t":"Наскільки","life":"Корисні прислівники","g":"Second conditional · I'd be absolutely delighted if you came","ph":[["I'd be absolutely delighted if you came.","Я був би безмежно радий, якби ти прийшов."],["I can barely hear you. — Sorry, I'm on the subway.","Я тебе ледве чую. — Вибач, я в метро."],["If it were slightly cheaper, I'd buy it.","Якби це було трохи дешевше, я б купив."]],"src":"cur_b1_155"},"cur_b1_156":{"lv":"B1","o":156,"t":"Навмисно чи випадково","life":"Корисні прислівники","g":"question tags · You didn't do it intentionally, did you?","ph":[["You didn't break it intentionally, did you? — No, it was an accident!","Ти ж не навмисно це розбив, правда? — Ні, випадково!"],["Can I pay you directly?","Можна заплатити вам напряму?"],["It's unusually quiet today, isn't it?","Сьогодні якось незвично тихо, так?"]],"src":"cur_b1_156"},"cur_b1_157":{"lv":"B1","o":157,"t":"Яскраво й помітно","life":"Корисні прислівники","g":"gerund / infinitive · I remember meeting her vividly","ph":[["I remember meeting her very vividly.","Я дуже яскраво пам'ятаю, як познайомився з нею."],["It's becoming increasingly hard to find an apartment.","Знайти квартиру стає дедалі важче."],["Make sure to do it properly.","Обов'язково зроби це як слід."]],"src":"cur_b1_157"},"cur_b1_158":{"lv":"B1","o":158,"t":"Ще корисні дієслова","life":"Корисні слова","g":"Passive · Children must be accompanied by an adult","ph":[["Children must be accompanied by an adult.","Діти мають бути в супроводі дорослого."],["The letter was addressed to my neighbor.","Лист був адресований моєму сусідові."],["Does this tie match my shirt?","Ця краватка пасує до сорочки?"]],"src":"cur_b1_158"},"cur_b1_159":{"lv":"B1","o":159,"t":"Ще корисні прикметники","life":"Корисні слова","g":"wish · I wish I'd been better prepared","ph":[["I wish I'd been better prepared for the interview.","Шкода, що я не підготувався до співбесіди краще."],["You're always welcome here.","Тобі тут завжди раді."],["The trip was brief, but it was tremendous fun.","Поїздка була короткою, але неймовірно веселою."]],"src":"cur_b1_159"},"cur_b1_160":{"lv":"B1","o":160,"t":"Різні слова","life":"Корисні слова","g":"phrasal verbs · carry on, put off, get down","ph":[["Take a rest and carry on later.","Відпочинь, а потім продовжиш."],["The boxes are out of reach — can you get them down?","Коробки не дістати — можеш їх зняти?"],["Let's not put off the meeting — we've already booked a time slot.","Не відкладаймо зустріч — ми вже забронювали час."]],"src":"cur_b1_160"}}};
 const EXAMDATA={"ukus": {"pairs": [{"uk": "квартира", "gb": "flat", "us": "apartment", "kind": "word", "pic": "🏢", "lv": "A1"}, {"uk": "ліфт", "gb": "lift", "us": "elevator", "kind": "word", "pic": "🛗", "lv": "A2"}, {"uk": "печиво", "gb": "biscuit", "us": "cookie", "kind": "word", "pic": "🍪", "lv": "A1", "note_uk": "В американській biscuit — це м'яка булочка."}, {"uk": "відпустка, канікули", "gb": "holiday", "us": "vacation", "kind": "word", "pic": "🏖️", "lv": "A2", "note_uk": "Британці кажуть go on holiday, американці — go on vacation."}, {"uk": "черга", "gb": "queue", "us": "line", "kind": "word", "pic": "🧍‍♂️🧍", "lv": "A2", "note_uk": "🇬🇧 queue up = 🇺🇸 stand in line."}, {"uk": "сміття", "gb": "rubbish", "us": "trash", "kind": "word", "pic": "🗑️", "lv": "A2", "note_uk": "В американській також garbage."}, {"uk": "автомагістраль", "gb": "motorway", "us": "highway", "kind": "word", "pic": "🛣️", "lv": "B1", "note_uk": "В американській також freeway, interstate."}, {"uk": "бензин", "gb": "petrol", "us": "gas", "kind": "word", "pic": "⛽", "lv": "A2", "note_uk": "gas — скорочення від gasoline."}, {"uk": "картопля фрі", "gb": "chips", "us": "fries", "kind": "word", "pic": "🍟", "lv": "A1", "note_uk": "Повна американська назва — French fries."}, {"uk": "чипси", "gb": "crisps", "us": "chips", "kind": "word", "pic": "🥔", "lv": "A1", "note_uk": "Увага: британські chips — це картопля фрі!"}, {"uk": "штани", "gb": "trousers", "us": "pants", "kind": "word", "pic": "👖", "lv": "A1", "note_uk": "У британській pants — це труси."}, {"uk": "мобільний телефон", "gb": "mobile phone", "us": "cell phone", "kind": "word", "pic": "📱", "lv": "A1", "note_uk": "Часто скорочують: mobile / cell."}, {"uk": "осінь", "gb": "autumn", "us": "fall", "kind": "word", "pic": "🍂", "lv": "A1", "note_uk": "Американці теж розуміють autumn, але частіше кажуть fall."}, {"uk": "фільм", "gb": "film", "us": "movie", "kind": "word", "pic": "🎬", "lv": "A1"}, {"uk": "метро", "gb": "underground", "us": "subway", "kind": "word", "pic": "🚇", "lv": "A2", "note_uk": "Лондонське метро — the Tube. Британське subway — підземний перехід."}, {"uk": "тротуар", "gb": "pavement", "us": "sidewalk", "kind": "word", "pic": "🚶", "lv": "B1"}, {"uk": "розклад (руху, уроків)", "gb": "timetable", "us": "schedule", "kind": "word", "pic": "🗓️", "lv": "A2", "note_uk": "Слово schedule вживають і британці, особливо про плани."}, {"uk": "аптека", "gb": "chemist's", "us": "drugstore", "kind": "word", "pic": "💊", "lv": "B1", "note_uk": "Обидва варіанти також кажуть pharmacy."}, {"uk": "поштовий індекс", "gb": "postcode", "us": "zip code", "kind": "word", "pic": "📮", "lv": "B1"}, {"uk": "автостоянка", "gb": "car park", "us": "parking lot", "kind": "word", "pic": "🅿️", "lv": "A2"}, {"uk": "перший поверх", "gb": "ground floor", "us": "first floor", "kind": "word", "pic": "🏠", "lv": "A2", "note_uk": "У Британії first floor — це вже другий поверх."}, {"uk": "футбол", "gb": "football", "us": "soccer", "kind": "word", "pic": "⚽", "lv": "A1", "note_uk": "Американське football — це американський футбол 🏈."}, {"uk": "цукерки", "gb": "sweets", "us": "candy", "kind": "word", "pic": "🍬", "lv": "A1"}, {"uk": "смітник, сміттєвий бак", "gb": "bin", "us": "trash can", "kind": "word", "pic": "🗑️", "lv": "A2", "note_uk": "В американській також garbage can."}, {"uk": "квиток туди й назад", "gb": "return ticket", "us": "round-trip ticket", "kind": "word", "pic": "🎫🔁", "lv": "B1"}, {"uk": "квиток в один бік", "gb": "single ticket", "us": "one-way ticket", "kind": "word", "pic": "🎫➡️", "lv": "B1"}, {"uk": "резюме", "gb": "CV", "us": "résumé", "kind": "word", "pic": "📄", "lv": "B1", "note_uk": "Часто пишуть і без наголосів: resume."}, {"uk": "математика", "gb": "maths", "us": "math", "kind": "word", "pic": "➗", "lv": "A1"}, {"uk": "туалет (громадський)", "gb": "toilet", "us": "restroom", "kind": "word", "pic": "🚻", "lv": "A2", "note_uk": "Британці також кажуть loo (розмовне), американці — bathroom."}, {"uk": "вантажівка", "gb": "lorry", "us": "truck", "kind": "word", "pic": "🚚", "lv": "A2", "note_uk": "Слово truck вживають і британці."}, {"uk": "кран (водопровідний)", "gb": "tap", "us": "faucet", "kind": "word", "pic": "🚰", "lv": "B1"}, {"uk": "ліхтарик", "gb": "torch", "us": "flashlight", "kind": "word", "pic": "🔦", "lv": "B1"}, {"uk": "багажник (авто)", "gb": "boot", "us": "trunk", "kind": "word", "pic": "🚗", "lv": "B1"}, {"uk": "капот (авто)", "gb": "bonnet", "us": "hood", "kind": "word", "pic": "🚘", "lv": "B2"}, {"uk": "підгузок", "gb": "nappy", "us": "diaper", "kind": "word", "pic": "👶", "lv": "B1"}, {"uk": "шафа для одягу", "gb": "wardrobe", "us": "closet", "kind": "word", "pic": "🚪👕", "lv": "A2"}, {"uk": "пошта (листи)", "gb": "post", "us": "mail", "kind": "word", "pic": "✉️", "lv": "A2", "note_uk": "🇬🇧 post a letter = 🇺🇸 mail a letter."}, {"uk": "листоноша", "gb": "postman", "us": "mailman", "kind": "word", "pic": "📬", "lv": "A2", "note_uk": "Нейтральні варіанти: postal worker / mail carrier."}, {"uk": "рахунок у ресторані", "gb": "bill", "us": "check", "kind": "word", "pic": "🧾", "lv": "A2", "note_uk": "🇬🇧 Can I have the bill? = 🇺🇸 Can I get the check?"}, {"uk": "пішохідний перехід", "gb": "zebra crossing", "us": "crosswalk", "kind": "word", "pic": "🦓", "lv": "B1"}, {"uk": "кінотеатр", "gb": "cinema", "us": "movie theater", "kind": "word", "pic": "🍿", "lv": "A1"}, {"uk": "магазин", "gb": "shop", "us": "store", "kind": "word", "pic": "🏪", "lv": "A1", "note_uk": "Британці кажуть store про великі універмаги."}, {"uk": "торговий центр", "gb": "shopping centre", "us": "mall", "kind": "word", "pic": "🛍️", "lv": "A2"}, {"uk": "канцелярська кнопка", "gb": "drawing pin", "us": "thumbtack", "kind": "word", "pic": "📌", "lv": "B2"}, {"uk": "гумка (для стирання)", "gb": "rubber", "us": "eraser", "kind": "word", "pic": "✏️", "lv": "A2", "note_uk": "Слово eraser розуміють і британці."}, {"uk": "баклажан", "gb": "aubergine", "us": "eggplant", "kind": "word", "pic": "🍆", "lv": "B1"}, {"uk": "кабачок, цукіні", "gb": "courgette", "us": "zucchini", "kind": "word", "pic": "🥒", "lv": "B1"}, {"uk": "перерва (у школі)", "gb": "break", "us": "recess", "kind": "word", "pic": "🔔", "lv": "B1"}, {"uk": "директор школи", "gb": "headteacher", "us": "principal", "kind": "word", "pic": "👩‍🏫", "lv": "B1", "note_uk": "Британці також кажуть head teacher або head."}, {"uk": "оцінка (шкільна)", "gb": "mark", "us": "grade", "kind": "word", "pic": "💯", "lv": "A2", "note_uk": "У британській grade теж уживають, зокрема про іспити."}, {"uk": "крапка (розділовий знак)", "gb": "full stop", "us": "period", "kind": "word", "pic": "⏺️", "lv": "B1"}, {"uk": "об'їзд", "gb": "diversion", "us": "detour", "kind": "word", "pic": "🚧", "lv": "B2"}, {"uk": "автозаправка", "gb": "petrol station", "us": "gas station", "kind": "word", "pic": "⛽🚗", "lv": "A2"}, {"uk": "кросівки", "gb": "trainers", "us": "sneakers", "kind": "word", "pic": "👟", "lv": "A2"}, {"uk": "светр", "gb": "jumper", "us": "sweater", "kind": "word", "pic": "🧶", "lv": "A2", "note_uk": "Слово sweater вживають і британці."}, {"uk": "жилет", "gb": "waistcoat", "us": "vest", "kind": "word", "pic": "🦺", "lv": "B2", "note_uk": "У британській vest — це майка."}, {"uk": "номерний знак (авто)", "gb": "number plate", "us": "license plate", "kind": "word", "pic": "🚙", "lv": "B2"}, {"uk": "водійське посвідчення", "gb": "driving licence", "us": "driver's license", "kind": "word", "pic": "🪪", "lv": "B1"}, {"uk": "агент з нерухомості, ріелтор", "gb": "estate agent", "us": "real estate agent", "kind": "word", "pic": "🏡", "lv": "B2", "note_uk": "В американській також realtor."}, {"uk": "літак", "gb": "aeroplane", "us": "airplane", "kind": "word", "pic": "✈️", "lv": "A1", "note_uk": "Обидва варіанти часто кажуть просто plane."}, {"uk": "пральня самообслуговування", "gb": "launderette", "us": "laundromat", "kind": "word", "pic": "🧺", "lv": "B2"}, {"uk": "колір", "gb": "colour", "us": "color", "kind": "spelling", "pic": "🎨", "lv": "A1"}, {"uk": "центр", "gb": "centre", "us": "center", "kind": "spelling", "pic": "🎯", "lv": "A1"}, {"uk": "організовувати", "gb": "organise", "us": "organize", "kind": "spelling", "pic": "🗂️", "lv": "B1", "note_uk": "У британській також допустимо -ize (оксфордський правопис)."}, {"uk": "подорожував", "gb": "travelled", "us": "traveled", "kind": "spelling", "pic": "🧳", "lv": "A2", "note_uk": "🇬🇧 подвоює l перед -ed/-ing."}, {"uk": "театр", "gb": "theatre", "us": "theater", "kind": "spelling", "pic": "🎭", "lv": "A2"}, {"uk": "оборона, захист", "gb": "defence", "us": "defense", "kind": "spelling", "pic": "🛡️", "lv": "B2"}, {"uk": "програма, передача", "gb": "programme", "us": "program", "kind": "spelling", "pic": "📺", "lv": "A2", "note_uk": "Комп'ютерна програма і в британській — program."}, {"uk": "сірий", "gb": "grey", "us": "gray", "kind": "spelling", "pic": "🩶", "lv": "A1"}, {"uk": "чек (банківський)", "gb": "cheque", "us": "check", "kind": "spelling", "pic": "💳", "lv": "B2"}, {"uk": "каталог", "gb": "catalogue", "us": "catalog", "kind": "spelling", "pic": "📚", "lv": "B1"}, {"uk": "аналізувати", "gb": "analyse", "us": "analyze", "kind": "spelling", "pic": "🔍", "lv": "B2"}, {"uk": "ліцензія, дозвіл (іменник)", "gb": "licence", "us": "license", "kind": "spelling", "pic": "📜", "lv": "B2", "note_uk": "🇬🇧 іменник licence, дієслово license; 🇺🇸 завжди license."}, {"uk": "ювелірні прикраси", "gb": "jewellery", "us": "jewelry", "kind": "spelling", "pic": "💍", "lv": "B1"}, {"uk": "шина (колеса)", "gb": "tyre", "us": "tire", "kind": "spelling", "pic": "🛞", "lv": "B1", "note_uk": "Американське tire також означає «втомлювати(ся)»."}, {"uk": "алюміній", "gb": "aluminium", "us": "aluminum", "kind": "spelling", "pic": "🥫", "lv": "B2", "note_uk": "Різниться і вимова: al-yoo-MIN-ium / a-LOO-mi-num."}, {"uk": "улюблений", "gb": "favourite", "us": "favorite", "kind": "spelling", "pic": "❤️", "lv": "A1"}, {"uk": "гумор", "gb": "humour", "us": "humor", "kind": "spelling", "pic": "😂", "lv": "B1"}, {"uk": "метр", "gb": "metre", "us": "meter", "kind": "spelling", "pic": "📏", "lv": "A2", "note_uk": "meter (прилад, лічильник) пишуть так в обох варіантах."}, {"uk": "усвідомлювати", "gb": "realise", "us": "realize", "kind": "spelling", "pic": "💡", "lv": "B1", "note_uk": "У британській також допустимо -ize."}, {"uk": "вибачатися", "gb": "apologise", "us": "apologize", "kind": "spelling", "pic": "🙏", "lv": "B1", "note_uk": "У британській також допустимо -ize."}, {"uk": "скасований", "gb": "cancelled", "us": "canceled", "kind": "spelling", "pic": "❌", "lv": "B1"}, {"uk": "мандрівник", "gb": "traveller", "us": "traveler", "kind": "spelling", "pic": "🎒", "lv": "A2"}, {"uk": "піжама", "gb": "pyjamas", "us": "pajamas", "kind": "spelling", "pic": "🛌", "lv": "A2"}, {"uk": "виконувати (обіцянку, мрію)", "gb": "fulfil", "us": "fulfill", "kind": "spelling", "pic": "✅", "lv": "B2"}, {"uk": "зараховувати(ся), записуватися", "gb": "enrol", "us": "enroll", "kind": "spelling", "pic": "📝", "lv": "B2"}, {"uk": "поведінка", "gb": "behaviour", "us": "behavior", "kind": "spelling", "pic": "🙋", "lv": "B1"}, {"uk": "сусід", "gb": "neighbour", "us": "neighbor", "kind": "spelling", "pic": "🏘️", "lv": "A2"}, {"uk": "тренуватися, практикувати (дієслово)", "gb": "practise", "us": "practice", "kind": "spelling", "pic": "🎹", "lv": "B1", "note_uk": "🇬🇧 дієслово practise, іменник practice; 🇺🇸 завжди practice."}, {"uk": "вуса", "gb": "moustache", "us": "mustache", "kind": "spelling", "pic": "👨", "lv": "B1"}, {"uk": "літр", "gb": "litre", "us": "liter", "kind": "spelling", "pic": "🧃", "lv": "A2"}], "spelling_rules": [{"rule_uk": "Британське закінчення -our в американській скорочується до -or.", "gb": "colour, favourite, humour, neighbour, behaviour", "us": "color, favorite, humor, neighbor, behavior"}, {"rule_uk": "Британське -re наприкінці слова в американській стає -er.", "gb": "centre, theatre, metre, litre", "us": "center, theater, meter, liter"}, {"rule_uk": "Дієслова на -ise / -yse у британській пишуться з -ize / -yze в американській (у британській -ize теж допустимо, але -yse — ні).", "gb": "organise, realise, apologise, analyse", "us": "organize, realize, apologize, analyze"}, {"rule_uk": "У британській кінцева l після короткого голосного подвоюється перед -ed, -ing, -er навіть у ненаголошеному складі; в американській — ні.", "gb": "travelled, cancelled, traveller, modelling", "us": "traveled, canceled, traveler, modeling"}, {"rule_uk": "Деякі британські іменники на -ence в американській пишуться з -ense.", "gb": "defence, offence, licence (іменник)", "us": "defense, offense, license"}, {"rule_uk": "Британське -ogue в американській часто скорочується до -og.", "gb": "catalogue, analogue", "us": "catalog, analog"}, {"rule_uk": "Деякі дієслова в британській закінчуються на одну l, а в американській — на -ll.", "gb": "fulfil, enrol, instil, skilful", "us": "fulfill, enroll, instill, skillful"}, {"rule_uk": "Британські сполучення ae та oe у словах грецького й латинського походження в американській часто спрощуються до e.", "gb": "paediatrician, anaemia, encyclopaedia, manoeuvre", "us": "pediatrician, anemia, encyclopedia, maneuver"}], "grammar": {"title_uk": "Граматичні відмінності британської та американської", "rule_uk": "<b>1. have got / have.<\/b> Для володіння британці часто кажуть <b>have got<\/b> (<i>I've got a dog. Have you got a pen?<\/i>), американці — <b>have<\/b> з <b>do<\/b> (<i>I have a dog. Do you have a pen?<\/i>). Форму have з do вживають і британці.<br><b>2. Present Perfect / Past Simple.<\/b> Зі словами <b>just, already, yet<\/b> британці вживають Present Perfect (<i>I've just eaten. Have you finished yet?<\/i>), а американці в розмовній мові часто — Past Simple (<i>I just ate. Did you finish yet?<\/i>).<br><b>3. Збірні іменники.<\/b> У британській після <b>team, family, government, band<\/b> дієслово може стояти в множині (<i>The team are winning<\/i>), коли йдеться про людей у групі; в американській — зазвичай в однині (<i>The team is winning<\/i>).<br><b>4. Прийменники.<\/b> 🇬🇧 <b>at the weekend<\/b> — 🇺🇸 <b>on the weekend<\/b>; 🇬🇧 <b>different from / to<\/b> — 🇺🇸 <b>different from / than<\/b>.<br><b>5. gotten.<\/b> В американській дієприкметник від get — <b>gotten<\/b> (<i>It has gotten colder<\/i>), у британській — <b>got<\/b> (<i>It has got colder<\/i>). Сталий вираз have got (= мати) однаковий в обох варіантах.<br><b>6. shall.<\/b> Британці вживають <b>shall<\/b> у пропозиціях і запитаннях з I/we (<i>Shall I open the window? Shall we go?<\/i>); американці частіше кажуть <b>Should I…? / Do you want me to…? / Let's…<\/b><br><b>7. Неправильні форми дієслів.<\/b> У британській поширені форми <b>learnt, dreamt, burnt, spelt<\/b> (поряд із learned, dreamed), в американській — майже завжди <b>learned, dreamed, burned, spelled<\/b>.", "ex": [["🇬🇧 I ___ two brothers and a sister.", ["'ve got", "'ve gotten", "has got"], 0, "У британській для володіння часто вживають have got: I've got two brothers. Форма gotten у значенні «мати» не вживається.", "gb"], ["🇺🇸 ___ you have a pen I could borrow?", ["Do", "Have", "Are"], 0, "Американці питають про володіння через do: Do you have a pen? Британці часто кажуть Have you got a pen?", "us"], ["🇬🇧 I ___ just finished my homework.", ["have", "am", "was"], 0, "У британській зі словом just вживають Present Perfect: I have just finished. Американець міг би сказати I just finished.", "gb"], ["🇺🇸 ___ you finish your homework yet?", ["Did", "Was", "Do"], 0, "В американській розмовній мові з yet часто вживають Past Simple: Did you finish yet? Британською — Have you finished yet?", "us"], ["🇺🇸 The team ___ playing really well this season.", ["is", "are", "be"], 0, "В американській збірні іменники (team, family, band) зазвичай узгоджуються з дієсловом в однині: The team is. У британській можливо й The team are.", "us"], ["🇬🇧 What are you doing ___ the weekend?", ["at", "in", "by"], 0, "Британці кажуть at the weekend, американці — on the weekend.", "gb"], ["🇺🇸 Let's go hiking ___ the weekend.", ["on", "at", "by"], 0, "Американці кажуть on the weekend; at the weekend — британський варіант.", "us"], ["🇺🇸 Your English has ___ much better this year!", ["gotten", "got", "getting"], 0, "В американській третя форма дієслова get у значенні «ставати» — gotten: has gotten better. Британці кажуть has got better.", "us"], ["🇬🇧 It's hot in here. ___ I open the window?", ["Shall", "Will", "Do"], 0, "Британці пропонують допомогу за допомогою Shall I…? Американці частіше кажуть Should I…? або Do you want me to…?", "gb"], ["🇬🇧 My new school is very different ___ my old one.", ["to", "than", "at"], 0, "У британській поширене different to (а також different from); different than типовіше для американської.", "gb"]]}, "extra": [{"gb": "where is the toilet?", "us": "where is the restroom?"}, {"gb": "motorbike", "us": "motorcycle"}, {"gb": "city centre", "us": "downtown"}, {"gb": "I live in a flat.", "us": "I live in an apartment."}, {"gb": "Can I go to the toilet?", "us": "Can I go to the bathroom?"}, {"gb": "Where is the toilet?", "us": "Where is the restroom?"}, {"gb": "The bill, please.", "us": "The check, please."}, {"gb": "shop assistant", "us": "sales clerk"}, {"gb": "starter", "us": "appetizer"}, {"gb": "plaster", "us": "Band-Aid"}, {"gb": "postbox", "us": "mailbox"}, {"gb": "to post", "us": "to mail"}, {"gb": "to do the washing-up", "us": "to do the dishes"}, {"gb": "to take out the rubbish", "us": "to take out the trash"}, {"gb": "flatmate", "us": "roommate"}, {"gb": "season ticket", "us": "monthly pass"}, {"gb": "till", "us": "cash register"}, {"gb": "exercise book", "us": "notebook"}, {"gb": "GP", "us": "family doctor"}, {"gb": "trade union", "us": "labor union"}, {"gb": "job centre", "us": "job center"}, {"gb": "integration programme", "us": "integration program"}, {"gb": "pay slip", "us": "pay stub"}, {"gb": "to pay in instalments", "us": "to pay in installments"}, {"gb": "lost property office", "us": "lost and found"}, {"gb": "flat tyre", "us": "flat tire"}, {"gb": "fibre", "us": "fiber"}, {"gb": "wholemeal bread", "us": "whole wheat bread"}, {"gb": "best-before date", "us": "expiration date"}, {"gb": "to recognise", "us": "to recognize"}, {"gb": "cooperative flat", "us": "co-op apartment"}, {"gb": "rented flat", "us": "rental apartment"}, {"gb": "two-room flat", "us": "two-room apartment"}, {"gb": "caretaker", "us": "building manager"}, {"gb": "to get on well with", "us": "to get along well with"}, {"gb": "bottle bank", "us": "glass recycling bin"}, {"gb": "recycling centre", "us": "recycling center"}, {"gb": "second-hand shop", "us": "thrift store"}, {"gb": "out-of-hours doctor", "us": "after-hours doctor"}, {"gb": "diarrhoea", "us": "diarrhea"}, {"gb": "news programme", "us": "news program"}, {"gb": "pedestrian crossing", "us": "crosswalk"}, {"gb": "to give someone a lift", "us": "to give someone a ride"}, {"gb": "online shop", "us": "online store"}, {"gb": "to queue", "us": "to wait in line"}, {"gb": "shop window", "us": "store window"}, {"gb": "fringe", "us": "bangs"}, {"gb": "rubbish collection", "us": "trash collection"}, {"gb": "citizen service centre", "us": "citizen service center"}, {"gb": "taxi rank", "us": "taxi stand"}, {"gb": "public toilet", "us": "public restroom"}, {"gb": "town centre", "us": "downtown"}, {"gb": "to take offence", "us": "to take offense"}, {"gb": "to revise", "us": "to review"}, {"gb": "neighbourhood", "us": "neighborhood"}, {"gb": "cosy", "us": "cozy"}, {"gb": "pay rise", "us": "raise"}, {"gb": "to stand for election", "us": "to run for election"}, {"gb": "to enrol", "us": "to enroll"}, {"gb": "labour market", "us": "labor market"}, {"gb": "to do someone a favour", "us": "to do someone a favor"}, {"gb": "globalisation", "us": "globalization"}, {"gb": "to emphasise", "us": "to emphasize"}, {"gb": "to generalise", "us": "to generalize"}, {"gb": "instalment", "us": "installment"}, {"gb": "power cut", "us": "power outage"}, {"gb": "block of flats", "us": "apartment building"}, {"gb": "detached house", "us": "single-family home"}, {"gb": "terraced house", "us": "townhouse"}, {"gb": "to socialise", "us": "to socialize"}, {"gb": "to summarise", "us": "to summarize"}, {"gb": "sceptical", "us": "skeptical"}, {"gb": "to prioritise", "us": "to prioritize"}, {"gb": "organisational chart", "us": "organizational chart"}, {"gb": "accident and emergency", "us": "emergency room"}, {"gb": "to anonymise", "us": "to anonymize"}, {"gb": "polarisation", "us": "polarization"}, {"gb": "to marginalise", "us": "to marginalize"}, {"gb": "to scrutinise", "us": "to scrutinize"}, {"gb": "to jeopardise", "us": "to jeopardize"}, {"gb": "to all intents and purposes", "us": "for all intents and purposes"}, {"gb": "a grey area", "us": "a gray area"}, {"gb": "to sweep something under the carpet", "us": "to sweep something under the rug"}, {"gb": "scepticism", "us": "skepticism"}, {"gb": "authorised", "us": "authorized"}, {"gb": "Yours faithfully", "us": "Sincerely"}, {"gb": "to destabilise", "us": "to destabilize"}, {"gb": "anaesthesia", "us": "anesthesia"}, {"gb": "tumour", "us": "tumor"}, {"gb": "to synthesise", "us": "to synthesize"}, {"gb": "to conceptualise", "us": "to conceptualize"}, {"gb": "to categorise", "us": "to categorize"}, {"gb": "to hypothesise", "us": "to hypothesize"}, {"gb": "fortune favours the bold", "us": "fortune favors the bold"}, {"gb": "a storm in a teacup", "us": "a tempest in a teapot"}, {"gb": "to have a skeleton in the cupboard", "us": "to have a skeleton in the closet"}, {"gb": "It costs ten kroner.", "us": "It costs ten dollars."}, {"gb": "That's fifty kroner.", "us": "That's fifty dollars."}, {"gb": "two euros", "us": "two dollars"}, {"gb": "I live in Copenhagen.", "us": "I live in Kyiv.", "uk": "Я живу в Києві."}, {"gb": "I speak a little Danish.", "us": "I speak a little English.", "uk": "Я трохи говорю англійською."}, {"gb": "I'm learning Danish.", "us": "I'm learning English.", "uk": "Я вивчаю англійську."}, {"gb": "Sorry, I don't speak Danish.", "us": "Sorry, I don't speak English very well.", "uk": "Вибачте, я не дуже добре говорю англійською."}, {"gb": "How do you say this in Danish?", "us": "How do you say this in English?", "uk": "Як це сказати англійською?"}, {"gb": "flexitime", "us": "flextime"}, {"gb": "enquiry", "us": "inquiry"}, {"gb": "no use crying over spilt milk", "us": "no use crying over spilled milk"}]}};
 const SENTS={"en": {"roles": {"subj": {"name_uk": "Підмет", "name": "Subject"}, "verb": {"name_uk": "Дієслово (присудок)", "name": "Verb"}, "verb2": {"name_uk": "Неособова форма дієслова (дієприкметник/інфінітив)", "name": "Main verb (participle/infinitive)"}, "aux": {"name_uk": "Допоміжне дієслово", "name": "Auxiliary verb"}, "neg": {"name_uk": "Заперечення", "name": "Negation"}, "adv": {"name_uk": "Прислівник частоти", "name": "Adverb of frequency"}, "obj": {"name_uk": "Прямий додаток", "name": "Direct object"}, "iobj": {"name_uk": "Непрямий додаток (кому?)", "name": "Indirect object"}, "place": {"name_uk": "Місце / напрямок", "name": "Place"}, "time": {"name_uk": "Час", "name": "Time"}, "manner": {"name_uk": "Спосіб дії", "name": "Manner"}, "qw": {"name_uk": "Питальне слово", "name": "Question word"}, "conj": {"name_uk": "Сполучник / сполучне слово підрядного речення", "name": "Conjunction / wh-word (subordinate clause)"}, "comp": {"name_uk": "Іменна частина присудка (після be)", "name": "Complement"}, "det": {"name_uk": "Артикль / визначник / числівник", "name": "Determiner"}, "op": {"name_uk": "Оцінка (думка)", "name": "Opinion"}, "size": {"name_uk": "Розмір", "name": "Size"}, "age": {"name_uk": "Вік", "name": "Age"}, "shape": {"name_uk": "Форма", "name": "Shape"}, "color": {"name_uk": "Колір", "name": "Colour"}, "origin": {"name_uk": "Походження", "name": "Origin"}, "mat": {"name_uk": "Матеріал", "name": "Material"}, "purp": {"name_uk": "Призначення", "name": "Purpose"}, "noun": {"name_uk": "Іменник (головне слово)", "name": "Noun"}}, "lessons": [{"id": "en_svo", "lv": "A1", "title_uk": "Базовий порядок: підмет → дієслово → додаток (SVO)", "scheme": ["subj", "verb", "obj"], "rule_uk": "В англійському розповідному реченні порядок слів <b>майже фіксований<\/b>: спочатку <b>підмет<\/b> (хто?), потім <b>дієслово<\/b> (що робить?), потім <b>додаток<\/b> (кого? що?). В українській можна сказати «Я люблю музику», «Музику я люблю» чи «Люблю я музику», бо відмінкові закінчення показують, хто що робить. В англійській закінчень немає, тому роль слова визначає саме його <b>місце<\/b>: <i>The dog bites the man<\/i> і <i>The man bites the dog<\/i> означають різне. Підмет в англійському реченні обов'язковий, навіть якщо в українській його можна пропустити. Приклади: <i>I like music.<\/i> <i>She drinks coffee.<\/i>", "items": [{"uk": "Я люблю музику.", "parts": [["I", "subj"], ["like", "verb"], ["music.", "obj"]], "alts": [], "why_uk": "Схема SVO: підмет <b>I<\/b> → дієслово <b>like<\/b> → додаток <b>music<\/b>. Інший порядок в англійській неможливий: «Music I like» звучить як особливий наголос і в розповідному реченні не вживається.", "trap": [0, 2, 1], "trap_uk": "«I music like» — калька з вільного українського порядку. В англійській додаток стоїть тільки після дієслова."}, {"uk": "Вона п'є каву.", "parts": [["She", "subj"], ["drinks", "verb"], ["coffee.", "obj"]], "alts": [], "why_uk": "Підмет <b>She<\/b> на першому місці, дієслово <b>drinks<\/b> (із закінченням -s для he/she/it) одразу після нього, додаток <b>coffee<\/b> — у кінці.", "trap": [2, 0, 1], "trap_uk": "«Coffee she drinks» — в українській «Каву вона п'є» нормально, але в англійській додаток не можна ставити перед підметом у звичайному реченні."}, {"uk": "Мій брат читає газети.", "parts": [["My brother", "subj"], ["reads", "verb"], ["newspapers.", "obj"]], "alts": [], "why_uk": "Група підмета <b>My brother<\/b> — це один блок (означення + іменник). Далі дієслово <b>reads<\/b>, а додаток <b>newspapers<\/b> — після дієслова.", "trap": [2, 1, 0], "trap_uk": "«Newspapers reads my brother» — так виходить, ніби газети читають брата. В англійській перше слово перед дієсловом — завжди підмет."}, {"uk": "Ми вивчаємо англійську.", "parts": [["We", "subj"], ["study", "verb"], ["English.", "obj"]], "alts": [], "why_uk": "В українській можна сказати просто «Вивчаємо англійську», але в англійській підмет <b>We<\/b> обов'язковий і стоїть перед дієсловом <b>study<\/b>; додаток <b>English<\/b> — останній.", "trap": [0, 2, 1], "trap_uk": "«We English study» — додаток не може стояти між підметом і дієсловом."}, {"uk": "Діти люблять собак.", "parts": [["The children", "subj"], ["love", "verb"], ["dogs.", "obj"]], "alts": [], "why_uk": "Хто любить? — діти, тому <b>The children<\/b> стоїть першим як підмет. Кого? — собак, тому <b>dogs<\/b> іде після дієслова <b>love<\/b>.", "trap": [2, 1, 0], "trap_uk": "«Dogs love the children» — граматично правильне речення, але з іншим змістом: «Собаки люблять дітей». Місце слова змінює, хто виконує дію."}, {"uk": "Том грає у футбол.", "parts": [["Tom", "subj"], ["plays", "verb"], ["soccer.", "obj"]], "alts": [], "why_uk": "Підмет <b>Tom<\/b> → дієслово <b>plays<\/b> → додаток <b>soccer<\/b>. Зверни увагу: англійською «грати у футбол» — просто <i>play soccer<\/i>, без прийменника й артикля.", "trap": [0, 2, 1], "trap_uk": "«Tom soccer plays» — дієслово має стояти одразу після підмета."}, {"uk": "У мене є кіт.", "parts": [["I", "subj"], ["have", "verb"], ["a cat.", "obj"]], "alts": [], "why_uk": "Українська конструкція «у мене є» англійською перебудовується за схемою SVO: <b>I<\/b> (підмет) <b>have<\/b> (дієслово) <b>a cat<\/b> (додаток).", "trap": [2, 1, 0], "trap_uk": "«A cat have I» — дослівно повторює український порядок «кіт є у мене»; в англійській підмет I має стояти першим."}, {"uk": "Вони дивляться фільми.", "parts": [["They", "subj"], ["watch", "verb"], ["movies.", "obj"]], "alts": [], "why_uk": "Стандартна схема: <b>They<\/b> (хто?) → <b>watch<\/b> (що роблять?) → <b>movies<\/b> (що?).", "trap": [2, 0, 1], "trap_uk": "«Movies they watch» — винесення додатка на початок можливе лише в особливих емоційних контекстах, у звичайному реченні — помилка."}]}, {"id": "en_q_do", "lv": "A1", "title_uk": "Запитання з do/does та питальні слова", "scheme": ["qw", "aux", "subj", "verb", "obj"], "rule_uk": "В українській запитання часто відрізняється від розповідного речення лише інтонацією: «Ти працюєш тут?». В англійській потрібне <b>допоміжне дієслово do/does<\/b>, яке стоїть <b>перед підметом<\/b>. Схема: (<b>питальне слово<\/b>) → <b>do/does<\/b> → <b>підмет<\/b> → <b>основне дієслово<\/b> (у початковій формі, без -s!) → решта. <b>Does<\/b> вживаємо з he/she/it, тоді закінчення -s «переходить» на does: <i>Does she speak…?<\/i>, а не <i>Does she speaks…?<\/i> Приклади: <i>Do you work here?<\/i> <i>Where do you live?<\/i>", "items": [{"uk": "Ти працюєш тут?", "parts": [["Do", "aux"], ["you", "subj"], ["work", "verb"], ["here?", "place"]], "alts": [], "why_uk": "Загальне запитання (так/ні) починається з <b>Do<\/b>, далі підмет <b>you<\/b>, основне дієслово <b>work<\/b> і місце <b>here<\/b>.", "trap": [1, 0, 2, 3], "trap_uk": "«You do work here?» — do не може стояти після підмета в запитанні; так виходить підсилене ствердження «Ти ж таки працюєш тут»."}, {"uk": "Де ти живеш?", "parts": [["Where", "qw"], ["do", "aux"], ["you", "subj"], ["live?", "verb"]], "alts": [], "why_uk": "Питальне слово <b>Where<\/b> завжди перше, потім допоміжне <b>do<\/b>, потім підмет <b>you<\/b> і основне дієслово <b>live<\/b>.", "trap": [0, 2, 1, 3], "trap_uk": "«Where you do live?» — допоміжне дієслово має стояти перед підметом, одразу після питального слова."}, {"uk": "Вона говорить французькою?", "parts": [["Does", "aux"], ["she", "subj"], ["speak", "verb"], ["French?", "obj"]], "alts": [], "why_uk": "З <b>she<\/b> використовуємо <b>Does<\/b> на початку. Основне дієслово <b>speak<\/b> — без -s, бо ознаку третьої особи вже несе does.", "trap": [1, 0, 2, 3], "trap_uk": "«She does speak French?» — це не запитання, а підсилене твердження («Вона таки говорить французькою»)."}, {"uk": "Що ви їсте вранці?", "parts": [["What", "qw"], ["do", "aux"], ["you", "subj"], ["eat", "verb"], ["in the morning?", "time"]], "alts": [], "why_uk": "Схема: питальне слово <b>What<\/b> → <b>do<\/b> → підмет <b>you<\/b> → дієслово <b>eat<\/b> → обставина часу <b>in the morning<\/b> у кінці.", "trap": [0, 2, 1, 3, 4], "trap_uk": "«What you do eat…» — do має стояти перед підметом."}, {"uk": "Коли починається урок?", "parts": [["When", "qw"], ["does", "aux"], ["the lesson", "subj"], ["start?", "verb"]], "alts": [], "why_uk": "Підмет <b>the lesson<\/b> (3-тя особа однини), тому <b>does<\/b>. Основне дієслово <b>start<\/b> іде після підмета, у самому кінці.", "trap": [0, 1, 3, 2], "trap_uk": "«When does start the lesson?» — типова помилка під впливом української («Коли починається урок»). В англійській підмет стоїть між does і основним дієсловом."}, {"uk": "Твої батьки п'ють чай?", "parts": [["Do", "aux"], ["your parents", "subj"], ["drink", "verb"], ["tea?", "obj"]], "alts": [], "why_uk": "<b>Your parents<\/b> — множина, тому <b>Do<\/b>. Порядок: Do → підмет → дієслово <b>drink<\/b> → додаток <b>tea<\/b>.", "trap": [0, 2, 1, 3], "trap_uk": "«Do drink your parents tea?» — підмет має стояти одразу після do, перед основним дієсловом."}, {"uk": "Чому він вивчає англійську?", "parts": [["Why", "qw"], ["does", "aux"], ["he", "subj"], ["study", "verb"], ["English?", "obj"]], "alts": [], "why_uk": "Питальне слово <b>Why<\/b> → <b>does<\/b> (бо he) → <b>he<\/b> → <b>study<\/b> (без -s) → додаток <b>English<\/b>.", "trap": [0, 2, 1, 3, 4], "trap_uk": "«Why he does study English?» — у запитанні допоміжне дієслово стоїть перед підметом."}, {"uk": "Скільки коштує ця сумка?", "parts": [["How much", "qw"], ["does", "aux"], ["this bag", "subj"], ["cost?", "verb"]], "alts": [], "why_uk": "<b>How much<\/b> — одне питальне словосполучення на початку. Підмет <b>this bag<\/b> (однина) → <b>does<\/b>; дієслово <b>cost<\/b> — у кінці, після підмета.", "trap": [0, 1, 3, 2], "trap_uk": "«How much does cost this bag?» — український порядок «коштує ця сумка» тут не працює: підмет має стояти перед основним дієсловом."}]}, {"id": "en_place_time", "lv": "A2", "title_uk": "Місце, спосіб, час: place → time у кінці речення", "scheme": ["subj", "verb", "obj", "place", "manner", "time"], "rule_uk": "Обставини в англійському реченні зазвичай стоять <b>у кінці<\/b>, після дієслова й додатка, у порядку <b>місце → (спосіб) → час<\/b>: «де? → як? → коли?». З дієсловами руху (go, come, travel) спосіб пересування стоїть після напрямку: <i>I go to work by bus every day.<\/i> Обставину <b>часу<\/b> можна також винести <b>на самий початок<\/b> речення: <i>Yesterday we met at the station.<\/i> Але її <b>не можна<\/b> ставити між підметом і дієсловом чи між дієсловом і додатком, як в українській («Ми вчора зустрілися»). Приклад: <i>We met at the station yesterday.<\/i>", "items": [{"uk": "Ми зустрілися на вокзалі вчора.", "parts": [["We", "subj"], ["met", "verb"], ["at the station", "place"], ["yesterday.", "time"]], "alts": [[3, 0, 1, 2], [0, 1, 3, 2]], "why_uk": "Після SV ідуть обставини: спершу місце <b>at the station<\/b>, потім час <b>yesterday<\/b>. Час можна винести на початок: <i>Yesterday we met at the station.<\/i>", "trap": [0, 3, 1, 2], "trap_uk": "«We yesterday met at the station» — калька з «Ми вчора зустрілися»; в англійській yesterday не ставиться між підметом і дієсловом."}, {"uk": "Я відвідав бабусю минулого тижня.", "parts": [["I", "subj"], ["visited", "verb"], ["my grandmother", "obj"], ["last week.", "time"]], "alts": [[3, 0, 1, 2]], "why_uk": "Додаток <b>my grandmother<\/b> стоїть одразу після дієслова <b>visited<\/b>, а час <b>last week<\/b> — у кінці (або на початку: <i>Last week I visited my grandmother.<\/i>).", "trap": [0, 1, 3, 2], "trap_uk": "«I visited last week my grandmother» — обставина не може розривати дієслово і прямий додаток."}, {"uk": "Вона працює в лікарні з понеділка до п'ятниці.", "parts": [["She", "subj"], ["works", "verb"], ["at a hospital", "place"], ["from Monday to Friday.", "time"]], "alts": [[3, 0, 1, 2], [0, 1, 3, 2]], "why_uk": "Порядок «де → коли»: <b>at a hospital<\/b> → <b>from Monday to Friday<\/b>. Обставину часу можна поставити на початок речення.", "trap": [0, 3, 1, 2], "trap_uk": "«She from Monday to Friday works…» — обставина часу не стоїть між підметом і дієсловом."}, {"uk": "Я їжджу на роботу автобусом щодня.", "parts": [["I", "subj"], ["go", "verb"], ["to work", "place"], ["by bus", "manner"], ["every day.", "time"]], "alts": [[4, 0, 1, 2, 3]], "why_uk": "Дієслово руху <b>go<\/b>: спочатку куди — <b>to work<\/b>, потім як — <b>by bus<\/b>, потім коли — <b>every day<\/b>. Час можна винести на початок: <i>Every day I go to work by bus.<\/i>", "trap": [0, 4, 1, 2, 3], "trap_uk": "«I every day go to work…» — every day не ставиться між підметом і дієсловом (на відміну від always/often)."}, {"uk": "Вони приїхали до Лондона в п'ятницю ввечері.", "parts": [["They", "subj"], ["arrived", "verb"], ["in London", "place"], ["on Friday evening.", "time"]], "alts": [[3, 0, 1, 2], [0, 1, 3, 2]], "why_uk": "Місце <b>in London<\/b> — одразу після дієслова, час <b>on Friday evening<\/b> — в кінці або на початку речення.", "trap": [0, 3, 1, 2], "trap_uk": "«They on Friday evening arrived…» — обставина часу не може стояти між підметом і дієсловом."}, {"uk": "Я купив цей светр у маленькому магазині минулої суботи.", "parts": [["I", "subj"], ["bought", "verb"], ["this sweater", "obj"], ["in a small store", "place"], ["last Saturday.", "time"]], "alts": [[4, 0, 1, 2, 3], [0, 1, 2, 4, 3]], "why_uk": "Повна схема: S → V → O (<b>this sweater<\/b>) → місце (<b>in a small store<\/b>) → час (<b>last Saturday<\/b>). Час можна перенести на початок.", "trap": [0, 1, 4, 2, 3], "trap_uk": "«I bought last Saturday this sweater…» — обставина часу не може стояти між дієсловом і прямим додатком."}, {"uk": "Ми поїхали до моря машиною в липні.", "parts": [["We", "subj"], ["went", "verb"], ["to the seaside", "place"], ["by car", "manner"], ["in July.", "time"]], "alts": [[4, 0, 1, 2, 3]], "why_uk": "Дієслово руху <b>went<\/b>: куди (<b>to the seaside<\/b>) → як (<b>by car<\/b>) → коли (<b>in July<\/b>). Альтернатива: <i>In July we went to the seaside by car.<\/i>", "trap": [0, 4, 1, 2, 3], "trap_uk": "«We in July went…» — обставина часу не ставиться між підметом і дієсловом."}, {"uk": "Я буду вдома о восьмій.", "parts": [["I", "subj"], ["will be", "verb"], ["at home", "place"], ["at eight.", "time"]], "alts": [[3, 0, 1, 2], [0, 1, 3, 2]], "why_uk": "Після <b>will be<\/b> спочатку місце <b>at home<\/b>, потім час <b>at eight<\/b>. Можна також: <i>At eight I will be at home.<\/i>", "trap": [0, 3, 1, 2], "trap_uk": "«I at eight will be at home» — обставина часу не може стояти між підметом і присудком."}]}, {"id": "en_freq_adv", "lv": "A2", "title_uk": "Прислівники частоти: always/often/never перед основним дієсловом, але після to be", "scheme": ["subj", "adv", "verb", "obj"], "rule_uk": "Прислівники частоти (<b>always, usually, often, sometimes, rarely, never<\/b>) стоять у <b>середині<\/b> речення. Правило: <b>перед основним дієсловом<\/b> (<i>She often reads.<\/i>), але <b>після дієслова to be<\/b> (<i>He is always late.<\/i>) і <b>після допоміжного/модального дієслова<\/b> (<i>I have never been…<\/i>, <i>Do you often…?<\/i>). Їх <b>не можна<\/b> ставити між дієсловом і додатком: <i>She drinks always coffee<\/i> — помилка. <b>Never<\/b> уже має заперечне значення, тому don't з ним не потрібне. <b>Usually<\/b> і <b>sometimes<\/b> можуть також стояти на початку речення.", "items": [{"uk": "Вона завжди п'є каву вранці.", "parts": [["She", "subj"], ["always", "adv"], ["drinks", "verb"], ["coffee", "obj"], ["in the morning.", "time"]], "alts": [[4, 0, 1, 2, 3]], "why_uk": "<b>Always<\/b> стоїть перед основним дієсловом <b>drinks<\/b>. Обставину часу <b>in the morning<\/b> можна поставити в кінець або на початок.", "trap": [0, 2, 1, 3, 4], "trap_uk": "«She drinks always coffee» — прислівник частоти не можна ставити між дієсловом і додатком."}, {"uk": "Він завжди запізнюється.", "parts": [["He", "subj"], ["is", "verb"], ["always", "adv"], ["late.", "comp"]], "alts": [], "why_uk": "Тут дієслово <b>to be<\/b> (<b>is<\/b>), тому <b>always<\/b> стоїть <b>після<\/b> нього: <i>He is always late.<\/i> Українське «запізнюється» англійською передається як «is late».", "trap": [0, 2, 1, 3], "trap_uk": "«He always is late» — з дієсловом to be прислівник частоти стоїть після нього, а не перед."}, {"uk": "Я ніколи не їм м'ясо.", "parts": [["I", "subj"], ["never", "adv"], ["eat", "verb"], ["meat.", "obj"]], "alts": [], "why_uk": "<b>Never<\/b> стоїть перед основним дієсловом <b>eat<\/b>. Подвійного заперечення, як в українській «ніколи не», немає: never уже заперечує.", "trap": [0, 2, 1, 3], "trap_uk": "«I eat never meat» — never не може розривати дієслово і додаток."}, {"uk": "Ми зазвичай обідаємо о першій.", "parts": [["We", "subj"], ["usually", "adv"], ["have lunch", "verb"], ["at one o'clock.", "time"]], "alts": [[1, 0, 2, 3]], "why_uk": "<b>Usually<\/b> — перед основним дієсловом <b>have lunch<\/b>. Цей прислівник може стояти й на початку речення: <i>Usually we have lunch at one o'clock.<\/i>", "trap": [0, 2, 1, 3], "trap_uk": "«We have usually lunch» — have lunch — це одне дієслівне сполучення, прислівник не вставляється всередину нього."}, {"uk": "Діти ніколи не бувають втомлені.", "parts": [["The children", "subj"], ["are", "verb"], ["never", "adv"], ["tired.", "comp"]], "alts": [], "why_uk": "Дієслово <b>are<\/b> — форма to be, тому <b>never<\/b> стоїть <b>після<\/b> нього, перед прикметником <b>tired<\/b>.", "trap": [0, 2, 1, 3], "trap_uk": "«The children never are tired» — з to be прислівник частоти ставиться після дієслова."}, {"uk": "Ти часто ходиш у кіно?", "parts": [["Do", "aux"], ["you", "subj"], ["often", "adv"], ["go", "verb"], ["to the movies?", "place"]], "alts": [[0, 1, 3, 4, 2]], "why_uk": "У запитанні <b>often<\/b> стоїть після підмета, перед основним дієсловом <b>go<\/b>. У запитаннях often може стояти й у кінці: <i>Do you go to the movies often?<\/i>", "trap": [2, 0, 1, 3, 4], "trap_uk": "«Often do you go…» — прислівник частоти не ставиться перед допоміжним дієсловом на початку запитання."}, {"uk": "Мій батько ніколи не дивиться телевізор.", "parts": [["My father", "subj"], ["never", "adv"], ["watches", "verb"], ["TV.", "obj"]], "alts": [], "why_uk": "<b>Never<\/b> — перед основним дієсловом <b>watches<\/b>; дієслово стоїть у стверджувальній формі з -s, бо never саме по собі заперечує.", "trap": [0, 2, 3, 1], "trap_uk": "«My father watches TV never» — never не стоїть у кінці речення."}, {"uk": "Я ніколи не був у Лондоні.", "parts": [["I", "subj"], ["have", "aux"], ["never", "adv"], ["been", "verb2"], ["to London.", "place"]], "alts": [], "why_uk": "У Present Perfect <b>never<\/b> стоїть після допоміжного дієслова <b>have<\/b> і перед дієприкметником <b>been<\/b>.", "trap": [0, 1, 3, 2, 4], "trap_uk": "«I have been never to London» — прислівник частоти має стояти між have і been, а не після дієприкметника."}]}, {"id": "en_neg_aux", "lv": "B1", "title_uk": "Заперечення та допоміжні дієслова: don't, can't, have(n't) + дієприкметник", "scheme": ["subj", "aux", "verb", "obj", "time"], "rule_uk": "В англійській заперечення <b>not<\/b> завжди «чіпляється» до <b>допоміжного або модального дієслова<\/b>: <b>don't/doesn't/didn't<\/b>, <b>can't<\/b>, <b>won't<\/b>, <b>haven't/hasn't<\/b>, <b>mustn't<\/b>. Схема: <b>підмет → допоміжне + not → основне дієслово → додаток → обставини<\/b>. Якщо іншого допоміжного немає, використовуємо <b>do/does/did<\/b>, а основне дієслово стоїть у початковій формі (<i>He doesn't work<\/i>, <i>We didn't go<\/i>). У Present Perfect після haven't іде <b>дієприкметник<\/b> (3-тя форма) <b>одразу<\/b>, а додаток — після нього: <i>I haven't seen it.<\/i> У запитаннях допоміжне дієслово з n't стоїть перед підметом: <i>Why didn't you call me?<\/i>", "items": [{"uk": "Я цього не бачив.", "parts": [["I", "subj"], ["haven't", "aux"], ["seen", "verb2"], ["it.", "obj"]], "alts": [], "why_uk": "Present Perfect: <b>haven't<\/b> + дієприкметник <b>seen<\/b>, а додаток <b>it<\/b> — після дієприкметника, у кінці.", "trap": [0, 1, 3, 2], "trap_uk": "«I haven't it seen» — як у німецькій; в англійській додаток не стоїть між допоміжним дієсловом і дієприкметником."}, {"uk": "Він не працює по суботах.", "parts": [["He", "subj"], ["doesn't", "aux"], ["work", "verb"], ["on Saturdays.", "time"]], "alts": [[3, 0, 1, 2]], "why_uk": "Заперечення з <b>doesn't<\/b> (he), основне дієслово <b>work<\/b> — без -s. Обставина часу в кінці або на початку: <i>On Saturdays he doesn't work.<\/i>", "trap": [0, 2, 1, 3], "trap_uk": "«He work doesn't…» — doesn't стоїть перед основним дієсловом, а не після."}, {"uk": "Я не можу знайти ключі.", "parts": [["I", "subj"], ["can't", "aux"], ["find", "verb"], ["my keys.", "obj"]], "alts": [], "why_uk": "Модальне дієслово з запереченням <b>can't<\/b> стоїть одразу після підмета, далі інфінітив без to <b>find<\/b> і додаток <b>my keys<\/b>.", "trap": [0, 2, 1, 3], "trap_uk": "«I find can't my keys» — заперечене модальне дієслово має стояти перед основним дієсловом."}, {"uk": "Вона ще не закінчила роботу.", "parts": [["She", "subj"], ["hasn't", "aux"], ["finished", "verb2"], ["her work", "obj"], ["yet.", "time"]], "alts": [[0, 1, 4, 2, 3]], "why_uk": "<b>hasn't<\/b> + <b>finished<\/b> + додаток <b>her work<\/b>; <b>yet<\/b> у запереченнях зазвичай стоїть у кінці. Книжний варіант — одразу після hasn't: <i>She hasn't yet finished her work.<\/i>", "trap": [0, 1, 2, 4, 3], "trap_uk": "«She hasn't finished yet her work» — yet не може розривати дієприкметник і прямий додаток."}, {"uk": "Ми не ходили в кіно минулих вихідних.", "parts": [["We", "subj"], ["didn't", "aux"], ["go", "verb"], ["to the movies", "place"], ["last weekend.", "time"]], "alts": [[4, 0, 1, 2, 3], [0, 1, 2, 4, 3]], "why_uk": "Минулий час у запереченні: <b>didn't<\/b> + початкова форма <b>go<\/b> (не went!). Далі місце, потім час; час можна винести на початок.", "trap": [0, 2, 1, 3, 4], "trap_uk": "«We go didn't…» — didn't завжди стоїть перед основним дієсловом."}, {"uk": "Тобі не можна тут палити.", "parts": [["You", "subj"], ["mustn't", "aux"], ["smoke", "verb"], ["here.", "place"]], "alts": [], "why_uk": "Українське безособове «не можна» англійською — це речення з підметом <b>You<\/b> і модальним <b>mustn't<\/b>, після якого — інфінітив <b>smoke<\/b> і місце <b>here<\/b>.", "trap": [0, 3, 1, 2], "trap_uk": "«You here mustn't smoke» — обставина місця стоїть у кінці, а не між підметом і присудком."}, {"uk": "Я не прийду завтра.", "parts": [["I", "subj"], ["won't", "aux"], ["come", "verb"], ["tomorrow.", "time"]], "alts": [[3, 0, 1, 2]], "why_uk": "Майбутній час: <b>won't<\/b> (= will not) + <b>come<\/b>. Обставина часу <b>tomorrow<\/b> — у кінці або на початку: <i>Tomorrow I won't come.<\/i>", "trap": [0, 3, 1, 2], "trap_uk": "«I tomorrow won't come» — калька з українського порядку; tomorrow не стоїть між підметом і дієсловом."}, {"uk": "Чому ти мені не подзвонив?", "parts": [["Why", "qw"], ["didn't", "aux"], ["you", "subj"], ["call", "verb"], ["me?", "obj"]], "alts": [], "why_uk": "У запереченому запитанні <b>didn't<\/b> стоїть перед підметом <b>you<\/b> (одразу після <b>Why<\/b>), далі <b>call<\/b> і додаток <b>me<\/b>.", "trap": [0, 2, 1, 3, 4], "trap_uk": "«Why you didn't call me?» — у запитанні допоміжне дієслово (разом з n't) має стояти перед підметом."}]}, {"id": "en_iobj", "lv": "B1", "title_uk": "Непрямий і прямий додаток: give someone something / give something to someone", "scheme": ["subj", "verb", "iobj", "obj"], "rule_uk": "Після дієслів <b>give, send, show, buy, lend, pass, tell<\/b> можливі два порядки. 1) <b>Без прийменника<\/b>: спочатку <b>кому<\/b> (непрямий додаток), потім <b>що<\/b> (прямий): <i>She gave me a book.<\/i> 2) <b>З прийменником to/for<\/b>: спочатку <b>що<\/b>, потім <b>to/for + кому<\/b>: <i>She gave a book to me.<\/i> Якщо прямий додаток — <b>займенник<\/b> (it, them), зазвичай вживаємо другий варіант: <i>I'll send it to you<\/i>. Дієслова <b>explain, describe, suggest<\/b> мають тільки другий варіант: <i>explain the rule to us<\/i>. В українській «Вона дала мені книжку» і «Вона дала книжку мені» — однаково правильно, а в англійській без to непрямий додаток обов'язково стоїть першим.", "items": [{"uk": "Вона дала мені книжку.", "parts": [["She", "subj"], ["gave", "verb"], ["me", "iobj"], ["a book.", "obj"]], "alts": [], "why_uk": "Без прийменника спочатку непрямий додаток <b>me<\/b> (кому?), потім прямий <b>a book<\/b> (що?).", "trap": [0, 1, 3, 2], "trap_uk": "«She gave a book me» — якщо прямий додаток іде першим, перед непрямим потрібен прийменник: a book <b>to<\/b> me."}, {"uk": "Я надіслав подрузі листа.", "parts": [["I", "subj"], ["sent", "verb"], ["my friend", "iobj"], ["a letter.", "obj"]], "alts": [], "why_uk": "Схема give someone something: <b>sent<\/b> → кому <b>my friend<\/b> → що <b>a letter<\/b>.", "trap": [0, 1, 3, 2], "trap_uk": "«I sent a letter my friend» — без to такий порядок неможливий; треба або <i>sent my friend a letter<\/i>, або <i>sent a letter to my friend<\/i>."}, {"uk": "Він показав фотографії своїй мамі.", "parts": [["He", "subj"], ["showed", "verb"], ["the photos", "obj"], ["to his mom.", "iobj"]], "alts": [], "why_uk": "Тут непрямий додаток має прийменник <b>to<\/b>, тому він стоїть <b>після<\/b> прямого: <b>the photos<\/b> → <b>to his mom<\/b>.", "trap": [0, 1, 3, 2], "trap_uk": "«He showed to his mom the photos» — група з to зазвичай іде після прямого додатка; без to було б <i>showed his mom the photos<\/i>."}, {"uk": "Можеш передати мені сіль?", "parts": [["Can", "aux"], ["you", "subj"], ["pass", "verb"], ["me", "iobj"], ["the salt?", "obj"]], "alts": [], "why_uk": "Запитання: <b>Can<\/b> → підмет <b>you<\/b> → дієслово <b>pass<\/b> → кому <b>me<\/b> → що <b>the salt<\/b>.", "trap": [0, 1, 2, 4, 3], "trap_uk": "«Can you pass the salt me?» — без прийменника to непрямий додаток (me) має стояти перед прямим."}, {"uk": "Я надішлю його тобі завтра.", "parts": [["I", "subj"], ["will send", "verb"], ["it", "obj"], ["to you", "iobj"], ["tomorrow.", "time"]], "alts": [[4, 0, 1, 2, 3]], "why_uk": "Прямий додаток — займенник <b>it<\/b>, тому вживаємо модель з прийменником: <b>it<\/b> → <b>to you<\/b>. Час — у кінці або на початку речення.", "trap": [0, 1, 3, 2, 4], "trap_uk": "«I will send to you it» — займенник it стоїть одразу після дієслова, а група з to — після нього."}, {"uk": "Тато купив нам морозиво.", "parts": [["Dad", "subj"], ["bought", "verb"], ["us", "iobj"], ["ice cream.", "obj"]], "alts": [], "why_uk": "Дієслово <b>buy<\/b> працює так само: кому <b>us<\/b> → що <b>ice cream<\/b>. З прийменником було б <i>bought ice cream for us<\/i>.", "trap": [0, 1, 3, 2], "trap_uk": "«Dad bought ice cream us» — без for непрямий додаток має стояти перед прямим."}, {"uk": "Вчителька пояснила нам правило.", "parts": [["The teacher", "subj"], ["explained", "verb"], ["the rule", "obj"], ["to us.", "iobj"]], "alts": [], "why_uk": "Дієслово <b>explain<\/b> не має моделі без прийменника (не можна <i>explained us the rule<\/i>). Тому: що <b>the rule<\/b> → кому <b>to us<\/b>.", "trap": [0, 1, 3, 2], "trap_uk": "«The teacher explained to us the rule» — з коротким прямим додатком група to us має стояти після нього."}, {"uk": "Ти не міг би позичити мені свою ручку?", "parts": [["Could", "aux"], ["you", "subj"], ["lend", "verb"], ["me", "iobj"], ["your pen?", "obj"]], "alts": [], "why_uk": "Ввічливе запитання з <b>Could<\/b>; після дієслова <b>lend<\/b> — кому <b>me<\/b>, потім що <b>your pen<\/b>.", "trap": [0, 1, 2, 4, 3], "trap_uk": "«Could you lend your pen me?» — без to непрямий додаток стоїть перед прямим."}]}, {"id": "en_embedded_q", "lv": "B2", "title_uk": "Підрядні речення та непрямі запитання (без інверсії): Can you tell me where the station is?", "scheme": ["aux", "subj", "verb", "iobj", "conj", "subj", "verb"], "rule_uk": "Коли запитання стає частиною іншого речення (<i>Can you tell me…, I don't know…, Do you know…, I wonder…<\/i>), у ньому вже <b>немає питального порядку слів<\/b>. Після питального слова чи <b>if/whether<\/b> іде звичайний порядок: <b>підмет → дієслово<\/b>. Допоміжне <b>do/does/did<\/b> у непрямому запитанні <b>не вживається<\/b>. Порівняй: <i>Where is the station?<\/i> → <i>Can you tell me where the station <b>is<\/b>?<\/i>; <i>When does the museum open?<\/i> → <i>Do you know when the museum <b>opens<\/b>?<\/i> Загальне запитання вводимо словом <b>if/whether<\/b>: <i>I wonder if she will come.<\/i>", "items": [{"uk": "Чи не могли б ви сказати мені, де вокзал?", "parts": [["Can", "aux"], ["you", "subj"], ["tell", "verb"], ["me", "iobj"], ["where", "conj"], ["the station", "subj"], ["is?", "verb"]], "alts": [], "why_uk": "Головне речення — запитання (<b>Can you tell me<\/b>), а підрядне <b>where the station is<\/b> має прямий порядок: підмет <b>the station<\/b> → дієслово <b>is<\/b> у кінці.", "trap": [0, 1, 2, 3, 4, 6, 5], "trap_uk": "«…where is the station?» — у непрямому запитанні інверсії немає; is стоїть після підмета."}, {"uk": "Я не знаю, котра година.", "parts": [["I", "subj"], ["don't know", "verb"], ["what time", "conj"], ["it", "subj"], ["is.", "verb"]], "alts": [], "why_uk": "Пряме запитання <i>What time is it?<\/i> у підрядному реченні стає <b>what time it is<\/b>: підмет <b>it<\/b> → дієслово <b>is<\/b>.", "trap": [0, 1, 2, 4, 3], "trap_uk": "«I don't know what time is it» — дуже поширена помилка: після I don't know порядок слів розповідний."}, {"uk": "Цікаво, чи вона прийде.", "parts": [["I", "subj"], ["wonder", "verb"], ["if", "conj"], ["she", "subj"], ["will", "aux"], ["come.", "verb2"]], "alts": [], "why_uk": "Загальне запитання вводимо сполучником <b>if<\/b> (українське «чи»), далі прямий порядок: <b>she<\/b> → <b>will<\/b> → <b>come<\/b>.", "trap": [0, 1, 2, 4, 3, 5], "trap_uk": "«I wonder if will she come» — після if допоміжне дієслово не ставиться перед підметом."}, {"uk": "Ви знаєте, коли відкривається музей?", "parts": [["Do", "aux"], ["you", "subj"], ["know", "verb"], ["when", "conj"], ["the museum", "subj"], ["opens?", "verb"]], "alts": [], "why_uk": "<b>Do<\/b> стосується лише головного речення (Do you know). У підрядному <b>when the museum opens<\/b> немає does, а дієслово має -s і стоїть після підмета.", "trap": [0, 1, 2, 3, 5, 4], "trap_uk": "«…when opens the museum?» — калька з «коли відкривається музей»; в англійській підмет стоїть перед дієсловом."}, {"uk": "Скажи мені, чому ти плачеш.", "parts": [["Tell", "verb"], ["me", "iobj"], ["why", "conj"], ["you", "subj"], ["are", "aux"], ["crying.", "verb2"]], "alts": [], "why_uk": "Наказовий спосіб <b>Tell me<\/b> + підрядне <b>why you are crying<\/b>: підмет <b>you<\/b> → <b>are<\/b> → <b>crying<\/b>, без інверсії.", "trap": [0, 1, 2, 4, 3, 5], "trap_uk": "«Tell me why are you crying» — у підрядному реченні допоміжне дієслово не переходить перед підмет."}, {"uk": "Він запитав мене, де я був.", "parts": [["He", "subj"], ["asked", "verb"], ["me", "iobj"], ["where", "conj"], ["I", "subj"], ["had", "aux"], ["been.", "verb2"]], "alts": [], "why_uk": "Непряма мова: після <b>asked me<\/b> — звичайний порядок <b>where I had been<\/b> (час зсувається в минуле: had been).", "trap": [0, 1, 2, 3, 5, 4, 6], "trap_uk": "«He asked me where had I been» — у непрямому запитанні інверсії немає, had стоїть після підмета I."}, {"uk": "Ти пам'ятаєш, скільки це коштує?", "parts": [["Do", "aux"], ["you", "subj"], ["remember", "verb"], ["how much", "conj"], ["it", "subj"], ["costs?", "verb"]], "alts": [], "why_uk": "Пряме <i>How much does it cost?<\/i> у підрядному стає <b>how much it costs<\/b>: does зникає, а -s переходить на дієслово.", "trap": [0, 1, 2, 3, 5, 4], "trap_uk": "«…how much costs it?» — дієслово не ставиться перед підметом; потрібно how much it costs."}, {"uk": "Я не впевнений, чи ця відповідь правильна.", "parts": [["I", "subj"], ["am not", "verb"], ["sure", "comp"], ["if", "conj"], ["this answer", "subj"], ["is", "verb"], ["correct.", "comp"]], "alts": [], "why_uk": "Після <b>I am not sure<\/b> підрядне з <b>if<\/b> має прямий порядок: <b>this answer<\/b> → <b>is<\/b> → <b>correct<\/b>.", "trap": [0, 1, 2, 3, 5, 4, 6], "trap_uk": "«…if is this answer correct» — у підрядному реченні is стоїть після підмета this answer."}]}, {"id": "en_adj_order", "lv": "B2", "title_uk": "Порядок прикметників: opinion-size-age-shape-color-origin-material-purpose", "scheme": ["det", "op", "size", "age", "shape", "color", "origin", "mat", "purp", "noun"], "rule_uk": "Коли перед іменником стоїть кілька прикметників, англійська дотримується сталого порядку: <b>оцінка<\/b> (lovely, nice) → <b>розмір<\/b> (big, small) → <b>вік<\/b> (old, new) → <b>форма<\/b> (round, square) → <b>колір<\/b> (red, black) → <b>походження<\/b> (Italian, French) → <b>матеріал<\/b> (leather, wooden) → <b>призначення<\/b> (running, sleeping) → <b>іменник<\/b>. Артикль або числівник стоїть перед усіма прикметниками. В українській порядок вільніший, а в англійській порушення звучить дуже неприродно. Чим ближче прикметник до іменника, тим тісніше він описує саму річ. Приклад: <i>a lovely old Italian leather bag<\/i>, <i>a big round wooden table<\/i>.", "items": [{"uk": "гарна стара італійська шкіряна сумка", "parts": [["a", "det"], ["lovely", "op"], ["old", "age"], ["Italian", "origin"], ["leather", "mat"], ["bag", "noun"]], "alts": [], "why_uk": "Оцінка <b>lovely<\/b> → вік <b>old<\/b> → походження <b>Italian<\/b> → матеріал <b>leather<\/b> → іменник <b>bag<\/b>.", "trap": [0, 1, 3, 2, 4, 5], "trap_uk": "«a lovely Italian old leather bag» — вік (old) має стояти перед походженням (Italian)."}, {"uk": "великий круглий дерев'яний стіл", "parts": [["a", "det"], ["big", "size"], ["round", "shape"], ["wooden", "mat"], ["table", "noun"]], "alts": [], "why_uk": "Розмір <b>big<\/b> → форма <b>round<\/b> → матеріал <b>wooden<\/b> → <b>table<\/b>. Матеріал завжди найближче до іменника (якщо немає призначення).", "trap": [0, 3, 1, 2, 4], "trap_uk": "«a wooden big round table» — матеріал не може стояти перед розміром і формою."}, {"uk": "мила маленька біла собачка", "parts": [["a", "det"], ["cute", "op"], ["little", "size"], ["white", "color"], ["dog", "noun"]], "alts": [], "why_uk": "Оцінка <b>cute<\/b> → розмір <b>little<\/b> → колір <b>white<\/b> → <b>dog<\/b>. Зменшувальне «собачка» передається прикметником little.", "trap": [0, 1, 3, 2, 4], "trap_uk": "«a cute white little dog» — розмір (little) має стояти перед кольором (white)."}, {"uk": "нові червоні бігові кросівки", "parts": [["new", "age"], ["red", "color"], ["running", "purp"], ["shoes", "noun"]], "alts": [], "why_uk": "Вік <b>new<\/b> → колір <b>red<\/b> → призначення <b>running<\/b> (для бігу) → <b>shoes<\/b>. Призначення стоїть безпосередньо перед іменником.", "trap": [0, 2, 1, 3], "trap_uk": "«new running red shoes» — слово призначення (running) утворює з іменником єдине ціле, тому нічого не можна вставляти між ними."}, {"uk": "довга чорна шовкова сукня", "parts": [["a", "det"], ["long", "size"], ["black", "color"], ["silk", "mat"], ["dress", "noun"]], "alts": [], "why_uk": "Розмір/довжина <b>long<\/b> → колір <b>black<\/b> → матеріал <b>silk<\/b> → <b>dress<\/b>.", "trap": [0, 1, 3, 2, 4], "trap_uk": "«a long silk black dress» — колір має стояти перед матеріалом."}, {"uk": "красивий старовинний французький замок", "parts": [["a", "det"], ["beautiful", "op"], ["old", "age"], ["French", "origin"], ["castle", "noun"]], "alts": [], "why_uk": "Оцінка <b>beautiful<\/b> (суб'єктивна думка) завжди перша, далі вік <b>old<\/b>, потім походження <b>French<\/b>.", "trap": [0, 2, 1, 3, 4], "trap_uk": "«an old beautiful French castle» — оцінні прикметники стоять перед об'єктивними (вік, колір тощо)."}, {"uk": "дві великі сині пластикові коробки", "parts": [["two", "det"], ["large", "size"], ["blue", "color"], ["plastic", "mat"], ["boxes", "noun"]], "alts": [], "why_uk": "Числівник <b>two<\/b> — перед усіма прикметниками; далі розмір <b>large<\/b> → колір <b>blue<\/b> → матеріал <b>plastic<\/b>.", "trap": [0, 3, 1, 2, 4], "trap_uk": "«two plastic large blue boxes» — матеріал стоїть останнім перед іменником, після розміру й кольору."}, {"uk": "гарний маленький японський ресторан", "parts": [["a", "det"], ["nice", "op"], ["small", "size"], ["Japanese", "origin"], ["restaurant", "noun"]], "alts": [], "why_uk": "Оцінка <b>nice<\/b> → розмір <b>small<\/b> → походження <b>Japanese<\/b> → <b>restaurant<\/b>.", "trap": [0, 1, 3, 2, 4], "trap_uk": "«a nice Japanese small restaurant» — розмір має стояти перед походженням."}]}]}, "da": {"roles": {"forfelt": {"name_uk": "Перша позиція (будь-який член речення перед дієсловом)", "name": "forfelt"}, "subj": {"name_uk": "Підмет", "name": "subjekt"}, "verb": {"name_uk": "Особове дієслово", "name": "verbal (finit verbum)"}, "verb2": {"name_uk": "Неособова форма дієслова (інфінітив / дієприкметник)", "name": "infinit verbum"}, "neg": {"name_uk": "Заперечення", "name": "ikke-adverbial (nægtelse)"}, "adv": {"name_uk": "Прислівник речення", "name": "ikke-adverbial (sætningsadverbial)"}, "obj": {"name_uk": "Додаток", "name": "objekt"}, "pron": {"name_uk": "Займенник-додаток", "name": "pronominalt objekt"}, "part": {"name_uk": "Частка дієслова", "name": "verbalpartikel"}, "place": {"name_uk": "Місце / напрямок", "name": "sted"}, "time": {"name_uk": "Час", "name": "tid"}, "manner": {"name_uk": "Спосіб дії", "name": "måde"}, "comp": {"name_uk": "Іменна частина присудка", "name": "prædikativ"}, "qw": {"name_uk": "Питальне слово", "name": "spørgeord (forfelt)"}, "conj": {"name_uk": "Сполучник", "name": "konjunktion / ledsætningsindleder"}, "sub": {"name_uk": "Підрядне речення (як один блок)", "name": "ledsætning"}, "main": {"name_uk": "Головне речення (як один блок)", "name": "helsætning"}}, "lessons": [{"id": "da_a1_svo", "lv": "A1", "title_uk": "Просте речення: підмет + дієслово + решта", "scheme": ["subj", "verb", "obj", "place", "time"], "rule_uk": "У звичайному данському розповідному реченні порядок слів досить твердий: спочатку <b>підмет<\/b> (subjekt), потім <b>особове дієслово<\/b> (verbal), а далі — <b>додаток<\/b> (objekt), <b>місце<\/b> (sted) і <b>час<\/b> (tid). Дієслово не змінюється за особами: jeg bor, du bor, han bor. На відміну від української, не можна просто переставляти слова як завгодно — особове дієслово завжди залишається на 2-му місці. Обставини зазвичай ідуть у порядку «місце, потім час». Приклад: <b>Jeg bor i Aarhus.<\/b> — Я живу в Орхусі. <b>Vi spiser aftensmad klokken seks.<\/b> — Ми вечеряємо о шостій.", "items": [{"uk": "Я живу в Орхусі.", "parts": [["Jeg", "subj"], ["bor", "verb"], ["i Aarhus.", "place"]], "alts": [[2, 1, 0]], "why_uk": "Підмет jeg стоїть на початку, за ним особове дієслово bor, а місце i Aarhus — у кінці. Можна також винести місце на початок для наголосу (I Aarhus bor jeg), але тоді дієслово все одно залишається другим, а підмет іде після нього.", "trap": [0, 2, 1], "trap_uk": "«Jeg i Aarhus bor» — неправильно: у данській особове дієслово не може стояти в кінці, як іноді в українській («я в Орхусі живу»). Воно завжди на 2-му місці."}, {"uk": "Ми п'ємо каву вранці.", "parts": [["Vi", "subj"], ["drikker", "verb"], ["kaffe", "obj"], ["om morgenen.", "time"]], "alts": [[3, 1, 0, 2], [2, 1, 0, 3]], "why_uk": "Базовий порядок: підмет vi — дієслово drikker — додаток kaffe — час om morgenen. Час зазвичай стоїть у кінці. Якщо винести на початок час або додаток, дієслово drikker залишиться другим, а vi перейде за нього (Om morgenen drikker vi kaffe).", "trap": [0, 2, 1, 3], "trap_uk": "«Vi kaffe drikker» — помилка: додаток не може стояти перед дієсловом, коли підмет уже на першому місці. Дієслово має бути другим елементом."}, {"uk": "Мій брат працює в лікарні.", "parts": [["Min bror", "subj"], ["arbejder", "verb"], ["på et hospital.", "place"]], "alts": [[2, 1, 0]], "why_uk": "Підмет min bror — це один член речення (два слова), тому дієслово arbejder стоїть одразу після нього, на 2-му місці. Місце på et hospital — у кінці. Зверни увагу: «в лікарні» по-данськи på et hospital (з прийменником på).", "trap": [1, 0, 2], "trap_uk": "«Arbejder min bror på et hospital» — це вже питання («Чи працює мій брат у лікарні?»). У розповідному реченні дієслово не стоїть на першому місці."}, {"uk": "Діти граються в саду.", "parts": [["Børnene", "subj"], ["leger", "verb"], ["i haven.", "place"]], "alts": [[2, 1, 0]], "why_uk": "Børnene (діти) — підмет, leger — особове дієслово, i haven — місце. Порядок підмет — дієслово — місце є нейтральним. Якщо почати з i haven, то обов'язково: I haven leger børnene.", "trap": [0, 2, 1], "trap_uk": "«Børnene i haven leger» — неправильно: місце не може стояти між підметом і дієсловом. Дієслово завжди друге."}, {"uk": "Я трохи говорю данською.", "parts": [["Jeg", "subj"], ["taler", "verb"], ["lidt dansk.", "obj"]], "alts": [[2, 1, 0]], "why_uk": "Jeg — підмет, taler — дієслово, lidt dansk — додаток (що саме я говорю). «Трохи» тут належить до додатка: lidt dansk — «трохи данської». Тому блок lidt dansk іде після дієслова.", "trap": [0, 2, 1], "trap_uk": "«Jeg lidt dansk taler» — український порядок «я трохи данською говорю» не підходить: данське дієслово завжди на 2-му місці."}, {"uk": "Ми вечеряємо о шостій.", "parts": [["Vi", "subj"], ["spiser", "verb"], ["aftensmad", "obj"], ["klokken seks.", "time"]], "alts": [[3, 1, 0, 2], [2, 1, 0, 3]], "why_uk": "Українське «вечеряти» по-данськи — spise aftensmad («їсти вечерю»). Порядок: підмет vi — дієслово spiser — додаток aftensmad — час klokken seks. Час у кінці речення — найприродніше місце.", "trap": [0, 1, 3, 2], "trap_uk": "«Vi spiser klokken seks aftensmad» — так не кажуть: додаток (aftensmad) зазвичай іде одразу після дієслова, а обставина часу — після додатка."}, {"uk": "Магазин відчиняється о дев'ятій.", "parts": [["Butikken", "subj"], ["åbner", "verb"], ["klokken ni.", "time"]], "alts": [[2, 1, 0]], "why_uk": "Butikken (магазин) — підмет, åbner — дієслово, klokken ni — час. Українське «відчиняється» в данській — просто åbner, без зворотної частки. Можна почати з часу: Klokken ni åbner butikken.", "trap": [2, 0, 1], "trap_uk": "«Klokken ni butikken åbner» — помилка: якщо речення починається з часу, дієслово має йти одразу після нього, а підмет — після дієслова (Klokken ni åbner butikken)."}]}, {"id": "da_a1_q", "lv": "A1", "title_uk": "Запитання: дієслово на початку та питальні слова", "scheme": ["qw", "verb", "subj", "obj", "place", "time"], "rule_uk": "У данській є два основні типи запитань. <b>Загальне запитання<\/b> (так/ні) починається з <b>особового дієслова<\/b>, а підмет іде одразу після нього: <b>Bor du her?<\/b> — Ти живеш тут? <b>Питальне запитання<\/b> починається з <b>питального слова<\/b> (hvor, hvad, hvornår, hvorfor, hvem, hvordan) у позиції forfelt, потім іде дієслово, а потім підмет: <b>Hvor bor du?<\/b> — Де ти живеш? Тобто після питального слова завжди відбувається <b>інверсія<\/b>: спочатку дієслово, потім підмет. Порядок «Hvor du bor?» у головному реченні неправильний.", "items": [{"uk": "Ти живеш тут?", "parts": [["Bor", "verb"], ["du", "subj"], ["her?", "place"]], "alts": [], "why_uk": "Це загальне запитання (відповідь «так/ні»), тому воно починається з особового дієслова bor. Підмет du стоїть одразу після дієслова, а місце her — у кінці.", "trap": [1, 0, 2], "trap_uk": "«Du bor her?» — це розповідний порядок слів; таке можна почути тільки як здивоване перепитування з інтонацією. Звичайне запитання в данській починається з дієслова: Bor du her?"}, {"uk": "Де ти живеш?", "parts": [["Hvor", "qw"], ["bor", "verb"], ["du?", "subj"]], "alts": [], "why_uk": "Питальне слово hvor (де) стоїть на першому місці (forfelt). Дієслово bor — на другому, а підмет du — після дієслова. Це інверсія, обов'язкова після питального слова.", "trap": [0, 2, 1], "trap_uk": "«Hvor du bor?» — помилка: після питального слова в головному реченні дієслово має йти одразу на 2-му місці, перед підметом."}, {"uk": "Ти говориш данською?", "parts": [["Taler", "verb"], ["du", "subj"], ["dansk?", "obj"]], "alts": [], "why_uk": "Загальне запитання: особове дієслово taler на початку, потім підмет du, потім додаток dansk.", "trap": [1, 0, 2], "trap_uk": "«Du taler dansk?» — розповідний порядок, а не звичайне запитання. Для запитання «так/ні» постав дієслово на початок."}, {"uk": "Що ти робиш завтра?", "parts": [["Hvad", "qw"], ["laver", "verb"], ["du", "subj"], ["i morgen?", "time"]], "alts": [], "why_uk": "Hvad (що) — питальне слово на першому місці, laver (робиш) — дієслово на другому, du — підмет після дієслова, i morgen (завтра) — час у кінці. Зверни увагу: «робити» в такому запитанні — lave.", "trap": [0, 2, 1, 3], "trap_uk": "«Hvad du laver i morgen?» — неправильно: після hvad потрібна інверсія — дієслово перед підметом."}, {"uk": "Коли починається урок?", "parts": [["Hvornår", "qw"], ["begynder", "verb"], ["timen?", "subj"]], "alts": [], "why_uk": "Hvornår (коли) — питальне слово, begynder (починається) — дієслово, timen (урок) — підмет. Навіть коли підмет — іменник, він стоїть після дієслова.", "trap": [0, 2, 1], "trap_uk": "«Hvornår timen begynder?» — помилка: так звучить лише непряме запитання всередині іншого речення. У прямому запитанні дієслово йде одразу після hvornår."}, {"uk": "Ти п'єш каву вранці?", "parts": [["Drikker", "verb"], ["du", "subj"], ["kaffe", "obj"], ["om morgenen?", "time"]], "alts": [], "why_uk": "Запитання «так/ні»: дієслово drikker на початку, підмет du одразу за ним, далі додаток kaffe і час om morgenen у кінці — звичайний порядок «додаток, потім час».", "trap": [0, 1, 3, 2], "trap_uk": "«Drikker du om morgenen kaffe?» — незвично: додаток kaffe має стояти перед обставиною часу."}, {"uk": "Як тебе звати?", "parts": [["Hvad", "qw"], ["hedder", "verb"], ["du?", "subj"]], "alts": [], "why_uk": "По-данськи кажуть «Що ти називаєшся?»: hvad (що) + hedder (називаєшся) + du (ти). Тому тут hvad, а не hvordan (як). Після питального слова — дієслово, потім підмет.", "trap": [0, 2, 1], "trap_uk": "«Hvad du hedder?» — неправильно: після hvad потрібна інверсія (Hvad hedder du?)."}, {"uk": "Чому ти вчиш данську?", "parts": [["Hvorfor", "qw"], ["lærer", "verb"], ["du", "subj"], ["dansk?", "obj"]], "alts": [], "why_uk": "Hvorfor (чому) стоїть першим, lærer (вчиш) — другим, du — третім, додаток dansk — у кінці.", "trap": [0, 2, 1, 3], "trap_uk": "«Hvorfor du lærer dansk?» — помилка: після hvorfor дієслово має йти перед підметом."}]}, {"id": "da_a2_v2", "lv": "A2", "title_uk": "Правило V2: дієслово завжди на 2-му місці (інверсія після часу/місця)", "scheme": ["forfelt", "verb", "subj", "adv", "verb2", "obj", "place", "time"], "rule_uk": "Головне правило данського речення — <b>V2<\/b>: особове дієслово (verbal) завжди стоїть на <b>2-му місці<\/b>. Перше місце називається <b>forfelt<\/b>, і там може стояти будь-який член речення: підмет, час, місце, додаток. Якщо на першому місці <b>не підмет<\/b> (наприклад, i dag, nu, i Danmark), то підмет переходить <b>після дієслова<\/b> — це інверсія. Далі йдуть прислівники та заперечення (ikke-adverbial), неособова форма дієслова (infinit verbum), додаток (objekt), місце (sted) і час (tid). Приклад: <b>I dag arbejder jeg hjemme.<\/b> — Сьогодні я працюю вдома. <b>Lige nu har vi ikke tid.<\/b> — Зараз у нас немає часу.", "items": [{"uk": "Сьогодні я працюю вдома.", "parts": [["I dag", "forfelt"], ["arbejder", "verb"], ["jeg", "subj"], ["hjemme.", "place"]], "alts": [[2, 1, 3, 0], [3, 1, 2, 0]], "why_uk": "I dag (сьогодні) займає forfelt, тому дієслово arbejder стоїть друге, а підмет jeg переходить після дієслова. Також правильно: Jeg arbejder hjemme i dag — тоді в forfelt підмет, а час іде в кінець.", "trap": [0, 2, 1, 3], "trap_uk": "«I dag jeg arbejder hjemme» — типова помилка українців: в українській «сьогодні я працюю» звучить природно, а в данській дієслово мусить бути на 2-му місці: I dag arbejder jeg."}, {"uk": "Завтра ми їдемо до Копенгагена.", "parts": [["I morgen", "forfelt"], ["kører", "verb"], ["vi", "subj"], ["til København.", "place"]], "alts": [[2, 1, 3, 0], [3, 1, 2, 0]], "why_uk": "Час i morgen стоїть у forfelt, отже після нього — дієслово kører, а потім підмет vi. Напрямок til København — у кінці. Нейтральний варіант: Vi kører til København i morgen.", "trap": [0, 2, 1, 3], "trap_uk": "«I morgen vi kører» — порушує правило V2: перед дієсловом може стояти лише ОДИН член речення, а тут їх два (i morgen і vi)."}, {"uk": "У Данії багато людей їздять на велосипеді.", "parts": [["I Danmark", "forfelt"], ["cykler", "verb"], ["mange mennesker.", "subj"]], "alts": [[2, 1, 0]], "why_uk": "Місце i Danmark займає forfelt, тому дієслово cykler (їздять на велосипеді) — друге, а підмет mange mennesker — після нього. Українське «їздити на велосипеді» — одне дієслово cykle.", "trap": [0, 2, 1], "trap_uk": "«I Danmark mange mennesker cykler» — неправильно: після обставини місця на початку дієслово має йти одразу, перед підметом."}, {"uk": "По суботах я завжди довго сплю.", "parts": [["Om lørdagen", "forfelt"], ["sover", "verb"], ["jeg", "subj"], ["altid", "adv"], ["længe.", "manner"]], "alts": [[2, 1, 3, 4, 0]], "why_uk": "Om lørdagen (по суботах) — у forfelt, далі дієслово sover, потім підмет jeg. Прислівник altid (завжди) стоїть ПІСЛЯ підмета при інверсії, а længe (довго) — у кінці як обставина способу/тривалості.", "trap": [0, 2, 1, 3, 4], "trap_uk": "«Om lørdagen jeg sover» — помилка V2: два елементи перед дієсловом. Правильно: Om lørdagen sover jeg altid længe."}, {"uk": "Вранці вона п'є чай.", "parts": [["Om morgenen", "forfelt"], ["drikker", "verb"], ["hun", "subj"], ["te.", "obj"]], "alts": [[2, 1, 3, 0], [3, 1, 2, 0]], "why_uk": "Om morgenen (вранці) у forfelt → дієслово drikker на 2-му місці → підмет hun → додаток te. Без інверсії: Hun drikker te om morgenen.", "trap": [0, 2, 1, 3], "trap_uk": "«Om morgenen hun drikker te» — неправильно: підмет не може стояти перед дієсловом, якщо forfelt уже зайнятий часом."}, {"uk": "Тепер я розумію.", "parts": [["Nu", "forfelt"], ["forstår", "verb"], ["jeg.", "subj"]], "alts": [[2, 1, 0]], "why_uk": "Навіть коротке слово nu (тепер) займає forfelt цілком, тому дієслово forstår іде другим, а jeg — після нього.", "trap": [0, 2, 1], "trap_uk": "«Nu jeg forstår» — помилка: після nu обов'язкова інверсія (Nu forstår jeg)."}, {"uk": "Сьогодні ввечері я хочу подивитися фільм.", "parts": [["I aften", "forfelt"], ["vil", "verb"], ["jeg", "subj"], ["se", "verb2"], ["en film.", "obj"]], "alts": [[2, 1, 3, 4, 0]], "why_uk": "На 2-му місці стоїть саме ОСОБОВЕ дієслово vil (хочу). Інфінітив se (подивитися) — неособова форма — іде після підмета, а додаток en film — після інфінітива. I aften = сьогодні ввечері.", "trap": [0, 2, 1, 3, 4], "trap_uk": "«I aften jeg vil se en film» — помилка V2: після i aften одразу має йти особове дієслово vil, а вже потім jeg."}, {"uk": "Зараз у нас немає часу.", "parts": [["Lige nu", "forfelt"], ["har", "verb"], ["vi", "subj"], ["ikke", "neg"], ["tid.", "obj"]], "alts": [[2, 1, 3, 4, 0]], "why_uk": "Lige nu (зараз) у forfelt → har (маємо) на 2-му місці → підмет vi → заперечення ikke → додаток tid. «У нас немає часу» по-данськи — «ми не маємо часу» (vi har ikke tid). Ikke стоїть після підмета, коли є інверсія.", "trap": [0, 2, 1, 3, 4], "trap_uk": "«Lige nu vi har ikke tid» — два елементи перед дієсловом. За правилом V2: Lige nu har vi ikke tid."}]}, {"id": "da_a2_ikke", "lv": "A2", "title_uk": "Де стоїть ikke та прислівники (altid, også, ofte, gerne)", "scheme": ["subj", "verb", "neg", "adv", "obj", "place", "time"], "rule_uk": "Заперечення <b>ikke<\/b> і прислівники речення (<b>altid, også, ofte, gerne, aldrig, allerede<\/b>) у данській називаються ikke-adverbial. У головному реченні з одним дієсловом вони стоять <b>одразу ПІСЛЯ особового дієслова<\/b> (а при інверсії — після підмета), а не перед ним, як в українській («я не п'ю»). Додаток, місце та час ідуть після них. Приклади: <b>Jeg drikker ikke kaffe.<\/b> — Я не п'ю каву. <b>Han kommer altid for sent.<\/b> — Він завжди запізнюється. Якщо речення починається не з підмета, порядок такий: дієслово — підмет — ikke (I dag arbejder han ikke).", "items": [{"uk": "Я не п'ю каву.", "parts": [["Jeg", "subj"], ["drikker", "verb"], ["ikke", "neg"], ["kaffe.", "obj"]], "alts": [[3, 1, 0, 2]], "why_uk": "В українській «не» стоїть перед дієсловом, а в данській ikke — ПІСЛЯ особового дієслова: drikker ikke. Додаток kaffe іде після ikke. Можна також наголосити додаток: Kaffe drikker jeg ikke.", "trap": [0, 2, 1, 3], "trap_uk": "«Jeg ikke drikker kaffe» — дослівний переклад з української. У головному реченні ikke не може стояти перед особовим дієсловом."}, {"uk": "Він завжди запізнюється.", "parts": [["Han", "subj"], ["kommer", "verb"], ["altid", "adv"], ["for sent.", "time"]], "alts": [], "why_uk": "«Запізнюватися» по-данськи — komme for sent («приходити надто пізно»). Прислівник altid стоїть після дієслова kommer, як і ikke, а for sent — у кінці.", "trap": [0, 2, 1, 3], "trap_uk": "«Han altid kommer for sent» — помилка: прислівник altid у головному реченні йде після особового дієслова, а не перед ним."}, {"uk": "Ми часто їмо рибу.", "parts": [["Vi", "subj"], ["spiser", "verb"], ["ofte", "adv"], ["fisk.", "obj"]], "alts": [[3, 1, 0, 2]], "why_uk": "Ofte (часто) — прислівник речення, тому стоїть одразу після дієслова spiser і перед додатком fisk.", "trap": [0, 2, 1, 3], "trap_uk": "«Vi ofte spiser fisk» — неправильно: ofte не може стояти між підметом і дієсловом у головному реченні."}, {"uk": "Вона теж говорить англійською.", "parts": [["Hun", "subj"], ["taler", "verb"], ["også", "adv"], ["engelsk.", "obj"]], "alts": [[3, 1, 0, 2]], "why_uk": "Også (теж, також) займає ту саму позицію, що й ikke: після особового дієслова taler і перед додатком engelsk.", "trap": [0, 2, 1, 3], "trap_uk": "«Hun også taler engelsk» — помилка за українським зразком («вона теж говорить»). У данській: Hun taler også engelsk."}, {"uk": "Я охоче п'ю чай.", "parts": [["Jeg", "subj"], ["drikker", "verb"], ["gerne", "adv"], ["te.", "obj"]], "alts": [[3, 1, 0, 2]], "why_uk": "Gerne означає «охоче, з радістю» і часто перекладається як «люблю (робити)». Як прислівник речення воно стоїть після дієслова drikker і перед додатком te.", "trap": [0, 1, 3, 2], "trap_uk": "«Jeg drikker te gerne» — неправильно: gerne — прислівник речення, він стоїть перед додатком-іменником, а не в кінці."}, {"uk": "Сьогодні він не працює.", "parts": [["I dag", "time"], ["arbejder", "verb"], ["han", "subj"], ["ikke.", "neg"]], "alts": [[2, 1, 3, 0]], "why_uk": "I dag на першому місці → інверсія: дієслово arbejder, потім підмет han. Ikke стоїть ПІСЛЯ підмета, бо при інверсії підмет-займенник займає місце перед запереченням. Без інверсії: Han arbejder ikke i dag.", "trap": [0, 1, 3, 2], "trap_uk": "«I dag arbejder ikke han» — помилка: при інверсії займенник-підмет стоїть перед ikke (arbejder han ikke)."}, {"uk": "Мої батьки не живуть у Копенгагені.", "parts": [["Mine forældre", "subj"], ["bor", "verb"], ["ikke", "neg"], ["i København.", "place"]], "alts": [[3, 1, 0, 2]], "why_uk": "Підмет mine forældre, дієслово bor, одразу після нього ikke, а місце i København — у кінці. Заперечення стоїть перед обставиною місця.", "trap": [0, 1, 3, 2], "trap_uk": "«Mine forældre bor i København ikke» — неправильно: ikke не ставиться в кінець речення після місця; воно йде одразу після дієслова."}, {"uk": "У мене не завжди є час.", "parts": [["Jeg", "subj"], ["har", "verb"], ["ikke", "neg"], ["altid", "adv"], ["tid.", "obj"]], "alts": [[4, 1, 0, 2, 3]], "why_uk": "«У мене є час» = jeg har tid. Обидва прислівники стоять після дієслова har: спочатку ikke, потім altid (ikke altid — «не завжди»). Додаток tid — у кінці.", "trap": [0, 2, 3, 1, 4], "trap_uk": "«Jeg ikke altid har tid» — такий порядок можливий лише в підрядному реченні (…fordi jeg ikke altid har tid). У головному реченні ikke altid стоїть після har."}]}, {"id": "da_b1_modal", "lv": "B1", "title_uk": "Модальні та допоміжні дієслова: kan/vil/skal/må + інфінітив, har/er + дієприкметник", "scheme": ["subj", "verb", "neg", "adv", "verb2", "obj", "place", "time"], "rule_uk": "Коли в реченні два дієслова, на 2-му місці стоїть лише <b>особове<\/b> — модальне (kan, vil, skal, må) або допоміжне (har, er). <b>Інфінітив<\/b> (без at!) або <b>дієприкметник<\/b> (infinit verbum) іде далі — після підмета й після ikke/прислівників, але перед додатком, місцем і часом. Отже: verbal — (subjekt) — ikke/aldrig — infinit verbum — objekt — sted — tid. Приклади: <b>Jeg kan ikke komme i morgen.<\/b> — Я не можу прийти завтра. <b>Vi har aldrig været i Skagen.<\/b> — Ми ніколи не були в Скагені. Минулий час із дієсловами руху й зміни стану часто утворюється з <b>er<\/b>: De er gået hjem.", "items": [{"uk": "Я не можу прийти завтра.", "parts": [["Jeg", "subj"], ["kan", "verb"], ["ikke", "neg"], ["komme", "verb2"], ["i morgen.", "time"]], "alts": [[4, 1, 0, 2, 3]], "why_uk": "Особове дієслово kan — на 2-му місці, ikke — одразу після нього, інфінітив komme — після ikke, час i morgen — у кінці. Після модального дієслова інфінітив без at. Також правильно: I morgen kan jeg ikke komme.", "trap": [0, 2, 1, 3, 4], "trap_uk": "«Jeg ikke kan komme» — український порядок («я не можу»). У головному реченні ikke стоїть після особового дієслова kan."}, {"uk": "Ми ніколи не були в Скагені.", "parts": [["Vi", "subj"], ["har", "verb"], ["aldrig", "adv"], ["været", "verb2"], ["i Skagen.", "place"]], "alts": [[4, 1, 0, 2, 3]], "why_uk": "Har — допоміжне дієслово (особова форма) на 2-му місці, aldrig (ніколи) — у позиції прислівника, дієприкметник været — після нього, місце i Skagen — у кінці. Зверни увагу: aldrig уже містить заперечення, ikke не потрібне.", "trap": [0, 1, 2, 4, 3], "trap_uk": "«Vi har aldrig i Skagen været» — так було б у німецькій, але в данській дієприкметник не йде в кінець речення: він стоїть перед місцем."}, {"uk": "Вона хоче вивчити данську.", "parts": [["Hun", "subj"], ["vil", "verb"], ["lære", "verb2"], ["dansk.", "obj"]], "alts": [[3, 1, 0, 2]], "why_uk": "Vil (хоче) — особове дієслово на 2-му місці, lære (вчити, вивчати) — інфінітив без at, dansk — додаток після інфінітива.", "trap": [0, 1, 3, 2], "trap_uk": "«Hun vil dansk lære» — неправильно: у данській додаток стоїть після інфінітива, а не перед ним (як у німецькій)."}, {"uk": "Тобі сьогодні треба працювати?", "parts": [["Skal", "verb"], ["du", "subj"], ["arbejde", "verb2"], ["i dag?", "time"]], "alts": [], "why_uk": "Запитання «так/ні»: на початку особове модальне дієслово skal, потім підмет du, потім інфінітив arbejde і час i dag. В українській «тобі треба», а в данській — «ти маєш/мусиш» (du skal).", "trap": [1, 0, 2, 3], "trap_uk": "«Du skal arbejde i dag?» — розповідний порядок; звичайне запитання починається з особового дієслова: Skal du arbejde i dag?"}, {"uk": "Він уже поїв.", "parts": [["Han", "subj"], ["har", "verb"], ["allerede", "adv"], ["spist.", "verb2"]], "alts": [], "why_uk": "Har (особове допоміжне дієслово) — на 2-му місці, allerede (уже) — прислівник речення, стоїть між har і дієприкметником spist.", "trap": [0, 2, 1, 3], "trap_uk": "«Han allerede har spist» — помилка: прислівник allerede не може стояти перед особовим дієсловом у головному реченні."}, {"uk": "Вони пішли додому.", "parts": [["De", "subj"], ["er", "verb"], ["gået", "verb2"], ["hjem.", "place"]], "alts": [], "why_uk": "З дієсловами руху (gå, komme, rejse) минулий час часто утворюється з er, а не har: de er gået. Er — особове дієслово на 2-му місці, gået — дієприкметник, hjem (додому) — напрямок у кінці.", "trap": [0, 1, 3, 2], "trap_uk": "«De er hjem gået» — неправильно: дієприкметник gået стоїть одразу після er (і прислівників), а напрямок hjem — після нього."}, {"uk": "Тут не можна палити.", "parts": [["Man", "subj"], ["må", "verb"], ["ikke", "neg"], ["ryge", "verb2"], ["her.", "place"]], "alts": [[4, 1, 0, 2, 3]], "why_uk": "Українське безособове «не можна» в данській передається через man må ikke («не можна, заборонено»). Må — особове дієслово, ikke — після нього, інфінітив ryge, місце her. Дуже природно також: Her må man ikke ryge.", "trap": [0, 2, 1, 3, 4], "trap_uk": "«Man ikke må ryge her» — помилка: ikke йде після особового дієслова må."}, {"uk": "Завтра мені доведеться довго працювати.", "parts": [["I morgen", "time"], ["skal", "verb"], ["jeg", "subj"], ["arbejde", "verb2"], ["længe.", "manner"]], "alts": [[2, 1, 3, 4, 0]], "why_uk": "I morgen — у forfelt, тому skal (особове) стоїть другим, а підмет jeg — після нього. Інфінітив arbejde іде після підмета, længe (довго) — у кінці.", "trap": [0, 2, 1, 3, 4], "trap_uk": "«I morgen jeg skal arbejde» — порушення V2: після i morgen одразу має стояти особове дієслово skal."}]}, {"id": "da_b1_sub", "lv": "B1", "title_uk": "Підрядні речення: fordi, at, når, hvis, som — ikke ПЕРЕД дієсловом", "scheme": ["main", "conj", "subj", "neg", "adv", "verb", "verb2", "obj", "place", "time"], "rule_uk": "У підрядному реченні (після <b>fordi, at, når, hvis, om, som, selvom, da<\/b>) порядок слів інший, ніж у головному: сполучник — <b>підмет<\/b> — <b>ikke/прислівник<\/b> — <b>особове дієслово<\/b> — infinit verbum — objekt — sted — tid. Тобто ikke, aldrig, altid, også тощо стоять <b>ПЕРЕД<\/b> особовим дієсловом, а інверсії в підрядному реченні немає. Порівняй: <b>Jeg har ikke tid.<\/b> (головне) — <b>…fordi jeg ikke har tid.<\/b> (підрядне). Кома перед підрядним реченням у сучасній данській необов'язкова. У розмовній мові після fordi або at іноді чути порядок головного речення, але в письмі та на іспиті використовуй ikke перед дієсловом.", "items": [{"uk": "Я не прийду, бо в мене немає часу.", "parts": [["Jeg kommer ikke", "main"], ["fordi", "conj"], ["jeg", "subj"], ["ikke", "neg"], ["har", "verb"], ["tid.", "obj"]], "alts": [], "why_uk": "Головне речення jeg kommer ikke стоїть першим. Після fordi починається підрядне: підмет jeg, потім ikke, і лише потім особове дієслово har. Саме так ikke опиняється ПЕРЕД дієсловом.", "trap": [0, 1, 2, 4, 3, 5], "trap_uk": "«…fordi jeg har ikke tid» — порядок головного речення. Його можна почути в розмові, але в нормативній данській після fordi ikke стоїть перед дієсловом: fordi jeg ikke har tid."}, {"uk": "Він каже, що завжди втомлений.", "parts": [["Han siger", "main"], ["at", "conj"], ["han", "subj"], ["altid", "adv"], ["er", "verb"], ["træt.", "comp"]], "alts": [], "why_uk": "У підрядному реченні з at прислівник altid стоїть перед особовим дієсловом er: at han altid er træt. Підмет han обов'язковий, хоча в українській його можна опустити.", "trap": [0, 1, 2, 4, 3, 5], "trap_uk": "«…at han er altid træt» — так кажуть у головному реченні (Han er altid træt). У підрядному реченні altid переходить перед дієслово."}, {"uk": "Я думаю, що вона тут не живе.", "parts": [["Jeg tror", "main"], ["at", "conj"], ["hun", "subj"], ["ikke", "neg"], ["bor", "verb"], ["her.", "place"]], "alts": [], "why_uk": "Після at: підмет hun — заперечення ikke — дієслово bor — місце her. «Думати» в значенні «вважати» по-данськи — tro.", "trap": [0, 1, 2, 4, 3, 5], "trap_uk": "«…at hun bor ikke her» — порядок головного речення. У нормативній мові в підрядному реченні: at hun ikke bor her."}, {"uk": "Я завжди п'ю каву, коли встаю.", "parts": [["Jeg drikker altid kaffe", "main"], ["når", "conj"], ["jeg", "subj"], ["står op.", "verb"]], "alts": [], "why_uk": "Після når іде звичайний порядок підрядного речення: підмет jeg, потім дієслово står op (вставати). Інверсії тут немає, а підмет jeg обов'язковий.", "trap": [0, 1, 3, 2], "trap_uk": "«…når står op jeg» — неправильно: у підрядному реченні дієслово НЕ переходить перед підметом; після сполучника завжди спочатку підмет."}, {"uk": "Ми підемо на пляж, якщо не буде дощу.", "parts": [["Vi tager til stranden", "main"], ["hvis", "conj"], ["det", "subj"], ["ikke", "neg"], ["regner.", "verb"]], "alts": [], "why_uk": "«Іде дощ» по-данськи — det regner (з формальним підметом det). Після hvis: det — ikke — regner, тобто заперечення перед дієсловом.", "trap": [0, 1, 2, 4, 3], "trap_uk": "«…hvis det regner ikke» — порядок головного речення. У підрядному після hvis: hvis det ikke regner."}, {"uk": "Це чоловік, який ніколи нічого не каже.", "parts": [["Det er en mand", "main"], ["som", "conj"], ["aldrig", "adv"], ["siger", "verb"], ["noget.", "obj"]], "alts": [], "why_uk": "Som (який) тут водночас вводить підрядне речення і є його підметом. Тому одразу після som стоїть aldrig, а потім дієслово siger. Подвійного заперечення немає: aldrig + noget = «ніколи нічого».", "trap": [0, 1, 3, 2, 4], "trap_uk": "«…som siger aldrig noget» — у підрядному реченні з som прислівник aldrig має стояти перед дієсловом: som aldrig siger noget."}, {"uk": "Я радий, що ти теж можеш прийти.", "parts": [["Jeg er glad for", "main"], ["at", "conj"], ["du", "subj"], ["også", "adv"], ["kan", "verb"], ["komme.", "verb2"]], "alts": [], "why_uk": "У підрядному реченні з двома дієсловами: підмет du — прислівник også — особове kan — інфінітив komme. Også стоїть перед особовим дієсловом, а інфінітив — у кінці.", "trap": [0, 1, 2, 4, 3, 5], "trap_uk": "«…at du kan også komme» — порядок головного речення (Du kan også komme). У підрядному: at du også kan komme."}, {"uk": "Я не знаю, чи він уже прийшов.", "parts": [["Jeg ved ikke", "main"], ["om", "conj"], ["han", "subj"], ["allerede", "adv"], ["er", "verb"], ["kommet.", "verb2"]], "alts": [], "why_uk": "«Чи» в непрямому запитанні — om. Після om: підмет han — прислівник allerede — допоміжне дієслово er — дієприкметник kommet (komme утворює минулий час з er).", "trap": [0, 1, 2, 4, 3, 5], "trap_uk": "«…om han er allerede kommet» — у підрядному реченні прислівник allerede стоїть перед особовим дієсловом er."}]}, {"id": "da_b2_subfirst", "lv": "B2", "title_uk": "Підрядне речення на початку: інверсія в головному", "scheme": ["sub", "verb", "subj", "neg", "adv", "verb2", "obj", "place", "time"], "rule_uk": "Якщо речення починається з <b>підрядного речення<\/b> (Når…, Hvis…, Fordi…, Da…, Selvom…), то все підрядне речення разом займає <b>forfelt<\/b>. За правилом V2 одразу після нього йде <b>особове дієслово<\/b> головного речення, а потім <b>підмет<\/b> — інверсія. Ikke та прислівники стоять після підмета. Приклад: <b>Når jeg kommer hjem, laver jeg mad.<\/b> — Коли я приходжу додому, я готую їжу. Можна і навпаки — головне речення першим без інверсії: Jeg laver mad, når jeg kommer hjem. Зверни увагу: da — «коли» про одну подію в минулому, når — про майбутнє або повторювані дії.", "items": [{"uk": "Коли я приходжу додому, я готую їсти.", "parts": [["Når jeg kommer hjem", "sub"], ["laver", "verb"], ["jeg", "subj"], ["mad.", "obj"]], "alts": [[2, 1, 3, 0]], "why_uk": "Підрядне речення når jeg kommer hjem займає перше місце (forfelt). Тому головне речення починається з дієслова laver, а підмет jeg іде після нього. «Готувати їжу» — lave mad.", "trap": [0, 2, 1, 3], "trap_uk": "«Når jeg kommer hjem, jeg laver mad» — типова помилка: підрядне речення вже займає перше місце, тому дієслово головного речення мусить іти одразу за ним (laver jeg mad)."}, {"uk": "Якщо завтра буде дощ, ми залишимося вдома.", "parts": [["Hvis det regner i morgen", "sub"], ["bliver", "verb"], ["vi", "subj"], ["hjemme.", "place"]], "alts": [[2, 1, 3, 0]], "why_uk": "Hvis-речення стоїть на початку, тож у головному реченні — інверсія: bliver (залишаємося) перед vi. Hjemme (вдома) — місце в кінці. Теперішній час bliver тут означає майбутнє.", "trap": [0, 2, 1, 3], "trap_uk": "«…, vi bliver hjemme» — без інверсії неправильно, коли речення починається з hvis-речення. Правильно: Hvis det regner i morgen, bliver vi hjemme."}, {"uk": "Оскільки я хворий, я не йду на роботу.", "parts": [["Fordi jeg er syg", "sub"], ["går", "verb"], ["jeg", "subj"], ["ikke", "neg"], ["på arbejde.", "place"]], "alts": [[2, 1, 3, 4, 0]], "why_uk": "Fordi-речення у forfelt → дієслово går → підмет jeg → заперечення ikke → місце på arbejde. Ikke стоїть після підмета, бо головне речення має інверсію.", "trap": [0, 2, 1, 3, 4], "trap_uk": "«Fordi jeg er syg, jeg går ikke…» — порушення V2: дієслово går має стояти одразу після підрядного речення."}, {"uk": "Коли я був дитиною, я жив в Оденсе.", "parts": [["Da jeg var barn", "sub"], ["boede", "verb"], ["jeg", "subj"], ["i Odense.", "place"]], "alts": [[2, 1, 3, 0]], "why_uk": "Da вживається для одноразового періоду чи події в минулому (на відміну від når). Da-речення займає forfelt, тому далі — boede, потім jeg.", "trap": [0, 2, 1, 3], "trap_uk": "«Da jeg var barn, jeg boede…» — неправильно: після підрядного речення на початку потрібна інверсія (boede jeg)."}, {"uk": "Якщо в тебе є час, ти можеш мені допомогти.", "parts": [["Hvis du har tid", "sub"], ["kan", "verb"], ["du", "subj"], ["hjælpe", "verb2"], ["mig.", "pron"]], "alts": [[2, 1, 3, 4, 0]], "why_uk": "Після hvis-речення — особове дієслово kan, потім підмет du, потім інфінітив hjælpe і додаток mig. Займенник mig стоїть після інфінітива (не перед ним, як в українській «мені допомогти»).", "trap": [0, 2, 1, 3, 4], "trap_uk": "«Hvis du har tid, du kan hjælpe mig» — без інверсії неправильно. Правильно: …, kan du hjælpe mig."}, {"uk": "Коли фільм закінчиться, ми підемо додому.", "parts": [["Når filmen er slut", "sub"], ["går", "verb"], ["vi", "subj"], ["hjem.", "place"]], "alts": [[2, 1, 3, 0]], "why_uk": "Når-речення (про майбутнє) займає forfelt. Головне речення: går vi hjem — дієслово перед підметом. «Закінчитися» тут — være slut.", "trap": [0, 2, 1, 3], "trap_uk": "«…, vi går hjem» — помилка: після підрядного речення на початку дієслово головного речення має бути одразу, а підмет — після нього."}, {"uk": "Хоча він утомлений, він завжди допомагає.", "parts": [["Selvom han er træt", "sub"], ["hjælper", "verb"], ["han", "subj"], ["altid.", "adv"]], "alts": [[2, 1, 3, 0]], "why_uk": "Selvom (хоча) вводить підрядне речення. Після нього — hjælper (дієслово), han (підмет), а прислівник altid — після підмета.", "trap": [0, 2, 3, 1], "trap_uk": "«…, han altid hjælper» — двічі неправильно: немає інверсії, і altid стоїть перед дієсловом, як у підрядному реченні. Головне речення: hjælper han altid."}, {"uk": "Після того як ми поїли, ми пили каву.", "parts": [["Efter at vi havde spist", "sub"], ["drak", "verb"], ["vi", "subj"], ["kaffe.", "obj"]], "alts": [[2, 1, 3, 0]], "why_uk": "Efter at (після того як) + плюсквамперфект havde spist — підрядне речення в forfelt. Далі головне речення з інверсією: drak vi kaffe.", "trap": [0, 2, 1, 3], "trap_uk": "«…, vi drak kaffe» — неправильно: після підрядного речення на початку потрібна інверсія (drak vi kaffe)."}]}, {"id": "da_b2_pron", "lv": "B2", "title_uk": "Займенники-додатки та частки дієслів: Jeg kan ikke finde den. / Han tog jakken på. / Han tog den på.", "scheme": ["subj", "verb", "pron", "neg", "verb2", "obj", "part", "place", "time"], "rule_uk": "<b>Ненаголошений займенник-додаток<\/b> (mig, dig, ham, hende, den, det, os, dem) поводиться особливо. Якщо в реченні лише <b>одне дієслово<\/b>, займенник переходить <b>перед ikke<\/b>: <b>Jeg kender ham ikke.<\/b> Але якщо є <b>інфінітив або дієприкметник<\/b>, займенник стоїть після нього, як звичайний додаток: <b>Jeg kan ikke finde den.<\/b> Дієслова з <b>частками<\/b> (tage på, smide ud, stå op) мають додаток <b>між дієсловом і часткою<\/b>: <b>Han tog jakken på.<\/b> — Він одягнув куртку. <b>Han tog den på.<\/b> — Він її одягнув. Займенник ніколи не стоїть після частки.", "items": [{"uk": "Я не можу його знайти. (ключ)", "parts": [["Jeg", "subj"], ["kan", "verb"], ["ikke", "neg"], ["finde", "verb2"], ["den.", "pron"]], "alts": [[4, 1, 0, 2, 3]], "why_uk": "Тут є інфінітив finde, тому займенник den (nøglen — ключ, рід fælleskøn) стоїть після інфінітива, а не перед ikke. Дуже природно також винести його на початок: Den kan jeg ikke finde.", "trap": [0, 1, 4, 2, 3], "trap_uk": "«Jeg kan den ikke finde» — так у німецькій. У данській займенник переходить перед ikke тільки тоді, коли немає інфінітива/дієприкметника."}, {"uk": "Я його не знаю.", "parts": [["Jeg", "subj"], ["kender", "verb"], ["ham", "pron"], ["ikke.", "neg"]], "alts": [[2, 1, 0, 3]], "why_uk": "У реченні лише одне дієслово (kender), тому ненаголошений займенник ham переходить перед ikke: kender ham ikke.", "trap": [0, 1, 3, 2], "trap_uk": "«Jeg kender ikke ham» — можливо тільки з сильним наголосом на ham (контраст: не його, а когось іншого). Нейтрально: Jeg kender ham ikke."}, {"uk": "Він одягнув куртку.", "parts": [["Han", "subj"], ["tog", "verb"], ["jakken", "obj"], ["på.", "part"]], "alts": [[2, 1, 0, 3]], "why_uk": "«Одягати» по-данськи — tage på (дієслово + частка). Додаток jakken стоїть між tog і часткою på.", "trap": [0, 1, 3, 2], "trap_uk": "«Han tog på jakken» — неправильно: у данській частка på іде після додатка (tog jakken på)."}, {"uk": "Він її одягнув. (куртку)", "parts": [["Han", "subj"], ["tog", "verb"], ["den", "pron"], ["på.", "part"]], "alts": [[2, 1, 0, 3]], "why_uk": "Займенник den (jakken — куртка) стоїть між дієсловом tog і часткою på, як і іменник. Займенник ніколи не ставиться після частки.", "trap": [0, 1, 3, 2], "trap_uk": "«Han tog på den» — помилка: займенник-додаток при дієслові з часткою завжди перед часткою (tog den på)."}, {"uk": "Я тебе не розумію.", "parts": [["Jeg", "subj"], ["forstår", "verb"], ["dig", "pron"], ["ikke.", "neg"]], "alts": [[2, 1, 0, 3]], "why_uk": "Одне дієслово forstår → займенник dig переходить перед ikke: forstår dig ikke.", "trap": [0, 1, 3, 2], "trap_uk": "«Jeg forstår ikke dig» — звучить як «не тебе (а когось іншого)». Нейтральне речення: Jeg forstår dig ikke."}, {"uk": "Ми його ще не бачили. (фільм)", "parts": [["Vi", "subj"], ["har", "verb"], ["ikke", "neg"], ["set", "verb2"], ["den", "pron"], ["endnu.", "time"]], "alts": [[4, 1, 0, 2, 3, 5]], "why_uk": "Є дієприкметник set, тому займенник den (filmen) стоїть після нього, а не перед ikke. Endnu (ще) у запереченні зазвичай іде в кінці речення.", "trap": [0, 1, 4, 2, 3, 5], "trap_uk": "«Vi har den ikke set» — неправильно: при складеній формі (har + set) займенник не переходить перед ikke, а стоїть після дієприкметника."}, {"uk": "Він викинув старі газети.", "parts": [["Han", "subj"], ["smed", "verb"], ["de gamle aviser", "obj"], ["ud.", "part"]], "alts": [[2, 1, 0, 3]], "why_uk": "«Викидати» — smide ud. Додаток de gamle aviser, навіть довгий, стоїть між дієсловом smed і часткою ud.", "trap": [0, 1, 3, 2], "trap_uk": "«Han smed ud de gamle aviser» — так можна в шведській чи англійській, але в данській частка ud іде після додатка."}, {"uk": "Вона не хоче його викидати.", "parts": [["Hun", "subj"], ["vil", "verb"], ["ikke", "neg"], ["smide", "verb2"], ["den", "pron"], ["ud.", "part"]], "alts": [[4, 1, 0, 2, 3, 5]], "why_uk": "Особове vil — на 2-му місці, ikke — після нього, інфінітив smide, потім займенник den і в самому кінці частка ud. Займенник стоїть після інфінітива, але перед часткою.", "trap": [0, 1, 2, 3, 5, 4], "trap_uk": "«Hun vil ikke smide ud den» — помилка: займенник-додаток ніколи не стоїть після частки (smide den ud)."}]}]}};
 const SENT={};

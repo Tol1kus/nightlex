@@ -78,6 +78,9 @@ input.t:focus,textarea.t:focus{outline:none;border-color:var(--acc)}
 .stat{display:flex;gap:8px;margin:10px 0}.stat div{flex:1;background:var(--card2);border-radius:14px;padding:10px;text-align:center}.stat b{display:block;font:800 20px Unbounded,sans-serif}.stat small{font-size:12px;color:var(--mut)}
 .center{margin:auto 0}
 @media (prefers-reduced-motion:reduce){.toast{transition:none}}
+/* фон — градієнт від темнішого піску вгорі до світлішого внизу (нерухомий шар позаду вмісту) */
+html{background:var(--bg)}body{background:transparent!important}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(180deg,#E3D3B6 0%,var(--bg) 42%,#FCF8F1 100%)}
 </style>
 </head>
 <body>

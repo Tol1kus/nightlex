@@ -2767,8 +2767,6 @@ body.in-session #app .nf-ex.nf-word .nf-wbtns{margin-top:auto}
 
 /* КАРТКИ ПО ЦЕНТРУ (15.11.2026, 74_center.js): вправа — відступ зверху рахує JS, після відповіді плавно 0;
    підсумок уроку — по центру екрана й з відступом під рядок годинника iPhone */
-.ct-mid{transition:margin-top .35s cubic-bezier(.2,.8,.2,1)}
-@media (prefers-reduced-motion:reduce){.ct-mid{transition:none}}
 #app:has(> .card.result){min-height:calc(100dvh - 104px);display:flex;flex-direction:column;justify-content:center;padding-top:max(16px,calc(env(safe-area-inset-top) + 12px))}
 #app:has(> .card.result) > .card.result{margin-top:0;margin-bottom:0}
 
@@ -2801,6 +2799,20 @@ body::before{content:"";position:fixed;top:0;left:0;right:0;height:env(safe-area
 .irr-row b{font-weight:700}.irr-row small{color:var(--mut,#9a97a6);text-align:right}.irr-row:focus-visible{outline:2px solid var(--lime);outline-offset:2px}
 .bk-sec small{font-weight:500;text-transform:none;letter-spacing:0;opacity:.75;margin-left:6px}
 .irr-uk{display:block;font:500 15px 'Golos Text',sans-serif;color:var(--mut,#9a97a6);margin-top:4px}.irr-note{font-size:13px;margin-top:14px}
+
+/* ВПРАВИ ПО ЦЕНТРУ (74_center.js): без скрипту й анімації — центр ставить сам браузер; ::after трохи піднімає вміст над серединою */
+body.in-session #app:has(> .top-row):not(:has(> .nf-word)){display:flex;flex-direction:column;min-height:calc(100dvh - 24px)}
+body.in-session #app:has(> .top-row):not(:has(> .nf-word)) > .top-row{flex:none}
+body.in-session #app:has(> .top-row):not(:has(> .nf-word)) > .top-row + *{margin-top:auto}
+body.in-session #app:has(> .top-row):not(:has(> .nf-word)) > :last-child{margin-bottom:auto}
+body.in-session #app:has(> .top-row):not(:has(> .nf-word))::after{content:"";flex:0 0 7vh}
+body.in-session #app.ct-frozen:has(> .top-row) > :last-child{margin-bottom:0}
+body.in-session #app.ct-frozen:has(> .top-row)::after{flex-basis:0}
+/* картинка резервує місце ще до завантаження (символи квадратні) — вміст по центру не здригається */
+img.pimg{aspect-ratio:1/1}
+/* у вправах екран лише проявляється, без виїзду на 6px — щоб картка стояла на місці з першого кадру */
+body.in-session #app.scr-in{animation-name:scrFade}
+@keyframes scrFade{from{opacity:.001}to{opacity:1}}
 </style>
 </head>
 <body>
@@ -10059,28 +10071,24 @@ function rdOpenGroup(g,lv){const G=RD_GROUPS.find(x=>x[0]===g);if(!G)return;cons
 // підказка під списком («Торкнись слова…») — зайвий текст
 {const _rt=readTab;readTab=function(){const r=_rt.apply(this,arguments);try{document.querySelectorAll('#app .rd-attr').forEach(x=>x.remove())}catch(e){}return r}}
 
-/* ====================== КАРТКИ ПО ЦЕНТРУ ЕКРАНА (15.11.2026, прохання користувача: «блоки більш по центру, а не з самого верху») ======================
-   Вправа: поки не відповів — картка по центру вільного місця під верхнім рядком. Після відповіді пояснення з'являється
-   всередині картки, і вона росте — тоді картка плавно піднімається вгору (без стрибка), щоб пояснення було видно.
-   Підсумок уроку (.card.result) — по центру через CSS (style.css, «КАРТКИ ПО ЦЕНТРУ»). */
-let CT_RO=null;
-// уміст вправи = усе під верхнім рядком (картка .nf-xc або «обери картинку»: питання + сітка); зсуваємо перший елемент
-function ctParts(app){return [...app.children].filter(c=>!c.classList.contains('top-row')&&c.offsetHeight>0)}
-function ctHeight(ks){if(!ks.length)return 0;const a=ks[0].getBoundingClientRect().top-(parseFloat(ks[0].style.marginTop)||0);return Math.max(...ks.map(k=>k.getBoundingClientRect().bottom))-a}
-let CT_ANS=false;
-function ctFree(app,first,ks){const top=first.getBoundingClientRect().top-(parseFloat(first.style.marginTop)||0);
-  return (window.innerHeight||0)-top-ctHeight(ks)-Math.max(24,parseFloat(getComputedStyle(document.body).paddingBottom)||0)-16}
-function ctCenter(){try{if(CT_RO){CT_RO.disconnect();CT_RO=null}CT_ANS=false;
-  const app=document.getElementById('app');if(!app||!document.body.classList.contains('in-session')||!app.querySelector(':scope > .top-row'))return;
-  const ks=ctParts(app);if(!ks.length||ks[0].classList.contains('nf-word'))return; // картка слова й так на весь екран
-  const first=ks[0];
-  const place=()=>{const free=ctFree(app,first,ctParts(app));first.style.marginTop=free<48?'0px':Math.round(free*0.42)+'px'}; // трохи вище середини
-  first.classList.add('ct-mid');place();
-  // до відповіді вміст може підрости (довантажились картинки) — перераховуємо; після відповіді (розбір, пояснення) — плавно вгору
-  if(typeof ResizeObserver==='function'){CT_RO=new ResizeObserver(()=>{if(CT_ANS){first.style.marginTop='0px';CT_RO.disconnect();CT_RO=null}else place()});ctParts(app).forEach(k=>CT_RO.observe(k))}}catch(e){}}
-on('grade',()=>{CT_ANS=true});on('wrong',()=>{CT_ANS=true});
-on('item:render',()=>{setTimeout(ctCenter,30)});
-on('session:end',()=>{try{if(CT_RO){CT_RO.disconnect();CT_RO=null}}catch(e){}});
+/* ====================== ВПРАВИ ПО ЦЕНТРУ ЕКРАНА (15.11.2026, прохання користувача) ======================
+   Перша версія рахувала відступ скриптом після показу й плавно зсувала вміст — на iPhone було видно, як картка «їде»,
+   а на світлій темі вона опинялась унизу. Тепер центрує CSS (style.css, «ВПРАВИ ПО ЦЕНТРУ»): #app у вправі — flex-колонка
+   на всю висоту, вміст під .top-row має margin-top:auto / margin-bottom:auto — браузер ставить його по центру ще до першого кадру.
+   Щоб після відповіді нічого не зсувалося (пояснення з'являється всередині картки й вона росте), у мить дотику / Enter
+   позицію «заморожуємо»: поточний відступ записуємо в margin-top, auto вимикаємо (клас ct-frozen). Нова вправа — знову центр. */
+function ctContent(app){const ks=[...app.children];const r=ks.findIndex(c=>c.classList.contains('top-row'));return r<0?null:{row:ks[r],first:ks[r+1]||null}}
+function ctFreeze(){try{const app=document.getElementById('app');if(!app||app.classList.contains('ct-frozen')||!document.body.classList.contains('in-session'))return;
+  const c=ctContent(app);if(!c||!c.first)return;
+  const gap=c.first.getBoundingClientRect().top-c.row.getBoundingClientRect().bottom-(parseFloat(getComputedStyle(c.row).marginBottom)||0);
+  c.first.style.marginTop=Math.max(0,Math.round(gap))+'px';app.classList.add('ct-frozen')}catch(e){}}
+function ctReset(){try{const app=document.getElementById('app');if(app)app.classList.remove('ct-frozen')}catch(e){}}
+// заморожуємо до того, як обробник відповіді змінить вміст (фаза перехоплення)
+document.addEventListener('pointerdown',e=>{try{const app=document.getElementById('app');if(app&&app.contains(e.target)&&!e.target.closest('.top-row'))ctFreeze()}catch(_){}} ,true);
+document.addEventListener('keydown',e=>{if(e.key==='Enter')ctFreeze()},true);
+document.addEventListener('submit',()=>ctFreeze(),true);
+document.addEventListener('click',e=>{try{const app=document.getElementById('app');if(app&&app.contains(e.target)&&!e.target.closest('.top-row'))ctFreeze()}catch(_){}} ,true);
+on('item:render',ctReset);on('session:end',ctReset);on('screen',ctReset);
 
 /* ====================== «ДЕНЬ ЗАВЕРШЕНО» КОРОТШЕ (15.11.2026, прохання користувача: «дуже багато тексту») ======================
    Лишаємо: трофей і заголовок, 4 цифри дня, один рядок «Завтра…», картку бонусу з одним рядком і кнопкою.
@@ -10221,7 +10229,7 @@ function irrA(i){const it=SS.items[SS.i];if(!it||it.kind!=='irr')return;if(it.an
   else{const a=document.getElementById('ans');given=a?a.value:'';if(!irrNorm(given))return;a.disabled=true;
     let g=irrNorm(given);if(it.mode==='part')g=g.replace(/^(i |jeg )?(have |has |har |er )/,'');ok=irrAnswers(v,it.mode).includes(g)}
   it.answered=true;SS.graded++;if(ok){SS.right++;SS.xp+=8}else if(typeof markWrong==='function')markWrong(it);
-  try{CT_ANS=true}catch(e){}irrSay(v);
+  irrSay(v);
   const why=it.mode==='part'?(da?`Після <b>${v[2]}</b> — ця форма: <i>Jeg ${v[2]} ${v[3]}.</i>`:`Після have / has — 3-тя форма: <i>I have ${v[2]}.</i>`)
     :(da?`Минулий час: <i>I går ${v[1]} jeg …</i>`:`Минуле з часом (yesterday, last week): <i>Yesterday I ${v[1].split(' / ')[0]}.</i>`);
   document.getElementById('fb').innerHTML=`<div class="feedback ${ok?'ok':'bad'}">${ok?'Правильно!':'Правильно так:'} <b>${esc(irrTriple(v))}</b></div>`

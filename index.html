@@ -3238,8 +3238,6 @@ html body #app #fb:has(> .feedback.ok) .btn{background:var(--ok)!important;color
 #app .build-bank{justify-content:center;gap:10px!important;padding-top:18px!important}
 #app .wtile{min-height:48px;padding:0 16px!important}
 #app .card > .row:has(.btn.ghost){display:flex;gap:10px;align-items:stretch}
-#app .card > .row .btn.ghost{flex:none;width:58px;min-height:58px;padding:0!important;font-size:0!important;border-radius:18px!important;background:var(--s1)!important;border:1px solid var(--line)!important;position:relative}
-#app .card > .row .btn.ghost::before{content:"";position:absolute;inset:0;margin:auto;width:22px;height:22px;background:var(--ink);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.8' stroke-linecap='round'%3E%3Cpath d='M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.8' stroke-linecap='round'%3E%3Cpath d='M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z'/%3E%3C/svg%3E") center/contain no-repeat}
 #app .card > .row .btn:not(.ghost){flex:1;min-height:58px}
 /* впиши слово (макет SKY-ex-fill) */
 #app .nf-sentcard{background:none!important;border:0!important;padding:0!important}
@@ -3248,7 +3246,7 @@ html body #app #fb:has(> .feedback.ok) .btn{background:var(--ok)!important;color
 #app .ft-act .btn.ghost,#app .idk-w{border-radius:999px!important;min-height:36px!important;font-size:13px!important;font-weight:700!important;background:var(--glass-bg)!important;border:1px solid var(--glass-bd)!important;color:var(--ink)!important;padding:0 14px!important;width:auto!important;flex:none}
 #app .build-bank .wtile.used{background:none!important;border:1.5px dashed color-mix(in srgb,var(--mut) 60%,transparent)!important;color:transparent!important;box-shadow:none!important;opacity:1!important}
 #app .card > .row:has(.btn.ghost){display:flex!important;grid-template-columns:none!important}
-#app .card > .row .btn.ghost{flex:0 0 58px!important;max-width:58px!important}
+#app .card > .row .btn.ghost{flex:0 0 auto!important;border-radius:18px!important;background:var(--s1)!important;border:1px solid var(--line)!important;min-height:58px}
 #app .sky-pt>.sky-ob-band{background:linear-gradient(180deg,var(--sky-1),var(--sky-2) 55%,var(--bg))}
 .sky-pt .ds-opts>button{font-family:var(--serif)!important;font-size:19px!important;font-weight:700!important}
 .sky-pt .ds-opts>button small{font-family:var(--body,inherit);font-weight:500}
@@ -3303,7 +3301,6 @@ body:has(#app .dv-hd)::after,body:has(#app .sky-me)::after,body:has(#app .rd-top
 #app .bub-tr{font-size:12.5px;color:var(--mut)}
 #app .lt-chip{font-family:var(--serif);font-style:italic;border-radius:999px!important}
 #app > .nf-hd.sky-mehd{display:none}
-#dvList details > summary b::before{content:"Сузір’я «"}#dvList details > summary b::after{content:"»"}
 #dvList details > summary b{font-family:var(--serif)}
 #dvList details .dv-row{background:none!important;border:0!important;border-bottom:1px solid var(--line)!important;border-radius:0!important;box-shadow:none!important}
 #dvList details .dv-row:last-child{border-bottom:0!important}
@@ -11023,7 +11020,7 @@ function skyFigure(key,seed,n){const F=SKY_FIG[key];if(!F)return skyAutoFig(seed
   const dx=F.sc?195-w/2-Math.min(...xs):0,dy=F.sc?225-h/2-Math.min(...ys):0;
   let pts=F.pts.map(([x,y])=>[+(x*sc+dx).toFixed(0),+(y*sc+dy).toFixed(0)]),edges=F.edges.slice();
   if(n>pts.length){const extra=skyAutoFig(seed+'+',n-pts.length+pts.length).pts.filter(([x,y])=>pts.every(([a,b])=>Math.hypot(a-x,b-y)>=30)).slice(0,n-pts.length);
-    const base=pts.length;pts=pts.concat(extra);for(let i=base;i<pts.length;i++)edges.push([i===base?base-1:i-1,i])}
+    const base=pts.length;pts=pts.concat(extra);for(let i=base;i<pts.length;i++){let best=0,bd=1e9;for(let j=0;j<i;j++){const d=Math.hypot(pts[i][0]-pts[j][0],pts[i][1]-pts[j][1]);if(d<bd){bd=d;best=j}}edges.push([best,i])}}
   if(n<pts.length){pts=pts.slice(0,n);edges=edges.filter(([a,b])=>a<n&&b<n)}
   return {pts,edges}}
 
@@ -11136,7 +11133,7 @@ on('screen',n=>{try{if(n!=='me'||document.querySelector('#app .sky-melv'))return
 /* ====================== «СУЗІР'Я» · ЕТАП 2.5: ОНБОРДИНГ (15.11.2026, макети SKY-start / onboard / self / result / goal) ======================
    Лише вигляд: тексти, кількість питань і логіка тесту — свої (37_design_start.js, 35_mvp_next.js). Кожен екран малює
    старий код, а обгортка тут додає небо й перекладає вміст на «аркуш». Код мови на старті — великими літерами (LANG_CODE: EN / DK).
-   Без «+ Додати мову» (такої функції немає). Самооцінка, як і раніше, веде далі одразу після вибору (без «Далі»). */
+   Тексти — старі (рішення автора 15.11: «дизайн новий, а середина стара»). Без «+ Додати мову» (такої функції немає). Самооцінка, як і раніше, веде далі одразу після вибору (без «Далі»). */
 
 // аркуш під небом: переносимо в нього елемент from і всіх наступних сусідів
 function skyObSheet(from,cls){if(!from||!from.parentNode)return null;const sh=document.createElement('div');sh.className='sky-ob-sheet'+(cls?' '+cls:'');
@@ -11168,8 +11165,7 @@ function skyLangTile(k){const R=(S.srs||{})[k]||{},n=Object.values(R).filter(x=>
   root.querySelectorAll('.nf-orbit-top').forEach(x=>x.remove());
   root.querySelectorAll('.nf-lang').forEach(c=>{const m=(c.getAttribute('onclick')||'').match(/launchGo\('(\w+)'\)/),k=m?m[1]:'';if(!k)return;
     const t=c.querySelector('.nf-lt');if(t)t.innerHTML=skyLangTile(k);
-    const R=(S.srs||{})[k]||{},n=Object.values(R).filter(x=>x&&x.lr).length,sm=c.querySelector('small');
-    if(sm&&/вивчено/.test(sm.textContent)){const lv=sm.textContent.split(' · ')[0];sm.textContent=`${/^[ABC][12]$/.test(lv)?lv+' · ':''}${n} ${pluralUk(n,['зірка','зірки','зірок'])}${k===S.lang?' · сьогодні тут':''}`}});
+});
   const lg=root.querySelector('.nf-logo');if(lg&&!lg.querySelector('svg'))lg.insertAdjacentHTML('beforeend',`<svg class="sky-logo-s" viewBox="-10 -10 20 20" aria-hidden="true">${sparkle(0,0,9,'var(--lime)')}</svg>`);
   skyObSheet(root.firstElementChild,'sky-st-sheet');root.insertAdjacentHTML('afterbegin',skyStartHero());
   root.classList.add('sky-ob')}catch(e){console.error(e)}}}
@@ -11182,7 +11178,7 @@ function skyLangTile(k){const R=(S.srs||{})[k]||{},n=Object.values(R).filter(x=>
     ${sparkle(70,90,10,'var(--star)',1,true)}${sparkle(318,70,9,'var(--star)',1,true)}${sparkle(340,190,11,'var(--star)',1,true)}${sparkle(40,200,6,'var(--star)',.9,true)}
     ${svitlykTrail('M-10 290 C 40 270, 80 300, 120 290 S 170 250, 190 230')}${svitlykSVG(200,128,.72)}</svg>`;
   const b=document.querySelector('#app .nf-say-b');if(b)b.classList.add('sky-bubble');
-  document.querySelectorAll('#app .nf-guide-pts li:last-child svg').forEach(s=>s.outerHTML=icn('star'));}catch(e){console.error(e)}}}
+}catch(e){console.error(e)}}}
 
 /* ---------- самооцінка: невелике небо зі Світликом у куті, варіанти з місяцем ---------- */
 const SKY_SELF_F=[.12,.5,.8,1];
@@ -11201,10 +11197,9 @@ function skyMiniCons(seed){const F=skyAutoFig(seed,6),sx=v=>((v-70)/250*120+10).
   const r=document.querySelector('#app .ds-res'),top=r&&r.querySelector('.ds-rtop');if(!top||r.querySelector('.sky-rs'))return;
   const pl=(S.placement||{})[S.lang]||{},lvl=pl.lvl||'A1',ci=Math.max(0,LEVELS.indexOf(lvl)),ey=top.querySelector('.ds-eyebrow'),mins=ey?(ey.textContent.match(/(\d+)\s*ХВ/)||[])[1]:'';
   const sum=top.querySelector('.pt-sum');
-  top.insertAdjacentHTML('beforebegin',`<section class="sky-ob-hero sky-rs"><div class="sky-rs-t"><small>ТВОЄ НЕБО${mins?` · ${mins} ХВ`:''}</small><h1>Старт із <i>${esc(lvl)}</i></h1></div>
+  top.insertAdjacentHTML('beforebegin',`<section class="sky-ob-hero sky-rs"><div class="sky-rs-t"><small>РЕЗУЛЬТАТ ТЕСТУ${mins?` · ${mins} ХВ`:''}</small><h1><i>${esc(lvl)}</i> — твій старт</h1></div>
     <svg viewBox="0 0 390 390" preserveAspectRatio="xMidYMax slice" aria-hidden="true">${bgStars(390,330,40,4)}${levelArcSVG(195,300,150,ci)}${roofsSVG(330)}</svg></section>`);
   const sh=skyObSheet(top);if(sum&&sh)sh.insertBefore(sum,sh.firstChild);top.remove();
-  r.querySelectorAll('.ds-tipb svg').forEach(s=>s.outerHTML=`<svg width="26" height="26" viewBox="-13 -13 26 26" aria-hidden="true">${sparkle(0,0,12,'var(--lime-t)')}</svg>`);
   r.querySelectorAll('.ds-wk > div').forEach((d,i)=>{const t=d.querySelector('strong');d.insertAdjacentHTML('afterbegin',skyMiniCons((t?t.textContent:'')+i))});
   r.classList.add('sky-ob')}catch(e){console.error(e)}}}
 
@@ -11216,7 +11211,7 @@ function skyMiniCons(seed){const F=skyAutoFig(seed,6),sx=v=>((v-70)/250*120+10).
   const hd=s.querySelector('.ds-hd2');if(hd){const dots=hd.querySelector('.ds-dots');if(dots)s.insertBefore(dots,s.querySelector('.ds-hd2'));skyObSheet(hd)}}catch(e){console.error(e)}}}
 
 /* ====================== «СУЗІР'Я» · ЕТАП 3: КАРТКА НОВОГО СЛОВА (15.11.2026, макети SKY-word-*) ======================
-   Фон — небо з зорями; угорі «Ловимо зірку k з N» + ряд зірок (картки слів сесії); скляна картка, злегка повернута (−1.5°),
+   Фон — небо з зорями; шапка — як у вправах (зорі прогресу, 85); скляна картка, злегка повернута (−1.5°),
    позаду друга (+4°); картинка — у колі-«планеті» з орбітою; слово Literata; переклад; приклад курсивом; внизу три круглі
    кнопки «Ще вчу» / «Прослухати» / «Знаю». Свайп картки: вліво — «Ще вчу», вправо — «Знаю» (ті самі cardAnswer).
    Лишились класи, на які спираються інші модулі й тести: .nf-word, .nf-wcard, .nf-wtitle, .nf-wuk, .nf-exm (54 — правило «at»),
@@ -11238,7 +11233,7 @@ function skyPlanet(w,t){const pic=nfHasPic(w)?picHTML(w):`<button class="nf-flip
     <div class="sky-pl-disc nf-wpic${typeof hasPhoto==='function'&&hasPhoto(w)?' has-ph':''}">${pic}${typeof photoHTML==='function'?photoHTML(w):''}</div></div>`}
 function skyCardRender(it){
   const w=it.w,t=w[S.lang],fresh=it.intro||!st(w),N=skyNight();it.shown=it.shown||fresh;
-  const {k,n}=skyCardIdx(),pos=SKY_POS[typeof wPos==='function'?wPos(w):'w']||'слово';
+  const pos=SKY_POS[typeof wPos==='function'?wPos(w):'w']||'слово';
   app.innerHTML=topRow()+`<div class="nf-ex nf-word sky-word">
     <svg class="sky-word-bg" viewBox="0 0 390 844" preserveAspectRatio="xMidYMid slice" aria-hidden="true">${bgStars(390,800,60,13)}</svg>
     <div class="sky-wstack"><article class="nf-wcard sky-wcard sky-glass" data-shown="${it.shown?1:0}">
@@ -11254,9 +11249,7 @@ function skyCardRender(it){
       <button class="nf-link sky-easy" onclick="cardAnswer('easy')">Легко — вже знав(ла) це слово</button>`
      :`<div class="sky-wbtns one"><button class="nf-reveal sky-cta" onclick="SS.items[SS.i].shown=true;renderItem()"><span><b>Показати відповідь</b></span><i>${icn('arrow')}</i></button></div>`}
   </div>`;
-  // шапка: «Ловимо зірку k з N» + зорі замість смуги прогресу (меню, таймер і кнопки шапки лишаються)
-  const pr=app.querySelector('.nf-top .nf-prog');
-  if(pr)pr.innerHTML=`<div class="sky-ph"><span>${fresh?'Ловимо зірку':'Засвічуємо зірку'} ${k+1} з ${n}</span><i class="k-timer" hidden>0:00</i></div>${skyStarsRow(k,n,k>0)}<div class="bar nf-bar" hidden></div>`; // .bar — ознака уроку для 09 (ховає нижнє меню)
+  // шапка — як у вправах (85: назва кроку · тема, зорі, «k / n»); тексти старі (рішення автора 15.11)
   skySwipe(app.querySelector('.sky-wcard'));
   if(S.tts&&it.shown)setTimeout(()=>speak(t),250)}
 // «Знаю»: зірка спалахує, потім звичайна відповідь
@@ -11325,10 +11318,9 @@ function skyMapBuild(lv){const bp=document.querySelector('#app .bk-path');if(!bp
 on('screen',n=>{if(n!=='path')SKY_MAP_LV=null});
 
 /* ====================== «СУЗІР'Я» · ЕТАП 5: «ПОВНИЙ МІСЯЦЬ» — КІНЕЦЬ ДНЯ (15.11.2026, макети SKY-finale-*) ======================
-   Небо з повним місяцем (вдень — сонце в зеніті) і засвіченим сузір'ям теми дня, дахи; на аркуші «ПОВНИЙ МІСЯЦЬ · ДЕНЬ ЗАВЕРШЕНО»,
-   «Сузір'я «Тема» зібране», 3 цифри (нових зірок · хвилин · днів серії), чипи слів дня, рядок «Завтра…».
-   Одна кнопка (рішення автора 15.11, 75_day_done.js): бонус-раунд; під нею — «До завтра — небо буде «Колір»» (палітра завтрашнього дня;
-   колір закріплено — просто «До завтра»). Бонусу немає — тоді кнопка «До завтра…» веде на головну. */
+   Небо з повним місяцем (вдень — сонце в зеніті) і засвіченим сузір'ям теми дня, дахи (новий дизайн); на аркуші — старий вміст 75_day_done.js
+   (рішення автора 15.11: «дизайн новий, а середина стара»): «День завершено!», цифри дня (daySummaryHTML), «Завтра…», картка бонусу з однією кнопкою.
+   Нове — лише чипи слів дня (тап — вимова). skyPalTomorrow — палітра завтра (лишилась для майбутнього). */
 
 function skyPalTomorrow(){if(S.pal&&S.pal!=='auto')return null;try{const n=PALS.length;return PALS[(((palDayNo()+1)%n)+n)%n]}catch(e){return null}}
 function skyFinHero(t,ws){const N=skyNight(),lit=new Set(ws.map((w,i)=>st(w)?i:-1).filter(i=>i>=0));
@@ -11342,22 +11334,20 @@ function skyFinHero(t,ws){const N=skyNight(),lit=new Set(ws.map((w,i)=>st(w)?i:-
   applyTheme();snd('win');
   const bon=bonusSteps(),bmin=bon.reduce((a,x)=>a+x.min,0),left=bon.filter(x=>!x.done),m=S.minutes||30,rem=Math.max(0,m-minutesToday()),tm=tomorrowPreview();
   const d=typeof nfDaySum==='function'?nfDaySum():{nw:0,min:minutesToday(),streak:S.streak||0},t=typeof dayTheme==='function'?dayTheme():null,ws=skyThemeWords(t);
-  const litN=ws.filter(st).length,full=ws.length&&litN===ws.length,name=t?t.name:'Нові слова';
+  
   const today_=(typeof dayWordList==='function'?dayWordList():[]).filter(w=>st(w)&&w[S.lang]).slice(0,12);
-  const pt=skyPalTomorrow(),bye=pt?`До завтра — небо буде «${esc(pt[1])}»`:'До завтра';
-  const cell=(v,l)=>`<div class="sky-fin-c1 sky-glass"><b>${v}</b><small>${l}</small></div>`;
   app.innerHTML=`<div class="k-daydone sky-fin sky-ob">${skyFinHero(t,ws)}
     <div class="sky-ob-sheet">
-      <small class="sky-fin-ey">Повний місяць · День завершено!</small>
-      <h1 class="sky-fin-t">${full?`Сузір’я «${esc(name)}» зібране`:`Сузір’я «${esc(name)}»: ${litN} з ${ws.length} ${pluralUk(ws.length,['зірки','зірок','зірок'])}`}</h1>
-      <div class="sky-fin-g">${cell(d.nw,pluralUk(d.nw,['нова зірка','нові зірки','нових зірок']))}${cell(d.min,pluralUk(d.min,['хвилина','хвилини','хвилин']))}${cell(d.streak,pluralUk(d.streak,['день серії','дні серії','днів серії']))}</div>
+      <small class="sky-fin-ey">Повний місяць</small>
+      <h1 class="sky-fin-t">День завершено!</h1>
+      ${typeof epOutroHTML==='function'?epOutroHTML():''}<div class="sky-fin-sum">${daySummaryHTML().replace(/<div class="k-tomorrow">[\s\S]*$/,'')}</div>
       ${today_.length?`<div class="sky-fin-w">${today_.map(w=>`<button class="sky-fin-chip" onclick="speak(${js(w[S.lang])})" aria-label="${esc(w[S.lang])} — ${esc(w.uk||'')}. Прослухати">${'<svg width="12" height="12" viewBox="-6 -6 12 12" aria-hidden="true">'+sparkle(0,0,5.5,'var(--lime-t)')+'</svg>'}<i lang="${S.lang}">${esc(w[S.lang])}</i></button>`).join('')}</div>`:''}
       <p class="k-tomorrow dd-tm sky-fin-tm">Завтра: ${nW(tm.due)} на повторення · ${tm.newW} нових${tm.grammar?` · ${esc(tm.grammar)}`:''}</p>
       ${left.length?`<div class="k-helper jr-bcard dd-bonus sky-fin-b"><div class="k-hb"><b class="dd-bt">Бонус-раунд · ≈ ${bmin} хв</b>
-        <small>${rem>=3?`До норми ${m} хв — ${rem} хв`:`Норму ${m} хв виконано`} · <button class="dd-what" onclick="ddBonusList()">Що в бонусі</button></small>
+        <small>${rem>=3?`До норми ${m} хв лишилось ${rem} хв`:`Норму ${m} хв виконано`} · <button class="dd-what" onclick="ddBonusList()">Що в бонусі</button></small>
         <div class="k-hbtns"><button class="btn big sky-cta" onclick="bonusGo()"><span><b>Почати бонус-раунд</b></span><i>${icn('arrow')}</i></button></div></div></div>
-        <p class="sky-fin-bye">${bye} · бонус чекатиме на «Сьогодні»</p>`
-       :`<button class="sky-cta" onclick="home()"><span><b>${bye}</b></span><i>${icn('arrow')}</i></button>`}
+        <small class="dd-later sky-fin-bye">Можна й пізніше — бонус чекатиме на вкладці «Сьогодні»</small>`
+       :''}
     </div></div>`;
   window.scrollTo&&window.scrollTo(0,0);emit('screen','home')}}
 
@@ -11365,33 +11355,23 @@ function skyFinHero(t,ws){const N=skyNight(),lit=new Set(ws.map((w,i)=>st(w)?i:-
    Лише вигляд, логіка вправ та сама. Шапка: скляна «закрити» + «Етап · Тема» + прогрес зірками (skyStarsRow, 82) + «k / n»
    (прихована .bar лишається — за нею 09 ховає нижнє меню). Фон — смуга неба зверху (--sky-band) і дрібні зорі вночі.
    Підпис типу завдання — дрібні великі літери кольору акценту, заголовки — Literata (CSS).
-   Правильно: «Зірка запалена» з іскрою (для читачів екрана й тестів лишається «Правильно!»); помилка: «Майже» замість «Розбір помилки».
-   Слухання — велика «місячна» кнопка + «ще раз» і «0.7× повільніше» (slowSpeak). Тест рівня: літери A–D, 20 сегментів, Світлик у куті. */
+   Тексти відгуків і слухання — старі (рішення автора 15.11: «шаблон лишити, решту — зі старої версії»); слухання — «місячна» кнопка ▷ з кільцями. Тест рівня: літери A–D, 20 сегментів, Світлик у куті. */
 
-function skyExHead(){try{if(!SS||!SS.items)return;const it=SS.items[SS.i]||{};if(it.kind==='card')return;
+function skyExHead(){try{if(!SS||!SS.items)return;const it=SS.items[SS.i]||{};
   const pr=document.querySelector('#app .nf-top .nf-prog');if(!pr||pr.querySelector('.sky-stars'))return;
   const n=SS.items.length,i=Math.min(SS.i,n-1),lb=(pr.querySelector('.nf-prog-h b')||{}).textContent||'',th=it.w&&TOPIC_BY_ID[it.w.topic];
   pr.innerHTML=`<div class="sky-ph"><span>${esc(lb)}${th?' · '+esc(th.name):''}</span><span>${i+1} / ${n}<i class="k-timer" hidden>0:00</i></span></div>${skyStarsRow(i,n,i>0)}<div class="bar nf-bar" hidden></div>`;
   const a=document.getElementById('app');if(a&&!a.querySelector(':scope > .sky-ex-bg'))a.insertAdjacentHTML('afterbegin',`<svg class="sky-ex-bg" viewBox="0 0 390 300" preserveAspectRatio="xMidYMin slice" aria-hidden="true">${bgStars(390,280,34,17)}</svg>`);
-  // слухання (макет SKY-ex-listen): підпис над «місяцем», кнопка ▷ з кільцями, під нею «ще раз» і «0.7× повільніше» (стара «повільно» — у чипі)
-  const hd=document.querySelector('#app .nf-listen-hd'),pl=hd&&hd.querySelector('.nf-play');if(pl&&!hd.querySelector('.sky-lchips')){const oc=pl.getAttribute('onclick')||'',sl=hd.querySelector('.nf-slow'),q=s=>String(s).replace(/"/g,'&quot;');
-    const pics=!!document.querySelector('#app .nf-ptgrid');pl.innerHTML=icn('play');
-    pl.insertAdjacentHTML('beforebegin',`<small class="sky-lcap">${pics?'Послухай і обери картинку':'Послухай і обери переклад'}</small>`);
-    const ring=document.createElement('span');ring.className='sky-lring';ring.innerHTML='<svg viewBox="0 0 230 230" aria-hidden="true"><circle cx="115" cy="115" r="82"/><circle cx="115" cy="115" r="97"/><circle cx="115" cy="115" r="112"/></svg>';pl.before(ring);ring.appendChild(pl);
-    ring.insertAdjacentHTML('afterend',`<div class="sky-lchips"><button class="sky-chipb" onclick="${q(oc)}">${icn('refresh')} ще раз</button>${sl?`<button class="sky-chipb" onclick="${q(sl.getAttribute('onclick')||'')}">0.7× повільніше</button>`:''}</div>`);
-    const inner=hd.querySelector(':scope > div:not(.sky-lchips)');if(inner)inner.classList.add('sky-lold')}
+  // слухання: кнопка ▷ у кільцях (вигляд макета); підписи й «повільно» — старі (прохання автора 15.11)
+  const hd=document.querySelector('#app .nf-listen-hd'),pl=hd&&hd.querySelector('.nf-play');if(pl&&!hd.querySelector('.sky-lring')){pl.innerHTML=icn('play');
+    const ring=document.createElement('span');ring.className='sky-lring';ring.innerHTML='<svg viewBox="0 0 230 230" aria-hidden="true"><circle cx="115" cy="115" r="82"/><circle cx="115" cy="115" r="97"/><circle cx="115" cy="115" r="112"/></svg>';pl.before(ring);ring.appendChild(pl)}
 }catch(e){}}
 on('item:render',()=>{skyExHead();setTimeout(skyExHead,0)});
 // відгук після відповіді
 function skyFbPolish(){try{
   document.querySelectorAll('#app .feedback.ok.fb-pol:not([data-sky])').forEach(el=>{el.dataset.sky=1;const h=el.querySelector('.fb-h');if(!h)return;
-    const b=h.querySelector('b');if(b&&/Правильно/.test(b.textContent))b.outerHTML='<b>Зірка запалена</b><span class="sr">Правильно!</span>';
     const ic=h.querySelector('.fb-ic');if(ic)ic.innerHTML=`<svg width="22" height="22" viewBox="-11 -11 22 22" aria-hidden="true">${sparkle(0,0,10,'currentColor')}</svg>`;
     try{const n=SS.items.length,i=Math.min(SS.i,n-1);h.insertAdjacentHTML('beforeend',`<small class="sky-fb-k">${i+1} з ${n}</small>`)}catch(e){}});
-  // помилка (макет): «Майже» з іконкою замість «✗ Не зовсім.»; «Правильно: …» лишається
-  document.querySelectorAll('#app .feedback.bad:not([data-sky])').forEach(el=>{el.dataset.sky=1;const t=el.firstChild;if(!t||t.nodeType!==3||!/^\s*✗/.test(t.nodeValue))return;
-    t.nodeValue=t.nodeValue.replace(/^\s*✗\s*(Не зовсім\.)?\s*/,'');el.insertAdjacentHTML('afterbegin',`<div class="sky-fbh"><span class="sky-fbi">${icn('refresh')}</span><b>Майже</b></div>`)});
-  document.querySelectorAll('#app .k-mistake:not([data-sky]) > .q-label').forEach(l=>{l.parentNode.dataset.sky=1;if(/Розбір помилки/.test(l.textContent))l.textContent='Майже'});
 }catch(e){}}
 // без MutationObserver (тест рівня в jsdom тисне на пам'ять): після натискання / Enter / оцінки — підправити відгук
 {const _sfb=()=>{setTimeout(skyFbPolish,0);setTimeout(skyFbPolish,60)};try{document.addEventListener('click',_sfb,true);document.addEventListener('keydown',e=>{if(e.key==='Enter')_sfb()},true)}catch(e){}on('grade',_sfb);on('wrong',_sfb)}
@@ -11409,8 +11389,8 @@ function skyFbPolish(){try{
 
 /* ====================== «СУЗІР'Я» · ЕТАП 6б: СЛОВНИК, «Я», ЧИТАННЯ, РОЗМОВА (15.11.2026, макети SKY-dictionary / profile / reading / dialogue) ======================
    Словник: справа в рядку — фаза місяця = засвоєння (4 кроки: бачив · впізнаю · згадую · знаю; у світлій темі — moonInk), легенда внизу.
-   «Я»: аватар-ініціал, 3 картки (зірки · сузір'я · серія), картка «Тема» (Нічна / Світла) і «Колір неба» (Щодня новий + 4 мініатюри неба),
-   «Озвучення слів» — замість кільця рівня (рядок рівня й «Виклик дня» — 80, рядки Мова / Прогрес / Тест / Налаштування лишаються).
+   «Я»: кільце рівня й шапка — старі (рішення автора 15.11: «дизайн новий, а середина стара»); під кільцем — картка «Тема» (Нічна / Світла),
+   «Колір неба» (Щодня новий + 4 мініатюри неба) і «Озвучення слів»; рядок рівня й «Виклик дня» — 80, рядки Мова / Прогрес / Тест / Налаштування лишаються.
    Читання й розмова — стилі (Literata, скляні бульбашки), логіка та сама. */
 
 const SKY_DV_STEP=[[.25,'бачив'],[.5,'впізнаю'],[.75,'згадую'],[1,'знаю']];
@@ -11431,8 +11411,6 @@ function skyMeHTML(){const N=skyNight(),auto=!S.pal||S.pal==='auto',p=palToday()
   const nm=String(S.name||'').trim(),ini=nm?nm[0].toUpperCase():'Я',lv=maxLv();
   const cell=(v,l)=>`<div class="sky-mec"><b>${v}</b><small>${l}</small></div>`;
   return `<section class="sky-me">
-    <div class="sky-meh"><span class="sky-ava" aria-hidden="true">${esc(ini)}</span><span><b>${nm?esc(nm):'Я'}</b><small>з нами ${days} ${pluralUk(days,['день','дні','днів'])} · ${esc(LANG_NAT[S.lang]||'')}${S.lang==='en'?' (US)':''} ${esc(lv)}</small></span></div>
-    <div class="sky-meg">${cell(c.lit||0,pluralUk(c.lit||0,['зірка','зірки','зірок']))}${cell(cons,pluralUk(cons,["сузір'я","сузір'я","сузір'їв"]))}${cell(S.streak||0,pluralUk(S.streak||0,['день серії','дні серії','днів серії']))}</div>
     <div class="sky-mes">
       <div class="sky-mer"><b>Тема</b></div>
       <div class="sky-seg2" role="radiogroup" aria-label="Тема"><button class="${N?'on':''}" role="radio" aria-checked="${N}" onclick="S.theme='dark';save();applyTheme();meScreen()">${icn('moon')} Нічна</button><button class="${N?'':'on'}" role="radio" aria-checked="${!N}" onclick="S.theme='light';save();applyTheme();meScreen()">${icn('sun')} Світла</button></div>
@@ -11443,11 +11421,8 @@ function skyMeHTML(){const N=skyNight(),auto=!S.pal||S.pal==='auto',p=palToday()
     <div class="sky-mes sky-mes2"><div class="sky-mer row"><b>Озвучення слів</b><button class="sky-tog${S.tts!==false?' on':''}" role="switch" aria-checked="${S.tts!==false}" aria-label="Озвучення слів" onclick="S.tts=S.tts===false;save();meScreen()"><i></i></button></div></div>
   </section>`}
 on('screen',n=>{try{if(n!=='me'||window.SKY_OFF||document.querySelector('#app .sky-me'))return;const m=document.querySelector('#app .nf-me');if(!m)return;
-  m.outerHTML=skyMeHTML();const hd=document.querySelector('#app > .nf-hd');if(hd)hd.classList.add('sky-mehd')}catch(e){console.error(e)}});
+  m.insertAdjacentHTML('afterend',skyMeHTML())}catch(e){console.error(e)}});
 
-/* ---------- читання: «Запалити зірку» замість «додати» у віконці слова ---------- */
-function skyPopAdd(){const b=document.getElementById('popAdd');if(b&&!b.dataset.sky&&/^\s*(\+|Додати|До словника)/i.test(b.textContent)){b.dataset.sky=1;b.innerHTML=`<svg width="14" height="14" viewBox="-7 -7 14 14" aria-hidden="true">${sparkle(0,0,6.5,'currentColor')}</svg> Запалити зірку`}}
-try{document.addEventListener('click',()=>setTimeout(skyPopAdd,0),true)}catch(e){}
 
 bootApp();bigLoad();
 </script>

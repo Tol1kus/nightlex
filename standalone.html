@@ -20626,6 +20626,15 @@ function uiChoose(k){const cur=typeof uiEn==='function'&&uiEn()?'en':'uk';UI_ASK
   '.nf-launch .ui-link{all:unset;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px;margin:14px auto 0;padding:8px 12px;font-size:13px;opacity:.6}.nf-launch .ui-link svg{width:15px;height:15px}';
   document.head.appendChild(st)}catch(e){}})();
 
+/* ====================== АНГЛІЙСЬКИЙ КУРС: СХОВАНІ КАРТКИ (21.11.2026, перевірка B1–C2, рішення автора «робимо») ======================
+   Картки, яким не місце в курсі американської англійської: данські установи без відповідника у США (Borgerservice, флексджоб,
+   årsopgørelse, forskudsopgørelse, lægevagt) і британські слова, чия американська форма вже є окремою карткою
+   (banknote / bill, presenter / host, to overtake / to pass, turnover / revenue). У данському курсі вони лишаються.
+   Ховаємо з уроків тем (themeWordsNS) — так само, як da.drop ховає слова з данського курсу (96_da_curriculum.js). */
+const EN_HIDE=new Set(['b1x03_city.citizen_service_centre','b2x01_labour.flex_job','b2x01_tax.annual_tax_statement','b2x01_tax.preliminary_income_assessment',
+  'b1x02_health.out_of_hours_doctor','a2x01_post_bank.banknote','b1m_media.presenter','b1x03_transport.to_overtake','b2x01_business.turnover']);
+{const _eh=themeWordsNS;themeWordsNS=function(t){const ws=_eh.apply(this,arguments);try{return S.lang==='en'?ws.filter(w=>!EN_HIDE.has(w.id)):ws}catch(e){return ws}}}
+
 bootApp();bigLoad();
 </script>
 </body>

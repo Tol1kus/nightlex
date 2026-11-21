@@ -20592,6 +20592,8 @@ on('item:render',()=>requestAnimationFrame(nopicHide));on('screen',()=>requestAn
 // один раз за запуск сторінки (UI_ASKED); після вибору English сторінка перезапускається — sessionStorage не дає спитати вдруге.
 // jsdom-тести (старий старт з картками) — лише без вибору й без прогресу, як раніше.
 let UI_ASKED=false;try{if(sessionStorage.getItem('nf-ui-asked')){UI_ASKED=true;sessionStorage.removeItem('nf-ui-asked')}}catch(e){}
+// після вибору English сторінка перезапускається — заставку вдруге не показуємо (автор: «чи треба ще одна анімація після вибору мови»)
+if(UI_ASKED){try{NF_SPLASH_DONE=true}catch(e){}}
 function uiChosen(){try{if(/jsdom/i.test(navigator.userAgent||'')){if(localStorage.getItem(UI_KEY)!=null)return true;return !!(S.onb||Object.keys(S.srs||{}).some(k=>Object.keys(S.srs[k]||{}).length))}
   return UI_ASKED}catch(e){return true}}
 function uiChooseHTML(){const cur=typeof uiEn==='function'&&uiEn()?'en':'uk';

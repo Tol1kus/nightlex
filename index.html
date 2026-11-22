@@ -7070,6 +7070,11 @@ if(typeof stepTip==='function'){const _stepTipFL=stepTip;stepTip=function(id){_s
 const PF_CREDIT_DAY=10,PF_CORE=['review','new','practice','listen','grammar'],PF_TALK=['dialog','phrases','write','transl'];
 function planDayNo(){try{const D=((S.doneLog||{})[S.lang])||{},t=today();return Object.keys(D).filter(k=>D[k]&&k!==t).length+1}catch(e){return 1}}
 const pfMin=b=>typeof nfMin==='function'?nfMin(b):(b.min||0);
+// 22.11.2026: план 60 хв («Інтенсивно») за оцінками гри виходив 72–75 хв → лишаємо кроки за порядком, поки вміщається в 60 (основні — завжди)
+on('planBlocks',B=>{try{if((S.minutes||30)<60||window.NF_KEEP_ORDER||window.NF_PLAN_FULL)return B;
+  const must=b=>PF_CORE.includes(b.id)||b.id==='focus'; // «🎯 Фокус» на слабкій навичці з плану після тесту — теж завжди
+  let tot=B.filter(must).reduce((a,b)=>a+pfMin(b),0);
+  return B.filter(b=>{if(must(b))return true;if(b.done||tot+pfMin(b)<=60){tot+=b.done?0:pfMin(b);return true}return false})}catch(e){return B}});
 on('planBlocks',B=>{try{if((S.minutes||30)>=60||window.NF_KEEP_ORDER||window.NF_PLAN_FULL)return B;
   const readDay=planDayNo()%2===1,bandA=typeof lvBand==='function'&&lvBand()==='A';
   B.forEach(b=>{if(b.id==='new')b.min=Math.round(3+(typeof newPerDay==='function'?newPerDay():10)*.3); // 5 слів → 5 хв, 10 → 6, 15 → 8, 20 → 9: більше слів — менше місця для іншого
@@ -8954,9 +8959,9 @@ const PACES=[[10,'Спокійно','Relaxed'],[15,'Швидко','Fast'],[20,'�
 function paceLow(){return true}
 {const _npd=newPerDay;newPerDay=function(){const own=(S.newPerDay||{})[S.lang];if(own)return own;if(paceLow())return (S.minutes||30)>=60?20:15;return _npd.apply(this,arguments)}}
 // скільки місяців лишилось на поточному рівні за цього темпу
-function paceMonths(n,lvl){try{const lv=lvl||(typeof maxLv==='function'?maxLv():curLevel());const left=WORDS.filter(w=>w.lv===lv&&w[S.lang]&&!(typeof st==='function'&&st(w))).length;const d=Math.ceil(left/Math.max(1,n));return {lv,days:d,txt:d<45?Math.max(1,Math.round(d/7))+(uiEnP()?' wk':' тиж.'):(Math.round(d/30*2)/2).toString().replace('.',',')+(uiEnP()?' mo':' міс.')}}catch(e){return {lv:'',days:0,txt:''}}}
+function paceMonths(n,lvl){try{const lv=lvl||(typeof maxLv==='function'?maxLv():curLevel());const left=WORDS.filter(w=>w.lv===lv&&w[S.lang]&&!(typeof st==='function'&&st(w))).length;const d=Math.ceil(left/Math.max(1,n));return {lv,days:d,txt:d<45?Math.max(1,Math.round(d/7))+(uiEnP()?' wk':' тиж.'):(Math.round(d/30*2)/2).toString().replace('.',uiEnP()?'.':',')+(uiEnP()?' mo':' міс.')}}catch(e){return {lv:'',days:0,txt:''}}}
 function uiEnP(){return typeof uiEn==='function'&&uiEn()}
-function setPace(n){S.newPerDay=S.newPerDay||{};S.newPerDay[S.lang]=n;S.dailyNew=n;if(S.plan&&S.plan[S.lang])S.plan[S.lang].daily=n;S.dayWords={};save();if(typeof settingsScreen==='function'&&REDRAW===settingsScreen)settingsScreen()}
+function setPace(n){S.newPerDay=S.newPerDay||{};S.newPerDay[S.lang]=n;S.dailyNew=n;if(S.plan&&S.plan[S.lang])S.plan[S.lang].daily=n;{const D=(S.dayWords||{})[S.lang];if(D&&D.d===today())delete S.dayWords[S.lang]}save();if(typeof settingsScreen==='function'&&REDRAW===settingsScreen)settingsScreen()}
 // екран налаштування плану: три темпи замість 5 / 10 / 15 / 20
 try{NEW_DAY_OPTS.splice(0,NEW_DAY_OPTS.length,[10,'спокійно'],[15,'швидко — радимо'],[20,'інтенсивно'])}catch(e){}
 // «Налаштування»: рядок «Темп вивчення» одразу після «Час на день»
@@ -8971,28 +8976,41 @@ if(typeof settingsScreen==='function'){const _ssP=settingsScreen;settingsScreen=
    коли приділяєш більше часу, і швидке — менше»; погоджено «так, так і роби»). Темп задає і нові слова, і час:
    Спокійно 10 слів · ≈ 15–20 хв (план 30) · Швидко 15 · ≈ 25–30 хв (план 30) · Інтенсивно 20 · ≈ 45–60 хв (план 60, + будова речень, вимова, письмо).
    Вибір — один раз на старті для кожної мови (після тесту рівня або «Я зовсім новачок»), далі — «Налаштування» → «Темп вивчення». */
+// значки (автор: «на спокійний також добав значок, як і на інших темпах»): листок · блискавка · вогонь — лінійні SVG з IC
+try{IC.leaf=IC.leaf||'<path d="M5 19c0-8 5-14 15-15-1 10-7 15-15 15z"/><path d="M5 19c3-4 6-7 10-9"/>'}catch(e){}
+const PACE_IC={10:'leaf',15:'bolt',20:'flame'};
+// 22.11.2026, автор: «пиши час орієнтовно — приблизно 30 хв на день чи 60»
+function paceTime(n,en){const m=n>=20?60:30;return en?`about ${m} min a day`:`≈ ${m} хв на день`}
 const PACE_INFO={10:{uk:'Спокійно',en:'Relaxed',ic:'🌿',min:'≈ 15–20 хв',minEn:'≈ 15–20 min',m:30},15:{uk:'Швидко',en:'Fast',ic:'⚡',min:'≈ 25–30 хв',minEn:'≈ 25–30 min',m:30},20:{uk:'Інтенсивно',en:'Intensive',ic:'🔥',min:'≈ 45–60 хв',minEn:'≈ 45–60 min',m:60}};
-{const _sp=setPace;setPace=function(n){S.minutes=(PACE_INFO[n]||{}).m||30;S.paceSet=S.paceSet||{};S.paceSet[S.lang]=n;return _sp.apply(this,arguments)}}
+{const _sp=setPace;setPace=function(n){const m=(PACE_INFO[n]||{}).m||30;S.paceSet=S.paceSet||{};S.paceSet[S.lang]=n;
+  // план сьогодні вже виконано, а темп стає довшим → нові кроки з'являться завтра (день лишається закритим, без «7 відкритих кроків»)
+  const dayDone=!!((S.doneLog||{})[S.lang]||{})[today()];
+  if(dayDone&&m>(S.minutes||30)){S.paceMin={m,d:today()};try{toast(uiEnP()?'New pace starts tomorrow':'Новий темп — з завтра')}catch(e){}}else{S.minutes=m;delete S.paceMin}
+  const r=_sp.apply(this,arguments);
+  // темп став коротшим, а всі кроки нового плану вже зроблено → день зараховано (серія, ціль тижня)
+  try{if(!dayDone&&planBlocks().every(b=>b.done)){S.doneLog[S.lang][today()]=true;save();emit('plan:done')}}catch(e){}return r}}
+on('home:before',()=>{try{if(S.paceMin&&S.paceMin.d<today()){S.minutes=S.paceMin.m;delete S.paceMin;save()}}catch(e){}});
 function paceNeed(){try{if((/jsdom/i.test(navigator.userAgent)||navigator.webdriver)&&!window.PACE_FORCE)return false;if(!S.onb||!LANG_PICKED)return false;if((S.paceSet||{})[S.lang])return false;
   const started=!!((S.placement||{})[S.lang]||(S.beginner||{})[S.lang]);if(!started)return false;
   // хто вже вчився (є слова в прогресі) — не питаємо, лишаємо їхній вибір
-  if(Object.keys((S.srs||{})[S.lang]||{}).length>20){S.paceSet=S.paceSet||{};S.paceSet[S.lang]=newPerDay();save();return false}return true}catch(e){return false}}
+  if(Object.values((S.srs||{})[S.lang]||{}).filter(x=>x&&x.lr).length>20){ // лише справді повторені (lr), не зараховані тестом рівня
+  S.paceSet=S.paceSet||{};S.paceSet[S.lang]=newPerDay();save();return false}return true}catch(e){return false}}
 function paceScreen(next){applyTheme();document.body.classList.add('in-session');const en=uiEnP(),rec=15;REDRAW=()=>paceScreen(next);window.__paceNext=next;
   app.innerHTML=`<div class="ds-scr pace-scr" data-noi18n><div class="pace-in"><div class="kick">${en?'Your plan':'Твій план'}</div><h1>${en?'Choose your pace':'Обери темп'}</h1>
    <p class="muted">${en?'You can change it any time in Settings.':'Змінити можна будь-коли в «Налаштуваннях».'}</p>
-   <div class="pace-cards">${[10,15,20].map(n=>{const p=PACE_INFO[n],mo=paceMonths(n);return `<button class="pace-card${n===rec?' rec':''}" onclick="paceDone(${n})">
-     <span class="pc-t"><b>${en?p.en:p.uk}${n===rec?(en?' · recommended':' · радимо'):''}</b><small>${n} ${en?'new words a day':'нових слів на день'}</small><small>${mo.lv?(en?`${mo.lv} in ≈ ${mo.txt}`:`${mo.lv} за ≈ ${mo.txt}`):''}</small></span></button>`}).join('')}</div></div></div>`;
+   <div class="pace-cards">${[10,15,20].map(n=>{const p=PACE_INFO[n],mo=paceMonths(n);return `<button class="pace-card${n===rec?' rec':''}" onclick="paceDone(${n})"><span class="pc-ic">${icn(PACE_IC[n])}</span>
+     <span class="pc-t"><b>${en?p.en:p.uk}${n===rec?(en?' · recommended':' · радимо'):''}</b><small>${n} ${en?'new words':'нових слів'} · ${paceTime(n,en)}</small><small>${mo.lv?(en?`${mo.lv} in ≈ ${mo.txt}`:`${mo.lv} за ≈ ${mo.txt}`):''}</small></span></button>`}).join('')}</div></div></div>`;
   try{if(typeof nfStrip==='function')0}catch(e){}}
 function paceDone(n){setPace(n);document.body.classList.remove('in-session');const f=window.__paceNext;window.__paceNext=null;if(typeof f==='function')f();else home()}
 {const _hmP=home;home=function(){if(paceNeed())return paceScreen(()=>_hmP.apply(this,arguments));return _hmP.apply(this,arguments)}}
 // «Налаштування»: «Час на день» більше не окремо — його задає темп
-{const _ssP2=settingsScreen;settingsScreen=function(){const r=_ssP2.apply(this,arguments);try{const rows=[...document.querySelectorAll('#app .k-srow')];const t=rows.find(x=>/Час на день|Time per day/.test(x.textContent)&&!x.classList.contains('pace-row'));if(t)t.style.display='none';
-  const pr=document.querySelector('#app .pace-row small.k-sub2');const p=PACE_INFO[newPerDay()];if(pr&&p&&!pr.dataset.t){pr.dataset.t=1;0}}catch(e){}return r}}
+{const _ssP2=settingsScreen;settingsScreen=function(){const r=_ssP2.apply(this,arguments);try{const rows=[...document.querySelectorAll('#app .k-srow')];rows.filter(x=>/Час на день|Time per day|Нових слів на день|New words a day|New words per day/i.test(x.firstElementChild?x.firstElementChild.textContent:x.textContent)&&!x.classList.contains('pace-row')).forEach(x=>x.style.display='none');
+  const pr=document.querySelector('#app .pace-row small.k-sub2');const p=PACE_INFO[newPerDay()];if(pr&&p&&!pr.dataset.t){pr.dataset.t=1;pr.textContent=paceTime(newPerDay(),uiEnP())+' · '+pr.textContent.replace(/^(нових слів на день|new words a day) · /,'')}}catch(e){}return r}}
 // екран «Налаштуємо план дня»: замість двох питань — ті самі три темпи
 if(typeof planSetup==='function'){const _psP=planSetup;planSetup=function(){const r=_psP.apply(this,arguments);try{const qs=[...document.querySelectorAll('#app .ps-q')];if(qs.length>=2){
-  const cur=newPerDay(),en=uiEnP();qs[0].outerHTML=`<div class="ps-q"><b>${en?'Your pace':'Темп вивчення'}</b><div class="pace-cards ps-opts">${[10,15,20].map(n=>{const p=PACE_INFO[n],mo=paceMonths(n,PLAN_OPT&&PLAN_OPT.lvl);return `<button class="pace-card${n===cur?' on':''}" onclick="setPace(${n});planSetup()"><span class="pc-t"><b>${en?p.en:p.uk}${n===15?(en?' · recommended':' · радимо'):''}</b><small>${n} ${en?'new words a day':'нових слів на день'}</small><small>${mo.lv?(en?`${mo.lv} in ≈ ${mo.txt}`:`${mo.lv} за ≈ ${mo.txt}`):''}</small></span></button>`}).join('')}</div></div>`;qs[1].remove()}
+  const cur=newPerDay(),en=uiEnP();qs[0].outerHTML=`<div class="ps-q"><b>${en?'Your pace':'Темп вивчення'}</b><div class="pace-cards ps-opts">${[10,15,20].map(n=>{const p=PACE_INFO[n],mo=paceMonths(n,PLAN_OPT&&PLAN_OPT.lvl);return `<button class="pace-card${n===cur?' on':''}" onclick="setPace(${n});planSetup()"><span class="pc-ic">${icn(PACE_IC[n])}</span><span class="pc-t"><b>${en?p.en:p.uk}${n===15?(en?' · recommended':' · радимо'):''}</b><small>${n} ${en?'new words':'нових слів'} · ${paceTime(n,en)}</small><small>${mo.lv?(en?`${mo.lv} in ≈ ${mo.txt}`:`${mo.lv} за ≈ ${mo.txt}`):''}</small></span></button>`}).join('')}</div></div>`;qs[1].remove()}
   // без хвилин (автор: «одна людина робить швидко, інша повільно»): замість «30 хв щодня» — назва темпу
-  const en=uiEnP(),g=document.querySelectorAll('#app .ps-sum .pp-grid > div');const p=PACE_INFO[newPerDay()];if(g[1]&&p)g[1].innerHTML=`<b>${en?p.en:p.uk}</b><span>${en?'pace':'темп'}</span>`;
+  const en=uiEnP(),g=document.querySelectorAll('#app .ps-sum .pp-grid > div');const p=PACE_INFO[newPerDay()];if(g[1]&&p)g[1].innerHTML=`<b>≈ ${p.m} ${en?'min':'хв'}</b><span>${en?'a day':'на день'}</span>`;
   [...document.querySelectorAll('#app .ps small, #app .ps p')].forEach(x=>{if(/^Час, кількість слів/.test(x.textContent))x.textContent=en?'You can change the pace and language any time in Settings.':'Темп і мову можна змінити будь-коли в налаштуваннях.'})}catch(e){}return r}}
 (function(){try{const st_=document.createElement('style');st_.textContent=`.pace-scr{display:flex;flex-direction:column;justify-content:center;min-height:calc(100dvh - 40px);padding:16px}.pace-in{max-width:520px;margin:0 auto;width:100%}
 .pace-scr h1{font:800 28px/1.15 var(--display);margin:4px 0 6px}.pace-scr .kick{color:var(--lime-t,var(--lime));font-weight:800;font-size:13px;text-transform:uppercase;letter-spacing:.06em}
@@ -9002,6 +9020,8 @@ if(typeof planSetup==='function'){const _psP=planSetup;planSetup=function(){cons
 // «Готово» на екрані плану = темп обрано (не питаємо вдруге на головній)
 if(typeof acceptPlan==='function'){const _apP=acceptPlan;acceptPlan=function(){try{S.paceSet=S.paceSet||{};if(!S.paceSet[S.lang]){S.paceSet[S.lang]=newPerDay();S.newPerDay=S.newPerDay||{};S.newPerDay[S.lang]=newPerDay();S.minutes=newPerDay()>=20?60:30}}catch(e){}return _apP.apply(this,arguments)}}
 // 22.11.2026, автор: «хвилини треба забрати, бо одна людина робить швидко, інша повільно» — у виборі темпу лише кількість слів і прогноз рівня
+(function(){try{const st_=document.createElement('style');st_.textContent=`.pace-card .pc-ic{display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:14px;background:color-mix(in srgb,var(--lime) 14%,transparent);color:var(--lime)}.pace-card .pc-ic .ic{width:24px;height:24px}`;document.head.appendChild(st_)}catch(e){}})();
+(function(){try{const st_=document.createElement('style');st_.textContent=`.pace-seg button.on small{opacity:1;color:inherit;font-weight:800}`;document.head.appendChild(st_)}catch(e){}})();
 
 bootApp();bigLoad();
 </script>

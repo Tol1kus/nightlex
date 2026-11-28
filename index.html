@@ -7755,7 +7755,7 @@ function uiChoose(k){const cur=typeof uiEn==='function'&&uiEn()?'en':'uk';UI_ASK
 }catch(e){console.error(e)}return r}}
 (function(){try{const st=document.createElement('style');st.textContent=
   '.nf-launch .ui-q{font:800 26px/1.15 Unbounded,sans-serif;margin:18px 0 16px}.nf-launch .ui-q small{display:block;font:600 14px "Golos Text",sans-serif;opacity:.6;margin-top:6px}'+
-  '#app .nf-launch.ui-first{padding-top:calc(env(safe-area-inset-top) + max(40px,16dvh))!important}.nf-launch.ui-first{transition:opacity .45s ease}.nf-launch.ui-first.ui-wait{opacity:0}'+
+  '#app .nf-launch.ui-first{padding-top:0!important;padding-bottom:7dvh!important;height:calc(100dvh - env(safe-area-inset-top) - 16px)!important;min-height:0!important;box-sizing:border-box}.nf-launch.ui-first{transition:opacity .45s ease}.nf-launch.ui-first.ui-wait{opacity:0}'+
   '.nf-launch .ui-today{font:800 19px/1.2 Unbounded,sans-serif;margin:4px 2px 12px}'+
   '.nf-launch{position:relative}.nf-launch .ui-back{position:absolute;left:0;top:5px;z-index:6;margin:0;width:44px!important;height:44px!important;min-height:0!important;border-radius:14px!important}'+  // 21.11.2026 (знімок автора): як «Назад» на екрані Світлика (.ds-top: 14px, 44×44); без env(safe-area) — відступ під годинник уже дає .wrap, інакше на iPhone стрілка опускалась удвічі нижче
 
@@ -8875,7 +8875,7 @@ function dzEnter(){try{const app=document.getElementById('app');if(!app)return;c
 
 
   '#app .nf-launch.ui-first{display:flex;flex-direction:column;justify-content:center!important;position:relative;isolation:isolate}#app .nf-launch.ui-first>*{flex:none}'+
-  '#app .nf-launch.ui-first::before{content:"";position:absolute;left:50%;top:22%;width:320px;height:320px;transform:translate(-50%,-50%);border-radius:50%;pointer-events:none;z-index:-1;'+
+  '#app .nf-launch.ui-first::before{content:"";position:absolute;left:50%;top:36%;width:320px;height:320px;transform:translate(-50%,-50%);border-radius:50%;pointer-events:none;z-index:-1;'+
     'background:radial-gradient(closest-side,color-mix(in srgb,var(--lime) 22%,transparent),transparent);filter:blur(8px);animation:dzGlow 6s ease-in-out infinite alternate}'+
   '@keyframes dzGlow{from{opacity:.55;transform:translate(-50%,-50%) scale(.92)}to{opacity:1;transform:translate(-50%,-50%) scale(1.05)}}'+
   '#app .nf-launch.ui-first .ui-q{margin:16px 0 24px}#app .nf-launch.ui-first .ui-q small{display:block;font-size:15px;margin-top:4px}'+

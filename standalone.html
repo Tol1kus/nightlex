@@ -15784,8 +15784,10 @@ on('result',o=>{
 
 function nfStepColor(id){return 'lime'}
 function nfGreet(){const h=new Date().getHours();return h<5?'Добра ніч':h<12?'Добрий ранок':h<18?'Добрий день':'Добрий вечір'}
-function nfPreview(id){const real=w=>!w.phrase&&w.img&&typeof PICS!=='undefined'&&PICS[w.img];const ws=(id==='review'?dueWords().slice(0,12):dayWordList()).filter(real).slice(0,3); // лише справжні картинки Mulberry, без порожніх плиток
- return ws.length?`<div class="nf-prev">${ws.map(w=>`<span>${w.phrase?icn('chat'):picHTML(w)}</span>`).join('')}</div>`:''}
+function nfPreview(id){const real=w=>!w.phrase&&w.img&&typeof PICS!=='undefined'&&PICS[w.img];const ws=(id==='review'?dueWords().slice(0,12):dayWordList()).filter(real);
+ const tiles=[];for(const w of ws){const h=picHTML(w);if(/<img\b/.test(h)&&!/nopic/.test(h))tiles.push(h.replace('<img','<img onerror="nfPrevFail(this)"'));if(tiles.length>=3)break}
+ return tiles.length>=2?`<div class="nf-prev">${tiles.map(h=>`<span>${h}</span>`).join('')}</div>`:''}
+function nfPrevFail(img){try{const sp=img.closest('span'),box=sp&&sp.parentNode;if(sp)sp.remove();if(box&&box.children.length<2)box.remove()}catch(e){}}
 const NF_STAGES=[['review','Повтор','refresh','amber',['review']],['new','Нові слова','sparkle','lime',['new','practice','listen']],['use','Практика','chat','sky',null]];
 function nfStages(B){const used=new Set(NF_STAGES.flatMap(x=>x[4]||[]));
   return NF_STAGES.map(([id,t,ic,c,ids])=>({id,t,ic,c,bs:B.filter(b=>ids?ids.includes(b.id):!used.has(b.id))})).filter(x=>x.bs.length)}
@@ -17003,9 +17005,12 @@ const STEP_MORE={
   ex:[['I have a dog.','У мене є собака.'],['I don\'t like coffee.','Я не люблю каву.']]},
  write:{pts:['Пиши короткими реченнями: одне речення — одна думка.','Перевір: велика літера на початку, крапка в кінці, I завжди велика.','he / she / it — дієслово з -s: She likes music. (Вона любить музику.)','Використай слова дня — так вони закріпляться.'],ex:[]},
  review:{pts:['Спершу згадай сам, лише потім дивись відповідь.','Слово, яке ти майже забув і згадав, запам\'ятовується міцніше за те, яке знав одразу.','Помилився — не страшно: слово повернеться частіше, доки не закріпиться.'],ex:[]}};
+
+function stepPtsNew(txt,pts){const ws=t=>(t.toLowerCase().match(/[\p{L}']{4,}/gu)||[]);const have=new Set(ws(txt));return pts.filter(p=>{const w=ws(p);if(!w.length)return true;return w.filter(x=>have.has(x)).length/w.length<0.6})}
 if(typeof stepTip==='function'){const _stepTipMore=stepTip;stepTip=function(id){_stepTipMore(id);if(id==='grammar'&&gramTipLesson())return;try{const m=S.lang==='en'&&STEP_MORE[id];if(!m)return;const cards=document.querySelectorAll('.st-card');const last=cards[cards.length-1];if(!last)return;
   const H=t=>typeof hlEn==='function'?hlEn(t):esc(t);
-  last.insertAdjacentHTML('beforeend',`<ul class="st-pts">${m.pts.map(p=>`<li>${H(p)}</li>`).join('')}</ul>${m.ex&&m.ex.length?`<div class="st-ex">${m.ex.map(x=>`<div class="gm-ex"><button class="dv-say" onclick="speak(${js(x[0])})" aria-label="Прослухати">${icn('speaker')}</button><div><b class="en">${esc(x[0])}</b><small>${esc(x[1])}</small></div></div>`).join('')}</div>`:''}`)}catch(e){}}}
+  const pts=stepPtsNew(last.textContent,m.pts);
+  last.insertAdjacentHTML('beforeend',`${pts.length?`<ul class="st-pts">${pts.map(p=>`<li>${H(p)}</li>`).join('')}</ul>`:''}${m.ex&&m.ex.length?`<div class="st-ex">${m.ex.map(x=>`<div class="gm-ex"><button class="dv-say" onclick="speak(${js(x[0])})" aria-label="Прослухати">${icn('speaker')}</button><div><b class="en">${esc(x[0])}</b><small>${esc(x[1])}</small></div></div>`).join('')}</div>`:''}`)}catch(e){}}}
 
 
 function gramTipLesson(){try{if(typeof nextGrammar!=='function')return false;const i=nextGrammar(),g=(GRAMMAR[S.lang]||[])[i];if(!g)return false;
@@ -19811,13 +19816,13 @@ function numDigits(w){try{const s=String(w&&(w.gb||w.en)||'').toLowerCase().repl
 const PIC_ARTIFACT=!AIPIC_ONLY&&/claudeusercontent|claude\.ai/.test(location.host||'');
 
 function picIsReal(w){try{const h=picHTML(w);return !!h&&!/nopic/.test(h)&&/<(img|svg)/.test(h)}catch(e){return false}}
-{const _phAi=picHTML;picHTML=function(w){if(aiIsNum(w)&&!w.my){const d=numDigits(w);if(d)return `<span class="num-pic${d.length>3?' long':''}" aria-hidden="true">${d}</span>`}const s=aiPicSrc(w);if(s)return `<img class="pimg ai-img" decoding="async" src="${s}" alt="">`;
+{const _phAi=picHTML;picHTML=function(w){if(aiIsNum(w)&&!w.my){const d=numDigits(w);if(d)return `<span class="num-pic${d.length>3?' long':''} nd${Math.min(d.length,7)}" aria-hidden="true"><b>${d}</b></span>`}const s=aiPicSrc(w);if(s)return `<img class="pimg ai-img" decoding="async" src="${s}" alt="">`;
   if(AIPIC_ONLY&&w&&!w.my&&!aiIsNum(w)&&!(S.picOver&&S.picOver[w.id])&&!(w.img&&typeof PICS!=='undefined'&&PICS[w.img]))return '<i class="nopic" aria-hidden="true"></i>';
   if(PIC_ARTIFACT&&w&&!w.my&&!aiIsNum(w)&&!(S.picOver&&S.picOver[w.id]))return '<i class="nopic" aria-hidden="true"></i>';
   return _phAi.apply(this,arguments)}}
 if(AIPIC_ONLY){try{const _hpA=hasPic;hasPic=function(w){return !!aiPicSrc(w)||_hpA.apply(this,arguments)}}catch(e){}}
 if(PIC_ARTIFACT){try{const _hpX=hasPic;hasPic=function(w){return aiIsNum(w)&&_hpX.apply(this,arguments)}}catch(e){}}
-(function(){try{const st=document.createElement('style');st.textContent='.num-pic{display:flex;align-items:center;justify-content:center;width:100%;height:100%;font-family:var(--display,inherit);font-weight:800;font-size:clamp(28px,42cqi,110px);line-height:1;color:#3b2a4a;background:#f4f1ea;container-type:inline-size}.num-pic.long{font-size:clamp(20px,26cqi,64px)}';document.head.appendChild(st)}catch(e){}})();
+(function(){try{const st=document.createElement('style');st.textContent='.num-pic{display:flex;align-items:center;justify-content:center;width:100%;height:100%;font-family:var(--display,inherit);font-weight:800;line-height:1;color:#3b2a4a;background:#f4f1ea;container-type:inline-size;overflow:hidden}.num-pic>b{font:inherit;font-size:62cqi;white-space:nowrap}.num-pic.nd2>b{font-size:44cqi}.num-pic.nd3>b{font-size:31cqi}.num-pic.nd4>b{font-size:22cqi}.num-pic.nd5>b{font-size:18cqi}.num-pic.nd6>b{font-size:15cqi}.num-pic.nd7>b{font-size:13cqi}';document.head.appendChild(st)}catch(e){}})();
 (function(){try{const st=document.createElement('style');st.textContent='.k-pic:has(> i.nopic),.k-mis-pic:has(> i.nopic),.k-tile-pic:has(> i.nopic){display:none!important}img.pimg.ai-img{object-fit:cover;border-radius:22%;background:#FFFDF8}.wc-disc img.pimg.ai-img{width:100%!important;height:100%!important;max-width:none!important;max-height:none!important;border-radius:50%!important;margin:0!important}';document.head.appendChild(st)}catch(e){}})();
 
 const RS_KEEP=new Set(['voice','variant','weekGoal','lang','uiLang','theme','pal','sound','rate','tts','ttsOff','liveAudio','engVar','remind','rdFs','trAbove',
@@ -21236,7 +21241,7 @@ try{if(typeof I18N_PAT!=='undefined')I18N_PAT.forEach(p=>{const s=String(p[0]&&p
   '#app .btn.zf-sec::after{display:none!important}'+
 
   '#app .k-tile-pic{container-type:inline-size}#app .k-tile-pic>.num-pic{border-radius:inherit}'+
-  '#app .k-mis-pic{container-type:inline-size;overflow:hidden}#app .k-mis-pic .num-pic{font-size:clamp(16px,46cqi,28px);border-radius:inherit}#app .k-mis-pic .num-pic.long{font-size:clamp(11px,26cqi,18px)}'+
+  '#app .k-mis-pic{container-type:inline-size;overflow:hidden}#app .k-mis-pic .num-pic{border-radius:inherit}'+
   '#app .k-mis small{font-size:13px!important;letter-spacing:.04em}#app .rd-qlab{font-size:13px!important;letter-spacing:.05em}body.in-session #app .q-label{font-size:13px}'+
   'html.big-text #app .k-mis small,html.big-text #app .rd-qlab{font-size:14px!important}'+
 
